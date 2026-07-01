@@ -18,13 +18,13 @@ carpentry: 'incubator'
 carpentry_description: 'Lesson Description'
 
 # Overall title for pages.
-title: 'Lesson Title' # FIXME
+title: 'Introduction to Data Management' # FIXME
 
 # Date the lesson was created (YYYY-MM-DD, this is empty by default)
-created: ~ # FIXME
+created: 2026-07-01 # FIXME
 
 # Comma-separated list of keywords for the lesson
-keywords: 'software, data, lesson, The Carpentries' # FIXME
+keywords: 'data, lesson, The Carpentries' # FIXME
 
 # Life cycle stage of the lesson
 # refer to <https://docs.carpentries.org/resources/curriculum/lesson-life-cycle.html> for details
@@ -41,7 +41,7 @@ source: 'https://github.com/carpentries/workbench-template-md' # FIXME
 branch: 'main'
 
 # Who to contact if there are any issues
-contact: 'team@carpentries.org' # FIXME
+contact: 'rseteam@ncl.ac.uk' # FIXME
 
 # Navigation ------------------------------------------------
 #
@@ -68,6 +68,14 @@ contact: 'team@carpentries.org' # FIXME
 # Order of episodes in your lesson
 episodes: 
 - introduction.md
+- file-structures.md
+- file-names.md
+- documentation.md
+- storing-data.md
+- transferring-data.md
+- deleting-data.md
+- tabular-data.md
+- data-formats.md
 
 # Information for Learners
 learners: 
@@ -76,7 +84,7 @@ learners:
 instructors: 
 
 # Learner Profiles
-profiles: 
+profiles: Msc students, PhD students, Post Doctoral Researchers
 
 # Customisation ---------------------------------------------
 #

@@ -15,9 +15,9 @@ Your filename should normally have a permanent and temporary parts:
 
 `<permanent>_<temporary>.png`: `image_01.png`
 
-In reality, the temporary part might include over one temporary subparts:
+In reality, the temporary part might include over one or more temporary subparts:
 
-`<temporary>_<permanent>_<temporary`: `01-June_image_01.png`
+`<temporary>_<permanent>_<temporary>`: `01-June_image_01.png`
 
 Then, both temporary parts can be intuitively used in batch processing to loop over:
 - dates
@@ -25,7 +25,7 @@ Then, both temporary parts can be intuitively used in batch processing to loop o
 
 For example:
 - `01-June_image_01.png`
-- `01-June_image_01.png`
+- `01-June_image_02.png`
 - `02-June_image_01.png`
   
 > NOTE: separate temporary and permanent parts with `underscore`, and use `dash` within temporary and permanent parts.
@@ -75,4 +75,6 @@ your-project/
 
 **Main rules:**
 - it's not recommended to include `spaces` in your filenames! This might break someone's code. Or, at least use consistently `space` and `underscore`.
-- [SUGGESTIONS]...
+- Once you have chosen a naming convention, stick to it.  It is unlikely you will know the assumptions others have made regarding file names in their code.  Changing the convention midstream 
+will potentially break scripts written by others, and may lead to data loss or worse!
+

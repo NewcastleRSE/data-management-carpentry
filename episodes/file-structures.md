@@ -13,13 +13,15 @@ Your goal is here is to know what a file is without having to open it. Most of t
 
 Some tips:
 * Choose a format and stick to it. It's probably helpful to make a note of this somewhere, perhaps in a file called 'README' at the top level folder for a specific project. For example, `[Date]\_[sample number]\_[location]_[version]`. Keep filenames as brief as possible.
-* Avoid spaces. If you start referring to files programmatically, process them through software or move them through the command line, it may cause you a headache to have spaces in your filenames. Instead of spaces, you could use underscores (_), hyphens (-) or camel case (CapitaliseEachWord). Decide on what you will use and stick to it. 
-* Also steer clear of special symbols as these can have other meanings in some contexts (\/:*?"<>|")
-* Don't start with an asterix (*) as this creates a hidden file that will not appear by default in your file explorer or finder window.
-* Choose a format for dates and, again, stick to it. Given that files are, by default, sorted aphanumerically, if you use this format `YYYY-MM--DD` your files will be organised chronologically. Be aware that files from other sources might use different date conventions, e.g. reversing month and day.
+* Avoid spaces. If you start referring to files programmatically, process them through software or move them through the command line, it may cause you (or others using different operating system environments) a headache to have spaces in your filenames. Instead of spaces, you could use underscores (_), hyphens (-) or camel case (CapitaliseEachWord). Decide on what you will use and stick to it. 
+* Also steer clear of special symbols as these can have other meanings in some contexts, or on other operating systems (\/:*?"<>|")
+* Don't start with an asterisk (*) as this creates a hidden file that will not appear by default in your file explorer or finder window.
+* Also steer clear of starting a filename with '.' as some operating systems such as Linux will interpret this as a hidden file which may puzzle others when it fails to appear.
+* Choose a format for dates and, again, stick to it. Given that files are, by default, sorted alphanumerically, if you use this format `YYYY-MM-DD` your files will be organised chronologically. Be aware that files from other sources might use different date conventions, e.g. reversing month and day.
 
 ## Which files is this?
 There are various approaches to version control. You might have heard of git which is universally used for code. If you are using naming conventions to distinguish between different versions of files, the permise is similar to above, choose a convention, write it, and stick to it.
+In some applications, such as Geographic Information Systems, a working set of data is spread across potentially many files; in such cases it might be worth using a folder naming convention to indicate a consistent version of a set of files.
 
 Some tips:
 * Use the 'v-syntax' or semantic versioning. For example at the end of the filename at `_v1`, then `_v2` and so on (or `_v01` if you expect to have more than 9 versions). If you would like to be more granular, use semantic version, where you use 3 numbers seperated by full stops to stand for Major version, minor version and patch (small update). So, your first version might be `_1.0.0`, a small update might be `_1.0.1`. You might then do a manjor update and move to `_2.0.0`.

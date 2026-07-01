@@ -1,0 +1,4 @@
+name,filename
+filename2,/absolute/path/filaname.dat,1
+File Name 3,/different/absolute/path/filaname1.dat,1.0
+Not a File Name,relative/path/other.txt,1;0

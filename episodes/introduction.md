@@ -5,6 +5,7 @@ exercises: 10
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
+
 ## Questions
 
 - Why is data management important?
@@ -15,6 +16,7 @@ exercises: 10
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
+
 ## Objectives
 
 By the end of this episode, learners will be able to:
@@ -165,7 +167,6 @@ A file system provides:
 
 Without folders, every file on your computer would exist in one enormous list.
 
----
 
 # Storage Locations
 Files ultimately live on some form of digital storage.
@@ -178,7 +179,6 @@ Examples include:
 
 Regardless of where files are stored physically, they are typically presented to users through the same folder-and-file structure.As a result, learning to navigate folders is a transferable skill regardless of the storage system being used
 
----
 
 # Introducing the File Explorer
 
@@ -211,7 +211,7 @@ Open the Start Menu and search for:```textFile Explorer```
 - Press `Windows + E`
 - Search for "File Explorer" from the Start Menu
 
----
+
 
 # Anatomy of File Explorer
 A typical File Explorer window contains several important components.
@@ -257,14 +257,14 @@ Many file managers provide a search box.
 Search can be useful, but it should not be your primary strategy for finding files.
 A well-organised folder structure makes data easier to locate without relying on search.
 
----
+
 
 # Looking Ahead
 
 In the next episode we will examine the inherited dataset and begin improving its folder structure.
 Before we can organise the files, however, we first need to locate them.
 
----
+
 
 ### What to Show
 
@@ -284,6 +284,7 @@ Demonstrate:
 > Some participants may primarily use mobile devices and may have little experience navigating folders directly.
 >
 > Spend a few minutes explicitly demonstrating how files and folders are organised.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ## Exercise: Finding the Dataset
@@ -314,5 +315,5 @@ Using File Explorer:
 - File explorers provide a graphical way to navigate stored data.
 - Understanding how files are organised is a foundation for good data management.
 - A well-organised project should be understandable to collaborators and to your future self.
-````
+
 ::::::::::::::::::::::::::::::::::::::::::::::::

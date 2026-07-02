@@ -5,6 +5,7 @@ exercises: 10
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
+## Questions
 
 - Why is data management important?
 - How do computers organise files and folders?
@@ -14,6 +15,7 @@ exercises: 10
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
+## Objectives
 
 By the end of this episode, learners will be able to:
 
@@ -164,6 +166,7 @@ A file system provides:
 Without folders, every file on your computer would exist in one enormous list.
 
 ---
+
 # Storage Locations
 Files ultimately live on some form of digital storage.
 Examples include:
@@ -174,6 +177,7 @@ Examples include:
 - Cloud storage
 
 Regardless of where files are stored physically, they are typically presented to users through the same folder-and-file structure.As a result, learning to navigate folders is a transferable skill regardless of the storage system being used
+
 ---
 
 # Introducing the File Explorer
@@ -257,7 +261,8 @@ A well-organised folder structure makes data easier to locate without relying on
 
 # Looking Ahead
 
-In the next episode we will examine the inherited dataset and begin improving its folder structure.Before we can organise the files, however, we first need to locate them.
+In the next episode we will examine the inherited dataset and begin improving its folder structure.
+Before we can organise the files, however, we first need to locate them.
 
 ---
 

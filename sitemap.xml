@@ -19,6 +19,21 @@
     <loc>https://carpentries.github.io/workbench-template-md/citation.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/data-formats.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/deleting-data.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/documentation.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/file-names.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/file-structures.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/images.html</loc>
   </url>
   <url>
@@ -43,6 +58,21 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/citation.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/data-formats.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/deleting-data.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/documentation.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/file-names.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/file-structures.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor/images.html</loc>
   </url>
   <url>
@@ -64,6 +94,15 @@
     <loc>https://carpentries.github.io/workbench-template-md/instructor/reference.html</loc>
   </url>
   <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/storing-data.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/tabular-data.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/instructor/transferring-data.html</loc>
+  </url>
+  <url>
     <loc>https://carpentries.github.io/workbench-template-md/instructor-notes.html</loc>
   </url>
   <url>
@@ -77,5 +116,14 @@
   </url>
   <url>
     <loc>https://carpentries.github.io/workbench-template-md/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/storing-data.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/tabular-data.html</loc>
+  </url>
+  <url>
+    <loc>https://carpentries.github.io/workbench-template-md/transferring-data.html</loc>
   </url>
 </urlset>

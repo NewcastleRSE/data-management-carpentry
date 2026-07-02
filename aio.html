@@ -296,7 +296,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="transferring-data.html">6. Transferring data</a>
+        <a href="transferring-data.html">6. Storing and Transferring Data Efficiently</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -3026,7 +3026,7 @@ dedicated Carpentries Git workshops.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div></section><section id="aio-transferring-data"><p>Content from <a href="transferring-data.html">Transferring data</a></p>
+</div></section><section id="aio-transferring-data"><p>Content from <a href="transferring-data.html">Storing and Transferring Data Efficiently</a></p>
 <hr>
 <p>Last updated on 2026-07-02 |
 
@@ -3041,8 +3041,15 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>
-</li></ul>
+<ul>
+<li>Why do some datasets take up more storage than others?</li>
+<li>How can I measure the size of my data?</li>
+<li>What is file compression and when should I use it?</li>
+<li>When is changing file format an appropriate solution?</li>
+<li>What are the best ways to transfer data between collaborators?</li>
+<li>How can I reduce storage requirements without losing important
+information?</li>
+</ul>
 </div>
 </div>
 </div>
@@ -3050,23 +3057,603 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>
-</li></ul>
+<p>By the end of this episode, learners will be able to:</p>
+<ul>
+<li>Determine the size of files and folders using a graphical file
+browser.</li>
+<li>Explain what file compression is and how it works.</li>
+<li>Compress files and folders using common desktop operating
+systems.</li>
+<li>Identify situations where compression is useful and where it is
+not.</li>
+<li>Recognise that file formats can affect storage requirements.</li>
+<li>Evaluate different methods for transferring data.</li>
+<li>Choose an appropriate transfer method based on data size and project
+requirements.</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<div class="section level1">
+<h1 id="the-problem-the-data-is-too-big">The Problem: The Data Is Too Big<a class="anchor" aria-label="anchor" href="#the-problem-the-data-is-too-big"></a>
+</h1>
+<p>Over the last few episodes we have:</p>
+<ul>
+<li>Organised the folder structure</li>
+<li>Improved file names</li>
+<li>Added documentation</li>
+<li>Chosen an appropriate storage location</li>
+</ul>
+<p>The project is now much easier to understand.</p>
+<p>Unfortunately, a new problem has appeared.</p>
+<p>Your supervisor asks:</p>
+<blockquote>
+<p>“Can you send the cleaned dataset to our collaborator?”</p>
+</blockquote>
+<p>The collaborator has an older lab computer that:</p>
+<ul>
+<li>Has very little free storage space</li>
+<li>Has a slow internet connection</li>
+<li>Cannot easily accept very large files by email</li>
+</ul>
+<p>You need to make the dataset as small and transferable as possible
+without damaging the data.</p>
+<p>This situation is common in research.</p>
+<p>As projects grow, researchers often encounter:</p>
+<ul>
+<li>Storage quotas</li>
+<li>Slow file transfers</li>
+<li>Limited network bandwidth</li>
+<li>Data archives that are too large to share easily</li>
+</ul>
+<p>Before we can solve these problems, we need to understand how data
+size is measured.</p>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="discussion-how-could-we-make-the-data-smaller">Discussion: How Could We Make The Data Smaller?<a class="anchor" aria-label="anchor" href="#discussion-how-could-we-make-the-data-smaller"></a>
+</h1>
+<blockquote>
+<h2 id="discussion">Discussion</h2>
+<p>Working in pairs:</p>
+<p>What options can you think of for reducing the amount of storage used
+by a dataset?</p>
+<p>Consider:</p>
+<ul>
+<li>Temporary files</li>
+<li>File formats</li>
+<li>Compression</li>
+<li>Duplicate data</li>
+<li>Images and media</li>
+</ul>
+<p>Write down as many ideas as possible.</p>
+</blockquote>
+<p>After a few minutes, discuss responses as a group.</p>
+<p>Common answers may include:</p>
+<ul>
+<li>Compressing files</li>
+<li>Deleting duplicates</li>
+<li>Removing temporary files</li>
+<li>Choosing more efficient file formats</li>
+<li>Archiving old outputs</li>
+<li>Resizing images</li>
+<li>Removing unnecessary intermediate results</li>
+</ul>
+<blockquote>
+<h2 id="instructor-note">Instructor Note</h2>
+<p>Learners often jump immediately to deleting files.</p>
+<p>Emphasise that deletion is usually the last option.</p>
+<p>Compression and improved organisation often reduce storage
+requirements significantly without losing information.</p>
+</blockquote>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="understanding-file-size">Understanding File Size<a class="anchor" aria-label="anchor" href="#understanding-file-size"></a>
+</h1>
+<p>Before making data smaller, we need to know:</p>
+<blockquote>
+<p>How large is it now?</p>
+</blockquote>
+<p>In data management we often measure storage using units such as:</p>
+<pre class="text"><code><span><span class="fu">KB</span>  <span class="op">(</span><span class="va">Kilobyte</span><span class="op">)</span></span>
+<span><span class="fu">MB</span>  <span class="op">(</span><span class="va">Megabyte</span><span class="op">)</span></span>
+<span><span class="fu">GB</span>  <span class="op">(</span><span class="va">Gigabyte</span><span class="op">)</span></span>
+<span><span class="fu">TB</span>  <span class="op">(</span><span class="va">Terabyte</span><span class="op">)</span></span></code></pre>
+<p>Each step represents a large increase in storage requirements.</p>
+<p>For example:</p>
+<pre class="text"><code>1,000 MB ≈ 1 GB
+1,000 GB ≈ 1 TB</code></pre>
+<p>As datasets grow, even small improvements can translate into large
+storage savings.</p>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="what-does-file-size-represent">What Does File Size Represent?<a class="anchor" aria-label="anchor" href="#what-does-file-size-represent"></a>
+</h1>
+<p>Every file occupies space on a storage device.</p>
+<p>Files are ultimately stored as binary data on:</p>
+<ul>
+<li>Hard drives</li>
+<li>Solid state drives (SSDs)</li>
+<li>Network storage</li>
+<li>Cloud storage</li>
+</ul>
+<p>When File Explorer reports that a file is:</p>
+<pre class="text"><code>250 MB</code></pre>
+<p>it is telling us approximately how much storage capacity that file
+occupies.</p>
+<p>Larger files:</p>
+<ul>
+<li>Require more storage</li>
+<li>Take longer to transfer</li>
+<li>Take longer to back up</li>
+<li>May exceed attachment limits</li>
+</ul>
+<p>Understanding file sizes helps us make informed decisions.</p>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="demonstration-viewing-file-sizes">Demonstration: Viewing File Sizes<a class="anchor" aria-label="anchor" href="#demonstration-viewing-file-sizes"></a>
+</h1>
+<div class="section level2">
+<h2 id="individual-files">Individual Files<a class="anchor" aria-label="anchor" href="#individual-files"></a>
 </h2>
-<hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>…</p>
+<p>Using File Explorer:</p>
+<ol style="list-style-type: decimal">
+<li>Navigate to the dataset.</li>
+<li>Right-click a file.</li>
+<li>Select <strong>Properties</strong>.</li>
+<li>Observe the reported file size.</li>
+</ol>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="folders">Folders<a class="anchor" aria-label="anchor" href="#folders"></a>
+</h2>
+<p>To view the size of a folder:</p>
+<ol style="list-style-type: decimal">
+<li>Right-click the folder.</li>
+<li>Select <strong>Properties</strong>.</li>
+<li>Wait while the operating system calculates the total size.</li>
+</ol>
+<p>This may take a few moments for large datasets.</p>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="alternative-file-explorer-columns">Alternative: File Explorer Columns<a class="anchor" aria-label="anchor" href="#alternative-file-explorer-columns"></a>
+</h2>
+<p>Switch File Explorer to <strong>Details View</strong>.</p>
+<p>The size column can be displayed for many file types.</p>
+<p>This can make large files easier to identify.</p>
+<blockquote>
+<h2 id="instructor-note-1">Instructor Note</h2>
+<p>Demonstrate both approaches.</p>
+<p>Learners often find folder-size properties particularly useful
+because they rarely realise the information is available.</p>
+</blockquote>
+<hr>
+</div>
+</div>
+<div class="section level1">
+<h1 id="file-compression">File Compression<a class="anchor" aria-label="anchor" href="#file-compression"></a>
+</h1>
+<p>One of the most common ways to reduce storage requirements is
+compression.</p>
+<div class="section level2">
+<h2 id="what-is-compression">What Is Compression?<a class="anchor" aria-label="anchor" href="#what-is-compression"></a>
+</h2>
+<p>Compression reduces the amount of storage required by a file without
+changing its contents.</p>
+<p>It works by storing information more efficiently.</p>
+<p>For example:</p>
+<pre class="text"><code><span><span class="va">AAAAAAABBBBBBBBBCCCCCCCC</span></span></code></pre>
+<p>contains repeated patterns.</p>
+<p>A compression tool can represent these patterns more efficiently than
+storing every character individually.</p>
+<p>The result is a smaller file.</p>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="lossless-and-lossy-compression">Lossless and Lossy Compression<a class="anchor" aria-label="anchor" href="#lossless-and-lossy-compression"></a>
+</h2>
+<p>There are two broad forms of compression.</p>
+<div class="section level3">
+<h3 id="lossless-compression">Lossless Compression<a class="anchor" aria-label="anchor" href="#lossless-compression"></a>
+</h3>
+<p>Lossless compression preserves all information.</p>
+<p>After decompression:</p>
+<pre class="text"><code>Original File == Restored File</code></pre>
+<p>Examples:</p>
+<ul>
+<li>ZIP</li>
+<li>GZIP</li>
+<li>7Z</li>
+</ul>
+<p>These are commonly used for research data.</p>
+<hr>
+</div>
+<div class="section level3">
+<h3 id="lossy-compression">Lossy Compression<a class="anchor" aria-label="anchor" href="#lossy-compression"></a>
+</h3>
+<p>Lossy compression achieves greater size reduction by discarding
+information.</p>
+<p>Examples:</p>
+<ul>
+<li>JPEG images</li>
+<li>MP3 audio</li>
+<li>Some video formats</li>
+</ul>
+<p>The resulting file may be smaller, but some original information has
+been lost.</p>
+<p>For research data, lossy compression should be used with care.</p>
+<hr>
+</div>
+</div>
+</div>
+<div class="section level1">
+<h1 id="demonstration-compressing-a-folder">Demonstration: Compressing A Folder<a class="anchor" aria-label="anchor" href="#demonstration-compressing-a-folder"></a>
+</h1>
+<div class="section level2">
+<h2 id="windows">Windows<a class="anchor" aria-label="anchor" href="#windows"></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Right-click the folder.</li>
+<li>Select:</li>
+</ol>
+<pre class="text"><code>Send To → Compressed (zipped) Folder</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>A ZIP file will be created.</li>
+</ol>
+<p>For example:</p>
+<pre class="text"><code><span><span class="va">clean_data.zip</span></span></code></pre>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="macos">macOS<a class="anchor" aria-label="anchor" href="#macos"></a>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Right-click the folder.</li>
+<li>Choose:</li>
+</ol>
+<pre class="text"><code><span><span class="va">Compress</span></span></code></pre>
+<p>A ZIP archive will be created.</p>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="linux">Linux<a class="anchor" aria-label="anchor" href="#linux"></a>
+</h2>
+<p>Most desktop file managers provide a similar option:</p>
+<pre class="text"><code>Right-click → Compress</code></pre>
+<p>The exact wording varies between desktop environments.</p>
+<blockquote>
+<h2 id="instructor-note-2">Instructor Note</h2>
+<p>Demonstrate compression on the cleaned project directory.</p>
+<p>Show both the original folder size and the compressed archive
+size.</p>
+</blockquote>
+<hr>
+</div>
+</div>
+<div class="section level1">
+<h1 id="when-should-you-compress-data">When Should You Compress Data?<a class="anchor" aria-label="anchor" href="#when-should-you-compress-data"></a>
+</h1>
+<p>Compression is often useful when:</p>
+<ul>
+<li>Archiving data</li>
+<li>Transferring data</li>
+<li>Emailing files</li>
+<li>Backing up projects</li>
+</ul>
+<p>Examples:</p>
+<pre class="text"><code><span><span class="va">project.zip</span></span>
+<span><span class="va">results.zip</span></span>
+<span><span class="va">archive.zip</span></span></code></pre>
+<p>Compression can significantly reduce transfer times.</p>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="when-should-you-avoid-compression">When Should You Avoid Compression?<a class="anchor" aria-label="anchor" href="#when-should-you-avoid-compression"></a>
+</h1>
+<p>Compression is not always beneficial.</p>
+<p>For example:</p>
+<ul>
+<li>Actively edited files</li>
+<li>Frequently accessed files</li>
+<li>Files already compressed</li>
+</ul>
+<p>Many formats already include compression.</p>
+<p>Examples:</p>
+<pre class="text"><code><span><span class="va">jpg</span></span>
+<span><span class="va">png</span></span>
+<span><span class="va">mp4</span></span>
+<span><span class="va">mp3</span></span>
+<span><span class="va">pdf</span></span></code></pre>
+<p>Compressing these files often produces very little size
+reduction.</p>
+<blockquote>
+<h2 id="callout">Callout</h2>
+<p>If a file format is already compressed, zipping it again may provide
+almost no additional benefit.</p>
+</blockquote>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="exercise-how-much-space-can-we-save">Exercise: How Much Space Can We Save?<a class="anchor" aria-label="anchor" href="#exercise-how-much-space-can-we-save"></a>
+</h1>
+<blockquote>
+<h2 id="challenge">Challenge</h2>
+<p>Determine the size of the cleaned project folder.</p>
+<p>Then:</p>
+<ol style="list-style-type: decimal">
+<li>Create a ZIP archive.</li>
+<li>Measure the size of the ZIP file.</li>
+<li>Calculate the reduction in size.</li>
+</ol>
+<p>Discuss:</p>
+<ul>
+<li>Was the reduction larger or smaller than expected?</li>
+<li>Why do you think this happened?</li>
+</ul>
+</blockquote>
+<blockquote>
+<h2 id="solution">Solution</h2>
+<p>Results will vary depending on the data.</p>
+<p>Text files and spreadsheets often compress well.</p>
+<p>Images, video, and already-compressed formats may show little
+improvement.</p>
+</blockquote>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="file-formats-and-storage">File Formats And Storage<a class="anchor" aria-label="anchor" href="#file-formats-and-storage"></a>
+</h1>
+<p>Compression is not the only way to reduce file size.</p>
+<p>Sometimes the format itself matters.</p>
+<p>Different file formats store information differently.</p>
+<p>For example:</p>
+<pre class="text"><code><span><span class="va">report.docx</span></span>
+<span><span class="va">report.pdf</span></span>
+<span><span class="va">report.txt</span></span></code></pre>
+<p>all contain text but may occupy different amounts of storage.</p>
+<p>Similarly:</p>
+<pre class="text"><code><span><span class="va">image.bmp</span></span>
+<span><span class="va">image.png</span></span>
+<span><span class="va">image.jpg</span></span></code></pre>
+<p>can have dramatically different sizes.</p>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="an-example-bitmap-images">An Example: Bitmap Images<a class="anchor" aria-label="anchor" href="#an-example-bitmap-images"></a>
+</h1>
+<p>Suppose we save the same image as:</p>
+<pre class="text"><code><span><span class="va">sample.bmp</span></span></code></pre>
+<p>A bitmap stores every pixel explicitly.</p>
+<p>This often results in a large file.</p>
+<p>The same image saved as:</p>
+<pre class="text"><code><span><span class="va">sample.png</span></span></code></pre>
+<p>may be significantly smaller because PNG uses compression
+internally.</p>
+<p>The image looks the same, but storage requirements differ.</p>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="trade-offs">Trade-Offs<a class="anchor" aria-label="anchor" href="#trade-offs"></a>
+</h1>
+<p>Smaller files are not always better.</p>
+<p>Changing formats may affect:</p>
+<ul>
+<li>Data quality</li>
+<li>Software compatibility</li>
+<li>Metadata support</li>
+<li>Long-term preservation</li>
+</ul>
+<p>For example:</p>
+<pre class="text"><code><span><span class="va">CSV</span></span></code></pre>
+<p>is highly portable and easy to share.</p>
+<p>However:</p>
+<pre class="text"><code><span><span class="va">Excel</span></span></code></pre>
+<p>supports multiple sheets and richer formatting.</p>
+<p>Neither format is universally superior.</p>
+<p>The best format depends on your intended use.</p>
+<blockquote>
+<h2 id="looking-ahead">Looking Ahead</h2>
+<p>We will discuss choosing data formats in much more detail in a later
+episode.</p>
+</blockquote>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="discussion-how-have-you-shared-data-before">Discussion: How Have You Shared Data Before?<a class="anchor" aria-label="anchor" href="#discussion-how-have-you-shared-data-before"></a>
+</h1>
+<blockquote>
+<h2 id="discussion-1">Discussion</h2>
+<p>Think about the last time you shared research data.</p>
+<p>How did you do it?</p>
+<p>Examples might include:</p>
+<ul>
+<li>Email attachments</li>
+<li>OneDrive links</li>
+<li>SharePoint</li>
+<li>USB drives</li>
+<li>Shared network storage</li>
+<li>Cloud platforms</li>
+</ul>
+<p>What limitations did you encounter?</p>
+</blockquote>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="methods-for-transferring-data">Methods For Transferring Data<a class="anchor" aria-label="anchor" href="#methods-for-transferring-data"></a>
+</h1>
+<p>Different transfer methods are appropriate for different
+situations.</p>
+<hr>
+<div class="section level2">
+<h2 id="email-attachments">Email Attachments<a class="anchor" aria-label="anchor" href="#email-attachments"></a>
+</h2>
+<p>Suitable for:</p>
+<ul>
+<li>Small files</li>
+<li>Documents</li>
+<li>Individual figures</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li>Simple</li>
+<li>Familiar</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li>Attachment size limits</li>
+<li>Duplicate copies</li>
+<li>Difficult version management</li>
+</ul>
+<p>Generally unsuitable for large datasets.</p>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="onedrive-or-sharepoint-links">OneDrive or SharePoint Links<a class="anchor" aria-label="anchor" href="#onedrive-or-sharepoint-links"></a>
+</h2>
+<p>Suitable for:</p>
+<ul>
+<li>Collaborative projects</li>
+<li>Medium-sized datasets</li>
+<li>Shared documents</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li>Shared access</li>
+<li>Version history in many cases</li>
+<li>No attachment limits</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li>Requires permission management</li>
+<li>Can become difficult for very large datasets</li>
+</ul>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="shared-project-storage">Shared Project Storage<a class="anchor" aria-label="anchor" href="#shared-project-storage"></a>
+</h2>
+<p>Suitable for:</p>
+<ul>
+<li>Ongoing collaborations</li>
+<li>Research teams</li>
+<li>Institutional projects</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li>Centralised location</li>
+<li>Controlled access</li>
+<li>Common source of truth</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li>Access may be limited to project members</li>
+</ul>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="globus">Globus<a class="anchor" aria-label="anchor" href="#globus"></a>
+</h2>
+<p>Globus is commonly used in research environments for transferring
+large datasets.</p>
+<p>Suitable for:</p>
+<ul>
+<li>Large research datasets</li>
+<li>HPC environments</li>
+<li>Multi-gigabyte or multi-terabyte transfers</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li>Reliable</li>
+<li>Designed for research</li>
+<li>Handles interruptions well</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li>May require institutional access</li>
+<li>More complex than simple file sharing</li>
+</ul>
+<hr>
+</div>
+</div>
+<div class="section level1">
+<h1 id="a-note-on-command-line-tools">A Note On Command-Line Tools<a class="anchor" aria-label="anchor" href="#a-note-on-command-line-tools"></a>
+</h1>
+<p>Large-scale research computing environments often use command-line
+transfer tools such as:</p>
+<pre class="text"><code><span><span class="va">rsync</span></span>
+<span><span class="va">scp</span></span>
+<span><span class="va">sftp</span></span></code></pre>
+<p>These tools are extremely powerful and commonly used on HPC
+systems.</p>
+<p>However, they are beyond the scope of this lesson.</p>
+<blockquote>
+<h2 id="further-learning">Further Learning</h2>
+<p>Learners interested in transferring data to servers or HPC systems
+should consider attending:</p>
+<ul>
+<li>Carpentries Shell/Bash workshops</li>
+<li>HPC training courses</li>
+</ul>
+<p>These courses cover tools such as <code>rsync</code> in more
+detail.</p>
+</blockquote>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="exercise-choosing-a-transfer-method">Exercise: Choosing A Transfer Method<a class="anchor" aria-label="anchor" href="#exercise-choosing-a-transfer-method"></a>
+</h1>
+<blockquote>
+<h2 id="challenge-1">Challenge</h2>
+<p>Match the transfer method to the scenario.</p>
+<ol style="list-style-type: decimal">
+<li>A 5 MB document for a colleague.</li>
+<li>A 300 MB dataset shared among a research group.</li>
+<li>A 2 TB dataset for HPC processing.</li>
+<li>A published dataset accompanying a paper.</li>
+</ol>
+<p>Discuss your choices with a partner.</p>
+</blockquote>
+<blockquote>
+<h2 id="solution-1">Solution</h2>
+<p>Example answers:</p>
+<ol style="list-style-type: decimal">
+<li>Email attachment.</li>
+<li>OneDrive, SharePoint, or shared project storage.</li>
+<li>Globus or institutional research storage.</li>
+<li>Repository such as Zenodo.</li>
+</ol>
+<p>The important consideration is matching tools to scale and
+purpose.</p>
+</blockquote>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="looking-ahead-1">Looking Ahead<a class="anchor" aria-label="anchor" href="#looking-ahead-1"></a>
+</h1>
+<p>We now know how to:</p>
+<ul>
+<li>Measure storage usage</li>
+<li>Compress data</li>
+<li>Reduce transfer sizes</li>
+<li>Choose transfer methods</li>
+</ul>
+<p>The next challenge is deciding what data should actually be kept.</p>
+<p>In the next episode we will explore:</p>
+<ul>
+<li>Data lifecycles</li>
+<li>Archiving</li>
+<li>Retention policies</li>
+<li>Digital waste</li>
+</ul>
+<p>and discuss how to make sensible decisions about what data should
+remain part of a project and what can be removed.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -3074,8 +3661,23 @@ Carpentries Workbench</a> for full documentation.</p>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>
-</li></ul>
+<ul>
+<li>Storage space and transfer speed are important practical
+considerations in research.</li>
+<li>File size can be measured using file browser tools.</li>
+<li>Compression reduces file size and is particularly useful for
+archiving and transfer.</li>
+<li>Lossless compression preserves data and is generally preferred for
+research data.</li>
+<li>Some file formats are more storage-efficient than others.</li>
+<li>Choosing a different file format may involve trade-offs.</li>
+<li>Different transfer methods are appropriate for different dataset
+sizes.</li>
+<li>Large research datasets often require specialist transfer
+tools.</li>
+<li>Understanding your data helps you make informed decisions about
+storage and transfer.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -3083,7 +3685,7 @@ Carpentries Workbench</a> for full documentation.</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section><section id="aio-deleting-data"><p>Content from <a href="deleting-data.html">Deleting data and keeping things clean</a></p>
+</div></section><section id="aio-deleting-data"><p>Content from <a href="deleting-data.html">Deleting data and keeping things clean</a></p>
 <hr>
 <p>Last updated on 2026-07-02 |
 

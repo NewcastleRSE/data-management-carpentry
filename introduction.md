@@ -1,5 +1,5 @@
 ---
-title: "Using Markdown"
+title: "Data management best practice"
 teaching: 10 # teaching time in minutes
 exercises: 2 # exercise time in minutes
 ---

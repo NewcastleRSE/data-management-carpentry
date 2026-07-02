@@ -84,7 +84,7 @@ learners:
 instructors: 
 
 # Learner Profiles
-profiles: Msc students, PhD students, Post Doctoral Researchers
+profiles:
 
 # Customisation ---------------------------------------------
 #

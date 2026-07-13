@@ -333,7 +333,7 @@
 <div class="accordion accordion-flush" id="accordionFlush10">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading10">
-        <a href="data-formats.html">9. Choosing the right file format</a>
+        <a href="data-formats.html">9. Choosing a Data Storage Format</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -937,7 +937,7 @@ without asking you.</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <blockquote>
 <h2 id="instructor-note">Instructor Note</h2>
@@ -4462,12 +4462,12 @@ any links that you are not going to use.
  -->
 </div>
 </div>
-</div></section><section id="aio-data-formats"><p>Content from <a href="data-formats.html">Choosing the right file format</a></p>
+</div></section><section id="aio-data-formats"><p>Content from <a href="data-formats.html">Choosing a Data Storage Format</a></p>
 <hr>
-<p>Last updated on 2026-07-02 |
+<p>Last updated on 2026-07-13 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/data-formats.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
-<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
+<p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 60 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -4478,8 +4478,16 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner">
 <h3 class="card-title">Questions</h3>
-<ul><li>
-</li></ul>
+<ul>
+<li>How does a file extension determine how data is stored and
+read?</li>
+<li>What factors should I consider when choosing a data format for my
+research?</li>
+<li>What are the differences between discipline-specific and
+domain-agnostic formats?</li>
+<li>What are the risks of converting files between different
+formats?</li>
+</ul>
 </div>
 </div>
 </div>
@@ -4487,23 +4495,253 @@ any links that you are not going to use.
 <div class="card-body">
 <div class="inner bordered">
 <h3 class="card-title">Objectives</h3>
-<ul><li>
-</li></ul>
+<p>By the end of this episode, learners will be able to:</p>
+<ul>
+<li>Explain how filename extensions correspond to underlying data
+structures.</li>
+<li>Evaluate the trade-offs (portability, metadata support, file size)
+of different data formats.</li>
+<li>Identify common domain-specific (e.g., <code>.nii</code>,
+<code>.fastq</code>) and multi-discipline cross-cutting formats (e.g.,
+HDF5).</li>
+<li>Demonstrate the impact of format conversion on file size and data
+fidelity using image files.</li>
+</ul>
 </div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
+<div class="section level1">
+<h1 id="the-problem-the-wrong-format-can-break-your-data">The Problem: The Wrong Format Can Break Your Data<a class="anchor" aria-label="anchor" href="#the-problem-the-wrong-format-can-break-your-data"></a>
+</h1>
+<p>Over the last few episodes, we have cleaned up our files, established
+rules for deleting digital waste, and structured our tabular data.
+However, a major decision remains before we wrap up our data management
+workflow:</p>
+<blockquote>
+<p>What format should we save our data in?</p>
+</blockquote>
+<p>Often, we default to whatever software we have open—saving tables as
+Excel workbooks (<code>.xlsx</code>) or text as Word documents
+(<code>.docx</code>). But the format you choose dictates who can open
+your data, how large the file will be on disk, whether metadata can be
+embedded safely, and if your data will still be readable in 10 or 20
+years.</p>
+<p>Choosing the wrong format can cause unreadable files, missing
+metadata, or a permanent loss of data fidelity.</p>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="understanding-file-formats-and-extensions">Understanding File Formats and Extensions<a class="anchor" aria-label="anchor" href="#understanding-file-formats-and-extensions"></a>
+</h1>
+<p>A file format is a standardized way that information is encoded for
+storage in a computer file.</p>
+<p>The suffix at the end of a filename (e.g., <code>.csv</code>,
+<code>.xlsx</code>, <code>.txt</code>), known as the <strong>file
+extension</strong>, tells the operating system—and you—which application
+is expected to read that specific layout of bits.</p>
+<div class="section level3">
+<h3 id="common-formats-and-trade-offs">Common Formats and Trade-Offs<a class="anchor" aria-label="anchor" href="#common-formats-and-trade-offs"></a>
+</h3>
+<ul>
+<li>
+<strong>CSV (Comma-Separated Values - <code>.csv</code>):</strong> A
+plain-text format where data fields are separated by commas. It is
+highly portable, open-source, and readable by almost any programming
+language or spreadsheet tool. However, it cannot store multiple sheets,
+cell formatting, or formula logic.</li>
+<li>
+<strong>Excel Workbook (<code>.xlsx</code>):</strong> A proprietary,
+compressed binary format owned by Microsoft. It is excellent for
+multi-sheet organization, complex formulas, and built-in plotting. The
+trade-off is that it requires specific software to parse cleanly, can
+introduce automated corruption (such as converting gene names into
+dates), and is less suitable for long-term data archiving.</li>
+</ul>
+<hr>
+</div>
+</div>
+<div class="section level1">
+<h1 id="discussion-what-to-consider-when-choosing-a-format">Discussion: What to Consider When Choosing a Format?<a class="anchor" aria-label="anchor" href="#discussion-what-to-consider-when-choosing-a-format"></a>
+</h1>
+<p>Before looking at complex formats, let’s establish a set of
+requirements for evaluating how we store data.</p>
+<blockquote>
+<h2 id="discussion">Discussion</h2>
+<p>Working in pairs or small groups: Imagine you are starting a new
+3-year research project that will generate thousands of files. What
+factors should you consider when deciding what file format to
+standardize on? Take 5 minutes to think about compatibility, long-term
+access, and data complexity.</p>
+</blockquote>
+<p><em>After a few minutes, gather responses from the room.</em></p>
+<hr>
+<div class="section level2">
+<h2 id="the-format-evaluation-checklist">The Format Evaluation Checklist<a class="anchor" aria-label="anchor" href="#the-format-evaluation-checklist"></a>
 </h2>
-<hr class="half-width">
-<p>This is a lesson created via The Carpentries Workbench. It is written
-in <a href="https://pandoc.org/MANUAL.txt" class="external-link">Pandoc-flavored Markdown</a>
-for static files and <a href="https://rmarkdown.rstudio.com/" class="external-link">R
-Markdown</a> for dynamic files that can render code into output. Please
-refer to the <a href="https://carpentries.github.io/sandpaper-docs/" class="external-link">Introduction to The
-Carpentries Workbench</a> for full documentation.</p>
-<p>…</p>
+<p>When choosing a format, expect to balance these core pillars:</p>
+<ul>
+<li>
+<strong>Open vs. Proprietary:</strong> Can anyone open this file
+using free software (like <code>.csv</code>, <code>.txt</code>), or does
+it require a paid software license (like <code>.mat</code> for MATLAB,
+<code>.sas7bdat</code> for SAS)? Open formats are generally preferred
+for FAIR data sharing.</li>
+<li>
+<strong>Self-Documentation and Metadata:</strong> Does the format
+allow you to embed metadata (data about the data) directly within the
+file? For example, can you include system headers, timestamps, and
+sensor configurations at the top of the file before the raw data matrix
+begins?</li>
+<li>
+<strong>Data Complexity and Structure:</strong> Is your data flat
+and two-dimensional (a simple table), or is it hierarchical and
+multi-dimensional (such as time-series mapping across a 3D spatial
+grid)?</li>
+</ul>
+<hr>
+</div>
+</div>
+<div class="section level1">
+<h1 id="domain-specific-vs--cross-discipline-formats">Domain-Specific vs. Cross-Discipline Formats<a class="anchor" aria-label="anchor" href="#domain-specific-vs--cross-discipline-formats"></a>
+</h1>
+<p>Different types of research demand different types of file
+architectures. Some formats are highly specialized, while others cross
+scientific boundaries.</p>
+<div class="section level3">
+<h3 id="discipline-specific-formats">1. Discipline-Specific Formats<a class="anchor" aria-label="anchor" href="#discipline-specific-formats"></a>
+</h3>
+<p>Many fields have developed unique file formats tailored to their
+specific instrumentation and data scale requirements:</p>
+<ul>
+<li>
+<strong>Neuroscience / Medical Imaging:</strong> <code>.nii</code>
+(NIfTI - Neuroimaging Informatics Technology Initiative). Used to store
+3D and 4D brain scans from MRI machines, embedding spatial orientation
+metadata directly into the file header.</li>
+<li>
+<strong>Genomics / Bioinformatics:</strong> <code>.fastq</code>
+(FASTQ format). A text-based format for storing both a biological
+sequence (like DNA/RNA reads) and its corresponding quality scores,
+tightly packed for fast programmatic querying.</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="cross-discipline-formats-e-g--hdf5">2. Cross-Discipline Formats (e.g., HDF5)<a class="anchor" aria-label="anchor" href="#cross-discipline-formats-e-g--hdf5"></a>
+</h3>
+<p>Some formats are designed to solve the problem of multi-dimensional
+data across entirely different fields.</p>
+<ul>
+<li>
+<strong>HDF5 (Hierarchical Data Format v5 - <code>.h5</code> or
+<code>.hdf5</code>):</strong> This open format behaves like a “file
+system within a single file.” It allows you to store massive,
+multi-dimensional arrays of numbers alongside rich, custom metadata
+attributes.</li>
+<li>
+<strong>Who uses it?</strong> Climate scientists use HDF5 for
+satellite weather modeling, physicists use it for electron microscopy
+data, and machine learning researchers use it to store deep neural
+network weights.</li>
+</ul>
+<hr>
+</div>
+</div>
+<div class="section level1">
+<h1 id="discussion-formats-in-your-research-field">Discussion: Formats in Your Research Field<a class="anchor" aria-label="anchor" href="#discussion-formats-in-your-research-field"></a>
+</h1>
+<blockquote>
+<h2 id="discussion-shared-experiences">Discussion: Shared
+Experiences</h2>
+<p>Take 3 minutes to talk with the person next to you: 1. What are the
+primary file formats you generate or interact with in your specific
+research domain? 2. Are these formats open and easy to share, or do they
+require specialized, proprietary instruments or software to read?</p>
+</blockquote>
+<hr>
+</div>
+<div class="section level1">
+<h1 id="the-dangers-of-format-conversion-data-fidelity-vs--size">The Dangers of Format Conversion (Data Fidelity vs. Size)<a class="anchor" aria-label="anchor" href="#the-dangers-of-format-conversion-data-fidelity-vs--size"></a>
+</h1>
+<p>Changing a data format can be a powerful way to reduce file size or
+improve software compatibility, but it can also be incredibly dangerous
+if you do not understand how the format handles information.</p>
+<p>This is easiest to demonstrate using <strong>image formats</strong>,
+which are widely used across sciences to capture figures, microscopy, or
+satellite imagery.</p>
+<div class="section level3">
+<h3 id="lossy-vs--lossless-formats">Lossy vs. Lossless Formats<a class="anchor" aria-label="anchor" href="#lossy-vs--lossless-formats"></a>
+</h3>
+<ul>
+<li>
+<strong>BMP (<code>.bmp</code>):</strong> A raw bitmap format. It
+saves the exact color data of every single pixel explicitly. It
+preserves 100% fidelity but results in massive file sizes.</li>
+<li>
+<strong>PNG (<code>.png</code>):</strong> A compressed,
+<strong>lossless</strong> format. It reduces the file size significantly
+using smart patterns, but when you open it, the image is mathematically
+identical to the original pixel-by-pixel.</li>
+<li>
+<strong>JPEG (<code>.jpg</code> / <code>.jpeg</code>):</strong> A
+compressed, <strong>lossy</strong> format. It achieves tiny file sizes
+by permanently throwing away visual information that the human eye is
+less likely to notice.</li>
+</ul>
+<hr>
+</div>
+<div class="section level2">
+<h2 id="exercise-comparing-image-conversion-and-fidelity">Exercise: Comparing Image Conversion and Fidelity<a class="anchor" aria-label="anchor" href="#exercise-comparing-image-conversion-and-fidelity"></a>
+</h2>
+<p>Let’s look at what happens when we convert a high-resolution
+microscopy image (<code>cell_sample.bmp</code>) into a space-saving JPEG
+format.</p>
+<blockquote>
+<h2 id="challenge-inspecting-the-artifacts">Challenge: Inspecting the
+Artifacts</h2>
+<ol style="list-style-type: decimal">
+<li>Open your operating system’s File Explorer or Finder and look at the
+file sizes of the following three identical-looking images:</li>
+</ol>
+<ul>
+<li>
+<code>cell_sample.bmp</code> (Size: <strong>12.5 MB</strong>)</li>
+<li>
+<code>cell_sample.png</code> (Size: <strong>2.1 MB</strong>)</li>
+<li>
+<code>cell_sample.jpg</code> (Size: <strong>350 KB</strong>)</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>Open <code>cell_sample.jpg</code> and zoom in closely (400% or
+higher) on high-contrast areas or fine edges. Compare it side-by-side
+with <code>cell_sample.bmp</code>.</li>
+</ol>
+<p><strong>Questions for Discussion:</strong> * What happened to the
+file size during the JPEG conversion? * What visual defects (compression
+artifacts) do you see around the fine details in the JPEG version? * Why
+is saving raw experimental images as JPEGs potentially dangerous for
+automated scientific analysis?</p>
+</blockquote>
+<blockquote>
+<h2 id="solution">Solution</h2>
+<ul>
+<li>
+<strong>File Size:</strong> The JPEG version is a fraction of the
+size of the original Bitmap, saving massive storage space.</li>
+<li>
+<strong>Fidelity Loss:</strong> Zooming in reveals blocky
+distortions and blurry halos (“artifacts”) around fine structures.</li>
+<li>
+<strong>Scientific Danger:</strong> Automated image processing
+scripts (e.g., counting cells, measuring pixel intensities) will read
+these compression artifacts as actual data or fail to detect faint
+structures entirely. <strong>Never use lossy compression formats (like
+JPEG) for raw analytical images.</strong>
+</li>
+</ul>
+</blockquote>
+<hr>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -4511,8 +4749,18 @@ Carpentries Workbench</a> for full documentation.</p>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>
-</li></ul>
+<ul>
+<li>Filename extensions guide the operating system on how to parse
+binary data.</li>
+<li>Prefer open data formats over proprietary ones to guarantee
+long-term accessibility and transparency.</li>
+<li>Formats like NIfTI and FASTQ serve specialized domain requirements,
+while HDF5 provides cross-discipline support for hierarchical data.</li>
+<li>Metadata should ideally be integrated directly within the data file
+format headers.</li>
+<li>Converting between formats can lead to permanent data corruption or
+loss of fidelity, especially when shifting to lossy formats.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -4520,7 +4768,8 @@ Carpentries Workbench</a> for full documentation.</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></section>
+</div>
+</div></section>
 </div>
     </main>
 </div>

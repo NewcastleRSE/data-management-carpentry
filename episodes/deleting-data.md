@@ -1,8 +1,8 @@
 ---
-
-## title: "What to Store and When to Remove"
+title: "What to Store and When to Remove"
 teaching: 30
 exercises: 25
+---
 
 :::::::::::::::::::::::::::::::::::::: questions
 

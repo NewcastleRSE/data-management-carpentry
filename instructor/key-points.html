@@ -309,7 +309,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="deleting-data.html">7. Deleting data and keeping things clean</a>
+        <a href="deleting-data.html">7. What to Store and When to Remove</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -321,7 +321,7 @@
 <div class="accordion accordion-flush" id="accordionFlush9">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading9">
-        <a href="tabular-data.html">8. Dealing with tabular data</a>
+        <a href="tabular-data.html">8. Best Practices for Tabular Data</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -452,13 +452,36 @@ sizes.</li>
 tools.</li>
 <li>Understanding your data helps you make informed decisions about
 storage and transfer.</li>
-</ul></section><section id="deleting-data"><h2 class="section-heading"><a href="deleting-data.html">Deleting data and keeping things clean</a></h2>
+</ul></section><section id="deleting-data"><h2 class="section-heading"><a href="deleting-data.html">What to Store and When to RemoveThe Problem: Too Much Data, Too Little Clarity<a class="anchor" aria-label="anchor" href="#the-problem-too-much-data-too-little-clarity"></a>Discussion: To Keep or To Delete?<a class="anchor" aria-label="anchor" href="#discussion-to-keep-or-to-delete"></a>Exercise: Evaluating the Messy Dataset<a class="anchor" aria-label="anchor" href="#exercise-evaluating-the-messy-dataset"></a>Demonstration: How Deletion Actually Works<a class="anchor" aria-label="anchor" href="#demonstration-how-deletion-actually-works"></a>General Principles: The Psychology and Impact of Data Retention<a class="anchor" aria-label="anchor" href="#general-principles-the-psychology-and-impact-of-data-retention"></a></a></h2>
 <hr class="half-width">
-<ul><li>
-</li></ul></section><section id="tabular-data"><h2 class="section-heading"><a href="tabular-data.html">Dealing with tabular data</a></h2>
+<ul>
+<li>Research funders often mandate data retention for specific
+timeframes (typically 5–10 years).</li>
+<li>Raw data and code have high preservation value; temporary files and
+undocumented data should be routinely purged.</li>
+<li>Deleting files on a local desktop moves them to a Recycle Bin,
+meaning they still occupy disk space until it is emptied.</li>
+<li>Deleting files on remote Linux servers or Data Warehouses is usually
+immediate and permanent with no undo option.</li>
+<li>Over-retaining data creates mental clutter, increases security
+risks, and contributes to environmental digital waste.</li>
+</ul></section><section id="tabular-data"><h2 class="section-heading"><a href="tabular-data.html">Best Practices for Tabular DataThe Problem: Tabular Data Is Everywhere, But Often a Mess<a class="anchor" aria-label="anchor" href="#the-problem-tabular-data-is-everywhere-but-often-a-mess"></a>Discussion: Spotting the Pitfalls in Bad Data<a class="anchor" aria-label="anchor" href="#discussion-spotting-the-pitfalls-in-bad-data"></a>Why These Issues Matter: Human-Readable vs. Machine-Readable<a class="anchor" aria-label="anchor" href="#why-these-issues-matter-human-readable-vs--machine-readable"></a>Core Principles of Tidy Tabular Data<a class="anchor" aria-label="anchor" href="#core-principles-of-tidy-tabular-data"></a>Demonstration: Cleaning Data in Excel<a class="anchor" aria-label="anchor" href="#demonstration-cleaning-data-in-excel"></a>Exercise: Cleaning the Incidence Dataset<a class="anchor" aria-label="anchor" href="#exercise-cleaning-the-incidence-dataset"></a>Version Control for Data Files<a class="anchor" aria-label="anchor" href="#version-control-for-data-files"></a></a></h2>
 <hr class="half-width">
-<ul><li>
-</li></ul></section><section id="data-formats"><h2 class="section-heading"><a href="data-formats.html">Choosing the right file format</a></h2>
+<ul>
+<li>Humans and computers read tables differently; layout spreadsheet
+data for machine readability.</li>
+<li>Tidy data requires one variable per column, one observation per row,
+and one value per cell.</li>
+<li>Column headers should be consistent, lowercase, free of spaces, and
+explicitly state units of measurement.</li>
+<li>Tools like Find and Replace in spreadsheet software enable quick,
+bulk standardisation of inconsistent values.</li>
+<li>Never modify raw data directly; maintain separate raw and processed
+data folders.</li>
+<li>Formal version control tools like Git, alongside institutional cloud
+history, provide robust methods for tracking data changes over
+time.</li>
+</ul></section><section id="data-formats"><h2 class="section-heading"><a href="data-formats.html">Choosing the right file format</a></h2>
 <hr class="half-width">
 <ul><li>
 </li></ul></section>
@@ -511,8 +534,8 @@ storage and transfer.</li>
   "url": "https://carpentries.github.io/workbench-template-md/instructor/key-points.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/key-points.html",
   "dateCreated": "2026-07-01",
-  "dateModified": "2026-07-07",
-  "datePublished": "2026-07-07"
+  "dateModified": "2026-07-13",
+  "datePublished": "2026-07-13"
 }
 
   </script><script>

@@ -54,21 +54,14 @@ No programming experience is required.
 
 This lesson uses the standard **Carpentries Workbench** infrastructure.
 
-To build and preview the lesson locally:
+See: https://carpentries.github.io/workbench/#installation 
+
+To build and preview the lesson locally you need to have installed R and the Workbench materials (see the above link).
+Then you can run:
 
 ```bash
-sandpaper::build_lesson()
+R -e 'sandpaper::serve(quiet = FALSE, port = "3435")'
 ```
-
-To check for common issues:
-
-```bash
-sandpaper::check_lesson()
-```
-
-For full documentation see:
-
-https://carpentries.github.io/sandpaper-docs/
 
 ---
 

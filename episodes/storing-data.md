@@ -65,17 +65,19 @@ Choosing an appropriate storage location is therefore an important part of good 
 
 # Discussion: Where Do You Store Your Data?
 
-> ## Discussion
->
-> Spend a few minutes discussing the following questions with a partner:
->
-> - Where do you currently store your research data?
-> - Why did you choose that location?
-> - How do collaborators access it?
-> - Is it backed up?
-> - What would happen if your laptop stopped working tomorrow?
->
-> Be prepared to share some examples with the group.
+:::::::::::::::::::::::::::::::::::::::::::::: discussion
+
+ Spend a few minutes discussing the following questions with a partner:
+
+ - Where do you currently store your research data?
+ - Why did you choose that location?
+ - How do collaborators access it?
+ - Is it backed up?
+ - What would happen if your laptop stopped working tomorrow?
+
+ Be prepared to share some examples with the group.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 After a few minutes, gather responses.
 
@@ -193,11 +195,13 @@ C:\Users\Bob\Documents\Research\
 - Difficult to collaborate
 - Difficult to manage project-wide access
 
-> ## Callout
->
-> Local storage is often useful for temporary working files.
->
-> It is rarely an ideal long-term location for important project data.
+:::::::::::::::::::::::::::::::::::::::: callout
+
+Local storage is often useful for temporary working files.
+
+It is rarely an ideal long-term location for important project data.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::
 
 ---
 
@@ -363,11 +367,13 @@ There is no universal solution.
 
 The appropriate permissions depend on the project.
 
-> ## Callout
+:::::::::::::::::::::::::::::::::: Callout
 >
 > Grant the minimum access necessary.
 >
 > This reduces the risk of accidental deletion or modification of important files.
+
+::::::::::::::::::::::::::::::::::::::::::::
 
 ---
 
@@ -501,7 +507,7 @@ This makes research outputs easier to find, cite, and reuse.
 
 # Discussion: Where Should You Store Your Data?
 
-> ## Discussion
+:::::::::::::::::::::::::::::::::::::::::: discussion
 >
 > Consider a current or future project.
 >
@@ -513,8 +519,11 @@ This makes research outputs easier to find, cite, and reuse.
 >
 > Would you change anything after today's discussion?
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ---
 
+:::::::::::::::::::::::::::::::::::::::::::::: challenge
 # Exercise: Matching Data to Storage
 
 > ## Challenge
@@ -529,6 +538,8 @@ This makes research outputs easier to find, cite, and reuse.
 >
 > Discuss your answers with a partner.
 
+:::::::::::::::::::::::::: solution
+
 > ## Solution
 >
 > Example answers:
@@ -540,6 +551,8 @@ This makes research outputs easier to find, cite, and reuse.
 > 5. Public repository such as Zenodo or an institutional repository.
 >
 > The key consideration is matching storage decisions to requirements around access, backup, scale, and security.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ---
 

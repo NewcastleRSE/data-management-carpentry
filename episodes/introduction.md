@@ -117,11 +117,13 @@ They are organisational problems.
 
 Good data management practices reduce time wasted searching for data, improve collaboration, and make research easier to reproduce.
 
-> ## Discussion
->
-> Have you ever inherited files from another researcher or returned to an old project after several months?
->
-> What was the most difficult part of understanding the data?
+::::::::::::::::::::::::::::::::::::::::::::: Discussion
+
+Have you ever inherited files from another researcher or returned to an old project after several months?
+
+What was the most difficult part of understanding the data?
+
+:::::::::::::::::::::::::::::::::::::::::::::
 
 ## How Computers Store Data
 
@@ -258,15 +260,12 @@ Search can be useful, but it should not be your primary strategy for finding fil
 A well-organised folder structure makes data easier to locate without relying on search.
 
 
-
 # Looking Ahead
 
 In the next episode we will examine the inherited dataset and begin improving its folder structure.
 Before we can organise the files, however, we first need to locate them.
 
-
-
-### What to Show
+### Navigating the file explorer
 
 Demonstrate:
 
@@ -287,7 +286,9 @@ Demonstrate:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Exercise: Finding the Dataset
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: challenge
+
+## Finding the Dataset
 
 Download the lesson dataset.
 
@@ -299,13 +300,15 @@ Using File Explorer:
 4. Explore the contents without modifying anything.
 5. Identify at least three things that seem confusing or poorly organised.
 
-> ## Discussion
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
->
-> Was it immediately obvious where the important data was?
->
-> What information would have helped you understand the project more quickly?
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Discussion
 
+Was it immediately obvious where the important data was?
+
+What information would have helped you understand the project more quickly?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 

@@ -9,9 +9,9 @@ exercises: 20
 ## Questions
 
 - What makes a good filename?
+- How much information should be included in a filename?
 - Why are naming conventions important?
 - How can filenames support batch processing and automation?
-- How much information should be included in a filename?
 - How can I rename one file or many files using a graphical file browser?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -34,9 +34,7 @@ By the end of this episode, learners will be able to:
 
 # From Folder Names to File Names
 
-In the previous episode, we improved the folder structure of the inherited project.
-
-Unfortunately, fixing the folders has not solved all of our problems.
+In the previous episode, we improved the folder structure of the inherited project. However, fixing the folders has not solved all of our problems. 
 
 Consider the files we have been given:
 
@@ -51,9 +49,7 @@ data_final_v2.xlsx
 data_final_v3_LAST_ONE.xlsx
 ```
 
-At best, these names are unhelpful.
-
-At worst, they actively prevent us from understanding the project.
+At best, these names are unhelpful. At worst, they actively prevent us from understanding the project or keeping track of progress, particularly months later.  
 
 Imagine receiving an email that says:
 
@@ -67,33 +63,39 @@ data_final_v2.xlsx
 data_final_v3_LAST_ONE.xlsx
 ```
 
-The answer is not obvious.
+The answer is not obvious. 
 
-Good filenames allow us to understand what a file contains without opening it.
+::: cutout
+One can imagine that the latest results are in "data_final_v3_LAST_ONE.xlsx", but maybe there was an error in this file and it was never deleted, meaning that "data_final_v2.xlsx" contains the latest data.  You do not want to be in a situation where you have to sort the files by date and hope that the last *created or modified* file was the last *good* file! 
+:::
 
-This becomes increasingly important as projects grow larger and data is shared between collaborators.
+Good filenames should give us insight into what a file contains without opening it. Your choice of filenames should make subsequent analysis steps as frictionless as possible. If you find you are fighting your data there is probably something that can be improved.
+
+Your choice of filenames becomes increasingly important as projects grow larger, data is shared between collaborators, or data needs revisiting at a later date. 
 
 ---
 
 # Discussion: What's Wrong With These Filenames?
 
-> ## Discussion
->
-> Working in pairs, look through the files in the inherited project.
->
-> What problems can you identify?
->
-> Consider:
->
-> - Can you tell what the file contains?
-> - Can you identify the newest version?
-> - Are dates presented consistently?
-> - Would the names be easy to process automatically?
-> - Are there any confusing abbreviations?
->
-> Write down as many issues as you can find.
+::::::::::::::::::::::::::: callout
+
+ Working in pairs, look through the files in the inherited project.
+
+ What problems can you identify?
+
+ Consider:
+
+ - Can you tell what the file contains?
+ - Can you identify the newest version?
+ - Are dates presented consistently?
+ - Would the names be easy to process automatically?
+ - Are there any confusing abbreviations?
+
+ Write down as many issues as you can find.
 
 After a few minutes, discuss observations as a group.
+
+:::::::::::::::::::::::::::
 
 Common issues typically include:
 
@@ -104,6 +106,7 @@ Common issues typically include:
 - Ambiguous version information
 - Inconsistent separators
 - Duplicate information
+
 
 > ## Instructor Note
 >
@@ -223,7 +226,7 @@ Avoid:
 \ / : * ? " < > |
 ```
 
-These characters can have special meanings on different operating systems.
+These characters can have special meanings on different operating systems. Hyphens can cause issues as different word processors can substitute different characters which look almost the same. Similarly, word processors can autocorrect lower case letters into uppercase characters at the start of lines. 
 
 ---
 
@@ -249,11 +252,13 @@ Instead use:
 2026-04-03
 ```
 
-The ISO date format:
+:::::: callout
+This is known as the ISO date format:
 
 ```text
 YYYY-MM-DD
 ```
+::::::
 
 sorts correctly both alphabetically and chronologically.
 
@@ -297,12 +302,14 @@ For example:
 2026-06-01_siteA_sample03_v01.csv
 ```
 
-Additional details can be stored elsewhere:
+Additional details can either be stored elsewhere:
 
 - README files
 - metadata files
 - data dictionaries
 - laboratory notebooks
+
+or as a header in the file itself.
 
 We will discuss documentation in the next episode.
 
@@ -316,7 +323,7 @@ Consider:
 
 ```text
 01-June_image_01.png
-02-June_image_02.png
+01-June_image_02.png
 03-June_image_03.png
 ```
 
@@ -347,9 +354,27 @@ image_1.png
 image_2.png
 image_10.png
 ```
+Note there is a leading zero in this example. This improves sorting. For example, when sorting files we get:
 
-Using leading zeros improves sorting.
+```text
+image_08.png
+image_09.png
+image_80.png
+image_81.png
+image_93.png
+```
 
+rather than
+
+```text
+image_8.png
+image_80.png
+image_81.png
+image_9.png
+image_93.png
+```
+
+Remember to pad with sufficient zeros for the expected total number of files. If you expect less than 100 files you can pad with 1 zero, less than 1000 pad with 2 zeros etc. 
 ---
 
 # Using Hierarchies Effectively
@@ -444,6 +469,9 @@ A more descriptive name might be:
 2026-04-03_incidence_data_v01.csv
 ```
 
+:::::::::::::::::::::::::: group-tab
+
+### Windows
 To rename a file in File Explorer:
 
 1. Select the file.
@@ -452,18 +480,28 @@ To rename a file in File Explorer:
 4. Enter the new filename.
 5. Press Enter.
 
-Alternatively:
+### Windows Alternative:
+To rename a file in File Explorer:
 
 1. Select the file.
 2. Press **F2**.
 3. Type the new name.
 4. Press Enter.
 
+### MacOS
+To rename a file in Finder:
+1. Select the file.
+2. Left-click on the filename
+3. Enter the new filename.
+4. Press Enter.
+
+:::::::::::::::::::::::::: 
+
 Learners should follow along.
 
 > ## Instructor Note
 >
-> Demonstrate both methods.
+> Demonstrate both Windows methods.
 >
 > The keyboard shortcut is often significantly faster once learners become confident.
 
@@ -513,10 +551,17 @@ siteA_image_03.jpg
 
 Several graphical tools support this:
 
+Windows
 - Microsoft PowerToys PowerRename
 - Bulk Rename Utility
 - Advanced Renamer
-- Built-in Finder rename tools on macOS
+
+MacOS
+- Built-in Finder rename tools
+
+Ubuntu
+- Built-in File Manager tools
+- Thunar
 
 The exact interface differs between tools, but the concepts are similar:
 
@@ -526,7 +571,7 @@ The exact interface differs between tools, but the concepts are similar:
 - Add suffixes
 - Insert numbering
 
-## Demonstration
+:::::::::::::::::::: challenge
 
 Using a bulk rename tool:
 
@@ -541,23 +586,42 @@ with:
 ```text
 siteA_image_
 ```
+:::::::::::::::::::: output
 
-Show learners how a predictable naming pattern can be applied across many files in seconds.
+Before:
 
-> ## Discussion
+```text
+IMG_0001.png
+IMG_0002.png
+IMG_0003.png
+IMG_0004.png
+IMG_0005.png
+```
+After:
+```text
+siteA_image_0001.png
+siteA_image_0002.png
+siteA_image_0003.png
+siteA_image_0004.png
+siteA_image_0005.png
+```
+::::::::::::::::::::
+
+::::::: challenge
 >
 > What could go wrong if a bulk rename operation is performed incorrectly?
 >
 > How could you reduce risk?
 
-Possible answers:
+::::::: solution
 
 - Test on copies first.
 - Rename a small sample initially.
 - Keep backups.
 - Check the preview before applying changes.
 
----
+::::::: 
+
 
 # Exercise: Improve the File Names
 

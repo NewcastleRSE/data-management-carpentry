@@ -32,7 +32,9 @@ By the end of this episode, learners will be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-# From Folder Names to File Names
+## From Folder Names to File Names
+-------------------------
+
 
 In the previous episode, we improved the folder structure of the inherited project. However, fixing the folders has not solved all of our problems. 
 
@@ -51,6 +53,8 @@ data_final_v3_LAST_ONE.xlsx
 
 At best, these names are unhelpful. At worst, they actively prevent us from understanding the project or keeping track of progress, particularly months later.  
 
+
+:::cutout
 Imagine receiving an email that says:
 
 > "Can you update the analysis using the latest data?"
@@ -62,14 +66,12 @@ data_final.xlsx
 data_final_v2.xlsx
 data_final_v3_LAST_ONE.xlsx
 ```
-
 The answer is not obvious. 
 
-::: cutout
 One can imagine that the latest results are in "data_final_v3_LAST_ONE.xlsx", but maybe there was an error in this file and it was never deleted, meaning that "data_final_v2.xlsx" contains the latest data.  You do not want to be in a situation where you have to sort the files by date and hope that the last *created or modified* file was the last *good* file! 
 :::
 
-Good filenames should give us insight into what a file contains without opening it. Your choice of filenames should make subsequent analysis steps as frictionless as possible. If you find you are fighting your data there is probably something that can be improved.
+Good filenames should give us insight into what a file contains without needing to open it. Your choice of filenames should make subsequent analysis steps as frictionless as possible. If you find you are fighting your files in order to make progress in your work, there is probably something that can be improved. *You have to be able to find your data in order to use it!*
 
 Your choice of filenames becomes increasingly important as projects grow larger, data is shared between collaborators, or data needs revisiting at a later date. 
 
@@ -77,8 +79,7 @@ Your choice of filenames becomes increasingly important as projects grow larger,
 
 # Discussion: What's Wrong With These Filenames?
 
-::::::::::::::::::::::::::: callout
-
+::::::::::::::::::::::::::: discussion
  Working in pairs, look through the files in the inherited project.
 
  What problems can you identify?
@@ -97,8 +98,9 @@ After a few minutes, discuss observations as a group.
 
 :::::::::::::::::::::::::::
 
-Common issues typically include:
+Common issues with file names which typically arise include:
 
+::: callout
 - Meaningless names
 - Overly long names
 - Special characters
@@ -106,7 +108,7 @@ Common issues typically include:
 - Ambiguous version information
 - Inconsistent separators
 - Duplicate information
-
+:::
 
 > ## Instructor Note
 >
@@ -135,39 +137,32 @@ Good filenames support:
 - Automated processing
 - Reproducibility
 
-A filename should help both a human reader and a computer.
+A filename should be easily useable by both a human reader and a computer. Humans and computers are good at different things and different tools and operating systems (Windows, MacOS, Linux) have different conventions. Your filenames should be as portable as possible.  
 
-Future-you is one of the most important users of your naming convention.
+Future-you is one of the most important users of your naming convention, but, should be easily understandable to collegues.
 
 ---
 
 # Characteristics of Good Filenames
 
-There is no universal naming convention.
-
-Different projects require different information.
-
-However, successful file naming schemes usually share several characteristics.
+There is no universal naming convention. There are so many possible scenarios it is impossible to build an understandable, concise, informative template which accounts for them all. Different projects require different information. However, successful file naming schemes usually share several characteristics.
 
 ## Meaningful
 
-A filename should describe the contents of the file.
+A filename should describe the contents of the file, for example:
 
-Good:
-
-```text
-2026-04-03_water_quality_siteA.csv
-```
-
-Poor:
-
+::: tab
+### Poor
 ```text
 data.csv
 ```
+### Good
+```text
+2026-04-03_water_quality_siteA.csv
+```
+:::
 
-The first example immediately communicates useful information.
-
-The second communicates almost nothing.
+The 'good' example immediately communicates useful information about the data: data about the water quality at siteA on the 3rd April 2026. This can be used by a human, to immediatly find the data in a folder containing, potentially, many files and helps transcription into code or a document. For a computer the filename contains important information which can help software load and sort the data without having to open the document and read its content. The second filename communicates almost nothing.
 
 ---
 
@@ -175,23 +170,23 @@ The second communicates almost nothing.
 
 Choose a convention and use it everywhere.
 
-Good:
-
-```text
-2026-04-01_sample01.csv
-2026-04-02_sample02.csv
-2026-04-03_sample03.csv
-```
-
-Less helpful:
-
+::: tab
+### Poor
 ```text
 Apr1.csv
 sample_2.csv
 Results03April.csv
 ```
 
-Even if the files contain the same information, inconsistent naming makes them harder to understand and automate.
+### Good
+```text
+2026-04-01_sample01.csv
+2026-04-02_sample02.csv
+2026-04-02_sample03.csv
+```
+:::
+
+Even if the files contain the same information, inconsistent naming makes them harder to understand and automate. IF the folder contains many files, how would you be able to find these files among the others? For automation, the good example contains date and order information so each file can be analysed in order without having to load each file individually. 
 
 ---
 
@@ -199,15 +194,14 @@ Even if the files contain the same information, inconsistent naming makes them h
 
 Computers prefer predictable patterns.
 
-Avoid:
-
+::: tab
+### Poor
 ```text
 my data.csv
 results & notes.csv
 ```
 
-Prefer:
-
+### Good
 ```text
 my_data.csv
 results_and_notes.csv
@@ -226,7 +220,11 @@ Avoid:
 \ / : * ? " < > |
 ```
 
-These characters can have special meanings on different operating systems. Hyphens can cause issues as different word processors can substitute different characters which look almost the same. Similarly, word processors can autocorrect lower case letters into uppercase characters at the start of lines. 
+These characters can have special meanings on different operating systems. Hyphens can cause issues because different word processors can substitute different characters which look almost the same . Similarly, word processors can autocorrect lower case letters into uppercase characters at the start of lines. 
+
+::: callout
+Windows file names are case insensitive. Linux and Mac filenames are case sensitive. This can cause data loss when copying files from Linux or Mac to Windows
+:::
 
 ---
 

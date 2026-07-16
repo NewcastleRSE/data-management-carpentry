@@ -14,7 +14,7 @@ FIXME: place any data you want learners to use in `episodes/data` and then use
        a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
        link to it, replacing the example.com link.
 -->
-Download the [data zip file](data/data.zip) and unzip it to your Desktop.
+Download the [data zip file](episodes/data/data.zip) and unzip it to your Desktop.
 If you have difficulties doing this please ask your instructor for help.
 
 

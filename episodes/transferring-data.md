@@ -381,28 +381,26 @@ Compressing these files often produces very little size reduction.
 ::::::::::::::::::::::::::::::::::::::::::::::::::: challenge
  How Much Space Can We Save?
 
-> ## Challenge
->
-> Determine the size of the cleaned project folder.
->
-> Then:
->
-> 1. Create a ZIP archive.
-> 2. Measure the size of the ZIP file.
-> 3. Calculate the reduction in size.
->
-> Discuss:
->
-> - Was the reduction larger or smaller than expected?
-> - Why do you think this happened?
+ Determine the size of the cleaned project folder.
+
+ Then:
+
+ 1. Create a ZIP archive.
+ 2. Measure the size of the ZIP file.
+ 3. Calculate the reduction in size.
+
+ Discuss:
+
+ - Was the reduction larger or smaller than expected?
+ - Why do you think this happened?
 
 :::::::::::::::::::::::: solution
->
-> Results will vary depending on the data.
->
-> Text files and spreadsheets often compress well.
->
-> Images, video, and already-compressed formats may show little improvement.
+
+ Results will vary depending on the data.
+
+ Text files and spreadsheets often compress well.
+
+ Images, video, and already-compressed formats may show little improvement.
 
 :::::::::::::::::::::::: 
 
@@ -504,22 +502,20 @@ The best format depends on your intended use.
 
  How Have You Shared Data Before?
 
-> ## Discussion
->
-> Think about the last time you shared research data.
->
-> How did you do it?
->
-> Examples might include:
->
-> - Email attachments
-> - OneDrive links
-> - SharePoint
-> - USB drives
-> - Shared network storage
-> - Cloud platforms
->
-> What limitations did you encounter?
+ Think about the last time you shared research data.
+
+ How did you do it?
+
+ Examples might include:
+
+ - Email attachments
+ - OneDrive links
+ - SharePoint
+ - USB drives
+ - Shared network storage
+ - Cloud platforms
+
+ What limitations did you encounter?
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -646,27 +642,25 @@ However, they are beyond the scope of this lesson.
 
  Choosing A Transfer Method
 
-> ## Challenge
->
-> Match the transfer method to the scenario.
->
-> 1. A 5 MB document for a colleague.
-> 2. A 300 MB dataset shared among a research group.
-> 3. A 2 TB dataset for HPC processing.
-> 4. A published dataset accompanying a paper.
->
-> Discuss your choices with a partner.
+ Match the transfer method to the scenario.
+
+ 1. A 5 MB document for a colleague.
+ 2. A 300 MB dataset shared among a research group.
+ 3. A 2 TB dataset for HPC processing.
+ 4. A published dataset accompanying a paper.
+
+ Discuss your choices with a partner.
 
 :::::::::::::::::::::::: solution
->
-> Example answers:
->
-> 1. Email attachment.
-> 2. OneDrive, SharePoint, or shared project storage.
-> 3. Globus or institutional research storage.
-> 4. Repository such as Zenodo.
->
-> The important consideration is matching tools to scale and purpose.
+
+ Example answers:
+
+ 1. Email attachment.
+ 2. OneDrive, SharePoint, or shared project storage.
+ 3. Globus or institutional research storage.
+ 4. Repository such as Zenodo.
+
+ The important consideration is matching tools to scale and purpose.
 
 :::::::::::::::::::::::: 
 

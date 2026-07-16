@@ -524,9 +524,9 @@ This makes research outputs easier to find, cite, and reuse.
 ---
 
 :::::::::::::::::::::::::::::::::::::::::::::: challenge
-# Exercise: Matching Data to Storage
+Matching Data to Storage
 
-> ## Challenge
+
 >
 > For each scenario, identify the most appropriate storage location and explain your reasoning.
 >
@@ -540,7 +540,7 @@ This makes research outputs easier to find, cite, and reuse.
 
 :::::::::::::::::::::::::: solution
 
-> ## Solution
+
 >
 > Example answers:
 >
@@ -551,6 +551,8 @@ This makes research outputs easier to find, cite, and reuse.
 > 5. Public repository such as Zenodo or an institutional repository.
 >
 > The key consideration is matching storage decisions to requirements around access, backup, scale, and security.
+
+:::::::::::::::::::::::: 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 

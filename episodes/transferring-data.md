@@ -396,13 +396,15 @@ Compressing these files often produces very little size reduction.
 > - Was the reduction larger or smaller than expected?
 > - Why do you think this happened?
 
-::::::::::::::::::::::::::::::::::::::::::::::::: solution
+:::::::::::::::::::::::: solution
 >
 > Results will vary depending on the data.
 >
 > Text files and spreadsheets often compress well.
 >
 > Images, video, and already-compressed formats may show little improvement.
+
+:::::::::::::::::::::::: 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -655,7 +657,7 @@ However, they are beyond the scope of this lesson.
 >
 > Discuss your choices with a partner.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::: solution
+:::::::::::::::::::::::: solution
 >
 > Example answers:
 >
@@ -665,6 +667,8 @@ However, they are beyond the scope of this lesson.
 > 4. Repository such as Zenodo.
 >
 > The important consideration is matching tools to scale and purpose.
+
+:::::::::::::::::::::::: 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 

@@ -564,6 +564,8 @@ Data deleted using the above methods are not fully removed from the system. They
 
 Check your data policies on data deletion, particularly if handling private data and your files are not encrypted. We will discuss data security in a later lesson. 
 
+Upon deleting a file on your computer the file will not always be removed from your backups, but sometimes it will be. Be careful and check that the behaviour of your backups is want you want.
+
 :::::::::::
 
 :::::::::::::::: instructor

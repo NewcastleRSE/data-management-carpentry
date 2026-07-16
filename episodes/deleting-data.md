@@ -121,12 +121,12 @@ Even then data may not be entirely deleted and remains on disk until it is overw
 
 If you need make absolutely sure data is deleted:
 
-- Combine file deletion with disk encryption
-- For Hard Drives use tools like ``shred`` (Linux) or ``cipher`` (Windows)
+- Combine file deletion with encryption.
+- For Hard Drives use tools like ``shred`` (Linux) or ``cipher`` (Windows).
 - Solid State Drives have their own run secure delete tools.
-- Securely dispose of the disk using confidential waste bins
+- Securely dispose of the disk using confidential waste services.
 
-Contact NUIT if you have concerns. 
+Contact NUIT for advice if you have concerns. 
 
  Hard Drives and Solid State Drives behave differently when it comes to secure data delection. 
 
@@ -186,7 +186,7 @@ Data storage isn't free, and it isn't completely green. Every gigabyte of data k
 These data centers require significant amounts of electricity to run and massive cooling infrastructure to keep from overheating. Deleting useless, duplicate, or temporary files directly reduces your project's **digital waste** and environmental footprint.
 
 
-
+## Summary
 ::::::::::::::::::::::::::::::::::::: keypoints
 
 * Research funders often mandate data retention for specific timeframes (typically 5–10 years).

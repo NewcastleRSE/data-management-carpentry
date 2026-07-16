@@ -293,9 +293,9 @@ This provides breaks for the eye, and for software.
 
 Many researchers face a common temptation:
 
-```text
-If information is useful, why not put all of it in the filename?
-```
+
+> If information is useful, why not put all of it in the filename?
+
 
 This can lead to names such as:
 ```text
@@ -305,10 +305,9 @@ which becomes difficult to read, particularly in a long list of such files.
 
 A useful guideline is:
 
-```text
-Include enough information to identify the file, but not so much 
-that the filename becomes documentation.
-```
+
+> Include enough information to identify the file, but not so much that the filename becomes documentation.
+
 
 The most useful information might include:
 

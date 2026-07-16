@@ -29,7 +29,7 @@ By the end of this episode, learners will be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-# The Problem: Where Should I Store My Data?
+## Where Should I Store My Data?
 
 At this point in the lesson we have:
 
@@ -63,21 +63,21 @@ Choosing an appropriate storage location is therefore an important part of good 
 
 ---
 
-# Discussion: Where Do You Store Your Data?
+:::::::::::::::::::: challenge
 
-> ## Discussion
->
-> Spend a few minutes discussing the following questions with a partner:
->
-> - Where do you currently store your research data?
-> - Why did you choose that location?
-> - How do collaborators access it?
-> - Is it backed up?
-> - What would happen if your laptop stopped working tomorrow?
->
-> Be prepared to share some examples with the group.
+## Where Do You Store Your Data?
 
-After a few minutes, gather responses.
+ Spend a few minutes discussing the following questions with a partner:
+
+ - Where do you currently store your research data?
+ - Why did you choose that location?
+ - How do collaborators access it?
+ - Is it backed up?
+ - What would happen if your laptop stopped working tomorrow?
+
+Share some of your examples with the group.
+
+::::::::::::::::::::::::: solution
 
 Common answers often include:
 
@@ -90,19 +90,29 @@ Common answers often include:
 - HPC storage
 - External hard drives
 
-> ## Instructor Note
->
-> This discussion helps reveal existing practices within the room.
->
-> Learners often have good reasons for their current choices, but may not have considered backup, sharing, governance, or long-term access implications.
+:::::::::::::::::::::::
+:::::::::::::::::::::::
+
+:::::::::::::: instructor
+
+ This discussion helps reveal existing practices within the room.
+
+ Learners often have good reasons for their current choices, but may not have considered backup, sharing, governance, or long-term access implications.
+
+::::::::::::::::::::::
 
 ---
 
-# What Makes a Good Storage Location?
+## What Makes a Good Storage Location?
 
 When deciding where to store data, it is useful to consider four broad questions:
 
-## Can People Access It?
+- Access.
+- Backups.
+- Security.
+- Sustainability. 
+
+### Can People Access It?
 
 If collaborators need access, they must be able to find and open the data.
 
@@ -125,13 +135,29 @@ Many researchers assume:
 
 Unfortunately this is not always true.
 
-Computers fail.
-
-Laptops get stolen.
-
-Hard drives stop working.
+ - Computers fail.
+ - Laptops get stolen.
+ - Hard drives stop working.
+ - Accidental data deletion.
 
 Good storage solutions should have reliable backup arrangements.
+
+:::::::::::: challenge
+
+Discuss what are the good characteristics of a backup system in your groups. 
+
+:::::::::::: solution
+
+A good backup system might include:
+
+- Regular backups - overnight, when connected to the internet etc.
+- Offsite - cloud backups? In a different building.
+- Accessible - you can easily go and get the backups and find your files
+- Redundancy - Multiple copies, in case you delete data and take a while to notice
+- ...
+
+:::::::::::::
+:::::::::::::
 
 ---
 
@@ -147,7 +173,15 @@ Examples include:
 - Commercially sensitive information
 - Confidential research
 
-Storage locations must be appropriate for the sensitivity of the data.
+Storage locations must be appropriate for the sensitivity of the data. 
+
+:::::::::: caution
+
+You have a legal requirement to keep certain types of data safe with consequences for yourself and the University. 
+
+There are required actions that need to be taken if there is a data breach, such as reporting to the University. Make sure you know the requirements for your data. 
+
+:::::::::::
 
 ---
 
@@ -161,6 +195,7 @@ Ask:
 - What happens if a team member leaves?
 - Can ownership be transferred?
 - Is there enough capacity for data growth?
+- Is the file format accessible? If the company which makes your software shuts down will you still be able to access your data?
 
 ---
 
@@ -175,9 +210,34 @@ Local storage refers to files stored directly on a device such as:
 
 For example:
 
+:::::::::: tab
+
+### Windows
+
 ```text
 C:\Users\Bob\Documents\Research\
 ```
+
+### MacOS
+
+```text
+/Users/Bob/Documents/Research/
+```
+
+### Linux
+
+```text
+/home/Bob/Documents/Research/
+```
+::::::::::::::::::::::::
+
+:::::::::::::::::: challenge
+
+Discuss the advantages and disadvantages of local storage with a partner or group.
+
+:::::::::::::::::: solution
+
+Examples include
 
 ## Advantages
 
@@ -189,15 +249,24 @@ C:\Users\Bob\Documents\Research\
 ## Disadvantages
 
 - Data may only exist in one location
-- Vulnerable to device failure
+    - Hard to access off site
+    - Hard to share with collegues
+- Vulnerable to device failure or loss
 - Difficult to collaborate
 - Difficult to manage project-wide access
+- Security issues e.g. 'left laptop on a train'
 
-> ## Callout
->
-> Local storage is often useful for temporary working files.
->
-> It is rarely an ideal long-term location for important project data.
+:::::::::::::::::::::::::
+:::::::::::::::::::::::::
+
+::::::::::::: callout
+
+Local storage is often useful for temporary working files.
+
+It is rarely an ideal long-term location for important project data.
+
+::::::::::::: 
+
 
 ---
 
@@ -206,6 +275,7 @@ C:\Users\Bob\Documents\Research\
 Many institutions provide services such as:
 
 - OneDrive
+- Sharepoint
 - Google Drive
 - Dropbox
 
@@ -218,12 +288,23 @@ OneDrive/
 └── Research Project/
 ```
 
+Newcastle University has guides for using OneDrive and Sharepoint storage: [Link](https://newcastle.sharepoint.com/sites/O365). 
+
+:::::::::::::::::::: challenge
+
+Discuss the advantages and disadvantages of cloud storage with a partner or group.
+
+:::::::::::::::::::: solution
+
 ## Advantages
 
 - Accessible from multiple devices
-- Easy syncing
+- Easy and rapid syncing. OneDrive often works in the background.
 - Simple sharing
 - Automatic backup in many cases
+- Strong Security compared to email
+- Version history 
+- You do not need to send data, you can send a link to the data
 
 ## Disadvantages
 
@@ -231,6 +312,21 @@ OneDrive/
 - Access often disappears when somebody leaves
 - Shared permissions must be managed carefully
 - Storage quotas may be limited
+- Security/Privacy issues
+- Data sovereignty issues
+- Access to external collaborators
+- Understanding University policy 
+- Knowing which service to use can be challenging
+
+::::::::::::::::::::
+::::::::::::::::::::
+
+::::::::::: caution
+
+The University also recommends against uploading personal or sensitive data to Google Drive and DropBox, see the cloud storage tab at the following [link](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/). It suggests OneDrive.
+
+:::::::::::::::
+
 
 ## A Common Research Problem
 
@@ -238,23 +334,28 @@ Many researchers store project data in their personal OneDrive.
 
 This seems convenient until:
 
-- A researcher leaves the project
-- Their institutional account is removed
-- Access to project data is lost
+- A researcher leaves the project.
+- Their institutional account is removed.
+- Access to project data is lost.
 
 In some organisations, governance policies may prevent administrators from granting access because personal storage is treated as individual rather than project-owned data.
 
 For this reason, personal cloud storage should generally not be considered the primary home of important shared project data.
 
-> ## Instructor Note
->
-> Adapt this section to local institutional policies.
->
-> Learners often assume that "being in the cloud" automatically means data is accessible to everyone who needs it.
+Depending on the cloud service, it can be hard to transfer ownership of files to another group member. 
+
+
+::::::::::::::::: instructor
+
+Adapt this section to local institutional policies.
+
+Learners often assume that "being in the cloud" automatically means data is accessible to everyone who needs it.
+
+::::::::::::::::::::::::
 
 ---
 
-# Shared Storage
+## Shared Storage
 
 Shared storage is designed specifically for collaboration.
 
@@ -266,11 +367,16 @@ Examples include:
 - Departmental storage
 
 Example:
-
 ```text
 Shared Projects/
 └── Marine Mammal Study/
 ```
+
+:::::::::::::::::::: challenge
+
+Discuss the advantages and disadvantages of shared storage with a partner or group.
+
+::::::::::::::::::::: solution
 
 ## Advantages
 
@@ -284,14 +390,19 @@ Shared Projects/
 - May require administration
 - May have storage limits
 - Large datasets can become difficult to manage
+- Different ways of accessing off-site
+- Understanding backup policy can be hard, is something apparently deleted actually deleted?
+
+:::::::::::::::::::::
+:::::::::::::::::::::
 
 ---
 
-# Research Data Warehouse Storage
+## Research Data Warehouse Storage
 
 Many institutions provide dedicated research storage services.
 
-At our institution, research projects can use the Research Data Warehouse (RDW).
+At our institution, research projects can use the Research Data Warehouse (RDW) [link](https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/).
 
 The RDW is:
 
@@ -312,15 +423,21 @@ This means:
 
 For most research data, this is the recommended storage location.
 
-> ## Instructor Note
->
-> Replace this section with your own institutional storage recommendations if delivering the lesson elsewhere.
+
+:::::::::::::::::::::::::::: instructor 
+
+Replace this section with your own institutional storage recommendations if delivering the lesson elsewhere.
+
+::::::::::::::::::::::::::::
 
 ---
 
-# Demonstration: Accessing Different Storage Locations
 
-The instructor should demonstrate navigating to:
+:::::::::::::: challenge
+
+## Accessing Different Storage Locations
+
+Follow along with the instructor who will demonstrate how to navigate to:
 
 - Local storage
 - OneDrive (or equivalent cloud storage)
@@ -336,11 +453,12 @@ For each example:
 5. Discuss backup arrangements.
 6. Discuss limitations.
 
-Encourage learners to follow along where possible.
+::::::::::::::
+
 
 ---
 
-# Permissions and Collaboration
+## Permissions and Collaboration
 
 Choosing a location is only part of the problem.
 
@@ -363,15 +481,17 @@ There is no universal solution.
 
 The appropriate permissions depend on the project.
 
-> ## Callout
->
-> Grant the minimum access necessary.
->
-> This reduces the risk of accidental deletion or modification of important files.
+::::::::::::::::: callout
+
+Grant the minimum access necessary.
+
+This reduces the risk of accidental deletion or modification of important files.
+
+:::::::::::::::::
 
 ---
 
-# Sensitive Data
+## Sensitive Data
 
 Some projects require additional controls.
 
@@ -393,9 +513,31 @@ Sensitive data should never be stored solely because it is convenient.
 
 Always follow institutional policies and governance requirements.
 
+:::::::::::::::::::::: caution
+
+There are strict legal requirements for using and storing certain types of data. 
+
+- People can request access to data held on them, via [Subject Access Requests](https://www.ncl.ac.uk/mediav8/data-protection/files/SubjectAccessRequestform_002%20(1).docx) 
+- People can request erroneous data about them be corrected
+- People can demand data about them be deleted
+- Personal data must be used only for the reasons it was provided
+- Data breaches must be reported to the Univerity in line with its policies
+- and many others
+
+See the following examples:
+
+- [GDPR Information for Research](https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/)
+- [Data Protection](https://www.ncl.ac.uk/data-protection/)
+- [Access your personal data](ttps://www.ncl.ac.uk/data-protection/access-personal-data/)
+
+Be clear on what your obligations are regarding the data you use. The above links are not meant to be definative, you will need to check this yourself. 
+
+::::::::::::::::::::::
+
+
 ---
 
-# Changing Data Locations
+## Changing Data Locations
 
 Eventually projects evolve.
 
@@ -428,7 +570,7 @@ This is one reason why good documentation is important.
 
 ---
 
-# A Brief Note on Version Control
+## A Brief Note on Version Control
 
 Sometimes researchers use filenames to keep track of changes:
 
@@ -451,15 +593,17 @@ Version control provides:
 
 Version control is a large topic in its own right.
 
-> ## Further Learning
->
-> If you want to learn more about version control, consider attending a Carpentries Git and Version Control workshop.
->
-> This lesson will not cover Git in detail.
+Note that some services, such as OneDrive retain their own version histories. 
+
+### Further Learning
+
+ If you want to learn more about version control, consider attending a Carpentries Git and Version Control workshop.
+
+ This lesson will not cover Git in detail.
 
 ---
 
-# Sharing Research Outputs
+## Sharing Research Outputs
 
 Eventually many research projects produce outputs that should be publicly available.
 
@@ -497,53 +641,62 @@ doi.org/xxxxx
 
 This makes research outputs easier to find, cite, and reuse.
 
----
+The University provides the following information page [Find Data](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/) but individual funders may have their own requirements. 
 
-# Discussion: Where Should You Store Your Data?
-
-> ## Discussion
->
-> Consider a current or future project.
->
-> - Where are you storing data now?
-> - Is that the most appropriate location?
-> - How is the data backed up?
-> - Could collaborators access it?
-> - What would happen if you left the institution?
->
-> Would you change anything after today's discussion?
 
 ---
 
-# Exercise: Matching Data to Storage
+:::::::::::::::::: discussion
 
-> ## Challenge
->
-> For each scenario, identify the most appropriate storage location and explain your reasoning.
->
-> 1. Active analysis files that only you are currently editing.
-> 2. A shared project involving five collaborators.
-> 3. Large datasets processed on the HPC.
-> 4. Human participant data.
-> 5. Published research outputs accompanying a journal article.
->
-> Discuss your answers with a partner.
+## Where Should You Store Your Data?
 
-> ## Solution
->
-> Example answers:
->
-> 1. Local working copy with institutional backup.
-> 2. Shared project storage or Research Data Warehouse.
-> 3. Research Data Warehouse connected to HPC resources.
-> 4. Approved secure institutional storage.
-> 5. Public repository such as Zenodo or an institutional repository.
->
-> The key consideration is matching storage decisions to requirements around access, backup, scale, and security.
+ Consider a current or future project.
+
+ - Where are you storing data now?
+ - Is that the most appropriate location?
+ - How is the data backed up?
+ - Could collaborators access it?
+ - What would happen if you left the institution?
+
+ Would you change anything after today's discussion?
+
+::::::::::::::::::::::::::
 
 ---
 
-# Looking Ahead
+:::::::::::::::::::::::: challenge
+
+## Matching Data to Storage
+
+
+For each scenario, identify the most appropriate storage location and explain your reasoning.
+
+ 1. Active analysis files that only you are currently editing.
+ 2. A shared project involving five collaborators.
+ 3. Large datasets processed on the HPC.
+ 4. Human participant data.
+ 5. Published research outputs accompanying a journal article.
+
+ Discuss your answers with a partner.
+
+:::::::::::::::::: solution
+
+ Example answers:
+
+ 1. Local working copy with institutional backup.
+ 2. Shared project storage or Research Data Warehouse.
+ 3. Research Data Warehouse connected to HPC resources.
+ 4. Approved secure institutional storage.
+ 5. Public repository such as Zenodo or an institutional repository.
+
+ The key consideration is matching storage decisions to requirements around access, backup, scale, and security.
+
+::::::::::::::::::
+::::::::::::::::::
+
+---
+
+## Looking Ahead
 
 We now know where data should live.
 

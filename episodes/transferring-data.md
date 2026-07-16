@@ -67,25 +67,27 @@ Before we can solve these problems, we need to understand how data size is measu
 
 ---
 
-# Discussion: How Could We Make The Data Smaller?
+::::::::::::::::::::::::::::::::::::: discussion
+How Could We Make The Data Smaller?
 
-> ## Discussion
->
-> Working in pairs:
->
-> What options can you think of for reducing the amount of storage used by a dataset?
->
-> Consider:
->
-> - Temporary files
-> - File formats
-> - Compression
-> - Duplicate data
-> - Images and media
->
-> Write down as many ideas as possible.
+
+ Working in pairs:
+
+ What options can you think of for reducing the amount of storage used by a dataset?
+
+ Consider:
+
+ - Temporary files
+ - File formats
+ - Compression
+ - Duplicate data
+ - Images and media
+
+ Write down as many ideas as possible.
 
 After a few minutes, discuss responses as a group.
+
+::::::::::::::::::::::::::::::::::::::::: 
 
 Common answers may include:
 
@@ -97,13 +99,15 @@ Common answers may include:
 - Resizing images
 - Removing unnecessary intermediate results
 
-> ## Instructor Note
+::::::::::::::::::::::::::::::::::::: instructor
 >
 > Learners often jump immediately to deleting files.
 >
 > Emphasise that deletion is usually the last option.
 >
 > Compression and improved organisation often reduce storage requirements significantly without losing information.
+
+:::::::::::::::::::::::::::::::::::::::: 
 
 ---
 
@@ -272,7 +276,9 @@ For research data, lossy compression should be used with care.
 
 # Demonstration: Compressing A Folder
 
-## Windows
+:::::::::: tab
+
+### Windows
 
 1. Right-click the folder.
 2. Select:
@@ -289,9 +295,7 @@ For example:
 clean_data.zip
 ```
 
----
-
-## macOS
+### macOS
 
 1. Right-click the folder.
 2. Choose:
@@ -302,9 +306,8 @@ Compress
 
 A ZIP archive will be created.
 
----
 
-## Linux
+### Linux
 
 Most desktop file managers provide a similar option:
 
@@ -314,13 +317,15 @@ Right-click → Compress
 
 The exact wording varies between desktop environments.
 
-> ## Instructor Note
+:::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 >
 > Demonstrate compression on the cleaned project directory.
 >
 > Show both the original folder size and the compressed archive size.
 
----
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 # When Should You Compress Data?
 
@@ -367,13 +372,14 @@ pdf
 
 Compressing these files often produces very little size reduction.
 
-> ## Callout
->
-> If a file format is already compressed, zipping it again may provide almost no additional benefit.
+:::::::::::::::::::::::::::::::::::::::::::::::::  callout
 
----
+ If a file format is already compressed, zipping it again may provide almost no additional benefit.
 
-# Exercise: How Much Space Can We Save?
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::::: challenge
+ How Much Space Can We Save?
 
 > ## Challenge
 >
@@ -390,7 +396,7 @@ Compressing these files often produces very little size reduction.
 > - Was the reduction larger or smaller than expected?
 > - Why do you think this happened?
 
-> ## Solution
+::::::::::::::::::::::::::::::::::::::::::::::::: solution
 >
 > Results will vary depending on the data.
 >
@@ -398,7 +404,8 @@ Compressing these files often produces very little size reduction.
 >
 > Images, video, and already-compressed formats may show little improvement.
 
----
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 # File Formats And Storage
 
@@ -491,7 +498,9 @@ The best format depends on your intended use.
 
 ---
 
-# Discussion: How Have You Shared Data Before?
+::::::::::::::::::::::::::::::::::::::::::::::::::: discussion
+
+ How Have You Shared Data Before?
 
 > ## Discussion
 >
@@ -510,7 +519,8 @@ The best format depends on your intended use.
 >
 > What limitations did you encounter?
 
----
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 # Methods For Transferring Data
 
@@ -630,7 +640,9 @@ However, they are beyond the scope of this lesson.
 
 ---
 
-# Exercise: Choosing A Transfer Method
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::: challenge
+
+ Choosing A Transfer Method
 
 > ## Challenge
 >
@@ -643,7 +655,7 @@ However, they are beyond the scope of this lesson.
 >
 > Discuss your choices with a partner.
 
-> ## Solution
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::: solution
 >
 > Example answers:
 >
@@ -654,7 +666,8 @@ However, they are beyond the scope of this lesson.
 >
 > The important consideration is matching tools to scale and purpose.
 
----
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
 
 # Looking Ahead
 

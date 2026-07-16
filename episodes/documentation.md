@@ -203,7 +203,10 @@ It is good to document:
 - Describe the datasets
 - Origin of the data
 - How the data should be used
+- Funding agency
 - Name of primary contact
+- Keywords
+- Access conditions
 
 These will be expanded on below. 
 
@@ -294,6 +297,7 @@ Useful information might include:
 - Processing steps
 - Important assumptions
 - Known limitations
+- Access conditions - restrictions and access methods. 
 
 This can save future users significant amounts of time.
 ::::::::::::::
@@ -406,6 +410,8 @@ Last Updated:
 ```
 
 The goal is clarity rather than perfection.
+
+Another example can be found [here](https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt)
 
 ---
 
@@ -649,6 +655,12 @@ Parameter files will depend on for project and/or software, but provide a record
  - Who is responsible for the project
 
  It should allow somebody unfamiliar with the project to begin understanding its contents.
+
+Also, see the Newcastle University [Documentation](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/organise/) and Metadata page.
+
+
+Additional, subject specific suggestions can be found [here](https://www.dcc.ac.uk/guidance/standards/metadata) as well as data centre policies and information produced by funding agencies. 
+
 
 ::::::::::::::::::::
 :::::::::::::::::::

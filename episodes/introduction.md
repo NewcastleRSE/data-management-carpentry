@@ -117,11 +117,38 @@ They are organisational problems.
 
 Good data management practices reduce time wasted searching for data, improve collaboration, and make research easier to reproduce.
 
-> ## Discussion
->
-> Have you ever inherited files from another researcher or returned to an old project after several months?
->
-> What was the most difficult part of understanding the data?
+:::::::::::::::::: callout
+
+Various research funding organisations have data management and sharing policies, and can request detailed plans in funding applications.
+
+- [UK](https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/)
+- [USA](https://www.nsf.gov/funding/data-management-plan)
+- [Canada](https://cihr-irsc.gc.ca/e/54157.html) 
+
+Newcastle Univerity has its own policies [https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/].
+
+
+::::::::::::::::::
+
+::::::::::::::::::: discussion
+
+ Have you ever inherited files from another researcher or returned to an old project after several months?
+
+ What was the most difficult part of understanding the data?
+
+::::::::::::::::::::
+
+
+::::::::::::::::::: caution
+### Legal issues with personal data
+
+- Personal data can be requested by members of the public on mandated timescales. Would you be able to find it?
+- Members of the public can request data be deleted. Would you be able to with confidence?
+- Data can only be retained for spesific purposes. 
+
+Clear data management is essential to ensure you are able to conform to the law so you do not loose track of important data.
+
+:::::::::::::::::::
 
 ## How Computers Store Data
 
@@ -157,9 +184,8 @@ Computer
 
 Folders help organise related files in much the same way as folders in a filing cabinet.
 
-Without folders, every file would exist in one enormous list.
-
 A file system provides:
+
 - Structure
 - Organisation
 - Navigation
@@ -168,19 +194,21 @@ A file system provides:
 Without folders, every file on your computer would exist in one enormous list.
 
 
-# Storage Locations
+## Storage Locations
+
 Files ultimately live on some form of digital storage.
 Examples include:
+
 - Internal hard drives
 - Solid-state drives (SSDs)
 - USB drives
 - Network storage
 - Cloud storage
 
-Regardless of where files are stored physically, they are typically presented to users through the same folder-and-file structure.As a result, learning to navigate folders is a transferable skill regardless of the storage system being used
+Regardless of where files are stored physically, they are typically presented to users through the same folder-and-file structure.As a result, learning to navigate folders is a transferable skill regardless of the storage system being used.
 
 
-# Introducing the File Explorer
+## Introducing the File Explorer
 
 Most people interact with files through a graphical interface known as a **file explorer** or **file manager**.
 
@@ -194,26 +222,61 @@ Examples include:
 
 In this lesson we will demonstrate using **Windows File Explorer**, but the same concepts apply to other operating systems.
 
-## Demonstration: Opening File Explorer
+::::::::::::::::::: discussion
+## Opening File Explorer
 
-The instructor should demonstrate how to open File Explorer.
+The instructor should demonstrate how to open File Explorer in Windows.
 
-### Method 1 
+:::::::::::::: tab
+
+### Windows I / MacOS I
+
 Click the folder icon on the taskbar.
-### Method 2
-Press:```textWindows Key + E```
-### Method 3
-Open the Start Menu and search for:```textFile Explorer```
 
-### Windows
+### Windows II
 
-- Click the folder icon on the taskbar
-- Press `Windows + E`
-- Search for "File Explorer" from the Start Menu
+Press:```Windows Key + E```
+
+### Windows III
+
+Open the Start Menu and search for:```File Explorer```
+
+### MacOS II
+
+Click the finder icon on the dock.
+
+::::::::::::::::
+::::::::::::::::
 
 
+::::::::::::: callout
+Links to further instructions for various file navigation tools
 
-# Anatomy of File Explorer
+:::::::::::: tab
+
+
+### Windows 11
+
+- [File Explorer](https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows)
+
+### MacOS
+
+- [Finder](https://support.apple.com/en-gb/guide/mac-help/mchlp2605/mac)
+
+Select your particular MacOS version at the top of the pace under "Mac User Guide"
+
+### Linux
+
+- [GNOME Files](https://apps.gnome.org/en-GB/Nautilus/)
+- [Dolphin](https://userbase.kde.org/Dolphin/File_Management#Discover_Dolphin)
+- [Thunar](https://docs.xfce.org/xfce/thunar/the-file-manager-window)
+
+
+::::::::::::
+:::::::::::::
+
+
+## Anatomy of File Explorer
 A typical File Explorer window contains several important components.
 
 ```text
@@ -229,9 +292,10 @@ A typical File Explorer window contains several important components.
 |                 |                                |
 +--------------------------------------------------+
 ```
-## Navigation Pane
+### Navigation Pane
 Usually found on the left-hand side.
 This shows:
+
 - Desktop
 - Documents
 - Downloads
@@ -241,34 +305,37 @@ This shows:
 
 You can use it to jump quickly between locations.
 
-## File List
+### File List
 
 The central area of the window.
 This displays the contents of the currently selected folder.
 
-## Address Bar
+### Address Bar
+
 Located near the top.
 Shows your current location within the file system.
-For example:```textDownloads > legacy_dataset > RAW_DATA_!!!```
+For example:```Downloads > legacy_dataset > RAW_DATA_!!!```
 This helps you understand where you are and allows you to move back to previous folders.
 
-## Search Box
+### Search Box
 Many file managers provide a search box.
 Search can be useful, but it should not be your primary strategy for finding files.
 A well-organised folder structure makes data easier to locate without relying on search.
 
 
-
-# Looking Ahead
+## Looking Ahead
 
 In the next episode we will examine the inherited dataset and begin improving its folder structure.
 Before we can organise the files, however, we first need to locate them.
 
 
 
+
+::::::::::::: discussion
+
 ### What to Show
 
-Demonstrate:
+You should make sure that you know where to find:
 
 - Navigation pane
 - File listing area
@@ -277,17 +344,22 @@ Demonstrate:
 - Moving between folders
 - Expanding and collapsing folders
 
+on your particular computer, whether it is Windows, MacOS or Linux. 
+
+::::::::::::::::::::::
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
->
-> Do not assume learners regularly use desktop file systems.
->
-> Some participants may primarily use mobile devices and may have little experience navigating folders directly.
->
-> Spend a few minutes explicitly demonstrating how files and folders are organised.
+Do not assume learners regularly use desktop file systems.
+
+Some participants may primarily use mobile devices and may have little experience navigating folders directly.
+
+Spend a few minutes explicitly demonstrating how files and folders are organised.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Exercise: Finding the Dataset
+
+::::::::::::: challenge
+## Finding the Dataset
 
 Download the lesson dataset.
 
@@ -298,14 +370,15 @@ Using File Explorer:
 3. Open the dataset folder.
 4. Explore the contents without modifying anything.
 5. Identify at least three things that seem confusing or poorly organised.
+:::::::::::::::::
 
-> ## Discussion
 
->
-> Was it immediately obvious where the important data was?
->
-> What information would have helped you understand the project more quickly?
+::::::::::::: discussion
 
+Was it immediately obvious where the important data was?
+
+What information would have helped you understand the project more quickly?
+:::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 

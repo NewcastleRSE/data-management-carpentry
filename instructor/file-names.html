@@ -217,12 +217,28 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         3. Naming Files Well
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#from-folder-names-to-file-names">From Folder Names to File Names</a></li>
+<li><a href="#why-filenames-matter">Why Filenames Matter</a></li>
+<li><a href="#characteristics-of-good-filenames">Characteristics of Good Filenames</a></li>
+<li><a href="#what-information-should-go-into-a-filename">What Information Should Go Into a Filename?</a></li>
+<li><a href="#naming-files-for-batch-processing">Naming Files for Batch Processing</a></li>
+<li><a href="#using-hierarchies-effectively">Using Hierarchies Effectively</a></li>
+<li><a href="#versioning-files">Versioning Files</a></li>
+<li><a href="#renaming-files">Renaming files</a></li>
+<li><a href="#exercise-improve-the-file-names">Exercise: Improve the File Names</a></li>
+<li><a href="#looking-ahead">Looking Ahead</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -339,7 +355,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Naming Files Well</h1>
-        <p>Last updated on 2026-07-02 |
+        <p>Last updated on 2026-07-16 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/file-names.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -361,9 +377,9 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul><li>What makes a good filename?</li>
+<li>How much information should be included in a filename?</li>
 <li>Why are naming conventions important?</li>
 <li>How can filenames support batch processing and automation?</li>
-<li>How much information should be included in a filename?</li>
 <li>How can I rename one file or many files using a graphical file
 browser?</li>
 </ul></div>
@@ -386,11 +402,9 @@ browser?</li>
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="from-folder-names-to-file-names">From Folder Names to File Names<a class="anchor" aria-label="anchor" href="#from-folder-names-to-file-names"></a></h1>
-<p>In the previous episode, we improved the folder structure of the
-inherited project.</p>
-<p>Unfortunately, fixing the folders has not solved all of our
+<section><h2 class="section-heading" id="from-folder-names-to-file-names">From Folder Names to File Names<a class="anchor" aria-label="anchor" href="#from-folder-names-to-file-names"></a></h2>
+<hr class="half-width"><p>In the previous episode, we improved the folder structure of the
+inherited project. However, fixing the folders has not solved all of our
 problems.</p>
 <p>Consider the files we have been given:</p>
 <pre class="text"><code>Data!@#$.csv
@@ -401,9 +415,16 @@ results-new.csv
 data_final.xlsx
 data_final_v2.xlsx
 data_final_v3_LAST_ONE.xlsx</code></pre>
-<p>At best, these names are unhelpful.</p>
-<p>At worst, they actively prevent us from understanding the
-project.</p>
+<p>At best, these names are unhelpful. At worst, they actively prevent
+us from understanding the project or keeping track of progress,
+particularly months later.</p>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
 <p>Imagine receiving an email that says:</p>
 <blockquote>
 <p>“Can you update the analysis using the latest data?”</p>
@@ -413,18 +434,34 @@ project.</p>
 <span><span class="va">data_final_v2.xlsx</span></span>
 <span><span class="va">data_final_v3_LAST_ONE.xlsx</span></span></code></pre>
 <p>The answer is not obvious.</p>
-<p>Good filenames allow us to understand what a file contains without
-opening it.</p>
-<p>This becomes increasingly important as projects grow larger and data
-is shared between collaborators.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="discussion-whats-wrong-with-these-filenames">Discussion: What’s Wrong With These Filenames?<a class="anchor" aria-label="anchor" href="#discussion-whats-wrong-with-these-filenames"></a></h1>
-<blockquote>
-<h2 id="discussion">Discussion</h2>
-<p>Working in pairs, look through the files in the inherited
-project.</p>
-<p>What problems can you identify?</p>
+<p>One can imagine that the latest results are in
+“data_final_v3_LAST_ONE.xlsx”, but maybe there was an error in this file
+and it was never deleted, meaning that “data_final_v2.xlsx” contains the
+latest data.</p>
+<p>You do not want to be in a situation where you have to sort the files
+by date and hope that the last <em>created or modified</em> file was the
+last <em>good</em> file!</p>
+</div>
+</div>
+</div>
+<p>Good filenames should give us insight into what a file contains
+without needing to open it. Your choice of filenames should make
+subsequent analysis steps as frictionless as possible. If you find you
+are fighting your files in order to make progress in your work, there is
+probably something that can be improved. <em>You have to be able to find
+your data in order to use it!</em></p>
+<p>Your choice of filenames becomes increasingly important as projects
+grow larger, data is shared between collaborators, or data needs
+revisiting at a later date.</p>
+<div id="discussion1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Working in pairs, look through the files in the inherited project.
+What problems can you identify?</p>
 <p>Consider:</p>
 <ul><li>Can you tell what the file contains?</li>
 <li>Can you identify the newest version?</li>
@@ -432,26 +469,54 @@ project.</p>
 <li>Would the names be easy to process automatically?</li>
 <li>Are there any confusing abbreviations?</li>
 </ul><p>Write down as many issues as you can find.</p>
-</blockquote>
 <p>After a few minutes, discuss observations as a group.</p>
-<p>Common issues typically include:</p>
-<ul><li>Meaningless names</li>
-<li>Overly long names</li>
-<li>Special characters</li>
-<li>Multiple date formats</li>
-<li>Ambiguous version information</li>
-<li>Inconsistent separators</li>
-<li>Duplicate information</li>
-</ul><blockquote>
-<h2 id="instructor-note">Instructor Note</h2>
+</div>
+</div>
+</div>
+<div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Common issues with file names which typically arise include:</p>
+<ul><li>Meaningless names (data.csv)</li>
+<li>Overly long names
+(1Nov16_polymer_test1_heating_123degree_measure14_userabc_id12345.txt)</li>
+<li>Special characters (image#1.png)</li>
+<li>Multiple date formats (23-Nov2024.csv, 2024-15-07.txt)</li>
+<li>Ambiguous version information
+(data1bfinalfinal2reallyfinal.txt)</li>
+<li>Inconsistent separators (10-12_2019-data_ver1.img.csv)</li>
+<li>Duplicate information (24Nov_image01_241117.dat)</li>
+<li>Hard to parse names (test1userabsnovember17.h5)</li>
+</ul></div>
+</div>
+</div>
+<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div class="accordion-body">
 <p>Encourage learners to focus on whether filenames communicate useful
 information.</p>
 <p>Avoid discussing “perfect” filenames. The goal is consistency and
 clarity.</p>
-</blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="why-filenames-matter">Why Filenames Matter<a class="anchor" aria-label="anchor" href="#why-filenames-matter"></a></h1>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="why-filenames-matter">Why Filenames Matter<a class="anchor" aria-label="anchor" href="#why-filenames-matter"></a></h2>
+<hr class="half-width"><div id="callout3" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
 <p>A filename serves several purposes simultaneously.</p>
 <p>It helps answer:</p>
 <ul><li>What is this file?</li>
@@ -464,49 +529,136 @@ clarity.</p>
 <li>Sharing and collaboration</li>
 <li>Automated processing</li>
 <li>Reproducibility</li>
-</ul><p>A filename should help both a human reader and a computer.</p>
+</ul></div>
+</div>
+</div>
+<p>A filename should be easily useable by both a human reader and a
+computer. Humans and computers are good at different things and
+different tools and operating systems (Windows, MacOS, Linux) have
+different conventions. Your filenames should be as portable as
+possible.</p>
 <p>Future-you is one of the most important users of your naming
-convention.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="characteristics-of-good-filenames">Characteristics of Good Filenames<a class="anchor" aria-label="anchor" href="#characteristics-of-good-filenames"></a></h1>
+convention, but, should be easily understandable to collegues.</p>
+</section><section><h2 class="section-heading" id="characteristics-of-good-filenames">Characteristics of Good Filenames<a class="anchor" aria-label="anchor" href="#characteristics-of-good-filenames"></a></h2>
+<hr class="half-width"><div id="callout4" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
 <p>There is no universal naming convention.</p>
-<p>Different projects require different information.</p>
-<p>However, successful file naming schemes usually share several
+</div>
+</div>
+</div>
+<p>There are so many possible scenarios it is impossible to build an
+understandable, concise, informative template which accounts for them
+all. Different projects require different information. However,
+successful file naming schemes usually share several
 characteristics.</p>
-<div class="section level2">
-<h2 id="meaningful">Meaningful<a class="anchor" aria-label="anchor" href="#meaningful"></a></h2>
-<p>A filename should describe the contents of the file.</p>
-<p>Good:</p>
-<pre class="text"><code>2026-04-03_water_quality_siteA.csv</code></pre>
-<p>Poor:</p>
-<pre class="text"><code><span><span class="va">data.csv</span></span></code></pre>
-<p>The first example immediately communicates useful information.</p>
-<p>The second communicates almost nothing.</p>
-<hr></div>
-<div class="section level2">
-<h2 id="consistent">Consistent<a class="anchor" aria-label="anchor" href="#consistent"></a></h2>
+<p>Filenames should be:</p>
+<ul><li>Meaningful</li>
+<li>Consistant</li>
+<li>Machine-friendly</li>
+<li>Sortable</li>
+<li>Clear</li>
+</ul><div class="section level3">
+<h3 id="meaningful">Meaningful<a class="anchor" aria-label="anchor" href="#meaningful"></a></h3>
+<p>A filename should describe the contents of the file, for example:</p>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-1" type="button" role="tab" aria-controls="nav-tabpanel-1-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-2" type="button" role="tab" aria-controls="nav-tabpanel-1-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
+<pre class="text"><code>&gt; data.csv</code></pre>
+</div>
+<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
+<pre class="text"><code>&gt; 2026-04-03_water_quality_siteA.csv</code></pre>
+</div>
+</div>
+</div>
+<p>The ‘good’ example immediately communicates useful information about
+the data: data about the water quality at siteA on the 3rd April 2026.
+This can be used by a human, to immediatly find the data in a folder
+containing, potentially, many files and helps transcription into code or
+a document. For a computer the filename contains important information
+which can help software load and sort the data without having to open
+the document and read its content. The second filename communicates
+almost nothing.</p>
+</div>
+<div class="section level3">
+<h3 id="consistent">Consistent<a class="anchor" aria-label="anchor" href="#consistent"></a></h3>
 <p>Choose a convention and use it everywhere.</p>
-<p>Good:</p>
-<pre class="text"><code>2026-04-01_sample01.csv
-2026-04-02_sample02.csv
-2026-04-03_sample03.csv</code></pre>
-<p>Less helpful:</p>
+<div class="tabs">
+<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-2-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-1" type="button" role="tab" aria-controls="nav-tabpanel-2-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-2-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-2-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-2" type="button" role="tab" aria-controls="nav-tabpanel-2-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-2-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-2" class="tab-content">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
 <pre class="text"><code><span><span class="va">Apr1.csv</span></span>
 <span><span class="va">sample_2.csv</span></span>
 <span><span class="va">Results03April.csv</span></span></code></pre>
+</div>
+<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
+<pre class="text"><code>2026-04-01_sample01.csv
+2026-04-02_sample02.csv
+2026-04-02_sample03.csv</code></pre>
+</div>
+</div>
+</div>
 <p>Even if the files contain the same information, inconsistent naming
-makes them harder to understand and automate.</p>
-<hr></div>
-<div class="section level2">
-<h2 id="machine-friendly">Machine-Friendly<a class="anchor" aria-label="anchor" href="#machine-friendly"></a></h2>
+makes them harder to understand and automate. IF the folder contains
+many files, how would you be able to find these files among the others?
+For automation, the good example contains date and order information so
+each file can be analysed in order without having to load each file
+individually.</p>
+</div>
+<div class="section level3">
+<h3 id="machine-friendly">Machine-Friendly<a class="anchor" aria-label="anchor" href="#machine-friendly"></a></h3>
 <p>Computers prefer predictable patterns.</p>
-<p>Avoid:</p>
+<div class="tabs">
+<nav><div id="nav-tab-3" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-3-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-1" type="button" role="tab" aria-controls="nav-tabpanel-3-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-3-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-3-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-2" type="button" role="tab" aria-controls="nav-tabpanel-3-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-3-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-3" class="tab-content">
+<div id="nav-tabpanel-3-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-1">
 <pre class="text"><code>my data.csv
 results &amp; notes.csv</code></pre>
-<p>Prefer:</p>
+</div>
+<div id="nav-tabpanel-3-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-2">
 <pre class="text"><code><span><span class="va">my_data.csv</span></span>
 <span><span class="va">results_and_notes.csv</span></span></code></pre>
+</div>
+</div>
+</div>
 <p>Recommended characters include:</p>
 <ul><li>letters</li>
 <li>numbers</li>
@@ -515,45 +667,103 @@ results &amp; notes.csv</code></pre>
 </ul><p>Avoid:</p>
 <pre class="text"><code>\ / : * ? " &lt; &gt; |</code></pre>
 <p>These characters can have special meanings on different operating
-systems.</p>
-<hr></div>
-<div class="section level2">
-<h2 id="sortable">Sortable<a class="anchor" aria-label="anchor" href="#sortable"></a></h2>
-<p>Files are usually displayed alphabetically.</p>
-<p>If dates are written as:</p>
+systems. Hyphens can cause issues because different word processors can
+substitute different characters which look almost the same . Similarly,
+word processors can autocorrect lower case letters into uppercase
+characters at the start of lines.</p>
+<div id="caution1" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Windows file names are case insensitive. Linux and Mac filenames are
+case sensitive. This can cause data loss when copying files from Linux
+or Mac to Windows</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="sortable">Sortable<a class="anchor" aria-label="anchor" href="#sortable"></a></h3>
+<p>Files are usually displayed alphanumercally so file names should be
+chosen to take advantage of this.</p>
+<div class="tabs">
+<nav><div id="nav-tab-4" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-4-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-1" type="button" role="tab" aria-controls="nav-tabpanel-4-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-4-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-4-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-2" type="button" role="tab" aria-controls="nav-tabpanel-4-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-4-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-4" class="tab-content">
+<div id="nav-tabpanel-4-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-1">
 <pre class="text"><code><span><span class="fl">03</span><span class="op">-</span><span class="fl">04</span><span class="op">-</span><span class="fl">2026</span></span>
 <span><span class="fl">12</span><span class="op">-</span><span class="fl">01</span><span class="op">-</span><span class="fl">2025</span></span>
 <span><span class="fl">25</span><span class="op">-</span><span class="fl">12</span><span class="op">-</span><span class="fl">2025</span></span></code></pre>
-<p>they may not sort chronologically.</p>
-<p>Instead use:</p>
+</div>
+<div id="nav-tabpanel-4-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-2">
 <pre class="text"><code><span><span class="fl">2025</span><span class="op">-</span><span class="fl">01</span><span class="op">-</span><span class="fl">12</span></span>
 <span><span class="fl">2025</span><span class="op">-</span><span class="fl">12</span><span class="op">-</span><span class="fl">25</span></span>
 <span><span class="fl">2026</span><span class="op">-</span><span class="fl">04</span><span class="op">-</span><span class="fl">03</span></span></code></pre>
-<p>The ISO date format:</p>
+</div>
+</div>
+</div>
+<p>My placing the year, then month, then day the files will be grouped
+with the same year then by month within that year etc. This is more
+useful than sorting by day first, then month within that day. You
+avoid:</p>
+<pre class="text"><code>01-02-2025.csv
+01-03-2025.csv
+01-05-2024.csv
+01-05-2023.csv</code></pre>
+<p>which is <em>usually</em>, but not always, less useful.</p>
+<div id="callout5" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>This date order is known as the ISO date format [<a href="https://www.iso.org/iso-8601-date-and-time-format.html" class="external-link uri">https://www.iso.org/iso-8601-date-and-time-format.html</a>]:</p>
 <pre class="text"><code><span><span class="va">YYYY</span><span class="op">-</span><span class="va">MM</span><span class="op">-</span><span class="va">DD</span></span></code></pre>
-<p>sorts correctly both alphabetically and chronologically.</p>
-<blockquote>
-<h2 id="callout">Callout</h2>
 <p>This is one of the simplest improvements you can make to a
 dataset.</p>
 <p>Using ISO dates often eliminates many common sorting problems.</p>
-</blockquote>
-<hr></div>
 </div>
-<div class="section level1">
-<h1 id="what-information-should-go-into-a-filename">What Information Should Go Into a Filename?<a class="anchor" aria-label="anchor" href="#what-information-should-go-into-a-filename"></a></h1>
-<p>Many researchers face a common temptation:</p>
-<blockquote>
-<p>If information is useful, why not put all of it in the filename?</p>
-</blockquote>
+</div>
+</div>
+<p>When planning the file names remember sorting and place the item you
+want group the files by at the beginning of the file. If date is the
+most useful, put it first, if country is important, put it first.</p>
+</div>
+<div class="section level3">
+<h3 id="clear">Clear<a class="anchor" aria-label="anchor" href="#clear"></a></h3>
+<p>Filenames should be clear for a human and computer to read. ::: tab
+### Poor</p>
+<pre class="text"><code>03042026siteAID1234.csv</code></pre>
+</div>
+<div class="section level3">
+<h3 id="good-4">Good<a class="anchor" aria-label="anchor" href="#good-4"></a></h3>
+<pre class="text"><code>03-04-2026_site-A_ID-1234.csv</code></pre>
+<p>::: This provides breaks for the eye, and for software.</p>
+</div>
+</section><section><h2 class="section-heading" id="what-information-should-go-into-a-filename">What Information Should Go Into a Filename?<a class="anchor" aria-label="anchor" href="#what-information-should-go-into-a-filename"></a></h2>
+<hr class="half-width"><p>Many researchers face a common temptation:</p>
+<pre class="text"><code>If information is useful, why not put all of it in the filename?</code></pre>
 <p>This can lead to names such as:</p>
 <pre class="text"><code>2026-06-01_12-43-16_sampling_trip_siteA_temperature_sensor_03_processed_final_v2.csv</code></pre>
-<p>The filename becomes difficult to read.</p>
+<p>which becomes difficult to read, particularly in a long list of such
+files.</p>
 <p>A useful guideline is:</p>
-<blockquote>
-<p>Include enough information to identify the file, but not so much that
-the filename becomes documentation.</p>
-</blockquote>
+<pre class="text"><code>Include enough information to identify the file, but not so much
+that the filename becomes documentation.</code></pre>
 <p>The most useful information might include:</p>
 <ul><li>date</li>
 <li>sample identifier</li>
@@ -562,41 +772,118 @@ the filename becomes documentation.</p>
 <li>version</li>
 </ul><p>For example:</p>
 <pre class="text"><code>2026-06-01_siteA_sample03_v01.csv</code></pre>
-<p>Additional details can be stored elsewhere:</p>
+<p>Additional details can either be stored elsewhere:</p>
 <ul><li>README files</li>
 <li>metadata files</li>
 <li>data dictionaries</li>
 <li>laboratory notebooks</li>
-</ul><p>We will discuss documentation in the next episode.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="naming-files-for-batch-processing">Naming Files for Batch Processing<a class="anchor" aria-label="anchor" href="#naming-files-for-batch-processing"></a></h1>
-<p>One advantage of consistent filenames is that they can easily be
+</ul><p>or as a header or metadata in the file itself.</p>
+<p>We will discuss documentation in the next episode.</p>
+</section><section><h2 class="section-heading" id="naming-files-for-batch-processing">Naming Files for Batch Processing<a class="anchor" aria-label="anchor" href="#naming-files-for-batch-processing"></a></h2>
+<hr class="half-width"><p>One advantage of consistent filenames is that they can easily be
 processed together.</p>
-<p>Consider:</p>
-<pre class="text"><code><span><span class="fl">01</span><span class="op">-</span><span class="va">June_image_01.png</span></span>
-<span><span class="fl">02</span><span class="op">-</span><span class="va">June_image_02.png</span></span>
-<span><span class="fl">03</span><span class="op">-</span><span class="va">June_image_03.png</span></span></code></pre>
-<p>These can be processed as a collection.</p>
-<p>However:</p>
+<div class="tabs">
+<nav><div id="nav-tab-5" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-5-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-1" type="button" role="tab" aria-controls="nav-tabpanel-5-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-5-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-5-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-2" type="button" role="tab" aria-controls="nav-tabpanel-5-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-5-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-5" class="tab-content">
+<div id="nav-tabpanel-5-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-5-1">
 <pre class="text"><code>Image One.png
 June second image.png
 IMG_final.png</code></pre>
-<p>are much harder to work with systematically.</p>
-<p>When files are expected to belong to a sequence, use consistent
-numbering:</p>
-<pre class="text"><code><span><span class="va">image_01.png</span></span>
-<span><span class="va">image_02.png</span></span>
-<span><span class="va">image_03.png</span></span></code></pre>
-<p>rather than:</p>
+</div>
+<div id="nav-tabpanel-5-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-5-2">
+<pre class="text"><code><span><span class="fl">01</span><span class="op">-</span><span class="va">June_image_01.png</span></span>
+<span><span class="fl">01</span><span class="op">-</span><span class="va">June_image_02.png</span></span>
+<span><span class="fl">03</span><span class="op">-</span><span class="va">June_image_03.png</span></span></code></pre>
+</div>
+</div>
+</div>
+<p>The files in the good example can be processed together, while files
+in the poor example are much harder to work with systematically. When
+files are expected to belong to a sequence, use consistent numbering
+with leading zeros:</p>
+<div class="tabs">
+<nav><div id="nav-tab-6" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-6-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-6-1" type="button" role="tab" aria-controls="nav-tabpanel-6-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-6-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-6-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-6-2" type="button" role="tab" aria-controls="nav-tabpanel-6-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-6-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-6" class="tab-content">
+<div id="nav-tabpanel-6-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-6-1">
 <pre class="text"><code><span><span class="va">image_1.png</span></span>
 <span><span class="va">image_2.png</span></span>
 <span><span class="va">image_10.png</span></span></code></pre>
-<p>Using leading zeros improves sorting.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="using-hierarchies-effectively">Using Hierarchies Effectively<a class="anchor" aria-label="anchor" href="#using-hierarchies-effectively"></a></h1>
-<p>Remember that folders already provide information.</p>
+</div>
+<div id="nav-tabpanel-6-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-6-2">
+<pre class="text"><code><span><span class="va">image_01.png</span></span>
+<span><span class="va">image_02.png</span></span>
+<span><span class="va">image_03.png</span></span></code></pre>
+</div>
+</div>
+</div>
+<p>This improves sorting. For example, when sorting files we get:</p>
+<div class="tabs">
+<nav><div id="nav-tab-7" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-7-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-7-1" type="button" role="tab" aria-controls="nav-tabpanel-7-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-7-1">
+  Bad sorting
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-7-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-7-2" type="button" role="tab" aria-controls="nav-tabpanel-7-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-7-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-7" class="tab-content">
+<div id="nav-tabpanel-7-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-7-1">
+<pre class="text"><code><span><span class="va">image_8.png</span></span>
+<span><span class="va">image_80.png</span></span>
+<span><span class="va">image_81.png</span></span>
+<span><span class="va">image_9.png</span></span>
+<span><span class="va">image_93.png</span></span></code></pre>
+</div>
+<div id="nav-tabpanel-7-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-7-2">
+<pre class="text"><code><span><span class="va">image_08.png</span></span>
+<span><span class="va">image_09.png</span></span>
+<span><span class="va">image_80.png</span></span>
+<span><span class="va">image_81.png</span></span>
+<span><span class="va">image_93.png</span></span></code></pre>
+</div>
+</div>
+</div>
+<div id="callout6" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Remember to pad with sufficient zeros for the expected total number
+of files. If you expect less than 100 files you can pad with 1 zero,
+less than 1000 pad with 2 zeros etc.</p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="using-hierarchies-effectively">Using Hierarchies Effectively<a class="anchor" aria-label="anchor" href="#using-hierarchies-effectively"></a></h2>
+<hr class="half-width"><p>Remember that your folder hierarchy already provides information.</p>
 <p>Suppose we have:</p>
 <pre class="text"><code>project/
 └── case_studies/
@@ -608,81 +895,228 @@ numbering:</p>
 <p>is sufficient.</p>
 <p>Avoid naming files:</p>
 <pre class="text"><code>scotland_2026-06-01_image_01.png</code></pre>
-<p>because the location information is already present in the folder
-structure.</p>
+<p>For example:</p>
+<div class="tabs">
+<nav><div id="nav-tab-8" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-8-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-8-1" type="button" role="tab" aria-controls="nav-tabpanel-8-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-8-1">
+  Bad
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-8-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-8-2" type="button" role="tab" aria-controls="nav-tabpanel-8-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-8-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-8" class="tab-content">
+<div id="nav-tabpanel-8-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-8-1">
+<pre class="text"><code>project/
+└── case_studies/
+    ├── scotland/
+       └── scotland_2026-06-01_image_01.png
+       └── scotland_2026-06-01_image_02.png
+    ├── england/
+       └── england_2026-07-02_image_01.png
+    └── wales/
+       └── wales_2026-05-02_image_13.png  </code></pre>
+</div>
+<div id="nav-tabpanel-8-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-8-2">
+<pre class="text"><code>project/
+└── case_studies/
+    ├── scotland/
+       └── 2026-06-01_image_01.png
+       └── 2026-06-01_image_02.png
+    ├── england/
+       └── 2026-07-01_image_01.png
+    └── wales/
+       └── 2026-05-02_image_13.png  </code></pre>
+</div>
+</div>
+</div>
+<p>The location information is already present in the folder structure
+and so is reduntant in the file name.</p>
+<p>This does illustrate how each project has different filename
+requirements. If the ‘country’ layer of the directory structure wasn’t
+present it would be useful to put the country in the filename. As files
+move around, or are migrated from folder to folder you need to consider
+whether files names should change.</p>
+<div class="example">
+<p>If it is decided that the country folders can be removed then
+files:</p>
+<pre class="text"><code>scotland/2026-06-01_image_01.png
+england/2026-07-01_image_01.png </code></pre>
+<p>would have the same name, so would need to be renamed to avoid data
+loss.</p>
+</div>
+<div id="callout7" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
 <p>Good folder structures and good filenames should work together.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="versioning-files">Versioning Files<a class="anchor" aria-label="anchor" href="#versioning-files"></a></h1>
-<p>Many researchers create filenames such as:</p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="versioning-files">Versioning Files<a class="anchor" aria-label="anchor" href="#versioning-files"></a></h2>
+<hr class="half-width"><p>Versioning of files keeps track of revisions over time, and is vital
+as documents evolve and you do not wish to overwrite previous files.
+This can be because of repeated experiments, fresh downloads of data,
+wanting non-destructive revisions to documents or an audit trail of
+changes.</p>
+<p>Many researchers create filenames that making tracking revisions
+difficult. This usually indicates that a versioning strategy is missing.
+For example:</p>
+<div class="tabs">
+<nav><div id="nav-tab-9" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-9-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-9-1" type="button" role="tab" aria-controls="nav-tabpanel-9-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-9-1">
+  Bad
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-9-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-9-2" type="button" role="tab" aria-controls="nav-tabpanel-9-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-9-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-9" class="tab-content">
+<div id="nav-tabpanel-9-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-9-1">
 <pre class="text"><code><span><span class="va">final.docx</span></span>
 <span><span class="va">final_final.docx</span></span>
 <span><span class="va">final_final_v2.docx</span></span>
 <span><span class="va">FINAL_ACTUALLY_FINAL.docx</span></span></code></pre>
-<p>This usually indicates that a versioning strategy is missing.</p>
-<p>A better approach uses explicit versions:</p>
+</div>
+<div id="nav-tabpanel-9-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-9-2">
 <pre class="text"><code><span><span class="va">report_v01.docx</span></span>
 <span><span class="va">report_v02.docx</span></span>
 <span><span class="va">report_v03.docx</span></span></code></pre>
-<p>or:</p>
+<p>or</p>
 <pre class="text"><code><span><span class="va">report_v1.0.0.docx</span></span>
 <span><span class="va">report_v1.1.0.docx</span></span>
 <span><span class="va">report_v2.0.0.docx</span></span></code></pre>
+</div>
+</div>
+</div>
+<p>The bad example is difficult to follow, while the good example uses
+explicit versions.</p>
 <p>Avoid:</p>
 <ul><li>latest</li>
 <li>final</li>
 <li>newest</li>
 <li>final_final</li>
-</ul><p>Eventually these labels become inaccurate.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="renaming-a-single-file">Renaming a Single File<a class="anchor" aria-label="anchor" href="#renaming-a-single-file"></a></h1>
+</ul><p>because these labels eventually become inaccurate. As soon as you
+edit report_final_final.docx it is no longer final, and you probably
+won’t go back to it to rename it.</p>
+<div id="callout8" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Various software tools do exist to help with versioning. For
+example:</p>
+<ul><li>git (for text documents or code)</li>
+<li>Microsoft office (version history tool)</li>
+<li>OneDrive</li>
+</ul><p>which do not rely on file names.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="renaming-files">Renaming files<a class="anchor" aria-label="anchor" href="#renaming-files"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="renaming-a-single-file">Renaming a Single File<a class="anchor" aria-label="anchor" href="#renaming-a-single-file"></a></h3>
 <p>Now that we understand good naming principles, we need practical ways
 to apply them.</p>
-<div class="section level2">
-<h2 id="demonstration">Demonstration<a class="anchor" aria-label="anchor" href="#demonstration"></a></h2>
+<div id="discussion2" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
 <p>Suppose we have:</p>
 <pre class="text"><code>Data!@#$.csv</code></pre>
 <p>A more descriptive name might be:</p>
 <pre class="text"><code>2026-04-03_incidence_data_v01.csv</code></pre>
+<p>We can rename it via:</p>
+<div class="tabs">
+<nav><div id="nav-tab-10" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-10-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-10-1" type="button" role="tab" aria-controls="nav-tabpanel-10-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-10-1">
+  Windows
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-10-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-10-2" type="button" role="tab" aria-controls="nav-tabpanel-10-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-10-2">
+  Windows Alternative:
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-10-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-10-3" type="button" role="tab" aria-controls="nav-tabpanel-10-3" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-10-3">
+  MacOS
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-10" class="tab-content">
+<div id="nav-tabpanel-10-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-10-1">
 <p>To rename a file in File Explorer:</p>
 <ol style="list-style-type: decimal"><li>Select the file.</li>
 <li>Right-click.</li>
 <li>Choose <strong>Rename</strong>.</li>
 <li>Enter the new filename.</li>
 <li>Press Enter.</li>
-</ol><p>Alternatively:</p>
+</ol></div>
+<div id="nav-tabpanel-10-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-10-2">
+<p>To rename a file in File Explorer:</p>
 <ol style="list-style-type: decimal"><li>Select the file.</li>
 <li>Press <strong>F2</strong>.</li>
 <li>Type the new name.</li>
 <li>Press Enter.</li>
-</ol><p>Learners should follow along.</p>
-<blockquote>
-<h2 id="instructor-note-1">Instructor Note</h2>
-<p>Demonstrate both methods.</p>
+</ol></div>
+<div id="nav-tabpanel-10-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-10-3">
+<p>To rename a file in Finder:</p>
+<ol style="list-style-type: decimal"><li>Select the file.</li>
+<li>Left-click on the filename</li>
+<li>Enter the new filename.</li>
+<li>Press Enter.</li>
+</ol></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="accordionInstructor2" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
+  <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
+<div class="accordion-body">
+<p>Demonstrate both Windows methods.</p>
 <p>The keyboard shortcut is often significantly faster once learners
 become confident.</p>
-</blockquote>
-<hr></div>
 </div>
-<div class="section level1">
-<h1 id="the-problem-with-large-datasets">The Problem with Large Datasets<a class="anchor" aria-label="anchor" href="#the-problem-with-large-datasets"></a></h1>
-<p>Renaming one file is easy.</p>
-<p>Renaming hundreds is not.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="bulk-renaming-files">Bulk Renaming Files<a class="anchor" aria-label="anchor" href="#bulk-renaming-files"></a></h3>
+<p>Renaming one file is easy but renaming hundreds is not.</p>
 <p>Imagine receiving:</p>
 <pre class="text"><code><span><span class="va">IMG0001.JPG</span></span>
 <span><span class="va">IMG0002.JPG</span></span>
 <span><span class="va">IMG0003.JPG</span></span>
 <span><span class="va">...</span></span>
 <span><span class="va">IMG1250.JPG</span></span></code></pre>
-<p>Renaming each file individually would be extremely time
-consuming.</p>
-<p>Fortunately, many tools support bulk renaming.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="bulk-renaming-files">Bulk Renaming Files<a class="anchor" aria-label="anchor" href="#bulk-renaming-files"></a></h1>
-<p>Many operating systems provide ways to rename multiple files
-simultaneously.</p>
+<p>Renaming each file individually would be extremely time consuming
+(and boring!).Fortunately, many operating systems provide ways to rename
+multiple files simultaneously.</p>
 <p>For example:</p>
 <pre class="text"><code><span><span class="va">IMG0001.JPG</span></span>
 <span><span class="va">IMG0002.JPG</span></span>
@@ -691,44 +1125,143 @@ simultaneously.</p>
 <pre class="text"><code><span><span class="va">siteA_image_01.jpg</span></span>
 <span><span class="va">siteA_image_02.jpg</span></span>
 <span><span class="va">siteA_image_03.jpg</span></span></code></pre>
-<p>Several graphical tools support this:</p>
+<p>Several graphical tools support this, for example:</p>
+<div class="tabs">
+<nav><div id="nav-tab-11" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-11-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-11-1" type="button" role="tab" aria-controls="nav-tabpanel-11-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-11-1">
+  Windows
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-11-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-11-2" type="button" role="tab" aria-controls="nav-tabpanel-11-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-11-2">
+  MacOS
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-11-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-11-3" type="button" role="tab" aria-controls="nav-tabpanel-11-3" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-11-3">
+  Ubuntu Linux
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-11" class="tab-content">
+<div id="nav-tabpanel-11-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-11-1">
 <ul><li>Microsoft PowerToys PowerRename</li>
 <li>Bulk Rename Utility</li>
 <li>Advanced Renamer</li>
-<li>Built-in Finder rename tools on macOS</li>
-</ul><p>The exact interface differs between tools, but the concepts are
+</ul></div>
+<div id="nav-tabpanel-11-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-11-2">
+<ul><li>Built-in Finder rename tools</li>
+</ul></div>
+<div id="nav-tabpanel-11-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-11-3">
+<ul><li>Built-in File Manager tools</li>
+<li>Thunar</li>
+</ul></div>
+</div>
+</div>
+<p>The exact interface differs between tools, but the concepts are
 similar:</p>
 <ul><li>Find text</li>
 <li>Replace text</li>
 <li>Add prefixes</li>
 <li>Add suffixes</li>
 <li>Insert numbering</li>
-</ul><div class="section level2">
-<h2 id="demonstration-1">Demonstration<a class="anchor" aria-label="anchor" href="#demonstration-1"></a></h2>
+</ul><div id="challenge1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
 <p>Using a bulk rename tool:</p>
 <p>Replace:</p>
 <pre class="text"><code><span><span class="va">IMG</span></span></code></pre>
 <p>with:</p>
 <pre class="text"><code><span><span class="va">siteA_image_</span></span></code></pre>
-<p>Show learners how a predictable naming pattern can be applied across
-many files in seconds.</p>
-<blockquote>
-<h2 id="discussion-1">Discussion</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<div class="tabs">
+<nav><div id="nav-tab-12" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-12-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-12-1" type="button" role="tab" aria-controls="nav-tabpanel-12-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-12-1">
+  Before
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-12-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-12-2" type="button" role="tab" aria-controls="nav-tabpanel-12-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-12-2">
+  After:
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-12" class="tab-content">
+<div id="nav-tabpanel-12-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-12-1">
+<pre class="text"><code><span><span class="va">IMG_0001.png</span></span>
+<span><span class="va">IMG_0002.png</span></span>
+<span><span class="va">IMG_0003.png</span></span>
+<span><span class="va">IMG_0004.png</span></span>
+<span><span class="va">IMG_0005.png</span></span></code></pre>
+</div>
+<div id="nav-tabpanel-12-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-12-2">
+<pre class="text"><code><span><span class="va">siteA_image_0001.png</span></span>
+<span><span class="va">siteA_image_0002.png</span></span>
+<span><span class="va">siteA_image_0003.png</span></span>
+<span><span class="va">siteA_image_0004.png</span></span>
+<span><span class="va">siteA_image_0005.png</span></span></code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="challenge2" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
 <p>What could go wrong if a bulk rename operation is performed
 incorrectly?</p>
 <p>How could you reduce risk?</p>
-</blockquote>
-<p>Possible answers:</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
 <ul><li>Test on copies first.</li>
 <li>Rename a small sample initially.</li>
 <li>Keep backups.</li>
 <li>Check the preview before applying changes.</li>
-</ul><hr></div>
+</ul></div>
 </div>
-<div class="section level1">
-<h1 id="exercise-improve-the-file-names">Exercise: Improve the File Names<a class="anchor" aria-label="anchor" href="#exercise-improve-the-file-names"></a></h1>
-<blockquote>
-<h2 id="challenge">Challenge</h2>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="exercise-improve-the-file-names">Exercise: Improve the File Names<a class="anchor" aria-label="anchor" href="#exercise-improve-the-file-names"></a></h2>
+<hr class="half-width"><div id="challenge3" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
 <p>Working individually or in pairs:</p>
 <p>Review the filenames in the inherited dataset.</p>
 <p>Apply the principles discussed in this episode.</p>
@@ -738,35 +1271,82 @@ incorrectly?</p>
 <li>ISO dates where appropriate</li>
 <li>Explicit version numbers</li>
 <li>Removal of unnecessary special characters</li>
-</ul><p>Rename the files using File Explorer.</p>
+</ul><p>Rename the files using File Explorer/Finder.</p>
 <p>If a bulk rename tool is available, use it where appropriate.</p>
-</blockquote>
-<blockquote>
-<h2 id="solution">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
 <p>There is no single correct answer.</p>
 <p>A reasonable outcome might:</p>
+<div class="tabs">
+<nav><div id="nav-tab-13" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-13-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-13-1" type="button" role="tab" aria-controls="nav-tabpanel-13-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-13-1">
+  Before
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-13-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-13-2" type="button" role="tab" aria-controls="nav-tabpanel-13-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-13-2">
+  After
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-13" class="tab-content">
+<div id="nav-tabpanel-13-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-13-1">
 <pre class="text"><code>Data!@#$.csv</code></pre>
-<p>become:</p>
+</div>
+<div id="nav-tabpanel-13-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-13-2">
 <pre class="text"><code><span><span class="va">incidence_data_v01.csv</span></span></code></pre>
-<p>and:</p>
+</div>
+</div>
+</div>
+<p>or</p>
+<div class="tabs">
+<nav><div id="nav-tab-14" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-14-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-14-1" type="button" role="tab" aria-controls="nav-tabpanel-14-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-14-1">
+  Before
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-14-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-14-2" type="button" role="tab" aria-controls="nav-tabpanel-14-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-14-2">
+  After
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-14" class="tab-content">
+<div id="nav-tabpanel-14-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-14-1">
 <pre class="text"><code><span><span class="va">data_final_v3_LAST_ONE.xlsx</span></span></code></pre>
-<p>become:</p>
+</div>
+<div id="nav-tabpanel-14-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-14-2">
 <pre class="text"><code><span><span class="va">project_results_v03.xlsx</span></span></code></pre>
-<p>provided the convention is applied consistently throughout the
-project.</p>
-</blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="looking-ahead">Looking Ahead<a class="anchor" aria-label="anchor" href="#looking-ahead"></a></h1>
-<p>We have improved both the folder structure and the filenames.</p>
+</div>
+</div>
+</div>
+<p>These different options are good provided the convention is applied
+consistently throughout the project.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="looking-ahead">Looking Ahead<a class="anchor" aria-label="anchor" href="#looking-ahead"></a></h2>
+<hr class="half-width"><p>We have improved both the folder structure and the filenames.</p>
 <p>However, many questions remain unanswered:</p>
 <ul><li>Where did the data come from?</li>
 <li>How was it collected?</li>
 <li>What do variables mean?</li>
 <li>Which files should be used?</li>
 </ul><p>This information belongs in documentation.</p>
-<p>In the next episode we will explore how README files, metadata, and
-provenance information make datasets understandable and reusable.</p>
+<p>In the next episode we will explore how README files, metadata, file
+headers, and provenance information make datasets understandable and
+reusable.</p>
 <div id="key-points" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -790,115 +1370,11 @@ it.</li>
 </ul></div>
 </div>
 </div>
-<!-- ### How to name your files?
-
-**There is no perfect solution!**
-
-It depends on:
-1. if you have a simple dataset or series of files which should be read at once by external model/software
-
-> Note: for example, some formats MUST have a few auxiliary metadata files to be read (for example, simply `JSON` to fetch metadata or `.SHP` in geospatial analysis)
-
-In this case, the dataset should contain a few files with the same names but different extensions.
-
-2. Whether files should be processed in batches by another step in a processing pipeline.
-
-Your filename should normally have a permanent and temporary parts:
-
-`<permanent>_<temporary>.png`: `image_01.png`
-
-In reality, the temporary part might include over one or more temporary subparts:
-
-`<temporary>_<permanent>_<temporary>`: `01-June_image_01.png`
-
-Then, both temporary parts can be intuitively used in batch processing to loop over:
-- dates
-- identifiers
-
-For example:
-- `01-June_image_01.png`
-- `01-June_image_02.png`
-- `02-June_image_01.png`
-
-> NOTE: separate temporary and permanent parts with `underscore`, and use `dash` within temporary and permanent parts.
-
-Then, it becomes simple to group files and aggregate statistics per file batches, if you need this.
-
-3. Including meaningful content in your filename
-
-If you need a mutable parameter for your batch processing, include it. If this parameter is not suggested to use in processing, skip it.
-
-**Bad example**
-- `01-Jun-2026-00:01:02_image_01.png`
-- `01-Jun-2026-02:12:26_image_02.png`
-- `03-Jun-2026-05:32:19_image_03.png`
-
-**Good example (daily images)**
-- `01-Jun-2026_image_01.png`
-- `02-Jun-2026_image_02.png`
-- `03-Jun-2026_image_03.png`
-- `04-Jun-2026_image_04.png`
-...
-- `31-Aug-2026_image_92.png`
-
-4. Hierarchy of parameters in filenames
-
-- Do not repeat the names of your 'sub-project' items in a filename to avoid duplications
-
-A filename example in your repo:
-
-your-project/
-├── case_studies/
-│   ├── england/
-│   ├── ├── `01-Jun-2026_image_01.png`
-│   ├── ├── `02-Jun-2026_image_02.png`
-│   ├── wales/
-│   ├── ├── `01-Jun-2026_image_01.png`
-│   ├── ├── `02-Jun-2026_image_02.png`
-│   ├── ├── `03-Jun-2026_image_03.png`
-│   ├── scotland/
-│   ├── ├── `01-Jun-2026_image_01.png`
-│   ├── ├── `02-Jun-2026_image_02.png`
-│   ├── northern_ireland/
-│   ├── ├── `01-Jun-2026_image_01.png`
-│   ├── ├── `02-Jun-2026_image_02.png`
-
----
-
-**Main rules:**
-- it's not recommended to include `spaces` in your filenames! This might break someone's code. Or, at least use consistently `space` and `underscore`.
-- Once you have chosen a naming convention, stick to it.  It is unlikely you will know the assumptions others have made regarding file names in their code.  Changing the convention midstream
-will potentially break scripts written by others, and may lead to data loss or worse!
-
-
-## What is this file?
-Your goal is here is to know what a file is without having to open it. Most of these tips apply to naming folders too!
-
-Some tips:
-* Choose a format and stick to it. It's probably helpful to make a note of this somewhere, perhaps in a file called 'README' at the top level folder for a specific project. For example, `[Date]\_[sample number]\_[location]_[version]`. Keep filenames as brief as possible.
-* Avoid spaces. If you start referring to files programmatically, process them through software or move them through the command line, it may cause you (or others using different operating system environments) a headache to have spaces in your filenames. Instead of spaces, you could use underscores (_), hyphens (-) or camel case (CapitaliseEachWord). Decide on what you will use and stick to it.
-* Also steer clear of special symbols as these can have other meanings in some contexts, or on other operating systems (\/:*?"<>|")
-* Don't start with an asterisk (*) as this creates a hidden file that will not appear by default in your file explorer or finder window.
-* Also steer clear of starting a filename with '.' as some operating systems such as Linux will interpret this as a hidden file which may puzzle others when it fails to appear.
-* Choose a format for dates and, again, stick to it. Given that files are, by default, sorted alphanumerically, if you use this format `YYYY-MM-DD` your files will be organised chronologically. Be aware that files from other sources might use different date conventions, e.g. reversing month and day.
-
-## Which files is this?
-There are various approaches to version control. You might have heard of git which is universally used for code. If you are using naming conventions to distinguish between different versions of files, the permise is similar to above, choose a convention, write it, and stick to it.
-In some applications, such as Geographic Information Systems, a working set of data is spread across potentially many files; in such cases it might be worth using a folder naming convention to indicate a consistent version of a set of files.
-
-Some tips:
-* Use the 'v-syntax' or semantic versioning. For example at the end of the filename at `_v1`, then `_v2` and so on (or `_v01` if you expect to have more than 9 versions). If you would like to be more granular, use semantic version, where you use 3 numbers seperated by full stops to stand for Major version, minor version and patch (small update). So, your first version might be `_1.0.0`, a small update might be `_1.0.1`. You might then do a manjor update and move to `_2.0.0`.
-* Avoid using dates or initials to signify different versions as this makes it hard to see at a glance which is the most recent, and leaves you in a pickle if you want to save two versions in the same day.
-* Avoid `FINAL` or `latest` in a filename. What happens when you find yourself unexpectedly editing your 'final' version? -->
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/file-structures.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/documentation.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -958,8 +1434,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/instructor/file-names.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/file-names.html",
   "dateCreated": "2026-07-01",
-  "dateModified": "2026-07-02",
-  "datePublished": "2026-07-14"
+  "dateModified": "2026-07-16",
+  "datePublished": "2026-07-16"
 }
 
   </script><script>

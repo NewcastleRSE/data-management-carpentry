@@ -2,8 +2,10 @@
 title: Setup
 ---
 
-FIXME: Setup instructions live in this document. Please specify the tools and
-the data sets the Learner needs to have installed.
+This workshop requires participants to have access to a computer - either laptop or desktop which has graphical file viewer software. This is available by default on Windows, MacOS and most flavours of linux.
+
+If you do not have access to a computer and are attending an in person version of the workshop please check with your instructors running the course so they can find a workable solution. This course may be run in a computer cluster room so long as all participants have login access to the cluster room computers. 
+
 
 ## Data Sets
 
@@ -12,43 +14,8 @@ FIXME: place any data you want learners to use in `episodes/data` and then use
        a relative link ( [data zip file](data/lesson-data.zip) ) to provide a
        link to it, replacing the example.com link.
 -->
-Download the [data zip file](https://example.com/FIXME) and unzip it to your Desktop
-
-## Software Setup
-
-::::::::::::::::::::::::::::::::::::::: discussion
-
-### Details
-
-Setup for different systems can be presented in dropdown menus via a `spoiler`
-tag. They will join to this discussion block, so you can give a general overview
-of the software used in this lesson here and fill out the individual operating
-systems (and potentially add more, e.g. online setup) in the solutions blocks.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### Windows
-
-Use PuTTY
-
-::::::::::::::::::::::::
-
-:::::::::::::::: spoiler
-
-### MacOS
-
-Use Terminal.app
-
-::::::::::::::::::::::::
+Download the [data zip file](data/data.zip) and unzip it to your Desktop.
+If you have difficulties doing this please ask your instructor for help.
 
 
-:::::::::::::::: spoiler
-
-### Linux
-
-Use Terminal
-
-::::::::::::::::::::::::
 

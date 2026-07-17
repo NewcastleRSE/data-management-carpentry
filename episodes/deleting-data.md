@@ -151,7 +151,7 @@ Many institutions provide remote servers or shared network storage (like a Resea
 
 ### Double Check Before Clicking
 
-Because remote servers lack a safety net, always double-check the files you have selected before hitting delete. A moment of carelessness on a shared server can wipe out months of collaborative work!
+Because remote servers lack a safety net, always double-check the files you have selected before hitting delete. A moment of carelessness on a shared server can wipe out months of collaborative work! Data archiving can function as an intermediate step before deletion. 
 
 ::::::::::::::::::::::: 
 

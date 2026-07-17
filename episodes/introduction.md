@@ -125,7 +125,7 @@ Various research funding organisations have data management and sharing policies
 - [USA](https://www.nsf.gov/funding/data-management-plan)
 - [Canada](https://cihr-irsc.gc.ca/e/54157.html) 
 
-Newcastle Univerity has its own policies [https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/].
+Newcastle Univerity has its own [policies](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/).
 
 
 ::::::::::::::::::
@@ -146,7 +146,7 @@ Newcastle Univerity has its own policies [https://www.ncl.ac.uk/library/academic
 - Members of the public can request data be deleted. Would you be able to with confidence?
 - Data can only be retained for spesific purposes. 
 
-Clear data management is essential to ensure you are able to conform to the law so you do not loose track of important data.
+Clear data management is essential to ensure you are able to conform to the law and to make sure you do not loose track of important data.
 
 :::::::::::::::::::
 
@@ -205,7 +205,7 @@ Examples include:
 - Network storage
 - Cloud storage
 
-Regardless of where files are stored physically, they are typically presented to users through the same folder-and-file structure.As a result, learning to navigate folders is a transferable skill regardless of the storage system being used.
+Regardless of where files are stored physically, they are typically presented to users through the same folder-and-file structure. As a result, learning to navigate folders is a transferable skill regardless of the storage system being used.
 
 
 ## Introducing the File Explorer

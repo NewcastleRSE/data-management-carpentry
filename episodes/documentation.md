@@ -527,6 +527,7 @@ Several months later, somebody might reasonably ask:
 - When were they created?
 - Which parameters were used?
 - Which version of the data was analysed?
+- What is the data access and retention policy of these data?
 
 A README placed inside the results folder can answer these questions.
 

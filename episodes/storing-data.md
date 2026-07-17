@@ -535,6 +535,55 @@ Be clear on what your obligations are regarding the data you use. The above link
 ::::::::::::::::::::::
 
 
+### Protecing Your Data
+
+
+#### Encryption
+
+Your University laptop may already be running whole disk encryption. This protects all the files on the computer. Without it, anyone can access the files, even if you have set a password. However, data on your laptop is only fully protected when it is shut down. Prefer Hibernate to Sleep in Windows.  
+
+The same does not always apply to external hard-drives used for backups or data transfer unless the disk is explicitly encrypted. If the external drive asks for a password before you can access it, it is probably encrypted, if it does not then it probably isn't. External disks can be encrypted using Bitlocker for Windows, Finder for MacOS or Disk Utility in Linux. 
+
+
+:::::::::::::::::::: caution
+
+If you forget your password and/or encryption key you have probably lost your data!
+
+::::::::::::::::::::
+
+The different tools on Windows, MacOS and Linux can make an encrypted external disk or USB key unusable on a different operating system. You can encrypt individual files and folders if required, depending on software and system e.g. Windows/MacOS/Linux/OneDrive.
+
+
+
+
+#### Sharing data
+
+Sharing data is discussed in a previous lesson. However, a few additional items related to security are discussed here. 
+
+If concerned about storing data on the cloud, or transfering it to collegues you can encrypt it before hand and sent the encrypted version, while sending the password to the file seperatly. 
+
+The University offers a [File Transfer Service](https://dropoff.ncl.ac.uk/) which offers the chance to encrypt data before sending. It will also inform you when someone accesses the data. 
+
+This offers additional security over email, which is **not recommended** for moving private data. Email passed from you to the destination through a number of intermediate servers. If any link in the chain is exposed, the data can leak. This is why companies rarely email you your bills, but instead offer secure websites for viewing them. 
+
+Using OneDrive and Sharepoint to transfer files is an alternative to sending the data as a copy. If you send data as an email or via the File Transfer Service, you are making a copy and sending that out into the world. Using University OneDrive or Sharepoint only sends a link. If an email is sent in error you need only break the link or revoke permissions and the data becomes inassessible. This is a good way of reducing errors such as sending to the wrong email address or attaching the wrong document. 
+
+
+
+
+
+#### Sanitising your data
+
+When moving data you need to ensure you are only sending the data you intend. This includes your data, metadata, documentation, file headers etc.  
+
+Data security laws require the removal of personally identifiable information, such that a person is not identifiable using the data *in combination with* other data. This means that even if you cannot identify someone using your data you must also make sure that an individual cannot be identified if someone combines your data with some other data. 
+
+This is a reason good data management is important, you need to be able to track any private data in order to make sure it is not exposed and make sure all of it is removed. 
+
+Software auto-generates metadata, such as name of creator, date created, name of last modifier, date and time of last modification, organisation, and more depending on the software. Ensure that only the data you want is transmitted and be aware of inadvertant meta-data. 
+
+
+
 ---
 
 ## Changing Data Locations
@@ -554,6 +603,10 @@ Changing locations can have unintended consequences.
 
 For example:
 
+:::::::::::::::::: tab
+
+## Windows
+
 ```text
 D:\ProjectData\
 ```
@@ -563,6 +616,33 @@ becoming:
 ```text
 R:\Projects\ProjectData\
 ```
+
+## MacOS
+
+```text
+/Users/Clair/ProjectData/
+```
+
+becoming:
+
+```text
+/data/Projects/ProjectData/
+```
+
+## Linux
+
+```text
+/home/Clair/ProjectData/
+```
+
+becoming:
+
+```text
+/data/Projects/ProjectData/
+``
+
+::::::::::::::::::::
+
 
 may break scripts that assume the old location.
 
@@ -696,6 +776,31 @@ For each scenario, identify the most appropriate storage location and explain yo
 
 ---
 
+## University Data Management Plan
+
+Newcastle University has various templates for planning your data management aimed at PGRs. These can be found [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/). There are slightly different templates for the Faculty of Science, Agriculture and Engineering, the Faculty of Humanities and Social Sciences and the Faculty of Medical Sciences, but all follow the same general form .e.g. 
+
+- Type of study (3 lines).
+- Existing data study.
+- Data types.
+- Format and scale of your data.
+- Data collection/production methodology.
+- Data quality and standards.
+- Data management, storage and curation.
+- Metadata and documentation.
+- Data security risks.
+
+The university has guides and training spesifically to help with your data management plan [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/). 
+
+This is the University plan, your funding agencies may have their own standards and requirements.  
+
+---
+
+## Data Privacy Impact Assessment
+
+If your research project involves personal or sensitive data, or could potentially, a Data Protection Impact Assessment should be completed and registered with the University's Information Governance Team. This is outlined [here](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/). The assessment documenation includes a number of screening questions to help decide which sections you need to fill in. 
+
+---
 
 
 

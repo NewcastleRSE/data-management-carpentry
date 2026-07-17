@@ -133,42 +133,43 @@ A useful rule of thumb is:
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::: callout
 
-Keep in mind that it is good to plan for expansion at the beginning of a project rather than have to reorganise things later, which can break things, such as software scripts or lab notes. 
+Keep in mind that it is good to plan for expansion rather than have to reorganise things later, which can break things, such as software scripts or lab notes. 
 
-It is good to think about a possible file structure early in the project, while being flexible if new folders or files needed to be added or moved. 
+It is good to think about a possible file structure early in the project, while being flexible if new folders or files need to be added or moved. 
 
-For example,
+Some of this is personal preference. For example,
 
 - Do you want to keep a seminar or conference presentation with the project, or with other talks elsewhere? 
 - Should a paper, along with generated figures, be kept together with the rest of the project? 
 
-If not, will your file system enable you to find the origin of figures etc. used in a seminar in the future or when you write a paper in six months time? If you move a folder in future will this break things?
+If not, will your data management system should enable you to find the origin of figures etc. used in a seminar in the future or when you write a paper in six months time? If you move a folder in future will this break things?
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::: challenge
-## Discussion: What's Wrong With This Structure?
->
-> Working in groups of 2–3:
->
-> Spend 5 minutes exploring the inherited dataset.
->
-> Identify as many problems as you can.
->
-> Consider:
->
-> - Folder names
-> - Folder organisation
-> - Folder depth
-> - Duplication
-> - Clarity
-> - Consistency
->
-> Write down your observations.
+## What's Wrong With This Structure?
+
+ Working in groups of 2–3:
+
+ Spend 5 minutes exploring the inherited dataset.
+
+ Identify as many problems as you can.
+
+ Consider:
+
+ - Folder names
+ - Folder organisation
+ - Folder depth
+ - Duplication
+ - Clarity
+ - Consistency
+
+ Write down your observations.
 
 After 5 minutes, bring the class back together and discuss.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::: solution
+
 Common observations often include:
 
 - Generic names such as `New Folder`
@@ -178,15 +179,15 @@ Common observations often include:
 - Mixed file types within the same folder
 - Folders whose purpose is unclear
 - Temporary files mixed with project files
+
 :::::::::::::::::::::::::::::::::::::::::::::::::::: 
 :::::::::::::::::::::::::::::::::::::::::::::::::::: 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-> ## Instructor Note
->
-> Encourage learners to identify problems rather than immediately propose solutions.
->
-> The goal here is to help learners recognise why poor organisation causes difficulties before introducing best practices.
+
+ Encourage learners to identify problems rather than immediately propose solutions.
+
+ The goal here is to help learners recognise why poor organisation causes difficulties before introducing best practices.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -194,9 +195,7 @@ Common observations often include:
 
 ## Principles of Good Folder Structures
 
-There is no single correct folder structure.
-
-Different projects have different requirements.
+There is no single correct folder structure because different projects have different requirements.
 
 However, most successful structures share common characteristics.
 
@@ -208,10 +207,9 @@ However, most successful structures share common characteristics.
 
 :::::::::::::::::::::::::::::: challenge
 
-After looking at the Poor examples in each subsection, below, try and come up with some good examples before clicking the Goood tab. 
+After looking at the Poor examples in each subsection below, try and come up with some good examples before clicking the Goood tab. 
 
 :::::::::::::::::::::::::::::::
-
 
 ### Meaningful 
 
@@ -248,7 +246,7 @@ figures
 
 ### Consistent
 
-Consistency is more important than perfection. Choose a particular style and use it throughout the project. This makes things easier to understand because all folders follow the same convention. For example,
+Consistency is more important than perfection. Choose a particular style and use it throughout the project. This makes things easier to understand, because all folders follow the same convention. For example,
 
 :::::::::::::::::::::::::::::::::::::::: tab
 ### Poor
@@ -320,7 +318,7 @@ Project/
                         └── Results/                    
 ```
 
-At best this results in a lot of additional clicks in File Explorer (Win11) or Finder (MacOS), or typing in the terminal/analysis code. 
+At best this results in a lot of additional clicks in File Explorer (Win11) or Finder (MacOS), or typing in the terminal/analysis code. It can also make analysis unwieldy if the analysis processes data in a different order to the directory structure e.g. the preferred analysis order city by city, not hour by hour. 
 
 
 ### Catagorical
@@ -357,6 +355,12 @@ project/
 
 This makes it easier to know where new files belong.
 
+:::::::::::::: caution
+
+Know where any private/secure data is to minimise the chance of mistakes. 
+
+::::::::::::::
+
 ---
 
 ### Archive Rather Than Hoard
@@ -369,7 +373,7 @@ archive/
 
 This allows old material to be retained without cluttering the active project structure.
 
-We will discuss data retention and archiving in a later episode.
+We will discuss data retention in a later episode.
 
 ---
 
@@ -474,6 +478,7 @@ raw_data
 
 
 :::::::::::::::::::::::::: discussion
+
 ### How do I rename a folder:
 
 :::::::::::::: tab
@@ -507,7 +512,7 @@ raw_data
 
 Be careful when renaming folders that are used by software or analysis scripts.
 
-Changing a folder name may break references elsewhere in a project.
+Changing a folder name may break links elsewhere in a project.
 
 :::::::::::::::::::
 
@@ -528,7 +533,6 @@ If this folder is empty or no longer required, it may be reasonable to remove it
 :::::::::: discussion 
 
 ### How do I delete a Folder
-
 
 :::::::::::::::::: tab
 
@@ -558,13 +562,13 @@ If this folder is empty or no longer required, it may be reasonable to remove it
 ::::::::::::::::::
 :::::::::::
 
-Data deleted using the above methods are not fully removed from the system. They are moved to the recycle bin. To permanently  remove the file you have to empty the bin. Alternatively, files in the recycle bin can be restored and put back where they were. On some systems there is a certain about of time a document will stay in the recycle bin before it is deleted. 
+Data deleted using the above methods are not fully removed from the system. They are moved to the recycle bin. To permanently remove the file you have to empty the bin. Alternatively, files in the recycle bin can be restored and put back where they were. On some systems there is a certain about of time a document will stay in the recycle bin before it is deleted. 
 
 ::::::::::: caution
 
 Check your data policies on data deletion, particularly if handling private data and your files are not encrypted. We will discuss data security in a later lesson. 
 
-Upon deleting a file on your computer the file will not always be removed from your backups, but sometimes it will be. Be careful and check that the behaviour of your backups is want you want.
+Upon deleting a file on your computer the file will not always be removed from your backups, but sometimes it will be depending on syncing. Be careful and check that the behaviour of your backups is want you want.
 
 :::::::::::
 
@@ -573,7 +577,7 @@ Upon deleting a file on your computer the file will not always be removed from y
  Emphasise caution.
 
  Deletion should only occur when learners are confident a folder is unnecessary.
- For real research projects, archiving is often safer than immediate deletion.
+ For real research projects, moving to ``archive/`` is often safer than immediate deletion.
 
 
 ::::::::::::::::::
@@ -632,8 +636,6 @@ The important point is that each folder has a clear purpose.
 ::::::::::::::::::::: discussion
 
 ### What Else Would You Change?
-
-
 
  Looking at the inherited dataset:
 

@@ -29,7 +29,7 @@ By the end of this episode, learners will be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-# The Problem: The Data Is Too Big
+## The Problem: The Data Is Too Big
 
 Over the last few episodes we have:
 
@@ -111,7 +111,7 @@ Common answers may include:
 
 ---
 
-# Understanding File Size
+## Understanding File Size
 
 Before making data smaller, we need to know:
 
@@ -139,7 +139,7 @@ As datasets grow, even small improvements can translate into large storage savin
 
 ---
 
-# What Does File Size Represent?
+## What Does File Size Represent?
 
 Every file occupies space on a storage device.
 
@@ -169,9 +169,9 @@ Understanding file sizes helps us make informed decisions.
 
 ---
 
-# Demonstration: Viewing File Sizes
+## Demonstration: Viewing File Sizes
 
-## Individual Files
+### Individual Files
 
 Using File Explorer:
 
@@ -182,7 +182,7 @@ Using File Explorer:
 
 ---
 
-## Folders
+### Folders
 
 To view the size of a folder:
 
@@ -194,7 +194,7 @@ This may take a few moments for large datasets.
 
 ---
 
-## Alternative: File Explorer Columns
+### Alternative: File Explorer Columns
 
 Switch File Explorer to **Details View**.
 
@@ -202,19 +202,19 @@ The size column can be displayed for many file types.
 
 This can make large files easier to identify.
 
-> ## Instructor Note
->
-> Demonstrate both approaches.
->
-> Learners often find folder-size properties particularly useful because they rarely realise the information is available.
+::::::::::::::::::: instructor
+
+ Demonstrate both approaches.
+
+ Learners often find folder-size properties particularly useful because they rarely realise the information is available.
 
 ---
 
-# File Compression
+## File Compression
 
 One of the most common ways to reduce storage requirements is compression.
 
-## What Is Compression?
+### What Is Compression?
 
 Compression reduces the amount of storage required by a file without changing its contents.
 
@@ -234,11 +234,11 @@ The result is a smaller file.
 
 ---
 
-## Lossless and Lossy Compression
+### Lossless and Lossy Compression
 
 There are two broad forms of compression.
 
-### Lossless Compression
+#### Lossless Compression
 
 Lossless compression preserves all information.
 
@@ -258,7 +258,7 @@ These are commonly used for research data.
 
 ---
 
-### Lossy Compression
+#### Lossy Compression
 
 Lossy compression achieves greater size reduction by discarding information.
 
@@ -274,7 +274,7 @@ For research data, lossy compression should be used with care.
 
 ---
 
-# Demonstration: Compressing A Folder
+## Demonstration: Compressing A Folder
 
 :::::::::: tab
 
@@ -320,14 +320,14 @@ The exact wording varies between desktop environments.
 :::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::: instructor
->
-> Demonstrate compression on the cleaned project directory.
->
-> Show both the original folder size and the compressed archive size.
+
+ Demonstrate compression on the cleaned project directory.
+
+ Show both the original folder size and the compressed archive size.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-# When Should You Compress Data?
+## When Should You Compress Data?
 
 Compression is often useful when:
 
@@ -348,7 +348,7 @@ Compression can significantly reduce transfer times.
 
 ---
 
-# When Should You Avoid Compression?
+## When Should You Avoid Compression?
 
 Compression is not always beneficial.
 
@@ -407,7 +407,7 @@ Compressing these files often produces very little size reduction.
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-# File Formats And Storage
+## File Formats And Storage
 
 Compression is not the only way to reduce file size.
 
@@ -437,7 +437,7 @@ can have dramatically different sizes.
 
 ---
 
-# An Example: Bitmap Images
+## An Example: Bitmap Images
 
 Suppose we save the same image as:
 
@@ -461,7 +461,7 @@ The image looks the same, but storage requirements differ.
 
 ---
 
-# Trade-Offs
+## Trade-Offs
 
 Smaller files are not always better.
 
@@ -492,7 +492,7 @@ Neither format is universally superior.
 
 The best format depends on your intended use.
 
-> ## Looking Ahead
+> ### Looking Ahead
 >
 > We will discuss choosing data formats in much more detail in a later episode.
 
@@ -520,13 +520,13 @@ The best format depends on your intended use.
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-# Methods For Transferring Data
+## Methods For Transferring Data
 
 Different transfer methods are appropriate for different situations.
 
 ---
 
-## Email Attachments
+### Email Attachments
 
 Suitable for:
 
@@ -549,7 +549,7 @@ Generally unsuitable for large datasets.
 
 ---
 
-## OneDrive or SharePoint Links
+### OneDrive or SharePoint Links
 
 Suitable for:
 
@@ -570,7 +570,7 @@ Disadvantages:
 
 ---
 
-## Shared Project Storage
+### Shared Project Storage
 
 Suitable for:
 
@@ -590,7 +590,7 @@ Disadvantages:
 
 ---
 
-## Globus
+### Globus
 
 Globus is commonly used in research environments for transferring large datasets.
 
@@ -613,7 +613,7 @@ Disadvantages:
 
 ---
 
-# A Note On Command-Line Tools
+## A Note On Command-Line Tools
 
 Large-scale research computing environments often use command-line transfer tools such as:
 
@@ -627,7 +627,7 @@ These tools are extremely powerful and commonly used on HPC systems.
 
 However, they are beyond the scope of this lesson.
 
-> ## Further Learning
+> ### Further Learning
 >
 > Learners interested in transferring data to servers or HPC systems should consider attending:
 >
@@ -667,7 +667,7 @@ However, they are beyond the scope of this lesson.
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-# Looking Ahead
+## Looking Ahead
 
 We now know how to:
 

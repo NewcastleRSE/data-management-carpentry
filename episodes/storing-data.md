@@ -199,7 +199,7 @@ Ask:
 
 ---
 
-# Local Storage
+## Local Storage
 
 Local storage refers to files stored directly on a device such as:
 
@@ -270,7 +270,7 @@ It is rarely an ideal long-term location for important project data.
 
 ---
 
-# Personal Cloud Storage
+## Personal Cloud Storage
 
 Many institutions provide services such as:
 
@@ -641,7 +641,7 @@ doi.org/xxxxx
 
 This makes research outputs easier to find, cite, and reuse.
 
-The University provides the following information page [Find Data](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/) but individual funders may have their own requirements. 
+The University provides the following information page [Find Data](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/) but individual funders may have their own requirements. [re3data.org](https://www.re3data.org) can also find data repositories. 
 
 
 ---
@@ -695,6 +695,9 @@ For each scenario, identify the most appropriate storage location and explain yo
 ::::::::::::::::::
 
 ---
+
+
+
 
 ## Looking Ahead
 

@@ -357,6 +357,19 @@ Spend a few minutes explicitly demonstrating how files and folders are organised
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
+## Resources
+
+The University library has a number of training courses available for data management.
+
+This is linked to at [Research Data Management Training](https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/)
+
+On this website there are subsections on:
+
+- [Data Management Planning](https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/data-management-planning/)
+- [Online Training via Mantra](https://mantra.ed.ac.uk)
+- [Data Analysis](https://services.ncl.ac.uk/itservice/research/dataanalysis/)
+
+The general Research Data Management Policy and Code of Good Practice can be found: [here](https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf)
 
 ::::::::::::: challenge
 ## Finding the Dataset

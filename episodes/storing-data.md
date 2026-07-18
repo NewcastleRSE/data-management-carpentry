@@ -547,7 +547,7 @@ The same does not always apply to external hard-drives used for backups or data 
 
 :::::::::::::::::::: caution
 
-If you forget your password and/or encryption key you have probably lost your data!
+If you forget your password and/or encryption key you have lost your data! It cannot be recovered. 
 
 ::::::::::::::::::::
 
@@ -564,9 +564,9 @@ If concerned about storing data on the cloud, or transfering it to collegues you
 
 The University offers a [File Transfer Service](https://dropoff.ncl.ac.uk/) which offers the chance to encrypt data before sending. It will also inform you when someone accesses the data. 
 
-This offers additional security over email, which is **not recommended** for moving private data. Email passed from you to the destination through a number of intermediate servers. If any link in the chain is exposed, the data can leak. This is why companies rarely email you your bills, but instead offer secure websites for viewing them. 
+This offers additional security over email, which is **not recommended** for moving private data. Email passed from you to the destination through a number of intermediate servers. If any link in the chain is exposed, the data can leak. This is why companies rarely email you your bills, but instead offer secure websites for viewing them [1](https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621), [2](https://hexiosec.com/blog/secure-email-attachments/). 
 
-Using OneDrive and Sharepoint to transfer files is an alternative to sending the data as a copy. If you send data as an email or via the File Transfer Service, you are making a copy and sending that out into the world. Using University OneDrive or Sharepoint only sends a link. If an email is sent in error you need only break the link or revoke permissions and the data becomes inassessible. This is a good way of reducing errors such as sending to the wrong email address or attaching the wrong document. 
+Using OneDrive and Sharepoint to transfer files is an alternative to sending the data as a copy. If you send data as an email or via the File Transfer Service, you are making a copy and sending that out into the world. Using University OneDrive or Sharepoint only sends a link. If an email is sent in error you need only break the link or revoke permissions and the data becomes inassessible. This is a good way of reducing errors such as sending to the wrong email address or attaching the wrong document, [for example](https://www.bbc.co.uk/news/articles/c363w8pjpklo). 
 
 
 

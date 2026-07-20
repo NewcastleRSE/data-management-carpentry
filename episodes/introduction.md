@@ -230,6 +230,8 @@ In this lesson we will demonstrate using **Windows File Explorer**, but the same
 ::::::::::::::::::: discussion
 ## Opening File Explorer
 
+The instructor will demonstrate how to a file explorer in Windows. 
+
 Depending on the operating system, you can use any of these options to open a file explorer: 
 
 :::::::::::::: tab

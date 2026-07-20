@@ -230,21 +230,19 @@ In this lesson we will demonstrate using **Windows File Explorer**, but the same
 ::::::::::::::::::: discussion
 ## Opening File Explorer
 
-The instructor should demonstrate how to open File Explorer in Windows.
+Depending on the operating system, you can use any of these options to open a file explorer: 
 
 :::::::::::::: tab
 
-Depending on the operating system, you can use any of these options to open a file explorer: 
-
 ### Windows
 
-- Click the Folder icon on the taskbar.
+- Click the Folder icon on the taskbar
 - Use the keyboard shortcut ```Windows Key + E```
 - Open the Start Menu and search for ```File Explorer```
 
 ### MacOS
 
-- Click the Finder icon (a blue and white smiling face) on the dock.
+- Click the Finder icon (a blue and white smiling face) on the dock
 
 ::::::::::::::::
 ::::::::::::::::

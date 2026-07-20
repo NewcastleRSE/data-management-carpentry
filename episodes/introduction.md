@@ -128,7 +128,7 @@ Various research funding organisations have data management and sharing policies
 
 Guidelines for more funders are included in Newcastle University's [overview of Data Management Expectations](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/expectations/).
 
-Newcastle University has its own policies for [postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/) and [all research](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm).
+Newcastle University has its own policies for [postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/) and [all researchers](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm).
 
 
 ::::::::::::::::::
@@ -230,7 +230,7 @@ In this lesson we will demonstrate using **Windows File Explorer**, but the same
 ::::::::::::::::::: discussion
 ## Opening File Explorer
 
-The instructor will demonstrate how to a file explorer in Windows. 
+The instructor will demonstrate how to open a file explorer in Windows. 
 
 Depending on the operating system, you can use any of these options to open a file explorer: 
 
@@ -363,10 +363,11 @@ Spend a few minutes explicitly demonstrating how files and folders are organised
 ## Resources
 
 Newcastle University provides a number of resources for data management:
+
 - [Research Data Management Training](https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/)
 - [Ethics toolkit for data](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/), including the [Research Data Management Policy and Code of Good Practice](https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf)
 - [Data management for postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/-rdm/planning/pgr/)
-- [Research data management](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm).
+- [Research data management](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm)
 
 ::::::::::::: challenge
 

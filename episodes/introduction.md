@@ -119,13 +119,16 @@ Good data management practices reduce time wasted searching for data, improve co
 
 :::::::::::::::::: callout
 
-Various research funding organisations have data management and sharing policies, and can request detailed plans in funding applications.
+Various research funding organisations have data management and sharing policies, and they can request detailed plans in funding applications:
 
-- [UK](https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/)
-- [USA](https://www.nsf.gov/funding/data-management-plan)
-- [Canada](https://cihr-irsc.gc.ca/e/54157.html) 
+- [UKRI](https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/) (UK)
+- [Wellcome Trust](https://wellcome.org/research-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy) (UK)
+- [NSF](https://www.nsf.gov/funding/data-management-plan) (US)
+- [CIHR](https://cihr-irsc.gc.ca/e/54270.html) (Canada)
 
-Newcastle Univerity has its own [policies](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/).
+Guidelines for more funders are included in Newcastle University's [overview of Data Management Expectations](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/expectations/).
+
+Newcastle University has its own policies for [postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/) and [all research](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm).
 
 
 ::::::::::::::::::
@@ -143,22 +146,14 @@ Newcastle Univerity has its own [policies](https://www.ncl.ac.uk/library/academi
 
 ### Legal issues with personal data
 
-- Personal data can be requested by members of the public on mandated timescales. Would you be able to find it?
-- Members of the public can request data be deleted. Would you be able to with confidence?
-- Data can only be retained for spesific purposes. 
+- Personal data can be requested by members of the public on mandated timescales. Would you be able to find someone's data if they requested it?
+- Members of the public can request that their data be deleted. Would you be able to do so with confidence?
+- Personal data can only be retained for specific purposes.
 
-Clear data management is essential to ensure you are able to conform to the law and to make sure you do not loose track of important data.
+Clear data management is essential to ensure you comply with the law and keep track of important data.
 
 :::::::::::::::::::
 
-
-::::::::::::::::::::::::::::::::::::::::::::: Discussion
-
-Have you ever inherited files from another researcher or returned to an old project after several months?
-
-What was the most difficult part of understanding the data?
-
-:::::::::::::::::::::::::::::::::::::::::::::
 
 ## How Computers Store Data
 

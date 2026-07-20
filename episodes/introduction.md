@@ -382,14 +382,8 @@ Using File Explorer:
 4. Explore the contents without modifying anything.
 5. Identify at least three things that seem confusing or poorly organised.
 
-:::::::::::::::::
 
-
-::::::::::::: discussion
-
-Was it immediately obvious where the important data was?
-
-What information would have helped you understand the project more quickly?
+Was it immediately obvious where the important data was? What information would have helped you understand the project more quickly?
 :::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 

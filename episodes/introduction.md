@@ -343,6 +343,7 @@ You should make sure that you know where to find the
 - search box
 
 and can
+
 - move between folders
 - expand and collapse folders
 

@@ -140,6 +140,7 @@ Newcastle Univerity has its own [policies](https://www.ncl.ac.uk/library/academi
 
 
 ::::::::::::::::::: caution
+
 ### Legal issues with personal data
 
 - Personal data can be requested by members of the public on mandated timescales. Would you be able to find it?
@@ -149,6 +150,15 @@ Newcastle Univerity has its own [policies](https://www.ncl.ac.uk/library/academi
 Clear data management is essential to ensure you are able to conform to the law and to make sure you do not loose track of important data.
 
 :::::::::::::::::::
+
+
+::::::::::::::::::::::::::::::::::::::::::::: Discussion
+
+Have you ever inherited files from another researcher or returned to an old project after several months?
+
+What was the most difficult part of understanding the data?
+
+:::::::::::::::::::::::::::::::::::::::::::::
 
 ## How Computers Store Data
 
@@ -333,7 +343,7 @@ Before we can organise the files, however, we first need to locate them.
 
 ::::::::::::: discussion
 
-### What to Show
+### Navigating the file explorer
 
 You should make sure that you know where to find:
 
@@ -372,6 +382,7 @@ On this website there are subsections on:
 The general Research Data Management Policy and Code of Good Practice can be found: [here](https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf)
 
 ::::::::::::: challenge
+
 ## Finding the Dataset
 
 Download the lesson dataset.
@@ -383,6 +394,7 @@ Using File Explorer:
 3. Open the dataset folder.
 4. Explore the contents without modifying anything.
 5. Identify at least three things that seem confusing or poorly organised.
+
 :::::::::::::::::
 
 

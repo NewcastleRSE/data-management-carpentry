@@ -96,7 +96,7 @@ Many fields have developed unique file formats tailored to their specific instru
 
 
 
-### 2. Language spesific formats (e.g. Pickle)
+### 2. Language specific formats (e.g. Pickle)
 Some formats are designed to store data for spesific programming languages.
 
 * **Python** `.pkl` (Pickle format)

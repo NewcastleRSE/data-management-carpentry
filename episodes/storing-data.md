@@ -558,6 +558,8 @@ The different tools on Windows, MacOS and Linux can make an encrypted external d
 
 #### Sharing data
 
+> Maybe move this to the sharing data md. 
+
 Sharing data is discussed in a previous lesson. However, a few additional items related to security are discussed here. 
 
 If concerned about storing data on the cloud, or transfering it to collegues you can encrypt it before hand and sent the encrypted version, while sending the password to the file seperatly. 

@@ -242,7 +242,7 @@ Depending on the operating system, you can use any of these options to open a fi
 - Use the keyboard shortcut ```Windows Key + E```
 - Open the Start Menu and search for ```File Explorer```
 
-### MacOS
+### macOS
 
 - Click the Finder icon (a blue and white smiling face) on the dock
 
@@ -260,11 +260,11 @@ Further instructions for various file navigation tools:
 
 - [File Explorer](https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows)
 
-### MacOS
+### macOS
 
 - [Finder](https://support.apple.com/en-gb/guide/mac-help/mchlp2605/mac)
 
-Select your particular MacOS version at the top of the page under "Mac User Guide".
+Select your particular macOS version at the top of the page under "Mac User Guide".
 
 ### Linux
 
@@ -347,7 +347,7 @@ and can
 - move between folders
 - expand and collapse folders
 
-on your particular computer, whether it is Windows, MacOS or Linux. 
+on your particular computer, whether it is Windows, macOS or Linux. 
 
 ::::::::::::::::::::::
 

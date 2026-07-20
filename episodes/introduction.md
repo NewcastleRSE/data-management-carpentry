@@ -294,8 +294,7 @@ A typical File Explorer window contains several important components.
 +--------------------------------------------------+
 ```
 ### Navigation Pane
-Usually found on the left-hand side.
-This shows:
+Usually found on the left-hand side and shows commonly used folders such as
 
 - Desktop
 - Documents
@@ -336,14 +335,16 @@ Before we can organise the files, however, we first need to locate them.
 
 ### Navigating the file explorer
 
-You should make sure that you know where to find:
+You should make sure that you know where to find the
 
-- Navigation pane
-- File listing area
-- Address bar
-- Search box
-- Moving between folders
-- Expanding and collapsing folders
+- navigation pane
+- file listing area
+- address bar
+- search box
+
+and can
+- move between folders
+- expand and collapse folders
 
 on your particular computer, whether it is Windows, MacOS or Linux. 
 

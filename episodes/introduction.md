@@ -234,28 +234,24 @@ The instructor should demonstrate how to open File Explorer in Windows.
 
 :::::::::::::: tab
 
-### Windows I / MacOS I
+Depending on the operating system, you can use any of these options to open a file explorer: 
 
-Click the folder icon on the taskbar.
+### Windows
 
-### Windows II
+- Click the Folder icon on the taskbar.
+- Use the keyboard shortcut ```Windows Key + E```
+- Open the Start Menu and search for ```File Explorer```
 
-Press:```Windows Key + E```
+### MacOS
 
-### Windows III
-
-Open the Start Menu and search for:```File Explorer```
-
-### MacOS II
-
-Click the finder icon on the dock.
+- Click the Finder icon (a blue and white smiling face) on the dock.
 
 ::::::::::::::::
 ::::::::::::::::
 
 
 ::::::::::::: callout
-Links to further instructions for various file navigation tools
+Further instructions for various file navigation tools:
 
 :::::::::::: tab
 
@@ -268,11 +264,11 @@ Links to further instructions for various file navigation tools
 
 - [Finder](https://support.apple.com/en-gb/guide/mac-help/mchlp2605/mac)
 
-Select your particular MacOS version at the top of the pace under "Mac User Guide"
+Select your particular MacOS version at the top of the page under "Mac User Guide".
 
 ### Linux
 
-- [GNOME Files](https://apps.gnome.org/en-GB/Nautilus/)
+- [GNOME Files ("Nautilus")](https://apps.gnome.org/en-GB/Nautilus/) (default for Ubuntu and Debian)
 - [Dolphin](https://userbase.kde.org/Dolphin/File_Management#Discover_Dolphin)
 - [Thunar](https://docs.xfce.org/xfce/thunar/the-file-manager-window)
 

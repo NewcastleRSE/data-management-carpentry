@@ -240,7 +240,7 @@ figures
 
 ::::::::::::::::::: callout
 
-> If somebody joined the project tomorrow, would they understand what belongs in this folder?
+If somebody joined the project tomorrow, would they understand what belongs in this folder?
 
 :::::::::::::::::::
 
@@ -324,9 +324,9 @@ At best, this approach results in a lot of additional clicks in a file explorer 
 At worst, file metadata, such as city and datetime in this example, can be irrevocably lost if files are moved from their original location. As such, metadata should ideally be stored in the files themselves or in a reference table with the filenames, rather than in the folder structure.
 
 
-### Catagorical
+### Categorical
 
-A common source of confusion is mixing everything together. So plots, data, reports, analysis, code all end up in the same folder. Instead, group related materials in the same folder. 
+A common source of confusion is mixing different types of data and files together so that plots, data, reports, analyses, and scripts are all stored in the same folder. Instead, group related materials in the same folder. 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: tab
 
@@ -356,11 +356,11 @@ project/
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-This makes it easier to know where new files belong.
+This structure makes it easier to know where new files belong and find existing files, even if you're new to the project.
 
 :::::::::::::: caution
 
-Know where any private/secure data is to minimise the chance of mistakes. 
+Know where any private/secure data is to minimise the chance of GDPR violations. 
 
 ::::::::::::::
 
@@ -368,13 +368,13 @@ Know where any private/secure data is to minimise the chance of mistakes.
 
 ### Archive Rather Than Hoard
 
-Many researchers hesitate to delete anything. As a result they accumulate folders full of obsolete material. Instead, consider creating an archive folder:
+Many researchers hesitate to delete anything. As a result, they accumulate folders full of obsolete material. Instead, consider creating an archive folder:
 
 ```text
 archive/
 ```
 
-This allows old material to be retained without cluttering the active project structure.
+This approach allows old material to be retained without cluttering the active project structure.
 
 We will discuss data retention in a later episode.
 
@@ -382,7 +382,7 @@ We will discuss data retention in a later episode.
 
 ## Moving Files and Folders
 
-Now that we know what good structures look like, we need the practical skills required to improve them.
+Now that we know what good structures look like, we need the practical skills to improve existing structures.
 
 The first operation is moving content.
 

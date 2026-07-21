@@ -386,7 +386,7 @@ Now that we know what good structures look like, we need the practical skills to
 
 The first operation is moving content.
 
-### How to move a folder
+### How to Move a Folder
 
 :::::::::::::::: tab
 
@@ -484,7 +484,7 @@ raw_data
 :::::::::::
 
 
-### How to rename a folder
+### How to Rename a Folder
 
 :::::::::::::: tab
 
@@ -536,39 +536,46 @@ New Folder (2)
 
 If this folder is empty or no longer required, it may be reasonable to remove it.
 
-:::::::::: discussion 
-
-### How do I delete a Folder
+### How to Delete a Folder
 
 :::::::::::::::::: tab
 
-### Windows
+### Drag to Recycle Bin
+
+**All operating systems**
 
 1. Select the folder.
-2. Right-click.
-3. Choose **Delete**.
-4. Confirm deletion if prompted.
+2. Drag into recycle bin (on desktop for **Windows**, bottom right of screen for **MacOS**)
 
-### Windows II
+### Right-click
+
+**Windows**
+
+1. Right-click the folder.
+2. Choose **Delete**.
+3. Confirm deletion if prompted.
+
+**macOS**
+
+1. Right-click the folder.
+2. Choose **Move to Bin** or **Move to trash**.
+3. Confirm deletion if prompted.
+
+### Keyboard shortcuts
+ 
+**Windows**
+1. Select the folder.
+2. Press ```Delete```.
+
+**macOS**
 
 1. Select the folder.
-2. Press the Delete key.
-
-### MacOS
-
-1. Select the folder.
-2. Choose **Move to bin** or **Move to trash**
-
-### Windows/MacOS
-
-1. Select the folder.
-2. Drag into recycle bin (on desktop for Windows, bottom right of screen for MacOS)
+2. Press ```Command (⌘) + Delete```.
 
 
 ::::::::::::::::::
-:::::::::::
 
-Data deleted using the above methods are not fully removed from the system. They are moved to the recycle bin. To permanently remove the file you have to empty the bin. Alternatively, files in the recycle bin can be restored and put back where they were. On some systems there is a certain about of time a document will stay in the recycle bin before it is deleted. 
+Data deleted using the above methods are not fully removed from the system; they are first moved to the recycle bin. You can permanently delete the file by emptying the bin. Alternatively, files in the recycle bin can be restored and "put back" to their original location. On some systems, the bin permanently deletes files after they have been in the bin a certain amount of time (e.g., 30 days).
 
 ::::::::::: caution
 

@@ -71,7 +71,7 @@ Could you quickly answer:
 - Which files should be preserved?
 - Which files can be deleted?
 
-For most people, the answer is "probably not". Even if details are stored in lab notes these can be easily misplaced. 
+For most people, the answer is "probably not". Even if details are stored in lab notes, these can easily be misplaced. 
 
 Before we worry about individual files, we need to make sure the overall project structure makes sense.
 
@@ -79,7 +79,7 @@ Before we worry about individual files, we need to make sure the overall project
 
 ## Why Folder Structures Matter
 
-Most research projects start small, containing only a few files:
+Most research projects start small with only a few files:
 
 ```text
 project/
@@ -99,9 +99,10 @@ As projects grow we often accumulate:
 - Figures
 - Documentation
 - Draft manuscripts
+- Collaborator comments
 - Software scripts
 - Temporary files
-- Minutes from meetings
+- Meeting minutes
 - Downloaded software
 - Software or equipment manuals
 - Various notes
@@ -125,7 +126,7 @@ Good folder structures make projects easier to:
 - Collaborate on
 - Maintain over time
 
-A useful rule of thumb is:
+A useful rule of thumb is
 
 > A collaborator should be able to understand where files belong without asking you.
 
@@ -133,16 +134,16 @@ A useful rule of thumb is:
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::: callout
 
-Keep in mind that it is good to plan for expansion rather than have to reorganise things later, which can break things, such as software scripts or lab notes. 
+The best practice is to plan for expansion rather than reorganising files later, which can lead to incorrect file paths and references in files such as software scripts or lab notes. 
 
-It is good to think about a possible file structure early in the project, while being flexible if new folders or files need to be added or moved. 
+Establish a possible file structure early in the project, while being flexible if new folders or files need to be added or moved. 
 
-Some of this is personal preference. For example,
+Some of this organisation depends on personal preference. For example,
 
-- Do you want to keep a seminar or conference presentation with the project, or with other talks elsewhere? 
+- Do you want to store a seminar or conference presentation with the project, or with other talks elsewhere? 
 - Should a paper, along with generated figures, be kept together with the rest of the project? 
 
-If not, will your data management system should enable you to find the origin of figures etc. used in a seminar in the future or when you write a paper in six months time? If you move a folder in future will this break things?
+If these files are stored elsewhere, can you to find the origin of figures and other results when you write a paper in six months time? If you move a folder, will your file references still work?
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -172,7 +173,7 @@ After 5 minutes, bring the class back together and discuss.
 
 Common observations often include:
 
-- Generic names such as `New Folder`
+- Default names such as `New Folder`
 - Unclear names such as `miscellaneous`
 - Use of special characters (`RAW_DATA_!!!`)
 - Hidden data locations
@@ -202,12 +203,12 @@ However, most successful structures share common characteristics.
 - Meaningful
 - Consistent
 - Shallow
-- Catagorical
+- Categorical
 - Able to archive old files
 
 :::::::::::::::::::::::::::::: challenge
 
-After looking at the Poor examples in each subsection below, try and come up with some good examples before clicking the Goood tab. 
+After looking at the Poor examples in each subsection below, try and come up with some good examples before clicking the Good tab.
 
 :::::::::::::::::::::::::::::::
 
@@ -239,14 +240,14 @@ figures
 
 ::::::::::::::::::: callout
 
-> If somebody joined the project tomorrow, would they understand what belongs in this folder?
+If somebody joined the project tomorrow, would they understand what belongs in this folder?
 
 :::::::::::::::::::
 
 
 ### Consistent
 
-Consistency is more important than perfection. Choose a particular style and use it throughout the project. This makes things easier to understand, because all folders follow the same convention. For example,
+Consistency is more important than perfection. Choose a particular style and use it throughout the project. This approach makes the structure easier to understand because all folders follow the same convention. For example,
 
 :::::::::::::::::::::::::::::::::::::::: tab
 ### Poor
@@ -294,7 +295,7 @@ As a general guideline:
 - 3–4 levels deep is often sufficient
 - Create more folders horizontally before creating more levels vertically
 
-Try not to use the folder hierarchy to encode too much information. For example
+Avoid using the folder hierarchy to encode too much information. For example
 
 ```text
 Project/
@@ -318,12 +319,14 @@ Project/
                         └── Results/                    
 ```
 
-At best this results in a lot of additional clicks in File Explorer (Win11) or Finder (MacOS), or typing in the terminal/analysis code. It can also make analysis unwieldy if the analysis processes data in a different order to the directory structure e.g. the preferred analysis order city by city, not hour by hour. 
+At best, this approach results in a lot of additional clicks in a file explorer or typing in a terminal/scripts. It can also make analyses unwieldy if you need to collect data from many different subfolders (e.g., if you want to analyse all of Newcastle's data from the example above). 
+
+At worst, file metadata, such as city and datetime in this example, can be irrevocably lost if files are moved from their original location. As such, metadata should ideally be stored in the files themselves or in a reference table with the filenames, rather than in the folder structure.
 
 
-### Catagorical
+### Categorical
 
-A common source of confusion is mixing everything together. So plots, data, reports, analysis, code all end up in the same folder. Instead, group related materials in the same folder. 
+A common source of confusion is mixing different types of data and files together so that plots, data, reports, analyses, and scripts are all stored in the same folder. Instead, group related materials in the same folder. 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: tab
 
@@ -353,11 +356,11 @@ project/
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-This makes it easier to know where new files belong.
+This structure makes it easier to know where new files belong and find existing files, even if you're new to the project.
 
 :::::::::::::: caution
 
-Know where any private/secure data is to minimise the chance of mistakes. 
+Know where any private/secure data is to minimise the chance of GDPR violations. 
 
 ::::::::::::::
 
@@ -365,13 +368,13 @@ Know where any private/secure data is to minimise the chance of mistakes.
 
 ### Archive Rather Than Hoard
 
-Many researchers hesitate to delete anything. As a result they accumulate folders full of obsolete material. Instead, consider creating an archive folder:
+Many researchers hesitate to delete anything. As a result, they accumulate folders full of obsolete material. Instead, consider creating an archive folder:
 
 ```text
 archive/
 ```
 
-This allows old material to be retained without cluttering the active project structure.
+This approach allows old material to be retained without cluttering the active project structure.
 
 We will discuss data retention in a later episode.
 
@@ -379,18 +382,18 @@ We will discuss data retention in a later episode.
 
 ## Moving Files and Folders
 
-Now that we know what good structures look like, we need the practical skills required to improve them.
+Now that we know what good structures look like, we need the practical skills to improve existing structures.
 
 The first operation is moving content.
 
-::::::::::::::::::::::::::::: challenge
-
-### Renaming a folder
+### How to Move a Folder
 
 :::::::::::::::: tab
 
 
-### All
+### Click and Drag
+
+**All operating systems**
 
 In File Explorer/Finder:
 
@@ -405,7 +408,9 @@ raw_images_TEMP
 4. Drag it to a more appropriate parent folder.
 5. Release the mouse button.
 
-### Windows II
+### Cut and Paste
+
+**Windows**
 
 1. Right-click the folder.
 2. Select **Cut**.
@@ -413,7 +418,7 @@ raw_images_TEMP
 4. Right-click.
 5. Select **Paste**.
 
-### MacOS II
+**macOS**
 
 1. Right-click the folder.
 2. Select **Copy**.
@@ -421,21 +426,26 @@ raw_images_TEMP
 4. Right-click and press **option**
 5. Select **Move item here**.
 
-### Windows/Linux III
+**Linux**
+
+Depends on the operating system, but most use the same approach as Windows.
+
+### Keyboard shortcuts
+
+**Windows/Linux**
 
 1. Left-click the folder.
 2. Press **ctrl+x**
 3. Navigate to the destination.
 4. Press **ctrl+v**
 
-### MacOs III
+**macOs**
 
 1. Left-click the folder.
 2. Press **cmd+x**
 3. Navigate to the destination.
 4. Press **cmd+v**
 
-::::::::::::::::::::::::::::::::
 ::::::::::::::::::::::::::::::::
 
 
@@ -449,15 +459,12 @@ raw_images_TEMP
 
 ---
 
-## Renaming Files and Folders
+## Renaming Folders
 
-Renaming is one of the simplest improvements we can make to the files. This allows us to select new names for the folders. This can have consequences is any code relies on the folder names already in place, however. 
+Renaming is one of the simplest improvements we can make to the file organisation. However, be aware that renaming can have unintended consequences if existing files depend on those names; for example, you may need to update folder references in the project's documentation or code.
 
 ::::::::::: challenge
-In the below example, chose a better name for the folder in the Poor example to a better folder name, and check your answer using the Good tab. It doesn't need to be identical, but should show similar features. 
-:::::::::::
-
-Consider:
+Choose a better name for the folder in the Poor example, then see one potential better name in the Good tab.
 
 :::::::::::::: tab
 
@@ -465,54 +472,53 @@ Consider:
 ```text
 RAW_DATA_!!!
 ```
-The name communicates intent, but the punctuation is unnecessary.
+The name communicates intent, but the punctuation is unnecessary and has ambiguous meaning.
 
 ### Good
-A clearer alternative might be:
+A clearer alternative is
 
 ```text
 raw_data
 ```
 ::::::::::::::::::
+:::::::::::
 
 
-
-:::::::::::::::::::::::::: discussion
-
-### How do I rename a folder:
+### How to Rename a Folder
 
 :::::::::::::: tab
 
-### Windows/Mac/Linux
+### Right-click
+
+**All operating systems**
+
 1. Right-click the folder.
 2. Select **Rename**.
 3. Enter the new name.
 4. Press Enter.
 
-### Windows II
+### Via folder selection
 
-1. Select the folder.
+**Windows**
+
+1. Select the folder by left-clicking on it.
 2. Press **F2**.
 3. Enter the new name.
 
-### MacOS II
+**macOS**
 
-1. Select the folder.
-2. Click on the file name
+1. Select the folder by left-clicking on it.
+2. Click on the folder name
 3. Enter the new name.
 
 ::::::::::::::::
-:::::::::::::
-
-
-
 
 
 ::::::::::::::::: caution
 
-Be careful when renaming folders that are used by software or analysis scripts.
+Be careful when renaming folders that are used by software or analysis scripts. Changing a folder name may break links elsewhere in a project. 
 
-Changing a folder name may break links elsewhere in a project.
+Additionally, project documentation may become out-of-date and confusing if it references the original folder structure.
 
 :::::::::::::::::::
 
@@ -530,45 +536,52 @@ New Folder (2)
 
 If this folder is empty or no longer required, it may be reasonable to remove it.
 
-:::::::::: discussion 
-
-### How do I delete a Folder
+### How to Delete a Folder
 
 :::::::::::::::::: tab
 
-### Windows
+### Drag to Recycle Bin
+
+**All operating systems**
 
 1. Select the folder.
-2. Right-click.
-3. Choose **Delete**.
-4. Confirm deletion if prompted.
+2. Drag into recycle bin (on desktop for **Windows**, bottom right of screen for **MacOS**)
 
-### Windows II
+### Right-click
+
+**Windows**
+
+1. Right-click the folder.
+2. Choose **Delete**.
+3. Confirm deletion if prompted.
+
+**macOS**
+
+1. Right-click the folder.
+2. Choose **Move to Bin** or **Move to trash**.
+3. Confirm deletion if prompted.
+
+### Keyboard shortcuts
+ 
+**Windows**
+1. Select the folder.
+2. Press ```Delete```.
+
+**macOS**
 
 1. Select the folder.
-2. Press the Delete key.
-
-### MacOS
-
-1. Select the folder.
-2. Choose **Move to bin** or **Move to trash**
-
-### Windows/MacOS
-
-1. Select the folder.
-2. Drag into recycle bin (on desktop for Windows, bottom right of screen for MacOS)
+2. Press ```Command (⌘) + Delete```.
 
 
 ::::::::::::::::::
-:::::::::::
 
-Data deleted using the above methods are not fully removed from the system. They are moved to the recycle bin. To permanently remove the file you have to empty the bin. Alternatively, files in the recycle bin can be restored and put back where they were. On some systems there is a certain about of time a document will stay in the recycle bin before it is deleted. 
+Data deleted using the above methods are not fully removed from the system; they are first moved to the recycle bin. You can permanently delete the file by emptying the bin. Alternatively, files in the recycle bin can be restored and "put back" to their original location. On some systems, the bin permanently deletes files after they have been in the bin a certain amount of time (e.g., 30 days).
 
 ::::::::::: caution
 
 Check your data policies on data deletion, particularly if handling private data and your files are not encrypted. We will discuss data security in a later lesson. 
 
-Upon deleting a file on your computer the file will not always be removed from your backups, but sometimes it will be depending on syncing. Be careful and check that the behaviour of your backups is want you want.
+Deleting a file on your computer will not always remove the file from automated backups (e.g., files stored in Newcastle University's Microsoft OneDrive); this behaviour will depend on your syncing settings. Confirm that these settings support the backup behaviour you need for your project.
 
 :::::::::::
 
@@ -592,13 +605,15 @@ At this stage we know:
 - How to rename folders
 - How to remove unnecessary folders
 
-The next step is deciding how the project should look.
+The next step is deciding what folder structure you need for your project.
 
 ::::::::::::::::: challenge
 
-### Consider possible useful folders and how you would arrange them. 
+### Choosing a Folder Structure  
 
-What folder structures would be good for your projects? How would you divide up files? Think about a folder hierarchy for several minutes and discuss. 
+For one of your projects, consider possible useful folders and how you would arrange them. What folder structures would work well? How would you divide up files? 
+
+Try drawing out three possible folder hierarchies for your project and discuss the pros/cons of the different approaches with your neighbours.
 
 ::::::::::::::::: solution
 
@@ -626,10 +641,10 @@ Other possible folders would be:
 - `temp` for temporary files you know you do not wish to keep
 etc.
 
+The most important part of the design is that each folder has a clear purpose.
 ::::::::::::::::::
 ::::::::::::::::::
 
-The important point is that each folder has a clear purpose.
 
 ---
 

@@ -609,9 +609,11 @@ The next step is deciding what folder structure you need for your project.
 
 ::::::::::::::::: challenge
 
-### Consider possible useful folders and how you would arrange them. 
+### Choosing a Folder Structure  
 
-What folder structures would be good for your projects? How would you divide up files? Try writing out three possible folder hierarchies for a project and discuss the pros/cons of the different approaches with your neighbours.
+For one of your projects, consider possible useful folders and how you would arrange them. What folder structures would work well? How would you divide up files? 
+
+Try drawing out three possible folder hierarchies for your project and discuss the pros/cons of the different approaches with your neighbours.
 
 ::::::::::::::::: solution
 
@@ -639,10 +641,10 @@ Other possible folders would be:
 - `temp` for temporary files you know you do not wish to keep
 etc.
 
+The most important part of the design is that each folder has a clear purpose.
 ::::::::::::::::::
 ::::::::::::::::::
 
-The important point is that each folder has a clear purpose.
 
 ---
 

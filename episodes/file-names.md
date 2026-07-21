@@ -282,7 +282,7 @@ When planning your file names, consider how alphabetical sorting will arrange yo
 
 ### Clear
 
-Filenames should be clear for a human and computer to read. 
+Filenames should be easily understood by humans and computers. 
 
 :::::::::::::::::::::::::::::: tab
 ### Poor
@@ -298,10 +298,10 @@ Filenames should be clear for a human and computer to read.
 :::::::::::::::::::::::::::::::::::::
 
 
-This provides breaks for the eye, and for software. 
+Separators provides breaks for the eye and for parsing using software. 
 
 
-## What Information Should Go Into a Filename?
+## What Information Should Go In a Filename?
 
 Many researchers face a common temptation:
 
@@ -313,9 +313,9 @@ This can lead to names such as:
 ```text
 2026-06-01_12-43-16_sampling_trip_siteA_temperature_sensor_03_processed_final_v2.csv
 ```
-which becomes difficult to read, particularly in a long list of files with similar names. 
+which becomes difficult to read, particularly in a long list of files with similar names. Additionally, some operating systems and applications limit the allowed length of filenames and file paths.
 
-Acronyms can help make the file name smaller but you don't want to have to have a set of definitions taped to your office wall to remember them. 
+Acronyms can make the file name smaller, but you don't want to need a set of definitions taped to your office wall to remember them! 
 
 A useful guideline is:
 
@@ -344,7 +344,7 @@ Additional details can either be stored elsewhere:
 - data dictionaries
 - laboratory notebooks
 
-or as a header or metadata in the file itself.
+or as a header or metadata in the file itself. Additionally, metadata should not *only* be stored in the filename, as that information will be lost if the filename is inadvertently changed.
 
 We will discuss documentation in the next episode.
 

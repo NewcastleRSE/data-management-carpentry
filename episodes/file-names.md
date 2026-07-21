@@ -323,7 +323,7 @@ This can lead to names such as:
 ```
 which becomes difficult to read, particularly in a long list of files with similar names. Additionally, some operating systems and applications limit the allowed length of filenames and file paths.
 
-Acronyms can make the file name smaller, but you don't want to need a set of definitions taped to your office wall to remember them! 
+Acronyms can make the file name smaller, but you don't want to rely on a set of definitions taped to your office wall to remember them! 
 
 A useful guideline is:
 

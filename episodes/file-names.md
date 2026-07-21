@@ -184,7 +184,7 @@ The 'good' example immediately communicates useful information about the data: i
 
 ### Consistent
 
-Choose a convention and use it everywhere.
+Choose a convention and use it across all files.
 
 ::::::::::::::::::::::::::::::::: tab
 
@@ -204,7 +204,7 @@ Results03April.csv
 
 ::::::::::::::::::::::::::::::::::::
 
-Even if the files contain the same information, inconsistent naming makes them harder to understand and automate. If the folder contains many files, how would you be able to find these files among the others? For automation, the good example contains date and sample id, so each file can be analysed in order without having to load each file as a pre-processing step.  
+Even if the files contain the same information, inconsistent naming makes them harder to understand and automatically analyse. If the folder contains many files, how would you be able to find a specific piece of data? For automation, the good filenames each contain the data's date and sample id, allowing a script to easily loop through and find each file.  
 
 ### Machine-Friendly
 
@@ -224,7 +224,7 @@ results_and_notes.csv
 ```
 :::
 
-Recommended characters include:
+Recommended characters:
 
 - letters
 - numbers
@@ -234,14 +234,15 @@ Recommended characters include:
 Avoid:
 
 ```text
-\ / : * ? " < > |
+- special characters: \ / : * ? " < > |
+- spaces
 ```
 
 These characters can have special meanings on different operating systems. Hyphens can cause issues because different word processors can substitute different characters which look almost the same. Similarly, word processors can autocorrect lower case letters into uppercase characters at the start of lines. 
 
 :::::::::::::::::::::::::::::: caution
 
-Windows file names are case insensitive. Linux and Mac filenames are case sensitive. This can cause data loss when copying files from Linux or Mac to Windows file systems.
+Windows file names are case insensitive. Linux and macOS filenames are case sensitive. This difference can cause data loss when copying files from Linux or macOS to Windows file systems.
 
 :::::::::::::::::::::::::::::::
 

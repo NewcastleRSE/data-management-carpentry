@@ -149,7 +149,7 @@ This is easiest to demonstrate using **image formats**, which are widely used ac
 * **BMP (`.bmp`):** A raw bitmap format. It saves the exact color data of every single pixel explicitly. It preserves 100% fidelity but results in large file sizes.
 * **PNG (`.png`):** A compressed, **lossless** format. It reduces the file size significantly using smart patterns, but when you open it, the image is mathematically identical to the original pixel-by-pixel.
 * **JPEG (`.jpg` / `.jpeg`):** A compressed, **lossy** format. It achieves tiny file sizes by permanently throwing away visual information that the human eye is less likely to notice.
-* **SVG (`.svg):** A vector graphics format which scales freely and defines graphics using vertices and lines. They are easily edited. However, they are not suitable for pure images.  
+* **SVG (`.svg`):** A vector graphics format which scales freely and defines graphics using vertices and lines. They are easily edited. However, they are not suitable for pixel images.  
 
 ---
 

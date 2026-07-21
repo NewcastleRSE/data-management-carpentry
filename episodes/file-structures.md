@@ -71,7 +71,7 @@ Could you quickly answer:
 - Which files should be preserved?
 - Which files can be deleted?
 
-For most people, the answer is "probably not". Even if details are stored in lab notes these can be easily misplaced. 
+For most people, the answer is "probably not". Even if details are stored in lab notes, these can easily be misplaced. 
 
 Before we worry about individual files, we need to make sure the overall project structure makes sense.
 
@@ -79,7 +79,7 @@ Before we worry about individual files, we need to make sure the overall project
 
 ## Why Folder Structures Matter
 
-Most research projects start small, containing only a few files:
+Most research projects start small with only a few files:
 
 ```text
 project/
@@ -99,9 +99,10 @@ As projects grow we often accumulate:
 - Figures
 - Documentation
 - Draft manuscripts
+- Collaborator comments
 - Software scripts
 - Temporary files
-- Minutes from meetings
+- Meeting minutes
 - Downloaded software
 - Software or equipment manuals
 - Various notes
@@ -133,16 +134,16 @@ A useful rule of thumb is:
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::: callout
 
-Keep in mind that it is good to plan for expansion rather than have to reorganise things later, which can break things, such as software scripts or lab notes. 
+The best practice is to plan for expansion rather than reorganising files later, which can lead to incorrect file paths and references in files such as software scripts or lab notes. 
 
-It is good to think about a possible file structure early in the project, while being flexible if new folders or files need to be added or moved. 
+Establish a possible file structure early in the project, while being flexible if new folders or files need to be added or moved. 
 
-Some of this is personal preference. For example,
+Some of this organisation depends on personal preference. For example,
 
-- Do you want to keep a seminar or conference presentation with the project, or with other talks elsewhere? 
+- Do you want to store a seminar or conference presentation with the project, or with other talks elsewhere? 
 - Should a paper, along with generated figures, be kept together with the rest of the project? 
 
-If not, will your data management system should enable you to find the origin of figures etc. used in a seminar in the future or when you write a paper in six months time? If you move a folder in future will this break things?
+If these files are stored elsewhere, can you to find the origin of figures and other results when you write a paper in six months time? If you move a folder, will your file references still work?
 ::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
@@ -172,7 +173,7 @@ After 5 minutes, bring the class back together and discuss.
 
 Common observations often include:
 
-- Generic names such as `New Folder`
+- Default names such as `New Folder`
 - Unclear names such as `miscellaneous`
 - Use of special characters (`RAW_DATA_!!!`)
 - Hidden data locations

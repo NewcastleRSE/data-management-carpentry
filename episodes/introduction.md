@@ -119,13 +119,16 @@ Good data management practices reduce time wasted searching for data, improve co
 
 :::::::::::::::::: callout
 
-Various research funding organisations have data management and sharing policies, and can request detailed plans in funding applications.
+Various research funding organisations have data management and sharing policies, and they can request detailed plans in funding applications:
 
-- [UK](https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/)
-- [USA](https://www.nsf.gov/funding/data-management-plan)
-- [Canada](https://cihr-irsc.gc.ca/e/54157.html) 
+- [UKRI](https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/) (UK)
+- [Wellcome Trust](https://wellcome.org/research-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy) (UK)
+- [NSF](https://www.nsf.gov/funding/data-management-plan) (US)
+- [CIHR](https://cihr-irsc.gc.ca/e/54270.html) (Canada)
 
-Newcastle Univerity has its own [policies](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/).
+Guidelines for more funders are included in Newcastle University's [overview of Data Management Expectations](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/expectations/).
+
+Newcastle University has its own policies for [postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/) and [all researchers](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm).
 
 
 ::::::::::::::::::
@@ -143,22 +146,14 @@ Newcastle Univerity has its own [policies](https://www.ncl.ac.uk/library/academi
 
 ### Legal issues with personal data
 
-- Personal data can be requested by members of the public on mandated timescales. Would you be able to find it?
-- Members of the public can request data be deleted. Would you be able to with confidence?
-- Data can only be retained for spesific purposes. 
+- Personal data can be requested by members of the public on mandated timescales. Would you be able to find someone's data if they requested it?
+- Members of the public can request that their data be deleted. Would you be able to do so with confidence?
+- Personal data can only be retained for specific purposes.
 
-Clear data management is essential to ensure you are able to conform to the law and to make sure you do not loose track of important data.
+Clear data management is essential to ensure you comply with the law and keep track of important data.
 
 :::::::::::::::::::
 
-
-::::::::::::::::::::::::::::::::::::::::::::: Discussion
-
-Have you ever inherited files from another researcher or returned to an old project after several months?
-
-What was the most difficult part of understanding the data?
-
-:::::::::::::::::::::::::::::::::::::::::::::
 
 ## How Computers Store Data
 
@@ -235,32 +230,28 @@ In this lesson we will demonstrate using **Windows File Explorer**, but the same
 ::::::::::::::::::: discussion
 ## Opening File Explorer
 
-The instructor should demonstrate how to open File Explorer in Windows.
+The instructor will demonstrate how to open a file explorer in Windows. 
+
+Depending on the operating system, you can use any of these options to open a file explorer: 
 
 :::::::::::::: tab
 
-### Windows I / MacOS I
+### Windows
 
-Click the folder icon on the taskbar.
+- Click the Folder icon on the taskbar
+- Use the keyboard shortcut ```Windows Key + E```
+- Open the Start Menu and search for ```File Explorer```
 
-### Windows II
+### macOS
 
-Press:```Windows Key + E```
-
-### Windows III
-
-Open the Start Menu and search for:```File Explorer```
-
-### MacOS II
-
-Click the finder icon on the dock.
+- Click the Finder icon (a blue and white smiling face) on the dock
 
 ::::::::::::::::
 ::::::::::::::::
 
 
 ::::::::::::: callout
-Links to further instructions for various file navigation tools
+Further instructions for various file navigation tools:
 
 :::::::::::: tab
 
@@ -269,15 +260,15 @@ Links to further instructions for various file navigation tools
 
 - [File Explorer](https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows)
 
-### MacOS
+### macOS
 
 - [Finder](https://support.apple.com/en-gb/guide/mac-help/mchlp2605/mac)
 
-Select your particular MacOS version at the top of the pace under "Mac User Guide"
+Select your particular macOS version at the top of the page under "Mac User Guide".
 
 ### Linux
 
-- [GNOME Files](https://apps.gnome.org/en-GB/Nautilus/)
+- [GNOME Files ("Nautilus")](https://apps.gnome.org/en-GB/Nautilus/) (default for Ubuntu and Debian)
 - [Dolphin](https://userbase.kde.org/Dolphin/File_Management#Discover_Dolphin)
 - [Thunar](https://docs.xfce.org/xfce/thunar/the-file-manager-window)
 
@@ -303,8 +294,7 @@ A typical File Explorer window contains several important components.
 +--------------------------------------------------+
 ```
 ### Navigation Pane
-Usually found on the left-hand side.
-This shows:
+Usually found on the left-hand side and shows commonly used folders such as
 
 - Desktop
 - Documents
@@ -345,16 +335,19 @@ Before we can organise the files, however, we first need to locate them.
 
 ### Navigating the file explorer
 
-You should make sure that you know where to find:
+You should make sure that you know where to find the
 
-- Navigation pane
-- File listing area
-- Address bar
-- Search box
-- Moving between folders
-- Expanding and collapsing folders
+- navigation pane
+- file listing area
+- address bar
+- search box
 
-on your particular computer, whether it is Windows, MacOS or Linux. 
+and can
+
+- move between folders
+- expand and collapse folders
+
+on your particular computer, whether it is Windows, macOS or Linux. 
 
 ::::::::::::::::::::::
 
@@ -369,17 +362,12 @@ Spend a few minutes explicitly demonstrating how files and folders are organised
 
 ## Resources
 
-The University library has a number of training courses available for data management.
+Newcastle University provides a number of resources for data management:
 
-This is linked to at [Research Data Management Training](https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/)
-
-On this website there are subsections on:
-
-- [Data Management Planning](https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/data-management-planning/)
-- [Online Training via Mantra](https://mantra.ed.ac.uk)
-- [Data Analysis](https://services.ncl.ac.uk/itservice/research/dataanalysis/)
-
-The general Research Data Management Policy and Code of Good Practice can be found: [here](https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf)
+- [Research Data Management Training](https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/)
+- [Ethics toolkit for data](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/), including the [Research Data Management Policy and Code of Good Practice](https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf)
+- [Data management for postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/-rdm/planning/pgr/)
+- [Research data management](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm)
 
 ::::::::::::: challenge
 
@@ -395,14 +383,8 @@ Using File Explorer:
 4. Explore the contents without modifying anything.
 5. Identify at least three things that seem confusing or poorly organised.
 
-:::::::::::::::::
 
-
-::::::::::::: discussion
-
-Was it immediately obvious where the important data was?
-
-What information would have helped you understand the project more quickly?
+Was it immediately obvious where the important data was? What information would have helped you understand the project more quickly?
 :::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 

@@ -581,7 +581,7 @@ Data deleted using the above methods are not fully removed from the system; they
 
 Check your data policies on data deletion, particularly if handling private data and your files are not encrypted. We will discuss data security in a later lesson. 
 
-Upon deleting a file on your computer the file will not always be removed from your backups, but sometimes it will be depending on syncing. Be careful and check that the behaviour of your backups is want you want.
+Deleting a file on your computer will not always remove the file from automated backups (e.g., files stored in Newcastle University's Microsoft OneDrive); this behaviour will depend on your syncing settings. Confirm that these settings support the backup behaviour you need for your project.
 
 :::::::::::
 
@@ -605,13 +605,13 @@ At this stage we know:
 - How to rename folders
 - How to remove unnecessary folders
 
-The next step is deciding how the project should look.
+The next step is deciding what folder structure you need for your project.
 
 ::::::::::::::::: challenge
 
 ### Consider possible useful folders and how you would arrange them. 
 
-What folder structures would be good for your projects? How would you divide up files? Think about a folder hierarchy for several minutes and discuss. 
+What folder structures would be good for your projects? How would you divide up files? Try writing out three possible folder hierarchies for a project and discuss the pros/cons of the different approaches with your neighbours.
 
 ::::::::::::::::: solution
 

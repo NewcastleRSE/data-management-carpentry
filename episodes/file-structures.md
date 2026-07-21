@@ -516,9 +516,9 @@ raw_data
 
 ::::::::::::::::: caution
 
-Be careful when renaming folders that are used by software or analysis scripts.
+Be careful when renaming folders that are used by software or analysis scripts. Changing a folder name may break links elsewhere in a project. 
 
-Changing a folder name may break links elsewhere in a project.
+Additionally, project documentation may become out-of-date and confusing if it references the original folder structure.
 
 :::::::::::::::::::
 

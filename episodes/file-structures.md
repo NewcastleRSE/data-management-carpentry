@@ -126,7 +126,7 @@ Good folder structures make projects easier to:
 - Collaborate on
 - Maintain over time
 
-A useful rule of thumb is:
+A useful rule of thumb is
 
 > A collaborator should be able to understand where files belong without asking you.
 

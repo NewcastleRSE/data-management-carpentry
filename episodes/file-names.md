@@ -242,7 +242,7 @@ These characters can have special meanings on different operating systems. Hyphe
 
 :::::::::::::::::::::::::::::: caution
 
-Windows file names are case insensitive. Linux and macOS filenames are case sensitive. This difference can cause data loss when copying files from Linux or macOS to Windows file systems.
+Unlike Linux and macOS file names, Windows file names are case insensitive. This difference can cause data loss when copying files from Linux or macOS to Windows file systems.
 
 :::::::::::::::::::::::::::::::
 
@@ -344,14 +344,14 @@ Additional details can either be stored elsewhere:
 - data dictionaries
 - laboratory notebooks
 
-or as a header or metadata in the file itself. Additionally, metadata should not *only* be stored in the filename, as that information will be lost if the filename is inadvertently changed.
+or as a header or metadata in the file itself. Additionally, avoiding storing metadata *only* in the filename, as that information will be lost if the filename is inadvertently changed.
 
 We will discuss documentation in the next episode.
 
 
 ## Naming Files for Batch Processing
 
-One advantage of consistent filenames is that they can easily be processed together.
+Consistent filenames allows files to be easily be processed together.
 
 ::: tab
 ### Poor
@@ -369,7 +369,9 @@ June_03_image_03.png
 ```
 :::
 
-The files in the good example can be processed together, while files in the poor example are much harder to work with systematically. When files are expected to belong to a sequence, use consistent numbering with leading zeros:
+The files in the good example can be processed together by software and scripts, while files in the poor example are much harder to work with systematically. 
+
+When files may belong to a sequence, also use consistent numbering with leading zeros:
 
 ::: tab
 ### Poor
@@ -387,9 +389,7 @@ image_03.png
 ```
 :::
 
-This improves sorting. 
-
-For example, when sorting files we get:
+Leading zeros preserves the numeric order:
 
 ::: tab
 
@@ -417,7 +417,7 @@ image_93.png
 
 
 ::: callout
-Remember to pad with sufficient zeros for the expected total number of files. If you expect less than 100 files you can pad with 1 zero, less than 1000 pad with 2 zeros etc. 
+Remember to use enough digits for the expected total number of files. For example, if you expect 99 files or fewer, pad with one zero to format numbers as `01, 02,... 99`. If you may have 100 to 999 files, use `001, 002,... 999`.
 :::
 ---
 
@@ -479,21 +479,16 @@ project/
 ```
 :::
 
-The location information is already present in the folder structure and so is reduntant in the file name. 
+The location information is already present in the folder structure and so is redundant in the file name. 
 
-This can illustrate how each project has different filename requirements. If the 'country' layer of the directory structure wasn't present, it would be useful to put the country in the filename. As files move around, or are migrated from folder to folder you need to consider whether file names should change. 
-
-For example, 
-
-
-If it is decided that the country folders can be removed, then files:
+This example illustrates how each project has different filename requirements. If the 'country' layer of the directory structure wasn't present, it would be useful to put the country in the filename. However, if you move files, the folder names would need to change; for example 
 
 ```text
 scotland/2026-06-01_image_01.png 
 england/2026-07-01_image_01.png 
 ````
 
-would have the same name. You would need to be rename them to avoid data loss. 
+would need to be renamed if placed in the same folder to avoid data loss. 
 
 
 ::: callout
@@ -504,9 +499,9 @@ Good folder structures and good filenames should work together.
 
 ## Versioning Files
 
-Versioning files keeps track of revisions over time. This is useful because documents evolve, and you do always not wish to overwrite previous files. This can be because of repeated experiments, fresh downloads of data, wanting non-destructive revisions to documents or an audit trail of changes.
+New versions of files can arise from repeated experiments, fresh downloads of data, and documentation or report edits. For some types of changes, you'll want to keep non-destructive revisions to documents or an audit trail of changes. Versioning files keeps track of these changes over time, allowing you to manage different versions of files without overwriting previous ones. 
 
-Many researchers create filenames that making tracking revisions difficult. This usually indicates that a versioning strategy is missing. For example:
+Due to a lack of a versioning strategy, many researchers create filenames that making tracking revisions difficult:
 
 ::: tab
 
@@ -541,18 +536,17 @@ Avoid:
 - final
 - newest
 - final_final
+- use_this_version
 
-because these labels eventually become inaccurate. As soon as you edit report_final_final.docx it is no longer final (or even final final!), and you probably won't go back to rename it. 
+because these labels eventually become inaccurate. As soon as you edit `report_final_final.docx` it is no longer final (or even final final!), and you probably won't go back to rename the earlier versions. 
 
 ::::::::::::::::::::::: callout
 
-Various software tools do exist to help with versioning. For example:
+Various software tools can help with versioning without using multiple files. For example:
 
-- git (for text documents or code)
-- Microsoft office (version history tool)
+- [git](https://git-scm.com/) for code, documents, and small files (commonly used via [GitHub](https://github.com/))
+- Microsoft Office (version history tools)
 - OneDrive
-
-which do not rely on file names. 
 
 ::::::::::::::::::::::::::::
 
@@ -589,8 +583,7 @@ To rename a file in File Explorer:
 4. Enter the new filename.
 5. Press Enter.
 
-### Windows Alternative:
-To rename a file in File Explorer:
+or
 
 1. Select the file.
 2. Press **F2**.
@@ -684,15 +677,16 @@ The exact interface differs between tools, but the concepts are similar:
 
 
 :::::::::::::::::::: challenge
-Using a bulk rename tool:
 
-Replace:
+## Bulk renaming
+
+Using a bulk rename tool, replace
 
 ```text
 IMG
 ```
 
-with:
+with
 
 ```text
 siteA_image_
@@ -743,6 +737,8 @@ How could you reduce risk?
 
 ::: challenge
 
+## Rename the inherited files
+
 Working individually or in pairs:
 
 Review the filenames in the inherited dataset and apply the principles discussed in this lesson.
@@ -763,7 +759,7 @@ If a bulk rename tool is available, use it where appropriate.
 
  There is no single correct answer.
 
- A reasonable outcome might:
+ A reasonable outcome might be
 
 ::: tab
 
@@ -797,7 +793,7 @@ or
  ```
 :::
 
-These different options are all goodm provided the convention is applied consistently throughout the project. 
+These different options are all good provided the convention is applied consistently throughout the project. 
 
 :::
 :::

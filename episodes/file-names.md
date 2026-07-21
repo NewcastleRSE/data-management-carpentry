@@ -280,6 +280,14 @@ which is *usually*, but not always, less useful.
 
 When planning your file names, consider how alphabetical sorting will arrange your files. Place the most important metadata for grouping files (such as the date, subject, country, or sample) at the start of the file name.
 
+::: discussion
+
+## Ordering your files
+
+Consider the metadata you collect for one of your projects. What metadata would you put first in your filenames to help sort your data files?
+
+:::
+
 ### Clear
 
 Filenames should be easily understood by humans and computers. 
@@ -419,6 +427,15 @@ image_93.png
 ::: callout
 Remember to use enough digits for the expected total number of files. For example, if you expect 99 files or fewer, pad with one zero to format numbers as `01, 02,... 99`. If you may have 100 to 999 files, use `001, 002,... 999`.
 :::
+
+::: discussion
+
+## Choosing the number of digits
+
+Consider the different types of files you create for one of your projects. Which files might be part of a larger sequence? How many files do you expect in each sequence, and how many digits should you include in the filenames for each one?
+
+:::
+
 ---
 
 ## Using Hierarchies Effectively
@@ -558,7 +575,10 @@ Various software tools can help with versioning without using multiple files. Fo
 Now that we understand good naming principles, we need practical ways to apply them.
 
 ::: challenge
-Suppose we have
+
+## Rename an example file
+
+In our inherited dataset, find
 
 ```text
 Data!@#$.csv
@@ -715,7 +735,7 @@ siteA_image_0005.png
 :::
 ::::::::::::::::::::
 
-::::::: challenge
+::::::: discussion
 
 What could go wrong if a bulk rename operation is performed incorrectly?
 

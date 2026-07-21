@@ -124,7 +124,7 @@ Common issues with file names include
 
 A filename serves several purposes simultaneously.
 
-It helps answer:
+It helps answer
 
 - What is this file?
 - When was it created?
@@ -132,7 +132,7 @@ It helps answer:
 - Which version is this?
 - Can it be grouped with related files?
 
-Good filenames support:
+Good filenames support
 
 - Human understanding
 - Sharing and collaboration
@@ -142,9 +142,9 @@ Good filenames support:
 
 :::::::::::::::::::::::::::::::
 
-A filename should be easily useable by both a human reader and a computer. Keep in mind that humans and computers are good at different things and that different software and operating systems (Windows, MacOS, Linux) have different conventions. Your filenames should be as portable as possible.  
+A filename should be easily useable by both a human reader and a computer. Keep in mind that humans and computers are good at different things and that different software and operating systems (Windows, macOS, Linux) have different conventions. Your filenames should be as portable as possible.  
 
-Future-you is one of the most important users of your naming convention but it should also be easily understandable by collegues.
+Future-you is one of the most important users of your naming convention, but it should also be easily understandable by colleagues.
 
 ## Characteristics of Good Filenames
 
@@ -154,12 +154,12 @@ There is no universal naming convention.
 
 :::::::::::::::::::::::::::::::
 
-There are so many possible scenarios it is impossible to build an understandable, concise, informative template which accounts for them all. Different projects require different information. However, successful file naming schemes usually share several characteristics.
+It is impossible to build an understandable, concise, informative template that accounts for all possible scenarios. Different projects require different information. However, successful file naming schemes usually share several characteristics.
 
-Filenames should be:
+Filenames should be
 
 - Meaningful
-- Consistant
+- Consistent
 - Machine-friendly
 - Sortable
 - Clear
@@ -180,7 +180,7 @@ A filename should describe the contents of the file, for example:
 ```
 :::
 
-The 'good' example immediately communicates useful information about the data: data about the water quality at siteA on the 3rd April 2026. This can be used by a human, to immediatly find the data in a folder containing many files, and makes transcription into code or a document easier. For a computer, the filename contains important information which can help software load and sort the data without having to open the document and read its content. The 'poor' filename communicates almost nothing.
+The 'good' example immediately communicates useful information about the data: it measures the water quality at siteA on the 3rd April 2026. This name can be used by a human to easily find the desired data in a folder containing many files and reference it in code or documentation. For a computer, this filename information can help software load and sort the data without opening the document and reading its content. The 'poor' filename communicates almost nothing.
 
 ### Consistent
 

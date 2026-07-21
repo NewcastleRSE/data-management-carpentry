@@ -609,7 +609,7 @@ To rename a file in File Explorer:
 3. Type the new name.
 4. Press Enter.
 
-### MacOS
+### macOS
 To rename a file in Finder:
 
 1. Select the file.
@@ -675,7 +675,7 @@ Several graphical tools support this, for example:
 - Bulk Rename Utility
 - Advanced Renamer
 
-### MacOS
+### macOS
 
 - Built-in Finder rename tools
 

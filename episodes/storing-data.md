@@ -57,7 +57,7 @@ However, research projects usually involve:
 - Sensitive information
 - Long-term storage requirements
 
-A storage decision that works for a single person may become problematic when a project grows or team members change.
+A storage decision that works for a single person may become a problem when a project grows or team members change.
 
 Choosing an appropriate storage location is therefore an important part of good data management.
 
@@ -72,14 +72,15 @@ Choosing an appropriate storage location is therefore an important part of good 
  - Where do you currently store your research data?
  - Why did you choose that location?
  - How do collaborators access it?
- - Is it backed up?
+ - Are the data backed up?
  - What would happen if your laptop stopped working tomorrow?
+ - What happens if you leave your current project suddenly?
 
-Share some of your examples with the group.
+Share some of your ideas with the group.
 
 ::::::::::::::::::::::::: solution
 
-Common answers often include:
+Common answers for where to store data often include:
 
 - Laptop hard drives
 - USB drives
@@ -89,6 +90,9 @@ Common answers often include:
 - Institutional storage systems
 - HPC storage
 - External hard drives
+
+Other answers can vary depending on the project. 
+
 
 :::::::::::::::::::::::
 :::::::::::::::::::::::
@@ -122,6 +126,7 @@ Questions to consider:
 - Can external collaborators access it?
 - Can access be controlled?
 - Can new project members be added easily?
+- When you leave the project might the data disappear?
 
 ---
 
@@ -138,7 +143,8 @@ Unfortunately this is not always true.
  - Computers fail.
  - Laptops get stolen.
  - Hard drives stop working.
- - Accidental data deletion.
+ - USB drives get lost.
+ - Data might be deleted accidentally.
 
 Good storage solutions should have reliable backup arrangements.
 
@@ -154,7 +160,7 @@ A good backup system might include:
 - Offsite - cloud backups? In a different building.
 - Accessible - you can easily go and get the backups and find your files
 - Redundancy - Multiple copies, in case you delete data and take a while to notice
-- ...
+
 
 :::::::::::::
 :::::::::::::
@@ -169,7 +175,7 @@ Examples include:
 
 - Participant data
 - Medical records
-- Personal information
+- Personal information (particularly [Special Catagory Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/))
 - Commercially sensitive information
 - Confidential research
 
@@ -180,6 +186,8 @@ Storage locations must be appropriate for the sensitivity of the data.
 You have a legal requirement to keep certain types of data safe with consequences for yourself and the University. 
 
 There are required actions that need to be taken if there is a data breach, such as reporting to the University. Make sure you know the requirements for your data. 
+
+Special catagory data is especially sensitive personal data whech needs extra care when collecting and handling. See [Special Catagory Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/) for more information.
 
 :::::::::::
 
@@ -193,8 +201,8 @@ Ask:
 
 - Will the storage still exist in five years?
 - What happens if a team member leaves?
-- Can ownership be transferred?
-- Is there enough capacity for data growth?
+- Can file ownership be transferred? This is particularly important for cloud services.
+- Is there enough storage capacity for data growth?
 - Is the file format accessible? If the company which makes your software shuts down will you still be able to access your data?
 
 ---
@@ -218,7 +226,7 @@ For example:
 C:\Users\Bob\Documents\Research\
 ```
 
-### MacOS
+### macOS
 
 ```text
 /Users/Bob/Documents/Research/
@@ -317,6 +325,7 @@ Discuss the advantages and disadvantages of cloud storage with a partner or grou
 - Access to external collaborators
 - Understanding University policy 
 - Knowing which service to use can be challenging
+- May fail silently
 
 ::::::::::::::::::::
 ::::::::::::::::::::
@@ -337,6 +346,7 @@ This seems convenient until:
 - A researcher leaves the project.
 - Their institutional account is removed.
 - Access to project data is lost.
+- Need to transfer ownership of files.
 
 In some organisations, governance policies may prevent administrators from granting access because personal storage is treated as individual rather than project-owned data.
 
@@ -390,7 +400,7 @@ Discuss the advantages and disadvantages of shared storage with a partner or gro
 - May require administration
 - May have storage limits
 - Large datasets can become difficult to manage
-- Different ways of accessing off-site
+- Different ways of accessing when off-site
 - Understanding backup policy can be hard, is something apparently deleted actually deleted?
 
 :::::::::::::::::::::
@@ -479,13 +489,13 @@ For example:
 
 There is no universal solution.
 
-The appropriate permissions depend on the project.
+The appropriate permissions depend on the project. It is good to have an access plan in place, so everyone on the project knows who can accesss which data and how easy it might be for external collaborators to access your preferred data store. 
 
 ::::::::::::::::: callout
 
 Grant the minimum access necessary.
 
-This reduces the risk of accidental deletion or modification of important files.
+This reduces the risk of accidental deletion, leaking, or modification of important files.
 
 :::::::::::::::::
 
@@ -500,6 +510,7 @@ Examples include:
 - Human participant data
 - Clinical data
 - Personal information
+- Special catagory data.
 - Commercially restricted data
 
 Questions to consider:
@@ -509,7 +520,7 @@ Questions to consider:
 - Does the data need encryption?
 - Are there legal or ethical restrictions?
 
-Sensitive data should never be stored solely because it is convenient.
+Sensitive data should never be collected or stored solely because it is convenient.
 
 Always follow institutional policies and governance requirements.
 
@@ -540,18 +551,18 @@ Be clear on what your obligations are regarding the data you use. The above link
 
 #### Encryption
 
-Your University laptop may already be running whole disk encryption. This protects all the files on the computer. Without it, anyone can access the files, even if you have set a password. However, data on your laptop is only fully protected when it is shut down. Prefer Hibernate to Sleep in Windows.  
+Your University laptop may already be running whole disk encryption. This protects all the files on the computer. Without it, anyone can access the files, even if you have set a password. However, data on your laptop is only fully protected when it is shut down. Different modes of standby have different levels of protection. For example, prefer Hibernate to Sleep mode in Windows.  
 
-The same does not always apply to external hard-drives used for backups or data transfer unless the disk is explicitly encrypted. If the external drive asks for a password before you can access it, it is probably encrypted, if it does not then it probably isn't. External disks can be encrypted using Bitlocker for Windows, Finder for MacOS or Disk Utility in Linux. 
+The same does not always apply to external hard-drives used for backups or data transfer, unless the disk is explicitly encrypted. If the external drive asks for a password before you can access it, it is probably encrypted, if it does not then it probably isn't. This is true even if your laptop is running full disk encryption. External disks can be encrypted using Bitlocker for Windows, Finder for macOS or Disk Utility in Linux. 
 
 
 :::::::::::::::::::: caution
 
-If you forget your password and/or encryption key you have lost your data! It cannot be recovered. 
+If you forget your password and encryption key you have lost your data! It cannot be recovered. 
 
 ::::::::::::::::::::
 
-The different tools on Windows, MacOS and Linux can make an encrypted external disk or USB key unusable on a different operating system. You can encrypt individual files and folders if required, depending on software and system e.g. Windows/MacOS/Linux/OneDrive.
+The different tools on Windows, macOS and Linux can make an encrypted external disk or USB key unusable on a different operating system. You can encrypt individual files and folders if required, depending on software and system e.g. Windows/macOS/Linux/OneDrive.
 
 
 
@@ -562,27 +573,24 @@ The different tools on Windows, MacOS and Linux can make an encrypted external d
 
 Sharing data is discussed in a previous lesson. However, a few additional items related to security are discussed here. 
 
-If concerned about storing data on the cloud, or transfering it to collegues you can encrypt it before hand and sent the encrypted version, while sending the password to the file seperatly. 
+If concerned about storing data on the cloud, or transfering it to collegues you can encrypt it before hand and sent the encrypted version. In this case, send the password seperatly. 
 
 The University offers a [File Transfer Service](https://dropoff.ncl.ac.uk/) which offers the chance to encrypt data before sending. It will also inform you when someone accesses the data. 
 
 This offers additional security over email, which is **not recommended** for moving private data. Email passed from you to the destination through a number of intermediate servers. If any link in the chain is exposed, the data can leak. This is why companies rarely email you your bills, but instead offer secure websites for viewing them [1](https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621), [2](https://hexiosec.com/blog/secure-email-attachments/). 
 
-Using OneDrive and Sharepoint to transfer files is an alternative to sending the data as a copy. If you send data as an email or via the File Transfer Service, you are making a copy and sending that out into the world. Using University OneDrive or Sharepoint only sends a link. If an email is sent in error you need only break the link or revoke permissions and the data becomes inassessible. This is a good way of reducing errors such as sending to the wrong email address or attaching the wrong document, [for example](https://www.bbc.co.uk/news/articles/c363w8pjpklo). 
-
-
-
+Using OneDrive and Sharepoint to transfer files is an alternative to sending the data as a copy. If you send data as an email or via the File Transfer Service, you are making a copy and sending that out into the world. Using University OneDrive or Sharepoint only sends a link. If an email is sent in error, you need only break the link or revoke permissions and the data becomes inassessible again. This is a good way of reducing errors such as sending to the wrong email address or attaching the wrong document, [for example](https://www.bbc.co.uk/news/articles/c363w8pjpklo). 
 
 
 #### Sanitising your data
 
 When moving data you need to ensure you are only sending the data you intend. This includes your data, metadata, documentation, file headers etc.  
 
-Data security laws require the removal of personally identifiable information, such that a person is not identifiable using the data *in combination with* other data. This means that even if you cannot identify someone using your data you must also make sure that an individual cannot be identified if someone combines your data with some other data. 
+Data security laws require the removal of personally identifiable information, such that a person is not identifiable using the data *in combination with* other data. This means that even if you cannot identify someone using your data alone, you must also make sure that an individual cannot be identified if someone combines your data with some other data. 
 
-This is a reason good data management is important, you need to be able to track any private data in order to make sure it is not exposed and make sure all of it is removed. 
+This is a reason that good data management is important, you need to be able to track any private data in order to make sure it is not exposed, and make sure all of it is removed. 
 
-Software auto-generates metadata, such as name of creator, date created, name of last modifier, date and time of last modification, organisation, and more depending on the software. Ensure that only the data you want is transmitted and be aware of inadvertant meta-data. 
+Software auto-generates metadata, such as name of creator, date created, name of last modifier, date and time of last modification, organisation, and more, depending on the software. Ensure that only the data you want is transmitted and be aware of inadvertant meta-data. For example, in Microsoft Word. 
 
 
 
@@ -590,9 +598,7 @@ Software auto-generates metadata, such as name of creator, date created, name of
 
 ## Changing Data Locations
 
-Eventually projects evolve.
-
-Storage locations sometimes need to change.
+Eventually projects evolve and storage locations sometimes need to change.
 
 When moving project data:
 
@@ -619,7 +625,7 @@ becoming:
 R:\Projects\ProjectData\
 ```
 
-## MacOS
+## macOS
 
 ```text
 /Users/Clair/ProjectData/
@@ -675,7 +681,7 @@ Version control provides:
 
 Version control is a large topic in its own right.
 
-Note that some services, such as OneDrive retain their own version histories. 
+Note that some services, such as OneDrive, retain their own version histories. 
 
 ### Further Learning
 
@@ -794,7 +800,7 @@ Newcastle University has various templates for planning your data management aim
 - Metadata and documentation.
 - Data security risks.
 
-The university has guides and training spesifically to help with your data management plan [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/). 
+The university has guides and training specifically to help with your data management plan [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/). 
 
 This is the University plan, your funding agencies may have their own standards and requirements.  
 

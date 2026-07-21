@@ -65,7 +65,7 @@ data_final_v3_LAST_ONE.xlsx
 ```
 The answer is not obvious. 
 
-One can imagine that the latest results are in "data_final_v3_LAST_ONE.xlsx", but maybe there was an error in this file and it was never deleted, meaning that "data_final_v2.xlsx" contains the latest data. How would you know?
+One can imagine that the latest results are in `data_final_v3_LAST_ONE.xlsx`, but maybe there was an error in this file and it was never deleted, meaning that `data_final_v2.xlsx` contains the latest data. How would you know?
 
 You do not want to resort to sorting the files by date and hoping that the last *created or modified* file was the last *good* file! 
 
@@ -98,14 +98,14 @@ After a few minutes, discuss observations as a group.
 
 Common issues with file names include
 
-- Meaningless names (data.csv)
-- Overly long names (1Nov16_polymer_test1_heating_123degree_measure14_userabc_id12345.txt)
-- Special characters (image#1.png)
-- Multiple date formats (23-Nov2024.csv, 2024-15-07.txt)
-- Ambiguous version information (data1bfinalfinal2reallyfinalusethis.txt)
-- Inconsistent separators (10-12_2019-data_ver1.img.csv)
-- Duplicate information (24Nov_image01_241117.dat)
-- Difficult to parse names (test1userabsnovember17.h5)
+- Meaningless names (`data.csv`)
+- Overly long names (`1Nov16_polymer_test1_heating_123degree_measure14_userabc_id12345.txt`)
+- Special characters (`image#1.png`)
+- Multiple date formats (`23-Nov2024.csv`, `2024-15-07.txt`)
+- Ambiguous version information (`data1bfinalfinal2reallyfinalusethis.txt`)
+- Inconsistent separators (`10-12_2019-data_ver1.img.csv`) - although different separators can be used to split different types of information (e.g., `10-12-2019_data_ver1_img.csv` consistently uses `-` to separate the date elements and `_` to separate other text)
+- Difficult to parse names due to lack of separators (`test1userabsnovember17.h5`)
+- Duplicate information (`24Nov_image01_241117.dat`)
 
 :::::::::::::::::::::::::::::::
 
@@ -172,11 +172,11 @@ A filename should describe the contents of the file, for example:
 ::: tab
 ### Poor
 ```text
-> data.csv
+data.csv
 ```
 ### Good
 ```text
-> 2026-04-03_water_quality_siteA.csv
+2026-04-03_water_quality_siteA.csv
 ```
 :::
 
@@ -249,48 +249,36 @@ Windows file names are case insensitive. Linux and macOS filenames are case sens
 
 ### Sortable
 
-Files are usually displayed alphanumercally, so file names should be chosen to take advantage of this. 
+Since files are usually displayed alphanumerically, choose file names that logically order your files. 
 
 
 ::: tab
 ### Poor
 ```text
-03-04-2026
-12-01-2025
-25-12-2025
+03-04-2026_recording.csv
+12-01-2025_recording.csv
+25-12-2025_recording.csv
 ```
 
 ### Good
 ```text
-2025-01-12
-2025-12-25
-2026-04-03
+2025-01-12_recording.csv
+2025-12-25_recording.csv
+2026-04-03_recording.csv
 ```
 :::
 
-By placing the year, then month, then day, the files will be grouped with the same year then by month within that year etc. This is more useful than sorting by day first, then month within that day. You avoid:
+Using [ISO date format](https://www.iso.org/iso-8601-date-and-time-format.html) (YYYY-MM-DD) means the files will be grouped from first to last date. This organisation is more useful than sorting by day first, then month within that day, which instead sorts files by the day of the month:
 
 ```text
-01-02-2025.csv
-01-03-2025.csv
-01-05-2024.csv
-01-05-2023.csv
+01-02-2025_recording.csv
+01-03-2025_recording.csv
+01-05-2024_recording.csv
+01-05-2023_recording.csv
 ```
 which is *usually*, but not always, less useful. 
 
-:::::: callout
-
-This date order is known as the [ISO date format](https://www.iso.org/iso-8601-date-and-time-format.html):
-
-```text
-YYYY-MM-DD
-```
-This is one of the simplest improvements you can make to a dataset.
-
-Using ISO dates often eliminates many common sorting problems.
-::::::
-
-When planning your file names, remember to consider how alphabetical sorting will arrange your files. Place the most important information for grouping files at the start of the file name. If date is the most useful, put it first, if country or sample etc. is the most important, put it first. 
+When planning your file names, consider how alphabetical sorting will arrange your files. Place the most important metadata for grouping files (such as the date, subject, country, or sample) at the start of the file name.
 
 ### Clear
 

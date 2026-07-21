@@ -388,12 +388,14 @@ The first operation is moving content.
 
 ::::::::::::::::::::::::::::: challenge
 
-### Renaming a folder
+### Moving a folder
 
 :::::::::::::::: tab
 
 
-### All
+### Click and Drag
+
+**All operating systems**
 
 In File Explorer/Finder:
 
@@ -408,7 +410,9 @@ raw_images_TEMP
 4. Drag it to a more appropriate parent folder.
 5. Release the mouse button.
 
-### Windows II
+### Cut and Paste
+
+**Windows**
 
 1. Right-click the folder.
 2. Select **Cut**.
@@ -416,7 +420,7 @@ raw_images_TEMP
 4. Right-click.
 5. Select **Paste**.
 
-### MacOS II
+**macOS**
 
 1. Right-click the folder.
 2. Select **Copy**.
@@ -424,14 +428,20 @@ raw_images_TEMP
 4. Right-click and press **option**
 5. Select **Move item here**.
 
-### Windows/Linux III
+**Linux**
+
+Depends on the operating system, but most use the same approach as Windows.
+
+### Keyboard shortcuts
+
+**Windows/Linux**
 
 1. Left-click the folder.
 2. Press **ctrl+x**
 3. Navigate to the destination.
 4. Press **ctrl+v**
 
-### MacOs III
+**macOs**
 
 1. Left-click the folder.
 2. Press **cmd+x**

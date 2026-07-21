@@ -67,7 +67,7 @@ The answer is not obvious.
 
 One can imagine that the latest results are in "data_final_v3_LAST_ONE.xlsx", but maybe there was an error in this file and it was never deleted, meaning that "data_final_v2.xlsx" contains the latest data. How would you know?
 
-You do not want to be in a situation where you have to sort the files by date and hope that the last *created or modified* file was the last *good* file! 
+You do not want to resort to sorting the files by date and hoping that the last *created or modified* file was the last *good* file! 
 
 :::::::::::::::::::::::::::::::
 
@@ -96,16 +96,16 @@ After a few minutes, discuss observations as a group.
 
 ::::::::::::::::::::::::::::::: callout
 
-Common issues with file names which typically arise include:
+Common issues with file names include
 
 - Meaningless names (data.csv)
 - Overly long names (1Nov16_polymer_test1_heating_123degree_measure14_userabc_id12345.txt)
 - Special characters (image#1.png)
 - Multiple date formats (23-Nov2024.csv, 2024-15-07.txt)
-- Ambiguous version information (data1bfinalfinal2reallyfinal.txt)
+- Ambiguous version information (data1bfinalfinal2reallyfinalusethis.txt)
 - Inconsistent separators (10-12_2019-data_ver1.img.csv)
 - Duplicate information (24Nov_image01_241117.dat)
-- Hard to parse names (test1userabsnovember17.h5)
+- Difficult to parse names (test1userabsnovember17.h5)
 
 :::::::::::::::::::::::::::::::
 

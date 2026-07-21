@@ -203,12 +203,12 @@ However, most successful structures share common characteristics.
 - Meaningful
 - Consistent
 - Shallow
-- Catagorical
+- Categorical
 - Able to archive old files
 
 :::::::::::::::::::::::::::::: challenge
 
-After looking at the Poor examples in each subsection below, try and come up with some good examples before clicking the Goood tab. 
+After looking at the Poor examples in each subsection below, try and come up with some good examples before clicking the Good tab.
 
 :::::::::::::::::::::::::::::::
 
@@ -247,7 +247,7 @@ figures
 
 ### Consistent
 
-Consistency is more important than perfection. Choose a particular style and use it throughout the project. This makes things easier to understand, because all folders follow the same convention. For example,
+Consistency is more important than perfection. Choose a particular style and use it throughout the project. This approach makes the structure easier to understand because all folders follow the same convention. For example,
 
 :::::::::::::::::::::::::::::::::::::::: tab
 ### Poor
@@ -295,7 +295,7 @@ As a general guideline:
 - 3–4 levels deep is often sufficient
 - Create more folders horizontally before creating more levels vertically
 
-Try not to use the folder hierarchy to encode too much information. For example
+Avoid using the folder hierarchy to encode too much information. For example
 
 ```text
 Project/
@@ -319,7 +319,9 @@ Project/
                         └── Results/                    
 ```
 
-At best this results in a lot of additional clicks in File Explorer (Win11) or Finder (MacOS), or typing in the terminal/analysis code. It can also make analysis unwieldy if the analysis processes data in a different order to the directory structure e.g. the preferred analysis order city by city, not hour by hour. 
+At best, this approach results in a lot of additional clicks in a file explorer or typing in a terminal/scripts. It can also make analyses unwieldy if you need to collect data from many different subfolders (e.g., if you want to analyse all of Newcastle's data from the example above). 
+
+At worst, file metadata, such as city and datetime in this example, can be irrevocably lost if files are moved from their original location. As such, metadata should ideally be stored in the files themselves or in a reference table with the filenames, rather than in the folder structure.
 
 
 ### Catagorical

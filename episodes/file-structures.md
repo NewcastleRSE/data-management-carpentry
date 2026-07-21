@@ -386,9 +386,7 @@ Now that we know what good structures look like, we need the practical skills to
 
 The first operation is moving content.
 
-::::::::::::::::::::::::::::: challenge
-
-### Moving a folder
+### How to move a folder
 
 :::::::::::::::: tab
 
@@ -449,7 +447,6 @@ Depends on the operating system, but most use the same approach as Windows.
 4. Press **cmd+v**
 
 ::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::
 
 
 :::::::::::::::::::::::: instructor
@@ -462,15 +459,12 @@ Depends on the operating system, but most use the same approach as Windows.
 
 ---
 
-## Renaming Files and Folders
+## Renaming Folders
 
-Renaming is one of the simplest improvements we can make to the files. This allows us to select new names for the folders. This can have consequences is any code relies on the folder names already in place, however. 
+Renaming is one of the simplest improvements we can make to the file organisation. However, be aware that renaming can have unintended consequences if existing files depend on those names; for example, you may need to update folder references in the project's documentation or code.
 
 ::::::::::: challenge
-In the below example, chose a better name for the folder in the Poor example to a better folder name, and check your answer using the Good tab. It doesn't need to be identical, but should show similar features. 
-:::::::::::
-
-Consider:
+Choose a better name for the folder in the Poor example, then see one potential better name in the Good tab.
 
 :::::::::::::: tab
 
@@ -478,47 +472,46 @@ Consider:
 ```text
 RAW_DATA_!!!
 ```
-The name communicates intent, but the punctuation is unnecessary.
+The name communicates intent, but the punctuation is unnecessary and has ambiguous meaning.
 
 ### Good
-A clearer alternative might be:
+A clearer alternative is
 
 ```text
 raw_data
 ```
 ::::::::::::::::::
+:::::::::::
 
 
-
-:::::::::::::::::::::::::: discussion
-
-### How do I rename a folder:
+### How to rename a folder
 
 :::::::::::::: tab
 
-### Windows/Mac/Linux
+### Right-click
+
+**All operating systems**
+
 1. Right-click the folder.
 2. Select **Rename**.
 3. Enter the new name.
 4. Press Enter.
 
-### Windows II
+### Via folder selection
 
-1. Select the folder.
+**Windows**
+
+1. Select the folder by left-clicking on it.
 2. Press **F2**.
 3. Enter the new name.
 
-### MacOS II
+**macOS**
 
-1. Select the folder.
-2. Click on the file name
+1. Select the folder by left-clicking on it.
+2. Click on the folder name
 3. Enter the new name.
 
 ::::::::::::::::
-:::::::::::::
-
-
-
 
 
 ::::::::::::::::: caution

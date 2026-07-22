@@ -183,31 +183,33 @@ Office provides tools for removing automated metadata if required.
 
 ## What Should We Document?
 
-There is no universal documentation standard suitable for every project, given the huge variety of research that is taking place. However, most project-level documentation should answer several key questions.
+Given the huge variety of research and data, there is no universal documentation standard suitable for every project. However, most project-level documentation should include
+
+- Project description
+- Dataset descriptions
+- Data origins
+- Data use and analysis
+- Contact details
+- README file(s)
+
+Some projects may also include
+- Data dictionaries
+- Standard operating procedures
+- Project logs
+- Parameter files
+- Funding agency
+
+These elements will be expanded on below. 
 
 ::::::::::::: callout
 
-Research should be reproducible. Given the information in the documentation and a paper or thesis, would someone be able to repeat your analysis?
+Research should be reproducible. Given the information in the documentation and an accompanying paper or thesis, would someone else be able to repeat your research?
 
-Would **you** be able to repeat your analysis?
+Would **future you** be able to repeat your research?
 
 :::::::::::::
 
-It is good to document:
-
-- What is the project
-- Describe the datasets
-- Origin of the data
-- How the data should be used
-- Funding agency
-- Name of primary contact
-- Keywords
-- Access conditions
-
-These will be expanded on below. 
-
-
-### What Is This Project?
+### Project Description
 
 Provide a short description of the project, which briefly summarises what all the data is for. 
 
@@ -229,7 +231,7 @@ but this is long, and could still be ambiguous. Particularly if these is a chang
 
 ---
 
-## What Data Exists?
+## Data descriptions
 
 Describe the available datasets and folders.
 
@@ -250,7 +252,7 @@ This helps people understand how navigate your files and how they fit together.
 
 ---
 
-## Where Did The Data Come From?
+## Data origins
 
 ::::::::::::::: challenge
 
@@ -278,8 +280,7 @@ Provenance information becomes increasingly important as projects grow, and cert
 
 ---
 
-## How Should The Data Be Used?
-
+## Data use and analysis
 
 :::::::::::::: challenge
 
@@ -296,15 +297,18 @@ Useful information might include:
 - Access conditions - restrictions and access methods. 
 
 This can save future users significant amounts of time.
+
+If you share your data, you also need to include any access conditions, such as restrictions for publishing or storing the data.
+
 ::::::::::::::
 ::::::::::::::
 
 
 ---
 
-## Who Should Be Contacted?
+## Contact details
 
-Include contact information whenever possible.
+Include contact information whenever possible, especially for a primary contact.
 
 For example:
 
@@ -325,7 +329,7 @@ This makes it easier for collaborators to ask questions.
 
 ---
 
-## README Files
+## README File(s)
 
 One of the simplest and most effective forms of documentation is a README file.
 

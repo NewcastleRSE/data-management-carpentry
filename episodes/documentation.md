@@ -24,17 +24,17 @@ By the end of this episode, learners will be able to:
 - Document project structure, provenance, and data sources.
 - Identify situations where additional documentation is needed.
 - Improve the reusability of a dataset through documentation.
-- Use of file headers to contain key information.
+- Use file headers to store key metadata.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## How Do I Remember and Share Where Things Are?
+## How Do I Remember and Share Where My Data Is Stored?
 
 In the previous two episodes, we improved our folder structure and renamed our files.
 
 The project now looks considerably better than it did when we inherited it.
 
-However, several important questions still remain unanswered:
+However, several important questions remain unanswered:
 
 - What does this dataset contain?
 - Who collected it?
@@ -44,13 +44,14 @@ However, several important questions still remain unanswered:
 - What units were used?
 - Which files are raw data?
 - Which files were generated during analysis?
+- What changes do different versions capture?
 - Which version should be used?
 - Which files relate to which other files?
 - When was the data downloaded?
-- Where was it downloaded from?
-- Which software was used to analyse it?
+- Where was the data downloaded from?
+- What software and versions of software were used to analyse the data?
 
-Imagine returning to this project six months from now. Would you still remember all of these details? What about three years from now? What if somebody else joins the project?
+Imagine returning to this project six months from now. Would you still remember all of these details? What about three years from now? What if somebody else joins or takes over the project?
 
 Good folder structures and filenames help people **navigate** data. Documentation helps people **understand** data.
 
@@ -63,8 +64,6 @@ Good folder structures and filenames help people **navigate** data. Documentatio
 
 Think about a dataset, project, software package, or repository that you found particularly easy to use.
 
- Working in pairs:
-
  - What made it easy to understand?
  - What information was available?
  - How was that information presented?
@@ -76,15 +75,15 @@ Conversely:
  - Have you ever received poorly documented data?
  - What information was missing?
 
-You can then discuss responses with the group.
+Discuss responses with your neighbour.
 
 ::::::::::: solution
 
-Common themes often include but are not limited to:
+Helpful documentation practices include
 
 - Clear explanations
 - Consistent organisation
-- Readily available documentation
+- Readily available information
 - Definitions of terms and variables
 - Information about data collection
 - Contact details
@@ -113,11 +112,13 @@ When discussing data management, people often focus on technology:
 
 However, one of the biggest barriers to reusing data is simply understanding it. Good documentation reduces the number of assumptions that somebody must make when using a dataset.
 
-The most important collaborator you will ever have is often:
+::::::::::::: callout
 
-> Future you.
+The most important collaborator you will ever have is often **future you**.
 
-Documentation helps future-you understand decisions that seem obvious today but may be forgotten later.
+:::::::::::::
+
+Documentation helps future you understand decisions that seem obvious today, but may be forgotten later.
 
 ---
 
@@ -125,9 +126,7 @@ Documentation helps future-you understand decisions that seem obvious today but 
 
 ::::::::::::: callout
 
-Metadata is often described as:
-
-> Data about data.
+Metadata is **data about data**.
 
 :::::::::::::
 
@@ -149,17 +148,16 @@ Useful metadata might include:
 - When it was collected.
 - How it was collected.
 - Units of measurement.
-- Data quality issues.
+- Data quality or collection issues.
 - Licensing information.
 - Contact details.
-- Link to data archive is using external sources of data.
+- Link to the original source of the data if using an external source of data.
 
 Metadata helps transform a collection of numbers into something meaningful.
 
-::::::::::::::::: callout
 Some software autogenerates some metadata for you. 
 
-For example, Microsoft Word produces:
+For example, Microsoft Word produces
 
 - Author
 - Company
@@ -168,20 +166,18 @@ For example, Microsoft Word produces:
 - Date Modified
 - Last Saved By
 - Revision number
-- Total editing file
+- Total editing time
 - etc...
 
-be default. Other software will store different things. 
+by default. Other software will store different metadata. 
 
 :::::::::::::: caution
 
-This can have consequences for distributing your data. Metadata you do not wish to share may be auto-generated and added to the file. Ensure you do not inadvertantly share metadata you did not intend. 
+Automated metadata may add information you do not wish to share to the file. Ensure you do not inadvertently share sensitive or private metadata when distributing data. 
 
-For example, Office provides tools for removing the metadata if required. 
+Office provides tools for removing automated metadata if required. 
 
 ::::::::::::::
-
-:::::::::::::::::
 
 ---
 

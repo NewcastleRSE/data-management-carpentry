@@ -117,43 +117,13 @@ They are organisational problems.
 
 Good data management practices reduce time wasted searching for data, improve collaboration, and make research easier to reproduce.
 
-:::::::::::::::::: callout
+::::::::::::::::::::::::::::::::::::::::::::: Discussion
 
-Various research funding organisations have data management and sharing policies, and they can request detailed plans in funding applications:
+Have you ever inherited files from another researcher or returned to an old project after several months?
 
-- [UKRI](https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/) (UK)
-- [Wellcome Trust](https://wellcome.org/research-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy) (UK)
-- [NSF](https://www.nsf.gov/funding/data-management-plan) (US)
-- [CIHR](https://cihr-irsc.gc.ca/e/54270.html) (Canada)
+What was the most difficult part of understanding the data?
 
-Guidelines for more funders are included in Newcastle University's [overview of Data Management Expectations](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/expectations/).
-
-Newcastle University has its own policies for [postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/) and [all researchers](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm).
-
-
-::::::::::::::::::
-
-::::::::::::::::::: discussion
-
- Have you ever inherited files from another researcher or returned to an old project after several months?
-
- What was the most difficult part of understanding the data?
-
-::::::::::::::::::::
-
-
-::::::::::::::::::: caution
-
-### Legal issues with personal data
-
-- Personal data can be requested by members of the public on mandated timescales. Would you be able to find someone's data if they requested it?
-- Members of the public can request that their data be deleted. Would you be able to do so with confidence?
-- Personal data can only be retained for specific purposes.
-
-Clear data management is essential to ensure you comply with the law and keep track of important data.
-
-:::::::::::::::::::
-
+:::::::::::::::::::::::::::::::::::::::::::::
 
 ## How Computers Store Data
 
@@ -189,8 +159,9 @@ Computer
 
 Folders help organise related files in much the same way as folders in a filing cabinet.
 
-A file system provides:
+Without folders, every file would exist in one enormous list.
 
+A file system provides:
 - Structure
 - Organisation
 - Navigation
@@ -199,21 +170,19 @@ A file system provides:
 Without folders, every file on your computer would exist in one enormous list.
 
 
-## Storage Locations
-
+# Storage Locations
 Files ultimately live on some form of digital storage.
 Examples include:
-
 - Internal hard drives
 - Solid-state drives (SSDs)
 - USB drives
 - Network storage
 - Cloud storage
 
-Regardless of where files are stored physically, they are typically presented to users through the same folder-and-file structure. As a result, learning to navigate folders is a transferable skill regardless of the storage system being used.
+Regardless of where files are stored physically, they are typically presented to users through the same folder-and-file structure.As a result, learning to navigate folders is a transferable skill regardless of the storage system being used
 
 
-## Introducing the File Explorer
+# Introducing the File Explorer
 
 Most people interact with files through a graphical interface known as a **file explorer** or **file manager**.
 
@@ -227,57 +196,26 @@ Examples include:
 
 In this lesson we will demonstrate using **Windows File Explorer**, but the same concepts apply to other operating systems.
 
-::::::::::::::::::: discussion
-## Opening File Explorer
+## Demonstration: Opening File Explorer
 
-The instructor will demonstrate how to open a file explorer in Windows. 
+The instructor should demonstrate how to open File Explorer.
 
-Depending on the operating system, you can use any of these options to open a file explorer: 
-
-:::::::::::::: tab
+### Method 1 
+Click the folder icon on the taskbar.
+### Method 2
+Press:```textWindows Key + E```
+### Method 3
+Open the Start Menu and search for:```textFile Explorer```
 
 ### Windows
 
-- Click the Folder icon on the taskbar
-- Use the keyboard shortcut ```Windows Key + E```
-- Open the Start Menu and search for ```File Explorer```
-
-### macOS
-
-- Click the Finder icon (a blue and white smiling face) on the dock
-
-::::::::::::::::
-::::::::::::::::
+- Click the folder icon on the taskbar
+- Press `Windows + E`
+- Search for "File Explorer" from the Start Menu
 
 
-::::::::::::: callout
-Further instructions for various file navigation tools:
 
-:::::::::::: tab
-
-
-### Windows 11
-
-- [File Explorer](https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows)
-
-### macOS
-
-- [Finder](https://support.apple.com/en-gb/guide/mac-help/mchlp2605/mac)
-
-Select your particular macOS version at the top of the page under "Mac User Guide".
-
-### Linux
-
-- [GNOME Files ("Nautilus")](https://apps.gnome.org/en-GB/Nautilus/) (default for Ubuntu and Debian)
-- [Dolphin](https://userbase.kde.org/Dolphin/File_Management#Discover_Dolphin)
-- [Thunar](https://docs.xfce.org/xfce/thunar/the-file-manager-window)
-
-
-::::::::::::
-:::::::::::::
-
-
-## Anatomy of File Explorer
+# Anatomy of File Explorer
 A typical File Explorer window contains several important components.
 
 ```text
@@ -293,9 +231,9 @@ A typical File Explorer window contains several important components.
 |                 |                                |
 +--------------------------------------------------+
 ```
-### Navigation Pane
-Usually found on the left-hand side and shows commonly used folders such as
-
+## Navigation Pane
+Usually found on the left-hand side.
+This shows:
 - Desktop
 - Documents
 - Downloads
@@ -305,71 +243,50 @@ Usually found on the left-hand side and shows commonly used folders such as
 
 You can use it to jump quickly between locations.
 
-### File List
+## File List
 
 The central area of the window.
 This displays the contents of the currently selected folder.
 
-### Address Bar
-
+## Address Bar
 Located near the top.
 Shows your current location within the file system.
-For example:```Downloads > legacy_dataset > RAW_DATA_!!!```
+For example:```textDownloads > legacy_dataset > RAW_DATA_!!!```
 This helps you understand where you are and allows you to move back to previous folders.
 
-### Search Box
+## Search Box
 Many file managers provide a search box.
 Search can be useful, but it should not be your primary strategy for finding files.
 A well-organised folder structure makes data easier to locate without relying on search.
 
 
-## Looking Ahead
+# Looking Ahead
 
 In the next episode we will examine the inherited dataset and begin improving its folder structure.
 Before we can organise the files, however, we first need to locate them.
 
-
-
-
-::::::::::::: discussion
-
 ### Navigating the file explorer
 
-You should make sure that you know where to find the
+Demonstrate:
 
-- navigation pane
-- file listing area
-- address bar
-- search box
-
-and can
-
-- move between folders
-- expand and collapse folders
-
-on your particular computer, whether it is Windows, macOS or Linux. 
-
-::::::::::::::::::::::
+- Navigation pane
+- File listing area
+- Address bar
+- Search box
+- Moving between folders
+- Expanding and collapsing folders
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-Do not assume learners regularly use desktop file systems.
-
-Some participants may primarily use mobile devices and may have little experience navigating folders directly.
-
-Spend a few minutes explicitly demonstrating how files and folders are organised.
+>
+> Do not assume learners regularly use desktop file systems.
+>
+> Some participants may primarily use mobile devices and may have little experience navigating folders directly.
+>
+> Spend a few minutes explicitly demonstrating how files and folders are organised.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Resources
-
-Newcastle University provides a number of resources for data management:
-
-- [Research Data Management Training](https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/)
-- [Ethics toolkit for data](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/), including the [Research Data Management Policy and Code of Good Practice](https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf)
-- [Data management for postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/-rdm/planning/pgr/)
-- [Research data management](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm)
-
-::::::::::::: challenge
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: challenge
 
 ## Finding the Dataset
 
@@ -383,9 +300,15 @@ Using File Explorer:
 4. Explore the contents without modifying anything.
 5. Identify at least three things that seem confusing or poorly organised.
 
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-Was it immediately obvious where the important data was? What information would have helped you understand the project more quickly?
-:::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Discussion
+
+Was it immediately obvious where the important data was?
+
+What information would have helped you understand the project more quickly?
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 

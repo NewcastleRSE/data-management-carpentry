@@ -275,7 +275,6 @@ It is rarely an ideal long-term location for important project data.
 
 ::::::::::::: 
 
-
 ---
 
 ## Personal Cloud Storage
@@ -497,7 +496,7 @@ Grant the minimum access necessary.
 
 This reduces the risk of accidental deletion, leaking, or modification of important files.
 
-:::::::::::::::::
+::::::::::::::::::::::::::::::::::::::::::::
 
 ---
 
@@ -647,7 +646,7 @@ becoming:
 
 ```text
 /data/Projects/ProjectData/
-``
+```
 
 ::::::::::::::::::::
 
@@ -782,7 +781,6 @@ For each scenario, identify the most appropriate storage location and explain yo
 ::::::::::::::::::
 ::::::::::::::::::
 
-::::::::::::::::::
 
 ---
 
@@ -809,6 +807,7 @@ This is the University plan, your funding agencies may have their own standards 
 ## Data Privacy Impact Assessment
 
 If your research project involves personal or sensitive data, or could potentially, a Data Protection Impact Assessment should be completed and registered with the University's Information Governance Team. This is outlined [here](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/). The assessment documenation includes a number of screening questions to help decide which sections you need to fill in. 
+
 
 ---
 

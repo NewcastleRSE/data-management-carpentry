@@ -49,9 +49,9 @@ data_final_v2.xlsx
 data_final_v3_LAST_ONE.xlsx
 ```
 
-At best, these names are unhelpful. At worst, they actively prevent us from understanding the project or keeping track of progress, particularly months later.  
+At best, these names are unhelpful. At worst, they actively prevent us from understanding the project or keeping track of progress, particularly when looking back on the work done months later.  
 
-::: callout
+::::::::::::::::::::::::::::::::::::::: callout
 Imagine receiving an email that says:
 
 > "Can you update the analysis using the latest data?"
@@ -65,16 +65,18 @@ data_final_v3_LAST_ONE.xlsx
 ```
 The answer is not obvious. 
 
-One can imagine that the latest results are in "data_final_v3_LAST_ONE.xlsx", but maybe there was an error in this file and it was never deleted, meaning that "data_final_v2.xlsx" contains the latest data.  
+One can imagine that the latest results are in `data_final_v3_LAST_ONE.xlsx`, but maybe there was an error in this file and it was never deleted, meaning that `data_final_v2.xlsx` contains the latest data. How would you know?
 
-You do not want to be in a situation where you have to sort the files by date and hope that the last *created or modified* file was the last *good* file! 
-:::
+You do not want to resort to sorting the files by date and hoping that the last *created or modified* file was the last *good* file! 
+
+:::::::::::::::::::::::::::::::
 
 Good filenames should give us insight into what a file contains without needing to open it. Your choice of filenames should make subsequent analysis steps as frictionless as possible. If you find you are fighting your files in order to make progress in your work, there is probably something that can be improved. *You have to be able to find your data in order to use it!*
 
 Your choice of filenames becomes increasingly important as projects grow larger, data is shared between collaborators, or data needs revisiting at a later date. 
 
-::: discussion
+::::::::::::::::::::::::::::::: discussion
+
  Working in pairs, look through the files in the inherited project. What problems can you identify?
 
  Consider:
@@ -88,35 +90,41 @@ Your choice of filenames becomes increasingly important as projects grow larger,
 Write down as many issues as you can find.
 
 After a few minutes, discuss observations as a group.
-:::
+
+:::::::::::::::::::::::::::::::
 
 
-::: callout
-Common issues with file names which typically arise include:
+::::::::::::::::::::::::::::::: callout
 
-- Meaningless names (data.csv)
-- Overly long names (1Nov16_polymer_test1_heating_123degree_measure14_userabc_id12345.txt)
-- Special characters (image#1.png)
-- Multiple date formats (23-Nov2024.csv, 2024-15-07.txt)
-- Ambiguous version information (data1bfinalfinal2reallyfinal.txt)
-- Inconsistent separators (10-12_2019-data_ver1.img.csv)
-- Duplicate information (24Nov_image01_241117.dat)
-- Hard to parse names (test1userabsnovember17.h5)
-:::
+Common issues with file names include
 
-::: instructor
+- Meaningless names (`data.csv`)
+- Overly long names (`1Nov16_polymer_test1_heating_123degree_measure14_userabc_id12345.txt`)
+- Special characters (`image#1.png`)
+- Multiple date formats (`23-Nov2024.csv`, `2024-15-07.txt`)
+- Ambiguous version information (`data1bfinalfinal2reallyfinalusethis.txt`)
+- Inconsistent separators (`10-12_2019-data_ver1.img.csv`) - although different separators can be used to split different types of information (e.g., `10-12-2019_data_ver1_img.csv` consistently uses `-` to separate the date elements and `_` to separate other text)
+- Difficult to parse names due to lack of separators (`test1userabsnovember17.h5`)
+- Duplicate information (`24Nov_image01_241117.dat`)
+
+:::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::: instructor
 
  Encourage learners to focus on whether filenames communicate useful information.
 
  Avoid discussing "perfect" filenames. The goal is consistency and clarity.
-:::
+
+:::::::::::::::::::::::::::::::
 
 
 ## Why Filenames Matter
-::: callout
+
+::::::::::::::::::::::::::::::: callout
+
 A filename serves several purposes simultaneously.
 
-It helps answer:
+It helps answer
 
 - What is this file?
 - When was it created?
@@ -124,28 +132,34 @@ It helps answer:
 - Which version is this?
 - Can it be grouped with related files?
 
-Good filenames support:
+Good filenames support
 
 - Human understanding
 - Sharing and collaboration
 - Automated processing
 - Reproducibility
-:::
 
-A filename should be easily useable by both a human reader and a computer. Humans and computers are good at different things and different tools and operating systems (Windows, MacOS, Linux) have different conventions. Your filenames should be as portable as possible.  
 
-Future-you is one of the most important users of your naming convention, but, should be easily understandable to collegues.
+:::::::::::::::::::::::::::::::
+
+A filename should be easily useable by both a human reader and a computer. Keep in mind that humans and computers are good at different things and that different software and operating systems (Windows, macOS, Linux) have different conventions. Your filenames should be as portable as possible.  
+
+Future-you is one of the most important users of your naming convention, but it should also be easily understandable by colleagues.
 
 ## Characteristics of Good Filenames
-::: callout
-There is no universal naming convention. 
-:::
-There are so many possible scenarios it is impossible to build an understandable, concise, informative template which accounts for them all. Different projects require different information. However, successful file naming schemes usually share several characteristics.
 
-Filenames should be:
+::::::::::::::::::::::::::::::: callout
+
+There is no universal naming convention. 
+
+:::::::::::::::::::::::::::::::
+
+It is impossible to build an understandable, concise, informative template that accounts for all possible scenarios. Different projects require different information. However, successful file naming schemes usually share several characteristics.
+
+Filenames should be
 
 - Meaningful
-- Consistant
+- Consistent
 - Machine-friendly
 - Sortable
 - Clear
@@ -158,21 +172,22 @@ A filename should describe the contents of the file, for example:
 ::: tab
 ### Poor
 ```text
-> data.csv
+data.csv
 ```
 ### Good
 ```text
-> 2026-04-03_water_quality_siteA.csv
+2026-04-03_water_quality_siteA.csv
 ```
 :::
 
-The 'good' example immediately communicates useful information about the data: data about the water quality at siteA on the 3rd April 2026. This can be used by a human, to immediatly find the data in a folder containing, potentially, many files and helps transcription into code or a document. For a computer the filename contains important information which can help software load and sort the data without having to open the document and read its content. The second filename communicates almost nothing.
+The 'good' example immediately communicates useful information about the data: it measures the water quality at siteA on the 3rd April 2026. This name can be used by a human to easily find the desired data in a folder containing many files and reference it in code or documentation. For a computer, this filename information can help software load and sort the data without opening the document and reading its content. The 'poor' filename communicates almost nothing.
 
 ### Consistent
 
-Choose a convention and use it everywhere.
+Choose a convention and use it across all files.
 
-::: tab
+::::::::::::::::::::::::::::::::: tab
+
 ### Poor
 ```text
 Apr1.csv
@@ -186,9 +201,10 @@ Results03April.csv
 2026-04-02_sample02.csv
 2026-04-02_sample03.csv
 ```
-:::
 
-Even if the files contain the same information, inconsistent naming makes them harder to understand and automate. IF the folder contains many files, how would you be able to find these files among the others? For automation, the good example contains date and order information so each file can be analysed in order without having to load each file individually. 
+::::::::::::::::::::::::::::::::::::
+
+Even if the files contain the same information, inconsistent naming makes them harder to understand and automatically analyse. If the folder contains many files, how would you be able to find a specific piece of data? For automation, the good filenames each contain the data's date and sample id, allowing a script to easily loop through and find each file.  
 
 ### Machine-Friendly
 
@@ -208,7 +224,7 @@ results_and_notes.csv
 ```
 :::
 
-Recommended characters include:
+Recommended characters:
 
 - letters
 - numbers
@@ -218,64 +234,65 @@ Recommended characters include:
 Avoid:
 
 ```text
-\ / : * ? " < > |
+- special characters: \ / : * ? " < > |
+- spaces
 ```
 
-These characters can have special meanings on different operating systems. Hyphens can cause issues because different word processors can substitute different characters which look almost the same . Similarly, word processors can autocorrect lower case letters into uppercase characters at the start of lines. 
+These characters can have special meanings on different operating systems. Hyphens can cause issues because different word processors can substitute different characters which look almost the same. Similarly, word processors can autocorrect lower case letters into uppercase characters at the start of lines. 
 
-::: caution
-Windows file names are case insensitive. Linux and Mac filenames are case sensitive. This can cause data loss when copying files from Linux or Mac to Windows
-:::
+:::::::::::::::::::::::::::::: caution
+
+Unlike Linux and macOS file names, Windows file names are case insensitive. This difference can cause data loss when copying files from Linux or macOS to Windows file systems.
+
+:::::::::::::::::::::::::::::::
 
 
 ### Sortable
 
-Files are usually displayed alphanumercally so file names should be chosen to take advantage of this. 
+Since files are usually displayed alphanumerically, choose file names that logically order your files. 
 
 
 ::: tab
 ### Poor
 ```text
-03-04-2026
-12-01-2025
-25-12-2025
+03-04-2026_recording.csv
+12-01-2025_recording.csv
+25-12-2025_recording.csv
 ```
 
 ### Good
 ```text
-2025-01-12
-2025-12-25
-2026-04-03
+2025-01-12_recording.csv
+2025-12-25_recording.csv
+2026-04-03_recording.csv
 ```
 :::
 
-My placing the year, then month, then day the files will be grouped with the same year then by month within that year etc. This is more useful than sorting by day first, then month within that day. You avoid:
+Using [ISO date format](https://www.iso.org/iso-8601-date-and-time-format.html) (YYYY-MM-DD) means the files will be grouped from first to last date. This organisation is more useful than sorting by day first, then month within that day, which instead sorts files by the day of the month:
 
 ```text
-01-02-2025.csv
-01-03-2025.csv
-01-05-2024.csv
-01-05-2023.csv
+01-02-2025_recording.csv
+01-03-2025_recording.csv
+01-05-2024_recording.csv
+01-05-2023_recording.csv
 ```
 which is *usually*, but not always, less useful. 
 
-:::::: callout
-This date order is known as the ISO date format [https://www.iso.org/iso-8601-date-and-time-format.html]:
+When planning your file names, consider how alphabetical sorting will arrange your files. Place the most important metadata for grouping files (such as the date, subject, country, or sample) at the start of the file name.
 
-```text
-YYYY-MM-DD
-```
-This is one of the simplest improvements you can make to a dataset.
+::: discussion
 
-Using ISO dates often eliminates many common sorting problems.
-::::::
+## Ordering your files
 
-When planning the file names remember sorting and place the item you want group the files by at the beginning of the file. If date is the most useful, put it first, if country is important, put it first. 
+Consider the metadata you collect for one of your projects. What metadata would you put first in your filenames to help sort your data files?
+
+:::
 
 ### Clear
 
-Filenames should be clear for a human and computer to read. 
-::: tab
+Filenames should be easily understood by humans and computers. 
+
+:::::::::::::::::::::::::::::: tab
 ### Poor
 ```text
 03042026siteAID1234.csv
@@ -285,30 +302,34 @@ Filenames should be clear for a human and computer to read.
 ```text
 03-04-2026_site-A_ID-1234.csv
 ```
-:::
-This provides breaks for the eye, and for software.
+
+:::::::::::::::::::::::::::::::::::::
 
 
-## What Information Should Go Into a Filename?
+Separators provides breaks for the eye and for parsing using software. 
+
+
+## What Information Should Go In a Filename?
 
 Many researchers face a common temptation:
 
-```text
-If information is useful, why not put all of it in the filename?
-```
+
+> If information is useful, why not put all of it in the filename?
+
 
 This can lead to names such as:
 ```text
 2026-06-01_12-43-16_sampling_trip_siteA_temperature_sensor_03_processed_final_v2.csv
 ```
-which becomes difficult to read, particularly in a long list of such files.
+which becomes difficult to read, particularly in a long list of files with similar names. Additionally, some operating systems and applications limit the allowed length of filenames and file paths.
+
+Acronyms can make the file name smaller, but you don't want to rely on a set of definitions taped to your office wall to remember them! 
 
 A useful guideline is:
 
-```text
-Include enough information to identify the file, but not so much 
-that the filename becomes documentation.
-```
+
+> Include enough information to identify the file, but not so much that the filename becomes documentation.
+
 
 The most useful information might include:
 
@@ -331,14 +352,14 @@ Additional details can either be stored elsewhere:
 - data dictionaries
 - laboratory notebooks
 
-or as a header or metadata in the file itself.
+or as a header or metadata in the file itself. Additionally, avoiding storing metadata *only* in the filename, as that information will be lost if the filename is inadvertently changed.
 
 We will discuss documentation in the next episode.
 
 
 ## Naming Files for Batch Processing
 
-One advantage of consistent filenames is that they can easily be processed together.
+Consistent filenames allows files to be easily be processed together.
 
 ::: tab
 ### Poor
@@ -350,13 +371,15 @@ IMG_final.png
 
 ### Good
 ```text
-01-June_image_01.png
-01-June_image_02.png
-03-June_image_03.png
+June_01_image_01.png
+June_01_image_02.png
+June_03_image_03.png
 ```
 :::
 
-The files in the good example can be processed together, while files in the poor example are much harder to work with systematically. When files are expected to belong to a sequence, use consistent numbering with leading zeros:
+The files in the good example can be processed together by software and scripts, while files in the poor example are much harder to work with systematically. 
+
+When files may belong to a sequence, also use consistent numbering with leading zeros:
 
 ::: tab
 ### Poor
@@ -374,10 +397,12 @@ image_03.png
 ```
 :::
 
-This improves sorting. For example, when sorting files we get:
+Leading zeros preserves the numeric order:
 
 ::: tab
-### Bad sorting
+
+### Poor
+
 ```text
 image_8.png
 image_80.png
@@ -387,6 +412,7 @@ image_93.png
 ```
 
 ### Good
+
 ```text
 image_08.png
 image_09.png
@@ -394,12 +420,22 @@ image_80.png
 image_81.png
 image_93.png
 ```
+
 :::
 
 
 ::: callout
-Remember to pad with sufficient zeros for the expected total number of files. If you expect less than 100 files you can pad with 1 zero, less than 1000 pad with 2 zeros etc. 
+Remember to use enough digits for the expected total number of files. For example, if you expect 99 files or fewer, pad with one zero to format numbers as `01, 02,... 99`. If you may have 100 to 999 files, use `001, 002,... 999`.
 :::
+
+::: discussion
+
+## Choosing the number of digits
+
+Consider the different types of files you create for one of your projects. Which files might be part of a larger sequence? How many files do you expect in each sequence, and how many digits should you include in the filenames for each one?
+
+:::
+
 ---
 
 ## Using Hierarchies Effectively
@@ -460,20 +496,17 @@ project/
 ```
 :::
 
-The location information is already present in the folder structure and so is reduntant in the file name. 
+The location information is already present in the folder structure and so is redundant in the file name. 
 
-This does illustrate how each project has different filename requirements. If the 'country' layer of the directory structure wasn't present it would be useful to put the country in the filename. As files move around, or are migrated from folder to folder you need to consider whether files names should change. 
-
-
-::: example
-If it is decided that the country folders can be removed then files:
+This example illustrates how each project has different filename requirements. If the 'country' layer of the directory structure wasn't present, it would be useful to put the country in the filename. However, if you move files, the folder names would need to change; for example 
 
 ```text
 scotland/2026-06-01_image_01.png 
 england/2026-07-01_image_01.png 
 ````
-would have the same name, so would need to be renamed to avoid data loss. 
-:::
+
+would need to be renamed if placed in the same folder to avoid data loss. 
+
 
 ::: callout
 Good folder structures and good filenames should work together.
@@ -483,9 +516,9 @@ Good folder structures and good filenames should work together.
 
 ## Versioning Files
 
-Versioning of files keeps track of revisions over time, and is vital as documents evolve and you do not wish to overwrite previous files. This can be because of repeated experiments, fresh downloads of data, wanting non-destructive revisions to documents or an audit trail of changes.
+New versions of files can arise from repeated experiments, fresh downloads of data, and documentation or report edits. For some types of changes, you'll want to keep non-destructive revisions to documents or an audit trail of changes. Versioning files keeps track of these changes over time, allowing you to manage different versions of files without overwriting previous ones. 
 
-Many researchers create filenames that making tracking revisions difficult. This usually indicates that a versioning strategy is missing. For example:
+Due to a lack of a versioning strategy, many researchers create filenames that making tracking revisions difficult:
 
 ::: tab
 
@@ -520,18 +553,19 @@ Avoid:
 - final
 - newest
 - final_final
+- use_this_version
 
-because these labels eventually become inaccurate. As soon as you edit report_final_final.docx it is no longer final, and you probably won't go back to it to rename it. 
+because these labels eventually become inaccurate. As soon as you edit `report_final_final.docx` it is no longer final (or even final final!), and you probably won't go back to rename the earlier versions. 
 
-::: callout
-Various software tools do exist to help with versioning. For example:
+::::::::::::::::::::::: callout
 
-- git (for text documents or code)
-- Microsoft office (version history tool)
+Various software tools can help with versioning without using multiple files. For example:
+
+- [git](https://git-scm.com/) for code, documents, and small files (commonly used via [GitHub](https://github.com/))
+- Microsoft Office (version history tools)
 - OneDrive
 
-which do not rely on file names. 
-:::
+::::::::::::::::::::::::::::
 
 
 ## Renaming files
@@ -541,13 +575,16 @@ which do not rely on file names.
 Now that we understand good naming principles, we need practical ways to apply them.
 
 ::: challenge
-Suppose we have:
+
+## Rename an example file
+
+In our inherited dataset, find
 
 ```text
 Data!@#$.csv
 ```
 
-A more descriptive name might be:
+A more descriptive name might be
 
 ```text
 2026-04-03_incidence_data_v01.csv
@@ -566,15 +603,14 @@ To rename a file in File Explorer:
 4. Enter the new filename.
 5. Press Enter.
 
-### Windows Alternative:
-To rename a file in File Explorer:
+or
 
 1. Select the file.
 2. Press **F2**.
 3. Type the new name.
 4. Press Enter.
 
-### MacOS
+### macOS
 To rename a file in Finder:
 
 1. Select the file.
@@ -591,13 +627,16 @@ To rename a file in Finder:
 Demonstrate both Windows methods.
 
 The keyboard shortcut is often significantly faster once learners become confident.
+
 :::
+
+
 
 ### Bulk Renaming Files
 
-Renaming one file is easy but renaming hundreds is not.
+Renaming one file is easy, but renaming hundreds is not.
 
-Imagine receiving:
+Imagine receiving
 
 ```text
 IMG0001.JPG
@@ -606,6 +645,8 @@ IMG0003.JPG
 ...
 IMG1250.JPG
 ```
+
+from a collaborator.
 
 Renaming each file individually would be extremely time consuming (and boring!).Fortunately, many operating systems provide ways to rename multiple files simultaneously.
 
@@ -635,7 +676,7 @@ Several graphical tools support this, for example:
 - Bulk Rename Utility
 - Advanced Renamer
 
-### MacOS
+### macOS
 
 - Built-in Finder rename tools
 
@@ -656,15 +697,16 @@ The exact interface differs between tools, but the concepts are similar:
 
 
 :::::::::::::::::::: challenge
-Using a bulk rename tool:
 
-Replace:
+## Bulk renaming
+
+Using a bulk rename tool, replace
 
 ```text
 IMG
 ```
 
-with:
+with
 
 ```text
 siteA_image_
@@ -693,7 +735,7 @@ siteA_image_0005.png
 :::
 ::::::::::::::::::::
 
-::::::: challenge
+::::::: discussion
 
 What could go wrong if a bulk rename operation is performed incorrectly?
 
@@ -715,11 +757,11 @@ How could you reduce risk?
 
 ::: challenge
 
+## Rename the inherited files
+
 Working individually or in pairs:
 
-Review the filenames in the inherited dataset.
-
-Apply the principles discussed in this episode.
+Review the filenames in the inherited dataset and apply the principles discussed in this lesson.
 
 Consider:
 
@@ -737,7 +779,7 @@ If a bulk rename tool is available, use it where appropriate.
 
  There is no single correct answer.
 
- A reasonable outcome might:
+ A reasonable outcome might be
 
 ::: tab
 
@@ -771,7 +813,8 @@ or
  ```
 :::
 
-These different options are good provided the convention is applied consistently throughout the project. 
+These different options are all good provided the convention is applied consistently throughout the project. 
+
 :::
 :::
 

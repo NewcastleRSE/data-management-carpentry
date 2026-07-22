@@ -24,10 +24,11 @@ By the end of this episode, learners will be able to:
 - Document project structure, provenance, and data sources.
 - Identify situations where additional documentation is needed.
 - Improve the reusability of a dataset through documentation.
+- Use of file headers to contain key information.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-# The Problem: How Do I Remember and Share Where Things Are?
+## How Do I Remember and Share Where Things Are?
 
 In the previous two episodes, we improved our folder structure and renamed our files.
 
@@ -40,47 +41,46 @@ However, several important questions still remain unanswered:
 - When was it collected?
 - How was it collected?
 - What do the variables mean?
+- What units were used?
 - Which files are raw data?
 - Which files were generated during analysis?
 - Which version should be used?
+- Which files relate to which other files?
+- When was the data downloaded?
+- Where was it downloaded from?
+- Which software was used to analyse it?
 
-Imagine returning to this project six months from now.
+Imagine returning to this project six months from now. Would you still remember all of these details? What about three years from now? What if somebody else joins the project?
 
-Would you still remember all of these details?
+Good folder structures and filenames help people **navigate** data. Documentation helps people **understand** data.
 
-What about three years from now?
+------------------------------
 
-What if somebody else joins the project?
+:::::::::::::::: challenge
 
-Good folder structures and filenames help people navigate data.
+## What Makes Data Easy to Understand?
 
-Documentation helps people understand data.
 
----
+Think about a dataset, project, software package, or repository that you found particularly easy to use.
 
-# Discussion: What Makes Data Easy to Understand?
+ Working in pairs:
 
-> ## Discussion
->
-> Think about a dataset, project, software package, or repository that you found particularly easy to use.
->
-> Working in pairs:
->
-> - What made it easy to understand?
-> - What information was available?
-> - How was that information presented?
-> - Was there a README file?
-> - Was documentation easy to find?
->
-> Conversely:
->
-> Have you ever received poorly documented data?
->
-> What information was missing?
+ - What made it easy to understand?
+ - What information was available?
+ - How was that information presented?
+ - Was there a README file?
+ - Was documentation easy to find?
 
-Discuss learner responses with the group.
+Conversely:
 
-Common themes often include:
+ - Have you ever received poorly documented data?
+ - What information was missing?
+
+You can then discuss responses with the group.
+
+::::::::::: solution
+
+Common themes often include but are not limited to:
 
 - Clear explanations
 - Consistent organisation
@@ -89,15 +89,20 @@ Common themes often include:
 - Information about data collection
 - Contact details
 
-> ## Instructor Note
->
-> Many learners will have experienced poorly documented datasets.
->
-> Encourage them to connect their frustrations as data users with their responsibilities as data creators.
+:::::::::::
+:::::::::::
 
----
+::::::::::::::::: instructor
 
-# Documentation Is For Humans
+Many learners will have experienced poorly documented datasets.
+
+Encourage them to connect their frustrations as data users with their responsibilities as data creators.
+
+:::::::::::::::::::::::::::::::::::::
+
+------------------------------
+
+## Documentation Is For Humans
 
 When discussing data management, people often focus on technology:
 
@@ -106,9 +111,7 @@ When discussing data management, people often focus on technology:
 - Software
 - Analysis tools
 
-However, one of the biggest barriers to reusing data is simply understanding it.
-
-Good documentation reduces the number of assumptions that somebody must make when using a dataset.
+However, one of the biggest barriers to reusing data is simply understanding it. Good documentation reduces the number of assumptions that somebody must make when using a dataset.
 
 The most important collaborator you will ever have is often:
 
@@ -118,11 +121,16 @@ Documentation helps future-you understand decisions that seem obvious today but 
 
 ---
 
-# What Is Metadata?
+## What Is Metadata?
+
+::::::::::::: callout
 
 Metadata is often described as:
 
 > Data about data.
+
+:::::::::::::
+
 
 Metadata provides context that helps us understand a dataset.
 
@@ -136,41 +144,98 @@ The filename tells us very little.
 
 Useful metadata might include:
 
-- What the dataset contains
-- Who collected it
-- When it was collected
-- How it was collected
-- Units of measurement
-- Data quality issues
-- Licensing information
-- Contact details
+- What the dataset contains.
+- Who collected it.
+- When it was collected.
+- How it was collected.
+- Units of measurement.
+- Data quality issues.
+- Licensing information.
+- Contact details.
+- Link to data archive is using external sources of data.
 
 Metadata helps transform a collection of numbers into something meaningful.
 
+::::::::::::::::: callout
+Some software autogenerates some metadata for you. 
+
+For example, Microsoft Word produces:
+
+- Author
+- Company
+- Template
+- Date Created
+- Date Modified
+- Last Saved By
+- Revision number
+- Total editing file
+- etc...
+
+be default. Other software will store different things. 
+
+:::::::::::::: caution
+
+This can have consequences for distributing your data. Metadata you do not wish to share may be auto-generated and added to the file. Ensure you do not inadvertantly share metadata you did not intend. 
+
+For example, Office provides tools for removing the metadata if required. 
+
+::::::::::::::
+
+:::::::::::::::::
+
 ---
 
-# What Should We Document?
+## What Should We Document?
 
-There is no universal documentation standard suitable for every project.
+There is no universal documentation standard suitable for every project, given the huge variety of research that is taking place. However, most project-level documentation should answer several key questions.
 
-However, most project-level documentation should answer several key questions.
+::::::::::::: callout
 
-## What Is This Project?
+Research should be reproducible. Given the information in the documentation and a paper or thesis, would someone be able to repeat your analysis?
 
-Provide a short description:
+Would **you** be able to repeat your analysis?
+
+:::::::::::::
+
+It is good to document:
+
+- What is the project
+- Describe the datasets
+- Origin of the data
+- How the data should be used
+- Funding agency
+- Name of primary contact
+- Keywords
+- Access conditions
+
+These will be expanded on below. 
+
+
+### What Is This Project?
+
+Provide a short description of the project, which briefly summarises what all the data is for. 
+
 
 ```text
 This project investigates disease incidence in marine mammals
 along the Scottish west coast between 2020 and 2025.
 ```
 
-A new collaborator should understand the purpose of the project within a few seconds.
+A new collaborator should understand the purpose of the project within a few seconds. There are too many details here to encode in a reasonable project folder name, so this additional explaination is needed. 
+
+These might be a temptation to skip this and try to make the project folder something like:
+
+```text
+marine_mammals_scotland_westcost_2020_to_2025
+```
+
+but this is long, and could still be ambiguous. Particularly if these is a change of project scope and the focus narrows to pinnipeds only. It is easier to change the documentation than change the folder name and potentially break things. 
 
 ---
 
 ## What Data Exists?
 
-Describe the available datasets.
+Describe the available datasets and folders.
 
 For example:
 
@@ -185,26 +250,46 @@ analysis/
 Contains scripts and outputs generated during analysis.
 ```
 
-This helps people understand how files fit together.
+This helps people understand how navigate your files and how they fit together. 
 
 ---
 
 ## Where Did The Data Come From?
 
-Document data provenance.
+::::::::::::::: challenge
 
-Questions to answer include:
+Can you suggest a number of things you might wish to document to track the origin of data 
 
-- Was the data collected by your team?
-- Was it obtained from a collaborator?
-- Was it downloaded from a repository?
-- Was it generated by software?
+Think about what you might need when writing a paper or report, reproduce the work in future or track the steps in case a bug or error is discovered.  
 
-Provenance information becomes increasingly important as projects grow.
+::::::::::::::: solution
+
+Questions to answer might include:
+
+- Was the data collected by your team? When? Where? Links to other notes (lab manuals)
+- Was it obtained from a collaborator? When?
+- Was it downloaded from a repository? When?
+- Was it generated by software? Which version?
+
+::::::::::: callout
+
+Provenance information becomes increasingly important as projects grow, and certain projects may have strict rules of tracking providence. Some data sources can include information in the headers of files, others will provide just the data. If data sources are updated, either because something went wrong with collection or a bug was found in the analysis pipeline it is important to keep track of the new and old files. 
+
+::::::::::::::::::
+::::::::::::::::::
+::::::::::::::::::
+
 
 ---
 
 ## How Should The Data Be Used?
+
+
+:::::::::::::: challenge
+
+Consider what information might be useful to keep track of how you used the data during the project.
+
+:::::::::::::: solution
 
 Useful information might include:
 
@@ -212,8 +297,12 @@ Useful information might include:
 - Processing steps
 - Important assumptions
 - Known limitations
+- Access conditions - restrictions and access methods. 
 
 This can save future users significant amounts of time.
+::::::::::::::
+::::::::::::::
+
 
 ---
 
@@ -229,13 +318,18 @@ Dr Jane Smith
 
 Email:
 j.smith@example.ac.uk
+
+Data Collection Lead:
+Dr John Doe
+
+johndoe@biguniversity.ac.uk
 ```
 
-This makes it easier for collaborators to ask questions.
+This makes it easier for collaborators to ask questions. 
 
 ---
 
-# README Files
+## README Files
 
 One of the simplest and most effective forms of documentation is a README file.
 
@@ -252,17 +346,23 @@ project/
 
 Its purpose is to explain the project and help people navigate it.
 
-A good README often provides enough information for somebody to start understanding the project without opening any other files.
+A good README often provides enough information for somebody to start understanding the project without opening any other files. 
 
-> ## Callout
->
-> A README does not need to be perfect.
->
-> A simple README containing a few useful paragraphs is significantly better than no README at all.
+::::::::::::: callout
+
+A README does not need to be perfect.
+
+A simple README containing a few useful paragraphs is significantly better than no README at all.
+
+Try and keep README files up to date. 
+
+Try and keep files together with their READMEs if you exchange data will collegues. 
+
+:::::::::::::::::
 
 ---
 
-# Example README Structure
+### Example README Structure
 
 A README file might contain:
 
@@ -279,6 +379,8 @@ File Naming Convention
 
 Software Requirements
 
+Software versions used for processing data
+
 Contact Information
 
 Last Updated
@@ -288,34 +390,41 @@ For example:
 
 ```text
 Project Name:
-Marine Mammal Incidence Study
+    Marine Mammal Incidence Study
 
 Description:
-Investigation of marine mammal health records collected
-between 2020 and 2025.
+    Investigation of marine mammal health records collected
+    between 2020 and 2025.
 
 Folder Structure:
-data/raw - original data
-data/processed - cleaned datasets
-analysis - analysis scripts
-results - generated outputs
+    data/raw - original data
+    data/processed - cleaned datasets
+    analysis - analysis scripts
+    results - generated outputs
 
 Contact:
-bob.badgerton@example.ac.uk
+    bob.badgerton@example.ac.uk
 
 Last Updated:
-2026-07-01
+    2026-07-01
 ```
 
 The goal is clarity rather than perfection.
 
+Another example can be found [here](https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt)
+
 ---
 
-# Demonstration: Creating A README File
+
+:::::::::::::: challenge
+
+Follow along with the following demonstration.
+
+## Creating A README File
 
 Now we will create documentation for the inherited project.
 
-## Step 1: Navigate To The Top-Level Folder
+### Step 1: Navigate To The Top-Level Folder
 
 Open File Explorer.
 
@@ -327,7 +436,7 @@ legacy_dataset/
 
 ---
 
-## Step 2: Create A New Text File
+### Step 2: Create A New Text File
 
 Right-click in an empty area of the window.
 
@@ -341,7 +450,7 @@ A new file will be created.
 
 ---
 
-## Step 3: Rename The File
+### Step 3: Rename The File
 
 Rename the file:
 
@@ -353,7 +462,7 @@ This helps make its purpose immediately obvious.
 
 ---
 
-## Step 4: Open The File
+### Step 4: Open The File
 
 Double-click the file.
 
@@ -361,7 +470,7 @@ It should open in Notepad (or a similar text editor).
 
 ---
 
-## Step 5: Add Basic Structure
+### Step 5: Add Basic Structure
 
 Add headings such as:
 
@@ -381,17 +490,24 @@ Last Updated
 
 Save the file.
 
-> ## Instructor Note
->
-> Demonstrate each step live.
->
-> Some learners may never have manually created a text file before.
->
-> Pause between steps to allow learners to follow along.
+:::::::::::::::: solution
+
+::::::::::::::::
+::::::::::::::::
+
+::::::::::::::::::: instructor
+
+ Demonstrate each step live.
+
+ Some learners may never have manually created a text file before.
+
+ Pause between steps to allow learners to follow along.
+
+::::::::::::::::::::::::::
 
 ---
 
-# Documentation Beyond The Top Level
+## Documentation Beyond The Top Level
 
 Project-level documentation is important, but it is not always sufficient.
 
@@ -403,7 +519,7 @@ For example:
 results/
 ```
 
-may contain dozens of generated outputs.
+may contain dozens of generated outputs and sub-folders.
 
 Several months later, somebody might reasonably ask:
 
@@ -411,6 +527,7 @@ Several months later, somebody might reasonably ask:
 - When were they created?
 - Which parameters were used?
 - Which version of the data was analysed?
+- What is the data access and retention policy of these data?
 
 A README placed inside the results folder can answer these questions.
 
@@ -442,13 +559,21 @@ Significance threshold = 0.05
 
 This preserves important contextual information.
 
+Alternativly, different versons could have different folders, or be run using different software versions. 
+
+::::::::::: discussion
+
+Consider different projects or subjects and why different folders might need different README files to keep track of the data. 
+
+::::::::::::
+
 ---
 
-# Other Useful Documentation
+## Other Useful Documentation
 
 Depending on the project, additional documentation might include:
 
-## Data Dictionaries
+### Data Dictionaries
 
 These explain variables in tabular datasets.
 
@@ -464,7 +589,7 @@ We will revisit this when discussing tabular data.
 
 ---
 
-## Standard Operating Procedures
+### Standard Operating Procedures
 
 These describe how data is collected or processed.
 
@@ -473,10 +598,11 @@ For example:
 ```text
 sampling_protocol.txt
 ```
+Which contains a written description of the procedures used. 
 
 ---
 
-## Project Logs
+### Project Logs
 
 These provide a record of major project decisions.
 
@@ -488,55 +614,81 @@ project_log.txt
 
 This can be particularly useful for long-running projects.
 
----
 
-# Exercise: Write A README
+### Parameter files
 
-> ## Challenge
->
-> Create a `README.txt` file for the inherited project.
->
-> Include:
->
-> - Project name
-> - Project description
-> - Folder structure
-> - Data sources
-> - Contact information
-> - Last updated date
->
-> You may need to make reasonable assumptions where information is missing.
->
-> The goal is to make the project easier for a future collaborator to understand.
+::::::::::: callout
 
-> ## Solution
->
-> There is no single correct answer.
->
-> A successful README should clearly explain:
->
-> - What the project is
-> - What data exists
-> - How the folders are organised
-> - Who is responsible for the project
->
-> It should allow somebody unfamiliar with the project to begin understanding its contents.
+Parameter files will depend on for project and/or software, but provide a record of inputs into software when processing data. The goal of such documentation is to ensure that your  data processing/analysis steps can be reproduced. These should be documented and referenced where appropriate. 
+
+:::::::::::::::::::::
 
 ---
 
-# Reflection
+::::::::::::::::: challenge
 
-> ## Discussion
->
-> Imagine you are leaving your current project tomorrow.
->
-> What information would a replacement researcher need in order to continue your work?
->
-> Is all of that information currently written down somewhere?
+## Write A README
+
+ Create a `README.txt` file for the inherited project.
+
+ Include:
+
+ - Project name
+ - Project description
+ - Folder structure
+ - Data sources
+ - Contact information
+ - Last updated date
+
+ You may need to make reasonable assumptions where information is missing.
+
+ The goal is to make the project easier for a future collaborator to understand.
+
+::::::::::::::: solution
+
+ There is no single correct answer.
+
+ A successful README should clearly explain:
+
+ - What the project is
+ - What data exists
+ - How the folders are organised
+ - Who is responsible for the project
+
+ It should allow somebody unfamiliar with the project to begin understanding its contents.
+
+Also, see the Newcastle University [Documentation](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/organise/) and Metadata page.
+
+
+Additional, subject specific suggestions can be found [here](https://www.dcc.ac.uk/guidance/standards/metadata) as well as data centre policies and information produced by funding agencies. 
+
+
+::::::::::::::::::::
+:::::::::::::::::::
+
+## File headers
+
+Depending on the file, data can be stored in file headers or in metadata. A simple example would be to store basic information in the first few lines of a spreadsheet or csv file or as text and tables in other file formats. We will discuss this later in the data formats lesson. 
+
+The advantage of storing information as headers or comments in the files is that they cannot be seperated from the folder structure, such as when communicating with a collegue. It can provide a failsafe is a file becomes seperated from the rest of the project. 
 
 ---
 
-# Looking Ahead
+:::::::::::::::::: discussion
+
+## Reflection
+
+Imagine you are leaving your current project tomorrow.
+
+What information would a replacement researcher need in order to continue your work?
+
+Is all of that information currently written down somewhere?
+
+::::::::::::::::::::
+
+---
+
+## Looking Ahead
 
 Our project now has:
 

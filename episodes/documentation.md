@@ -193,6 +193,7 @@ Given the huge variety of research and data, there is no universal documentation
 - README file(s)
 
 Some projects may also include
+
 - Data dictionaries
 - Standard operating procedures
 - Project logs

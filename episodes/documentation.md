@@ -418,7 +418,7 @@ Another example can be found [here](https://www.ncl.ac.uk/mediav8/library/key-me
 
 Follow along with the demo to make a README file for the inherited project.
 
-### Step 1: Navigate To The Top-Level Folder
+**1) Navigate To The Top-Level Folder**
 
 Open File Explorer.
 
@@ -430,7 +430,7 @@ legacy_dataset/
 
 ---
 
-### Step 2: Create A New Text File
+**2) Create A New Text File**
 
 Right-click in an empty area of the window and select
 
@@ -442,19 +442,19 @@ to create a new file.
 
 ---
 
-### Step 3: Rename The File
+**3) Rename The File**
 
 Rename the file `README.txt`.
 
 ---
 
-### Step 4: Open The File
+**4) Open The File**
 
 Double-click the file to open it in Notepad (or a similar text editor).
 
 ---
 
-### Step 5: Add Basic Structure
+**5) Add Basic Structure**
 
 Add headings such as
 
@@ -491,19 +491,7 @@ Save the file.
 
 #### Documentation Beyond The Top Level
 
-Project-level documentation is important, but it is not always sufficient.
-
-Sometimes subfolders require their own documentation.
-
-For example:
-
-```text
-results/
-```
-
-may contain dozens of generated outputs and sub-folders.
-
-Several months later, somebody might reasonably ask:
+Project-level documentation is important, but subfolders sometimes require their own documentation. For example, a `results` folder may contain dozens of generated outputs and sub-folders. Several months later, someone may reasonably ask
 
 - Which software generated these files?
 - When were they created?
@@ -523,7 +511,7 @@ results/
 └── tables/
 ```
 
-The README could document:
+The README could document
 
 ```text
 Generated:
@@ -539,13 +527,17 @@ Parameters:
 Significance threshold = 0.05
 ```
 
-This preserves important contextual information.
+to preserve important contextual information.
 
-Alternativly, different versons could have different folders, or be run using different software versions. 
+::: caution
+
+Any manually-created READMEs may also need to be manually updated as your project progresses, which risks the documentation becoming out-of-date. Where possible, automate your documentation (for example, by exporting settings from analysis tools or scripts).
+
+:::
 
 ::::::::::: discussion
 
-Consider different projects or subjects and why different folders might need different README files to keep track of the data. 
+Consider one of your projects. What additional README files may you need beyond the top-level project README, and what information should they contain? 
 
 ::::::::::::
 

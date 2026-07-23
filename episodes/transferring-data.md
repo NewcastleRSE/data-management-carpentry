@@ -208,6 +208,8 @@ This can make large files easier to identify.
 
  Learners often find folder-size properties particularly useful because they rarely realise the information is available.
 
+:::::::::::::::::::
+
 ---
 
 ## File Compression

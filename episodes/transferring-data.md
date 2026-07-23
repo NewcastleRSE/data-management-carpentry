@@ -29,6 +29,7 @@ By the end of this episode, learners will be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+
 ## The Problem: The Data Is Too Big
 
 Over the last few episodes we have:
@@ -113,6 +114,7 @@ Common answers may include:
 
 :::::::::::::::::::::::::::::::::::::::: 
 
+
 ---
 
 ## Understanding File Size
@@ -142,6 +144,7 @@ For example:
 As datasets grow, even small improvements can translate into large storage savings.
 
 ---
+
 
 ## What Does File Size Represent?
 
@@ -222,6 +225,7 @@ The instructor will demonstrate, and you can try it on your own system. Which is
 
 ---
 
+
 ## File Compression
 
 One of the most common ways to reduce storage requirements is compression.
@@ -282,9 +286,10 @@ Examples:
 
 The resulting file may be smaller, but some original information has been lost.
 
-For research data, lossy compression should be used with care. See [LINK]
+For research data, lossy compression should be used with care. See LINK
 
 ---
+
 
 ### Demonstration: Compressing A Folder
 
@@ -330,8 +335,6 @@ Right-click → Compress
 The exact wording varies between desktop environments.
 
 :::::::::::
-
-
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::: instructor
@@ -537,6 +540,13 @@ The best format depends on your intended use.
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
+::::::::::: caution
+
+This is not legal advice. Before transferring files check your project's data management policy for the type of data you are handling, or contact the relevant department at your institution.  
+
+:::::::::::
+
+
 ## Methods For Transferring Data
 
 Different transfer methods are appropriate for different situations.
@@ -544,8 +554,6 @@ Different transfer methods are appropriate for different situations.
 ---
 
 ### Email Attachments
-
-
 
 Suitable for:
 
@@ -574,6 +582,7 @@ Suitable for:
 Email is generally unsuitable for large datasets.
 
 ---
+
 
 ### OneDrive or SharePoint Links
 
@@ -653,6 +662,8 @@ Suitable for:
 
 :::::::::::::: 
 
+
+
 ---
 
 ### Institutional File Drop-off Service
@@ -661,7 +672,7 @@ Some institutions have a file drop off service, such as [Drop-off](https://dropo
 
 Suitable for:
 
-
+- Medium sized data sets
 
 
 :::::::::::::: tab
@@ -679,7 +690,11 @@ Suitable for:
 - Can send to wrong address
 
 :::::::::::::::
+
 ---
+
+
+
 
 ::::::::::::::: instructor
 
@@ -747,6 +762,22 @@ However, they are beyond the scope of this lesson.
 :::::::::::::::::::::::: 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## Looking Ahead

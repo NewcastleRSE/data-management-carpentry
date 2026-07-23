@@ -1,4 +1,4 @@
-name: 'Check branches for pull requests'
+name: 'Check branch names for pull requests'
 
 on:
   pull_request:
@@ -8,7 +8,7 @@ on:
       - synchronize
       - edited
 jobs:
-  check_branch:
+  check_branch_names:
     runs-on: ubuntu-latest
     steps:
       - name: Check branch

@@ -606,9 +606,9 @@ Additional resources:
 
 ## File-level documentation
 
-Individual files often require additional documentation; for example, you have have many data files that were collected under different circumstances. Where possible, this data should be stored directly in the file in the file header or metadata. We will discuss approaches for storing headers later in the data formats lesson. 
+Individual files often require additional documentation; for example, you may have many data files that were collected under different circumstances. Where possible, this data should be stored directly in the file in the file header or metadata. We will discuss approaches for storing headers later in the data formats lesson. 
 
-The advantage of storing information as headers or comments in the files is that this metadata cannot be separated from the file. File names and folder names do not have this property since files can be easily renamed or moved to different folders. As such, do not only store important metadata in file or folder names.
+The advantage of storing metadata in a file is that it cannot be separated from the corresponding data. File names and folder names do not have this property since files can be easily renamed or moved to different folders. As such, avoid storing important metadata in file or folder names.
 
 ---
 

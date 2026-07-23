@@ -41,7 +41,7 @@ A file format is a standardized way that information is encoded for storage in a
 
 The suffix at the end of a filename (e.g., `.csv`, `.xlsx`, `.txt`), known as the **file extension**, tells the operating system—and you—which application is expected to read that specific layout of bits.
 
-Files can be plain text (human readable) or binary (readable only by the computer). Plain text files have the advantage that s user can look inside them and see the data, while binary files are more consise and faster for the computer to read and write. 
+Files can be plain text (human readable) or binary (readable only by the computer). Plain text files have the advantage that s user can look inside them and see the data, while binary files are more compact and faster for the computer to read and write. 
 
 ### Common Formats and Trade-Offs
 
@@ -49,8 +49,8 @@ Some examples of the many types of file formats are
 
 * **CSV (Comma-Separated Values - `.csv`):** A plain-text format where data fields are separated by commas. It is highly portable, open-source, and readable by almost any programming language or spreadsheet tool. However, it cannot store multiple sheets, cell formatting, or formula logic.
 * **Excel Workbook (`.xlsx`):** A proprietary, compressed binary format owned by Microsoft. It is excellent for multi-sheet organization, complex formulas, and built-in plotting. The trade-off is that it requires specific software to parse cleanly, can introduce automated corruption (such as converting gene names into dates), and is less suitable for long-term data archiving.
-* **FWF (Fixed-Width Format, - `.txt`):** A plain-text format where each column has a fixed width. Because it is portable and open source it is easily readable, like `.csv` files. However, it can waste space and be hard to edit if values vary in length. If the size of a given column can vary significantly (e.g. have value 12 or 124535643245667 then shorter entries need considerable padding or risk truncating longer entries).
-* **JSON (Javascript Object Notation - `.json`):** A plain-text format that organises data into sets of key-value pairs, such as {"firstname": "John", "lastname": "Smith"}, where "firstname" and "lastname" are the keys and "John" and "Smith" are the corresponding values. This flexible format allows JSON to store very complex data structures, but it can be verbose and difficult to follow. Many programming languages have libraries for reading and manipulating JSON. Unlike the other formats listed above JSON files are not limited to tables and not every field needs to be the same for every entry, making it highly flexible. 
+* **FWF (Fixed-Width Format, - usually `.txt`):** A plain-text format where each column has a fixed width. Because it is portable and open source it is easily readable, like `.csv` files. However, it can waste space and be hard to edit if values vary in length. If the size of a given column can vary significantly (e.g. have value `12` or `124535643245667` then shorter entries need considerable padding or risk truncating longer entries).
+* **JSON (Javascript Object Notation - `.json`):** A plain-text format that organises data into sets of key-value pairs, such as {"first_name": "John", "last_name": "Smith"}, where "first_name" and "last_name" are the keys and "John" and "Smith" are the corresponding values. This flexible format allows JSON to store very complex data structures, but it can be verbose and difficult to follow. Many programming languages have libraries for reading and manipulating JSON. Unlike the other formats listed above JSON files are not limited to tables and not every field needs to be the same for every entry, making it highly flexible. 
 
 CSV, Excel Workbook, and FWF files are for storing tables. They are good for data which have a certain number of items (rows) each with a number of values, or noted missing values, for a consistent set of variables (columns). 
 
@@ -58,7 +58,7 @@ CSV, Excel Workbook, and FWF files are for storing tables. They are good for dat
 
 :::::::::::::::: discussion
 
-## What to Consider When Choosing a Format?
+## What to Consider When Choosing a File Format?
 
 Before looking at complex formats, let's establish a set of requirements for evaluating how we store data.
 
@@ -95,14 +95,14 @@ Some formats are designed to store data for specific programming languages.
 * **Matlab** `.mat` (Mat format)
 * **Julia** `.jld2` (Julia Data Format 2)
 
-These formats allow the given programming language to save data and even their current state to disc. This storage approach can be convenient, but introduces security risks. For example, Python pickle files can contain instructions that executre arbitrary Python code when loaded. They are not recommended for data exchange or long-term storage.  
+These formats allow the given programming language to save data and even their current state to disc. This storage approach can be convenient, but introduces security risks. For example, Python pickle files can contain instructions that execute arbitrary Python code when loaded. They are not recommended for data exchange or long-term storage.  
 
 ### 3. Cross-Discipline Formats (e.g., HDF5)
 
 Some formats are designed to solve the problem of multi-dimensional data across multiple fields with different types of data.
 
-* **HDF5 (Hierarchical Data Format v5 - `.h5` or `.hdf5`):** This open format behaves like a "file system within a single file." It allows you to store large, multi-dimensional arrays of numbers alongside rich, custom metadata attributes.
-* **Parquet:** This open format preserves metadata, data types, and file headers. Fast for reading but slower on writing. Excellent for Big Data. 
+* **HDF5 (Hierarchical Data Format v5 - `.h5` or `.hdf5`):** This open format behaves like a "file system within a single file." It allows you to store large, multi-dimensional arrays of numbers alongside rich, custom metadata attributes. If is fast, flexible and compact. It is not human readable. 
+* **Parquet:** This open format preserves metadata, data types, and file headers. It is fast for reading but slower for writing. Excellent for Big Data which will be written once and read many times. Like HDF5 it is not human readable. 
 
 #### Who uses these file formats?
 
@@ -110,7 +110,8 @@ Common users of HDF5 include climate scientists for satellite weather models, ph
 
 ### 4. Other
 
-Some software has their own files formats for designed for specific needs - for example, Microsoft PowerPoint uses `.pptx` files and Adobe Photoshop stores image data in `.psd` files. Other formats may be based on common formats, such as binary or HDF5, but require a certain structure for the header or metadata. These formats will have software tools for reading them and/or provide descriptions of the file format to allow writing bispoke software to read it.
+Some software has their own files formats for designed for specific needs - for example, Microsoft PowerPoint uses `.pptx` files and Adobe Photoshop stores image data in `.psd` files. Other formats may be based on common formats, such as binary or HDF5, but require a certain structure for the header or metadata. These formats will have software tools for reading them and/or provide descriptions of the file format to allow writing bespoke software to read it.
+
 ---
 
 ## The Format Evaluation Checklist
@@ -149,7 +150,7 @@ This is easiest to demonstrate using **image formats**, which are widely used ac
 * **BMP (`.bmp`):** A raw bitmap format. It saves the exact color data of every single pixel explicitly. It preserves 100% fidelity but results in large file sizes.
 * **PNG (`.png`):** A compressed, **lossless** format. It reduces the file size significantly using smart patterns, but when you open it, the image is mathematically identical to the original pixel-by-pixel.
 * **JPEG (`.jpg` / `.jpeg`):** A compressed, **lossy** format. It achieves tiny file sizes by permanently throwing away visual information that the human eye is less likely to notice.
-* **SVG (`.svg`):** A vector graphics format which scales freely and defines graphics using vertices and lines. They are easily edited. However, they are not suitable for pixel images.  
+* **SVG (`.svg`):** A vector graphics format which scales freely and defines graphics using vertices and lines. They are easily edited. However, they are not suitable for pixel-based images.  
 
 ---
 
@@ -171,7 +172,7 @@ Let's look at what happens when we convert a high-resolution microscopy image (`
  
 
   **Questions for Discussion:**
- * What happens to the file size if the BMP file is converted to JPEG format?
+ * What happens to the file size when the BMP file is converted to JPEG format?
  * What visual defects (compression artifacts) do you see around the fine details in the JPEG version?
  * Why is saving raw experimental images as JPEGs potentially dangerous for automated scientific analysis?
  
@@ -184,7 +185,9 @@ Let's look at what happens when we convert a high-resolution microscopy image (`
  * **Fidelity Loss:** Zooming in reveals blocky distortions and blurry halos ("artifacts") around fine structures.
  * **Scientific Danger:** Automated image processing scripts (e.g., counting cells, measuring pixel intensities) will read these compression artifacts as actual data or fail to detect faint structures entirely. **Never use lossy compression formats (like JPEG) for raw analytical images.**
  
- 
+ See [Image Processing in Matlab](https://blogs.mathworks.com/steve/2022/12/19/avoid-jpeg-for-image-analysis/) and Section 6.8 of [Cromey D. W. (2013). Digital images are data: and should be treated as such. Methods in molecular biology (Clifton, N.J.), 931, 1–27. https://doi.org/10.1007/978-1-62703-056-4_1](https://pmc.ncbi.nlm.nih.gov/articles/PMC4210356/) 
+
+ > 
 
 :::::::::::::::::::::
 :::::::::::::::::::
@@ -195,7 +198,7 @@ Let's look at what happens when we convert a high-resolution microscopy image (`
 
 Many data facilities have suggestions for storing data. For example 
 
-- the [UK Data Service](https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/) has recommendations for various types of data, including tables, image, video, audio and text as well as their associated meta data.
+- the [UK Data Service](https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/) has recommendations for various types of data, including tables, image, video, audio, and text, as well as their associated metadata.
 - the [Library of Congress](https://www.loc.gov/preservation/resources/rfs/format-pref-summary.html) has similar recommendations
 
 but funders and other data archives will have their own preferences. 

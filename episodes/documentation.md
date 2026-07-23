@@ -631,20 +631,13 @@ You may not always have much warning before temporarily or permanently leaving a
 
 ## Looking Ahead
 
-Our project now has:
+Our project now has
 
-- A clearer folder structure
-- Better file names
-- Initial documentation
+- a clearer folder structure
+- more information file names
+- initial documentation
 
-The next challenge is deciding where data should live.
-
-How can we store data so it is:
-
-- Accessible?
-- Backed up?
-- Secure?
-- Shareable?
+The next challenge is deciding where data should be stored so it is accessible, secure, shareable, and recoverable.
 
 In the next episode we will explore how to choose appropriate storage locations for different types of research data.
 

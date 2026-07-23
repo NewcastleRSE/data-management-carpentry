@@ -364,7 +364,7 @@ Keep files together with their READMEs if you exchange data with colleagues.
 
 ### Example README Structure
 
-A README file might contain:
+Example template:
 
 ```text
 Project Name
@@ -390,17 +390,17 @@ For example:
 Project Name:
     Marine Mammal Incidence Study
 
-Description:
+Project Description:
     Investigation of marine mammal health records collected
     between 2020 and 2025.
 
-Folder Structure:
+Project Structure:
     data/raw - original data
     data/processed - cleaned datasets
     analysis - analysis scripts
     results - generated outputs
 
-Software Requirements
+Software Requirements:
     Data was analysed using Python 3.13
     See analysis/pyproject.toml file for Python package dependencies and versions
 
@@ -411,20 +411,16 @@ Last Updated:
     2026-07-01
 ```
 
-The goal is clarity rather than perfection.
-
-Another example can be found [here](https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt)
+Another example can be found [here](https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt).
 
 ---
 
 
 :::::::::::::: challenge
 
-Follow along with the following demonstration.
-
 ## Creating A README File
 
-Now we will create documentation for the inherited project.
+Follow along with the demo to make a README file for the inherited project.
 
 ### Step 1: Navigate To The Top-Level Folder
 
@@ -440,41 +436,31 @@ legacy_dataset/
 
 ### Step 2: Create A New Text File
 
-Right-click in an empty area of the window.
-
-Select:
+Right-click in an empty area of the window and select
 
 ```text
 New → Text Document
 ```
 
-A new file will be created.
+to create a new file.
 
 ---
 
 ### Step 3: Rename The File
 
-Rename the file:
-
-```text
-README.txt
-```
-
-This helps make its purpose immediately obvious.
+Rename the file `README.txt`.
 
 ---
 
 ### Step 4: Open The File
 
-Double-click the file.
-
-It should open in Notepad (or a similar text editor).
+Double-click the file to open it in Notepad (or a similar text editor).
 
 ---
 
 ### Step 5: Add Basic Structure
 
-Add headings such as:
+Add headings such as
 
 ```text
 Project Name

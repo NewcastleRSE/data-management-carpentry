@@ -102,7 +102,7 @@ These formats allow the given programming language to save data and even their c
 Some formats are designed to solve the problem of multi-dimensional data across multiple fields with different types of data.
 
 * **HDF5 (Hierarchical Data Format v5 - `.h5` or `.hdf5`):** This open format behaves like a "file system within a single file." It allows you to store large, multi-dimensional arrays of numbers alongside rich, custom metadata attributes. If is fast, flexible and compact. It is not human readable. 
-* **Parquet:** This open format preserves metadata, data types, and file headers. It is fast for reading but slower of writing. Excellent for Big Data which will be written once and rad many times. Like HDF5 it is not human readable. 
+* **Parquet:** This open format preserves metadata, data types, and file headers. It is fast for reading but slower for writing. Excellent for Big Data which will be written once and read many times. Like HDF5 it is not human readable. 
 
 #### Who uses these file formats?
 

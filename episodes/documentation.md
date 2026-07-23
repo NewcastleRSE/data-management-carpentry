@@ -604,11 +604,11 @@ Additional resources:
 ::::::::::::::::::::
 :::::::::::::::::::
 
-## File headers
+## File-level documentation
 
-Depending on the file, data can be stored in file headers or in metadata. A simple example would be to store basic information in the first few lines of a spreadsheet or csv file or as text and tables in other file formats. We will discuss this later in the data formats lesson. 
+Individual files often require additional documentation; for example, you have have many data files that were collected under different circumstances. Where possible, this data should be stored directly in the file in the file header or metadata. We will discuss approaches for storing headers later in the data formats lesson. 
 
-The advantage of storing information as headers or comments in the files is that they cannot be seperated from the folder structure, such as when communicating with a collegue. It can provide a failsafe is a file becomes seperated from the rest of the project. 
+The advantage of storing information as headers or comments in the files is that this metadata cannot be separated from the file. File names and folder names do not have this property since files can be easily renamed or moved to different folders. As such, do not only store important metadata in file or folder names.
 
 ---
 
@@ -616,13 +616,16 @@ The advantage of storing information as headers or comments in the files is that
 
 ## Reflection
 
-Imagine you are leaving your current project tomorrow.
-
-What information would a replacement researcher need in order to continue your work?
-
-Is all of that information currently written down somewhere?
+Imagine you are leaving your current project tomorrow. What information would a replacement researcher need to continue your work? Does your project's current documentation include that information?
 
 ::::::::::::::::::::
+
+::::: caution
+
+You may not always have much warning before temporarily or permanently leaving a project; plans can unexpectedly change due to new opportunities, emergencies, or illness. Similarly, new people may join a project without much notice and need to get up-to-speed quickly. Keeping your documentation up-to-date can make unplanned transition periods less stressful.
+
+:::::
+
 
 ---
 

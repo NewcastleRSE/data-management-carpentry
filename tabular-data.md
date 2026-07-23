@@ -24,7 +24,7 @@ By the end of this episode, learners will be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-# The Problem: Tabular Data Is Everywhere, But Often a Mess
+## The Problem: Tabular Data Is Everywhere, But Often a Mess
 
 Tabular data—data organised in rows and columns such as CSV files and Excel spreadsheets—is the most common format used across research disciplines. Whether you collect sensor output, clinical trial data, or survey responses, chances are high that your data lives in a table.
 
@@ -41,7 +41,10 @@ Before writing analysis scripts or generating figures, we must learn how to spot
 
 ---
 
-# Discussion: Spotting the Pitfalls in Bad Data
+
+::::::::::::::::::::::: discussion
+
+## Spotting the Pitfalls in Bad Data
 
 Let's start by inspecting a real-world example of a problematic dataset: `Incidence-Data(bad).csv`.
 
@@ -56,27 +59,27 @@ ID,table,diagnosis Year,Age Specific Incidence Age0_49,age Specific Incidence  A
 ...
 
 ```
+ 
+ Working in pairs:
 
-> ## Discussion
-> 
-> 
-> Working in pairs:
-> Open `Incidence-Data(bad).csv` in Excel or your preferred spreadsheet viewer. Look closely at the header row, the values, and the overall layout.
-> List as many data management issues as you can find.
-> Consider:
-> * Header names and formatting
-> * Category values in rows
-> * Blank cells and missing data
-> * Units of measurement
-> * Table structure and layout
-> 
-> 
+ Open `Incidence-Data(bad).csv` in Excel or your preferred spreadsheet viewer. Look closely at the header row, the values, and the overall layout.
+ List as many data management issues as you can find.
+ 
+ Consider:
 
+ * Header names and formatting
+ * Category values in rows
+ * Blank cells and missing data
+ * Units of measurement
+ * Table structure and layout
+ 
 *After 5 minutes, gather responses as a group.*
+
+::::::::::::::::::::::::::::::::
 
 ---
 
-# Why These Issues Matter: Human-Readable vs. Machine-Readable
+## Why These Issues Matter: Human-Readable vs. Machine-Readable
 
 Human eyes are remarkably forgiving. When a human reads a spreadsheet, they can instantly guess that `"All Oral"` and `"All Oral Cavity"` mean the same thing, or that a blank cell under the year `2018` probably means `2019`.
 
@@ -116,7 +119,7 @@ In several rows, values for `diagnosis Year` or `table` are left blank because t
 
 ---
 
-# Core Principles of Tidy Tabular Data
+## Core Principles of Tidy Tabular Data
 
 To make tabular data easy to analyze, archive, and share, adhere to three core rules of **Tidy Data**:
 
@@ -127,34 +130,50 @@ To make tabular data easy to analyze, archive, and share, adhere to three core r
 ```text
 Good Header Example:
 id, category, diagnosis_year, incidence_per_100k_age_0_49, incidence_per_100k_age_50_54
-
 ```
 
-> ## Golden Rules for Clean Headers
-> 
-> 
-> * Use lowercase letters.
-> * Use underscores (`_`) instead of spaces.
-> * Avoid special characters (`?`, `$`, `%`, `-`, `/`, `#`).
-> * Keep names descriptive but concise.
-> * Include units directly in the header (e.g., `weight_kg`, `temp_celsius`, `incidence_per_100k`).
-> 
-> 
+or for an alternative example dataset where this might not be appropriate: 
+
+```text
+id, location, date,    object, spectral_flux_density
+  ,         , YY-MM-DD,      , 10^-23.erg.s^-1.cm^-2.Hz^-1         
+```
+
+Here there is a new row for the units because they can become unwieldy and hard to read in the header name. Use your own judgement and the conventions of your discipline. 
+
++ This unit, used in radio astronomy for the spectral energy density, can also be written as the none SI/CGS unit, Jy (Jansky), but is included here as an example using the largely superceded CGS unit system for dramatic illustration (!). See: "IAU Style Manual" by G.A. Wilkins, Comm. 5, in IAU Transactions XXB (1989)"
+
+
+:::::::::::::: callout
+
+## Golden Rules for Clean Headers
+
+ * Use lowercase letters.
+ * Use underscores (`_`) instead of spaces.
+ * Avoid special characters (`?`, `$`, `%`, `-`, `/`, `#`).
+ * Keep names descriptive but concise.
+ * Include units directly in the header (e.g., `weight_kg`, `temp_celsius`, `incidence_per_100k`). If this is not reasonable place units in the next row or column to the column name. 
+
+::::::::::::::::::::::::::::::::::::::
 
 ---
 
-# Demonstration: Cleaning Data in Excel
+:::::::::::::::::: instructor 
 
-We will now walk through practical steps to fix these issues in Excel (or LibreOffice Calc / Google Sheets) without altering the underlying raw data.
+Emphasize preserving the original raw file! Always save your cleaned dataset under a new filename (e.g., `Incidence-Data_clean.csv`) or work on a copy.
 
-> ## Instructor Note
-> 
-> 
-> Emphasize preserving the original raw file! Always save your cleaned dataset under a new filename (e.g., `Incidence-Data_clean.csv`) or work on a copy.
+::::::::::::::::::::::
+
+
+::::::::::::::::::: challenge
+
+## Demonstration: Cleaning Data in Excel
+
+Follow along with the various practical steps to fix these issues in Excel (or LibreOffice Calc / Google Sheets) without altering the underlying raw data.
 
 ---
 
-## Step 1: Standardising Column Headers
+### Step 1: Standardising Column Headers
 
 1. Open `Incidence-Data(bad).csv` in Excel.
 2. Select Row 1 (the header row).
@@ -169,7 +188,7 @@ We will now walk through practical steps to fix these issues in Excel (or LibreO
 
 ---
 
-## Step 2: Bulk Fixes Using Find and Replace
+### Step 2: Bulk Fixes Using Find and Replace
 
 Manually retyping mismatched category names across thousands of rows is slow and error-prone. We can use Excel's **Find and Replace** tool to perform bulk corrections.
 
@@ -184,7 +203,7 @@ Excel will report how many replacements were made, ensuring all rows now use a s
 
 ---
 
-## Step 3: Handling Missing Values and Stacked Tables
+### Step 3: Handling Missing Values and Stacked Tables
 
 To convert stacked tables into a single, clean table:
 
@@ -192,42 +211,47 @@ To convert stacked tables into a single, clean table:
 2. **Remove empty separator rows:** Delete completely blank rows (such as rows 10 and 20) that were used purely for visual padding.
 3. **Separate summary rows if necessary:** Filter or remove summary rows like `All Years` if you plan to aggregate data programmatically, or move distinct sub-tables into separate CSV files if they represent fundamentally different experimental structures.
 
----
+:::::::::::::::::::::::
 
-# Exercise: Cleaning the Incidence Dataset
 
-> ## Challenge
-> 
-> 
-> Working with your copy of `Incidence-Data(bad).csv`:
-> 1. Use **Find and Replace** to standardise any inconsistent category names in the `table` column.
-> 2. Standardize the headers for age groups `Age85_89` and `Age 90` so they match the format of the other age columns (`incidence_per_100k_age_85_89` and `incidence_per_100k_age_90_plus`).
-> 3. Fill in missing values in the `diagnosis_year` column where values were implicitly omitted.
-> 4. Delete the blank row dividers.
-> 5. Save the modified file as `Incidence-Data_clean.csv`.
-> 
-> 
-> Compare your cleaned file with a partner. Are all header names identical?
-
-> ## Solution
-> 
-> 
-> A clean version of the dataset should have:
-> * Uniform headers across all columns without spaces or special characters.
-> * Units (`per_100k`) included in the header metadata or documented clearly.
-> * No blank separator rows.
-> * Explicit values in every row (no implied carry-overs).
-> * Consistent category labels (`All Oral Cavity` throughout).
-> 
-> 
 
 ---
 
-# Version Control for Data Files
+:::::::::::::::: challenge
+
+## Cleaning the Incidence Dataset
+
+ 
+ Working with your copy of `Incidence-Data(bad).csv`:
+
+ 1. Use **Find and Replace** to standardise any inconsistent category names in the `table` column.
+ 2. Standardize the headers for age groups `Age85_89` and `Age 90` so they match the format of the other age columns (`incidence_per_100k_age_85_89` and `incidence_per_100k_age_90_plus`).
+ 3. Fill in missing values in the `diagnosis_year` column where values were implicitly omitted.
+ 4. Delete the blank row dividers.
+ 5. Save the modified file as `Incidence-Data_clean.csv`.
+ 
+ 
+ Compare your cleaned file with a partner. Are all header names identical?
+
+::::::::::::::::::: solution
+ 
+ A clean version of the dataset should have:
+
+ * Uniform headers across all columns without spaces or special characters. * Units (`per_100k`) included in the header metadata or documented clearly.
+ * No blank separator rows.
+ * Explicit values in every row (no implied carry-overs).
+ * Consistent category labels (`All Oral Cavity` throughout).
+ 
+:::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::
+
+---
+
+## Version Control for Data Files
 
 Once you have spent time cleaning a dataset, how do you manage changes as the project evolves?
 
-## The Problem with File-Naming "Version Control"
+### The Problem with File-Naming "Version Control"
 
 It is common to see project folders filled with files like:
 
@@ -243,22 +267,22 @@ This manual approach quickly leads to confusion over which file is the true "cur
 
 ---
 
-## Version Control Strategies for Research Data
+### Version Control Strategies for Research Data
 
 Depending on your data size and computational setup, several strategies exist for tracking changes:
 
-### 1. Separation of Raw and Processed Data
+#### 1. Separation of Raw and Processed Data
 
 Never modify your original raw dataset. Maintain a strict directory structure:
 
 * `data/raw/`: Read-only original files (never modified).
 * `data/processed/`: Cleaned, standardized outputs generated by documented steps or scripts.
 
-### 2. Cloud and Storage Revision Histories
+#### 2. Cloud and Storage Revision Histories
 
 Platforms like OneDrive, SharePoint, and institutional research data repositories automatically record file version histories. If you accidentally overwrite a spreadsheet, you can restore previous versions through the cloud provider's web interface.
 
-### 3. Formal Version Control with Git
+#### 3. Formal Version Control with Git
 
 For researchers working with text-based tabular files (such as CSVs, TSVs) and processing scripts (Python, R, MATLAB), formal version control systems like **Git** offer the gold standard for tracking history.
 
@@ -268,14 +292,13 @@ Git records snapshots of your files over time, allowing you to:
 * Revert to any previous state if an error is introduced.
 * Collaborate safely without overwriting a colleague's work.
 
-> ## Further Learning: Version Control with Git
-> 
-> 
-> Demonstrating Git is beyond the scope of this introductory lesson, but learning Git is highly recommended for any researcher handling data and code.
-> If you want to learn how to track changes, collaborate effectively, and manage versions using Git, consider signing up for our companion workshop:
-> * **Software Carpentries: Version Control with Git**
-> 
-> 
+### Further Learning: Version Control with Git 
+ 
+ Demonstrating Git is beyond the scope of this introductory lesson, but learning Git is highly recommended for any researcher handling data and code.
+ If you want to learn how to track changes, collaborate effectively, and manage versions using Git, consider signing up for our companion workshop:
+
+ * **Software Carpentries: Version Control with Git**
+ 
 
 ---
 

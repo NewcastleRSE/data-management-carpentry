@@ -29,7 +29,7 @@ By the end of this episode, learners will be able to:
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-# The Problem: The Data Is Too Big
+## The Problem: The Data Is Too Big
 
 Over the last few episodes we have:
 
@@ -67,25 +67,27 @@ Before we can solve these problems, we need to understand how data size is measu
 
 ---
 
-# Discussion: How Could We Make The Data Smaller?
+::::::::::::::::::::::::::::::::::::: discussion
+How Could We Make The Data Smaller?
 
-> ## Discussion
->
-> Working in pairs:
->
-> What options can you think of for reducing the amount of storage used by a dataset?
->
-> Consider:
->
-> - Temporary files
-> - File formats
-> - Compression
-> - Duplicate data
-> - Images and media
->
-> Write down as many ideas as possible.
+
+ Working in pairs:
+
+ What options can you think of for reducing the amount of storage used by a dataset?
+
+ Consider:
+
+ - Temporary files
+ - File formats
+ - Compression
+ - Duplicate data
+ - Images and media
+
+ Write down as many ideas as possible.
 
 After a few minutes, discuss responses as a group.
+
+::::::::::::::::::::::::::::::::::::::::: 
 
 Common answers may include:
 
@@ -97,7 +99,7 @@ Common answers may include:
 - Resizing images
 - Removing unnecessary intermediate results
 
-> ## Instructor Note
+::::::::::::::::::::::::::::::::::::: instructor
 >
 > Learners often jump immediately to deleting files.
 >
@@ -105,9 +107,11 @@ Common answers may include:
 >
 > Compression and improved organisation often reduce storage requirements significantly without losing information.
 
+:::::::::::::::::::::::::::::::::::::::: 
+
 ---
 
-# Understanding File Size
+## Understanding File Size
 
 Before making data smaller, we need to know:
 
@@ -135,7 +139,7 @@ As datasets grow, even small improvements can translate into large storage savin
 
 ---
 
-# What Does File Size Represent?
+## What Does File Size Represent?
 
 Every file occupies space on a storage device.
 
@@ -165,9 +169,9 @@ Understanding file sizes helps us make informed decisions.
 
 ---
 
-# Demonstration: Viewing File Sizes
+## Demonstration: Viewing File Sizes
 
-## Individual Files
+### Individual Files
 
 Using File Explorer:
 
@@ -178,7 +182,7 @@ Using File Explorer:
 
 ---
 
-## Folders
+### Folders
 
 To view the size of a folder:
 
@@ -190,7 +194,7 @@ This may take a few moments for large datasets.
 
 ---
 
-## Alternative: File Explorer Columns
+### Alternative: File Explorer Columns
 
 Switch File Explorer to **Details View**.
 
@@ -198,19 +202,21 @@ The size column can be displayed for many file types.
 
 This can make large files easier to identify.
 
-> ## Instructor Note
->
-> Demonstrate both approaches.
->
-> Learners often find folder-size properties particularly useful because they rarely realise the information is available.
+::::::::::::::::::: instructor
+
+ Demonstrate both approaches.
+
+ Learners often find folder-size properties particularly useful because they rarely realise the information is available.
+
+:::::::::::::::::::
 
 ---
 
-# File Compression
+## File Compression
 
 One of the most common ways to reduce storage requirements is compression.
 
-## What Is Compression?
+### What Is Compression?
 
 Compression reduces the amount of storage required by a file without changing its contents.
 
@@ -230,11 +236,11 @@ The result is a smaller file.
 
 ---
 
-## Lossless and Lossy Compression
+### Lossless and Lossy Compression
 
 There are two broad forms of compression.
 
-### Lossless Compression
+#### Lossless Compression
 
 Lossless compression preserves all information.
 
@@ -254,7 +260,7 @@ These are commonly used for research data.
 
 ---
 
-### Lossy Compression
+#### Lossy Compression
 
 Lossy compression achieves greater size reduction by discarding information.
 
@@ -270,9 +276,11 @@ For research data, lossy compression should be used with care.
 
 ---
 
-# Demonstration: Compressing A Folder
+## Demonstration: Compressing A Folder
 
-## Windows
+:::::::::: tab
+
+### Windows
 
 1. Right-click the folder.
 2. Select:
@@ -289,9 +297,7 @@ For example:
 clean_data.zip
 ```
 
----
-
-## macOS
+### macOS
 
 1. Right-click the folder.
 2. Choose:
@@ -302,9 +308,8 @@ Compress
 
 A ZIP archive will be created.
 
----
 
-## Linux
+### Linux
 
 Most desktop file managers provide a similar option:
 
@@ -314,15 +319,17 @@ Right-click → Compress
 
 The exact wording varies between desktop environments.
 
-> ## Instructor Note
->
-> Demonstrate compression on the cleaned project directory.
->
-> Show both the original folder size and the compressed archive size.
+:::::::::::
 
----
+::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
-# When Should You Compress Data?
+ Demonstrate compression on the cleaned project directory.
+
+ Show both the original folder size and the compressed archive size.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+## When Should You Compress Data?
 
 Compression is often useful when:
 
@@ -343,7 +350,7 @@ Compression can significantly reduce transfer times.
 
 ---
 
-# When Should You Avoid Compression?
+## When Should You Avoid Compression?
 
 Compression is not always beneficial.
 
@@ -367,40 +374,42 @@ pdf
 
 Compressing these files often produces very little size reduction.
 
-> ## Callout
->
-> If a file format is already compressed, zipping it again may provide almost no additional benefit.
+:::::::::::::::::::::::::::::::::::::::::::::::::  callout
 
----
+ If a file format is already compressed, zipping it again may provide almost no additional benefit.
 
-# Exercise: How Much Space Can We Save?
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-> ## Challenge
->
-> Determine the size of the cleaned project folder.
->
-> Then:
->
-> 1. Create a ZIP archive.
-> 2. Measure the size of the ZIP file.
-> 3. Calculate the reduction in size.
->
-> Discuss:
->
-> - Was the reduction larger or smaller than expected?
-> - Why do you think this happened?
+::::::::::::::::::::::::::::::::::::::::::::::::::: challenge
+ How Much Space Can We Save?
 
-> ## Solution
->
-> Results will vary depending on the data.
->
-> Text files and spreadsheets often compress well.
->
-> Images, video, and already-compressed formats may show little improvement.
+ Determine the size of the cleaned project folder.
 
----
+ Then:
 
-# File Formats And Storage
+ 1. Create a ZIP archive.
+ 2. Measure the size of the ZIP file.
+ 3. Calculate the reduction in size.
+
+ Discuss:
+
+ - Was the reduction larger or smaller than expected?
+ - Why do you think this happened?
+
+:::::::::::::::::::::::: solution
+
+ Results will vary depending on the data.
+
+ Text files and spreadsheets often compress well.
+
+ Images, video, and already-compressed formats may show little improvement.
+
+:::::::::::::::::::::::: 
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+## File Formats And Storage
 
 Compression is not the only way to reduce file size.
 
@@ -430,7 +439,7 @@ can have dramatically different sizes.
 
 ---
 
-# An Example: Bitmap Images
+## An Example: Bitmap Images
 
 Suppose we save the same image as:
 
@@ -454,7 +463,7 @@ The image looks the same, but storage requirements differ.
 
 ---
 
-# Trade-Offs
+## Trade-Offs
 
 Smaller files are not always better.
 
@@ -485,40 +494,41 @@ Neither format is universally superior.
 
 The best format depends on your intended use.
 
-> ## Looking Ahead
+> ### Looking Ahead
 >
 > We will discuss choosing data formats in much more detail in a later episode.
 
 ---
 
-# Discussion: How Have You Shared Data Before?
+::::::::::::::::::::::::::::::::::::::::::::::::::: discussion
 
-> ## Discussion
->
-> Think about the last time you shared research data.
->
-> How did you do it?
->
-> Examples might include:
->
-> - Email attachments
-> - OneDrive links
-> - SharePoint
-> - USB drives
-> - Shared network storage
-> - Cloud platforms
->
-> What limitations did you encounter?
+ How Have You Shared Data Before?
 
----
+ Think about the last time you shared research data.
 
-# Methods For Transferring Data
+ How did you do it?
+
+ Examples might include:
+
+ - Email attachments
+ - OneDrive links
+ - SharePoint
+ - USB drives
+ - Shared network storage
+ - Cloud platforms
+
+ What limitations did you encounter?
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+## Methods For Transferring Data
 
 Different transfer methods are appropriate for different situations.
 
 ---
 
-## Email Attachments
+### Email Attachments
 
 Suitable for:
 
@@ -541,7 +551,7 @@ Generally unsuitable for large datasets.
 
 ---
 
-## OneDrive or SharePoint Links
+### OneDrive or SharePoint Links
 
 Suitable for:
 
@@ -562,7 +572,7 @@ Disadvantages:
 
 ---
 
-## Shared Project Storage
+### Shared Project Storage
 
 Suitable for:
 
@@ -582,7 +592,7 @@ Disadvantages:
 
 ---
 
-## Globus
+### Globus
 
 Globus is commonly used in research environments for transferring large datasets.
 
@@ -605,7 +615,7 @@ Disadvantages:
 
 ---
 
-# A Note On Command-Line Tools
+## A Note On Command-Line Tools
 
 Large-scale research computing environments often use command-line transfer tools such as:
 
@@ -619,7 +629,7 @@ These tools are extremely powerful and commonly used on HPC systems.
 
 However, they are beyond the scope of this lesson.
 
-> ## Further Learning
+> ### Further Learning
 >
 > Learners interested in transferring data to servers or HPC systems should consider attending:
 >
@@ -630,33 +640,36 @@ However, they are beyond the scope of this lesson.
 
 ---
 
-# Exercise: Choosing A Transfer Method
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::: challenge
 
-> ## Challenge
->
-> Match the transfer method to the scenario.
->
-> 1. A 5 MB document for a colleague.
-> 2. A 300 MB dataset shared among a research group.
-> 3. A 2 TB dataset for HPC processing.
-> 4. A published dataset accompanying a paper.
->
-> Discuss your choices with a partner.
+ Choosing A Transfer Method
 
-> ## Solution
->
-> Example answers:
->
-> 1. Email attachment.
-> 2. OneDrive, SharePoint, or shared project storage.
-> 3. Globus or institutional research storage.
-> 4. Repository such as Zenodo.
->
-> The important consideration is matching tools to scale and purpose.
+ Match the transfer method to the scenario.
 
----
+ 1. A 5 MB document for a colleague.
+ 2. A 300 MB dataset shared among a research group.
+ 3. A 2 TB dataset for HPC processing.
+ 4. A published dataset accompanying a paper.
 
-# Looking Ahead
+ Discuss your choices with a partner.
+
+:::::::::::::::::::::::: solution
+
+ Example answers:
+
+ 1. Email attachment.
+ 2. OneDrive, SharePoint, or shared project storage.
+ 3. Globus or institutional research storage.
+ 4. Repository such as Zenodo.
+
+ The important consideration is matching tools to scale and purpose.
+
+:::::::::::::::::::::::: 
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+## Looking Ahead
 
 We now know how to:
 

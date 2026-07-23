@@ -369,6 +369,13 @@ Newcastle University provides a number of resources for data management:
 - [Data management for postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/-rdm/planning/pgr/)
 - [Research data management](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm)
 
+::::::::::::::::::::::: instructor
+
+Suggest links for equivalents at your own institution are substituted in here. 
+
+::::::::::::::::::::::::
+
+
 ::::::::::::: challenge
 
 ## Finding the Dataset

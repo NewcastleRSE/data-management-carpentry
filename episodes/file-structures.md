@@ -648,6 +648,7 @@ Other possible folders would be:
 etc.
 
 The most important part of the design is that each folder has a clear purpose.
+
 ::::::::::::::::::
 ::::::::::::::::::
 

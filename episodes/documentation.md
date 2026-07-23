@@ -198,7 +198,6 @@ Some projects may also include
 - Standard operating procedures
 - Project logs
 - Parameter files
-- Funding agency
 
 These elements will be expanded on below. 
 
@@ -472,7 +471,7 @@ Contact Information
 Last Updated
 ```
 
-Save the file.
+Save the file. We'll fill out the fields later in the lesson!
 
 :::::::::::::::: solution
 
@@ -545,13 +544,11 @@ Consider one of your projects. What additional README files may you need beyond 
 
 ### Other Useful Documentation
 
-Depending on the project, additional documentation might include:
-
 #### Data Dictionaries
 
 These explain variables in tabular datasets.
 
-For example:
+For example
 
 | Variable | Description |
 |-----------|-------------|
@@ -559,39 +556,19 @@ For example:
 | region | Geographic study area |
 | year | Observation year |
 
-We will revisit this when discussing tabular data.
+We will revisit these dictionaries in the tabular data lesson.
 
 #### Standard Operating Procedures
 
-These describe how data is collected or processed.
-
-For example:
-
-```text
-sampling_protocol.txt
-```
-Which contains a written description of the procedures used. 
+Standard operating procedures (SOPs) describe how data is collected or processed.
 
 #### Project Logs
 
-These provide a record of major project decisions.
-
-For example:
-
-```text
-project_log.txt
-```
-
-This can be particularly useful for long-running projects.
-
+Project logs provide a record of major project decisions; they help record not only what you did, but why. This logic can be help justify methods in publications as well as warn future researchers about inefficient or unsuitable approaches that were ruled out in earlier project stages.
 
 #### Parameter files
 
-::::::::::: callout
-
-Parameter files will depend on for project and/or software, but provide a record of inputs into software when processing data. The goal of such documentation is to ensure that your  data processing/analysis steps can be reproduced. These should be documented and referenced where appropriate. 
-
-:::::::::::::::::::::
+Many analyses are highly adjustable, with various different parameters, or settings, that can be changed depending on your analysis needs. Parameter files record these settings to ensure that your data processing and analysis steps can be reproduced.
 
 ---
 
@@ -599,38 +576,29 @@ Parameter files will depend on for project and/or software, but provide a record
 
 ## Write A README
 
- Create a `README.txt` file for the inherited project.
+Fill out the `README.txt` file for the inherited project.
 
- Include:
+Include
 
- - Project name
- - Project description
- - Folder structure
- - Data sources
- - Contact information
- - Last updated date
+- Project name
+- Project description
+- Folder structure
+- Data sources
+- Contact information
+- Last updated date
 
- You may need to make reasonable assumptions where information is missing.
+Make reasonable assumptions; if you inherit a real, poorly-documented project, you'd probably need to read through old project emails/messages, find the original project/grant proposals, and talk to current lab members to get all the README information.
 
- The goal is to make the project easier for a future collaborator to understand.
+The goal is to make the project easier for a future collaborator to understand.
 
 ::::::::::::::: solution
 
- There is no single correct answer.
+There is no single correct answer, but it should allow somebody unfamiliar with the project to begin understanding its contents.
 
- A successful README should clearly explain:
+Additional resources:
 
- - What the project is
- - What data exists
- - How the folders are organised
- - Who is responsible for the project
-
- It should allow somebody unfamiliar with the project to begin understanding its contents.
-
-Also, see the Newcastle University [Documentation](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/organise/) and Metadata page.
-
-
-Additional, subject specific suggestions can be found [here](https://www.dcc.ac.uk/guidance/standards/metadata) as well as data centre policies and information produced by funding agencies. 
+- Newcastle University's [Documentation](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/organise/) and Metadata guidance
+- The Digital Curation Centre's [subject-specific documentation guidance](https://www.dcc.ac.uk/guidance/standards/metadata)
 
 
 ::::::::::::::::::::

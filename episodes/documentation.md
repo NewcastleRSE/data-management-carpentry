@@ -260,7 +260,9 @@ If data sources are updated, for example to correct collection errors or acciden
 
 ::::::::::::::: challenge
 
-What things do you need to document to track the origin of the data for one of your projects?
+## Documenting your data's origins
+
+What things do you need to document to track data origin for one of your projects?
 
 Think about details you may need to 
 - report in a paper or other publication
@@ -289,6 +291,8 @@ Many projects involve extensive data analysis. This analysis needs to be well-do
 If you share your data, you also need to include any access conditions, such as restrictions for publishing or storing the data.
 
 :::::::::::::: challenge
+
+## Documenting your data analysis 
 
 Consider what information you should document on how you used and analysed the data during one of your project.
 

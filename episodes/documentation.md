@@ -232,7 +232,7 @@ but this name is long and still ambiguous. Additionally, a project's scope and g
 
 ---
 
-## Data descriptions
+### Data descriptions
 
 Describe the available datasets and folders.
 
@@ -253,7 +253,7 @@ This documentation helps people understand how to navigate your files and the re
 
 ---
 
-## Data origins
+### Data origins
 
 Data **provenance** - the full record of a dataset's origins and modifications - becomes increasingly important as projects grow, and certain projects may have strict rules for tracking providence. Some data sources include provenance information in file headers, while others store provenance in other locations. 
 
@@ -283,7 +283,7 @@ Possible information to document:
 
 ---
 
-## Data use and analysis
+### Data use and analysis
 
 Many projects involve extensive data analysis. This analysis needs to be well-documented to ensure anyone with the same data can reproduce your results.
 
@@ -311,7 +311,7 @@ These details can save future users significant amounts of time.
 
 ---
 
-## Contact details
+### Contact details
 
 Include contact information whenever possible, including for a primary contact, so that collaborators and other researchers can ask questions or raise concerns.
 
@@ -332,7 +332,7 @@ johndoe@biguniversity.ac.uk
 
 ---
 
-## README File(s)
+### README File(s)
 
 One of the simplest and most effective forms of documentation is a README file.
 
@@ -361,9 +361,7 @@ Keep files together with their READMEs if you exchange data with colleagues.
 
 :::::::::::::::::
 
----
-
-### Example README Structure
+#### Example README Structure
 
 Example template:
 
@@ -413,9 +411,6 @@ Last Updated:
 ```
 
 Another example can be found [here](https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt).
-
----
-
 
 :::::::::::::: challenge
 
@@ -494,9 +489,7 @@ Save the file.
 
 ::::::::::::::::::::::::::
 
----
-
-## Documentation Beyond The Top Level
+#### Documentation Beyond The Top Level
 
 Project-level documentation is important, but it is not always sufficient.
 
@@ -558,11 +551,11 @@ Consider different projects or subjects and why different folders might need dif
 
 ---
 
-## Other Useful Documentation
+### Other Useful Documentation
 
 Depending on the project, additional documentation might include:
 
-### Data Dictionaries
+#### Data Dictionaries
 
 These explain variables in tabular datasets.
 
@@ -576,9 +569,7 @@ For example:
 
 We will revisit this when discussing tabular data.
 
----
-
-### Standard Operating Procedures
+#### Standard Operating Procedures
 
 These describe how data is collected or processed.
 
@@ -589,9 +580,7 @@ sampling_protocol.txt
 ```
 Which contains a written description of the procedures used. 
 
----
-
-### Project Logs
+#### Project Logs
 
 These provide a record of major project decisions.
 
@@ -604,7 +593,7 @@ project_log.txt
 This can be particularly useful for long-running projects.
 
 
-### Parameter files
+#### Parameter files
 
 ::::::::::: callout
 

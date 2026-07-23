@@ -262,12 +262,22 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         8. Best Practices for Tabular Data
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#the-problem-tabular-data-is-everywhere-but-often-a-mess">The Problem: Tabular Data Is Everywhere, But Often a Mess</a></li>
+<li><a href="#why-these-issues-matter-human-readable-vs.-machine-readable">Why These Issues Matter: Human-Readable vs. Machine-Readable</a></li>
+<li><a href="#core-principles-of-tidy-tabular-data">Core Principles of Tidy Tabular Data</a></li>
+<li><a href="#version-control-for-data-files">Version Control for Data Files</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -339,7 +349,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Best Practices for Tabular Data</h1>
-        <p>Last updated on 2026-07-13 |
+        <p>Last updated on 2026-07-23 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/tabular-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -387,9 +397,8 @@ appropriate version control tools.</li>
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="the-problem-tabular-data-is-everywhere-but-often-a-mess">The Problem: Tabular Data Is Everywhere, But Often a Mess<a class="anchor" aria-label="anchor" href="#the-problem-tabular-data-is-everywhere-but-often-a-mess"></a></h1>
-<p>Tabular data—data organised in rows and columns such as CSV files and
+<section><h2 class="section-heading" id="the-problem-tabular-data-is-everywhere-but-often-a-mess">The Problem: Tabular Data Is Everywhere, But Often a Mess<a class="anchor" aria-label="anchor" href="#the-problem-tabular-data-is-everywhere-but-often-a-mess"></a></h2>
+<hr class="half-width"><p>Tabular data—data organised in rows and columns such as CSV files and
 Excel spreadsheets—is the most common format used across research
 disciplines. Whether you collect sensor output, clinical trial data, or
 survey responses, chances are high that your data lives in a table.</p>
@@ -406,9 +415,14 @@ statistical script. However:</p>
 </ul><p>Before writing analysis scripts or generating figures, we must learn
 how to spot these issues and transform messy tables into structured,
 standardized data.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="discussion-spotting-the-pitfalls-in-bad-data">Discussion: Spotting the Pitfalls in Bad Data<a class="anchor" aria-label="anchor" href="#discussion-spotting-the-pitfalls-in-bad-data"></a></h1>
+<hr><div id="spotting-the-pitfalls-in-bad-data" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="spotting-the-pitfalls-in-bad-data" class="callout-inner">
+<h3 class="callout-title">Spotting the Pitfalls in Bad Data</h3>
+<div class="callout-content">
 <p>Let’s start by inspecting a real-world example of a problematic
 dataset: <code>Incidence-Data(bad).csv</code>.</p>
 <pre class="text"><code>ID,table,diagnosis Year,Age Specific Incidence Age0_49,age Specific Incidence  Age 0-54,ageSpecificIncidenceAge 55-59,age SpecificIncidence Age60-64,ageSpecificIncidenceAge65_69,age Spes IncidenceAge70-74,Age_Specific_IncidenceAge75_79,Age80_84,Age85_89,Age 90
@@ -420,20 +434,22 @@ dataset: <code>Incidence-Data(bad).csv</code>.</p>
 6,All Oral,2020,0.80034059,6.8461018,9.9605932,12.894961,15.298739,16.424881,16.835621,17.944742,18.093088,20.342873
 ...
 </code></pre>
-<blockquote>
-<h2 id="discussion">Discussion</h2>
-<p>Working in pairs: Open <code>Incidence-Data(bad).csv</code> in Excel
-or your preferred spreadsheet viewer. Look closely at the header row,
-the values, and the overall layout. List as many data management issues
-as you can find. Consider: * Header names and formatting * Category
-values in rows * Blank cells and missing data * Units of measurement *
-Table structure and layout</p>
-</blockquote>
-<p><em>After 5 minutes, gather responses as a group.</em></p>
-<hr></div>
-<div class="section level1">
-<h1 id="why-these-issues-matter-human-readable-vs--machine-readable">Why These Issues Matter: Human-Readable vs. Machine-Readable<a class="anchor" aria-label="anchor" href="#why-these-issues-matter-human-readable-vs--machine-readable"></a></h1>
-<p>Human eyes are remarkably forgiving. When a human reads a
+<p>Working in pairs:</p>
+<p>Open <code>Incidence-Data(bad).csv</code> in Excel or your preferred
+spreadsheet viewer. Look closely at the header row, the values, and the
+overall layout. List as many data management issues as you can find.</p>
+<p>Consider:</p>
+<ul><li>Header names and formatting</li>
+<li>Category values in rows</li>
+<li>Blank cells and missing data</li>
+<li>Units of measurement</li>
+<li>Table structure and layout</li>
+</ul><p><em>After 5 minutes, gather responses as a group.</em></p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="why-these-issues-matter-human-readable-vs--machine-readable">Why These Issues Matter: Human-Readable vs. Machine-Readable<a class="anchor" aria-label="anchor" href="#why-these-issues-matter-human-readable-vs--machine-readable"></a></h2>
+<hr class="half-width"><p>Human eyes are remarkably forgiving. When a human reads a
 spreadsheet, they can instantly guess that <code>"All Oral"</code> and
 <code>"All Oral Cavity"</code> mean the same thing, or that a blank cell
 under the year <code>2018</code> probably means <code>2019</code>.</p>
@@ -495,10 +511,8 @@ specific annual data.</p>
 <code>table</code> are left blank because the author assumed the reader
 would know it “carried over” from the row above.</p>
 <hr></div>
-</div>
-<div class="section level1">
-<h1 id="core-principles-of-tidy-tabular-data">Core Principles of Tidy Tabular Data<a class="anchor" aria-label="anchor" href="#core-principles-of-tidy-tabular-data"></a></h1>
-<p>To make tabular data easy to analyze, archive, and share, adhere to
+</section><section><h2 class="section-heading" id="core-principles-of-tidy-tabular-data">Core Principles of Tidy Tabular Data<a class="anchor" aria-label="anchor" href="#core-principles-of-tidy-tabular-data"></a></h2>
+<hr class="half-width"><p>To make tabular data easy to analyze, archive, and share, adhere to
 three core rules of <strong>Tidy Data</strong>:</p>
 <ol style="list-style-type: decimal"><li>
 <strong>Each variable forms a column:</strong> Do not mix multiple
@@ -511,33 +525,66 @@ represent a single timepoint, subject, or experimental run.</li>
 <strong>Each cell contains a single value:</strong> Do not embed
 units, notes, or multiple values in a single cell.</li>
 </ol><pre class="text"><code>Good Header Example:
-id, category, diagnosis_year, incidence_per_100k_age_0_49, incidence_per_100k_age_50_54
-</code></pre>
-<blockquote>
-<h2 id="golden-rules-for-clean-headers">Golden Rules for Clean
-Headers</h2>
+id, category, diagnosis_year, incidence_per_100k_age_0_49, incidence_per_100k_age_50_54</code></pre>
+<p>or for an alternative example dataset where this might not be
+appropriate:</p>
+<pre class="text"><code>id, location, date,    object, spectral_flux_density
+  ,         , YY-MM-DD,      , 10^-23.erg.s^-1.cm^-2.Hz^-1         </code></pre>
+<p>Here there is a new row for the units because they can become
+unwieldy and hard to read in the header name. Use your own judgement and
+the conventions of your discipline.</p>
+<ul><li>This unit, used in radio astronomy for the spectral energy density,
+can also be written as the none SI/CGS unit, Jy (Jansky), but is
+included here as an example using the largely superceded CGS unit system
+for dramatic illustration (!). See: “IAU Style Manual” by G.A. Wilkins,
+Comm. 5, in IAU Transactions XXB (1989)”</li>
+</ul><div id="golden-rules-for-clean-headers" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="golden-rules-for-clean-headers" class="callout-inner">
+<h3 class="callout-title">Golden Rules for Clean Headers</h3>
+<div class="callout-content">
 <ul><li>Use lowercase letters.</li>
 <li>Use underscores (<code>_</code>) instead of spaces.</li>
 <li>Avoid special characters (<code>?</code>, <code>$</code>,
 <code>%</code>, <code>-</code>, <code>/</code>, <code>#</code>).</li>
 <li>Keep names descriptive but concise.</li>
 <li>Include units directly in the header (e.g., <code>weight_kg</code>,
-<code>temp_celsius</code>, <code>incidence_per_100k</code>).</li>
-</ul></blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="demonstration-cleaning-data-in-excel">Demonstration: Cleaning Data in Excel<a class="anchor" aria-label="anchor" href="#demonstration-cleaning-data-in-excel"></a></h1>
-<p>We will now walk through practical steps to fix these issues in Excel
-(or LibreOffice Calc / Google Sheets) without altering the underlying
-raw data.</p>
-<blockquote>
-<h2 id="instructor-note">Instructor Note</h2>
+<code>temp_celsius</code>, <code>incidence_per_100k</code>). If this is
+not reasonable place units in the next row or column to the column
+name.</li>
+</ul></div>
+</div>
+</div>
+<hr><div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
+  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
+</button>
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div class="accordion-body">
 <p>Emphasize preserving the original raw file! Always save your cleaned
 dataset under a new filename (e.g.,
 <code>Incidence-Data_clean.csv</code>) or work on a copy.</p>
-</blockquote>
-<hr><div class="section level2">
-<h2 id="step-1-standardising-column-headers">Step 1: Standardising Column Headers<a class="anchor" aria-label="anchor" href="#step-1-standardising-column-headers"></a></h2>
+</div>
+</div>
+</div>
+</div>
+<div id="demonstration-cleaning-data-in-excel" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="demonstration-cleaning-data-in-excel" class="callout-inner">
+<h3 class="callout-title">Demonstration: Cleaning Data in Excel</h3>
+<div class="callout-content">
+<p>Follow along with the various practical steps to fix these issues in
+Excel (or LibreOffice Calc / Google Sheets) without altering the
+underlying raw data.</p>
+<hr><div class="section level3">
+<h3 id="step-1-standardising-column-headers">Step 1: Standardising Column Headers<a class="anchor" aria-label="anchor" href="#step-1-standardising-column-headers"></a></h3>
 <ol style="list-style-type: decimal"><li>Open <code>Incidence-Data(bad).csv</code> in Excel.</li>
 <li>Select Row 1 (the header row).</li>
 <li>Systematically rename headers to follow a single, consistent naming
@@ -559,8 +606,8 @@ standardized naming</td>
 <td><code>incidence_per_100k_age_80_84</code></td>
 <td>Restored missing variable prefix</td>
 </tr></tbody></table><hr></div>
-<div class="section level2">
-<h2 id="step-2-bulk-fixes-using-find-and-replace">Step 2: Bulk Fixes Using Find and Replace<a class="anchor" aria-label="anchor" href="#step-2-bulk-fixes-using-find-and-replace"></a></h2>
+<div class="section level3">
+<h3 id="step-2-bulk-fixes-using-find-and-replace">Step 2: Bulk Fixes Using Find and Replace<a class="anchor" aria-label="anchor" href="#step-2-bulk-fixes-using-find-and-replace"></a></h3>
 <p>Manually retyping mismatched category names across thousands of rows
 is slow and error-prone. We can use Excel’s <strong>Find and
 Replace</strong> tool to perform bulk corrections.</p>
@@ -580,8 +627,8 @@ avoid accidental partial matches.</li>
 </ol><p>Excel will report how many replacements were made, ensuring all rows
 now use a single category label.</p>
 <hr></div>
-<div class="section level2">
-<h2 id="step-3-handling-missing-values-and-stacked-tables">Step 3: Handling Missing Values and Stacked Tables<a class="anchor" aria-label="anchor" href="#step-3-handling-missing-values-and-stacked-tables"></a></h2>
+<div class="section level3">
+<h3 id="step-3-handling-missing-values-and-stacked-tables">Step 3: Handling Missing Values and Stacked Tables<a class="anchor" aria-label="anchor" href="#step-3-handling-missing-values-and-stacked-tables"></a></h3>
 <p>To convert stacked tables into a single, clean table:</p>
 <ol style="list-style-type: decimal"><li>
 <strong>Fill in implicit missing values:</strong> If rows 5 and 9
@@ -598,41 +645,59 @@ remove summary rows like <code>All Years</code> if you plan to aggregate
 data programmatically, or move distinct sub-tables into separate CSV
 files if they represent fundamentally different experimental
 structures.</li>
-</ol><hr></div>
+</ol></div>
 </div>
-<div class="section level1">
-<h1 id="exercise-cleaning-the-incidence-dataset">Exercise: Cleaning the Incidence Dataset<a class="anchor" aria-label="anchor" href="#exercise-cleaning-the-incidence-dataset"></a></h1>
-<blockquote>
-<h2 id="challenge">Challenge</h2>
-<p>Working with your copy of <code>Incidence-Data(bad).csv</code>: 1.
-Use <strong>Find and Replace</strong> to standardise any inconsistent
-category names in the <code>table</code> column. 2. Standardize the
-headers for age groups <code>Age85_89</code> and <code>Age 90</code> so
-they match the format of the other age columns
+</div>
+</div>
+<hr><div id="cleaning-the-incidence-dataset" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="cleaning-the-incidence-dataset" class="callout-inner">
+<h3 class="callout-title">Cleaning the Incidence Dataset</h3>
+<div class="callout-content">
+<p>Working with your copy of <code>Incidence-Data(bad).csv</code>:</p>
+<ol style="list-style-type: decimal"><li>Use <strong>Find and Replace</strong> to standardise any
+inconsistent category names in the <code>table</code> column.</li>
+<li>Standardize the headers for age groups <code>Age85_89</code> and
+<code>Age 90</code> so they match the format of the other age columns
 (<code>incidence_per_100k_age_85_89</code> and
-<code>incidence_per_100k_age_90_plus</code>). 3. Fill in missing values
-in the <code>diagnosis_year</code> column where values were implicitly
-omitted. 4. Delete the blank row dividers. 5. Save the modified file as
-<code>Incidence-Data_clean.csv</code>.</p>
-<p>Compare your cleaned file with a partner. Are all header names
+<code>incidence_per_100k_age_90_plus</code>).</li>
+<li>Fill in missing values in the <code>diagnosis_year</code> column
+where values were implicitly omitted.</li>
+<li>Delete the blank row dividers.</li>
+<li>Save the modified file as
+<code>Incidence-Data_clean.csv</code>.</li>
+</ol><p>Compare your cleaned file with a partner. Are all header names
 identical?</p>
-</blockquote>
-<blockquote>
-<h2 id="solution">Solution</h2>
-<p>A clean version of the dataset should have: * Uniform headers across
-all columns without spaces or special characters. * Units
-(<code>per_100k</code>) included in the header metadata or documented
-clearly. * No blank separator rows. * Explicit values in every row (no
-implied carry-overs). * Consistent category labels
-(<code>All Oral Cavity</code> throughout).</p>
-</blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="version-control-for-data-files">Version Control for Data Files<a class="anchor" aria-label="anchor" href="#version-control-for-data-files"></a></h1>
-<p>Once you have spent time cleaning a dataset, how do you manage
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>A clean version of the dataset should have:</p>
+<ul><li>Uniform headers across all columns without spaces or special
+characters. * Units (<code>per_100k</code>) included in the header
+metadata or documented clearly.</li>
+<li>No blank separator rows.</li>
+<li>Explicit values in every row (no implied carry-overs).</li>
+<li>Consistent category labels (<code>All Oral Cavity</code>
+throughout).</li>
+</ul></div>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="version-control-for-data-files">Version Control for Data Files<a class="anchor" aria-label="anchor" href="#version-control-for-data-files"></a></h2>
+<hr class="half-width"><p>Once you have spent time cleaning a dataset, how do you manage
 changes as the project evolves?</p>
-<div class="section level2">
-<h2 id="the-problem-with-file-naming-version-control">The Problem with File-Naming “Version Control”<a class="anchor" aria-label="anchor" href="#the-problem-with-file-naming-version-control"></a></h2>
+<div class="section level3">
+<h3 id="the-problem-with-file-naming-version-control">The Problem with File-Naming “Version Control”<a class="anchor" aria-label="anchor" href="#the-problem-with-file-naming-version-control"></a></h3>
 <p>It is common to see project folders filled with files like:</p>
 <pre class="text"><code><span><span class="va">Incidence</span><span class="op">-</span><span class="va">Data_clean.csv</span></span>
 <span><span class="va">Incidence</span><span class="op">-</span><span class="va">Data_clean_v2.csv</span></span>
@@ -643,12 +708,12 @@ the true “current” version, and makes it impossible to track
 <em>what</em> changed, <em>why</em> it changed, and <em>who</em> changed
 it.</p>
 <hr></div>
-<div class="section level2">
-<h2 id="version-control-strategies-for-research-data">Version Control Strategies for Research Data<a class="anchor" aria-label="anchor" href="#version-control-strategies-for-research-data"></a></h2>
+<div class="section level3">
+<h3 id="version-control-strategies-for-research-data">Version Control Strategies for Research Data<a class="anchor" aria-label="anchor" href="#version-control-strategies-for-research-data"></a></h3>
 <p>Depending on your data size and computational setup, several
 strategies exist for tracking changes:</p>
-<div class="section level3">
-<h3 id="separation-of-raw-and-processed-data">1. Separation of Raw and Processed Data<a class="anchor" aria-label="anchor" href="#separation-of-raw-and-processed-data"></a></h3>
+<div class="section level4">
+<h4 id="separation-of-raw-and-processed-data">1. Separation of Raw and Processed Data<a class="anchor" aria-label="anchor" href="#separation-of-raw-and-processed-data"></a></h4>
 <p>Never modify your original raw dataset. Maintain a strict directory
 structure:</p>
 <ul><li>
@@ -658,15 +723,15 @@ modified).</li>
 <code>data/processed/</code>: Cleaned, standardized outputs
 generated by documented steps or scripts.</li>
 </ul></div>
-<div class="section level3">
-<h3 id="cloud-and-storage-revision-histories">2. Cloud and Storage Revision Histories<a class="anchor" aria-label="anchor" href="#cloud-and-storage-revision-histories"></a></h3>
+<div class="section level4">
+<h4 id="cloud-and-storage-revision-histories">2. Cloud and Storage Revision Histories<a class="anchor" aria-label="anchor" href="#cloud-and-storage-revision-histories"></a></h4>
 <p>Platforms like OneDrive, SharePoint, and institutional research data
 repositories automatically record file version histories. If you
 accidentally overwrite a spreadsheet, you can restore previous versions
 through the cloud provider’s web interface.</p>
 </div>
-<div class="section level3">
-<h3 id="formal-version-control-with-git">3. Formal Version Control with Git<a class="anchor" aria-label="anchor" href="#formal-version-control-with-git"></a></h3>
+<div class="section level4">
+<h4 id="formal-version-control-with-git">3. Formal Version Control with Git<a class="anchor" aria-label="anchor" href="#formal-version-control-with-git"></a></h4>
 <p>For researchers working with text-based tabular files (such as CSVs,
 TSVs) and processing scripts (Python, R, MATLAB), formal version control
 systems like <strong>Git</strong> offer the gold standard for tracking
@@ -675,17 +740,17 @@ history.</p>
 <ul><li>View exact line-by-line differences between file versions.</li>
 <li>Revert to any previous state if an error is introduced.</li>
 <li>Collaborate safely without overwriting a colleague’s work.</li>
-</ul><blockquote>
-<h2 id="further-learning-version-control-with-git">Further Learning:
-Version Control with Git</h2>
+</ul></div>
+</div>
+<div class="section level3">
+<h3 id="further-learning-version-control-with-git">Further Learning: Version Control with Git<a class="anchor" aria-label="anchor" href="#further-learning-version-control-with-git"></a></h3>
 <p>Demonstrating Git is beyond the scope of this introductory lesson,
 but learning Git is highly recommended for any researcher handling data
 and code. If you want to learn how to track changes, collaborate
 effectively, and manage versions using Git, consider signing up for our
-companion workshop: * <strong>Software Carpentries: Version Control with
-Git</strong></p>
-</blockquote>
-<hr><div id="keypoints1" class="callout keypoints">
+companion workshop:</p>
+<ul><li><strong>Software Carpentries: Version Control with Git</strong></li>
+</ul><hr><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -713,12 +778,7 @@ Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
 </div>
-</div>
-</div>
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/deleting-data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/data-formats.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -778,8 +838,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/instructor/tabular-data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/tabular-data.html",
   "dateCreated": "2026-07-01",
-  "dateModified": "2026-07-13",
-  "datePublished": "2026-07-22"
+  "dateModified": "2026-07-23",
+  "datePublished": "2026-07-23"
 }
 
   </script><script>

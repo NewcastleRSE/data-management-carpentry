@@ -208,12 +208,26 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         2. Choosing the Right File Structures
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#file-structures">File Structures</a></li>
+<li><a href="#why-folder-structures-matter">Why Folder Structures Matter</a></li>
+<li><a href="#principles-of-good-folder-structures">Principles of Good Folder Structures</a></li>
+<li><a href="#moving-files-and-folders">Moving Files and Folders</a></li>
+<li><a href="#renaming-folders">Renaming Folders</a></li>
+<li><a href="#deleting-unnecessary-folders">Deleting Unnecessary Folders</a></li>
+<li><a href="#designing-a-better-structure">Designing a Better Structure</a></li>
+<li><a href="#looking-ahead">Looking Ahead</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -339,7 +353,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Choosing the Right File Structures</h1>
-        <p>Last updated on 2026-07-02 |
+        <p>Last updated on 2026-07-23 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/file-structures.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -387,11 +401,10 @@ reproducibility.</li>
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="file-structures">File Structures<a class="anchor" aria-label="anchor" href="#file-structures"></a></h1>
-<p>In the previous episode we located the dataset that was handed over
-by our departed collaborator.</p>
-<p>Unfortunately, finding the data is only the first challenge.</p>
+<section><h2 class="section-heading" id="file-structures">File Structures<a class="anchor" aria-label="anchor" href="#file-structures"></a></h2>
+<hr class="half-width"><p>In the previous episode we located the dataset that was handed over
+by our departed collaborator. Unfortunately, finding the data is only
+the first challenge.</p>
 <p>The project structure itself is difficult to understand:</p>
 <pre class="text"><code>legacy_dataset/
 ├── New Folder/
@@ -420,20 +433,27 @@ by our departed collaborator.</p>
 <li>Which files are temporary?</li>
 <li>Which files should be preserved?</li>
 <li>Which files can be deleted?</li>
-</ul><p>For most people, the answer is “probably not”.</p>
+</ul><p>For most people, the answer is “probably not”. Even if details are
+stored in lab notes, these can easily be misplaced.</p>
 <p>Before we worry about individual files, we need to make sure the
 overall project structure makes sense.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="why-folder-structures-matter">Why Folder Structures Matter<a class="anchor" aria-label="anchor" href="#why-folder-structures-matter"></a></h1>
-<p>Most research projects start small.</p>
-<p>Initially a project might contain only a few files:</p>
+<hr></section><section><h2 class="section-heading" id="why-folder-structures-matter">Why Folder Structures Matter<a class="anchor" aria-label="anchor" href="#why-folder-structures-matter"></a></h2>
+<hr class="half-width"><p>Most research projects start small with only a few files:</p>
 <pre class="text"><code>project/
 ├── data.csv
 ├── notes.docx
 └── report.docx</code></pre>
-<p>At this stage organisation seems unnecessary.</p>
-<p>However, projects rarely stay this simple.</p>
+<p>At this stage organisation may seem unnecessary. However, projects
+rarely stay this simple. More data is added or revised, code is written,
+plots are generated, and papers/reports/theses are written… and
+revised.</p>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
 <p>As projects grow we often accumulate:</p>
 <ul><li>Raw data</li>
 <li>Processed data</li>
@@ -441,9 +461,18 @@ overall project structure makes sense.</p>
 <li>Figures</li>
 <li>Documentation</li>
 <li>Draft manuscripts</li>
+<li>Collaborator comments</li>
 <li>Software scripts</li>
 <li>Temporary files</li>
-</ul><p>A project that starts with three files may eventually contain
+<li>Meeting minutes</li>
+<li>Downloaded software</li>
+<li>Software or equipment manuals</li>
+<li>Various notes</li>
+<li>Talks and presentations</li>
+</ul></div>
+</div>
+</div>
+<p>A project that starts with three files may eventually contain
 hundreds or thousands.</p>
 <p>Without a clear structure, researchers often experience:</p>
 <ul><li>Time wasted searching for files</li>
@@ -456,16 +485,43 @@ hundreds or thousands.</p>
 <li>Understand</li>
 <li>Collaborate on</li>
 <li>Maintain over time</li>
-</ul><p>A useful rule of thumb is:</p>
+</ul><p>A useful rule of thumb is</p>
 <blockquote>
 <p>A collaborator should be able to understand where files belong
 without asking you.</p>
 </blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="discussion-whats-wrong-with-this-structure">Discussion: What’s Wrong With This Structure?<a class="anchor" aria-label="anchor" href="#discussion-whats-wrong-with-this-structure"></a></h1>
-<blockquote>
-<h2 id="discussion">Discussion</h2>
+<div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>The best practice is to plan for expansion rather than reorganising
+files later, which can lead to incorrect file paths and references in
+files such as software scripts or lab notes.</p>
+<p>Establish a possible file structure early in the project, while being
+flexible if new folders or files need to be added or moved.</p>
+<p>Some of this organisation depends on personal preference. For
+example,</p>
+<ul><li>Do you want to store a seminar or conference presentation with the
+project, or with other talks elsewhere?</li>
+<li>Should a paper, along with generated figures, be kept together with
+the rest of the project?</li>
+</ul><p>If these files are stored elsewhere, can you to find the origin of
+figures and other results when you write a paper in six months time? If
+you move a folder, will your file references still work?</p>
+</div>
+</div>
+</div>
+<div id="whats-wrong-with-this-structure" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="whats-wrong-with-this-structure" class="callout-inner">
+<h3 class="callout-title">What’s Wrong With This Structure?</h3>
+<div class="callout-content">
 <p>Working in groups of 2–3:</p>
 <p>Spend 5 minutes exploring the inherited dataset.</p>
 <p>Identify as many problems as you can.</p>
@@ -477,10 +533,19 @@ without asking you.</p>
 <li>Clarity</li>
 <li>Consistency</li>
 </ul><p>Write down your observations.</p>
-</blockquote>
 <p>After 5 minutes, bring the class back together and discuss.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
 <p>Common observations often include:</p>
-<ul><li>Generic names such as <code>New Folder</code>
+<ul><li>Default names such as <code>New Folder</code>
 </li>
 <li>Unclear names such as <code>miscellaneous</code>
 </li>
@@ -489,51 +554,116 @@ without asking you.</p>
 <li>Mixed file types within the same folder</li>
 <li>Folders whose purpose is unclear</li>
 <li>Temporary files mixed with project files</li>
-</ul><hr></div>
-<div class="section level1">
-<h1 id="principles-of-good-folder-structures">Principles of Good Folder Structures<a class="anchor" aria-label="anchor" href="#principles-of-good-folder-structures"></a></h1>
-<p>There is no single correct folder structure.</p>
-<p>Different projects have different requirements.</p>
+</ul></div>
+</div>
+</div>
+</div>
+
+<hr></section><section><h2 class="section-heading" id="principles-of-good-folder-structures">Principles of Good Folder Structures<a class="anchor" aria-label="anchor" href="#principles-of-good-folder-structures"></a></h2>
+<hr class="half-width"><p>There is no single correct folder structure because different
+projects have different requirements.</p>
 <p>However, most successful structures share common characteristics.</p>
-<div class="section level2">
-<h2 id="use-meaningful-names">Use Meaningful Names<a class="anchor" aria-label="anchor" href="#use-meaningful-names"></a></h2>
-<p>Folder names should communicate purpose.</p>
-<p>Good examples:</p>
-<pre class="text"><code><span><span class="va">raw_data</span></span>
-<span><span class="va">processed_data</span></span>
-<span><span class="va">analysis</span></span>
-<span><span class="va">documentation</span></span>
-<span><span class="va">figures</span></span></code></pre>
-<p>Poor examples:</p>
+<ul><li>Meaningful</li>
+<li>Consistent</li>
+<li>Shallow</li>
+<li>Categorical</li>
+<li>Able to archive old files</li>
+</ul><div id="discussion1" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>After looking at the Poor examples in each subsection below, try and
+come up with some good examples before clicking the Good tab.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="meaningful">Meaningful<a class="anchor" aria-label="anchor" href="#meaningful"></a></h3>
+<p>Folder names should communicate purpose. For example,</p>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-1" type="button" role="tab" aria-controls="nav-tabpanel-1-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-2" type="button" role="tab" aria-controls="nav-tabpanel-1-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
 <pre class="text"><code><span><span class="va">stuff</span></span>
 <span><span class="va">miscellaneous</span></span>
 <span><span class="va">new_folder</span></span>
 <span><span class="va">files</span></span>
 <span><span class="va">things</span></span></code></pre>
-<p>Ask yourself:</p>
-<blockquote>
-<p>If somebody joined the project tomorrow, would they understand what
-belongs in this folder?</p>
-</blockquote>
-<hr></div>
-<div class="section level2">
-<h2 id="be-consistent">Be Consistent<a class="anchor" aria-label="anchor" href="#be-consistent"></a></h2>
-<p>Consistency is more important than perfection.</p>
-<p>Choose a style and use it throughout the project.</p>
-<p>For example:</p>
+</div>
+<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
 <pre class="text"><code><span><span class="va">raw_data</span></span>
 <span><span class="va">processed_data</span></span>
 <span><span class="va">analysis</span></span>
-<span><span class="va">documentation</span></span></code></pre>
-<p>is easier to understand than:</p>
+<span><span class="va">documentation</span></span>
+<span><span class="va">figures</span></span></code></pre>
+</div>
+</div>
+</div>
+<div id="callout3" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>If somebody joined the project tomorrow, would they understand what
+belongs in this folder?</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="consistent">Consistent<a class="anchor" aria-label="anchor" href="#consistent"></a></h3>
+<p>Consistency is more important than perfection. Choose a particular
+style and use it throughout the project. This approach makes the
+structure easier to understand because all folders follow the same
+convention. For example,</p>
+<div class="tabs">
+<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-2-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-1" type="button" role="tab" aria-controls="nav-tabpanel-2-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-2-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-2-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-2" type="button" role="tab" aria-controls="nav-tabpanel-2-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-2-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-2" class="tab-content">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
 <pre class="text"><code>RawData
 processed-data
 Analysis Files
 documents_and_notes</code></pre>
-<p>because all folders follow the same convention.</p>
+</div>
+<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
+<pre class="text"><code><span><span class="va">raw_data</span></span>
+<span><span class="va">processed_data</span></span>
+<span><span class="va">analysis</span></span>
+<span><span class="va">documentation</span></span></code></pre>
+</div>
+</div>
+</div>
 <hr></div>
-<div class="section level2">
-<h2 id="keep-structures-relatively-shallow">Keep Structures Relatively Shallow<a class="anchor" aria-label="anchor" href="#keep-structures-relatively-shallow"></a></h2>
+<div class="section level3">
+<h3 id="shallow">Shallow<a class="anchor" aria-label="anchor" href="#shallow"></a></h3>
 <p>Deeply nested structures can become difficult to navigate.</p>
 <p>Avoid situations like:</p>
 <pre class="text"><code>Project/
@@ -549,18 +679,67 @@ track of files.</p>
 <ul><li>3–4 levels deep is often sufficient</li>
 <li>Create more folders horizontally before creating more levels
 vertically</li>
-</ul><hr></div>
-<div class="section level2">
-<h2 id="separate-different-types-of-content">Separate Different Types of Content<a class="anchor" aria-label="anchor" href="#separate-different-types-of-content"></a></h2>
-<p>A common source of confusion is mixing everything together.</p>
-<p>For example:</p>
+</ul><p>Avoid using the folder hierarchy to encode too much information. For
+example</p>
+<pre class="text"><code>Project/
+└── Data/
+    └── Raw/
+        └── 2025/
+            └── 05/
+                └── 06/
+                    └── 01/
+                        └── Newcastle/
+                            └── A_roads/
+                                └── UserID12345/
+                                └── UserID53546/
+                            └── Minor_roads/
+                                └── UserID35790/
+                                └── UserID53546/
+                        └── Gateshead/
+                    └── 02/
+                        └── Sunderland/
+                    └── 03/
+                        └── Results/                    </code></pre>
+<p>At best, this approach results in a lot of additional clicks in a
+file explorer or typing in a terminal/scripts. It can also make analyses
+unwieldy if you need to collect data from many different subfolders
+(e.g., if you want to analyse all of Newcastle’s data from the example
+above).</p>
+<p>At worst, file metadata, such as city and datetime in this example,
+can be irrevocably lost if files are moved from their original location.
+As such, metadata should ideally be stored in the files themselves or in
+a reference table with the filenames, rather than in the folder
+structure.</p>
+</div>
+<div class="section level3">
+<h3 id="categorical">Categorical<a class="anchor" aria-label="anchor" href="#categorical"></a></h3>
+<p>A common source of confusion is mixing different types of data and
+files together so that plots, data, reports, analyses, and scripts are
+all stored in the same folder. Instead, group related materials in the
+same folder.</p>
+<div class="tabs">
+<nav><div id="nav-tab-3" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-3-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-1" type="button" role="tab" aria-controls="nav-tabpanel-3-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-3-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-3-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-2" type="button" role="tab" aria-controls="nav-tabpanel-3-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-3-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-3" class="tab-content">
+<div id="nav-tabpanel-3-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-1">
 <pre class="text"><code>project/
 ├── raw_data.csv
 ├── final_figure.png
 ├── manuscript.docx
 ├── script.py
 └── notes.txt</code></pre>
-<p>Instead, group related materials:</p>
+</div>
+<div id="nav-tabpanel-3-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-2">
 <pre class="text"><code>project/
 ├── data/
 │   ├── raw/
@@ -571,114 +750,315 @@ vertically</li>
 ├── figures/
 │
 └── documentation/</code></pre>
-<p>This makes it easier to know where new files belong.</p>
-<hr></div>
-<div class="section level2">
-<h2 id="archive-rather-than-hoard">Archive Rather Than Hoard<a class="anchor" aria-label="anchor" href="#archive-rather-than-hoard"></a></h2>
-<p>Many researchers hesitate to delete anything.</p>
-<p>As a result they accumulate folders full of obsolete material.</p>
-<p>Instead, consider creating an archive folder:</p>
-<pre class="text"><code>archive/</code></pre>
-<p>This allows old material to be retained without cluttering the active
-project structure.</p>
-<p>We will discuss retention and archiving in a later episode.</p>
-<hr></div>
 </div>
-<div class="section level1">
-<h1 id="moving-files-and-folders">Moving Files and Folders<a class="anchor" aria-label="anchor" href="#moving-files-and-folders"></a></h1>
-<p>Now that we know what good structures look like, we need the
-practical skills required to improve them.</p>
+</div>
+</div>
+<p>This structure makes it easier to know where new files belong and
+find existing files, even if you’re new to the project.</p>
+<div id="caution1" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Know where any private/secure data is to minimise the chance of GDPR
+violations.</p>
+</div>
+</div>
+</div>
+<hr></div>
+<div class="section level3">
+<h3 id="archive-rather-than-hoard">Archive Rather Than Hoard<a class="anchor" aria-label="anchor" href="#archive-rather-than-hoard"></a></h3>
+<p>Many researchers hesitate to delete anything. As a result, they
+accumulate folders full of obsolete material. Instead, consider creating
+an archive folder:</p>
+<pre class="text"><code>archive/</code></pre>
+<p>This approach allows old material to be retained without cluttering
+the active project structure.</p>
+<p>We will discuss data retention in a later episode.</p>
+<hr></div>
+</section><section><h2 class="section-heading" id="moving-files-and-folders">Moving Files and Folders<a class="anchor" aria-label="anchor" href="#moving-files-and-folders"></a></h2>
+<hr class="half-width"><p>Now that we know what good structures look like, we need the
+practical skills to improve existing structures.</p>
 <p>The first operation is moving content.</p>
-<div class="section level2">
-<h2 id="demonstration-moving-a-folder">Demonstration: Moving a Folder<a class="anchor" aria-label="anchor" href="#demonstration-moving-a-folder"></a></h2>
-<p>In File Explorer:</p>
+<div class="section level3">
+<h3 id="how-to-move-a-folder">How to Move a Folder<a class="anchor" aria-label="anchor" href="#how-to-move-a-folder"></a></h3>
+<div class="tabs">
+<nav><div id="nav-tab-4" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-4-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-1" type="button" role="tab" aria-controls="nav-tabpanel-4-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-4-1">
+  Click and Drag
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-4-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-2" type="button" role="tab" aria-controls="nav-tabpanel-4-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-4-2">
+  Cut and Paste
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-4-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-3" type="button" role="tab" aria-controls="nav-tabpanel-4-3" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-4-3">
+  Keyboard shortcuts
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-4" class="tab-content">
+<div id="nav-tabpanel-4-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-1">
+<p><strong>All operating systems</strong></p>
+<p>In File Explorer/Finder:</p>
 <ol style="list-style-type: decimal"><li>Open the dataset folder.</li>
 <li>Locate the folder:</li>
 </ol><pre class="text"><code><span><span class="va">raw_images_TEMP</span></span></code></pre>
 <ol start="3" style="list-style-type: decimal"><li>Click and hold the folder.</li>
 <li>Drag it to a more appropriate parent folder.</li>
 <li>Release the mouse button.</li>
-</ol><p>Alternatively:</p>
+</ol></div>
+<div id="nav-tabpanel-4-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-2">
+<p><strong>Windows</strong></p>
 <ol style="list-style-type: decimal"><li>Right-click the folder.</li>
 <li>Select <strong>Cut</strong>.</li>
 <li>Navigate to the destination.</li>
 <li>Right-click.</li>
 <li>Select <strong>Paste</strong>.</li>
-</ol><p>The instructor should demonstrate both methods.</p>
-<blockquote>
-<h2 id="instructor-note-1">Instructor Note</h2>
-<p>Learners often find drag-and-drop easier initially.</p>
-<p>However, introducing Cut and Paste provides a useful alternative when
-folders are not visible on screen simultaneously.</p>
-</blockquote>
-<hr></div>
+</ol><p><strong>macOS</strong></p>
+<ol style="list-style-type: decimal"><li>Right-click the folder.</li>
+<li>Select <strong>Copy</strong>.</li>
+<li>Navigate to the destination.</li>
+<li>Right-click and press <strong>option</strong>
+</li>
+<li>Select <strong>Move item here</strong>.</li>
+</ol><p><strong>Linux</strong></p>
+<p>Depends on the operating system, but most use the same approach as
+Windows.</p>
 </div>
-<div class="section level1">
-<h1 id="renaming-files-and-folders">Renaming Files and Folders<a class="anchor" aria-label="anchor" href="#renaming-files-and-folders"></a></h1>
-<p>Naming is one of the simplest improvements we can make.</p>
-<div class="section level2">
-<h2 id="demonstration-renaming-a-folder">Demonstration: Renaming a Folder<a class="anchor" aria-label="anchor" href="#demonstration-renaming-a-folder"></a></h2>
-<p>Consider:</p>
+<div id="nav-tabpanel-4-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-3">
+<p><strong>Windows/Linux</strong></p>
+<ol style="list-style-type: decimal"><li>Left-click the folder.</li>
+<li>Press <strong>ctrl+x</strong>
+</li>
+<li>Navigate to the destination.</li>
+<li>Press <strong>ctrl+v</strong>
+</li>
+</ol><p><strong>macOs</strong></p>
+<ol style="list-style-type: decimal"><li>Left-click the folder.</li>
+<li>Press <strong>cmd+x</strong>
+</li>
+<li>Navigate to the destination.</li>
+<li>Press <strong>cmd+v</strong>
+</li>
+</ol></div>
+</div>
+</div>
+
+<hr></div>
+</section><section><h2 class="section-heading" id="renaming-folders">Renaming Folders<a class="anchor" aria-label="anchor" href="#renaming-folders"></a></h2>
+<hr class="half-width"><p>Renaming is one of the simplest improvements we can make to the file
+organisation. However, be aware that renaming can have unintended
+consequences if existing files depend on those names; for example, you
+may need to update folder references in the project’s documentation or
+code.</p>
+<div id="discussion2" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Choose a better name for the folder in the Poor example, then see one
+potential better name in the Good tab.</p>
+<div class="tabs">
+<nav><div id="nav-tab-5" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-5-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-1" type="button" role="tab" aria-controls="nav-tabpanel-5-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-5-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-5-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-2" type="button" role="tab" aria-controls="nav-tabpanel-5-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-5-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-5" class="tab-content">
+<div id="nav-tabpanel-5-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-5-1">
 <pre class="text"><code>RAW_DATA_!!!</code></pre>
-<p>The name communicates intent, but the punctuation is unnecessary.</p>
-<p>A clearer alternative might be:</p>
+<p>The name communicates intent, but the punctuation is unnecessary and
+has ambiguous meaning.</p>
+</div>
+<div id="nav-tabpanel-5-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-5-2">
+<p>A clearer alternative is</p>
 <pre class="text"><code><span><span class="va">raw_data</span></span></code></pre>
-<p>To rename a folder:</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="how-to-rename-a-folder">How to Rename a Folder<a class="anchor" aria-label="anchor" href="#how-to-rename-a-folder"></a></h3>
+<div class="tabs">
+<nav><div id="nav-tab-6" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-6-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-6-1" type="button" role="tab" aria-controls="nav-tabpanel-6-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-6-1">
+  Right-click
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-6-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-6-2" type="button" role="tab" aria-controls="nav-tabpanel-6-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-6-2">
+  Via folder selection
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-6" class="tab-content">
+<div id="nav-tabpanel-6-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-6-1">
+<p><strong>All operating systems</strong></p>
 <ol style="list-style-type: decimal"><li>Right-click the folder.</li>
 <li>Select <strong>Rename</strong>.</li>
 <li>Enter the new name.</li>
 <li>Press Enter.</li>
-</ol><p>Alternatively:</p>
-<ol style="list-style-type: decimal"><li>Select the folder.</li>
+</ol></div>
+<div id="nav-tabpanel-6-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-6-2">
+<p><strong>Windows</strong></p>
+<ol style="list-style-type: decimal"><li>Select the folder by left-clicking on it.</li>
 <li>Press <strong>F2</strong>.</li>
 <li>Enter the new name.</li>
-</ol><p>Demonstrate both methods.</p>
-<blockquote>
-<h2 id="callout">Callout</h2>
-<p>Be careful when renaming folders that are used by software or
-analysis scripts.</p>
-<p>Changing a folder name may break references elsewhere in a
-project.</p>
-</blockquote>
-<hr></div>
+</ol><p><strong>macOS</strong></p>
+<ol style="list-style-type: decimal"><li>Select the folder by left-clicking on it.</li>
+<li>Click on the folder name</li>
+<li>Enter the new name.</li>
+</ol></div>
 </div>
-<div class="section level1">
-<h1 id="deleting-unnecessary-folders">Deleting Unnecessary Folders<a class="anchor" aria-label="anchor" href="#deleting-unnecessary-folders"></a></h1>
-<p>Sometimes the simplest improvement is removing unused material.</p>
+</div>
+<div id="caution2" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Be careful when renaming folders that are used by software or
+analysis scripts. Changing a folder name may break links elsewhere in a
+project.</p>
+<p>Additionally, project documentation may become out-of-date and
+confusing if it references the original folder structure.</p>
+</div>
+</div>
+</div>
+<hr></div>
+</section><section><h2 class="section-heading" id="deleting-unnecessary-folders">Deleting Unnecessary Folders<a class="anchor" aria-label="anchor" href="#deleting-unnecessary-folders"></a></h2>
+<hr class="half-width"><p>Sometimes the simplest improvement is removing unused material.</p>
 <p>Consider:</p>
 <pre class="text"><code>New Folder (2)</code></pre>
 <p>If this folder is empty or no longer required, it may be reasonable
 to remove it.</p>
-<div class="section level2">
-<h2 id="demonstration-deleting-a-folder">Demonstration: Deleting a Folder<a class="anchor" aria-label="anchor" href="#demonstration-deleting-a-folder"></a></h2>
+<div class="section level3">
+<h3 id="how-to-delete-a-folder">How to Delete a Folder<a class="anchor" aria-label="anchor" href="#how-to-delete-a-folder"></a></h3>
+<div class="tabs">
+<nav><div id="nav-tab-7" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-7-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-7-1" type="button" role="tab" aria-controls="nav-tabpanel-7-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-7-1">
+  Drag to Recycle Bin
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-7-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-7-2" type="button" role="tab" aria-controls="nav-tabpanel-7-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-7-2">
+  Right-click
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-7-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-7-3" type="button" role="tab" aria-controls="nav-tabpanel-7-3" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-7-3">
+  Keyboard shortcuts
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-7" class="tab-content">
+<div id="nav-tabpanel-7-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-7-1">
+<p><strong>All operating systems</strong></p>
 <ol style="list-style-type: decimal"><li>Select the folder.</li>
-<li>Right-click.</li>
+<li>Drag into recycle bin (on desktop for <strong>Windows</strong>,
+bottom right of screen for <strong>MacOS</strong>)</li>
+</ol></div>
+<div id="nav-tabpanel-7-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-7-2">
+<p><strong>Windows</strong></p>
+<ol style="list-style-type: decimal"><li>Right-click the folder.</li>
 <li>Choose <strong>Delete</strong>.</li>
 <li>Confirm deletion if prompted.</li>
-</ol><p>Alternatively:</p>
+</ol><p><strong>macOS</strong></p>
+<ol style="list-style-type: decimal"><li>Right-click the folder.</li>
+<li>Choose <strong>Move to Bin</strong> or <strong>Move to
+trash</strong>.</li>
+<li>Confirm deletion if prompted.</li>
+</ol></div>
+<div id="nav-tabpanel-7-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-7-3">
+<p><strong>Windows</strong> 1. Select the folder. 2. Press
+<code>Delete</code>.</p>
+<p><strong>macOS</strong></p>
 <ol style="list-style-type: decimal"><li>Select the folder.</li>
-<li>Press the Delete key.</li>
-</ol><p>Explain that deleted content is often moved to the Recycle Bin
-first.</p>
-<blockquote>
-<h2 id="instructor-note-2">Instructor Note</h2>
-<p>Emphasise caution.</p>
-<p>Deletion should only occur when learners are confident a folder is
-unnecessary.</p>
-<p>For real research projects, archiving is often safer than immediate
-deletion.</p>
-</blockquote>
-<hr></div>
+<li>Press <code>Command (⌘) + Delete</code>.</li>
+</ol></div>
 </div>
-<div class="section level1">
-<h1 id="designing-a-better-structure">Designing a Better Structure<a class="anchor" aria-label="anchor" href="#designing-a-better-structure"></a></h1>
-<p>At this stage we know:</p>
+</div>
+<p>Data deleted using the above methods are not fully removed from the
+system; they are first moved to the recycle bin. You can permanently
+delete the file by emptying the bin. Alternatively, files in the recycle
+bin can be restored and “put back” to their original location. On some
+systems, the bin permanently deletes files after they have been in the
+bin a certain amount of time (e.g., 30 days).</p>
+<div id="caution3" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Check your data policies on data deletion, particularly if handling
+private data and your files are not encrypted. We will discuss data
+security in a later lesson.</p>
+<p>Deleting a file on your computer will not always remove the file from
+automated backups (e.g., files stored in Newcastle University’s
+Microsoft OneDrive); this behaviour will depend on your syncing
+settings. Confirm that these settings support the backup behaviour you
+need for your project.</p>
+</div>
+</div>
+</div>
+
+</div>
+</section><section><h2 class="section-heading" id="designing-a-better-structure">Designing a Better Structure<a class="anchor" aria-label="anchor" href="#designing-a-better-structure"></a></h2>
+<hr class="half-width"><p>At this stage we know:</p>
 <ul><li>What good folder names look like</li>
 <li>How to move folders</li>
 <li>How to rename folders</li>
 <li>How to remove unnecessary folders</li>
-</ul><p>The next step is deciding how the project should look.</p>
-<p>One possible structure might be:</p>
+</ul><p>The next step is deciding what folder structure you need for your
+project.</p>
+<div id="choosing-a-folder-structure" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="choosing-a-folder-structure" class="callout-inner">
+<h3 class="callout-title">Choosing a Folder Structure</h3>
+<div class="callout-content">
+<p>For one of your projects, consider possible useful folders and how
+you would arrange them. What folder structures would work well? How
+would you divide up files?</p>
+<p>Try drawing out three possible folder hierarchies for your project
+and discuss the pros/cons of the different approaches with your
+neighbours.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>There is no one correct answer. It will vary depending on your
+project or personal preferences. One possible structure might be:</p>
 <pre class="text"><code>project/
 ├── data/
 │   ├── raw/
@@ -691,25 +1071,45 @@ deletion.</p>
 ├── outputs/
 │
 └── archive/</code></pre>
-<p>This is not the only correct answer.</p>
-<p>The important point is that each folder has a clear purpose.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="discussion-what-else-would-you-change">Discussion: What Else Would You Change?<a class="anchor" aria-label="anchor" href="#discussion-what-else-would-you-change"></a></h1>
-<blockquote>
-<h2 id="discussion-1">Discussion</h2>
+<p>Other possible folders would be:</p>
+<ul><li><code>code</code></li>
+<li>
+<code>figures</code> folder inside the analysis folder or outputs
+folder</li>
+<li>
+<code>temp</code> for temporary files you know you do not wish to
+keep etc.</li>
+</ul><p>The most important part of the design is that each folder has a clear
+purpose.</p>
+</div>
+</div>
+</div>
+</div>
+<hr><div id="what-else-would-you-change" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="what-else-would-you-change" class="callout-inner">
+<h3 class="callout-title">What Else Would You Change?</h3>
+<div class="callout-content">
 <p>Looking at the inherited dataset:</p>
 <ul><li>Which folders would you rename?</li>
 <li>Which folders would you move?</li>
 <li>Which folders would you remove?</li>
 <li>Are there any new folders you would create?</li>
 </ul><p>Compare ideas with a neighbour.</p>
-</blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="exercise-repair-the-project-structure">Exercise: Repair the Project Structure<a class="anchor" aria-label="anchor" href="#exercise-repair-the-project-structure"></a></h1>
-<blockquote>
-<h2 id="challenge">Challenge</h2>
+</div>
+</div>
+</div>
+<hr><div id="repair-the-project-structure" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="repair-the-project-structure" class="callout-inner">
+<h3 class="callout-title">Repair the Project Structure</h3>
+<div class="callout-content">
 <p>Working individually or in pairs:</p>
 <ol style="list-style-type: decimal"><li>Rename unclear folders.</li>
 <li>Move folders into more logical locations.</li>
@@ -722,9 +1122,16 @@ deletion.</p>
 </ul></li>
 </ol><p>You do not need to create a perfect structure.</p>
 <p>Focus on making the project easier to understand.</p>
-</blockquote>
-<blockquote>
-<h2 id="solution">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
 <p>There is no single correct solution.</p>
 <p>A reasonable result might:</p>
 <ul><li>Rename <code>RAW_DATA_!!!</code> to <code>raw_data</code>
@@ -733,22 +1140,22 @@ deletion.</p>
 <li>Remove unnecessary empty folders</li>
 <li>Create dedicated locations for documentation and analysis</li>
 <li>Reduce unnecessary nesting</li>
-</ul></blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="looking-ahead">Looking Ahead<a class="anchor" aria-label="anchor" href="#looking-ahead"></a></h1>
-<p>We have improved the folder structure, but many files still have
+</ul></div>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="looking-ahead">Looking Ahead<a class="anchor" aria-label="anchor" href="#looking-ahead"></a></h2>
+<hr class="half-width"><p>We have improved the folder structure, but many files still have
 confusing names.</p>
 <p>In the next episode we will focus on file naming conventions and
 explore how good file names make datasets easier to understand and
 process.</p>
-<div id="key-points" class="callout keypoints">
+<div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <span class="callout-header">Key Points</span>
-<div id="key-points" class="callout-inner">
-<h3 class="callout-title">Key Points</h3>
+<div class="callout-inner">
 <div class="callout-content">
 <ul><li>Folder structures should help people find and understand data.</li>
 <li>Use meaningful, consistent folder names.</li>
@@ -768,11 +1175,7 @@ and by your future self.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="introduction.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="file-names.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -832,8 +1235,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/file-structures.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/file-structures.html",
   "dateCreated": "2026-07-01",
-  "dateModified": "2026-07-02",
-  "datePublished": "2026-07-22"
+  "dateModified": "2026-07-23",
+  "datePublished": "2026-07-23"
 }
 
   </script><script>

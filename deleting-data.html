@@ -253,12 +253,23 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         7. What to Store and When to Remove
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#the-problem-too-much-data-too-little-clarity">The Problem: Too Much Data, Too Little Clarity</a></li>
+<li><a href="#evaluating-the-messy-dataset">Evaluating the Messy Dataset</a></li>
+<li><a href="#how-deletion-actually-works">How Deletion Actually Works</a></li>
+<li><a href="#general-principles-the-psychology-and-impact-of-data-retention">General Principles: The Psychology and Impact of Data Retention</a></li>
+<li><a href="#summary">Summary</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -339,7 +350,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>What to Store and When to Remove</h1>
-        <p>Last updated on 2026-07-13 |
+        <p>Last updated on 2026-07-23 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/deleting-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -385,9 +396,8 @@ of digital waste.</li>
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="the-problem-too-much-data-too-little-clarity">The Problem: Too Much Data, Too Little Clarity<a class="anchor" aria-label="anchor" href="#the-problem-too-much-data-too-little-clarity"></a></h1>
-<p>In the last episode, we looked at how to measure file sizes, compress
+<section><h2 class="section-heading" id="the-problem-too-much-data-too-little-clarity">The Problem: Too Much Data, Too Little Clarity<a class="anchor" aria-label="anchor" href="#the-problem-too-much-data-too-little-clarity"></a></h2>
+<hr class="half-width"><p>In the last episode, we looked at how to measure file sizes, compress
 directories, and move data efficiently. But as our projects progress, we
 encounter a deeper problem:</p>
 <blockquote>
@@ -402,71 +412,95 @@ of mistakes.</p>
 <p>As researchers, we need a strategy to determine what data is worth
 keeping, what must be kept due to policy mandates, and what should be
 safely removed.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="discussion-to-keep-or-to-delete">Discussion: To Keep or To Delete?<a class="anchor" aria-label="anchor" href="#discussion-to-keep-or-to-delete"></a></h1>
+<hr><div id="to-keep-or-to-delete" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="to-keep-or-to-delete" class="callout-inner">
+<h3 class="callout-title">To Keep or To Delete?</h3>
+<div class="callout-content">
 <p>Before looking at specific rules, let’s think about how we evaluate
 the value of our data.</p>
-<blockquote>
-<h2 id="discussion">Discussion</h2>
-<p>Working in pairs or small groups: Imagine you are cleaning out a
-project directory from two years ago. What factors or criteria would you
-consider when deciding whether to <strong>retain</strong> a file or
-<strong>permanently delete</strong> it? Take 5 minutes to list as many
-considerations as you can.</p>
-</blockquote>
-<p><em>After a few minutes, gather responses from the room.</em></p>
-<hr><div class="section level2">
-<h2 id="what-to-consider-the-retention-checklist">What to Consider: The Retention Checklist<a class="anchor" aria-label="anchor" href="#what-to-consider-the-retention-checklist"></a></h2>
+<p>Working in pairs or small groups:</p>
+<p>Imagine you are cleaning out a project directory from two years ago.
+What factors or criteria would you consider when deciding whether to
+<strong>retain</strong> a file or <strong>permanently delete</strong>
+it?</p>
+<p>Take 5 minutes to list as many considerations as you can.</p>
+</div>
+</div>
+</div>
+
+<hr><div class="section level3">
+<h3 id="what-to-consider-the-retention-checklist">What to Consider: The Retention Checklist<a class="anchor" aria-label="anchor" href="#what-to-consider-the-retention-checklist"></a></h3>
 <p>When deciding the fate of your data, expect to balance several
 competing factors:</p>
 <ul><li>
 <strong>Funder and Institutional Mandates:</strong> Many research
 funders (e.g., UKRI, NIH, Horizon Europe) explicitly require research
-data to be preserved for a set period—often <strong>5 to 10
+data to be preserved for a set period, often <strong>5 to 10
 years</strong> after project completion or publication.</li>
 <li>
 <strong>Reproducibility and Provenance:</strong> Can this data be
 easily re-generated? Raw data from an expensive, one-time physical
-experiment is irreplaceable. An intermediate clean data file generated
-by a script can be deleted, provided the script and raw data are
-saved.</li>
+observation or experiment is irreplaceable. An intermediate clean data
+file generated by a script can be deleted, provided the script and raw
+data are saved.</li>
 <li>
 <strong>Legal, Ethical, and Privacy Constraints:</strong> If data
 contains sensitive personal information, or if consent agreements state
 data must be destroyed at the end of a study, you are legally obligated
-to delete it.</li>
+to delete it. Data can be requested by the person it is about and they
+can request the date is delected or ammended, see the <a href="https://www.ncl.ac.uk/data-protection/access-personal-data/" class="external-link">Personal
+data access policy</a> This will be discussed in a later section.</li>
 <li>
 <strong>Data Integrity and Documentation:</strong> If a file has no
 metadata, no clear naming convention, and no documentation explaining
 its origin, its scientific value drops significantly. Data without
 provenance is often just digital noise.</li>
-</ul><hr></div>
-</div>
-<div class="section level1">
-<h1 id="exercise-evaluating-the-messy-dataset">Exercise: Evaluating the Messy Dataset<a class="anchor" aria-label="anchor" href="#exercise-evaluating-the-messy-dataset"></a></h1>
-<p>Let’s look at a snapshot of our project directory and decide what
+</ul></div>
+</section><section><h2 class="section-heading" id="evaluating-the-messy-dataset">Evaluating the Messy Dataset<a class="anchor" aria-label="anchor" href="#evaluating-the-messy-dataset"></a></h2>
+<hr class="half-width"><p>Let’s look at a snapshot of our project directory and decide what
 stays and what goes.</p>
-<blockquote>
-<h2 id="challenge-evaluating-our-files">Challenge: Evaluating Our
-Files</h2>
+<div id="challenge1" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
 <p>Look at the following list of files found in a messy project folder.
 Based on what we’ve discussed, decide which files should be
 <strong>Retained</strong> and which should be <strong>Deleted</strong>.
-Be prepared to justify your choices! 1.
+Be prepared to justify your choices!</p>
+<ol style="list-style-type: decimal"><li>
 <code>raw_sequencing_data_2024_03_12.fastq</code> (Original machine
-output from a £5,000 lab run) 2.
-<code>temporary_merged_subset_v2.csv</code> (A temporary file used to
-test a quick plotting idea) 3. <code>analysis_script_final.py</code>
-(The code used to clean and process raw data into the final figures) 4.
+output from a £5,000 lab run)</li>
+<li>
+<code>temporary_merged_subset_v2.csv</code> (A temporary file used
+to test a quick plotting idea)</li>
+<li>
+<code>analysis_script_final.py</code> (The code used to clean and
+process raw data into the final figures)</li>
+<li>
 <code>draft_paper_comments_John.docx</code> (An old manuscript draft
-from last year with tracked changes) 5.
-<code>unlabelled_test_results.txt</code> (A text file with numbers, no
-headers, and no date; nobody remembers who made it)</p>
-<p>Take 5 minutes to categorize these.</p>
-</blockquote>
-<blockquote>
-<h2 id="solution">Solution</h2>
+from last year with tracked changes)</li>
+<li>
+<code>unlabelled_test_results.txt</code> (A text file with numbers,
+no headers, and no date; nobody remembers who made it)</li>
+</ol><p>Take 5 minutes to categorize these.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
 <ul><li>
 <strong>1. Raw Sequencing Data:</strong> <strong>RETAIN.</strong>
 This is original, expensive raw data with clear provenance. Funders
@@ -489,79 +523,136 @@ directory into a dedicated “administrative archive” folder.</li>
 <strong>DELETE.</strong> Without context, documentation, or headers,
 this file is useless and potentially dangerous if mixed up with real
 data later.</li>
-</ul></blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="demonstration-how-deletion-actually-works">Demonstration: How Deletion Actually Works<a class="anchor" aria-label="anchor" href="#demonstration-how-deletion-actually-works"></a></h1>
-<p>When we decide to delete a file, we need to understand how different
+</ul></div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="how-deletion-actually-works">How Deletion Actually Works<a class="anchor" aria-label="anchor" href="#how-deletion-actually-works"></a></h2>
+<hr class="half-width"><p>When we decide to delete a file, we need to understand how different
 systems handle that process. It isn’t always as instantaneous or
 permanent as it looks.</p>
-<div class="section level2">
-<h2 id="local-deletion-windows-and-macos">1. Local Deletion (Windows and macOS)<a class="anchor" aria-label="anchor" href="#local-deletion-windows-and-macos"></a></h2>
+<div class="section level3">
+<h3 id="local-deletion-windows-and-macos">1. Local Deletion (Windows and macOS)<a class="anchor" aria-label="anchor" href="#local-deletion-windows-and-macos"></a></h3>
 <p>When you delete a file using your graphical file manager (File
 Explorer or Finder), the system doesn’t immediately scrub the data off
 your hard drive.</p>
-<div class="section level3">
-<h3 id="the-safety-net-the-recycle-bin-trash">The Safety Net: The Recycle Bin / Trash<a class="anchor" aria-label="anchor" href="#the-safety-net-the-recycle-bin-trash"></a></h3>
+<div class="section level4">
+<h4 id="the-safety-net-the-recycle-bin-trash">The Safety Net: The Recycle Bin / Trash<a class="anchor" aria-label="anchor" href="#the-safety-net-the-recycle-bin-trash"></a></h4>
 <ol style="list-style-type: decimal"><li>When you click <strong>Delete</strong> or drag a file to the bin,
 the file system simply moves it to a hidden folder called the
-<strong>Recycle Bin</strong> (Windows) or <strong>Trash</strong>
-(macOS).</li>
+<strong>Recycle Bin</strong> (Windows) or
+<strong>Trash</strong>/<strong>Bin</strong> (macOS). Linux will use
+something similar.</li>
 <li>
 <strong>The Catch:</strong> The file still occupies space on your
-computer! If you are deleting files to free up room because your drive
-is full, your drive will remain full until you take the next step.</li>
+computer or hard drive! If you are deleting files to free up room
+because your drive is full, your drive will remain full until you take
+the next step. Data can still be recovered, which might be an issue if
+the data needs to be securely deleted</li>
 <li>
 <strong>Action:</strong> To truly free up space, you must
 right-click the Recycle Bin/Trash icon on your desktop and select
 <strong>Empty Recycle Bin</strong> or <strong>Empty Trash</strong>.</li>
-</ol><hr></div>
+</ol><div id="secure-data-deletion" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
 </div>
-<div class="section level2">
-<h2 id="remote-server-deletion-linux-storage-research-data-warehouse">2. Remote Server Deletion (Linux Storage / Research Data
-Warehouse)<a class="anchor" aria-label="anchor" href="#remote-server-deletion-linux-storage-research-data-warehouse"></a></h2>
-<p>Many institutions provide remote servers or shared network storage
-(like a Research Data Warehouse) for storing massive datasets. Managing
-files here is fundamentally different.</p>
+<span class="callout-header">Caution</span>
+<div id="secure-data-deletion" class="callout-inner">
+<h3 class="callout-title">Secure data deletion</h3>
+<div class="callout-content">
+<p>Even then data may not be entirely deleted and remains on disk until
+it is overwritten.</p>
+<p>If you need make absolutely sure data is deleted:</p>
+<ul><li>Combine file deletion with encryption.</li>
+<li>For Hard Drives use tools like <code>shred</code> (Linux),
+<code>cipher</code> (Windows) or <code>rm -P</code> in a
+<strong>Terminal</strong> (MacOS) .</li>
+<li>Solid State Drives have their own secure deletion tools.</li>
+<li>Securely dispose of the disk using confidential waste services.</li>
+</ul><p>Contact NUIT for advice if you have concerns.</p>
+<p>Hard Drives and Solid State Drives behave differently when it comes
+to <a href="https://services.ncl.ac.uk/itservice/help-services/security/datadeviceprotection/" class="external-link">secure
+data delection</a>.</p>
+</div>
+</div>
+</div>
+<hr></div>
+</div>
 <div class="section level3">
-<h3 id="the-no-net-environment">The No-Net Environment<a class="anchor" aria-label="anchor" href="#the-no-net-environment"></a></h3>
+<h3 id="remote-server-deletion-linux-storage-research-data-warehouse">2. Remote Server Deletion (Linux Storage / Research Data
+Warehouse)<a class="anchor" aria-label="anchor" href="#remote-server-deletion-linux-storage-research-data-warehouse"></a></h3>
+<p>Many institutions provide remote servers or shared network storage
+(like Newcastle University’s Research Data Warehouse) for storing
+massive datasets. Managing files here is fundamentally different.</p>
+<div class="section level4">
+<h4 id="the-no-safety-net-environment">The No Safety-Net Environment<a class="anchor" aria-label="anchor" href="#the-no-safety-net-environment"></a></h4>
 <ul><li>When you access a shared Linux server or an institutional data
-warehouse via a network share or file transfer tool, deleting a file is
+warehouse via a shared network or file transfer tool, deleting a file is
 usually <strong>permanent and immediate</strong>.</li>
 <li>There is typically <strong>no Recycle Bin</strong> or Trash folder
 on a remote Linux server filesystem.</li>
 <li>Once you confirm you want to delete a file or directory, the
 pointers are destroyed, and the space is instantly reclaimed by the
 server.</li>
-</ul><blockquote>
-<h2 id="callout-double-check-before-clicking">Callout: Double Check
-Before Clicking</h2>
+<li>Nothing stops you making your own Recycle Bin by having a folder to
+move files into, but it will lack the <code>restore</code> feature.</li>
+</ul><div id="double-check-before-clicking" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div id="double-check-before-clicking" class="callout-inner">
+<h3 class="callout-title">Double Check Before Clicking</h3>
+<div class="callout-content">
 <p>Because remote servers lack a safety net, always double-check the
 files you have selected before hitting delete. A moment of carelessness
-on a shared server can wipe out months of collaborative work!</p>
-</blockquote>
+on a shared server can wipe out months of collaborative work! Data
+archiving can function as an intermediate step before deletion.</p>
+<p>Some remote servers have backups. Make sure you know if your server
+makes backups, how regular they are and how long backups are retained.
+It is useful to know how to access the backups and who to contact for
+help.</p>
+</div>
+</div>
+</div>
 <hr></div>
 </div>
-</div>
-<div class="section level1">
-<h1 id="general-principles-the-psychology-and-impact-of-data-retention">General Principles: The Psychology and Impact of Data Retention<a class="anchor" aria-label="anchor" href="#general-principles-the-psychology-and-impact-of-data-retention"></a></h1>
-<p>Why do we find it so difficult to delete files?</p>
-<div class="section level2">
-<h2 id="the-hoarding-trap">The Hoarding Trap<a class="anchor" aria-label="anchor" href="#the-hoarding-trap"></a></h2>
+</section><section><h2 class="section-heading" id="general-principles-the-psychology-and-impact-of-data-retention">General Principles: The Psychology and Impact of Data Retention<a class="anchor" aria-label="anchor" href="#general-principles-the-psychology-and-impact-of-data-retention"></a></h2>
+<hr class="half-width"><p>Why do we find it so difficult to delete files?</p>
+<div class="section level3">
+<h3 id="the-hoarding-trap">The Hoarding Trap<a class="anchor" aria-label="anchor" href="#the-hoarding-trap"></a></h3>
 <p>Psychologically, deleting data can feel risky. We often worry:
-<em>“What if I need this obscure intermediate file in three years?”</em>
-This fear causes us to hoard data.</p>
+<em>“What if I need this obscure intermediate file in three
+years?”</em>. It feels that consequences of leaving useless data on disc
+are less than the consequences of accidentally deleting good data. The
+thought of having to explain why you accidentally deleted data from a
+£10,000 experiment is not a pleasent one. This fear causes us to hoard
+data.</p>
 <p>However, keeping everything introduces hidden costs:</p>
 <ul><li>
 <strong>Mental Overhead:</strong> It takes longer to navigate
-folders and find what you actually need.</li>
+folders, copy data, and find what you actually need.</li>
 <li>
 <strong>Security Risks:</strong> Retaining old, sensitive
 participant data past its expiration date increases the severity of
 potential data breaches.</li>
-</ul></div>
-<div class="section level2">
-<h2 id="digital-waste-and-the-environment">Digital Waste and the Environment<a class="anchor" aria-label="anchor" href="#digital-waste-and-the-environment"></a></h2>
+</ul><div id="discussion2" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>What strategies could you use to mitigate worries about deleting
+data?</p>
+<p>Discuss as a group.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="digital-waste-and-the-environment">Digital Waste and the Environment<a class="anchor" aria-label="anchor" href="#digital-waste-and-the-environment"></a></h3>
 <p>Data storage isn’t free, and it isn’t completely green. Every
 gigabyte of data kept forever lives on a physical server spinning in a
 data center somewhere in the world.</p>
@@ -569,7 +660,9 @@ data center somewhere in the world.</p>
 and massive cooling infrastructure to keep from overheating. Deleting
 useless, duplicate, or temporary files directly reduces your project’s
 <strong>digital waste</strong> and environmental footprint.</p>
-<hr><div id="keypoints1" class="callout keypoints">
+</div>
+</section><section><h2 class="section-heading" id="summary">Summary<a class="anchor" aria-label="anchor" href="#summary"></a></h2>
+<hr class="half-width"><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -593,12 +686,7 @@ risks, and contributes to environmental digital waste.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
-</div>
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="transferring-data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="tabular-data.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -658,8 +746,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/deleting-data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/deleting-data.html",
   "dateCreated": "2026-07-01",
-  "dateModified": "2026-07-13",
-  "datePublished": "2026-07-22"
+  "dateModified": "2026-07-23",
+  "datePublished": "2026-07-23"
 }
 
   </script><script>

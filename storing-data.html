@@ -235,12 +235,36 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         5. Choosing Where to Store Your Data
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#where-should-i-store-my-data">Where Should I Store My Data?</a></li>
+<li><a href="#what-makes-a-good-storage-location">What Makes a Good Storage Location?</a></li>
+<li><a href="#is-it-backed-up">Is It Backed Up?</a></li>
+<li><a href="#is-it-secure">Is It Secure?</a></li>
+<li><a href="#is-it-sustainable">Is It Sustainable?</a></li>
+<li><a href="#local-storage">Local Storage</a></li>
+<li><a href="#personal-cloud-storage">Personal Cloud Storage</a></li>
+<li><a href="#a-common-research-problem">A Common Research Problem</a></li>
+<li><a href="#shared-storage">Shared Storage</a></li>
+<li><a href="#research-data-warehouse-storage">Research Data Warehouse Storage</a></li>
+<li><a href="#permissions-and-collaboration">Permissions and Collaboration</a></li>
+<li><a href="#sensitive-data">Sensitive Data</a></li>
+<li><a href="#changing-data-locations">Changing Data Locations</a></li>
+<li><a href="#a-brief-note-on-version-control">A Brief Note on Version Control</a></li>
+<li><a href="#sharing-research-outputs">Sharing Research Outputs</a></li>
+<li><a href="#university-data-management-plan">University Data Management Plan</a></li>
+<li><a href="#data-privacy-impact-assessment">Data Privacy Impact Assessment</a></li>
+<li><a href="#looking-ahead">Looking Ahead</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -339,7 +363,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Choosing Where to Store Your Data</h1>
-        <p>Last updated on 2026-07-02 |
+        <p>Last updated on 2026-07-23 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/storing-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -391,9 +415,8 @@ required.</li>
 </div>
 </div>
 </div>
-<div class="section level1">
-<h1 id="the-problem-where-should-i-store-my-data">The Problem: Where Should I Store My Data?<a class="anchor" aria-label="anchor" href="#the-problem-where-should-i-store-my-data"></a></h1>
-<p>At this point in the lesson we have:</p>
+<section><h2 class="section-heading" id="where-should-i-store-my-data">Where Should I Store My Data?<a class="anchor" aria-label="anchor" href="#where-should-i-store-my-data"></a></h2>
+<hr class="half-width"><p>At this point in the lesson we have:</p>
 <ul><li>Organised our folder structure</li>
 <li>Improved file names</li>
 <li>Added documentation</li>
@@ -413,26 +436,38 @@ convenient:</p>
 <li>Large datasets</li>
 <li>Sensitive information</li>
 <li>Long-term storage requirements</li>
-</ul><p>A storage decision that works for a single person may become
-problematic when a project grows or team members change.</p>
+</ul><p>A storage decision that works for a single person may become a
+problem when a project grows or team members change.</p>
 <p>Choosing an appropriate storage location is therefore an important
 part of good data management.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="discussion-where-do-you-store-your-data">Discussion: Where Do You Store Your Data?<a class="anchor" aria-label="anchor" href="#discussion-where-do-you-store-your-data"></a></h1>
-<blockquote>
-<h2 id="discussion">Discussion</h2>
+<hr><div id="where-do-you-store-your-data" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="where-do-you-store-your-data" class="callout-inner">
+<h3 class="callout-title">Where Do You Store Your Data?</h3>
+<div class="callout-content">
 <p>Spend a few minutes discussing the following questions with a
 partner:</p>
 <ul><li>Where do you currently store your research data?</li>
 <li>Why did you choose that location?</li>
 <li>How do collaborators access it?</li>
-<li>Is it backed up?</li>
+<li>Are the data backed up?</li>
 <li>What would happen if your laptop stopped working tomorrow?</li>
-</ul><p>Be prepared to share some examples with the group.</p>
-</blockquote>
-<p>After a few minutes, gather responses.</p>
-<p>Common answers often include:</p>
+<li>What happens if you leave your current project suddenly?</li>
+</ul><p>Share some of your ideas with the group.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>Common answers for where to store data often include:</p>
 <ul><li>Laptop hard drives</li>
 <li>USB drives</li>
 <li>OneDrive</li>
@@ -441,20 +476,21 @@ partner:</p>
 <li>Institutional storage systems</li>
 <li>HPC storage</li>
 <li>External hard drives</li>
-</ul><blockquote>
-<h2 id="instructor-note">Instructor Note</h2>
-<p>This discussion helps reveal existing practices within the room.</p>
-<p>Learners often have good reasons for their current choices, but may
-not have considered backup, sharing, governance, or long-term access
-implications.</p>
-</blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="what-makes-a-good-storage-location">What Makes a Good Storage Location?<a class="anchor" aria-label="anchor" href="#what-makes-a-good-storage-location"></a></h1>
-<p>When deciding where to store data, it is useful to consider four
+</ul><p>Other answers can vary depending on the project.</p>
+</div>
+</div>
+</div>
+</div>
+
+<hr></section><section><h2 class="section-heading" id="what-makes-a-good-storage-location">What Makes a Good Storage Location?<a class="anchor" aria-label="anchor" href="#what-makes-a-good-storage-location"></a></h2>
+<hr class="half-width"><p>When deciding where to store data, it is useful to consider four
 broad questions:</p>
-<div class="section level2">
-<h2 id="can-people-access-it">Can People Access It?<a class="anchor" aria-label="anchor" href="#can-people-access-it"></a></h2>
+<ul><li>Access.</li>
+<li>Backups.</li>
+<li>Security.</li>
+<li>Sustainability.</li>
+</ul><div class="section level3">
+<h3 id="can-people-access-it">Can People Access It?<a class="anchor" aria-label="anchor" href="#can-people-access-it"></a></h3>
 <p>If collaborators need access, they must be able to find and open the
 data.</p>
 <p>Questions to consider:</p>
@@ -462,52 +498,151 @@ data.</p>
 <li>Can external collaborators access it?</li>
 <li>Can access be controlled?</li>
 <li>Can new project members be added easily?</li>
+<li>When you leave the project might the data disappear?</li>
 </ul><hr></div>
-<div class="section level2">
-<h2 id="is-it-backed-up">Is It Backed Up?<a class="anchor" aria-label="anchor" href="#is-it-backed-up"></a></h2>
-<p>Storage and backup are not the same thing.</p>
+</section><section><h2 class="section-heading" id="is-it-backed-up">Is It Backed Up?<a class="anchor" aria-label="anchor" href="#is-it-backed-up"></a></h2>
+<hr class="half-width"><p>Storage and backup are not the same thing.</p>
 <p>Many researchers assume:</p>
 <blockquote>
 <p>“My files exist on a computer, therefore they are safe.”</p>
 </blockquote>
 <p>Unfortunately this is not always true.</p>
-<p>Computers fail.</p>
-<p>Laptops get stolen.</p>
-<p>Hard drives stop working.</p>
-<p>Good storage solutions should have reliable backup arrangements.</p>
-<hr></div>
-<div class="section level2">
-<h2 id="is-it-secure">Is It Secure?<a class="anchor" aria-label="anchor" href="#is-it-secure"></a></h2>
-<p>Not all data can be shared openly.</p>
+<ul><li>Computers fail.</li>
+<li>Laptops get stolen.</li>
+<li>Hard drives stop working.</li>
+<li>USB drives get lost.</li>
+<li>Data might be deleted accidentally.</li>
+</ul><p>Good storage solutions should have reliable backup arrangements.</p>
+<div id="challenge2" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Discuss what are the good characteristics of a backup system in your
+groups.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+<p>A good backup system might include:</p>
+<ul><li>Regular backups - overnight, when connected to the internet
+etc.</li>
+<li>Offsite - cloud backups? In a different building.</li>
+<li>Accessible - you can easily go and get the backups and find your
+files</li>
+<li>Redundancy - Multiple copies, in case you delete data and take a
+while to notice</li>
+</ul></div>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="is-it-secure">Is It Secure?<a class="anchor" aria-label="anchor" href="#is-it-secure"></a></h2>
+<hr class="half-width"><p>Not all data can be shared openly.</p>
 <p>Examples include:</p>
 <ul><li>Participant data</li>
 <li>Medical records</li>
-<li>Personal information</li>
+<li>Personal information (particularly <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/" class="external-link">Special
+Catagory Data</a>)</li>
 <li>Commercially sensitive information</li>
 <li>Confidential research</li>
 </ul><p>Storage locations must be appropriate for the sensitivity of the
 data.</p>
-<hr></div>
-<div class="section level2">
-<h2 id="is-it-sustainable">Is It Sustainable?<a class="anchor" aria-label="anchor" href="#is-it-sustainable"></a></h2>
-<p>Consider the lifetime of the project.</p>
+<div id="caution1" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>You have a legal requirement to keep certain types of data safe with
+consequences for yourself and the University.</p>
+<p>There are required actions that need to be taken if there is a data
+breach, such as reporting to the University. Make sure you know the
+requirements for your data.</p>
+<p>Special catagory data is especially sensitive personal data whech
+needs extra care when collecting and handling. See <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/" class="external-link">Special
+Catagory Data</a> for more information.</p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="is-it-sustainable">Is It Sustainable?<a class="anchor" aria-label="anchor" href="#is-it-sustainable"></a></h2>
+<hr class="half-width"><p>Consider the lifetime of the project.</p>
 <p>Ask:</p>
 <ul><li>Will the storage still exist in five years?</li>
 <li>What happens if a team member leaves?</li>
-<li>Can ownership be transferred?</li>
-<li>Is there enough capacity for data growth?</li>
-</ul><hr></div>
-</div>
-<div class="section level1">
-<h1 id="local-storage">Local Storage<a class="anchor" aria-label="anchor" href="#local-storage"></a></h1>
-<p>Local storage refers to files stored directly on a device such
+<li>Can file ownership be transferred? This is particularly important
+for cloud services.</li>
+<li>Is there enough storage capacity for data growth?</li>
+<li>Is the file format accessible? If the company which makes your
+software shuts down will you still be able to access your data?</li>
+</ul><hr></section><section><h2 class="section-heading" id="local-storage">Local Storage<a class="anchor" aria-label="anchor" href="#local-storage"></a></h2>
+<hr class="half-width"><p>Local storage refers to files stored directly on a device such
 as:</p>
 <ul><li>Laptop</li>
 <li>Desktop computer</li>
 <li>External hard drive</li>
 <li>USB drive</li>
 </ul><p>For example:</p>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-1" type="button" role="tab" aria-controls="nav-tabpanel-1-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-1">
+  Windows
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-2" type="button" role="tab" aria-controls="nav-tabpanel-1-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-2">
+  macOS
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-3" type="button" role="tab" aria-controls="nav-tabpanel-1-3" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-3">
+  Linux
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
 <pre class="text"><code>C:\Users\Bob\Documents\Research\</code></pre>
+</div>
+<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
+<pre class="text"><code>/Users/Bob/Documents/Research/</code></pre>
+</div>
+<div id="nav-tabpanel-1-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-3">
+<pre class="text"><code>/home/Bob/Documents/Research/</code></pre>
+</div>
+</div>
+</div>
+<div id="challenge3" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Discuss the advantages and disadvantages of local storage with a
+partner or group.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+<p>Examples include</p>
 <div class="section level2">
 <h2 id="advantages">Advantages<a class="anchor" aria-label="anchor" href="#advantages"></a></h2>
 <ul><li>Fast access</li>
@@ -517,22 +652,36 @@ as:</p>
 </ul></div>
 <div class="section level2">
 <h2 id="disadvantages">Disadvantages<a class="anchor" aria-label="anchor" href="#disadvantages"></a></h2>
-<ul><li>Data may only exist in one location</li>
-<li>Vulnerable to device failure</li>
+<ul><li>Data may only exist in one location
+<ul><li>Hard to access off site</li>
+<li>Hard to share with collegues</li>
+</ul></li>
+<li>Vulnerable to device failure or loss</li>
 <li>Difficult to collaborate</li>
 <li>Difficult to manage project-wide access</li>
-</ul><blockquote>
-<h2 id="callout">Callout</h2>
+<li>Security issues e.g. ‘left laptop on a train’</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+<div id="callout1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
 <p>Local storage is often useful for temporary working files.</p>
 <p>It is rarely an ideal long-term location for important project
 data.</p>
-</blockquote>
-<hr></div>
 </div>
-<div class="section level1">
-<h1 id="personal-cloud-storage">Personal Cloud Storage<a class="anchor" aria-label="anchor" href="#personal-cloud-storage"></a></h1>
-<p>Many institutions provide services such as:</p>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="personal-cloud-storage">Personal Cloud Storage<a class="anchor" aria-label="anchor" href="#personal-cloud-storage"></a></h2>
+<hr class="half-width"><p>Many institutions provide services such as:</p>
 <ul><li>OneDrive</li>
+<li>Sharepoint</li>
 <li>Google Drive</li>
 <li>Dropbox</li>
 </ul><p>These can synchronise files between devices and provide backup
@@ -540,43 +689,83 @@ capabilities.</p>
 <p>For example:</p>
 <pre class="text"><code>OneDrive/
 └── Research Project/</code></pre>
-<div class="section level2">
-<h2 id="advantages-1">Advantages<a class="anchor" aria-label="anchor" href="#advantages-1"></a></h2>
+<p>Newcastle University has guides for using OneDrive and Sharepoint
+storage: <a href="https://newcastle.sharepoint.com/sites/O365" class="external-link">Link</a>.</p>
+<div id="challenge4" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Discuss the advantages and disadvantages of cloud storage with a
+partner or group.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Advantages </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
 <ul><li>Accessible from multiple devices</li>
-<li>Easy syncing</li>
+<li>Easy and rapid syncing. OneDrive often works in the background.</li>
 <li>Simple sharing</li>
 <li>Automatic backup in many cases</li>
-</ul></div>
-<div class="section level2">
+<li>Strong Security compared to email</li>
+<li>Version history</li>
+<li>You do not need to send data, you can send a link to the data</li>
+</ul><div class="section level2">
 <h2 id="disadvantages-1">Disadvantages<a class="anchor" aria-label="anchor" href="#disadvantages-1"></a></h2>
 <ul><li>Usually linked to an individual account</li>
 <li>Access often disappears when somebody leaves</li>
 <li>Shared permissions must be managed carefully</li>
 <li>Storage quotas may be limited</li>
+<li>Security/Privacy issues</li>
+<li>Data sovereignty issues</li>
+<li>Access to external collaborators</li>
+<li>Understanding University policy</li>
+<li>Knowing which service to use can be challenging</li>
+<li>May fail silently</li>
 </ul></div>
-<div class="section level2">
-<h2 id="a-common-research-problem">A Common Research Problem<a class="anchor" aria-label="anchor" href="#a-common-research-problem"></a></h2>
-<p>Many researchers store project data in their personal OneDrive.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="caution2" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>The University also recommends against uploading personal or
+sensitive data to Google Drive and DropBox, see the cloud storage tab at
+the following <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/" class="external-link">link</a>.
+It suggests OneDrive.</p>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="a-common-research-problem">A Common Research Problem<a class="anchor" aria-label="anchor" href="#a-common-research-problem"></a></h2>
+<hr class="half-width"><p>Many researchers store project data in their personal OneDrive.</p>
 <p>This seems convenient until:</p>
-<ul><li>A researcher leaves the project</li>
-<li>Their institutional account is removed</li>
-<li>Access to project data is lost</li>
+<ul><li>A researcher leaves the project.</li>
+<li>Their institutional account is removed.</li>
+<li>Access to project data is lost.</li>
+<li>Need to transfer ownership of files.</li>
 </ul><p>In some organisations, governance policies may prevent administrators
 from granting access because personal storage is treated as individual
 rather than project-owned data.</p>
 <p>For this reason, personal cloud storage should generally not be
 considered the primary home of important shared project data.</p>
-<blockquote>
-<h2 id="instructor-note-1">Instructor Note</h2>
-<p>Adapt this section to local institutional policies.</p>
-<p>Learners often assume that “being in the cloud” automatically means
-data is accessible to everyone who needs it.</p>
-</blockquote>
-<hr></div>
-</div>
-<div class="section level1">
-<h1 id="shared-storage">Shared Storage<a class="anchor" aria-label="anchor" href="#shared-storage"></a></h1>
-<p>Shared storage is designed specifically for collaboration.</p>
+<p>Depending on the cloud service, it can be hard to transfer ownership
+of files to another group member.</p>
+
+<hr></section><section><h2 class="section-heading" id="shared-storage">Shared Storage<a class="anchor" aria-label="anchor" href="#shared-storage"></a></h2>
+<hr class="half-width"><p>Shared storage is designed specifically for collaboration.</p>
 <p>Examples include:</p>
 <ul><li>Shared network drives</li>
 <li>Shared project folders</li>
@@ -585,25 +774,47 @@ data is accessible to everyone who needs it.</p>
 </ul><p>Example:</p>
 <pre class="text"><code>Shared Projects/
 └── Marine Mammal Study/</code></pre>
-<div class="section level2">
-<h2 id="advantages-2">Advantages<a class="anchor" aria-label="anchor" href="#advantages-2"></a></h2>
+<div id="challenge5" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
+<div class="callout-content">
+<p>Discuss the advantages and disadvantages of shared storage with a
+partner or group.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> Advantages </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div class="accordion-body">
 <ul><li>Multiple users can access data</li>
 <li>Permissions can be managed centrally</li>
 <li>Better suited to collaboration</li>
 <li>Less dependent on a single individual</li>
-</ul></div>
-<div class="section level2">
+</ul><div class="section level2">
 <h2 id="disadvantages-2">Disadvantages<a class="anchor" aria-label="anchor" href="#disadvantages-2"></a></h2>
 <ul><li>May require administration</li>
 <li>May have storage limits</li>
 <li>Large datasets can become difficult to manage</li>
-</ul><hr></div>
+<li>Different ways of accessing when off-site</li>
+<li>Understanding backup policy can be hard, is something apparently
+deleted actually deleted?</li>
+</ul></div>
 </div>
-<div class="section level1">
-<h1 id="research-data-warehouse-storage">Research Data Warehouse Storage<a class="anchor" aria-label="anchor" href="#research-data-warehouse-storage"></a></h1>
-<p>Many institutions provide dedicated research storage services.</p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="research-data-warehouse-storage">Research Data Warehouse Storage<a class="anchor" aria-label="anchor" href="#research-data-warehouse-storage"></a></h2>
+<hr class="half-width"><p>Many institutions provide dedicated research storage services.</p>
 <p>At our institution, research projects can use the Research Data
-Warehouse (RDW).</p>
+Warehouse (RDW) <a href="https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/" class="external-link">link</a>.</p>
 <p>The RDW is:</p>
 <ul><li>Backed up</li>
 <li>Designed for research data</li>
@@ -618,15 +829,17 @@ an individual.</p>
 <li>Departing collaborators can be removed</li>
 <li>Data remains available to the project</li>
 </ul><p>For most research data, this is the recommended storage location.</p>
-<blockquote>
-<h2 id="instructor-note-2">Instructor Note</h2>
-<p>Replace this section with your own institutional storage
-recommendations if delivering the lesson elsewhere.</p>
-</blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="demonstration-accessing-different-storage-locations">Demonstration: Accessing Different Storage Locations<a class="anchor" aria-label="anchor" href="#demonstration-accessing-different-storage-locations"></a></h1>
-<p>The instructor should demonstrate navigating to:</p>
+
+<hr><div id="accessing-different-storage-locations" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="accessing-different-storage-locations" class="callout-inner">
+<h3 class="callout-title">Accessing Different Storage Locations</h3>
+<div class="callout-content">
+<p>Follow along with the instructor who will demonstrate how to navigate
+to:</p>
 <ul><li>Local storage</li>
 <li>OneDrive (or equivalent cloud storage)</li>
 <li>Shared project storage</li>
@@ -638,11 +851,11 @@ recommendations if delivering the lesson elsewhere.</p>
 <li>Discuss who can access the data.</li>
 <li>Discuss backup arrangements.</li>
 <li>Discuss limitations.</li>
-</ol><p>Encourage learners to follow along where possible.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="permissions-and-collaboration">Permissions and Collaboration<a class="anchor" aria-label="anchor" href="#permissions-and-collaboration"></a></h1>
-<p>Choosing a location is only part of the problem.</p>
+</ol></div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="permissions-and-collaboration">Permissions and Collaboration<a class="anchor" aria-label="anchor" href="#permissions-and-collaboration"></a></h2>
+<hr class="half-width"><p>Choosing a location is only part of the problem.</p>
 <p>You also need to decide:</p>
 <ul><li>Who can read data?</li>
 <li>Who can upload data?</li>
@@ -658,35 +871,158 @@ recommendations if delivering the lesson elsewhere.</p>
 </tr><tr><td>Project lead</td>
 <td>Full control</td>
 </tr></tbody></table><p>There is no universal solution.</p>
-<p>The appropriate permissions depend on the project.</p>
-<blockquote>
-<h2 id="callout-1">Callout</h2>
+<p>The appropriate permissions depend on the project. It is good to have
+an access plan in place, so everyone on the project knows who can
+accesss which data and how easy it might be for external collaborators
+to access your preferred data store.</p>
+<div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
 <p>Grant the minimum access necessary.</p>
-<p>This reduces the risk of accidental deletion or modification of
-important files.</p>
-</blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="sensitive-data">Sensitive Data<a class="anchor" aria-label="anchor" href="#sensitive-data"></a></h1>
-<p>Some projects require additional controls.</p>
+<p>This reduces the risk of accidental deletion, leaking, or
+modification of important files.</p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="sensitive-data">Sensitive Data<a class="anchor" aria-label="anchor" href="#sensitive-data"></a></h2>
+<hr class="half-width"><p>Some projects require additional controls.</p>
 <p>Examples include:</p>
 <ul><li>Human participant data</li>
 <li>Clinical data</li>
 <li>Personal information</li>
+<li>Special catagory data.</li>
 <li>Commercially restricted data</li>
 </ul><p>Questions to consider:</p>
 <ul><li>Is the storage location approved for sensitive data?</li>
 <li>Who should have access?</li>
 <li>Does the data need encryption?</li>
 <li>Are there legal or ethical restrictions?</li>
-</ul><p>Sensitive data should never be stored solely because it is
-convenient.</p>
+</ul><p>Sensitive data should never be collected or stored solely because it
+is convenient.</p>
 <p>Always follow institutional policies and governance requirements.</p>
+<div id="caution3" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>There are strict legal requirements for using and storing certain
+types of data.</p>
+<ul><li>People can request access to data held on them, via <a href="https://www.ncl.ac.uk/mediav8/data-protection/files/SubjectAccessRequestform_002%20(1).docx" class="external-link">Subject
+Access Requests</a>
+</li>
+<li>People can request erroneous data about them be corrected</li>
+<li>People can demand data about them be deleted</li>
+<li>Personal data must be used only for the reasons it was provided</li>
+<li>Data breaches must be reported to the Univerity in line with its
+policies</li>
+<li>and many others</li>
+</ul><p>See the following examples:</p>
+<ul><li><a href="https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/" class="external-link">GDPR
+Information for Research</a></li>
+<li><a href="https://www.ncl.ac.uk/data-protection/" class="external-link">Data
+Protection</a></li>
+<li><a href="ttps://www.ncl.ac.uk/data-protection/access-personal-data/">Access
+your personal data</a></li>
+</ul><p>Be clear on what your obligations are regarding the data you use. The
+above links are not meant to be definative, you will need to check this
+yourself.</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="protecing-your-data">Protecing Your Data<a class="anchor" aria-label="anchor" href="#protecing-your-data"></a></h3>
+<div class="section level4">
+<h4 id="encryption">Encryption<a class="anchor" aria-label="anchor" href="#encryption"></a></h4>
+<p>Your University laptop may already be running whole disk encryption.
+This protects all the files on the computer. Without it, anyone can
+access the files, even if you have set a password. However, data on your
+laptop is only fully protected when it is shut down. Different modes of
+standby have different levels of protection. For example, prefer
+Hibernate to Sleep mode in Windows.</p>
+<p>The same does not always apply to external hard-drives used for
+backups or data transfer, unless the disk is explicitly encrypted. If
+the external drive asks for a password before you can access it, it is
+probably encrypted, if it does not then it probably isn’t. This is true
+even if your laptop is running full disk encryption. External disks can
+be encrypted using Bitlocker for Windows, Finder for macOS or Disk
+Utility in Linux.</p>
+<div id="caution4" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>If you forget your password and encryption key you have lost your
+data! It cannot be recovered.</p>
+</div>
+</div>
+</div>
+<p>The different tools on Windows, macOS and Linux can make an encrypted
+external disk or USB key unusable on a different operating system. You
+can encrypt individual files and folders if required, depending on
+software and system e.g. Windows/macOS/Linux/OneDrive.</p>
+</div>
+<div class="section level4">
+<h4 id="sharing-data">Sharing data<a class="anchor" aria-label="anchor" href="#sharing-data"></a></h4>
+<blockquote>
+<p>Maybe move this to the sharing data md.</p>
+</blockquote>
+<p>Sharing data is discussed in a previous lesson. However, a few
+additional items related to security are discussed here.</p>
+<p>If concerned about storing data on the cloud, or transfering it to
+collegues you can encrypt it before hand and sent the encrypted version.
+In this case, send the password seperatly.</p>
+<p>The University offers a <a href="https://dropoff.ncl.ac.uk/" class="external-link">File
+Transfer Service</a> which offers the chance to encrypt data before
+sending. It will also inform you when someone accesses the data.</p>
+<p>This offers additional security over email, which is <strong>not
+recommended</strong> for moving private data. Email passed from you to
+the destination through a number of intermediate servers. If any link in
+the chain is exposed, the data can leak. This is why companies rarely
+email you your bills, but instead offer secure websites for viewing them
+<a href="https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621" class="external-link">1</a>,
+<a href="https://hexiosec.com/blog/secure-email-attachments/" class="external-link">2</a>.</p>
+<p>Using OneDrive and Sharepoint to transfer files is an alternative to
+sending the data as a copy. If you send data as an email or via the File
+Transfer Service, you are making a copy and sending that out into the
+world. Using University OneDrive or Sharepoint only sends a link. If an
+email is sent in error, you need only break the link or revoke
+permissions and the data becomes inassessible again. This is a good way
+of reducing errors such as sending to the wrong email address or
+attaching the wrong document, <a href="https://www.bbc.co.uk/news/articles/c363w8pjpklo" class="external-link">for
+example</a>.</p>
+</div>
+<div class="section level4">
+<h4 id="sanitising-your-data">Sanitising your data<a class="anchor" aria-label="anchor" href="#sanitising-your-data"></a></h4>
+<p>When moving data you need to ensure you are only sending the data you
+intend. This includes your data, metadata, documentation, file headers
+etc.</p>
+<p>Data security laws require the removal of personally identifiable
+information, such that a person is not identifiable using the data
+<em>in combination with</em> other data. This means that even if you
+cannot identify someone using your data alone, you must also make sure
+that an individual cannot be identified if someone combines your data
+with some other data.</p>
+<p>This is a reason that good data management is important, you need to
+be able to track any private data in order to make sure it is not
+exposed, and make sure all of it is removed.</p>
+<p>Software auto-generates metadata, such as name of creator, date
+created, name of last modifier, date and time of last modification,
+organisation, and more, depending on the software. Ensure that only the
+data you want is transmitted and be aware of inadvertant meta-data. For
+example, in Microsoft Word.</p>
 <hr></div>
-<div class="section level1">
-<h1 id="changing-data-locations">Changing Data Locations<a class="anchor" aria-label="anchor" href="#changing-data-locations"></a></h1>
-<p>Eventually projects evolve.</p>
-<p>Storage locations sometimes need to change.</p>
+</div>
+</section><section><h2 class="section-heading" id="changing-data-locations">Changing Data Locations<a class="anchor" aria-label="anchor" href="#changing-data-locations"></a></h2>
+<hr class="half-width"><p>Eventually projects evolve and storage locations sometimes need to
+change.</p>
 <p>When moving project data:</p>
 <ul><li>Inform collaborators</li>
 <li>Update documentation</li>
@@ -694,15 +1030,46 @@ convenient.</p>
 <li>Update analysis workflows if required</li>
 </ul><p>Changing locations can have unintended consequences.</p>
 <p>For example:</p>
+<div class="tabs">
+<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-2-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-1" type="button" role="tab" aria-controls="nav-tabpanel-2-1" aria-selected="true">
+  <h2 class="tab-header" id="nav-tab-heading-2-1">
+  Windows
+  </h2>
+</button>
+<button class="nav-link" id="nav-tab-2-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-2" type="button" role="tab" aria-controls="nav-tabpanel-2-2" aria-selected="false">
+  <h2 class="tab-header" id="nav-tab-heading-2-2">
+  macOS
+  </h2>
+</button>
+<button class="nav-link" id="nav-tab-2-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-3" type="button" role="tab" aria-controls="nav-tabpanel-2-3" aria-selected="false">
+  <h2 class="tab-header" id="nav-tab-heading-2-3">
+  Linux
+  </h2>
+</button>
+</div>
+</nav><div id="nav-tabContent-2" class="tab-content">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
 <pre class="text"><code>D:\ProjectData\</code></pre>
 <p>becoming:</p>
 <pre class="text"><code>R:\Projects\ProjectData\</code></pre>
+</div>
+<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
+<pre class="text"><code>/Users/Clair/ProjectData/</code></pre>
+<p>becoming:</p>
+<pre class="text"><code>/data/Projects/ProjectData/</code></pre>
+</div>
+<div id="nav-tabpanel-2-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-3">
+<pre class="text"><code>/home/Clair/ProjectData/</code></pre>
+<p>becoming:</p>
+<pre class="text"><code>/data/Projects/ProjectData/</code></pre>
+</div>
+</div>
+</div>
 <p>may break scripts that assume the old location.</p>
 <p>This is one reason why good documentation is important.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="a-brief-note-on-version-control">A Brief Note on Version Control<a class="anchor" aria-label="anchor" href="#a-brief-note-on-version-control"></a></h1>
-<p>Sometimes researchers use filenames to keep track of changes:</p>
+<hr></section><section><h2 class="section-heading" id="a-brief-note-on-version-control">A Brief Note on Version Control<a class="anchor" aria-label="anchor" href="#a-brief-note-on-version-control"></a></h2>
+<hr class="half-width"><p>Sometimes researchers use filenames to keep track of changes:</p>
 <pre class="text"><code><span><span class="va">report_v01.docx</span></span>
 <span><span class="va">report_v02.docx</span></span>
 <span><span class="va">report_v03.docx</span></span></code></pre>
@@ -715,16 +1082,16 @@ systems such as Git.</p>
 <li>Change management</li>
 <li>Recovery of previous versions</li>
 </ul><p>Version control is a large topic in its own right.</p>
-<blockquote>
-<h2 id="further-learning">Further Learning</h2>
+<p>Note that some services, such as OneDrive, retain their own version
+histories.</p>
+<div class="section level3">
+<h3 id="further-learning">Further Learning<a class="anchor" aria-label="anchor" href="#further-learning"></a></h3>
 <p>If you want to learn more about version control, consider attending a
 Carpentries Git and Version Control workshop.</p>
 <p>This lesson will not cover Git in detail.</p>
-</blockquote>
 <hr></div>
-<div class="section level1">
-<h1 id="sharing-research-outputs">Sharing Research Outputs<a class="anchor" aria-label="anchor" href="#sharing-research-outputs"></a></h1>
-<p>Eventually many research projects produce outputs that should be
+</section><section><h2 class="section-heading" id="sharing-research-outputs">Sharing Research Outputs<a class="anchor" aria-label="anchor" href="#sharing-research-outputs"></a></h2>
+<hr class="half-width"><p>Eventually many research projects produce outputs that should be
 publicly available.</p>
 <p>Examples include:</p>
 <ul><li>Supporting datasets</li>
@@ -749,11 +1116,17 @@ way that journal articles are cited.</p>
 <p>For example:</p>
 <pre class="text"><code><span><span class="va">doi.org</span><span class="op">/</span><span class="va">xxxxx</span></span></code></pre>
 <p>This makes research outputs easier to find, cite, and reuse.</p>
-<hr></div>
-<div class="section level1">
-<h1 id="discussion-where-should-you-store-your-data">Discussion: Where Should You Store Your Data?<a class="anchor" aria-label="anchor" href="#discussion-where-should-you-store-your-data"></a></h1>
-<blockquote>
-<h2 id="discussion-1">Discussion</h2>
+<p>The University provides the following information page <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/" class="external-link">Find
+Data</a> but individual funders may have their own requirements. <a href="https://www.re3data.org" class="external-link">re3data.org</a> can also find data
+repositories.</p>
+<hr><div id="where-should-you-store-your-data" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="where-should-you-store-your-data" class="callout-inner">
+<h3 class="callout-title">Where Should You Store Your Data?</h3>
+<div class="callout-content">
 <p>Consider a current or future project.</p>
 <ul><li>Where are you storing data now?</li>
 <li>Is that the most appropriate location?</li>
@@ -761,12 +1134,17 @@ way that journal articles are cited.</p>
 <li>Could collaborators access it?</li>
 <li>What would happen if you left the institution?</li>
 </ul><p>Would you change anything after today’s discussion?</p>
-</blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="exercise-matching-data-to-storage">Exercise: Matching Data to Storage<a class="anchor" aria-label="anchor" href="#exercise-matching-data-to-storage"></a></h1>
-<blockquote>
-<h2 id="challenge">Challenge</h2>
+</div>
+</div>
+</div>
+<hr><div id="matching-data-to-storage" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="matching-data-to-storage" class="callout-inner">
+<h3 class="callout-title">Matching Data to Storage</h3>
+<div class="callout-content">
 <p>For each scenario, identify the most appropriate storage location and
 explain your reasoning.</p>
 <ol style="list-style-type: decimal"><li>Active analysis files that only you are currently editing.</li>
@@ -775,9 +1153,16 @@ explain your reasoning.</p>
 <li>Human participant data.</li>
 <li>Published research outputs accompanying a journal article.</li>
 </ol><p>Discuss your answers with a partner.</p>
-</blockquote>
-<blockquote>
-<h2 id="solution">Solution</h2>
+</div>
+</div>
+</div>
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
+</button>
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div class="accordion-body">
 <p>Example answers:</p>
 <ol style="list-style-type: decimal"><li>Local working copy with institutional backup.</li>
 <li>Shared project storage or Research Data Warehouse.</li>
@@ -787,11 +1172,39 @@ explain your reasoning.</p>
 repository.</li>
 </ol><p>The key consideration is matching storage decisions to requirements
 around access, backup, scale, and security.</p>
-</blockquote>
-<hr></div>
-<div class="section level1">
-<h1 id="looking-ahead">Looking Ahead<a class="anchor" aria-label="anchor" href="#looking-ahead"></a></h1>
-<p>We now know where data should live.</p>
+</div>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="university-data-management-plan">University Data Management Plan<a class="anchor" aria-label="anchor" href="#university-data-management-plan"></a></h2>
+<hr class="half-width"><p>Newcastle University has various templates for planning your data
+management aimed at PGRs. These can be found <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/" class="external-link">here</a>.
+There are slightly different templates for the Faculty of Science,
+Agriculture and Engineering, the Faculty of Humanities and Social
+Sciences and the Faculty of Medical Sciences, but all follow the same
+general form .e.g.</p>
+<ul><li>Type of study (3 lines).</li>
+<li>Existing data study.</li>
+<li>Data types.</li>
+<li>Format and scale of your data.</li>
+<li>Data collection/production methodology.</li>
+<li>Data quality and standards.</li>
+<li>Data management, storage and curation.</li>
+<li>Metadata and documentation.</li>
+<li>Data security risks.</li>
+</ul><p>The university has guides and training specifically to help with your
+data management plan <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/" class="external-link">here</a>.</p>
+<p>This is the University plan, your funding agencies may have their own
+standards and requirements.</p>
+<hr></section><section><h2 class="section-heading" id="data-privacy-impact-assessment">Data Privacy Impact Assessment<a class="anchor" aria-label="anchor" href="#data-privacy-impact-assessment"></a></h2>
+<hr class="half-width"><p>If your research project involves personal or sensitive data, or
+could potentially, a Data Protection Impact Assessment should be
+completed and registered with the University’s Information Governance
+Team. This is outlined <a href="https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/" class="external-link">here</a>.
+The assessment documenation includes a number of screening questions to
+help decide which sections you need to fill in.</p>
+<hr></section><section><h2 class="section-heading" id="looking-ahead">Looking Ahead<a class="anchor" aria-label="anchor" href="#looking-ahead"></a></h2>
+<hr class="half-width"><p>We now know where data should live.</p>
 <p>The next challenge is dealing with situations where data is becoming
 difficult to store or share.</p>
 <p>In the next episode we will discuss:</p>
@@ -832,11 +1245,7 @@ dedicated Carpentries Git workshops.</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="documentation.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="transferring-data.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -896,8 +1305,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/storing-data.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/storing-data.html",
   "dateCreated": "2026-07-01",
-  "dateModified": "2026-07-02",
-  "datePublished": "2026-07-22"
+  "dateModified": "2026-07-23",
+  "datePublished": "2026-07-23"
 }
 
   </script><script>

@@ -67,8 +67,9 @@ Before we can solve these problems, we need to understand how data size is measu
 
 ---
 
-::::::::::::::::::::::::::::::::::::: discussion
-How Could We Make The Data Smaller?
+::::::::::::::::::::::::::::::::::::: challenge
+
+## How Could We Make The Data Smaller?
 
 
  Working in pairs:
@@ -87,7 +88,7 @@ How Could We Make The Data Smaller?
 
 After a few minutes, discuss responses as a group.
 
-::::::::::::::::::::::::::::::::::::::::: 
+::::::::::::::::::::::::::::::::::::::::: solution
 
 Common answers may include:
 
@@ -99,13 +100,16 @@ Common answers may include:
 - Resizing images
 - Removing unnecessary intermediate results
 
+:::::::::::::::::::::::::::::::::::::::::
+:::::::::::::::::::::::::::::::::::::::::
+
 ::::::::::::::::::::::::::::::::::::: instructor
->
-> Learners often jump immediately to deleting files.
->
-> Emphasise that deletion is usually the last option.
->
-> Compression and improved organisation often reduce storage requirements significantly without losing information.
+
+ Learners often jump immediately to deleting files.
+
+ Emphasise that deletion is usually the last option.
+
+ Compression and improved organisation often reduce storage requirements significantly without losing information.
 
 :::::::::::::::::::::::::::::::::::::::: 
 
@@ -169,38 +173,44 @@ Understanding file sizes helps us make informed decisions.
 
 ---
 
-## Demonstration: Viewing File Sizes
+:::::::::::::::::::::::: challenge
 
-### Individual Files
+## Viewing File Sizes
 
-Using File Explorer:
+
+::::::::::::::::::::: tab
+
+### Clicking
+
+Using your file manager:
 
 1. Navigate to the dataset.
-2. Right-click a file.
-3. Select **Properties**.
+2. Right-click a file or folder.
+3. Select **Properties** on Window/Linux or **Get Info** on macOS.
 4. Observe the reported file size.
-
----
-
-### Folders
-
-To view the size of a folder:
-
-1. Right-click the folder.
-2. Select **Properties**.
-3. Wait while the operating system calculates the total size.
 
 This may take a few moments for large datasets.
 
----
 
-### Alternative: File Explorer Columns
+### Column view
 
-Switch File Explorer to **Details View**.
+Switch File manager to **Details View**.
 
 The size column can be displayed for many file types.
 
 This can make large files easier to identify.
+
+::::::::::::::::::::::::
+
+The instructor will demonstrate, and you can try it on your own system. Which is the largest file in the example data?
+
+:::::::::::::::::::::::::::: solution
+
+ It is ``big_file.data``
+
+::::::::::::::::::::::::::::
+::::::::::::::::::::::::::::
+
 
 ::::::::::::::::::: instructor
 
@@ -272,11 +282,11 @@ Examples:
 
 The resulting file may be smaller, but some original information has been lost.
 
-For research data, lossy compression should be used with care.
+For research data, lossy compression should be used with care. See [LINK]
 
 ---
 
-## Demonstration: Compressing A Folder
+### Demonstration: Compressing A Folder
 
 :::::::::: tab
 
@@ -321,6 +331,9 @@ The exact wording varies between desktop environments.
 
 :::::::::::
 
+
+
+
 ::::::::::::::::::::::::::::::::::::::::::::::::: instructor
 
  Demonstrate compression on the cleaned project directory.
@@ -329,7 +342,7 @@ The exact wording varies between desktop environments.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## When Should You Compress Data?
+### When Should You Compress Data?
 
 Compression is often useful when:
 
@@ -350,7 +363,7 @@ Compression can significantly reduce transfer times.
 
 ---
 
-## When Should You Avoid Compression?
+### When Should You Avoid Compression?
 
 Compression is not always beneficial.
 
@@ -376,7 +389,7 @@ Compressing these files often produces very little size reduction.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::  callout
 
- If a file format is already compressed, zipping it again may provide almost no additional benefit.
+ If a file format is already compressed, zipping it again may provide almost no additional benefit for size reduction. It can be used to keep files together or reduce the total number of files you have to deal with. 
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -437,9 +450,11 @@ image.jpg
 
 can have dramatically different sizes.
 
+Switching from a human readable format to a binary (computer readable) format can also significantly reduce the file size and the speed of reading and writing the file. 
+
 ---
 
-## An Example: Bitmap Images
+### An Example: Bitmap Images
 
 Suppose we save the same image as:
 
@@ -457,13 +472,13 @@ The same image saved as:
 sample.png
 ```
 
-may be significantly smaller because PNG uses compression internally.
+may be significantly smaller because PNG uses lossless compression internally.
 
 The image looks the same, but storage requirements differ.
 
 ---
 
-## Trade-Offs
+### Trade-Offs
 
 Smaller files are not always better.
 
@@ -494,9 +509,9 @@ Neither format is universally superior.
 
 The best format depends on your intended use.
 
-> ### Looking Ahead
->
-> We will discuss choosing data formats in much more detail in a later episode.
+### Looking Ahead
+
+ We will discuss choosing data formats in much more detail in a later episode.
 
 ---
 
@@ -530,28 +545,39 @@ Different transfer methods are appropriate for different situations.
 
 ### Email Attachments
 
+
+
 Suitable for:
 
 - Small files
 - Documents
 - Individual figures
+- Non-private data
 
-Advantages:
+:::::::::::::: tab
+
+### Advantages
 
 - Simple
 - Familiar
 
-Disadvantages:
+### Disadvantages
 
 - Attachment size limits
 - Duplicate copies
 - Difficult version management
+- Easy to send to the wrong email address
+- Security issues
 
-Generally unsuitable for large datasets.
+:::::::::::::::::::::::::::::::
+
+Email is generally unsuitable for large datasets.
 
 ---
 
 ### OneDrive or SharePoint Links
+
+
 
 Suitable for:
 
@@ -559,16 +585,22 @@ Suitable for:
 - Medium-sized datasets
 - Shared documents
 
-Advantages:
+
+:::::::::::::: tab
+
+### Advantages
 
 - Shared access
 - Version history in many cases
 - No attachment limits
+- Allows for permission management
 
-Disadvantages:
+### Disadvantages
 
 - Requires permission management
 - Can become difficult for very large datasets
+
+:::::::::::::::
 
 ---
 
@@ -580,15 +612,19 @@ Suitable for:
 - Research teams
 - Institutional projects
 
-Advantages:
+:::::::::::::: tab
+
+### Advantages
 
 - Centralised location
 - Controlled access
 - Common source of truth
 
-Disadvantages:
+### Disadvantages
 
 - Access may be limited to project members
+
+:::::::::::::: 
 
 ---
 
@@ -602,18 +638,58 @@ Suitable for:
 - HPC environments
 - Multi-gigabyte or multi-terabyte transfers
 
-Advantages:
+:::::::::::::: tab
+
+### Advantages
 
 - Reliable
 - Designed for research
 - Handles interruptions well
 
-Disadvantages:
+### Disadvantages
 
 - May require institutional access
 - More complex than simple file sharing
 
+:::::::::::::: 
+
 ---
+
+### Institutional File Drop-off Service
+
+Some institutions have a file drop off service, such as [Drop-off](https://dropoff.ncl.ac.uk/)
+
+Suitable for:
+
+
+
+
+:::::::::::::: tab
+
+### Advantages
+
+- Encrypted
+- Owned by or contracted to the Institution
+- Data is held temporarily
+- Access notification
+
+### Disadvantages
+
+- Files limited in size
+- Can send to wrong address
+
+:::::::::::::::
+---
+
+::::::::::::::: instructor
+
+Skip this if your institution does not have a file drop-off service. 
+
+:::::::::::::::
+
+---
+
+::::::::::::::::: callout
 
 ## A Note On Command-Line Tools
 
@@ -629,14 +705,18 @@ These tools are extremely powerful and commonly used on HPC systems.
 
 However, they are beyond the scope of this lesson.
 
-> ### Further Learning
->
-> Learners interested in transferring data to servers or HPC systems should consider attending:
->
-> - Carpentries Shell/Bash workshops
-> - HPC training courses
->
-> These courses cover tools such as `rsync` in more detail.
+### Further Learning
+
+ Learners interested in transferring data to servers or HPC systems should consider attending:
+
+ - Carpentries Shell/Bash workshops
+ - HPC training courses
+
+ These courses cover tools such as `rsync` in more detail.
+
+::::::::::::::::::::::
+
+
 
 ---
 
@@ -658,7 +738,7 @@ However, they are beyond the scope of this lesson.
  Example answers:
 
  1. Email attachment.
- 2. OneDrive, SharePoint, or shared project storage.
+ 2. OneDrive, SharePoint, File Drop-Off service, or shared project storage.
  3. Globus or institutional research storage.
  4. Repository such as Zenodo.
 

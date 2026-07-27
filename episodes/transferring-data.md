@@ -579,7 +579,7 @@ Suitable for:
 
 :::::::::::::::::::::::::::::::
 
-Email is generally unsuitable for large datasets.
+Email is generally unsuitable for large datasets and personal data.
 
 ---
 
@@ -668,7 +668,7 @@ Suitable for:
 
 ### Institutional File Drop-off Service
 
-Some institutions have a file drop off service, such as [Drop-off](https://dropoff.ncl.ac.uk/)
+Some institutions have a file drop off service, such as [Newcastle University's Drop-off](https://dropoff.ncl.ac.uk/)
 
 Suitable for:
 

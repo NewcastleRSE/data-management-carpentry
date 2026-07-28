@@ -187,7 +187,7 @@ Given the huge variety of research and data, there is no universal documentation
 
 - Project description
 - Dataset descriptions
-- Data origins
+- Data provenance
 - Data use and analysis
 - Contact details
 - README file(s)
@@ -252,7 +252,7 @@ This documentation helps people understand how to navigate your files and the re
 
 ---
 
-### Data origins
+### Data provenance
 
 Data **provenance** - the full record of a dataset's origins and modifications - becomes increasingly important as projects grow, and certain projects may have strict rules for tracking providence. Some data sources include provenance information in file headers, while others store provenance in other locations. 
 
@@ -260,9 +260,9 @@ If data sources are updated, for example to correct collection errors or acciden
 
 ::::::::::::::: challenge
 
-## Documenting your data's origins
+## Documenting data provenance
 
-What things do you need to document to track data origin for one of your projects?
+What things do you need to document to track data provenance for one of your projects?
 
 Think about details you may need to 
 - report in a paper or other publication

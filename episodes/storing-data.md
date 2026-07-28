@@ -43,23 +43,18 @@ However, another important question remains:
 
 Many researchers begin a project by storing files wherever is most convenient:
 
-- On their laptop
-- In Downloads
-- On a USB drive
+- On their laptop (e.g., in a folder in "Documents" or "Desktop")
+- On a USB drive or external hard drive
 - In personal cloud storage
 
-This often works initially.
-
-However, research projects usually involve:
+This approach often works initially, but many research projects involve
 
 - Collaborators
 - Large datasets
 - Sensitive information
 - Long-term storage requirements
 
-A storage decision that works for a single person may become a problem when a project grows or team members change.
-
-Choosing an appropriate storage location is therefore an important part of good data management.
+A storage decision that works for a single person may not scale as the project and team grows. Choosing an appropriate storage location is therefore an important part of good data management.
 
 ---
 
@@ -67,20 +62,20 @@ Choosing an appropriate storage location is therefore an important part of good 
 
 ## Where Do You Store Your Data?
 
- Spend a few minutes discussing the following questions with a partner:
+ Spend a few minutes discussing your current storage set-up with a partner:
 
  - Where do you currently store your research data?
  - Why did you choose that location?
  - How do collaborators access it?
  - Are the data backed up?
  - What would happen if your laptop stopped working tomorrow?
- - What happens if you leave your current project suddenly?
+ - What would happen if you suddenly left your current project?
 
-Share some of your ideas with the group.
+Share some of your current solutions and any concerns with the group.
 
 ::::::::::::::::::::::::: solution
 
-Common answers for where to store data often include:
+Researchers often store data on
 
 - Laptop hard drives
 - USB drives
@@ -90,9 +85,6 @@ Common answers for where to store data often include:
 - Institutional storage systems
 - HPC storage
 - External hard drives
-
-Other answers can vary depending on the project. 
-
 
 :::::::::::::::::::::::
 :::::::::::::::::::::::
@@ -109,57 +101,51 @@ Other answers can vary depending on the project.
 
 ## What Makes a Good Storage Location?
 
-When deciding where to store data, it is useful to consider four broad questions:
+When deciding where to store data, consider
 
-- Access.
-- Backups.
-- Security.
-- Sustainability. 
+- Access
+- Recoverability
+- Security
+- Sustainability
 
-### Can People Access It?
+### Can Other People Access the Data?
 
-If collaborators need access, they must be able to find and open the data.
+Collaborators must be able to find and open the data.
 
-Questions to consider:
+To evaluate data access, consider
 
-- Can project members access it?
+- Can all project members access the data?
 - Can external collaborators access it?
-- Can access be controlled?
-- Can new project members be added easily?
-- When you leave the project might the data disappear?
+- Can access be limited to specific people?
+- Can access be easily added for new project members and removed for past members?
+- When you leave the project, will other people have difficulty accessing the data?
 
 ---
 
-## Is It Backed Up?
+## Is the Data Recoverable?
 
-Storage and backup are not the same thing.
+Data storage and data backup require different solutions. Many researchers assume that files on a computer are safe. However -  
 
-Many researchers assume:
+ - Computers fail
+ - Laptops get stolen
+ - Hard drives stop working
+ - USB drives get lost
+ - Data can be accidentally deleted or incorrectly modified
 
-> "My files exist on a computer, therefore they are safe."
-
-Unfortunately this is not always true.
-
- - Computers fail.
- - Laptops get stolen.
- - Hard drives stop working.
- - USB drives get lost.
- - Data might be deleted accidentally.
-
-Good storage solutions should have reliable backup arrangements.
+Good storage solutions should have reliable backup solutions so that lost data is **recoverable**.
 
 :::::::::::: challenge
 
-Discuss what are the good characteristics of a backup system in your groups. 
+Discuss features of a good backup system in your groups. 
 
 :::::::::::: solution
 
-A good backup system might include:
+A good backup system might include
 
-- Regular backups - overnight, when connected to the internet etc.
-- Offsite - cloud backups? In a different building.
-- Accessible - you can easily go and get the backups and find your files
-- Redundancy - Multiple copies, in case you delete data and take a while to notice
+- Regular, automated backups - e.g., that are scheduled every night or triggered when connected to the internet
+- Off-site (to protect against theft or physical damage due to, e.g., fires) - e.g., on the cloud or in a different building
+- Accessible - you can easily restore lost data from the backups and find your files
+- Redundancy - maintain multiple copies of your data to protect against accidental deletion
 
 
 :::::::::::::

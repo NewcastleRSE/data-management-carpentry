@@ -193,7 +193,7 @@ To ensure your data storage is sustainable over the lifetime of the project, con
 
 ## Types of Storage
 
-There are many different types of storage: 
+There are many different types of data storage: 
 
 - Local storage
 - Personal cloud storage
@@ -206,7 +206,7 @@ We'll discuss the advantages and disadvantages of each one below.
 
 ### Local Storage
 
-Local storage refers to files stored directly on a device such as:
+Local storage refers to files stored directly on a device such as a
 
 - Laptop
 - Desktop computer

@@ -175,7 +175,7 @@ by default. Other software will store different metadata.
 
 Automated metadata may add information you do not wish to share to the file. Ensure you do not inadvertently share sensitive or private metadata when distributing data. 
 
-Office provides tools for removing automated metadata if required. 
+Microsoft Office provides tools for removing automated metadata if required. 
 
 ::::::::::::::
 
@@ -227,7 +227,7 @@ It may be tempting to skip this description and instead rely on a long project f
 marine_mammals_disease_scotland_westcoast_2020_to_2025
 ```
 
-but this name is long and still ambiguous. Additionally, a project's scope and goals over change over time; what if your focus narrows to investigating seals or dolphins? It is easier to change the documentation than update folder names and references. 
+but this name is long and still ambiguous. Additionally, a project's scope and goals change over time; what if your focus narrows to investigating seals or dolphins? It is easier to change the documentation than update folder names and references. 
 
 ---
 
@@ -248,7 +248,7 @@ analysis/
 Contains scripts and outputs generated during analysis.
 ```
 
-This documentation helps people understand how to navigate your files and the relationships between different files. 
+This documentation helps people understand how to navigate your files and the relationships between them. 
 
 ---
 
@@ -534,7 +534,7 @@ to preserve important contextual information.
 
 ::: caution
 
-Any manually-created READMEs may also need to be manually updated as your project progresses, which risks the documentation becoming out-of-date. Where possible, automate your documentation (for example, by exporting settings from analysis tools or scripts).
+Any READMEs written by hand may also need to be manually updated as your project progresses, which risks the documentation becoming out-of-date. Where possible, automate your documentation (for example, by exporting settings from analysis tools or scripts).
 
 :::
 
@@ -572,7 +572,7 @@ Project logs provide a record of major project decisions; they help record not o
 
 #### Parameter files
 
-Many analyses are highly adjustable, with various different parameters, or settings, that can be changed depending on your analysis needs. Parameter files record these settings to ensure that your data processing and analysis steps can be reproduced.
+Many analyses are highly adjustable, with various different parameters, or settings, that can be changed depending on your needs. Parameter files record these settings to ensure that your data processing and analysis steps can be reproduced.
 
 ---
 

@@ -603,7 +603,7 @@ siteA_image_005.png
 :::
 ::::::::::::::::::::
 
-::::::: discussion
+::::::: challenge
 
 What could go wrong if a bulk rename operation is performed incorrectly?
 
@@ -751,11 +751,6 @@ Various software tools can help with versioning without using multiple files. Fo
 - OneDrive
 
 ::::::::::::::::::::::::::::
-
-
-
-
-## Exercise: Improve the File Names
 
 ::: challenge
 

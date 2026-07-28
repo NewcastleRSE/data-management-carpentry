@@ -213,29 +213,6 @@ Local storage refers to files stored directly on a device such as a
 - External hard drive
 - USB drive
 
-For example:
-
-:::::::::: tab
-
-#### Windows
-
-```text
-C:\Users\Bob\Documents\Research\
-```
-
-#### macOS
-
-```text
-/Users/Bob/Documents/Research/
-```
-
-#### Linux
-
-```text
-/home/Bob/Documents/Research/
-```
-::::::::::::::::::::::::
-
 :::::::::::::::::: challenge
 
 Discuss the advantages and disadvantages of local storage with a partner or group.

@@ -254,25 +254,20 @@ It is not a good long-term storage solution for important project data since it 
 
 ### Personal Cloud Storage
 
-Many institutions provide services such as:
+Many institutions provide services such as
 
 - OneDrive
 - Sharepoint
 - Google Drive
 - Dropbox
 
-These can synchronise files between devices and provide backup capabilities.
+These services can synchronise files between devices and provide data backups.
 
-For example:
-
-```text
-OneDrive/
-└── Research Project/
-```
-
-Newcastle University has guides for using OneDrive and Sharepoint storage: [Link](https://newcastle.sharepoint.com/sites/O365). 
+Newcastle University has [guides](https://newcastle.sharepoint.com/sites/O365) for using OneDrive and Sharepoint storage.
 
 :::::::::::::::::::: challenge
+
+## Personal cloud storage pros and cons
 
 Discuss the advantages and disadvantages of cloud storage with a partner or group.
 
@@ -284,19 +279,19 @@ Discuss the advantages and disadvantages of cloud storage with a partner or grou
 - Easy and rapid syncing. OneDrive often works in the background.
 - Simple sharing
 - Automatic backup in many cases
-- Strong Security compared to email
+- Stronger security compared to email
 - Version history 
-- You do not need to send data, you can send a link to the data
+- Easier to share large datasets using links to the data
 
 **Disadvantages**
 
 - Usually linked to an individual account
 - Access often disappears when somebody leaves
 - Shared permissions must be managed carefully
-- Storage quotas may be limited
+- Storage may be limited
 - Security/Privacy issues
 - Data sovereignty issues
-- Access to external collaborators
+- Potentially harder to provide access to external collaborators
 - Understanding University policy 
 - Knowing which service to use can be challenging
 - May fail silently
@@ -306,28 +301,26 @@ Discuss the advantages and disadvantages of cloud storage with a partner or grou
 
 ::::::::::: caution
 
-The University also recommends against uploading personal or sensitive data to Google Drive and DropBox, see the cloud storage tab at the following [link](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/). It suggests OneDrive.
+[Newcastle University discourages uploading personal or sensitive data to Google Drive and DropBox](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/) (see the cloud storage tab). It suggests Microsoft OneDrive as a more secure option.
 
 :::::::::::::::
 
-
+:::::::::::::::::::: callout
 #### A Common Research Problem
 
-Many researchers store project data in their personal OneDrive.
+Many researchers store project data in their personal OneDrive. This approach seems convenient until
 
-This seems convenient until:
+- A researcher leaves the project
+- A researcher leaves the institution and their institution OneDrive account is removed
+- You need to transfer ownership of files
 
-- A researcher leaves the project.
-- Their institutional account is removed.
-- Access to project data is lost.
-- Need to transfer ownership of files.
+These situations can also result in loss of access to important project data.
 
-In some organisations, governance policies may prevent administrators from granting access because personal storage is treated as individual rather than project-owned data.
+In some organisations, governance policies may prevent administrators from accessing a past team member's OneDrive because personal storage is treated as individual, rather than project-owned, data. For this reason, avoid using personal cloud storage as the primary home of important shared project data.
 
-For this reason, personal cloud storage should generally not be considered the primary home of important shared project data.
+Depending on the cloud service, it can also be challenging to transfer file ownership to another team member.
 
-Depending on the cloud service, it can be hard to transfer ownership of files to another group member. 
-
+::::::::::::::::::::
 
 ::::::::::::::::: instructor
 
@@ -357,6 +350,8 @@ Shared Projects/
 ```
 
 :::::::::::::::::::: challenge
+
+## Shared storage pros and cons
 
 Discuss the advantages and disadvantages of shared storage with a partner or group.
 

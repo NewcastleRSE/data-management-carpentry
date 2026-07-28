@@ -236,18 +236,11 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#how-do-i-remember-and-share-where-things-are">How Do I Remember and Share Where Things Are?</a></li>
+        <ul><li><a href="#how-do-i-remember-and-share-where-my-data-is-stored">How Do I Remember and Share Where My Data Is Stored?</a></li>
 <li><a href="#documentation-is-for-humans">Documentation Is For Humans</a></li>
 <li><a href="#what-is-metadata">What Is Metadata?</a></li>
 <li><a href="#what-should-we-document">What Should We Document?</a></li>
-<li><a href="#what-data-exists">What Data Exists?</a></li>
-<li><a href="#where-did-the-data-come-from">Where Did The Data Come From?</a></li>
-<li><a href="#how-should-the-data-be-used">How Should The Data Be Used?</a></li>
-<li><a href="#who-should-be-contacted">Who Should Be Contacted?</a></li>
-<li><a href="#readme-files">README Files</a></li>
-<li><a href="#documentation-beyond-the-top-level">Documentation Beyond The Top Level</a></li>
-<li><a href="#other-useful-documentation">Other Useful Documentation</a></li>
-<li><a href="#file-headers">File headers</a></li>
+<li><a href="#file-level-documentation">File-level documentation</a></li>
 <li><a href="#looking-ahead">Looking Ahead</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -358,7 +351,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Documenting Your Data</h1>
-        <p>Last updated on 2026-07-23 |
+        <p>Last updated on 2026-07-28 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/documentation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -399,18 +392,18 @@ browser?</li>
 <li>Document project structure, provenance, and data sources.</li>
 <li>Identify situations where additional documentation is needed.</li>
 <li>Improve the reusability of a dataset through documentation.</li>
-<li>Use of file headers to contain key information.</li>
+<li>Use file headers to store key metadata.</li>
 </ul></div>
 </div>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="how-do-i-remember-and-share-where-things-are">How Do I Remember and Share Where Things Are?<a class="anchor" aria-label="anchor" href="#how-do-i-remember-and-share-where-things-are"></a></h2>
+<section><h2 class="section-heading" id="how-do-i-remember-and-share-where-my-data-is-stored">How Do I Remember and Share Where My Data Is Stored?<a class="anchor" aria-label="anchor" href="#how-do-i-remember-and-share-where-my-data-is-stored"></a></h2>
 <hr class="half-width"><p>In the previous two episodes, we improved our folder structure and
 renamed our files.</p>
 <p>The project now looks considerably better than it did when we
 inherited it.</p>
-<p>However, several important questions still remain unanswered:</p>
+<p>However, several important questions remain unanswered:</p>
 <ul><li>What does this dataset contain?</li>
 <li>Who collected it?</li>
 <li>When was it collected?</li>
@@ -419,14 +412,16 @@ inherited it.</p>
 <li>What units were used?</li>
 <li>Which files are raw data?</li>
 <li>Which files were generated during analysis?</li>
+<li>What changes do different versions capture?</li>
 <li>Which version should be used?</li>
 <li>Which files relate to which other files?</li>
 <li>When was the data downloaded?</li>
-<li>Where was it downloaded from?</li>
-<li>Which software was used to analyse it?</li>
+<li>Where was the data downloaded from?</li>
+<li>What software and versions of software were used to analyse the
+data?</li>
 </ul><p>Imagine returning to this project six months from now. Would you
 still remember all of these details? What about three years from now?
-What if somebody else joins the project?</p>
+What if somebody else joins or takes over the project?</p>
 <p>Good folder structures and filenames help people
 <strong>navigate</strong> data. Documentation helps people
 <strong>understand</strong> data.</p>
@@ -440,7 +435,6 @@ What if somebody else joins the project?</p>
 <div class="callout-content">
 <p>Think about a dataset, project, software package, or repository that
 you found particularly easy to use.</p>
-<p>Working in pairs:</p>
 <ul><li>What made it easy to understand?</li>
 <li>What information was available?</li>
 <li>How was that information presented?</li>
@@ -449,7 +443,7 @@ you found particularly easy to use.</p>
 </ul><p>Conversely:</p>
 <ul><li>Have you ever received poorly documented data?</li>
 <li>What information was missing?</li>
-</ul><p>You can then discuss responses with the group.</p>
+</ul><p>Discuss responses with your neighbour.</p>
 </div>
 </div>
 </div>
@@ -460,10 +454,10 @@ you found particularly easy to use.</p>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
-<p>Common themes often include but are not limited to:</p>
+<p>Helpful documentation practices include</p>
 <ul><li>Clear explanations</li>
 <li>Consistent organisation</li>
-<li>Readily available documentation</li>
+<li>Readily available information</li>
 <li>Definitions of terms and variables</li>
 <li>Information about data collection</li>
 <li>Contact details</li>
@@ -495,24 +489,29 @@ technology:</p>
 </ul><p>However, one of the biggest barriers to reusing data is simply
 understanding it. Good documentation reduces the number of assumptions
 that somebody must make when using a dataset.</p>
-<p>The most important collaborator you will ever have is often:</p>
-<blockquote>
-<p>Future you.</p>
-</blockquote>
-<p>Documentation helps future-you understand decisions that seem obvious
-today but may be forgotten later.</p>
-<hr></section><section><h2 class="section-heading" id="what-is-metadata">What Is Metadata?<a class="anchor" aria-label="anchor" href="#what-is-metadata"></a></h2>
-<hr class="half-width"><div id="callout1" class="callout">
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
 <div class="callout-inner">
 <div class="callout-content">
-<p>Metadata is often described as:</p>
-<blockquote>
-<p>Data about data.</p>
-</blockquote>
+<p>The most important collaborator you will ever have is often
+<strong>future you</strong>.</p>
+</div>
+</div>
+</div>
+<p>Documentation helps future you understand decisions that seem obvious
+today, but may be forgotten later.</p>
+<hr></section><section><h2 class="section-heading" id="what-is-metadata">What Is Metadata?<a class="anchor" aria-label="anchor" href="#what-is-metadata"></a></h2>
+<hr class="half-width"><div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Metadata is <strong>data about data</strong>.</p>
 </div>
 </div>
 </div>
@@ -526,21 +525,15 @@ today but may be forgotten later.</p>
 <li>When it was collected.</li>
 <li>How it was collected.</li>
 <li>Units of measurement.</li>
-<li>Data quality issues.</li>
+<li>Data quality or collection issues.</li>
 <li>Licensing information.</li>
 <li>Contact details.</li>
-<li>Link to data archive is using external sources of data.</li>
+<li>Link to the original source of the data if using an external source
+of data.</li>
 </ul><p>Metadata helps transform a collection of numbers into something
 meaningful.</p>
-<div id="callout2" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div class="callout-inner">
-<div class="callout-content">
 <p>Some software autogenerates some metadata for you.</p>
-<p>For example, Microsoft Word produces:</p>
+<p>For example, Microsoft Word produces</p>
 <ul><li>Author</li>
 <li>Company</li>
 <li>Template</li>
@@ -548,9 +541,9 @@ meaningful.</p>
 <li>Date Modified</li>
 <li>Last Saved By</li>
 <li>Revision number</li>
-<li>Total editing file</li>
+<li>Total editing time</li>
 <li>etc…</li>
-</ul><p>be default. Other software will store different things.</p>
+</ul><p>by default. Other software will store different metadata.</p>
 <div id="caution1" class="callout caution">
 <div class="callout-square">
 <i class="callout-icon" data-feather="alert-triangle"></i>
@@ -558,22 +551,30 @@ meaningful.</p>
 <span class="callout-header">Caution</span>
 <div class="callout-inner">
 <div class="callout-content">
-<p>This can have consequences for distributing your data. Metadata you
-do not wish to share may be auto-generated and added to the file. Ensure
-you do not inadvertantly share metadata you did not intend.</p>
-<p>For example, Office provides tools for removing the metadata if
+<p>Automated metadata may add information you do not wish to share to
+the file. Ensure you do not inadvertently share sensitive or private
+metadata when distributing data.</p>
+<p>Microsoft Office provides tools for removing automated metadata if
 required.</p>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
 <hr></section><section><h2 class="section-heading" id="what-should-we-document">What Should We Document?<a class="anchor" aria-label="anchor" href="#what-should-we-document"></a></h2>
-<hr class="half-width"><p>There is no universal documentation standard suitable for every
-project, given the huge variety of research that is taking place.
-However, most project-level documentation should answer several key
-questions.</p>
+<hr class="half-width"><p>Given the huge variety of research and data, there is no universal
+documentation standard suitable for every project. However, most
+project-level documentation should include</p>
+<ul><li>Project description</li>
+<li>Dataset descriptions</li>
+<li>Data provenance</li>
+<li>Data use and analysis</li>
+<li>Contact details</li>
+<li>README file(s)</li>
+</ul><p>Some projects may also include</p>
+<ul><li>Data dictionaries</li>
+<li>Standard operating procedures</li>
+<li>Project logs</li>
+<li>Parameter files</li>
+</ul><p>These elements will be expanded on below.</p>
 <div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -582,42 +583,32 @@ questions.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <p>Research should be reproducible. Given the information in the
-documentation and a paper or thesis, would someone be able to repeat
-your analysis?</p>
-<p>Would <strong>you</strong> be able to repeat your analysis?</p>
+documentation and an accompanying paper or thesis, would someone else be
+able to repeat your research?</p>
+<p>Would <strong>future you</strong> be able to repeat your
+research?</p>
 </div>
 </div>
 </div>
-<p>It is good to document:</p>
-<ul><li>What is the project</li>
-<li>Describe the datasets</li>
-<li>Origin of the data</li>
-<li>How the data should be used</li>
-<li>Funding agency</li>
-<li>Name of primary contact</li>
-<li>Keywords</li>
-<li>Access conditions</li>
-</ul><p>These will be expanded on below.</p>
 <div class="section level3">
-<h3 id="what-is-this-project">What Is This Project?<a class="anchor" aria-label="anchor" href="#what-is-this-project"></a></h3>
-<p>Provide a short description of the project, which briefly summarises
-what all the data is for.</p>
+<h3 id="project-description">Project Description<a class="anchor" aria-label="anchor" href="#project-description"></a></h3>
+<p>Provide a short description that summarises the project’s goal; for
+example,</p>
 <pre class="text"><code>This project investigates disease incidence in marine mammals
 along the Scottish west coast between 2020 and 2025.</code></pre>
 <p>A new collaborator should understand the purpose of the project
-within a few seconds. There are too many details here to encode in a
-reasonable project folder name, so this additional explaination is
-needed.</p>
-<p>These might be a temptation to skip this and try to make the project
-folder something like:</p>
-<pre class="text"><code><span><span class="va">marine_mammals_scotland_westcost_2020_to_2025</span></span></code></pre>
-<p>but this is long, and could still be ambiguous. Particularly if these
-is a change of project scope and the focus narrows to pinnipeds only. It
-is easier to change the documentation than change the folder name and
-potentially break things.</p>
+within a few seconds.</p>
+<p>It may be tempting to skip this description and instead rely on a
+long project folder name such as</p>
+<pre class="text"><code><span><span class="va">marine_mammals_disease_scotland_westcoast_2020_to_2025</span></span></code></pre>
+<p>but this name is long and still ambiguous. Additionally, a project’s
+scope and goals change over time; what if your focus narrows to
+investigating seals or dolphins? It is easier to change the
+documentation than update folder names and references.</p>
 <hr></div>
-</section><section><h2 class="section-heading" id="what-data-exists">What Data Exists?<a class="anchor" aria-label="anchor" href="#what-data-exists"></a></h2>
-<hr class="half-width"><p>Describe the available datasets and folders.</p>
+<div class="section level3">
+<h3 id="data-descriptions">Data descriptions<a class="anchor" aria-label="anchor" href="#data-descriptions"></a></h3>
+<p>Describe the available datasets and folders.</p>
 <p>For example:</p>
 <pre class="text"><code>raw_data/
 Contains original incidence records obtained from collaborators.
@@ -627,22 +618,32 @@ Contains cleaned datasets used in analysis.
 
 analysis/
 Contains scripts and outputs generated during analysis.</code></pre>
-<p>This helps people understand how navigate your files and how they fit
-together.</p>
-<hr></section><section><h2 class="section-heading" id="where-did-the-data-come-from">Where Did The Data Come From?<a class="anchor" aria-label="anchor" href="#where-did-the-data-come-from"></a></h2>
-<hr class="half-width"><div id="challenge2" class="callout challenge">
+<p>This documentation helps people understand how to navigate your files
+and the relationships between them.</p>
+<hr></div>
+<div class="section level3">
+<h3 id="data-provenance">Data provenance<a class="anchor" aria-label="anchor" href="#data-provenance"></a></h3>
+<p>Data <strong>provenance</strong> - the full record of a dataset’s
+origins and modifications - becomes increasingly important as projects
+grow, and certain projects may have strict rules for tracking
+providence. Some data sources include provenance information in file
+headers, while others store provenance in other locations.</p>
+<p>If data sources are updated, for example to correct collection errors
+or accidental changes, it is important to keep track of the new and old
+files.</p>
+<div id="documenting-data-provenance" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="documenting-data-provenance" class="callout-inner">
+<h3 class="callout-title">Documenting data provenance</h3>
 <div class="callout-content">
-<p>Can you suggest a number of things you might wish to document to
-track the origin of data</p>
-<p>Think about what you might need when writing a paper or report,
-reproduce the work in future or track the steps in case a bug or error
-is discovered.</p>
+<p>What things do you need to document to track data provenance for one
+of your projects?</p>
+<p>Think about details you may need to - report in a paper or other
+publication - reproduce the work in future - assess or fix a data error
+that is discovered during the project</p>
 </div>
 </div>
 </div>
@@ -653,44 +654,36 @@ is discovered.</p>
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
-<p>Questions to answer might include:</p>
-<ul><li>Was the data collected by your team? When? Where? Links to other
-notes (lab manuals)</li>
+<p>Possible information to document:</p>
+<ul><li>Was the data collected by your team? When? Where? Include links to
+other notes, such as lab manuals.</li>
 <li>Was it obtained from a collaborator? When?</li>
 <li>Was it downloaded from a repository? When?</li>
 <li>Was it generated by software? Which version?</li>
-</ul><div id="callout4" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div class="callout-inner">
-<div class="callout-content">
-<p>Provenance information becomes increasingly important as projects
-grow, and certain projects may have strict rules of tracking providence.
-Some data sources can include information in the headers of files,
-others will provide just the data. If data sources are updated, either
-because something went wrong with collection or a bug was found in the
-analysis pipeline it is important to keep track of the new and old
-files.</p>
+<li>Were any corrections or other modifications made? Why, when, and by
+whom?</li>
+</ul></div>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<hr></section><section><h2 class="section-heading" id="how-should-the-data-be-used">How Should The Data Be Used?<a class="anchor" aria-label="anchor" href="#how-should-the-data-be-used"></a></h2>
-<hr class="half-width"><div id="challenge3" class="callout challenge">
+<hr></div>
+<div class="section level3">
+<h3 id="data-use-and-analysis">Data use and analysis<a class="anchor" aria-label="anchor" href="#data-use-and-analysis"></a></h3>
+<p>Many projects involve extensive data analysis. This analysis needs to
+be well-documented to ensure anyone with the same data can reproduce
+your results.</p>
+<p>If you share your data, you also need to include any access
+conditions, such as restrictions for publishing or storing the data.</p>
+<div id="documenting-your-data-analysis" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="documenting-your-data-analysis" class="callout-inner">
+<h3 class="callout-title">Documenting your data analysis</h3>
 <div class="callout-content">
-<p>Consider what information might be useful to keep track of how you
-used the data during the project.</p>
+<p>Consider what information you should document on how you used and
+analysed the data during one of your project.</p>
 </div>
 </div>
 </div>
@@ -701,21 +694,26 @@ used the data during the project.</p>
 </button>
 <div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
-<p>Useful information might include:</p>
-<ul><li>Required software</li>
-<li>Processing steps</li>
+<p>Useful documentation might include</p>
+<ul><li>Required software and their versions</li>
+<li>Processing steps and settings</li>
 <li>Important assumptions</li>
-<li>Known limitations</li>
-<li>Access conditions - restrictions and access methods.</li>
-</ul><p>This can save future users significant amounts of time.</p>
+<li>Known limitations of your analysis</li>
+<li>Access conditions - i.e., how to access the data and any
+restrictions on using it</li>
+</ul><p>These details can save future users significant amounts of time.</p>
 </div>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="who-should-be-contacted">Who Should Be Contacted?<a class="anchor" aria-label="anchor" href="#who-should-be-contacted"></a></h2>
-<hr class="half-width"><p>Include contact information whenever possible.</p>
+<hr></div>
+<div class="section level3">
+<h3 id="contact-details">Contact details<a class="anchor" aria-label="anchor" href="#contact-details"></a></h3>
+<p>Include contact information whenever possible, including for a
+primary contact, so that collaborators and other researchers can ask
+questions or raise concerns.</p>
 <p>For example:</p>
-<pre class="text"><code>Project Lead:
+<pre class="text"><code>Project Lead (Primary Contact):
 Dr Jane Smith
 
 Email:
@@ -725,9 +723,10 @@ Data Collection Lead:
 Dr John Doe
 
 johndoe@biguniversity.ac.uk</code></pre>
-<p>This makes it easier for collaborators to ask questions.</p>
-<hr></section><section><h2 class="section-heading" id="readme-files">README Files<a class="anchor" aria-label="anchor" href="#readme-files"></a></h2>
-<hr class="half-width"><p>One of the simplest and most effective forms of documentation is a
+<hr></div>
+<div class="section level3">
+<h3 id="readme-files">README File(s)<a class="anchor" aria-label="anchor" href="#readme-files"></a></h3>
+<p>One of the simplest and most effective forms of documentation is a
 README file.</p>
 <p>A README is usually placed at the top level of a project:</p>
 <pre class="text"><code>project/
@@ -736,29 +735,27 @@ README file.</p>
 ├── data/
 ├── analysis/
 └── results/</code></pre>
-<p>Its purpose is to explain the project and help people navigate
-it.</p>
-<p>A good README often provides enough information for somebody to start
-understanding the project without opening any other files.</p>
-<div id="callout5" class="callout">
+<p>It explains the project and helps people navigate it.</p>
+<p>A good README provides enough information for someone to understand
+the project at a high level without opening any other files.</p>
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
 <div class="callout-inner">
 <div class="callout-content">
-<p>A README does not need to be perfect.</p>
-<p>A simple README containing a few useful paragraphs is significantly
-better than no README at all.</p>
-<p>Try and keep README files up to date.</p>
-<p>Try and keep files together with their READMEs if you exchange data
-will collegues.</p>
+<p>A README does not need to be perfect. A simple README containing a
+few useful paragraphs is significantly better than no README at all!</p>
+<p>Try to keep README files up to date.</p>
+<p>Keep files together with their READMEs if you exchange data with
+colleagues.</p>
 </div>
 </div>
 </div>
-<hr><div class="section level3">
-<h3 id="example-readme-structure">Example README Structure<a class="anchor" aria-label="anchor" href="#example-readme-structure"></a></h3>
-<p>A README file might contain:</p>
+<div class="section level4">
+<h4 id="example-readme-structure">Example README Structure<a class="anchor" aria-label="anchor" href="#example-readme-structure"></a></h4>
+<p>Example template:</p>
 <pre class="text"><code>Project Name
 
 Project Description
@@ -771,8 +768,6 @@ File Naming Convention
 
 Software Requirements
 
-Software versions used for processing data
-
 Contact Information
 
 Last Updated</code></pre>
@@ -780,62 +775,51 @@ Last Updated</code></pre>
 <pre class="text"><code>Project Name:
     Marine Mammal Incidence Study
 
-Description:
+Project Description:
     Investigation of marine mammal health records collected
     between 2020 and 2025.
 
-Folder Structure:
+Project Structure:
     data/raw - original data
     data/processed - cleaned datasets
     analysis - analysis scripts
     results - generated outputs
+
+Software Requirements:
+    Data was analysed using Python 3.13
+    See analysis/pyproject.toml file for Python package dependencies and versions
 
 Contact:
     bob.badgerton@example.ac.uk
 
 Last Updated:
     2026-07-01</code></pre>
-<p>The goal is clarity rather than perfection.</p>
-<p>Another example can be found <a href="https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt" class="external-link">here</a></p>
-<hr><div id="challenge4" class="callout challenge">
+<p>Another example can be found <a href="https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt" class="external-link">here</a>.</p>
+<div id="creating-a-readme-file" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="creating-a-readme-file" class="callout-inner">
+<h3 class="callout-title">Creating A README File</h3>
 <div class="callout-content">
-<p>Follow along with the following demonstration.</p>
-<div class="section level2">
-<h2 id="creating-a-readme-file">Creating A README File<a class="anchor" aria-label="anchor" href="#creating-a-readme-file"></a></h2>
-<p>Now we will create documentation for the inherited project.</p>
-<div class="section level3">
-<h3 id="step-1-navigate-to-the-top-level-folder">Step 1: Navigate To The Top-Level Folder<a class="anchor" aria-label="anchor" href="#step-1-navigate-to-the-top-level-folder"></a></h3>
+<p>Follow along with the demo to make a README file for the inherited
+project.</p>
+<p><strong>1) Navigate To The Top-Level Folder</strong></p>
 <p>Open File Explorer.</p>
 <p>Navigate to:</p>
 <pre class="text"><code>legacy_dataset/</code></pre>
-<hr></div>
-<div class="section level3">
-<h3 id="step-2-create-a-new-text-file">Step 2: Create A New Text File<a class="anchor" aria-label="anchor" href="#step-2-create-a-new-text-file"></a></h3>
-<p>Right-click in an empty area of the window.</p>
-<p>Select:</p>
+<hr><p><strong>2) Create A New Text File</strong></p>
+<p>Right-click in an empty area of the window and select</p>
 <pre class="text"><code>New → Text Document</code></pre>
-<p>A new file will be created.</p>
-<hr></div>
-<div class="section level3">
-<h3 id="step-3-rename-the-file">Step 3: Rename The File<a class="anchor" aria-label="anchor" href="#step-3-rename-the-file"></a></h3>
-<p>Rename the file:</p>
-<pre class="text"><code><span><span class="va">README.txt</span></span></code></pre>
-<p>This helps make its purpose immediately obvious.</p>
-<hr></div>
-<div class="section level3">
-<h3 id="step-4-open-the-file">Step 4: Open The File<a class="anchor" aria-label="anchor" href="#step-4-open-the-file"></a></h3>
-<p>Double-click the file.</p>
-<p>It should open in Notepad (or a similar text editor).</p>
-<hr></div>
-<div class="section level3">
-<h3 id="step-5-add-basic-structure">Step 5: Add Basic Structure<a class="anchor" aria-label="anchor" href="#step-5-add-basic-structure"></a></h3>
-<p>Add headings such as:</p>
+<p>to create a new file.</p>
+<hr><p><strong>3) Rename The File</strong></p>
+<p>Rename the file <code>README.txt</code>.</p>
+<hr><p><strong>4) Open The File</strong></p>
+<p>Double-click the file to open it in Notepad (or a similar text
+editor).</p>
+<hr><p><strong>5) Add Basic Structure</strong></p>
+<p>Add headings such as</p>
 <pre class="text"><code>Project Name
 
 Description
@@ -847,9 +831,7 @@ Data Sources
 Contact Information
 
 Last Updated</code></pre>
-<p>Save the file.</p>
-</div>
-</div>
+<p>Save the file. We’ll fill out the fields later in the lesson!</p>
 </div>
 </div>
 </div>
@@ -879,15 +861,13 @@ Last Updated</code></pre>
 </div>
 </div>
 </div>
-<hr></div>
-</section><section><h2 class="section-heading" id="documentation-beyond-the-top-level">Documentation Beyond The Top Level<a class="anchor" aria-label="anchor" href="#documentation-beyond-the-top-level"></a></h2>
-<hr class="half-width"><p>Project-level documentation is important, but it is not always
-sufficient.</p>
-<p>Sometimes subfolders require their own documentation.</p>
-<p>For example:</p>
-<pre class="text"><code>results/</code></pre>
-<p>may contain dozens of generated outputs and sub-folders.</p>
-<p>Several months later, somebody might reasonably ask:</p>
+</div>
+<div class="section level4">
+<h4 id="documentation-beyond-the-top-level">Documentation Beyond The Top Level<a class="anchor" aria-label="anchor" href="#documentation-beyond-the-top-level"></a></h4>
+<p>Project-level documentation is important, but subfolders sometimes
+require their own documentation. For example, a <code>results</code>
+folder may contain dozens of generated outputs and sub-folders. Several
+months later, someone may reasonably ask</p>
 <ul><li>Which software generated these files?</li>
 <li>When were they created?</li>
 <li>Which parameters were used?</li>
@@ -901,7 +881,7 @@ questions.</p>
 ├── README.txt
 ├── figures/
 └── tables/</code></pre>
-<p>The README could document:</p>
+<p>The README could document</p>
 <pre class="text"><code>Generated:
 2026-07-01
 
@@ -913,9 +893,21 @@ processed_data_v03.csv
 
 Parameters:
 Significance threshold = 0.05</code></pre>
-<p>This preserves important contextual information.</p>
-<p>Alternativly, different versons could have different folders, or be
-run using different software versions.</p>
+<p>to preserve important contextual information.</p>
+<div id="caution2" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Any READMEs written by hand may also need to be manually updated as
+your project progresses, which risks the documentation becoming
+out-of-date. Where possible, automate your documentation (for example,
+by exporting settings from analysis tools or scripts).</p>
+</div>
+</div>
+</div>
 <div id="discussion1" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -923,17 +915,20 @@ run using different software versions.</p>
 <span class="callout-header">Discussion</span>
 <div class="callout-inner">
 <div class="callout-content">
-<p>Consider different projects or subjects and why different folders
-might need different README files to keep track of the data.</p>
+<p>Consider one of your projects. What additional README files may you
+need beyond the top-level project README, and what information should
+they contain?</p>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="other-useful-documentation">Other Useful Documentation<a class="anchor" aria-label="anchor" href="#other-useful-documentation"></a></h2>
-<hr class="half-width"><p>Depending on the project, additional documentation might include:</p>
+<hr></div>
+</div>
 <div class="section level3">
-<h3 id="data-dictionaries">Data Dictionaries<a class="anchor" aria-label="anchor" href="#data-dictionaries"></a></h3>
+<h3 id="other-useful-documentation">Other Useful Documentation<a class="anchor" aria-label="anchor" href="#other-useful-documentation"></a></h3>
+<div class="section level4">
+<h4 id="data-dictionaries">Data Dictionaries<a class="anchor" aria-label="anchor" href="#data-dictionaries"></a></h4>
 <p>These explain variables in tabular datasets.</p>
-<p>For example:</p>
+<p>For example</p>
 <table class="table"><thead><tr><th>Variable</th>
 <th>Description</th>
 </tr></thead><tbody><tr><td>incidence_rate</td>
@@ -942,39 +937,27 @@ might need different README files to keep track of the data.</p>
 <td>Geographic study area</td>
 </tr><tr><td>year</td>
 <td>Observation year</td>
-</tr></tbody></table><p>We will revisit this when discussing tabular data.</p>
-<hr></div>
-<div class="section level3">
-<h3 id="standard-operating-procedures">Standard Operating Procedures<a class="anchor" aria-label="anchor" href="#standard-operating-procedures"></a></h3>
-<p>These describe how data is collected or processed.</p>
-<p>For example:</p>
-<pre class="text"><code><span><span class="va">sampling_protocol.txt</span></span></code></pre>
-<p>Which contains a written description of the procedures used.</p>
-<hr></div>
-<div class="section level3">
-<h3 id="project-logs">Project Logs<a class="anchor" aria-label="anchor" href="#project-logs"></a></h3>
-<p>These provide a record of major project decisions.</p>
-<p>For example:</p>
-<pre class="text"><code><span><span class="va">project_log.txt</span></span></code></pre>
-<p>This can be particularly useful for long-running projects.</p>
+</tr></tbody></table><p>We will revisit these dictionaries in the tabular data lesson.</p>
 </div>
-<div class="section level3">
-<h3 id="parameter-files">Parameter files<a class="anchor" aria-label="anchor" href="#parameter-files"></a></h3>
-<div id="callout6" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
+<div class="section level4">
+<h4 id="standard-operating-procedures">Standard Operating Procedures<a class="anchor" aria-label="anchor" href="#standard-operating-procedures"></a></h4>
+<p>Standard operating procedures (SOPs) describe how data is collected
+or processed.</p>
 </div>
-<span class="callout-header">Callout</span>
-<div class="callout-inner">
-<div class="callout-content">
-<p>Parameter files will depend on for project and/or software, but
-provide a record of inputs into software when processing data. The goal
-of such documentation is to ensure that your data processing/analysis
-steps can be reproduced. These should be documented and referenced where
-appropriate.</p>
+<div class="section level4">
+<h4 id="project-logs">Project Logs<a class="anchor" aria-label="anchor" href="#project-logs"></a></h4>
+<p>Project logs provide a record of major project decisions; they help
+record not only what you did, but why. This logic can be help justify
+methods in publications as well as warn future researchers about
+inefficient or unsuitable approaches that were ruled out in earlier
+project stages.</p>
 </div>
-</div>
-</div>
+<div class="section level4">
+<h4 id="parameter-files">Parameter files<a class="anchor" aria-label="anchor" href="#parameter-files"></a></h4>
+<p>Many analyses are highly adjustable, with various different
+parameters, or settings, that can be changed depending on your needs.
+Parameter files record these settings to ensure that your data
+processing and analysis steps can be reproduced.</p>
 <hr><div id="write-a-readme" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -983,16 +966,19 @@ appropriate.</p>
 <div id="write-a-readme" class="callout-inner">
 <h3 class="callout-title">Write A README</h3>
 <div class="callout-content">
-<p>Create a <code>README.txt</code> file for the inherited project.</p>
-<p>Include:</p>
+<p>Fill out the <code>README.txt</code> file for the inherited
+project.</p>
+<p>Include</p>
 <ul><li>Project name</li>
 <li>Project description</li>
 <li>Folder structure</li>
 <li>Data sources</li>
 <li>Contact information</li>
 <li>Last updated date</li>
-</ul><p>You may need to make reasonable assumptions where information is
-missing.</p>
+</ul><p>Make reasonable assumptions; if you inherit a real, poorly-documented
+project, you’d probably need to read through old project
+emails/messages, find the original project/grant proposals, and talk to
+current lab members to get all the README information.</p>
 <p>The goal is to make the project easier for a future collaborator to
 understand.</p>
 </div>
@@ -1005,34 +991,31 @@ understand.</p>
 </button>
 <div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
-<p>There is no single correct answer.</p>
-<p>A successful README should clearly explain:</p>
-<ul><li>What the project is</li>
-<li>What data exists</li>
-<li>How the folders are organised</li>
-<li>Who is responsible for the project</li>
-</ul><p>It should allow somebody unfamiliar with the project to begin
-understanding its contents.</p>
-<p>Also, see the Newcastle University <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/organise/" class="external-link">Documentation</a>
-and Metadata page.</p>
-<p>Additional, subject specific suggestions can be found <a href="https://www.dcc.ac.uk/guidance/standards/metadata" class="external-link">here</a> as
-well as data centre policies and information produced by funding
-agencies.</p>
+<p>There is no single correct answer, but it should allow somebody
+unfamiliar with the project to begin understanding its contents.</p>
+<p>Additional resources:</p>
+<ul><li>Newcastle University’s <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/organise/" class="external-link">Documentation</a>
+and Metadata guidance</li>
+<li>The Digital Curation Centre’s <a href="https://www.dcc.ac.uk/guidance/standards/metadata" class="external-link">subject-specific
+documentation guidance</a>
+</li>
+</ul></div>
 </div>
 </div>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="file-headers">File headers<a class="anchor" aria-label="anchor" href="#file-headers"></a></h2>
-<hr class="half-width"><p>Depending on the file, data can be stored in file headers or in
-metadata. A simple example would be to store basic information in the
-first few lines of a spreadsheet or csv file or as text and tables in
-other file formats. We will discuss this later in the data formats
-lesson.</p>
-<p>The advantage of storing information as headers or comments in the
-files is that they cannot be seperated from the folder structure, such
-as when communicating with a collegue. It can provide a failsafe is a
-file becomes seperated from the rest of the project.</p>
+</section><section><h2 class="section-heading" id="file-level-documentation">File-level documentation<a class="anchor" aria-label="anchor" href="#file-level-documentation"></a></h2>
+<hr class="half-width"><p>Individual files often require additional documentation; for example,
+you may have many data files that were collected under different
+circumstances. Where possible, this data should be stored directly in
+the file in the file header or metadata. We will discuss approaches for
+storing headers later in the data formats lesson.</p>
+<p>The advantage of storing metadata in a file is that it cannot be
+separated from the corresponding data. File names and folder names do
+not have this property since files can be easily renamed or moved to
+different folders. As such, avoid storing important metadata in file or
+folder names.</p>
 <hr><div id="reflection" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
@@ -1041,25 +1024,36 @@ file becomes seperated from the rest of the project.</p>
 <div id="reflection" class="callout-inner">
 <h3 class="callout-title">Reflection</h3>
 <div class="callout-content">
-<p>Imagine you are leaving your current project tomorrow.</p>
-<p>What information would a replacement researcher need in order to
-continue your work?</p>
-<p>Is all of that information currently written down somewhere?</p>
+<p>Imagine you are leaving your current project tomorrow. What
+information would a replacement researcher need to continue your work?
+Does your project’s current documentation include that information?</p>
+</div>
+</div>
+</div>
+<div id="caution3" class="callout caution">
+<div class="callout-square">
+<i class="callout-icon" data-feather="alert-triangle"></i>
+</div>
+<span class="callout-header">Caution</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>You may not always have much warning before temporarily or
+permanently leaving a project; plans can unexpectedly change due to new
+opportunities, emergencies, or illness. Similarly, new people may join a
+project without much notice and need to get up-to-speed quickly. Keeping
+your documentation up-to-date can make unplanned transition periods less
+stressful.</p>
 </div>
 </div>
 </div>
 <hr></section><section><h2 class="section-heading" id="looking-ahead">Looking Ahead<a class="anchor" aria-label="anchor" href="#looking-ahead"></a></h2>
-<hr class="half-width"><p>Our project now has:</p>
-<ul><li>A clearer folder structure</li>
-<li>Better file names</li>
-<li>Initial documentation</li>
-</ul><p>The next challenge is deciding where data should live.</p>
-<p>How can we store data so it is:</p>
-<ul><li>Accessible?</li>
-<li>Backed up?</li>
-<li>Secure?</li>
-<li>Shareable?</li>
-</ul><p>In the next episode we will explore how to choose appropriate storage
+<hr class="half-width"><p>Our project now has</p>
+<ul><li>a clearer folder structure</li>
+<li>more information file names</li>
+<li>initial documentation</li>
+</ul><p>The next challenge is deciding where data should be stored so it is
+accessible, secure, shareable, and recoverable.</p>
+<p>In the next episode we will explore how to choose appropriate storage
 locations for different types of research data.</p>
 <div id="key-points" class="callout keypoints">
 <div class="callout-square">
@@ -1149,7 +1143,7 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/instructor/documentation.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/documentation.html",
   "dateCreated": "2026-07-01",
-  "dateModified": "2026-07-23",
+  "dateModified": "2026-07-28",
   "datePublished": "2026-07-28"
 }
 

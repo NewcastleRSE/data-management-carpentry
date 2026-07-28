@@ -61,6 +61,62 @@ legacy_dataset/
     └── analysis_12-05-24.txt
 ```
 
+```test
+legacy_dataset/
+├── New Folder
+│   ├── big_file.data
+│   ├── IMG_000.png
+│   ├── IMG_001.png
+│   ├── IMG_002.png
+│   ├── IMG_003.png 
+│   ├── IMG_004.png
+│   ├── IMG_005.png
+│   ├── IMG_006.png
+│   ├── IMG_007.png 
+│   ├── IMG_008.png
+│   ├── IMG_009.png 
+│   ├── IMG_010.png
+│   ├── IMG_011.png
+│   ├── IMG_012.png
+│   ├── IMG_013.png 
+│   ├── IMG_014.png
+│   ├── IMG_015.png
+│   ├── IMG_016.png
+│   ├── IMG_017.png 
+│   ├── IMG_018.png
+│   ├── IMG_019.png 
+│   ├── Untitled 1.csv
+│   └── New Folder (2)/
+│       └── backup_copy.txt
+│
+├── penguins
+│   ├── palmer_penguins.csv
+│   └── README
+│
+├── project_data_2025/
+│   ├── data_final_v3_LAST_ONE.xlsx
+│   ├── analysis_12-05-24.txt
+│   ├── data_final_v4_revised_jerrys_comments.xlsx
+│   ├── data_final_v2.xlsx
+│   ├── script.py
+│   └── analysis_12-05-24.txt
+│   └── .processed/
+│        └── REAL_ACTUAL_DATA_DO_NOT_DELETE.csv
+│
+├── RAW_DATA_!!!
+│   ├── Data!@#$.csv
+│   ├── 03_04_26_results.csv
+│   └── raw_images_TEMP/
+│
+└── miscellaneous/
+    ├── cat_pic.jpg
+    ├── important_note.txt
+    └── Untitled.csv
+```
+
+
+
+
 Imagine joining this project six months from now.
 
 Could you quickly answer:

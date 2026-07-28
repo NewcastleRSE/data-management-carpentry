@@ -38,29 +38,6 @@ In the previous episode we located the dataset that was handed over by our depar
 
 The project structure itself is difficult to understand:
 
-```text
-legacy_dataset/
-├── New Folder/
-│   ├── Untitled 1.csv
-│   └── New Folder (2)/
-│       └── backup_copy.txt
-│
-├── RAW_DATA_!!!
-│   ├── Data!@#$.csv
-│   ├── 03_04_26_results.csv
-│   └── raw_images_TEMP/
-│
-├── miscellaneous/
-│   ├── cat_pic.jpg
-│   ├── important_note.txt
-│   └── Untitled.csv
-│
-└── project_data_2025/
-    ├── data_final_v3_LAST_ONE.xlsx
-    ├── script.py
-    └── analysis_12-05-24.txt
-```
-
 ```test
 legacy_dataset/
 ├── New Folder
@@ -98,6 +75,9 @@ legacy_dataset/
 │   ├── analysis_12-05-24.txt
 │   ├── data_final_v4_revised_jerrys_comments.xlsx
 │   ├── data_final_v2.xlsx
+│   ├── script.py
+│   ├── Alice_Jones_passport.pdf
+│   ├── john_smith_passport.pdf
 │   ├── script.py
 │   └── analysis_12-05-24.txt
 │   └── .processed/

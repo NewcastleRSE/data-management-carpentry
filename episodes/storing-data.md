@@ -103,16 +103,16 @@ Researchers often store data on
 
 When deciding where to store data, consider
 
-- Access
-- Recoverability
-- Security
-- Sustainability
+- Accessibility: the ability of different users to retrieve and use data
+- Recoverability: the ability to restore damaged or lost data
+- Security: the ability to protect data from unauthorised access or misuse
+- Sustainability: the ability to store and access data for long time periods
 
 ### Can Other People Access the Data?
 
 Collaborators must be able to find and open the data.
 
-To evaluate data access, consider
+To evaluate data accessibility, consider
 
 - Can all project members access the data?
 - Can external collaborators access it?
@@ -188,6 +188,7 @@ To ensure your data storage is sustainable over the lifetime of the project, con
 - Can file ownership be transferred? This ability is particularly important for cloud services.
 - Is there enough storage capacity for data growth?
 - Is the file format accessible? If the company which makes your software shuts down, will you still be able to access your data?
+- Are any ongoing costs for data storage affordable?
 
 ---
 
@@ -215,6 +216,8 @@ Local storage refers to files stored directly on a device such as a
 
 :::::::::::::::::: challenge
 
+## Local storage pros and cons
+
 Discuss the advantages and disadvantages of local storage with a partner or group.
 
 :::::::::::::::::: solution
@@ -231,12 +234,12 @@ Examples include
 ## Disadvantages
 
 - Data may only exist in one location
-    - Hard to access off site
-    - Hard to share with collegues
+    - Difficult to access off site
+    - Difficult to share with colleagues
 - Vulnerable to device failure or loss
 - Difficult to collaborate
 - Difficult to manage project-wide access
-- Security issues e.g. 'left laptop on a train'
+- Security issues, e.g., 'left laptop with personal data on a train'
 
 :::::::::::::::::::::::::
 :::::::::::::::::::::::::
@@ -245,7 +248,7 @@ Examples include
 
 Local storage is often useful for temporary working files.
 
-It is rarely an ideal long-term location for important project data.
+It is not a good long-term storage solution for important project data since it lacks all four desired storage features: accessibility, recoverability, security, and sustainability.
 
 ::::::::::::: 
 

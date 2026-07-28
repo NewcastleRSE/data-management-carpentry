@@ -191,7 +191,20 @@ To ensure your data storage is sustainable over the lifetime of the project, con
 
 ---
 
-## Local Storage
+## Types of Storage
+
+There are many different types of storage: 
+
+- Local storage
+- Personal cloud storage
+- Shared network or cloud storage
+- Institution storage (e.g., the Research Data Warehouse)
+
+We'll discuss the advantages and disadvantages of each one below.
+
+---
+
+### Local Storage
 
 Local storage refers to files stored directly on a device such as:
 
@@ -204,19 +217,19 @@ For example:
 
 :::::::::: tab
 
-### Windows
+#### Windows
 
 ```text
 C:\Users\Bob\Documents\Research\
 ```
 
-### macOS
+#### macOS
 
 ```text
 /Users/Bob/Documents/Research/
 ```
 
-### Linux
+#### Linux
 
 ```text
 /home/Bob/Documents/Research/
@@ -261,7 +274,7 @@ It is rarely an ideal long-term location for important project data.
 
 ---
 
-## Personal Cloud Storage
+### Personal Cloud Storage
 
 Many institutions provide services such as:
 
@@ -320,7 +333,7 @@ The University also recommends against uploading personal or sensitive data to G
 :::::::::::::::
 
 
-## A Common Research Problem
+#### A Common Research Problem
 
 Many researchers store project data in their personal OneDrive.
 
@@ -348,7 +361,7 @@ Learners often assume that "being in the cloud" automatically means data is acce
 
 ---
 
-## Shared Storage
+### Shared Network or Cloud Storage
 
 Shared storage is designed specifically for collaboration.
 
@@ -391,7 +404,7 @@ Discuss the advantages and disadvantages of shared storage with a partner or gro
 
 ---
 
-## Research Data Warehouse Storage
+### Institution storage
 
 Many institutions provide dedicated research storage services.
 

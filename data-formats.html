@@ -284,13 +284,6 @@
         <ul><li><a href="#the-problem-the-wrong-format-can-break-your-data">The Problem: The Wrong Format Can Break Your Data</a></li>
 <li><a href="#understanding-file-formats-and-extensions">Understanding File Formats and Extensions</a></li>
 <li><a href="#domain-specific-vs.-cross-discipline-formats">Domain-Specific vs. Cross-Discipline Formats</a></li>
-<li><a href="#some-software-has-their-own-files-formats-for-designed-for-specific-needs---for-example-microsoft-powerpoint-uses-.pptx-files-and-adobe-photoshop-stores-image-data-in-.psd-files.-other-formats-may-be-based-on-common-formats-such-as-binary-or-hdf5-but-require-a-certain-structure-for-the-header-or-metadata.-these-formats-will-have-software-tools-for-reading-them-andor-provide-descriptions-of-the-file-format-to-allow-writing-bispoke-software-to-read-it.">Some software has their own files formats for designed for specific
-needs - for example, Microsoft PowerPoint uses <code>.pptx</code> files
-and Adobe Photoshop stores image data in <code>.psd</code> files. Other
-formats may be based on common formats, such as binary or HDF5, but
-require a certain structure for the header or metadata. These formats
-will have software tools for reading them and/or provide descriptions of
-the file format to allow writing bispoke software to read it.</a></li>
 <li><a href="#the-format-evaluation-checklist">The Format Evaluation Checklist</a></li>
 <li><a href="#the-dangers-of-format-conversion-data-fidelity-vs.-size">The Dangers of Format Conversion (Data Fidelity vs. Size)</a></li>
 <li><a href="#data-storage-facilities-recommendations">Data storage facilities – Recommendations</a></li>
@@ -358,7 +351,7 @@ the file format to allow writing bispoke software to read it.</a></li>
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Choosing a Data Storage Format</h1>
-        <p>Last updated on 2026-07-23 |
+        <p>Last updated on 2026-07-28 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/data-formats.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -432,7 +425,7 @@ extension</strong>, tells the operating system—and you—which application
 is expected to read that specific layout of bits.</p>
 <p>Files can be plain text (human readable) or binary (readable only by
 the computer). Plain text files have the advantage that s user can look
-inside them and see the data, while binary files are more consise and
+inside them and see the data, while binary files are more compact and
 faster for the computer to read and write.</p>
 <div class="section level3">
 <h3 id="common-formats-and-trade-offs">Common Formats and Trade-Offs<a class="anchor" aria-label="anchor" href="#common-formats-and-trade-offs"></a></h3>
@@ -451,35 +444,37 @@ trade-off is that it requires specific software to parse cleanly, can
 introduce automated corruption (such as converting gene names into
 dates), and is less suitable for long-term data archiving.</li>
 <li>
-<strong>FWF (Fixed-Width Format, - <code>.txt</code>):</strong> A
-plain-text format where each column has a fixed width. Because it is
-portable and open source it is easily readable, like <code>.csv</code>
-files. However, it can waste space and be hard to edit if values vary in
-length. If the size of a given column can vary significantly (e.g. have
-value 12 or 124535643245667 then shorter entries need considerable
+<strong>FWF (Fixed-Width Format, - usually
+<code>.txt</code>):</strong> A plain-text format where each column has a
+fixed width. Because it is portable and open source it is easily
+readable, like <code>.csv</code> files. However, it can waste space and
+be hard to edit if values vary in length. If the size of a given column
+can vary significantly (e.g. have value <code>12</code> or
+<code>124535643245667</code> then shorter entries need considerable
 padding or risk truncating longer entries).</li>
 <li>
 <strong>JSON (Javascript Object Notation -
 <code>.json</code>):</strong> A plain-text format that organises data
-into sets of key-value pairs, such as {“firstname”: “John”, “lastname”:
-“Smith”}, where “firstname” and “lastname” are the keys and “John” and
-“Smith” are the corresponding values. This flexible format allows JSON
-to store very complex data structures, but it can be verbose and
-difficult to follow. Many programming languages have libraries for
-reading and manipulating JSON. Unlike the other formats listed above
-JSON files are not limited to tables and not every field needs to be the
-same for every entry, making it highly flexible.</li>
+into sets of key-value pairs, such as {“first_name”: “John”,
+“last_name”: “Smith”}, where “first_name” and “last_name” are the keys
+and “John” and “Smith” are the corresponding values. This flexible
+format allows JSON to store very complex data structures, but it can be
+verbose and difficult to follow. Many programming languages have
+libraries for reading and manipulating JSON. Unlike the other formats
+listed above JSON files are not limited to tables and not every field
+needs to be the same for every entry, making it highly flexible.</li>
 </ul><p>CSV, Excel Workbook, and FWF files are for storing tables. They are
 good for data which have a certain number of items (rows) each with a
 number of values, or noted missing values, for a consistent set of
 variables (columns).</p>
-<hr><div id="what-to-consider-when-choosing-a-format" class="callout discussion">
+<hr><div id="what-to-consider-when-choosing-a-file-format" class="callout discussion">
 <div class="callout-square">
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <span class="callout-header">Discussion</span>
-<div id="what-to-consider-when-choosing-a-format" class="callout-inner">
-<h3 class="callout-title">What to Consider When Choosing a Format?</h3>
+<div id="what-to-consider-when-choosing-a-file-format" class="callout-inner">
+<h3 class="callout-title">What to Consider When Choosing a File
+Format?</h3>
 <div class="callout-content">
 <p>Before looking at complex formats, let’s establish a set of
 requirements for evaluating how we store data.</p>
@@ -537,7 +532,7 @@ languages.</p>
 </ul><p>These formats allow the given programming language to save data and
 even their current state to disc. This storage approach can be
 convenient, but introduces security risks. For example, Python pickle
-files can contain instructions that executre arbitrary Python code when
+files can contain instructions that execute arbitrary Python code when
 loaded. They are not recommended for data exchange or long-term
 storage.</p>
 </div>
@@ -550,11 +545,13 @@ data across multiple fields with different types of data.</p>
 <code>.hdf5</code>):</strong> This open format behaves like a “file
 system within a single file.” It allows you to store large,
 multi-dimensional arrays of numbers alongside rich, custom metadata
-attributes.</li>
+attributes. If is fast, flexible and compact. It is not human
+readable.</li>
 <li>
 <strong>Parquet:</strong> This open format preserves metadata, data
-types, and file headers. Fast for reading but slower on writing.
-Excellent for Big Data.</li>
+types, and file headers. It is fast for reading but slower for writing.
+Excellent for Big Data which will be written once and read many times.
+Like HDF5 it is not human readable.</li>
 </ul><div class="section level4">
 <h4 id="who-uses-these-file-formats">Who uses these file formats?<a class="anchor" aria-label="anchor" href="#who-uses-these-file-formats"></a></h4>
 <p>Common users of HDF5 include climate scientists for satellite weather
@@ -565,15 +562,15 @@ brain activity (e.g., EEG) data.</p>
 </div>
 <div class="section level3">
 <h3 id="other">4. Other<a class="anchor" aria-label="anchor" href="#other"></a></h3>
-</div>
-</section><section><h2 class="section-heading" id="some-software-has-their-own-files-formats-for-designed-for-specific-needs---for-example-microsoft-powerpoint-uses--pptx-files-and-adobe-photoshop-stores-image-data-in--psd-files--other-formats-may-be-based-on-common-formats-such-as-binary-or-hdf5-but-require-a-certain-structure-for-the-header-or-metadata--these-formats-will-have-software-tools-for-reading-them-andor-provide-descriptions-of-the-file-format-to-allow-writing-bispoke-software-to-read-it-">Some software has their own files formats for designed for specific
+<p>Some software has their own files formats for designed for specific
 needs - for example, Microsoft PowerPoint uses <code>.pptx</code> files
 and Adobe Photoshop stores image data in <code>.psd</code> files. Other
 formats may be based on common formats, such as binary or HDF5, but
 require a certain structure for the header or metadata. These formats
 will have software tools for reading them and/or provide descriptions of
-the file format to allow writing bispoke software to read it.<a class="anchor" aria-label="anchor" href="#some-software-has-their-own-files-formats-for-designed-for-specific-needs---for-example-microsoft-powerpoint-uses--pptx-files-and-adobe-photoshop-stores-image-data-in--psd-files--other-formats-may-be-based-on-common-formats-such-as-binary-or-hdf5-but-require-a-certain-structure-for-the-header-or-metadata--these-formats-will-have-software-tools-for-reading-them-andor-provide-descriptions-of-the-file-format-to-allow-writing-bispoke-software-to-read-it-"></a></h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="the-format-evaluation-checklist">The Format Evaluation Checklist<a class="anchor" aria-label="anchor" href="#the-format-evaluation-checklist"></a></h2>
+the file format to allow writing bespoke software to read it.</p>
+<hr></div>
+</section><section><h2 class="section-heading" id="the-format-evaluation-checklist">The Format Evaluation Checklist<a class="anchor" aria-label="anchor" href="#the-format-evaluation-checklist"></a></h2>
 <hr class="half-width"><p>When choosing a format, expect to balance these core pillars:</p>
 <ul><li>
 <strong>Open vs. Proprietary:</strong> Open file formats are data
@@ -650,7 +647,8 @@ less likely to notice.</li>
 <li>
 <strong>SVG (<code>.svg</code>):</strong> A vector graphics format
 which scales freely and defines graphics using vertices and lines. They
-are easily edited. However, they are not suitable for pixel images.</li>
+are easily edited. However, they are not suitable for pixel-based
+images.</li>
 </ul><hr><div id="challenge1" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -676,10 +674,10 @@ file sizes of the following three identical-looking images:</li>
 higher) on high-contrast areas or fine edges. Compare it side-by-side
 with <code>cell_sample.bmp</code>.</li>
 </ol><p><strong>Questions for Discussion:</strong> * What happens to the file
-size if the BMP file is converted to JPEG format? * What visual defects
-(compression artifacts) do you see around the fine details in the JPEG
-version? * Why is saving raw experimental images as JPEGs potentially
-dangerous for automated scientific analysis?</p>
+size when the BMP file is converted to JPEG format? * What visual
+defects (compression artifacts) do you see around the fine details in
+the JPEG version? * Why is saving raw experimental images as JPEGs
+potentially dangerous for automated scientific analysis?</p>
 </div>
 </div>
 </div>
@@ -688,7 +686,7 @@ dangerous for automated scientific analysis?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul><li>
 <strong>File Size:</strong> The JPEG version is a fraction of the
@@ -704,7 +702,15 @@ these compression artifacts as actual data or fail to detect faint
 structures entirely. <strong>Never use lossy compression formats (like
 JPEG) for raw analytical images.</strong>
 </li>
-</ul></div>
+</ul><p>See <a href="https://blogs.mathworks.com/steve/2022/12/19/avoid-jpeg-for-image-analysis/" class="external-link">Image
+Processing in Matlab</a> and Section 6.8 of <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4210356/" class="external-link">Cromey D. W.
+(2013). Digital images are data: and should be treated as such. Methods
+in molecular biology (Clifton, N.J.), 931, 1–27.
+https://doi.org/10.1007/978-1-62703-056-4_1</a></p>
+<blockquote>
+
+</blockquote>
+</div>
 </div>
 </div>
 </div>
@@ -714,8 +720,8 @@ JPEG) for raw analytical images.</strong>
 example</p>
 <ul><li>the <a href="https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/" class="external-link">UK
 Data Service</a> has recommendations for various types of data,
-including tables, image, video, audio and text as well as their
-associated meta data.</li>
+including tables, image, video, audio, and text, as well as their
+associated metadata.</li>
 <li>the <a href="https://www.loc.gov/preservation/resources/rfs/format-pref-summary.html" class="external-link">Library
 of Congress</a> has similar recommendations</li>
 </ul><p>but funders and other data archives will have their own
@@ -806,7 +812,7 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/data-formats.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/data-formats.html",
   "dateCreated": "2026-07-01",
-  "dateModified": "2026-07-23",
+  "dateModified": "2026-07-28",
   "datePublished": "2026-07-28"
 }
 

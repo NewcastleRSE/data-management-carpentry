@@ -122,7 +122,7 @@ To evaluate data access, consider
 
 ---
 
-## Is the Data Recoverable?
+### Is the Data Recoverable?
 
 Data storage and data backup require different solutions. Many researchers assume that files on a computer are safe. However -  
 
@@ -136,16 +136,18 @@ Good storage solutions should have reliable backup solutions so that lost data i
 
 :::::::::::: challenge
 
+## Making data recoverable
+
 Discuss features of a good backup system in your groups. 
 
 :::::::::::: solution
 
-A good backup system might include
+Possible features of a good backup system:
 
-- Regular, automated backups - e.g., that are scheduled every night or triggered when connected to the internet
-- Off-site (to protect against theft or physical damage due to, e.g., fires) - e.g., on the cloud or in a different building
-- Accessible - you can easily restore lost data from the backups and find your files
-- Redundancy - maintain multiple copies of your data to protect against accidental deletion
+- Has regular, automated backups: automation ensures backup versions stay up-to-date; for e.g., backups may be scheduled every night or triggered when you connect to the internet.
+- Off-site storage: stores data off-site (e.g., on the cloud or in a different building) to protect against theft or physical damage due to, e.g., fires or floods.
+- Accessibility: allows you to easily restore lost data from the backups and find your files.
+- Redundancy: maintains multiple copies of your data to protect against accidental deletion.
 
 
 :::::::::::::
@@ -153,15 +155,13 @@ A good backup system might include
 
 ---
 
-## Is It Secure?
+### Is the Data Secure?
 
-Not all data can be shared openly.
-
-Examples include:
+Not all data can be shared openly; data that needs to be kept secure includes
 
 - Participant data
 - Medical records
-- Personal information (particularly [Special Catagory Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/))
+- Personal information (particularly [Special Category Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/))
 - Commercially sensitive information
 - Confidential research
 
@@ -169,27 +169,25 @@ Storage locations must be appropriate for the sensitivity of the data.
 
 :::::::::: caution
 
-You have a legal requirement to keep certain types of data safe with consequences for yourself and the University. 
+You have a legal requirement to keep certain types of data safe; failure to do so can have consequences for yourself and your institution. 
 
-There are required actions that need to be taken if there is a data breach, such as reporting to the University. Make sure you know the requirements for your data. 
+In the event of a data breach you are required to take certain actions, such as reporting to your institution. Make sure you know the requirements for your data. 
 
-Special catagory data is especially sensitive personal data whech needs extra care when collecting and handling. See [Special Catagory Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/) for more information.
+Special category data is especially sensitive personal data which needs extra care when collecting and handling. See [Special Category Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/) for more information.
 
 :::::::::::
 
 ---
 
-## Is It Sustainable?
+### Is the Data Storage Sustainable?
 
-Consider the lifetime of the project.
-
-Ask:
+To ensure your data storage is sustainable over the lifetime of the project, consider
 
 - Will the storage still exist in five years?
-- What happens if a team member leaves?
-- Can file ownership be transferred? This is particularly important for cloud services.
+- What happens to the data if a team member leaves?
+- Can file ownership be transferred? This ability is particularly important for cloud services.
 - Is there enough storage capacity for data growth?
-- Is the file format accessible? If the company which makes your software shuts down will you still be able to access your data?
+- Is the file format accessible? If the company which makes your software shuts down, will you still be able to access your data?
 
 ---
 

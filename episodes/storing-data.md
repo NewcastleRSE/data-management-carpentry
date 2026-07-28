@@ -222,14 +222,14 @@ Discuss the advantages and disadvantages of local storage with a partner or grou
 
 :::::::::::::::::: solution
 
-### Advantages
+**Advantages**
 
 - Fast access
 - Convenient
 - Works without internet access
 - Good for active work
 
-### Disadvantages
+**Disadvantages**
 
 - Data may only exist in one location
     - Difficult to access off site
@@ -278,7 +278,7 @@ Discuss the advantages and disadvantages of cloud storage with a partner or grou
 
 :::::::::::::::::::: solution
 
-### Advantages
+**Advantages**
 
 - Accessible from multiple devices
 - Easy and rapid syncing. OneDrive often works in the background.
@@ -288,7 +288,7 @@ Discuss the advantages and disadvantages of cloud storage with a partner or grou
 - Version history 
 - You do not need to send data, you can send a link to the data
 
-### Disadvantages
+**Disadvantages**
 
 - Usually linked to an individual account
 - Access often disappears when somebody leaves
@@ -362,14 +362,14 @@ Discuss the advantages and disadvantages of shared storage with a partner or gro
 
 ::::::::::::::::::::: solution
 
-### Advantages
+**Advantages**
 
 - Multiple users can access data
 - Permissions can be managed centrally
 - Better suited to collaboration
 - Less dependent on a single individual
 
-### Disadvantages
+**Disadvantages**
 
 - May require administration
 - May have storage limits

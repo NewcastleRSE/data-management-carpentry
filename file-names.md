@@ -735,7 +735,9 @@ siteA_image_0005.png
 :::
 ::::::::::::::::::::
 
-::::::: discussion
+::::::: challenge
+
+## Mitigating bulk renaming risks
 
 What could go wrong if a bulk rename operation is performed incorrectly?
 

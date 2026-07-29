@@ -511,34 +511,6 @@ If you forget your password and encryption key you have lost your data! It canno
 
 The different tools on Windows, macOS, and Linux can make an encrypted external disk or USB key unusable on a different operating system. You can often encrypt individual files and folders if required.
 
-
-#### Sharing data
-
-> Maybe move this to the sharing data md. 
-
-Sharing data is discussed in a previous lesson. However, a few additional items related to security are discussed here. 
-
-If concerned about storing data on the cloud, or transfering it to collegues you can encrypt it before hand and sent the encrypted version. In this case, send the password seperatly. 
-
-The University offers a [File Transfer Service](https://dropoff.ncl.ac.uk/) which offers the chance to encrypt data before sending. It will also inform you when someone accesses the data. 
-
-This offers additional security over email, which is **not recommended** for moving private data. Email passed from you to the destination through a number of intermediate servers. If any link in the chain is exposed, the data can leak. This is why companies rarely email you your bills, but instead offer secure websites for viewing them [1](https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621), [2](https://hexiosec.com/blog/secure-email-attachments/). 
-
-Using OneDrive and Sharepoint to transfer files is an alternative to sending the data as a copy. If you send data as an email or via the File Transfer Service, you are making a copy and sending that out into the world. Using University OneDrive or Sharepoint only sends a link. If an email is sent in error, you need only break the link or revoke permissions and the data becomes inassessible again. This is a good way of reducing errors such as sending to the wrong email address or attaching the wrong document, [for example](https://www.bbc.co.uk/news/articles/c363w8pjpklo). 
-
-
-#### Sanitising your data
-
-When moving data you need to ensure you are only sending the data you intend. This includes your data, metadata, documentation, file headers etc.  
-
-Data security laws require the removal of personally identifiable information, such that a person is not identifiable using the data *in combination with* other data. This means that even if you cannot identify someone using your data alone, you must also make sure that an individual cannot be identified if someone combines your data with some other data. 
-
-This is a reason that good data management is important, you need to be able to track any private data in order to make sure it is not exposed, and make sure all of it is removed. 
-
-Software auto-generates metadata, such as name of creator, date created, name of last modifier, date and time of last modification, organisation, and more, depending on the software. Ensure that only the data you want is transmitted and be aware of inadvertant meta-data. For example, in Microsoft Word. 
-
-
-
 ---
 
 ## Changing Data Locations

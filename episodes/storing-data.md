@@ -431,16 +431,16 @@ For each example:
 
 ## Permissions and Collaboration
 
-Choosing a location is only part of the problem.
+Choosing a storage location is only the first step for storing research data.
 
-You also need to decide:
+You also need to decide
 
 - Who can read data?
 - Who can upload data?
 - Who can edit data?
 - Who can delete data?
 
-For example:
+For example, you may need permissions such as
 
 | Role | Permissions |
 |--------|--------|
@@ -448,61 +448,49 @@ For example:
 | External collaborators | Read only |
 | Project lead | Full control |
 
-There is no universal solution.
-
-The appropriate permissions depend on the project. It is good to have an access plan in place, so everyone on the project knows who can accesss which data and how easy it might be for external collaborators to access your preferred data store. 
+but the appropriate permissions depend on the project. We recommend creating an access plan so all project members know who can access which data and how to provide access to external or new collaborators. 
 
 ::::::::::::::::: callout
 
-Grant the minimum access necessary.
-
-This reduces the risk of accidental deletion, leaking, or modification of important files.
+Grant the minimum access necessary to reduce the risk of accidentally deleting, leaking, or modifying important data.
 
 ::::::::::::::::::::::::::::::::::::::::::::
 
 ---
 
-## Sensitive Data
+## Personal and Confidential Data
 
-Some projects require additional controls.
+Some projects require additional controls to protect [**personal data**](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-data/), such as names and and contact information, as well as **confidential data**, such as trade secrets or intellectual property. 
 
-Examples include:
+[**Special category data**](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/), or sensitive data, is personal data that requires additional protection due to its sensitivity - for example, race and ethnic origin, political opinions, religious beliefs, biometric data, and health data.
 
-- Human participant data
-- Clinical data
-- Personal information
-- Special catagory data.
-- Commercially restricted data
+When working with these types of data, consider
 
-Questions to consider:
+- Is the storage location approved for personal or confidential data?
+- Who should have access to the data?
+- Does the data need to be encrypted?
+- Are there legal or ethical restrictions for using or distributing the data?
 
-- Is the storage location approved for sensitive data?
-- Who should have access?
-- Does the data need encryption?
-- Are there legal or ethical restrictions?
-
-Sensitive data should never be collected or stored solely because it is convenient.
-
-Always follow institutional policies and governance requirements.
+Personal and confidential data should never be collected or stored solely because it is convenient. Always follow institutional policies and governance requirements.
 
 :::::::::::::::::::::: caution
 
-There are strict legal requirements for using and storing certain types of data. 
+There are strict legal requirements for using and storing certain types of data:
 
-- People can request access to data held on them, via [Subject Access Requests](https://www.ncl.ac.uk/mediav8/data-protection/files/SubjectAccessRequestform_002%20(1).docx) 
+- People can request access to data held on them, via [Subject Access Requests](https://www.gov.uk/government/publications/subject-access-request-procedure/subject-access-request-procedure) 
 - People can request erroneous data about them be corrected
-- People can demand data about them be deleted
+- People can request data about them be deleted
 - Personal data must be used only for the reasons it was provided
-- Data breaches must be reported to the Univerity in line with its policies
+- Data breaches must be reported to the University in line with its policies
 - and many others
 
-See the following examples:
+For more information, see
 
 - [GDPR Information for Research](https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/)
 - [Data Protection](https://www.ncl.ac.uk/data-protection/)
-- [Access your personal data](ttps://www.ncl.ac.uk/data-protection/access-personal-data/)
+- [Access your personal data](https://www.ncl.ac.uk/data-protection/access-personal-data/)
 
-Be clear on what your obligations are regarding the data you use. The above links are not meant to be definative, you will need to check this yourself. 
+Ensure you understand your obligations for managing your data.
 
 ::::::::::::::::::::::
 

@@ -628,8 +628,50 @@ Repositories can provide
 - Citations
 - [Digital Object Identifiers (DOIs)](https://www.doi.org/)
 
-A DOI allows a dataset to be referenced in publications in the same way that journal articles are cited, making other types of research outputs easier to find, cite, and reuse.
+A DOI allows any type of digital object to be cited in publications, making research outputs such as datasets easier to find, cite, and reuse. Journals create DOIs for research articles as well to provide a stable citation and metadata for each article.
 
+:::::::::::::::::: challenge
+
+## Finding digital objects using DOIs
+
+DOIs can be mapped to their digital objects using a DOI resolver. The resolver looks up the DOI in the DOI registry to find the corresponding record and send you to the location of the digital object.
+
+Use the DOI Foundation's [DOI resolver](https://dx.doi.org/) to find the digital object that corresponds to each of these DOIs:
+
+- 10.5281/zenodo.3960218
+- 10.1371/journal.pone.0090081
+
+For each DOI, answer
+
+1) Where is the object stored? 
+2) What type of object is it? (e.g., publication, dataset, software)
+3) What is the name of the object?
+4) Who created/authored the object?
+5) When was the object published?
+6) How would you cite the object?
+
+:::::::::::::::::: solution
+
+**10.5281/zenodo.3960218**
+
+1) Location: Zenodo (repository)
+2) Type: Software (with dataset)
+3) Name: allisonhorst/palmerpenguins: v0.1.0
+4) Creators: Allison M Horst, Alison Presmanes, Kristen B Gorman
+5) Publication date: July 25, 2020
+6) Citation: Allison M Horst, Alison Presmanes Hill& Kristen B Gorman. (2020). allisonhorst/palmerpenguins: v0.1.0 (Version v0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.3960218
+
+**10.1371/journal.pone.0090081**
+
+1) Location: PLOS One (journal)
+2) Type: Research article
+3) Name: Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)
+4) Creators: Kristen B. Gorman, Tony D. Williams, William R. Fraser
+5) Publication date: March 5, 2014
+6) Citation: Gorman KB, Williams TD, Fraser WR (2014) Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis). PLoS ONE 9(3): e90081. https://doi.org/10.1371/journal.pone.0090081
+
+::::::::::::::::::
+::::::::::::::::::
 
 ---
 

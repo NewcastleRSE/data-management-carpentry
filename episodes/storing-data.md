@@ -723,27 +723,6 @@ For each scenario, identify the most appropriate storage location and explain yo
 ::::::::::::::::::
 ::::::::::::::::::
 
-
----
-
-## University Data Management Plan
-
-Newcastle University has various templates for planning your data management aimed at PGRs. These can be found [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/). There are slightly different templates for the Faculty of Science, Agriculture and Engineering, the Faculty of Humanities and Social Sciences and the Faculty of Medical Sciences, but all follow the same general form .e.g. 
-
-- Type of study (3 lines).
-- Existing data study.
-- Data types.
-- Format and scale of your data.
-- Data collection/production methodology.
-- Data quality and standards.
-- Data management, storage and curation.
-- Metadata and documentation.
-- Data security risks.
-
-The university has guides and training specifically to help with your data management plan [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/). 
-
-This is the University plan, your funding agencies may have their own standards and requirements.  
-
 ---
 
 ## Data Privacy Impact Assessment

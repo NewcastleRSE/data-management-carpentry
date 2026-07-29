@@ -495,14 +495,14 @@ Ensure you understand your obligations for managing your data.
 ::::::::::::::::::::::
 
 
-### Protecing Your Data
+### Protecting Your Data
 
 
 #### Encryption
 
-Your University laptop may already be running whole disk encryption. This protects all the files on the computer. Without it, anyone can access the files, even if you have set a password. However, data on your laptop is only fully protected when it is shut down. Different modes of standby have different levels of protection. For example, prefer Hibernate to Sleep mode in Windows.  
+Your University laptop may already be running whole disk encryption, which protects all the files on the computer. Without encryption, anyone can access the files, even if you have set a password. However, data on your laptop is only fully protected when the laptop is shut down; different modes of standby have different levels of protection. For example, Hibernate provides more protection than Sleep mode in Windows.  
 
-The same does not always apply to external hard-drives used for backups or data transfer, unless the disk is explicitly encrypted. If the external drive asks for a password before you can access it, it is probably encrypted, if it does not then it probably isn't. This is true even if your laptop is running full disk encryption. External disks can be encrypted using Bitlocker for Windows, Finder for macOS or Disk Utility in Linux. 
+External hard-drives (often used for backups or data transfer) need to be explicitly encrypted, even if your laptop is encrypted. External disks can be encrypted using Bitlocker in Windows, Finder in macOS, or Disk Utility in Linux. 
 
 
 :::::::::::::::::::: caution
@@ -511,9 +511,7 @@ If you forget your password and encryption key you have lost your data! It canno
 
 ::::::::::::::::::::
 
-The different tools on Windows, macOS and Linux can make an encrypted external disk or USB key unusable on a different operating system. You can encrypt individual files and folders if required, depending on software and system e.g. Windows/macOS/Linux/OneDrive.
-
-
+The different tools on Windows, macOS, and Linux can make an encrypted external disk or USB key unusable on a different operating system. You can often encrypt individual files and folders if required.
 
 
 #### Sharing data

@@ -616,6 +616,7 @@ Note that some services, such as OneDrive, also retain version histories.
 ::::: callout
  We will not cover version control and Git in this workshop, but you can learn more about them by attending a [Carpentries Git and Version Control](https://swcarpentry.github.io/git-novice/) workshop.
 :::::
+
 ---
 
 ## Sharing Research Outputs
@@ -690,6 +691,7 @@ For each DOI, answer
 ::::::::::::::::::
 ::::::::::::::::::
 
+---
 
 :::::::::::::::::::::::: challenge
 

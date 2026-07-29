@@ -159,21 +159,17 @@ Possible features of a good backup system:
 
 Not all data can be shared openly; data that needs to be kept secure includes
 
-- Participant data
-- Medical records
 - Personal information (particularly [Special Category Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/))
-- Commercially sensitive information
+- Commercially sensitive information, such as trade secrets
 - Confidential research
 
-Storage locations must be appropriate for the sensitivity of the data. 
+Storage locations must be appropriate for the sensitivity of the data.
 
 :::::::::: caution
 
 You have a legal requirement to keep certain types of data safe; failure to do so can have consequences for yourself and your institution. 
 
 In the event of a data breach you are required to take certain actions, such as reporting to your institution. Make sure you know the requirements for your data. 
-
-Special category data is especially sensitive personal data which needs extra care when collecting and handling. See [Special Category Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/) for more information.
 
 :::::::::::
 

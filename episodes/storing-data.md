@@ -513,15 +513,15 @@ The different tools on Windows, macOS, and Linux can make an encrypted external 
 
 ---
 
-## Changing Data Locations
+## Changing Data Storage Location
 
-Eventually projects evolve and storage locations sometimes need to change.
+Storage locations may need to change as projects evolve.
 
-When moving project data:
+When moving project data
 
 - Inform collaborators
 - Update documentation
-- Update links and shortcuts
+- Update links, references, and shortcuts
 - Update analysis workflows if required
 
 Changing locations can have unintended consequences.
@@ -545,7 +545,7 @@ R:\Projects\ProjectData\
 ## macOS
 
 ```text
-/Users/Clair/ProjectData/
+/Users/Claire/ProjectData/
 ```
 
 becoming:
@@ -557,7 +557,7 @@ becoming:
 ## Linux
 
 ```text
-/home/Clair/ProjectData/
+/home/Claire/ProjectData/
 ```
 
 becoming:
@@ -568,16 +568,13 @@ becoming:
 
 ::::::::::::::::::::
 
-
-may break scripts that assume the old location.
-
-This is one reason why good documentation is important.
+may break scripts that reference the previous location.
 
 ---
 
 ## A Brief Note on Version Control
 
-Sometimes researchers use filenames to keep track of changes:
+Sometimes researchers use multiple files with descriptive filenames to keep track of changes:
 
 ```text
 report_v01.docx
@@ -585,68 +582,53 @@ report_v02.docx
 report_v03.docx
 ```
 
-For documents and data this can be useful.
+For documents and data, this approach can be useful.
 
-However, software projects often use dedicated version control systems such as Git.
+However, software projects often use dedicated version control systems such as [Git](https://git-scm.com/).
 
-Version control provides:
+Version control provides
 
 - History tracking
 - Collaboration tools
 - Change management
 - Recovery of previous versions
 
-Version control is a large topic in its own right.
-
-Note that some services, such as OneDrive, retain their own version histories. 
+Note that some services, such as OneDrive, also retain version histories. 
 
 ### Further Learning
 
- If you want to learn more about version control, consider attending a Carpentries Git and Version Control workshop.
-
- This lesson will not cover Git in detail.
+ We will not cover version control and Git in this workshop, but you can learn more about them by attending a [Carpentries Git and Version Control](https://swcarpentry.github.io/git-novice/) workshop.
 
 ---
 
 ## Sharing Research Outputs
 
-Eventually many research projects produce outputs that should be publicly available.
-
-Examples include:
+Eventually many research projects produce outputs that should be publicly available, such as
 
 - Supporting datasets
 - Processed data
 - Code
 - Supplementary materials
 
-Rather than emailing files or placing them on personal websites, researchers often use repositories.
+Rather than emailing files or placing them on personal websites, researchers often store these outputs in repositories that are publicly available, such as
 
-Examples include:
-
-- Zenodo
-- Figshare
+- [Zenodo](https://zenodo.org/)
+- [Figshare](https://figshare.com/)
+- [GitHub](https://github.com/) (particularly for code/software)
 - Institutional repositories
 - Subject-specific repositories
 
-These repositories can provide:
+More repositories can be found at [re3data.org](https://www.re3data.org) and in Newcastle University's [Find Data](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/) resource. Note that individual funders may have their own requirements on how research outputs are shared. 
+
+Repositories can provide
 
 - Long-term preservation
 - Stable links
 - Metadata
 - Citations
-- Digital Object Identifiers (DOIs)
+- [Digital Object Identifiers (DOIs)](https://www.doi.org/)
 
-A DOI allows a dataset to be referenced in publications in the same way that journal articles are cited.
-
-For example:
-
-```text
-doi.org/xxxxx
-```
-
-This makes research outputs easier to find, cite, and reuse.
-
-The University provides the following information page [Find Data](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/) but individual funders may have their own requirements. [re3data.org](https://www.re3data.org) can also find data repositories. 
+A DOI allows a dataset to be referenced in publications in the same way that journal articles are cited, making other types of research outputs easier to find, cite, and reuse.
 
 
 ---

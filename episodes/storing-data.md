@@ -513,6 +513,24 @@ The different tools on Windows, macOS, and Linux can make an encrypted external 
 
 ---
 
+:::::::::::::::::: discussion
+
+## Where Should You Store Your Data?
+
+ Consider a current or future research project.
+
+ - Where are you storing data now?
+ - Is that the most appropriate location?
+ - How is the data backed up?
+ - Could collaborators access it?
+ - What would happen if you left the institution?
+
+ Would you change your storage solution after today's discussion?
+
+::::::::::::::::::::::::::
+
+---
+
 ## Changing Data Storage Location
 
 Storage locations may need to change as projects evolve.
@@ -672,25 +690,6 @@ For each DOI, answer
 ::::::::::::::::::
 ::::::::::::::::::
 
----
-
-:::::::::::::::::: discussion
-
-## Where Should You Store Your Data?
-
- Consider a current or future project.
-
- - Where are you storing data now?
- - Is that the most appropriate location?
- - How is the data backed up?
- - Could collaborators access it?
- - What would happen if you left the institution?
-
- Would you change anything after today's discussion?
-
-::::::::::::::::::::::::::
-
----
 
 :::::::::::::::::::::::: challenge
 

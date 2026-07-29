@@ -703,7 +703,7 @@ For each scenario, identify the most appropriate storage location and explain yo
  1. Active analysis files that only you are currently editing.
  2. A shared project involving five collaborators.
  3. Large datasets processed on the HPC.
- 4. Human participant data.
+ 4. Personal identifiable information.
  5. Published research outputs accompanying a journal article.
 
  Discuss your answers with a partner.

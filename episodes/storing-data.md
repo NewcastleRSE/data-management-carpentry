@@ -494,11 +494,9 @@ Ensure you understand your obligations for managing your data.
 
 ::::::::::::::::::::::
 
+### Encryption
 
-### Protecting Your Data
-
-
-#### Encryption
+One way to protect personal and confidential data is **encryption**, which "scrambles" data so that only people with the correct key can access and read the data.
 
 Your University laptop may already be running whole disk encryption, which protects all the files on the computer. Without encryption, anyone can access the files, even if you have set a password. However, data on your laptop is only fully protected when the laptop is shut down; different modes of standby have different levels of protection. For example, Hibernate provides more protection than Sleep mode in Windows.  
 

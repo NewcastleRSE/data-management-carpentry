@@ -343,12 +343,6 @@ Examples include:
 - SharePoint sites
 - Departmental storage
 
-Example:
-```text
-Shared Projects/
-└── Marine Mammal Study/
-```
-
 :::::::::::::::::::: challenge
 
 ## Shared storage pros and cons
@@ -369,8 +363,8 @@ Discuss the advantages and disadvantages of shared storage with a partner or gro
 - May require administration
 - May have storage limits
 - Large datasets can become difficult to manage
-- Different ways of accessing when off-site
-- Understanding backup policy can be hard, is something apparently deleted actually deleted?
+- May not have permission to access off-site
+- Can be more difficult to understand backup policy (e.g., is something deleted locally also deleted in the shared folder?)
 
 :::::::::::::::::::::
 :::::::::::::::::::::
@@ -381,9 +375,9 @@ Discuss the advantages and disadvantages of shared storage with a partner or gro
 
 Many institutions provide dedicated research storage services.
 
-At our institution, research projects can use the Research Data Warehouse (RDW) [link](https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/).
+At Newcastle University, research projects can use the [Research Data Warehouse (RDW)](https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/).
 
-The RDW is:
+The RDW is
 
 - Backed up
 - Designed for research data
@@ -392,15 +386,13 @@ The RDW is:
 - Suitable for large datasets
 - Connected to institutional computing infrastructure
 
-Unlike personal storage, access is linked to the project rather than an individual.
+Unlike personal storage, access is linked to the project rather than an individual, which allows
 
-This means:
+- New collaborators to be added
+- Departing collaborators to be removed
+- Data to remain available to the project
 
-- New collaborators can be added
-- Departing collaborators can be removed
-- Data remains available to the project
-
-For most research data, this is the recommended storage location.
+For most research data, RDW is the recommended storage location.
 
 
 :::::::::::::::::::::::::::: instructor 
@@ -412,11 +404,11 @@ Replace this section with your own institutional storage recommendations if deli
 ---
 
 
-:::::::::::::: challenge
+:::::::::::::: discussion
 
 ## Accessing Different Storage Locations
 
-Follow along with the instructor who will demonstrate how to navigate to:
+Follow along with the instructor who will demonstrate how to navigate to
 
 - Local storage
 - OneDrive (or equivalent cloud storage)

@@ -471,7 +471,7 @@ When working with these types of data, consider
 - Does the data need to be encrypted?
 - Are there legal or ethical restrictions for using or distributing the data?
 
-Personal and confidential data should never be collected or stored solely because it is convenient. Always follow institutional policies and governance requirements.
+Personal and confidential data should never be collected or stored solely because it is convenient. Always follow institutional policies and governance requirements; for example, Newcastle University requires researchers to complete a [Data Protection Impact Assessment](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/) if their research project may involve personal data.
 
 :::::::::::::::::::::: caution
 
@@ -724,15 +724,6 @@ For each scenario, identify the most appropriate storage location and explain yo
 ::::::::::::::::::
 
 ---
-
-## Data Privacy Impact Assessment
-
-If your research project involves personal or sensitive data, or could potentially, a Data Protection Impact Assessment should be completed and registered with the University's Information Governance Team. This is outlined [here](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/). The assessment documenation includes a number of screening questions to help decide which sections you need to fill in. 
-
-
----
-
-
 
 ## Looking Ahead
 

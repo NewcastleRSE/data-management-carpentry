@@ -723,29 +723,28 @@ For each scenario, identify the most appropriate storage location and explain yo
 
 ## Looking Ahead
 
-We now know where data should live.
+We now know where research data should be stored.
 
-The next challenge is dealing with situations where data is becoming difficult to store or share.
+The next challenge is dealing with situations where data is challenging to store or share.
 
-In the next episode we will discuss:
+In the next episode we will discuss
 
+- Storage limits
 - Compression
 - File transfer
 - Storage efficiency
 - Reducing duplication
 
-and explore what to do when projects begin running out of space.
-
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Storage decisions should consider accessibility, backup, security, and sustainability.
-- Local storage is useful for active work but is rarely sufficient on its own.
-- Personal cloud storage can create problems when researchers leave projects.
+- Storage decisions should consider accessibility, recoverability, security, and sustainability.
+- Local storage is convenient for active work, but is rarely meets other storage requirements.
+- Personal cloud storage can create access problems when researchers leave projects.
 - Shared project storage is generally preferable to individual-owned storage.
 - Research data should ideally be stored in project-owned, backed-up systems.
 - Permissions should be managed carefully and reviewed regularly.
-- Sensitive data may require additional controls and approved storage locations.
-- Moving data locations can affect collaborators and workflows.
+- Personal and confidential data may require additional controls and approved storage locations.
+- Updating data locations can affect collaborators and workflows.
 - Repositories such as Zenodo can make research outputs more discoverable and citable.
 - Version control is important for managing changes and is covered in dedicated Carpentries Git workshops.
 

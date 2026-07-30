@@ -444,6 +444,8 @@ but the appropriate permissions depend on the project. We recommend creating an 
 
 Grant the minimum access necessary to reduce the risk of accidentally deleting, leaking, or modifying important data.
 
+Permissions should be regularly reviewed to update access as needed (e.g., to remove access after team or collaborators members leave the project).
+
 ::::::::::::::::::::::::::::::::::::::::::::
 
 ---

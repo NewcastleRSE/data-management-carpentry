@@ -153,11 +153,11 @@ Possible features of a good backup system:
 
 Not all data can be shared openly; data that needs to be kept secure includes
 
-- Personal information (particularly [Special Category Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/))
+- Personal information (particularly special category data)
 - Commercially sensitive information, such as trade secrets
 - Confidential research
 
-Storage locations must be appropriate for the sensitivity of the data.
+Storage locations must be appropriate for the sensitivity of the data. We'll discuss these considerations further in the [Personal and Confidential Data](https://newcastlerse.github.io/data-management-carpentry/storing-data.html#personal-and-confidential-data) section.
 
 :::::::::: caution
 

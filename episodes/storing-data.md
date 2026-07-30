@@ -41,13 +41,7 @@ However, another important question remains:
 
 > Where should this data actually live?
 
-Many researchers begin a project by storing files wherever is most convenient:
-
-- On their laptop (e.g., in a folder in "Documents" or "Desktop")
-- On a USB drive or external hard drive
-- In personal cloud storage
-
-This approach often works initially, but many research projects involve
+Many researchers begin a project by storing files wherever is most convenient, such as their work laptop, a USB drive, or personal cloud storage. This approach often works initially, but many research projects involve
 
 - Collaborators
 - Large datasets
@@ -127,9 +121,9 @@ To evaluate data accessibility, consider
 Data storage and data backup require different solutions. Many researchers assume that files on a computer are safe. However -  
 
  - Computers fail
- - Laptops get stolen
+ - Laptops are stolen
  - Hard drives stop working
- - USB drives get lost
+ - USB drives are lost
  - Data can be accidentally deleted or incorrectly modified
 
 Good storage solutions should have reliable backup solutions so that lost data is **recoverable**.

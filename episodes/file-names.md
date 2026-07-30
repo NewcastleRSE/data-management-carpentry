@@ -59,16 +59,14 @@ Imagine receiving an email that says:
 Which file would you use?
 
 ```text
-data_final_v21.xlsx
-data_final_v2a.xlsx
 data_final_final.xlsx
 data_final_final_last_one.xlsx
 data_final_final_last_one_test.xlsx
+data_final_v21.xlsx
+data_final_v2a.xlsx
 data_final_v4_revised_jerrys_comments.xlsx
 ```
 The answer is not obvious. 
-
-One can imagine that the latest results are in `data_final_final_last_one.xlsx`, but maybe there was an error in this file and it was never deleted, meaning that `data_final_final.xlsx` contains the latest data or that the `test` in `data_final_final_last_one_test.xlsx` was good so it is the last one or last modifications were made after `jerry's` comments. How would you know?
 
 You do not want to resort to sorting the files by date and hoping that the last *created or modified* file was the last *good* file! 
 
@@ -534,7 +532,7 @@ siteA_image_02.jpg
 siteA_image_03.jpg
 ```
 
-Several graphical tools support this, for example:
+Tools for bulk renaming:
 
 ::: tab
 
@@ -555,13 +553,7 @@ Several graphical tools support this, for example:
 
 :::
 
-The exact interface differs between tools, but the concepts are similar:
-
-- Find text
-- Replace text
-- Add prefixes
-- Add suffixes
-- Insert numbering
+All of these tools support replacing text as well as adding prefixes, suffixes, and numbering across multiple files simultaneously.
 
 
 :::::::::::::::::::: challenge

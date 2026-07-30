@@ -38,7 +38,7 @@ In the previous episode we located the dataset that was handed over by our depar
 
 The project structure itself is difficult to understand:
 
-```test
+```text
 legacy_dataset/
 ├── New Folder
 │   ├── big_file.data
@@ -68,6 +68,8 @@ legacy_dataset/
 │
 ├── penguins
 │   ├── palmer_penguins.csv
+│   ├── william-warby-4FXlDuwgHWk-unsplash.jpg  
+│   ├── william-warby-4FXlDuwgHWk-unsplash.png
 │   └── README
 │
 ├── project_data_2025/

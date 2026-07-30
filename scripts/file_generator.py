@@ -43,12 +43,13 @@ def make_IMG_files_for_bulk_rename(path, nfiles=20, message="This is an example"
     idx = np.arange(set2.shape[0])
 
     np.random.seed(10)
-    res = np.random.choice(idx, size=12, replace=False)
+    res = np.random.choice(idx, size=20, replace=False)
     sub_set2 = set2[res]
 
 
     # set 1
     for i in range(8):
+        print(i)
         wc = WordCloud(background_color="white", repeat=True,width=2048, height=2048)
 
         wc.generate(loadall[i]) 
@@ -57,10 +58,11 @@ def make_IMG_files_for_bulk_rename(path, nfiles=20, message="This is an example"
         plt.imshow(wc, interpolation="bilinear")  
     
         fname = f'IMG_{i:03d}'
-        plt.savefig(f"{fname}.png")
+        plt.savefig(f"{path}/{fname}.png")
 
     # set 2
-    for i in range(1):
+    for i in range(12):
+        print(i)
         wc = WordCloud(background_color="white", repeat=True,width=2048, height=2048)
 
         data = loadall[sub_set2[i,0]]+loadall[sub_set2[i,1]]
@@ -70,7 +72,25 @@ def make_IMG_files_for_bulk_rename(path, nfiles=20, message="This is an example"
         plt.imshow(wc, interpolation="bilinear")  
     
         fname = f'IMG_{8+i:03d}'
-        plt.savefig(f"{fname}.png")
+        plt.savefig(f"{path}/{fname}.png")
+
+    # Set 3
+    iref = [1,2,8,9,10,80,81,93]
+    for i in range(8):
+        print(i)
+        wc = WordCloud(background_color="white", repeat=True,width=2048, height=2048)
+
+        data = loadall[sub_set2[12+i,0]]+loadall[sub_set2[12+i,1]]
+        wc.generate(data)
+        plt.figure(figsize=(4,4))  
+        plt.axis('off')
+        plt.imshow(wc, interpolation="bilinear")  
+    
+        fname = f'image_{iref[i]}'
+        plt.savefig(f"{path}/{fname}.png")
+    
+
+
 
 
 def apply_change(x, column, orig, change, rate):
@@ -199,7 +219,9 @@ def make_various_files(path="./data/legacy_dataset/processing_data/", n_date_fil
             date = datetime.fromtimestamp(ts-i/2*1e7).strftime("%Y-%B-%d")
         fname = f"{path}/{date}_penguin_data.csv"
         with open(fname,'w') as f:
-            f.write("This is a penguin")
+            f.write("# Penguin data")
+            f.write("ID,Name,Age,Location,Favourite_fish,tracker_id,walk_speed_kph,swimspeed_kph\n")
+            f.write("<pretend there is data here>")
 
 def temp_image_gen():
 
@@ -219,4 +241,5 @@ def temp_image_gen():
 
 
 
+make_IMG_files_for_bulk_rename("../data/legacy_dataset/New Folder", nfiles=20, message="This is an example")
 

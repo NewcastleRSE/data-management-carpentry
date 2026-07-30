@@ -1,1 +1,3 @@
-This is a penguin
+# Penguin data
+ID,Name,Age,Location,Favourite_fish,tracker_id,walk_speed_kph,swimspeed_kph
+<pretend there is data here>

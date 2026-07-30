@@ -89,10 +89,6 @@ def make_IMG_files_for_bulk_rename(path, nfiles=20, message="This is an example"
         fname = f'image_{iref[i]}'
         plt.savefig(f"{path}/{fname}.png")
     
-
-
-
-
 def apply_change(x, column, orig, change, rate):
     """
     Function to apply changes to dataframe values. 
@@ -140,13 +136,13 @@ def penguin_data_changer(path_to_file, outfile, n_samples=100):
 
     # spoil categories
     cat_species = {'Adelie':["Adelie","A","Ade","Adelei"], 'Gentoo':["Gentoo","G","Gen","Gen too"], 'Chinstrap':["Chinstrap","C","Chin'"]}
-    r_species = {'Adelie':[.7,.2,.05,.05], 'Gentoo':[.6,.3,.05,.05], 'Chinstrap':[.6,.2,.2]}
+    r_species = {'Adelie':[.7,.2,.05,.05], 'Gentoo':[.3,.6,.05,.05], 'Chinstrap':[.6,.3,.1]}
     cat_island = {'Torgersen':["Torgersen","T","Tor","Torgersan"], 'Biscoe':["Biscoe","B"], 'Dream':["Dream","D"]}
-    r_island = {'Torgersen':[.5,.4,.09,.01], 'Biscoe':[0.5,0.5], 'Dream':[0.8,0.2]}
+    r_island = {'Torgersen':[.5,.4,.09,.01], 'Biscoe':[0.5,0.5], 'Dream':[0.6,0.4]}
     cat_year = {2007:[2007],2008:[2008], 2009:[2009,9]}
     r_year = {2007:[1.],2008:[1.], 2009:[.8,.2]}
     cat_sex = {"female":['female','f'], "male":["male","m"]}
-    r_sex = {"female":[.8,.1], "male":[.7,.2]}
+    r_sex = {"female":[.8,.2], "male":[.7,.3]}
 
     
     pen_updated = pen
@@ -195,11 +191,18 @@ def make_big_file(outfile, xsize, ysize):
     """
     Makes a larger file, filled with random numbers
     """
+    print("outfile:", outfile)
     img = np.random.random((xsize, ysize))
     np.savetxt(outfile,img)
 
 def make_various_files(path="./data/legacy_dataset/processing_data/", n_date_files=10):
+    """
+    Generates various misc. files. 
 
+    e.g. 10-Nov-26_penguin_withtheirnames_and_weatherreport.txt
+    And files with _penguin_data.csv but various date formats. 
+
+    """
 
     # make file with overly long name
     f_overlong = f"{path}/10-Nov-26_penguin_withtheirnames_and_weatherreport.txt"
@@ -222,24 +225,4 @@ def make_various_files(path="./data/legacy_dataset/processing_data/", n_date_fil
             f.write("# Penguin data")
             f.write("ID,Name,Age,Location,Favourite_fish,tracker_id,walk_speed_kph,swimspeed_kph\n")
             f.write("<pretend there is data here>")
-
-def temp_image_gen():
-
-    """
-    Generates wordcloud containing text from data-formats.md lesson
-    """
-    wc = WordCloud(background_color="white", repeat=True,width=2048, height=2048)
-
-    with open("../episodes/data-formats.md",'r') as f:
-        data = f.read()
-
-    wc.generate(data)
-
-    plt.axis('off')
-    plt.figure(figsize=(20,20))
-    plt.savefig("test.png")
-
-
-
-make_IMG_files_for_bulk_rename("../data/legacy_dataset/New Folder", nfiles=20, message="This is an example")
 

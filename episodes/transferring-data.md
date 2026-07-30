@@ -735,8 +735,6 @@ Using OneDrive and Sharepoint to transfer files is an alternative to sending the
 
 When moving data, you need to ensure you only send the intended data. You need to check not only the contents of your files, but also any file metadata, documentation, file headers etc. For example, software often auto-generates metadata, such as the name of the creator, date created, the name of the last modifier, and date and time of the last modification, that is stored and transferred with the file.
 
-Data security laws require the removal of personally identifiable information, such that a person is not identifiable using the data *in combination with* other data. This means that even if you cannot identify someone using your data alone, you must also make sure that an individual cannot be identified if someone combines your data with some other data. 
-
 ## Further Learning
 
  Learners interested in transferring data to servers or HPC systems should consider attending:

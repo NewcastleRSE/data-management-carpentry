@@ -36,12 +36,27 @@ By the end of this episode, learners will be able to:
 
 In the previous episode we located the dataset that was handed over by our departed collaborator. Unfortunately, finding the data is only the first challenge.
 
-The project structure itself is difficult to understand:
+The project structure itself is difficult to understand - the files include
 
 ```text
 legacy_dataset/
+│
+├── miscellaneous/
+│   ├── cat_pic.jpg
+│   ├── important_note.txt
+│   └── Untitled.csv
+│
 ├── New Folder
-│   ├── big_file.data
+│   ├── big_file.txt
+│   ├── Image One.png
+│   ├── image_1.png
+│   ├── image_10.png
+│   ├── image_2.png
+│   ├── image_8.png
+│   ├── image_80.png
+│   ├── image_81.png
+│   ├── image_9.png
+│   ├── image_93.png
 │   ├── IMG_000.png
 │   ├── IMG_001.png
 │   ├── IMG_002.png
@@ -62,15 +77,16 @@ legacy_dataset/
 │   ├── IMG_017.png 
 │   ├── IMG_018.png
 │   ├── IMG_019.png 
+│   ├── June second image.png
+│   ├── test.png
 │   ├── Untitled 1.csv
 │   └── New Folder (2)/
 │       └── backup_copy.txt
 │
 ├── penguins
 │   ├── palmer_penguins.csv
-│   ├── william-warby-4FXlDuwgHWk-unsplash.jpg  
-│   ├── william-warby-4FXlDuwgHWk-unsplash.png
-│   └── README
+│   ├── penguin958.jpg  
+│   └── penguin958.png
 │
 ├── project_data_2025/
 │   ├── data_final_v3_LAST_ONE.xlsx
@@ -85,19 +101,14 @@ legacy_dataset/
 │   └── .processed/
 │        └── REAL_ACTUAL_DATA_DO_NOT_DELETE.csv
 │
-├── RAW_DATA_!!!
-│   ├── Data!@#$.csv
-│   ├── 03_04_26_results.csv
-│   └── raw_images_TEMP/
-│
-└── miscellaneous/
-    ├── cat_pic.jpg
-    ├── important_note.txt
-    └── Untitled.csv
+└── RAW_DATA_!!!
+    ├── Data!@#$.csv
+    ├── 03_04_26_results.csv
+    ├── raw_images_TEMP/
+    └── ...
 ```
 
-
-
+and more!
 
 Imagine joining this project six months from now.
 

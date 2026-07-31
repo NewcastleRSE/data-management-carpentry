@@ -244,7 +244,9 @@ However, most successful structures share common characteristics.
 - Categorical
 - Able to archive old files
 
-:::::::::::::::::::::::::::::: challenge
+:::::::::::::::::::::::::::::: discussion
+
+## Common Characteristics
 
 After looking at the Poor examples in each subsection below, try and come up with some good examples before clicking the Good tab.
 
@@ -415,6 +417,10 @@ archive/
 This approach allows old material to be retained without cluttering the active project structure.
 
 We will discuss data retention in a later episode.
+
+
+
+
 
 ---
 
@@ -680,6 +686,7 @@ Other possible folders would be:
 etc.
 
 The most important part of the design is that each folder has a clear purpose.
+
 ::::::::::::::::::
 ::::::::::::::::::
 

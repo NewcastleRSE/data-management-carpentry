@@ -41,25 +41,14 @@ However, another important question remains:
 
 > Where should this data actually live?
 
-Many researchers begin a project by storing files wherever is most convenient:
-
-- On their laptop
-- In Downloads
-- On a USB drive
-- In personal cloud storage
-
-This often works initially.
-
-However, research projects usually involve:
+Many researchers begin a project by storing files wherever is most convenient, such as their work laptop, a USB drive, or personal cloud storage. This approach often works initially, but many research projects involve
 
 - Collaborators
 - Large datasets
 - Sensitive information
 - Long-term storage requirements
 
-A storage decision that works for a single person may become a problem when a project grows or team members change.
-
-Choosing an appropriate storage location is therefore an important part of good data management.
+A storage decision that works for a single person may not scale as the project and team grows. Choosing an appropriate storage location is therefore an important part of good data management.
 
 ---
 
@@ -67,20 +56,20 @@ Choosing an appropriate storage location is therefore an important part of good 
 
 ## Where Do You Store Your Data?
 
- Spend a few minutes discussing the following questions with a partner:
+ Spend a few minutes discussing your current storage set-up with a partner:
 
  - Where do you currently store your research data?
  - Why did you choose that location?
  - How do collaborators access it?
  - Are the data backed up?
  - What would happen if your laptop stopped working tomorrow?
- - What happens if you leave your current project suddenly?
+ - What would happen if you suddenly left your current project?
 
-Share some of your ideas with the group.
+Share some of your current solutions and any concerns with the group.
 
 ::::::::::::::::::::::::: solution
 
-Common answers for where to store data often include:
+Researchers often store data on
 
 - Laptop hard drives
 - USB drives
@@ -90,9 +79,6 @@ Common answers for where to store data often include:
 - Institutional storage systems
 - HPC storage
 - External hard drives
-
-Other answers can vary depending on the project. 
-
 
 :::::::::::::::::::::::
 :::::::::::::::::::::::
@@ -109,57 +95,53 @@ Other answers can vary depending on the project.
 
 ## What Makes a Good Storage Location?
 
-When deciding where to store data, it is useful to consider four broad questions:
+When deciding where to store data, consider
 
-- Access.
-- Backups.
-- Security.
-- Sustainability. 
+- Accessibility: the ability of different users to retrieve and use data
+- Recoverability: the ability to restore damaged or lost data
+- Security: the ability to protect data from unauthorised access or misuse
+- Sustainability: the ability to store and access data for long time periods
 
-### Can People Access It?
+### Can Other People Access the Data?
 
-If collaborators need access, they must be able to find and open the data.
+Collaborators must be able to find and open the data.
 
-Questions to consider:
+To evaluate data accessibility, consider
 
-- Can project members access it?
+- Can all project members access the data?
 - Can external collaborators access it?
-- Can access be controlled?
-- Can new project members be added easily?
-- When you leave the project might the data disappear?
+- Can access be limited to specific people?
+- Can access be easily added for new project members and removed for past members?
+- When you leave the project, will other people have difficulty accessing the data?
 
 ---
 
-## Is It Backed Up?
+### Is the Data Recoverable?
 
-Storage and backup are not the same thing.
+Data storage and data backup require different solutions. Many researchers assume that files on a computer are safe. However -  
 
-Many researchers assume:
+ - Computers fail
+ - Laptops are stolen
+ - Hard drives stop working
+ - USB drives are lost
+ - Data can be accidentally deleted or incorrectly modified
 
-> "My files exist on a computer, therefore they are safe."
-
-Unfortunately this is not always true.
-
- - Computers fail.
- - Laptops get stolen.
- - Hard drives stop working.
- - USB drives get lost.
- - Data might be deleted accidentally.
-
-Good storage solutions should have reliable backup arrangements.
+Good storage solutions should have reliable backup solutions so that lost data is **recoverable**.
 
 :::::::::::: challenge
 
-Discuss what are the good characteristics of a backup system in your groups. 
+## Making data recoverable
+
+Discuss features of a good backup system in your groups. 
 
 :::::::::::: solution
 
-A good backup system might include:
+Possible features of a good backup system:
 
-- Regular backups - overnight, when connected to the internet etc.
-- Offsite - cloud backups? In a different building.
-- Accessible - you can easily go and get the backups and find your files
-- Redundancy - Multiple copies, in case you delete data and take a while to notice
+- Has regular, automated backups: automation ensures backup versions stay up-to-date; for e.g., backups may be scheduled every night or triggered when you connect to the internet.
+- Off-site storage: stores data off-site (e.g., on the cloud or in a different building) to protect against theft or physical damage due to, e.g., fires or floods.
+- Accessibility: allows you to easily restore lost data from the backups and find your files.
+- Redundancy: maintains multiple copies of your data to protect against accidental deletion.
 
 
 :::::::::::::
@@ -167,102 +149,85 @@ A good backup system might include:
 
 ---
 
-## Is It Secure?
+### Is the Data Secure?
 
-Not all data can be shared openly.
+Not all data can be shared openly; data that needs to be kept secure includes
 
-Examples include:
-
-- Participant data
-- Medical records
-- Personal information (particularly [Special Catagory Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/))
-- Commercially sensitive information
+- Personal information (particularly special category data)
+- Commercially sensitive information, such as trade secrets
 - Confidential research
 
-Storage locations must be appropriate for the sensitivity of the data. 
+Storage locations must be appropriate for the sensitivity of the data. We'll discuss these considerations further in the [Personal and Confidential Data](https://newcastlerse.github.io/data-management-carpentry/storing-data.html#personal-and-confidential-data) section.
 
 :::::::::: caution
 
-You have a legal requirement to keep certain types of data safe with consequences for yourself and the University. 
+You have a legal requirement to keep certain types of data safe; failure to do so can have consequences for yourself and your institution. 
 
-There are required actions that need to be taken if there is a data breach, such as reporting to the University. Make sure you know the requirements for your data. 
-
-Special catagory data is especially sensitive personal data whech needs extra care when collecting and handling. See [Special Catagory Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/) for more information.
+In the event of a data breach you are required to take certain actions, such as reporting to your institution. Make sure you know the requirements for your data. 
 
 :::::::::::
 
 ---
 
-## Is It Sustainable?
+### Is the Data Storage Sustainable?
 
-Consider the lifetime of the project.
-
-Ask:
+To ensure your data storage is sustainable over the lifetime of the project, consider
 
 - Will the storage still exist in five years?
-- What happens if a team member leaves?
-- Can file ownership be transferred? This is particularly important for cloud services.
+- What happens to the data if a team member leaves?
+- Can file ownership be transferred? This ability is particularly important for cloud services.
 - Is there enough storage capacity for data growth?
-- Is the file format accessible? If the company which makes your software shuts down will you still be able to access your data?
+- Is the file format accessible? If the company which makes your software shuts down, will you still be able to access your data?
+- Are any ongoing costs for data storage affordable?
 
 ---
 
-## Local Storage
+## Types of Storage
 
-Local storage refers to files stored directly on a device such as:
+There are many different types of data storage: 
+
+- Local storage
+- Personal cloud storage
+- Shared network or cloud storage
+- Institution storage (e.g., the Research Data Warehouse)
+
+We'll discuss the advantages and disadvantages of each one below.
+
+---
+
+### Local Storage
+
+Local storage refers to files stored directly on a device such as a
 
 - Laptop
 - Desktop computer
 - External hard drive
 - USB drive
 
-For example:
-
-:::::::::: tab
-
-### Windows
-
-```text
-C:\Users\Bob\Documents\Research\
-```
-
-### macOS
-
-```text
-/Users/Bob/Documents/Research/
-```
-
-### Linux
-
-```text
-/home/Bob/Documents/Research/
-```
-::::::::::::::::::::::::
-
 :::::::::::::::::: challenge
+
+## Local storage pros and cons
 
 Discuss the advantages and disadvantages of local storage with a partner or group.
 
 :::::::::::::::::: solution
 
-Examples include
-
-## Advantages
+**Advantages**
 
 - Fast access
 - Convenient
 - Works without internet access
 - Good for active work
 
-## Disadvantages
+**Disadvantages**
 
 - Data may only exist in one location
-    - Hard to access off site
-    - Hard to share with collegues
+    - Difficult to access off site
+    - Difficult to share with colleagues
 - Vulnerable to device failure or loss
 - Difficult to collaborate
 - Difficult to manage project-wide access
-- Security issues e.g. 'left laptop on a train'
+- Security issues, e.g., 'left laptop with personal data on a train'
 
 :::::::::::::::::::::::::
 :::::::::::::::::::::::::
@@ -271,57 +236,52 @@ Examples include
 
 Local storage is often useful for temporary working files.
 
-It is rarely an ideal long-term location for important project data.
+It is not a good long-term storage solution for important project data since it lacks all four desired storage features: accessibility, recoverability, security, and sustainability.
 
 ::::::::::::: 
 
 ---
 
-## Personal Cloud Storage
+### Personal Cloud Storage
 
-Many institutions provide services such as:
+Many institutions provide services such as
 
 - OneDrive
 - Sharepoint
 - Google Drive
 - Dropbox
 
-These can synchronise files between devices and provide backup capabilities.
+These services can synchronise files between devices and provide data backups.
 
-For example:
-
-```text
-OneDrive/
-└── Research Project/
-```
-
-Newcastle University has guides for using OneDrive and Sharepoint storage: [Link](https://newcastle.sharepoint.com/sites/O365). 
+Newcastle University has [guides](https://newcastle.sharepoint.com/sites/O365) for using OneDrive and Sharepoint storage.
 
 :::::::::::::::::::: challenge
+
+## Personal cloud storage pros and cons
 
 Discuss the advantages and disadvantages of cloud storage with a partner or group.
 
 :::::::::::::::::::: solution
 
-## Advantages
+**Advantages**
 
 - Accessible from multiple devices
 - Easy and rapid syncing. OneDrive often works in the background.
 - Simple sharing
 - Automatic backup in many cases
-- Strong Security compared to email
+- Stronger security compared to email
 - Version history 
-- You do not need to send data, you can send a link to the data
+- Easier to share large datasets using links to the data
 
-## Disadvantages
+**Disadvantages**
 
 - Usually linked to an individual account
 - Access often disappears when somebody leaves
 - Shared permissions must be managed carefully
-- Storage quotas may be limited
+- Storage may be limited
 - Security/Privacy issues
 - Data sovereignty issues
-- Access to external collaborators
+- Potentially harder to provide access to external collaborators
 - Understanding University policy 
 - Knowing which service to use can be challenging
 - May fail silently
@@ -331,28 +291,26 @@ Discuss the advantages and disadvantages of cloud storage with a partner or grou
 
 ::::::::::: caution
 
-The University also recommends against uploading personal or sensitive data to Google Drive and DropBox, see the cloud storage tab at the following [link](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/). It suggests OneDrive.
+[Newcastle University discourages uploading personal or sensitive data to Google Drive and DropBox](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/) (see the cloud storage tab). It suggests Microsoft OneDrive as a more secure option.
 
 :::::::::::::::
 
+:::::::::::::::::::: callout
+#### A Common Research Problem
 
-## A Common Research Problem
+Many researchers store project data in their personal OneDrive. This approach seems convenient until
 
-Many researchers store project data in their personal OneDrive.
+- A researcher leaves the project
+- A researcher leaves the institution and their institution OneDrive account is removed
+- You need to transfer ownership of files
 
-This seems convenient until:
+These situations can also result in loss of access to important project data.
 
-- A researcher leaves the project.
-- Their institutional account is removed.
-- Access to project data is lost.
-- Need to transfer ownership of files.
+In some organisations, governance policies may prevent administrators from accessing a past team member's OneDrive because personal storage is treated as individual, rather than project-owned, data. For this reason, avoid using personal cloud storage as the primary home of important shared project data.
 
-In some organisations, governance policies may prevent administrators from granting access because personal storage is treated as individual rather than project-owned data.
+Depending on the cloud service, it can also be challenging to transfer file ownership to another team member.
 
-For this reason, personal cloud storage should generally not be considered the primary home of important shared project data.
-
-Depending on the cloud service, it can be hard to transfer ownership of files to another group member. 
-
+::::::::::::::::::::
 
 ::::::::::::::::: instructor
 
@@ -364,7 +322,7 @@ Learners often assume that "being in the cloud" automatically means data is acce
 
 ---
 
-## Shared Storage
+### Shared Network or Cloud Storage
 
 Shared storage is designed specifically for collaboration.
 
@@ -375,45 +333,41 @@ Examples include:
 - SharePoint sites
 - Departmental storage
 
-Example:
-```text
-Shared Projects/
-└── Marine Mammal Study/
-```
-
 :::::::::::::::::::: challenge
+
+## Shared storage pros and cons
 
 Discuss the advantages and disadvantages of shared storage with a partner or group.
 
 ::::::::::::::::::::: solution
 
-## Advantages
+**Advantages**
 
 - Multiple users can access data
 - Permissions can be managed centrally
 - Better suited to collaboration
 - Less dependent on a single individual
 
-## Disadvantages
+**Disadvantages**
 
 - May require administration
 - May have storage limits
 - Large datasets can become difficult to manage
-- Different ways of accessing when off-site
-- Understanding backup policy can be hard, is something apparently deleted actually deleted?
+- May not have permission to access off-site
+- Can be more difficult to understand backup policy (e.g., is something deleted locally also deleted in the shared folder?)
 
 :::::::::::::::::::::
 :::::::::::::::::::::
 
 ---
 
-## Research Data Warehouse Storage
+### Institution storage
 
 Many institutions provide dedicated research storage services.
 
-At our institution, research projects can use the Research Data Warehouse (RDW) [link](https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/).
+At Newcastle University, research projects can use the [Research Data Warehouse (RDW)](https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/).
 
-The RDW is:
+The RDW is
 
 - Backed up
 - Designed for research data
@@ -422,15 +376,13 @@ The RDW is:
 - Suitable for large datasets
 - Connected to institutional computing infrastructure
 
-Unlike personal storage, access is linked to the project rather than an individual.
+Unlike personal storage, access is linked to the project rather than an individual, which allows
 
-This means:
+- New collaborators to be added
+- Departing collaborators to be removed
+- Data to remain available to the project
 
-- New collaborators can be added
-- Departing collaborators can be removed
-- Data remains available to the project
-
-For most research data, this is the recommended storage location.
+For most research data, RDW is the recommended storage location.
 
 
 :::::::::::::::::::::::::::: instructor 
@@ -442,11 +394,11 @@ Replace this section with your own institutional storage recommendations if deli
 ---
 
 
-:::::::::::::: challenge
+:::::::::::::: discussion
 
 ## Accessing Different Storage Locations
 
-Follow along with the instructor who will demonstrate how to navigate to:
+Follow along with the instructor who will demonstrate how to navigate to
 
 - Local storage
 - OneDrive (or equivalent cloud storage)
@@ -469,16 +421,16 @@ For each example:
 
 ## Permissions and Collaboration
 
-Choosing a location is only part of the problem.
+Choosing a storage location is only the first step for storing research data.
 
-You also need to decide:
+You also need to decide
 
 - Who can read data?
 - Who can upload data?
 - Who can edit data?
 - Who can delete data?
 
-For example:
+For example, you may need permissions such as
 
 | Role | Permissions |
 |--------|--------|
@@ -486,73 +438,61 @@ For example:
 | External collaborators | Read only |
 | Project lead | Full control |
 
-There is no universal solution.
-
-The appropriate permissions depend on the project. It is good to have an access plan in place, so everyone on the project knows who can accesss which data and how easy it might be for external collaborators to access your preferred data store. 
+but the appropriate permissions depend on the project. We recommend creating an access plan so all project members know who can access which data and how to provide access to external or new collaborators. 
 
 ::::::::::::::::: callout
 
-Grant the minimum access necessary.
+Grant the minimum access necessary to reduce the risk of accidentally deleting, leaking, or modifying important data.
 
-This reduces the risk of accidental deletion, leaking, or modification of important files.
+Permissions should be regularly reviewed to update access as needed (e.g., to remove access after team members or collaborators leave the project).
 
 ::::::::::::::::::::::::::::::::::::::::::::
 
 ---
 
-## Sensitive Data
+## Personal and Confidential Data
 
-Some projects require additional controls.
+Some projects require additional controls to protect [**personal data**](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-data/), such as names and and contact information, as well as **confidential data**, such as trade secrets or intellectual property. 
 
-Examples include:
+[**Special category data**](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/), or sensitive data, is personal data that requires additional protection due to its sensitivity - for example, race and ethnic origin, political opinions, religious beliefs, biometric data, and health data.
 
-- Human participant data
-- Clinical data
-- Personal information
-- Special catagory data.
-- Commercially restricted data
+When working with these types of data, consider
 
-Questions to consider:
+- Is the storage location approved for personal or confidential data?
+- Who should have access to the data?
+- Does the data need to be encrypted?
+- Are there legal or ethical restrictions for using or distributing the data?
 
-- Is the storage location approved for sensitive data?
-- Who should have access?
-- Does the data need encryption?
-- Are there legal or ethical restrictions?
-
-Sensitive data should never be collected or stored solely because it is convenient.
-
-Always follow institutional policies and governance requirements.
+Personal and confidential data should never be collected or stored solely because it is convenient. Always follow institutional policies and governance requirements; for example, Newcastle University requires researchers to complete a [Data Protection Impact Assessment](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/) if their research project may involve personal data.
 
 :::::::::::::::::::::: caution
 
-There are strict legal requirements for using and storing certain types of data. 
+There are strict legal requirements for using and storing certain types of data:
 
-- People can request access to data held on them, via [Subject Access Requests](https://www.ncl.ac.uk/mediav8/data-protection/files/SubjectAccessRequestform_002%20(1).docx) 
+- People can request access to data held on them, via [Subject Access Requests](https://www.gov.uk/government/publications/subject-access-request-procedure/subject-access-request-procedure) 
 - People can request erroneous data about them be corrected
-- People can demand data about them be deleted
+- People can request data about them be deleted
 - Personal data must be used only for the reasons it was provided
-- Data breaches must be reported to the Univerity in line with its policies
+- Data breaches must be reported to the University in line with its policies
 - and many others
 
-See the following examples:
+For more information, see
 
 - [GDPR Information for Research](https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/)
 - [Data Protection](https://www.ncl.ac.uk/data-protection/)
-- [Access your personal data](ttps://www.ncl.ac.uk/data-protection/access-personal-data/)
+- [Access your personal data](https://www.ncl.ac.uk/data-protection/access-personal-data/)
 
-Be clear on what your obligations are regarding the data you use. The above links are not meant to be definative, you will need to check this yourself. 
+Ensure you understand your obligations for managing your data.
 
 ::::::::::::::::::::::
 
+### Encryption
 
-### Protecing Your Data
+One way to protect personal and confidential data is **encryption**, which "scrambles" data so that only people with the correct key can access and read the data.
 
+Your institutional laptop may already be running whole disk encryption, which protects all the files on the computer. Without encryption, anyone can access the files, even if you have set a password. However, data on your laptop is only fully protected when the laptop is shut down; different modes of standby have different levels of protection. For example, Hibernate provides more protection than Sleep mode in Windows.  
 
-#### Encryption
-
-Your University laptop may already be running whole disk encryption. This protects all the files on the computer. Without it, anyone can access the files, even if you have set a password. However, data on your laptop is only fully protected when it is shut down. Different modes of standby have different levels of protection. For example, prefer Hibernate to Sleep mode in Windows.  
-
-The same does not always apply to external hard-drives used for backups or data transfer, unless the disk is explicitly encrypted. If the external drive asks for a password before you can access it, it is probably encrypted, if it does not then it probably isn't. This is true even if your laptop is running full disk encryption. External disks can be encrypted using Bitlocker for Windows, Finder for macOS or Disk Utility in Linux. 
+External hard-drives (often used for backups or data transfer) need to be explicitly encrypted, even if your laptop is encrypted. External disks can be encrypted using Bitlocker in Windows, Finder in macOS, or Disk Utility in Linux. 
 
 
 :::::::::::::::::::: caution
@@ -561,49 +501,37 @@ If you forget your password and encryption key you have lost your data! It canno
 
 ::::::::::::::::::::
 
-The different tools on Windows, macOS and Linux can make an encrypted external disk or USB key unusable on a different operating system. You can encrypt individual files and folders if required, depending on software and system e.g. Windows/macOS/Linux/OneDrive.
-
-
-
-
-#### Sharing data
-
-> Maybe move this to the sharing data md. 
-
-Sharing data is discussed in a previous lesson. However, a few additional items related to security are discussed here. 
-
-If concerned about storing data on the cloud, or transfering it to collegues you can encrypt it before hand and sent the encrypted version. In this case, send the password seperatly. 
-
-The University offers a [File Transfer Service](https://dropoff.ncl.ac.uk/) which offers the chance to encrypt data before sending. It will also inform you when someone accesses the data. 
-
-This offers additional security over email, which is **not recommended** for moving private data. Email passed from you to the destination through a number of intermediate servers. If any link in the chain is exposed, the data can leak. This is why companies rarely email you your bills, but instead offer secure websites for viewing them [1](https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621), [2](https://hexiosec.com/blog/secure-email-attachments/). 
-
-Using OneDrive and Sharepoint to transfer files is an alternative to sending the data as a copy. If you send data as an email or via the File Transfer Service, you are making a copy and sending that out into the world. Using University OneDrive or Sharepoint only sends a link. If an email is sent in error, you need only break the link or revoke permissions and the data becomes inassessible again. This is a good way of reducing errors such as sending to the wrong email address or attaching the wrong document, [for example](https://www.bbc.co.uk/news/articles/c363w8pjpklo). 
-
-
-#### Sanitising your data
-
-When moving data you need to ensure you are only sending the data you intend. This includes your data, metadata, documentation, file headers etc.  
-
-Data security laws require the removal of personally identifiable information, such that a person is not identifiable using the data *in combination with* other data. This means that even if you cannot identify someone using your data alone, you must also make sure that an individual cannot be identified if someone combines your data with some other data. 
-
-This is a reason that good data management is important, you need to be able to track any private data in order to make sure it is not exposed, and make sure all of it is removed. 
-
-Software auto-generates metadata, such as name of creator, date created, name of last modifier, date and time of last modification, organisation, and more, depending on the software. Ensure that only the data you want is transmitted and be aware of inadvertant meta-data. For example, in Microsoft Word. 
-
-
+The different tools on Windows, macOS, and Linux can make an encrypted external disk or USB key unusable on a different operating system. You can often encrypt individual files and folders if required.
 
 ---
 
-## Changing Data Locations
+:::::::::::::::::: discussion
 
-Eventually projects evolve and storage locations sometimes need to change.
+## Where Should You Store Your Data?
 
-When moving project data:
+ Consider a current or future research project.
+
+ - Where are you storing data now?
+ - Is that the most appropriate location?
+ - How is the data backed up?
+ - Could collaborators access it?
+ - What would happen if you left the institution?
+
+ Would you change your storage solution after today's discussion?
+
+::::::::::::::::::::::::::
+
+---
+
+## Changing Data Storage Location
+
+Storage locations may need to change as projects evolve.
+
+When moving project data
 
 - Inform collaborators
 - Update documentation
-- Update links and shortcuts
+- Update links, references, and shortcuts
 - Update analysis workflows if required
 
 Changing locations can have unintended consequences.
@@ -627,7 +555,7 @@ R:\Projects\ProjectData\
 ## macOS
 
 ```text
-/Users/Clair/ProjectData/
+/Users/Claire/ProjectData/
 ```
 
 becoming:
@@ -639,7 +567,7 @@ becoming:
 ## Linux
 
 ```text
-/home/Clair/ProjectData/
+/home/Claire/ProjectData/
 ```
 
 becoming:
@@ -650,16 +578,13 @@ becoming:
 
 ::::::::::::::::::::
 
-
-may break scripts that assume the old location.
-
-This is one reason why good documentation is important.
+may break scripts that reference the previous location.
 
 ---
 
 ## A Brief Note on Version Control
 
-Sometimes researchers use filenames to keep track of changes:
+Sometimes researchers use multiple files with descriptive filenames to keep track of changes:
 
 ```text
 report_v01.docx
@@ -667,87 +592,96 @@ report_v02.docx
 report_v03.docx
 ```
 
-For documents and data this can be useful.
+For documents and data, this approach can be useful.
 
-However, software projects often use dedicated version control systems such as Git.
+However, software projects often use dedicated version control systems such as [Git](https://git-scm.com/).
 
-Version control provides:
+Version control provides
 
 - History tracking
 - Collaboration tools
 - Change management
 - Recovery of previous versions
 
-Version control is a large topic in its own right.
+Note that some services, such as OneDrive, also retain version histories. 
 
-Note that some services, such as OneDrive, retain their own version histories. 
-
-### Further Learning
-
- If you want to learn more about version control, consider attending a Carpentries Git and Version Control workshop.
-
- This lesson will not cover Git in detail.
+::::: callout
+ We will not cover version control and Git in this workshop, but you can learn more about them by attending a [Carpentries Git and Version Control](https://swcarpentry.github.io/git-novice/) workshop.
+:::::
 
 ---
 
 ## Sharing Research Outputs
 
-Eventually many research projects produce outputs that should be publicly available.
-
-Examples include:
+Eventually many research projects produce outputs that should be publicly available, such as
 
 - Supporting datasets
 - Processed data
 - Code
 - Supplementary materials
 
-Rather than emailing files or placing them on personal websites, researchers often use repositories.
+Rather than emailing files or placing them on personal websites, researchers often store these outputs in repositories that are publicly available, such as
 
-Examples include:
-
-- Zenodo
-- Figshare
+- [Zenodo](https://zenodo.org/)
+- [Figshare](https://figshare.com/)
+- [GitHub](https://github.com/) (particularly for code/software)
 - Institutional repositories
 - Subject-specific repositories
 
-These repositories can provide:
+More repositories can be found at [re3data.org](https://www.re3data.org) and in Newcastle University's [Find Data](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/) resource. Note that individual funders may have their own requirements on how research outputs are shared. 
+
+Repositories can provide
 
 - Long-term preservation
 - Stable links
 - Metadata
 - Citations
-- Digital Object Identifiers (DOIs)
+- [Digital Object Identifiers (DOIs)](https://www.doi.org/)
 
-A DOI allows a dataset to be referenced in publications in the same way that journal articles are cited.
+A DOI allows any type of digital object to be cited in publications, making research outputs such as datasets easier to find, cite, and reuse. Journals create DOIs for research articles as well to provide a stable citation and metadata for each article.
 
-For example:
+:::::::::::::::::: challenge
 
-```text
-doi.org/xxxxx
-```
+## Finding digital objects using DOIs
 
-This makes research outputs easier to find, cite, and reuse.
+DOIs can be mapped to their digital objects using a DOI resolver. The resolver looks up the DOI in the DOI registry to find the corresponding record and send you to the location of the digital object.
 
-The University provides the following information page [Find Data](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/) but individual funders may have their own requirements. [re3data.org](https://www.re3data.org) can also find data repositories. 
+Use the DOI Foundation's [DOI resolver](https://dx.doi.org/) to find the digital object that corresponds to each of these DOIs:
 
+- 10.5281/zenodo.3960218
+- 10.1371/journal.pone.0090081
 
----
+For each DOI, answer
 
-:::::::::::::::::: discussion
+1) Where is the object stored? 
+2) What type of object is it? (e.g., publication, dataset, software)
+3) What is the name of the object?
+4) Who created/authored the object?
+5) When was the object published?
+6) How would you cite the object?
 
-## Where Should You Store Your Data?
+:::::::::::::::::: solution
 
- Consider a current or future project.
+**10.5281/zenodo.3960218**
 
- - Where are you storing data now?
- - Is that the most appropriate location?
- - How is the data backed up?
- - Could collaborators access it?
- - What would happen if you left the institution?
+1) Location: Zenodo (repository)
+2) Type: Software (with dataset)
+3) Name: allisonhorst/palmerpenguins: v0.1.0
+4) Creators: Allison M Horst, Alison Presmanes, Kristen B Gorman
+5) Publication date: July 25, 2020
+6) Citation: Allison M Horst, Alison Presmanes Hill& Kristen B Gorman. (2020). allisonhorst/palmerpenguins: v0.1.0 (Version v0.1.0) [Computer software]. Zenodo. https://doi.org/10.5281/zenodo.3960218
 
- Would you change anything after today's discussion?
+**10.1371/journal.pone.0090081**
 
-::::::::::::::::::::::::::
+1) Location: PLOS One (journal)
+2) Type: Research article
+3) Name: Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis)
+4) Creators: Kristen B. Gorman, Tony D. Williams, William R. Fraser
+5) Publication date: March 5, 2014
+6) Citation: Gorman KB, Williams TD, Fraser WR (2014) Ecological Sexual Dimorphism and Environmental Variability within a Community of Antarctic Penguins (Genus Pygoscelis). PLoS ONE 9(3): e90081. https://doi.org/10.1371/journal.pone.0090081
+
+::::::::::::::::::
+::::::::::::::::::
 
 ---
 
@@ -761,7 +695,7 @@ For each scenario, identify the most appropriate storage location and explain yo
  1. Active analysis files that only you are currently editing.
  2. A shared project involving five collaborators.
  3. Large datasets processed on the HPC.
- 4. Human participant data.
+ 4. Personal identifiable information.
  5. Published research outputs accompanying a journal article.
 
  Discuss your answers with a partner.
@@ -781,63 +715,32 @@ For each scenario, identify the most appropriate storage location and explain yo
 ::::::::::::::::::
 ::::::::::::::::::
 
-
 ---
-
-## University Data Management Plan
-
-Newcastle University has various templates for planning your data management aimed at PGRs. These can be found [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/). There are slightly different templates for the Faculty of Science, Agriculture and Engineering, the Faculty of Humanities and Social Sciences and the Faculty of Medical Sciences, but all follow the same general form .e.g. 
-
-- Type of study (3 lines).
-- Existing data study.
-- Data types.
-- Format and scale of your data.
-- Data collection/production methodology.
-- Data quality and standards.
-- Data management, storage and curation.
-- Metadata and documentation.
-- Data security risks.
-
-The university has guides and training specifically to help with your data management plan [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/). 
-
-This is the University plan, your funding agencies may have their own standards and requirements.  
-
----
-
-## Data Privacy Impact Assessment
-
-If your research project involves personal or sensitive data, or could potentially, a Data Protection Impact Assessment should be completed and registered with the University's Information Governance Team. This is outlined [here](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/). The assessment documenation includes a number of screening questions to help decide which sections you need to fill in. 
-
-
----
-
-
 
 ## Looking Ahead
 
-We now know where data should live.
+We now know where research data should be stored.
 
-The next challenge is dealing with situations where data is becoming difficult to store or share.
+The next challenge is dealing with situations where data is challenging to store or share.
 
-In the next episode we will discuss:
+In the next episode we will discuss
 
+- Storage limits
 - Compression
 - File transfer
 - Storage efficiency
 - Reducing duplication
 
-and explore what to do when projects begin running out of space.
-
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- Storage decisions should consider accessibility, backup, security, and sustainability.
-- Local storage is useful for active work but is rarely sufficient on its own.
-- Personal cloud storage can create problems when researchers leave projects.
+- Storage decisions should consider accessibility, recoverability, security, and sustainability.
+- Local storage is convenient for active work, but is rarely meets other storage requirements.
+- Personal cloud storage can create access problems when researchers leave projects.
 - Shared project storage is generally preferable to individual-owned storage.
 - Research data should ideally be stored in project-owned, backed-up systems.
 - Permissions should be managed carefully and reviewed regularly.
-- Sensitive data may require additional controls and approved storage locations.
-- Moving data locations can affect collaborators and workflows.
+- Personal and confidential data may require additional controls and approved storage locations.
+- Updating data locations can affect collaborators and workflows.
 - Repositories such as Zenodo can make research outputs more discoverable and citable.
 - Version control is important for managing changes and is covered in dedicated Carpentries Git workshops.
 

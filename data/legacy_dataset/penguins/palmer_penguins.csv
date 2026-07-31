@@ -1,0 +1,26 @@
+,specsies,island,bill_len,depth_of_bill,fliplength,g,sex,YEAR
+90,A,Dream,35.7,18.0 mm,202.0,3550.0,female,2008
+137,A,Dream,40.2,20.1 mm,200.0,3975.0,male,2009
+9,A,T,42.0,20.2 mm,190.0,4250.0,,2007
+110,Adelei,B,38.1,16.5 mm,198.0,3825.0,female,2009
+25,Adelie,B,35.3,18.9 mm,187.0,3800.0,f,2007
+63,Adelie,Biscoe,41.1,18.2 mm,192.0,4050.0,m,2008
+114,Adelie,Biscoe,39.6,20.7 mm,191.0,3900.0,f,2009
+104,Adelie,Biscoe,37.9,18.6 mm,193.0,2925.0,female,2009
+42,Adelie,Dream,36.0,18.5 mm,186.0,3100.0,female,2007
+75,Adelie,T,42.8,18.5 mm,195.0,4250.0,male,2008
+333,C,D,49.3,19.9 mm,203.0,4050.0,m,9
+310,Chinstrap,D,49.7,18.6 mm,195.0,3600.0,m,2008
+300,Chinstrap,Dream,46.7,17.9 mm,195.0,3300.0,f,2007
+319,Chinstrap,Dream,45.5,17.0 mm,196.0,3500.0,female,2008
+318,Chinstrap,Dream,50.9,19.1 mm,196.0,3550.0,male,2008
+329,Chinstrap,Dream,50.7,19.7 mm,203.0,4050.0,m,2009
+153,Gentoo,B,50.0,16.3 mm,230.0,5700.0,male,2007
+220,Gentoo,B,43.5,14.2 mm,220.0,4700.0,f,2008
+260,Gentoo,B,43.3,14.0 mm,208.0,4575.0,female,2009
+267,Gentoo,B,55.1,16.0 mm,230.0,5850.0,male,2009
+157,Gentoo,Biscoe,46.5,13.5 mm,210.0,4550.0,f,2007
+208,Gentoo,Biscoe,43.8,13.9 mm,208.0,4300.0,f,2008
+194,Gentoo,Biscoe,45.3,13.7 mm,210.0,4300.0,female,2008
+225,Gentoo,Biscoe,46.5,14.8 mm,217.0,5200.0,female,2008
+224,Gentoo,Biscoe,48.2,15.6 mm,221.0,5100.0,male,2008

@@ -59,13 +59,14 @@ Imagine receiving an email that says:
 Which file would you use?
 
 ```text
-data_final.xlsx
-data_final_v2.xlsx
-data_final_v3_LAST_ONE.xlsx
+data_final_final.xlsx
+data_final_final_last_one.xlsx
+data_final_final_last_one_test.xlsx
+data_final_v21.xlsx
+data_final_v2a.xlsx
+data_final_v4_revised_jerrys_comments.xlsx
 ```
 The answer is not obvious. 
-
-One can imagine that the latest results are in `data_final_v3_LAST_ONE.xlsx`, but maybe there was an error in this file and it was never deleted, meaning that `data_final_v2.xlsx` contains the latest data. How would you know?
 
 You do not want to resort to sorting the files by date and hoping that the last *created or modified* file was the last *good* file! 
 
@@ -120,7 +121,7 @@ Common issues with file names include
 
 ## Why Filenames Matter
 
-::::::::::::::::::::::::::::::: callout
+
 
 A filename serves several purposes simultaneously.
 
@@ -139,12 +140,72 @@ Good filenames support
 - Automated processing
 - Reproducibility
 
-
-:::::::::::::::::::::::::::::::
-
 A filename should be easily useable by both a human reader and a computer. Keep in mind that humans and computers are good at different things and that different software and operating systems (Windows, macOS, Linux) have different conventions. Your filenames should be as portable as possible.  
 
 Future-you is one of the most important users of your naming convention, but it should also be easily understandable by colleagues.
+
+
+## Renaming a Single File
+
+Now that we understand good naming principles, we need practical ways to apply them.
+
+::: challenge
+
+## Rename an example file
+
+In our inherited dataset, find
+
+```text
+Data!@#$.csv
+```
+
+A more descriptive name might be
+
+```text
+2026-04-03_incidence_data_v01.csv
+```
+
+We can rename it via:
+
+:::::::::::::::::::::::::: tab
+
+### Windows
+To rename a file in File Explorer:
+
+1. Select the file.
+2. Right-click.
+3. Choose **Rename**.
+4. Enter the new filename.
+5. Press Enter.
+
+or
+
+1. Select the file.
+2. Press **F2**.
+3. Type the new name.
+4. Press Enter.
+
+### macOS
+To rename a file in Finder:
+
+1. Select the file.
+2. Left-click on the filename
+3. Enter the new filename.
+4. Press Enter.
+
+:::::::::::::::::::::::::: 
+:::
+
+
+::: instructor
+
+Demonstrate both Windows methods.
+
+The keyboard shortcut is often significantly faster once learners become confident.
+
+:::
+
+
 
 ## Characteristics of Good Filenames
 
@@ -436,6 +497,122 @@ Consider the different types of files you create for one of your projects. Which
 
 :::
 
+
+### Bulk Renaming Files
+
+Renaming one file is easy, but renaming hundreds is not.
+
+Imagine receiving
+
+```text
+IMG_001.png
+IMG_002.png
+IMG_003.png
+...
+IMG_125.png
+```
+
+from a collaborator.
+
+Renaming each file individually would be extremely time consuming (and boring!).Fortunately, many operating systems provide ways to rename multiple files simultaneously.
+
+For example:
+
+```text
+IMG_001.png
+IMG_002.png
+IMG_003.png
+```
+
+might become:
+
+```text
+siteA_image_01.jpg
+siteA_image_02.jpg
+siteA_image_03.jpg
+```
+
+Tools for bulk renaming:
+
+::: tab
+
+### Windows
+
+- Microsoft PowerToys PowerRename
+- Bulk Rename Utility
+- Advanced Renamer
+
+### macOS
+
+- Built-in Finder rename tools
+
+### Ubuntu Linux
+
+- Built-in File Manager tools
+- Thunar
+
+:::
+
+All of these tools support replacing text as well as adding prefixes, suffixes, and numbering across multiple files simultaneously.
+
+
+:::::::::::::::::::: challenge
+
+## Bulk renaming
+
+Using a bulk rename tool, replace
+
+```text
+IMG
+```
+
+with
+
+```text
+siteA_image_
+```
+::: solution
+
+::: tab
+### Before
+
+```text
+IMG_001.png
+IMG_002.png
+IMG_003.png
+IMG_004.png
+IMG_005.png
+```
+### After:
+```text
+siteA_image_001.png
+siteA_image_002.png
+siteA_image_003.png
+siteA_image_004.png
+siteA_image_005.png
+```
+:::
+:::
+::::::::::::::::::::
+
+::::::: challenge
+
+What could go wrong if a bulk rename operation is performed incorrectly?
+
+How could you reduce risk?
+
+
+::::::: solution
+
+- Test on copies first.
+- Rename a small sample initially.
+- Keep backups.
+- Check the preview before applying changes.
+:::
+::::::: 
+
+
+
 ---
 
 ## Using Hierarchies Effectively
@@ -566,196 +743,6 @@ Various software tools can help with versioning without using multiple files. Fo
 - OneDrive
 
 ::::::::::::::::::::::::::::
-
-
-## Renaming files
-
-### Renaming a Single File
-
-Now that we understand good naming principles, we need practical ways to apply them.
-
-::: challenge
-
-## Rename an example file
-
-In our inherited dataset, find
-
-```text
-Data!@#$.csv
-```
-
-A more descriptive name might be
-
-```text
-2026-04-03_incidence_data_v01.csv
-```
-
-We can rename it via:
-
-:::::::::::::::::::::::::: tab
-
-### Windows
-To rename a file in File Explorer:
-
-1. Select the file.
-2. Right-click.
-3. Choose **Rename**.
-4. Enter the new filename.
-5. Press Enter.
-
-or
-
-1. Select the file.
-2. Press **F2**.
-3. Type the new name.
-4. Press Enter.
-
-### macOS
-To rename a file in Finder:
-
-1. Select the file.
-2. Left-click on the filename
-3. Enter the new filename.
-4. Press Enter.
-
-:::::::::::::::::::::::::: 
-:::
-
-
-::: instructor
-
-Demonstrate both Windows methods.
-
-The keyboard shortcut is often significantly faster once learners become confident.
-
-:::
-
-
-
-### Bulk Renaming Files
-
-Renaming one file is easy, but renaming hundreds is not.
-
-Imagine receiving
-
-```text
-IMG0001.JPG
-IMG0002.JPG
-IMG0003.JPG
-...
-IMG1250.JPG
-```
-
-from a collaborator.
-
-Renaming each file individually would be extremely time consuming (and boring!).Fortunately, many operating systems provide ways to rename multiple files simultaneously.
-
-For example:
-
-```text
-IMG0001.JPG
-IMG0002.JPG
-IMG0003.JPG
-```
-
-might become:
-
-```text
-siteA_image_01.jpg
-siteA_image_02.jpg
-siteA_image_03.jpg
-```
-
-Several graphical tools support this, for example:
-
-::: tab
-
-### Windows
-
-- Microsoft PowerToys PowerRename
-- Bulk Rename Utility
-- Advanced Renamer
-
-### macOS
-
-- Built-in Finder rename tools
-
-### Ubuntu Linux
-
-- Built-in File Manager tools
-- Thunar
-
-:::
-
-The exact interface differs between tools, but the concepts are similar:
-
-- Find text
-- Replace text
-- Add prefixes
-- Add suffixes
-- Insert numbering
-
-
-:::::::::::::::::::: challenge
-
-## Bulk renaming
-
-Using a bulk rename tool, replace
-
-```text
-IMG
-```
-
-with
-
-```text
-siteA_image_
-```
-::: solution
-
-::: tab
-### Before
-
-```text
-IMG_0001.png
-IMG_0002.png
-IMG_0003.png
-IMG_0004.png
-IMG_0005.png
-```
-### After:
-```text
-siteA_image_0001.png
-siteA_image_0002.png
-siteA_image_0003.png
-siteA_image_0004.png
-siteA_image_0005.png
-```
-:::
-:::
-::::::::::::::::::::
-
-::::::: challenge
-
-## Mitigating bulk renaming risks
-
-What could go wrong if a bulk rename operation is performed incorrectly?
-
-How could you reduce risk?
-
-
-::::::: solution
-
-- Test on copies first.
-- Rename a small sample initially.
-- Keep backups.
-- Check the preview before applying changes.
-:::
-::::::: 
-
-
-
-## Exercise: Improve the File Names
 
 ::: challenge
 

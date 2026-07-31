@@ -1,11 +1,39 @@
-File contains data about penguins for data exploration tasks. It is a common
-example dataset, available to the community. Contains data of 344 penguins of
+# Legacy dataset generation
+
+## Description
+
+Scripts for generating subset of data in the `legacy_dataset` provided for workshop exercises.
+
+## Generated files
+
+###  palmer_penguins.csv
+
+File contains data about penguins for data exploration tasks. It is derived from a common
+example dataset, [Palmer's Penguins](https://allisonhorst.github.io/palmerpenguins/), which contains data of 344 penguins of
 various species on several polar islands. 
 
-Links to data set stored in /data/legacy_dataset/penguins/palmer_penguins.csv
+Modified version stored in /data/legacy_dataset/penguins/palmer_penguins.csv
 
-Modified subset of data from palmerpenguins package in Python -- 28 July
-https://allisonhorst.github.io/palmerpenguins/
+Modified version is created from a subset of data from palmerpenguins package in Python
+Latest version generated 28 July 2026
+
+Acronyms in modified version:
+A/Ade - Adelei
+C, Chin' - Chinstrap
+G, Gen - Gentoo
+T/Tor - Torgersen
+D/Dre - Dream
+B - Biscoe
+m - male
+f - female
+
+9 sometimes short for 2009
+
+#### Notes on original data
+
+License for Palmer's Penguins:
+    https://allisonhorst.github.io/palmerpenguins/LICENSE.html
+    CC0
 
 Horst AM, Hill AP, Gorman KB (2020). palmerpenguins: Palmer Archipelago (Antarctica) penguin data. 
 R package version 0.1.0. https://allisonhorst.github.io/palmerpenguins/. doi: 10.5281/zenodo.3960218.
@@ -18,29 +46,27 @@ Kristen Gorman and author. https://orcid.org/0000-0002-0258-9264
 Institute:
 Palmer Station, Antarctica LTER.
 
-Acronyms:
-A/Ade - Adelei
-C, Chin' - Chinstrap
-G, Gen - Gentoo
-T/Tor - Torgersen
-D/Dre - Dream
-B - Biscoe
-m - male
-f - female
+### IMG*.png files
 
-9 sometimes short for 2009
+These PNG files are word clouds derived from the workshop episodes.
 
-License:
-    https://allisonhorst.github.io/palmerpenguins/LICENSE.html
-    CC0
+### big_file.txt
 
-Images:
+Example large file.
 
-william-warby-4FXlDuwgHWk-unsplash.jpg  
-william-warby-4FXlDuwgHWk-unsplash.png
+### 10-Nov-26_penguin_withtheirnames_and_weatherreport.txt
 
-photo by William Warby on Unsplash https://unsplash.com/photos/a-penguin-standing-on-a-rock-in-the-water-4FXlDuwgHWk 30 Jul 2026
-William Warby wwarby
+Example long filename.
+
+### *results.csv
+
+Example files with inconsistent data formats.
+
+## Other files
+
+### Images 
+
+`penguin958.jpg` and `penguin958.png` are a photo by William Warby (wwarby) on Unsplash https://unsplash.com/photos/a-penguin-standing-on-a-rock-in-the-water-4FXlDuwgHWk 30 Jul 2026
 Published 02/01/2024
 OLYMPUS CORPORATION, E-M1MarkII
 Free to use under the Unsplash License https://unsplash.com/license

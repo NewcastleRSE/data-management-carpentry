@@ -36,30 +36,70 @@ By the end of this episode, learners will be able to:
 
 In the previous episode we located the dataset that was handed over by our departed collaborator. Unfortunately, finding the data is only the first challenge.
 
-The project structure itself is difficult to understand:
+The project structure itself is difficult to understand - the files include
 
 ```text
 legacy_dataset/
-├── New Folder/
-│   ├── Untitled 1.csv
-│   └── New Folder (2)/
-│       └── backup_copy.txt
-│
-├── RAW_DATA_!!!
-│   ├── Data!@#$.csv
-│   ├── 03_04_26_results.csv
-│   └── raw_images_TEMP/
 │
 ├── miscellaneous/
 │   ├── cat_pic.jpg
 │   ├── important_note.txt
 │   └── Untitled.csv
 │
-└── project_data_2025/
-    ├── data_final_v3_LAST_ONE.xlsx
-    ├── script.py
-    └── analysis_12-05-24.txt
+├── New Folder
+│   ├── big_file.txt
+│   ├── Image One.png
+│   ├── image_1.png
+│   ├── image_10.png
+│   ├── image_2.png
+│   ├── image_8.png
+│   ├── image_80.png
+│   ├── image_81.png
+│   ├── image_9.png
+│   ├── image_93.png
+│   ├── IMG_000.png
+│   ├── IMG_001.png
+│   ├── IMG_002.png
+│   ├── ...
+│   ├── IMG_018.png
+│   ├── IMG_019.png 
+│   ├── June second image.png
+│   ├── test.png
+│   ├── Untitled 1.csv
+│   └── New Folder (2)/
+│       └── backup_copy.txt
+│
+├── penguins
+│   ├── palmer_penguins.csv
+│   ├── penguin958.jpg  
+│   └── penguin958.png
+│
+├── project_data_2025/
+│   ├── data_final_v3_LAST_ONE.xlsx
+│   ├── analysis_12-05-24.txt
+│   ├── data_final_v4_revised_jerrys_comments.xlsx
+│   ├── data_final_v2.xlsx
+│   ├── script.py
+│   ├── Alice_Jones_passport.pdf
+│   ├── john_smith_passport.pdf
+│   ├── script.py
+│   └── analysis_12-05-24.txt
+│   └── .processed/
+│        └── REAL_ACTUAL_DATA_DO_NOT_DELETE.csv
+│
+├── processing_data
+│   ├── 04-11-2025_penguin_data.csv
+│   ├── 10-Nov-26_penguin_withtheirnames_and_weatherreport.txt
+│   └── ...
+│
+└── RAW_DATA_!!!
+    ├── Data!@#$.csv
+    ├── 03_04_26_results.csv
+    ├── raw_images_TEMP/
+    └── ...
 ```
+
+and more!
 
 Imagine joining this project six months from now.
 

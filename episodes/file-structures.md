@@ -60,21 +60,7 @@ legacy_dataset/
 │   ├── IMG_000.png
 │   ├── IMG_001.png
 │   ├── IMG_002.png
-│   ├── IMG_003.png 
-│   ├── IMG_004.png
-│   ├── IMG_005.png
-│   ├── IMG_006.png
-│   ├── IMG_007.png 
-│   ├── IMG_008.png
-│   ├── IMG_009.png 
-│   ├── IMG_010.png
-│   ├── IMG_011.png
-│   ├── IMG_012.png
-│   ├── IMG_013.png 
-│   ├── IMG_014.png
-│   ├── IMG_015.png
-│   ├── IMG_016.png
-│   ├── IMG_017.png 
+│   ├── ...
 │   ├── IMG_018.png
 │   ├── IMG_019.png 
 │   ├── June second image.png
@@ -100,6 +86,11 @@ legacy_dataset/
 │   └── analysis_12-05-24.txt
 │   └── .processed/
 │        └── REAL_ACTUAL_DATA_DO_NOT_DELETE.csv
+│
+├── processing_data
+│   ├── 04-11-2025_penguin_data.csv
+│   ├── 10-Nov-26_penguin_withtheirnames_and_weatherreport.txt
+│   └── ...
 │
 └── RAW_DATA_!!!
     ├── Data!@#$.csv

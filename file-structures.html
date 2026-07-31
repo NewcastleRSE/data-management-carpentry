@@ -353,7 +353,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Choosing the Right File Structures</h1>
-        <p>Last updated on 2026-07-28 |
+        <p>Last updated on 2026-07-31 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/file-structures.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -405,27 +405,67 @@ reproducibility.</li>
 <hr class="half-width"><p>In the previous episode we located the dataset that was handed over
 by our departed collaborator. Unfortunately, finding the data is only
 the first challenge.</p>
-<p>The project structure itself is difficult to understand:</p>
+<p>The project structure itself is difficult to understand - the files
+include</p>
 <pre class="text"><code>legacy_dataset/
-├── New Folder/
-│   ├── Untitled 1.csv
-│   └── New Folder (2)/
-│       └── backup_copy.txt
-│
-├── RAW_DATA_!!!
-│   ├── Data!@#$.csv
-│   ├── 03_04_26_results.csv
-│   └── raw_images_TEMP/
 │
 ├── miscellaneous/
 │   ├── cat_pic.jpg
 │   ├── important_note.txt
 │   └── Untitled.csv
 │
-└── project_data_2025/
-    ├── data_final_v3_LAST_ONE.xlsx
-    ├── script.py
-    └── analysis_12-05-24.txt</code></pre>
+├── New Folder
+│   ├── big_file.txt
+│   ├── Image One.png
+│   ├── image_1.png
+│   ├── image_10.png
+│   ├── image_2.png
+│   ├── image_8.png
+│   ├── image_80.png
+│   ├── image_81.png
+│   ├── image_9.png
+│   ├── image_93.png
+│   ├── IMG_000.png
+│   ├── IMG_001.png
+│   ├── IMG_002.png
+│   ├── ...
+│   ├── IMG_018.png
+│   ├── IMG_019.png
+│   ├── June second image.png
+│   ├── test.png
+│   ├── Untitled 1.csv
+│   └── New Folder (2)/
+│       └── backup_copy.txt
+│
+├── penguins
+│   ├── palmer_penguins.csv
+│   ├── penguin958.jpg
+│   └── penguin958.png
+│
+├── project_data_2025/
+│   ├── data_final_v3_LAST_ONE.xlsx
+│   ├── analysis_12-05-24.txt
+│   ├── data_final_v4_revised_jerrys_comments.xlsx
+│   ├── data_final_v2.xlsx
+│   ├── script.py
+│   ├── Alice_Jones_passport.pdf
+│   ├── john_smith_passport.pdf
+│   ├── script.py
+│   └── analysis_12-05-24.txt
+│   └── .processed/
+│        └── REAL_ACTUAL_DATA_DO_NOT_DELETE.csv
+│
+├── processing_data
+│   ├── 04-11-2025_penguin_data.csv
+│   ├── 10-Nov-26_penguin_withtheirnames_and_weatherreport.txt
+│   └── ...
+│
+└── RAW_DATA_!!!
+    ├── Data!@#$.csv
+    ├── 03_04_26_results.csv
+    ├── raw_images_TEMP/
+    └── ...</code></pre>
+<p>and more!</p>
 <p>Imagine joining this project six months from now.</p>
 <p>Could you quickly answer:</p>
 <ul><li>Where is the raw data?</li>
@@ -542,7 +582,7 @@ you move a folder, will your file references still work?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Common observations often include:</p>
 <ul><li>Default names such as <code>New Folder</code>
@@ -1055,7 +1095,7 @@ neighbours.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>There is no one correct answer. It will vary depending on your
 project or personal preferences. One possible structure might be:</p>
@@ -1130,7 +1170,7 @@ purpose.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>There is no single correct solution.</p>
 <p>A reasonable result might:</p>
@@ -1235,8 +1275,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/file-structures.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/file-structures.html",
   "dateCreated": "2026-07-01",
-  "dateModified": "2026-07-28",
-  "datePublished": "2026-07-28"
+  "dateModified": "2026-07-31",
+  "datePublished": "2026-07-31"
 }
 
   </script><script>

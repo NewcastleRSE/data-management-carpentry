@@ -931,7 +931,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-file-structures"><p>Content from <a href="file-structures.html">Choosing the Right File Structures</a></p>
 <hr>
-<p>Last updated on 2026-07-28 |
+<p>Last updated on 2026-07-31 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/file-structures.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -983,27 +983,67 @@ reproducibility.</li>
 <p>In the previous episode we located the dataset that was handed over
 by our departed collaborator. Unfortunately, finding the data is only
 the first challenge.</p>
-<p>The project structure itself is difficult to understand:</p>
+<p>The project structure itself is difficult to understand - the files
+include</p>
 <pre class="text"><code>legacy_dataset/
-├── New Folder/
-│   ├── Untitled 1.csv
-│   └── New Folder (2)/
-│       └── backup_copy.txt
-│
-├── RAW_DATA_!!!
-│   ├── Data!@#$.csv
-│   ├── 03_04_26_results.csv
-│   └── raw_images_TEMP/
 │
 ├── miscellaneous/
 │   ├── cat_pic.jpg
 │   ├── important_note.txt
 │   └── Untitled.csv
 │
-└── project_data_2025/
-    ├── data_final_v3_LAST_ONE.xlsx
-    ├── script.py
-    └── analysis_12-05-24.txt</code></pre>
+├── New Folder
+│   ├── big_file.txt
+│   ├── Image One.png
+│   ├── image_1.png
+│   ├── image_10.png
+│   ├── image_2.png
+│   ├── image_8.png
+│   ├── image_80.png
+│   ├── image_81.png
+│   ├── image_9.png
+│   ├── image_93.png
+│   ├── IMG_000.png
+│   ├── IMG_001.png
+│   ├── IMG_002.png
+│   ├── ...
+│   ├── IMG_018.png
+│   ├── IMG_019.png
+│   ├── June second image.png
+│   ├── test.png
+│   ├── Untitled 1.csv
+│   └── New Folder (2)/
+│       └── backup_copy.txt
+│
+├── penguins
+│   ├── palmer_penguins.csv
+│   ├── penguin958.jpg
+│   └── penguin958.png
+│
+├── project_data_2025/
+│   ├── data_final_v3_LAST_ONE.xlsx
+│   ├── analysis_12-05-24.txt
+│   ├── data_final_v4_revised_jerrys_comments.xlsx
+│   ├── data_final_v2.xlsx
+│   ├── script.py
+│   ├── Alice_Jones_passport.pdf
+│   ├── john_smith_passport.pdf
+│   ├── script.py
+│   └── analysis_12-05-24.txt
+│   └── .processed/
+│        └── REAL_ACTUAL_DATA_DO_NOT_DELETE.csv
+│
+├── processing_data
+│   ├── 04-11-2025_penguin_data.csv
+│   ├── 10-Nov-26_penguin_withtheirnames_and_weatherreport.txt
+│   └── ...
+│
+└── RAW_DATA_!!!
+    ├── Data!@#$.csv
+    ├── 03_04_26_results.csv
+    ├── raw_images_TEMP/
+    └── ...</code></pre>
+<p>and more!</p>
 <p>Imagine joining this project six months from now.</p>
 <p>Could you quickly answer:</p>
 <ul>
@@ -1134,7 +1174,7 @@ you move a folder, will your file references still work?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Common observations often include:</p>
 <ul>
@@ -1704,7 +1744,7 @@ neighbours.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>There is no one correct answer. It will vary depending on your
 project or personal preferences. One possible structure might be:</p>
@@ -1789,7 +1829,7 @@ purpose.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>There is no single correct solution.</p>
 <p>A reasonable result might:</p>
@@ -1842,7 +1882,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-file-names"><p>Content from <a href="file-names.html">Naming Files Well</a></p>
 <hr>
-<p>Last updated on 2026-07-28 |
+<p>Last updated on 2026-07-31 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/file-names.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1915,15 +1955,13 @@ particularly when looking back on the work done months later.</p>
 <p>“Can you update the analysis using the latest data?”</p>
 </blockquote>
 <p>Which file would you use?</p>
-<pre class="text"><code><span><span class="va">data_final.xlsx</span></span>
-<span><span class="va">data_final_v2.xlsx</span></span>
-<span><span class="va">data_final_v3_LAST_ONE.xlsx</span></span></code></pre>
+<pre class="text"><code><span><span class="va">data_final_final.xlsx</span></span>
+<span><span class="va">data_final_final_last_one.xlsx</span></span>
+<span><span class="va">data_final_final_last_one_test.xlsx</span></span>
+<span><span class="va">data_final_v21.xlsx</span></span>
+<span><span class="va">data_final_v2a.xlsx</span></span>
+<span><span class="va">data_final_v4_revised_jerrys_comments.xlsx</span></span></code></pre>
 <p>The answer is not obvious.</p>
-<p>One can imagine that the latest results are in
-<code>data_final_v3_LAST_ONE.xlsx</code>, but maybe there was an error
-in this file and it was never deleted, meaning that
-<code>data_final_v2.xlsx</code> contains the latest data. How would you
-know?</p>
 <p>You do not want to resort to sorting the files by date and hoping
 that the last <em>created or modified</em> file was the last
 <em>good</em> file!</p>
@@ -1994,13 +2032,6 @@ consistently uses <code>-</code> to separate the date elements and
 </section><section><h2 class="section-heading" id="why-filenames-matter">Why Filenames Matter<a class="anchor" aria-label="anchor" href="#why-filenames-matter"></a>
 </h2>
 <hr class="half-width">
-<div id="callout3" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div class="callout-inner">
-<div class="callout-content">
 <p>A filename serves several purposes simultaneously.</p>
 <p>It helps answer</p>
 <ul>
@@ -2017,9 +2048,6 @@ consistently uses <code>-</code> to separate the date elements and
 <li>Automated processing</li>
 <li>Reproducibility</li>
 </ul>
-</div>
-</div>
-</div>
 <p>A filename should be easily useable by both a human reader and a
 computer. Keep in mind that humans and computers are good at different
 things and that different software and operating systems (Windows,
@@ -2028,10 +2056,74 @@ portable as possible.</p>
 <p>Future-you is one of the most important users of your naming
 convention, but it should also be easily understandable by
 colleagues.</p>
+</section><section><h2 class="section-heading" id="renaming-a-single-file">Renaming a Single File<a class="anchor" aria-label="anchor" href="#renaming-a-single-file"></a>
+</h2>
+<hr class="half-width">
+<p>Now that we understand good naming principles, we need practical ways
+to apply them.</p>
+<div id="rename-an-example-file" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="rename-an-example-file" class="callout-inner">
+<h3 class="callout-title">Rename an example file</h3>
+<div class="callout-content">
+<p>In our inherited dataset, find</p>
+<pre class="text"><code>Data!@#$.csv</code></pre>
+<p>A more descriptive name might be</p>
+<pre class="text"><code>2026-04-03_incidence_data_v01.csv</code></pre>
+<p>We can rename it via:</p>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-1" type="button" role="tab" aria-controls="nav-tabpanel-1-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-1-1">
+  Windows
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-1-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-2" type="button" role="tab" aria-controls="nav-tabpanel-1-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-1-2">
+  macOS
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
+<p>To rename a file in File Explorer:</p>
+<ol style="list-style-type: decimal">
+<li>Select the file.</li>
+<li>Right-click.</li>
+<li>Choose <strong>Rename</strong>.</li>
+<li>Enter the new filename.</li>
+<li>Press Enter.</li>
+</ol>
+<p>or</p>
+<ol style="list-style-type: decimal">
+<li>Select the file.</li>
+<li>Press <strong>F2</strong>.</li>
+<li>Type the new name.</li>
+<li>Press Enter.</li>
+</ol>
+</div>
+<div id="nav-tabpanel-1-2" class="tab-pane" aria-labelledby="nav-tab-1-2" role="tabpanel">
+<p>To rename a file in Finder:</p>
+<ol style="list-style-type: decimal">
+<li>Select the file.</li>
+<li>Left-click on the filename</li>
+<li>Enter the new filename.</li>
+<li>Press Enter.</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 </section><section><h2 class="section-heading" id="characteristics-of-good-filenames">Characteristics of Good Filenames<a class="anchor" aria-label="anchor" href="#characteristics-of-good-filenames"></a>
 </h2>
 <hr class="half-width">
-<div id="callout4" class="callout">
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -2059,23 +2151,23 @@ usually share several characteristics.</p>
 </h3>
 <p>A filename should describe the contents of the file, for example:</p>
 <div class="tabs">
-<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-1-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-1" type="button" role="tab" aria-controls="nav-tabpanel-1-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-1-1">
+<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-2-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-1" type="button" role="tab" aria-controls="nav-tabpanel-2-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-2-1">
   Poor
   </h3>
 </button>
-<button class="nav-link" id="nav-tab-1-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-2" type="button" role="tab" aria-controls="nav-tabpanel-1-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-1-2">
+<button class="nav-link" id="nav-tab-2-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-2" type="button" role="tab" aria-controls="nav-tabpanel-2-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-2-2">
   Good
   </h3>
 </button>
 </div>
-</nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
+</nav><div id="nav-tabContent-2" class="tab-content">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
 <pre class="text"><code><span><span class="va">data.csv</span></span></code></pre>
 </div>
-<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
+<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
 <pre class="text"><code>2026-04-03_water_quality_siteA.csv</code></pre>
 </div>
 </div>
@@ -2093,25 +2185,25 @@ sort the data without opening the document and reading its content. The
 </h3>
 <p>Choose a convention and use it across all files.</p>
 <div class="tabs">
-<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-2-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-1" type="button" role="tab" aria-controls="nav-tabpanel-2-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-2-1">
+<nav><div id="nav-tab-3" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-3-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-1" type="button" role="tab" aria-controls="nav-tabpanel-3-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-3-1">
   Poor
   </h3>
 </button>
-<button class="nav-link" id="nav-tab-2-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-2" type="button" role="tab" aria-controls="nav-tabpanel-2-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-2-2">
+<button class="nav-link" id="nav-tab-3-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-2" type="button" role="tab" aria-controls="nav-tabpanel-3-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-3-2">
   Good
   </h3>
 </button>
 </div>
-</nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
+</nav><div id="nav-tabContent-3" class="tab-content">
+<div id="nav-tabpanel-3-1" class="tab-pane show active" aria-labelledby="nav-tab-3-1" role="tabpanel">
 <pre class="text"><code><span><span class="va">Apr1.csv</span></span>
 <span><span class="va">sample_2.csv</span></span>
 <span><span class="va">Results03April.csv</span></span></code></pre>
 </div>
-<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
+<div id="nav-tabpanel-3-2" class="tab-pane" aria-labelledby="nav-tab-3-2" role="tabpanel">
 <pre class="text"><code>2026-04-01_sample01.csv
 2026-04-02_sample02.csv
 2026-04-02_sample03.csv</code></pre>
@@ -2130,24 +2222,24 @@ file.</p>
 </h3>
 <p>Computers prefer predictable patterns.</p>
 <div class="tabs">
-<nav><div id="nav-tab-3" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-3-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-1" type="button" role="tab" aria-controls="nav-tabpanel-3-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-3-1">
+<nav><div id="nav-tab-4" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-4-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-1" type="button" role="tab" aria-controls="nav-tabpanel-4-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-4-1">
   Poor
   </h3>
 </button>
-<button class="nav-link" id="nav-tab-3-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-3-2" type="button" role="tab" aria-controls="nav-tabpanel-3-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-3-2">
+<button class="nav-link" id="nav-tab-4-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-2" type="button" role="tab" aria-controls="nav-tabpanel-4-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-4-2">
   Good
   </h3>
 </button>
 </div>
-</nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-1">
+</nav><div id="nav-tabContent-4" class="tab-content">
+<div id="nav-tabpanel-4-1" class="tab-pane show active" aria-labelledby="nav-tab-4-1" role="tabpanel">
 <pre class="text"><code>my data.csv
 results &amp; notes.csv</code></pre>
 </div>
-<div id="nav-tabpanel-3-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-2">
+<div id="nav-tabpanel-4-2" class="tab-pane" aria-labelledby="nav-tab-4-2" role="tabpanel">
 <pre class="text"><code><span><span class="va">my_data.csv</span></span>
 <span><span class="va">results_and_notes.csv</span></span></code></pre>
 </div>
@@ -2188,25 +2280,25 @@ Linux or macOS to Windows file systems.</p>
 <p>Since files are usually displayed alphanumerically, choose file names
 that logically order your files.</p>
 <div class="tabs">
-<nav><div id="nav-tab-4" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-4-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-1" type="button" role="tab" aria-controls="nav-tabpanel-4-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-4-1">
+<nav><div id="nav-tab-5" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-5-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-1" type="button" role="tab" aria-controls="nav-tabpanel-5-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-5-1">
   Poor
   </h3>
 </button>
-<button class="nav-link" id="nav-tab-4-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-4-2" type="button" role="tab" aria-controls="nav-tabpanel-4-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-4-2">
+<button class="nav-link" id="nav-tab-5-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-2" type="button" role="tab" aria-controls="nav-tabpanel-5-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-5-2">
   Good
   </h3>
 </button>
 </div>
-</nav><div id="nav-tabContent-4" class="tab-content">
-<div id="nav-tabpanel-4-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-1">
+</nav><div id="nav-tabContent-5" class="tab-content">
+<div id="nav-tabpanel-5-1" class="tab-pane show active" aria-labelledby="nav-tab-5-1" role="tabpanel">
 <pre class="text"><code>03-04-2026_recording.csv
 12-01-2025_recording.csv
 25-12-2025_recording.csv</code></pre>
 </div>
-<div id="nav-tabpanel-4-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-2">
+<div id="nav-tabpanel-5-2" class="tab-pane" aria-labelledby="nav-tab-5-2" role="tabpanel">
 <pre class="text"><code>2025-01-12_recording.csv
 2025-12-25_recording.csv
 2026-04-03_recording.csv</code></pre>
@@ -2247,23 +2339,23 @@ files?</p>
 </h3>
 <p>Filenames should be easily understood by humans and computers.</p>
 <div class="tabs">
-<nav><div id="nav-tab-5" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-5-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-1" type="button" role="tab" aria-controls="nav-tabpanel-5-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-5-1">
+<nav><div id="nav-tab-6" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-6-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-6-1" type="button" role="tab" aria-controls="nav-tabpanel-6-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-6-1">
   Poor
   </h3>
 </button>
-<button class="nav-link" id="nav-tab-5-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-5-2" type="button" role="tab" aria-controls="nav-tabpanel-5-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-5-2">
+<button class="nav-link" id="nav-tab-6-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-6-2" type="button" role="tab" aria-controls="nav-tabpanel-6-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-6-2">
   Good
   </h3>
 </button>
 </div>
-</nav><div id="nav-tabContent-5" class="tab-content">
-<div id="nav-tabpanel-5-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-5-1">
+</nav><div id="nav-tabContent-6" class="tab-content">
+<div id="nav-tabpanel-6-1" class="tab-pane show active" aria-labelledby="nav-tab-6-1" role="tabpanel">
 <pre class="text"><code>03042026siteAID1234.csv</code></pre>
 </div>
-<div id="nav-tabpanel-5-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-5-2">
+<div id="nav-tabpanel-6-2" class="tab-pane" aria-labelledby="nav-tab-6-2" role="tabpanel">
 <pre class="text"><code>03-04-2026_site-A_ID-1234.csv</code></pre>
 </div>
 </div>
@@ -2317,37 +2409,6 @@ be lost if the filename is inadvertently changed.</p>
 <p>Consistent filenames allows files to be easily be processed
 together.</p>
 <div class="tabs">
-<nav><div id="nav-tab-6" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-6-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-6-1" type="button" role="tab" aria-controls="nav-tabpanel-6-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-6-1">
-  Poor
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-6-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-6-2" type="button" role="tab" aria-controls="nav-tabpanel-6-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-6-2">
-  Good
-  </h3>
-</button>
-</div>
-</nav><div id="nav-tabContent-6" class="tab-content">
-<div id="nav-tabpanel-6-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-6-1">
-<pre class="text"><code>Image One.png
-June second image.png
-IMG_final.png</code></pre>
-</div>
-<div id="nav-tabpanel-6-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-6-2">
-<pre class="text"><code><span><span class="va">June_01_image_01.png</span></span>
-<span><span class="va">June_01_image_02.png</span></span>
-<span><span class="va">June_03_image_03.png</span></span></code></pre>
-</div>
-</div>
-</div>
-<p>The files in the good example can be processed together by software
-and scripts, while files in the poor example are much harder to work
-with systematically.</p>
-<p>When files may belong to a sequence, also use consistent numbering
-with leading zeros:</p>
-<div class="tabs">
 <nav><div id="nav-tab-7" class="nav nav-tabs" role="tablist">
 <button class="nav-link active" id="nav-tab-7-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-7-1" type="button" role="tab" aria-controls="nav-tabpanel-7-1" aria-selected="true">
   <h3 class="tab-header" id="nav-tab-heading-7-1">
@@ -2361,19 +2422,23 @@ with leading zeros:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-7" class="tab-content">
-<div id="nav-tabpanel-7-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-7-1">
-<pre class="text"><code><span><span class="va">image_1.png</span></span>
-<span><span class="va">image_2.png</span></span>
-<span><span class="va">image_10.png</span></span></code></pre>
+<div id="nav-tabpanel-7-1" class="tab-pane show active" aria-labelledby="nav-tab-7-1" role="tabpanel">
+<pre class="text"><code>Image One.png
+June second image.png
+IMG_final.png</code></pre>
 </div>
-<div id="nav-tabpanel-7-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-7-2">
-<pre class="text"><code><span><span class="va">image_01.png</span></span>
-<span><span class="va">image_02.png</span></span>
-<span><span class="va">image_03.png</span></span></code></pre>
+<div id="nav-tabpanel-7-2" class="tab-pane" aria-labelledby="nav-tab-7-2" role="tabpanel">
+<pre class="text"><code><span><span class="va">June_01_image_01.png</span></span>
+<span><span class="va">June_01_image_02.png</span></span>
+<span><span class="va">June_03_image_03.png</span></span></code></pre>
 </div>
 </div>
 </div>
-<p>Leading zeros preserves the numeric order:</p>
+<p>The files in the good example can be processed together by software
+and scripts, while files in the poor example are much harder to work
+with systematically.</p>
+<p>When files may belong to a sequence, also use consistent numbering
+with leading zeros:</p>
 <div class="tabs">
 <nav><div id="nav-tab-8" class="nav nav-tabs" role="tablist">
 <button class="nav-link active" id="nav-tab-8-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-8-1" type="button" role="tab" aria-controls="nav-tabpanel-8-1" aria-selected="true">
@@ -2388,14 +2453,41 @@ with leading zeros:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-8" class="tab-content">
-<div id="nav-tabpanel-8-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-8-1">
+<div id="nav-tabpanel-8-1" class="tab-pane show active" aria-labelledby="nav-tab-8-1" role="tabpanel">
+<pre class="text"><code><span><span class="va">image_1.png</span></span>
+<span><span class="va">image_2.png</span></span>
+<span><span class="va">image_10.png</span></span></code></pre>
+</div>
+<div id="nav-tabpanel-8-2" class="tab-pane" aria-labelledby="nav-tab-8-2" role="tabpanel">
+<pre class="text"><code><span><span class="va">image_01.png</span></span>
+<span><span class="va">image_02.png</span></span>
+<span><span class="va">image_03.png</span></span></code></pre>
+</div>
+</div>
+</div>
+<p>Leading zeros preserves the numeric order:</p>
+<div class="tabs">
+<nav><div id="nav-tab-9" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-9-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-9-1" type="button" role="tab" aria-controls="nav-tabpanel-9-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-9-1">
+  Poor
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-9-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-9-2" type="button" role="tab" aria-controls="nav-tabpanel-9-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-9-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-9" class="tab-content">
+<div id="nav-tabpanel-9-1" class="tab-pane show active" aria-labelledby="nav-tab-9-1" role="tabpanel">
 <pre class="text"><code><span><span class="va">image_8.png</span></span>
 <span><span class="va">image_80.png</span></span>
 <span><span class="va">image_81.png</span></span>
 <span><span class="va">image_9.png</span></span>
 <span><span class="va">image_93.png</span></span></code></pre>
 </div>
-<div id="nav-tabpanel-8-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-8-2">
+<div id="nav-tabpanel-9-2" class="tab-pane" aria-labelledby="nav-tab-9-2" role="tabpanel">
 <pre class="text"><code><span><span class="va">image_08.png</span></span>
 <span><span class="va">image_09.png</span></span>
 <span><span class="va">image_80.png</span></span>
@@ -2404,7 +2496,7 @@ with leading zeros:</p>
 </div>
 </div>
 </div>
-<div id="callout5" class="callout">
+<div id="callout4" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
@@ -2433,280 +2525,61 @@ in the filenames for each one?</p>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="using-hierarchies-effectively">Using Hierarchies Effectively<a class="anchor" aria-label="anchor" href="#using-hierarchies-effectively"></a>
-</h2>
-<hr class="half-width">
-<p>Remember that your folder hierarchy already provides information.</p>
-<p>Suppose we have:</p>
-<pre class="text"><code>project/
-└── case_studies/
-    ├── scotland/
-    ├── england/
-    └── wales/</code></pre>
-<p>Inside each folder:</p>
-<pre class="text"><code>2026-06-01_image_01.png</code></pre>
-<p>is sufficient.</p>
-<p>Avoid naming files:</p>
-<pre class="text"><code>scotland_2026-06-01_image_01.png</code></pre>
-<p>For example:</p>
-<div class="tabs">
-<nav><div id="nav-tab-9" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-9-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-9-1" type="button" role="tab" aria-controls="nav-tabpanel-9-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-9-1">
-  Bad
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-9-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-9-2" type="button" role="tab" aria-controls="nav-tabpanel-9-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-9-2">
-  Good
-  </h3>
-</button>
-</div>
-</nav><div id="nav-tabContent-9" class="tab-content">
-<div id="nav-tabpanel-9-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-9-1">
-<pre class="text"><code>project/
-└── case_studies/
-    ├── scotland/
-       └── scotland_2026-06-01_image_01.png
-       └── scotland_2026-06-01_image_02.png
-    ├── england/
-       └── england_2026-07-02_image_01.png
-    └── wales/
-       └── wales_2026-05-02_image_13.png  </code></pre>
-</div>
-<div id="nav-tabpanel-9-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-9-2">
-<pre class="text"><code>project/
-└── case_studies/
-    ├── scotland/
-       └── 2026-06-01_image_01.png
-       └── 2026-06-01_image_02.png
-    ├── england/
-       └── 2026-07-01_image_01.png
-    └── wales/
-       └── 2026-05-02_image_13.png  </code></pre>
-</div>
-</div>
-</div>
-<p>The location information is already present in the folder structure
-and so is redundant in the file name.</p>
-<p>This example illustrates how each project has different filename
-requirements. If the ‘country’ layer of the directory structure wasn’t
-present, it would be useful to put the country in the filename. However,
-if you move files, the folder names would need to change; for
-example</p>
-<pre class="text"><code>scotland/2026-06-01_image_01.png
-england/2026-07-01_image_01.png </code></pre>
-<p>would need to be renamed if placed in the same folder to avoid data
-loss.</p>
-<div id="callout6" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div class="callout-inner">
-<div class="callout-content">
-<p>Good folder structures and good filenames should work together.</p>
-</div>
-</div>
-</div>
-<hr></section><section><h2 class="section-heading" id="versioning-files">Versioning Files<a class="anchor" aria-label="anchor" href="#versioning-files"></a>
-</h2>
-<hr class="half-width">
-<p>New versions of files can arise from repeated experiments, fresh
-downloads of data, and documentation or report edits. For some types of
-changes, you’ll want to keep non-destructive revisions to documents or
-an audit trail of changes. Versioning files keeps track of these changes
-over time, allowing you to manage different versions of files without
-overwriting previous ones.</p>
-<p>Due to a lack of a versioning strategy, many researchers create
-filenames that making tracking revisions difficult:</p>
-<div class="tabs">
-<nav><div id="nav-tab-10" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-10-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-10-1" type="button" role="tab" aria-controls="nav-tabpanel-10-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-10-1">
-  Bad
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-10-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-10-2" type="button" role="tab" aria-controls="nav-tabpanel-10-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-10-2">
-  Good
-  </h3>
-</button>
-</div>
-</nav><div id="nav-tabContent-10" class="tab-content">
-<div id="nav-tabpanel-10-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-10-1">
-<pre class="text"><code><span><span class="va">final.docx</span></span>
-<span><span class="va">final_final.docx</span></span>
-<span><span class="va">final_final_v2.docx</span></span>
-<span><span class="va">FINAL_ACTUALLY_FINAL.docx</span></span></code></pre>
-</div>
-<div id="nav-tabpanel-10-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-10-2">
-<pre class="text"><code><span><span class="va">report_v01.docx</span></span>
-<span><span class="va">report_v02.docx</span></span>
-<span><span class="va">report_v03.docx</span></span></code></pre>
-<p>or</p>
-<pre class="text"><code><span><span class="va">report_v1.0.0.docx</span></span>
-<span><span class="va">report_v1.1.0.docx</span></span>
-<span><span class="va">report_v2.0.0.docx</span></span></code></pre>
-</div>
-</div>
-</div>
-<p>The bad example is difficult to follow, while the good example uses
-explicit versions.</p>
-<p>Avoid:</p>
-<ul>
-<li>latest</li>
-<li>final</li>
-<li>newest</li>
-<li>final_final</li>
-<li>use_this_version</li>
-</ul>
-<p>because these labels eventually become inaccurate. As soon as you
-edit <code>report_final_final.docx</code> it is no longer final (or even
-final final!), and you probably won’t go back to rename the earlier
-versions.</p>
-<div id="callout7" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Callout</span>
-<div class="callout-inner">
-<div class="callout-content">
-<p>Various software tools can help with versioning without using
-multiple files. For example:</p>
-<ul>
-<li>
-<a href="https://git-scm.com/" class="external-link">git</a> for code, documents, and
-small files (commonly used via <a href="https://github.com/" class="external-link">GitHub</a>)</li>
-<li>Microsoft Office (version history tools)</li>
-<li>OneDrive</li>
-</ul>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="renaming-files">Renaming files<a class="anchor" aria-label="anchor" href="#renaming-files"></a>
-</h2>
-<hr class="half-width">
-<div class="section level3">
-<h3 id="renaming-a-single-file">Renaming a Single File<a class="anchor" aria-label="anchor" href="#renaming-a-single-file"></a>
-</h3>
-<p>Now that we understand good naming principles, we need practical ways
-to apply them.</p>
-<div id="rename-an-example-file" class="callout discussion">
-<div class="callout-square">
-<i class="callout-icon" data-feather="message-circle"></i>
-</div>
-<span class="callout-header">Discussion</span>
-<div id="rename-an-example-file" class="callout-inner">
-<h3 class="callout-title">Rename an example file</h3>
-<div class="callout-content">
-<p>In our inherited dataset, find</p>
-<pre class="text"><code>Data!@#$.csv</code></pre>
-<p>A more descriptive name might be</p>
-<pre class="text"><code>2026-04-03_incidence_data_v01.csv</code></pre>
-<p>We can rename it via:</p>
-<div class="tabs">
-<nav><div id="nav-tab-11" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-11-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-11-1" type="button" role="tab" aria-controls="nav-tabpanel-11-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-11-1">
-  Windows
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-11-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-11-2" type="button" role="tab" aria-controls="nav-tabpanel-11-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-11-2">
-  macOS
-  </h3>
-</button>
-</div>
-</nav><div id="nav-tabContent-11" class="tab-content">
-<div id="nav-tabpanel-11-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-11-1">
-<p>To rename a file in File Explorer:</p>
-<ol style="list-style-type: decimal">
-<li>Select the file.</li>
-<li>Right-click.</li>
-<li>Choose <strong>Rename</strong>.</li>
-<li>Enter the new filename.</li>
-<li>Press Enter.</li>
-</ol>
-<p>or</p>
-<ol style="list-style-type: decimal">
-<li>Select the file.</li>
-<li>Press <strong>F2</strong>.</li>
-<li>Type the new name.</li>
-<li>Press Enter.</li>
-</ol>
-</div>
-<div id="nav-tabpanel-11-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-11-2">
-<p>To rename a file in Finder:</p>
-<ol style="list-style-type: decimal">
-<li>Select the file.</li>
-<li>Left-click on the filename</li>
-<li>Enter the new filename.</li>
-<li>Press Enter.</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-
-</div>
 <div class="section level3">
 <h3 id="bulk-renaming-files">Bulk Renaming Files<a class="anchor" aria-label="anchor" href="#bulk-renaming-files"></a>
 </h3>
 <p>Renaming one file is easy, but renaming hundreds is not.</p>
 <p>Imagine receiving</p>
-<pre class="text"><code><span><span class="va">IMG0001.JPG</span></span>
-<span><span class="va">IMG0002.JPG</span></span>
-<span><span class="va">IMG0003.JPG</span></span>
+<pre class="text"><code><span><span class="va">IMG_001.png</span></span>
+<span><span class="va">IMG_002.png</span></span>
+<span><span class="va">IMG_003.png</span></span>
 <span><span class="va">...</span></span>
-<span><span class="va">IMG1250.JPG</span></span></code></pre>
+<span><span class="va">IMG_125.png</span></span></code></pre>
 <p>from a collaborator.</p>
 <p>Renaming each file individually would be extremely time consuming
 (and boring!).Fortunately, many operating systems provide ways to rename
 multiple files simultaneously.</p>
 <p>For example:</p>
-<pre class="text"><code><span><span class="va">IMG0001.JPG</span></span>
-<span><span class="va">IMG0002.JPG</span></span>
-<span><span class="va">IMG0003.JPG</span></span></code></pre>
+<pre class="text"><code><span><span class="va">IMG_001.png</span></span>
+<span><span class="va">IMG_002.png</span></span>
+<span><span class="va">IMG_003.png</span></span></code></pre>
 <p>might become:</p>
 <pre class="text"><code><span><span class="va">siteA_image_01.jpg</span></span>
 <span><span class="va">siteA_image_02.jpg</span></span>
 <span><span class="va">siteA_image_03.jpg</span></span></code></pre>
-<p>Several graphical tools support this, for example:</p>
+<p>Tools for bulk renaming:</p>
 <div class="tabs">
-<nav><div id="nav-tab-12" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-12-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-12-1" type="button" role="tab" aria-controls="nav-tabpanel-12-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-12-1">
+<nav><div id="nav-tab-10" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-10-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-10-1" type="button" role="tab" aria-controls="nav-tabpanel-10-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-10-1">
   Windows
   </h3>
 </button>
-<button class="nav-link" id="nav-tab-12-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-12-2" type="button" role="tab" aria-controls="nav-tabpanel-12-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-12-2">
+<button class="nav-link" id="nav-tab-10-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-10-2" type="button" role="tab" aria-controls="nav-tabpanel-10-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-10-2">
   macOS
   </h3>
 </button>
-<button class="nav-link" id="nav-tab-12-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-12-3" type="button" role="tab" aria-controls="nav-tabpanel-12-3" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-12-3">
+<button class="nav-link" id="nav-tab-10-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-10-3" type="button" role="tab" aria-controls="nav-tabpanel-10-3" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-10-3">
   Ubuntu Linux
   </h3>
 </button>
 </div>
-</nav><div id="nav-tabContent-12" class="tab-content">
-<div id="nav-tabpanel-12-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-12-1">
+</nav><div id="nav-tabContent-10" class="tab-content">
+<div id="nav-tabpanel-10-1" class="tab-pane show active" aria-labelledby="nav-tab-10-1" role="tabpanel">
 <ul>
 <li>Microsoft PowerToys PowerRename</li>
 <li>Bulk Rename Utility</li>
 <li>Advanced Renamer</li>
 </ul>
 </div>
-<div id="nav-tabpanel-12-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-12-2">
+<div id="nav-tabpanel-10-2" class="tab-pane" aria-labelledby="nav-tab-10-2" role="tabpanel">
 <ul>
 <li>Built-in Finder rename tools</li>
 </ul>
 </div>
-<div id="nav-tabpanel-12-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-12-3">
+<div id="nav-tabpanel-10-3" class="tab-pane" aria-labelledby="nav-tab-10-3" role="tabpanel">
 <ul>
 <li>Built-in File Manager tools</li>
 <li>Thunar</li>
@@ -2714,15 +2587,8 @@ multiple files simultaneously.</p>
 </div>
 </div>
 </div>
-<p>The exact interface differs between tools, but the concepts are
-similar:</p>
-<ul>
-<li>Find text</li>
-<li>Replace text</li>
-<li>Add prefixes</li>
-<li>Add suffixes</li>
-<li>Insert numbering</li>
-</ul>
+<p>All of these tools support replacing text as well as adding prefixes,
+suffixes, and numbering across multiple files simultaneously.</p>
 <div id="bulk-renaming" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -2746,46 +2612,46 @@ similar:</p>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="tabs">
-<nav><div id="nav-tab-13" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-13-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-13-1" type="button" role="tab" aria-controls="nav-tabpanel-13-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-13-1">
+<nav><div id="nav-tab-11" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-11-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-11-1" type="button" role="tab" aria-controls="nav-tabpanel-11-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-11-1">
   Before
   </h3>
 </button>
-<button class="nav-link" id="nav-tab-13-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-13-2" type="button" role="tab" aria-controls="nav-tabpanel-13-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-13-2">
+<button class="nav-link" id="nav-tab-11-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-11-2" type="button" role="tab" aria-controls="nav-tabpanel-11-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-11-2">
   After:
   </h3>
 </button>
 </div>
-</nav><div id="nav-tabContent-13" class="tab-content">
-<div id="nav-tabpanel-13-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-13-1">
-<pre class="text"><code><span><span class="va">IMG_0001.png</span></span>
-<span><span class="va">IMG_0002.png</span></span>
-<span><span class="va">IMG_0003.png</span></span>
-<span><span class="va">IMG_0004.png</span></span>
-<span><span class="va">IMG_0005.png</span></span></code></pre>
+</nav><div id="nav-tabContent-11" class="tab-content">
+<div id="nav-tabpanel-11-1" class="tab-pane show active" aria-labelledby="nav-tab-11-1" role="tabpanel">
+<pre class="text"><code><span><span class="va">IMG_001.png</span></span>
+<span><span class="va">IMG_002.png</span></span>
+<span><span class="va">IMG_003.png</span></span>
+<span><span class="va">IMG_004.png</span></span>
+<span><span class="va">IMG_005.png</span></span></code></pre>
 </div>
-<div id="nav-tabpanel-13-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-13-2">
-<pre class="text"><code><span><span class="va">siteA_image_0001.png</span></span>
-<span><span class="va">siteA_image_0002.png</span></span>
-<span><span class="va">siteA_image_0003.png</span></span>
-<span><span class="va">siteA_image_0004.png</span></span>
-<span><span class="va">siteA_image_0005.png</span></span></code></pre>
-</div>
-</div>
+<div id="nav-tabpanel-11-2" class="tab-pane" aria-labelledby="nav-tab-11-2" role="tabpanel">
+<pre class="text"><code><span><span class="va">siteA_image_001.png</span></span>
+<span><span class="va">siteA_image_002.png</span></span>
+<span><span class="va">siteA_image_003.png</span></span>
+<span><span class="va">siteA_image_004.png</span></span>
+<span><span class="va">siteA_image_005.png</span></span></code></pre>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="mitigating-bulk-renaming-risks" class="callout challenge">
+</div>
+</div>
+<div id="challenge2" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div id="mitigating-bulk-renaming-risks" class="callout-inner">
-<h3 class="callout-title">Mitigating bulk renaming risks</h3>
+<div class="callout-inner">
+<h3 class="callout-title">Challenge</h3>
 <div class="callout-content">
 <p>What could go wrong if a bulk rename operation is performed
 incorrectly?</p>
@@ -2810,10 +2676,159 @@ incorrectly?</p>
 </div>
 </div>
 </div>
+<hr>
 </div>
-</section><section><h2 class="section-heading" id="exercise-improve-the-file-names">Exercise: Improve the File Names<a class="anchor" aria-label="anchor" href="#exercise-improve-the-file-names"></a>
+</section><section><h2 class="section-heading" id="using-hierarchies-effectively">Using Hierarchies Effectively<a class="anchor" aria-label="anchor" href="#using-hierarchies-effectively"></a>
 </h2>
 <hr class="half-width">
+<p>Remember that your folder hierarchy already provides information.</p>
+<p>Suppose we have:</p>
+<pre class="text"><code>project/
+└── case_studies/
+    ├── scotland/
+    ├── england/
+    └── wales/</code></pre>
+<p>Inside each folder:</p>
+<pre class="text"><code>2026-06-01_image_01.png</code></pre>
+<p>is sufficient.</p>
+<p>Avoid naming files:</p>
+<pre class="text"><code>scotland_2026-06-01_image_01.png</code></pre>
+<p>For example:</p>
+<div class="tabs">
+<nav><div id="nav-tab-12" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-12-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-12-1" type="button" role="tab" aria-controls="nav-tabpanel-12-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-12-1">
+  Bad
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-12-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-12-2" type="button" role="tab" aria-controls="nav-tabpanel-12-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-12-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-12" class="tab-content">
+<div id="nav-tabpanel-12-1" class="tab-pane show active" aria-labelledby="nav-tab-12-1" role="tabpanel">
+<pre class="text"><code>project/
+└── case_studies/
+    ├── scotland/
+       └── scotland_2026-06-01_image_01.png
+       └── scotland_2026-06-01_image_02.png
+    ├── england/
+       └── england_2026-07-02_image_01.png
+    └── wales/
+       └── wales_2026-05-02_image_13.png  </code></pre>
+</div>
+<div id="nav-tabpanel-12-2" class="tab-pane" aria-labelledby="nav-tab-12-2" role="tabpanel">
+<pre class="text"><code>project/
+└── case_studies/
+    ├── scotland/
+       └── 2026-06-01_image_01.png
+       └── 2026-06-01_image_02.png
+    ├── england/
+       └── 2026-07-01_image_01.png
+    └── wales/
+       └── 2026-05-02_image_13.png  </code></pre>
+</div>
+</div>
+</div>
+<p>The location information is already present in the folder structure
+and so is redundant in the file name.</p>
+<p>This example illustrates how each project has different filename
+requirements. If the ‘country’ layer of the directory structure wasn’t
+present, it would be useful to put the country in the filename. However,
+if you move files, the folder names would need to change; for
+example</p>
+<pre class="text"><code>scotland/2026-06-01_image_01.png
+england/2026-07-01_image_01.png </code></pre>
+<p>would need to be renamed if placed in the same folder to avoid data
+loss.</p>
+<div id="callout5" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Good folder structures and good filenames should work together.</p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="versioning-files">Versioning Files<a class="anchor" aria-label="anchor" href="#versioning-files"></a>
+</h2>
+<hr class="half-width">
+<p>New versions of files can arise from repeated experiments, fresh
+downloads of data, and documentation or report edits. For some types of
+changes, you’ll want to keep non-destructive revisions to documents or
+an audit trail of changes. Versioning files keeps track of these changes
+over time, allowing you to manage different versions of files without
+overwriting previous ones.</p>
+<p>Due to a lack of a versioning strategy, many researchers create
+filenames that making tracking revisions difficult:</p>
+<div class="tabs">
+<nav><div id="nav-tab-13" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-13-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-13-1" type="button" role="tab" aria-controls="nav-tabpanel-13-1" aria-selected="true">
+  <h3 class="tab-header" id="nav-tab-heading-13-1">
+  Bad
+  </h3>
+</button>
+<button class="nav-link" id="nav-tab-13-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-13-2" type="button" role="tab" aria-controls="nav-tabpanel-13-2" aria-selected="false">
+  <h3 class="tab-header" id="nav-tab-heading-13-2">
+  Good
+  </h3>
+</button>
+</div>
+</nav><div id="nav-tabContent-13" class="tab-content">
+<div id="nav-tabpanel-13-1" class="tab-pane show active" aria-labelledby="nav-tab-13-1" role="tabpanel">
+<pre class="text"><code><span><span class="va">final.docx</span></span>
+<span><span class="va">final_final.docx</span></span>
+<span><span class="va">final_final_v2.docx</span></span>
+<span><span class="va">FINAL_ACTUALLY_FINAL.docx</span></span></code></pre>
+</div>
+<div id="nav-tabpanel-13-2" class="tab-pane" aria-labelledby="nav-tab-13-2" role="tabpanel">
+<pre class="text"><code><span><span class="va">report_v01.docx</span></span>
+<span><span class="va">report_v02.docx</span></span>
+<span><span class="va">report_v03.docx</span></span></code></pre>
+<p>or</p>
+<pre class="text"><code><span><span class="va">report_v1.0.0.docx</span></span>
+<span><span class="va">report_v1.1.0.docx</span></span>
+<span><span class="va">report_v2.0.0.docx</span></span></code></pre>
+</div>
+</div>
+</div>
+<p>The bad example is difficult to follow, while the good example uses
+explicit versions.</p>
+<p>Avoid:</p>
+<ul>
+<li>latest</li>
+<li>final</li>
+<li>newest</li>
+<li>final_final</li>
+<li>use_this_version</li>
+</ul>
+<p>because these labels eventually become inaccurate. As soon as you
+edit <code>report_final_final.docx</code> it is no longer final (or even
+final final!), and you probably won’t go back to rename the earlier
+versions.</p>
+<div id="callout6" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>Various software tools can help with versioning without using
+multiple files. For example:</p>
+<ul>
+<li>
+<a href="https://git-scm.com/" class="external-link">git</a> for code, documents, and
+small files (commonly used via <a href="https://github.com/" class="external-link">GitHub</a>)</li>
+<li>Microsoft Office (version history tools)</li>
+<li>OneDrive</li>
+</ul>
+</div>
+</div>
+</div>
 <div id="rename-the-inherited-files" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -2861,10 +2876,10 @@ principles discussed in this lesson.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-14" class="tab-content">
-<div id="nav-tabpanel-14-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-14-1">
+<div id="nav-tabpanel-14-1" class="tab-pane show active" aria-labelledby="nav-tab-14-1" role="tabpanel">
 <pre class="text"><code>Data!@#$.csv</code></pre>
 </div>
-<div id="nav-tabpanel-14-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-14-2">
+<div id="nav-tabpanel-14-2" class="tab-pane" aria-labelledby="nav-tab-14-2" role="tabpanel">
 <pre class="text"><code><span><span class="va">incidence_data_v01.csv</span></span></code></pre>
 </div>
 </div>
@@ -2884,10 +2899,10 @@ principles discussed in this lesson.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-15" class="tab-content">
-<div id="nav-tabpanel-15-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-15-1">
+<div id="nav-tabpanel-15-1" class="tab-pane show active" aria-labelledby="nav-tab-15-1" role="tabpanel">
 <pre class="text"><code><span><span class="va">data_final_v3_LAST_ONE.xlsx</span></span></code></pre>
 </div>
-<div id="nav-tabpanel-15-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-15-2">
+<div id="nav-tabpanel-15-2" class="tab-pane" aria-labelledby="nav-tab-15-2" role="tabpanel">
 <pre class="text"><code><span><span class="va">project_results_v03.xlsx</span></span></code></pre>
 </div>
 </div>
@@ -3730,7 +3745,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-storing-data"><p>Content from <a href="storing-data.html">Choosing Where to Store Your Data</a></p>
 <hr>
-<p>Last updated on 2026-07-23 |
+<p>Last updated on 2026-07-31 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/storing-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -3794,25 +3809,18 @@ required.</li>
 <p>Where should this data actually live?</p>
 </blockquote>
 <p>Many researchers begin a project by storing files wherever is most
-convenient:</p>
-<ul>
-<li>On their laptop</li>
-<li>In Downloads</li>
-<li>On a USB drive</li>
-<li>In personal cloud storage</li>
-</ul>
-<p>This often works initially.</p>
-<p>However, research projects usually involve:</p>
+convenient, such as their work laptop, a USB drive, or personal cloud
+storage. This approach often works initially, but many research projects
+involve</p>
 <ul>
 <li>Collaborators</li>
 <li>Large datasets</li>
 <li>Sensitive information</li>
 <li>Long-term storage requirements</li>
 </ul>
-<p>A storage decision that works for a single person may become a
-problem when a project grows or team members change.</p>
-<p>Choosing an appropriate storage location is therefore an important
-part of good data management.</p>
+<p>A storage decision that works for a single person may not scale as
+the project and team grows. Choosing an appropriate storage location is
+therefore an important part of good data management.</p>
 <hr>
 <div id="where-do-you-store-your-data" class="callout challenge">
 <div class="callout-square">
@@ -3822,7 +3830,7 @@ part of good data management.</p>
 <div id="where-do-you-store-your-data" class="callout-inner">
 <h3 class="callout-title">Where Do You Store Your Data?</h3>
 <div class="callout-content">
-<p>Spend a few minutes discussing the following questions with a
+<p>Spend a few minutes discussing your current storage set-up with a
 partner:</p>
 <ul>
 <li>Where do you currently store your research data?</li>
@@ -3830,9 +3838,10 @@ partner:</p>
 <li>How do collaborators access it?</li>
 <li>Are the data backed up?</li>
 <li>What would happen if your laptop stopped working tomorrow?</li>
-<li>What happens if you leave your current project suddenly?</li>
+<li>What would happen if you suddenly left your current project?</li>
 </ul>
-<p>Share some of your ideas with the group.</p>
+<p>Share some of your current solutions and any concerns with the
+group.</p>
 </div>
 </div>
 </div>
@@ -3841,9 +3850,9 @@ partner:</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
-<p>Common answers for where to store data often include:</p>
+<p>Researchers often store data on</p>
 <ul>
 <li>Laptop hard drives</li>
 <li>USB drives</li>
@@ -3854,7 +3863,6 @@ partner:</p>
 <li>HPC storage</li>
 <li>External hard drives</li>
 </ul>
-<p>Other answers can vary depending on the project.</p>
 </div>
 </div>
 </div>
@@ -3863,56 +3871,55 @@ partner:</p>
 <hr></section><section><h2 class="section-heading" id="what-makes-a-good-storage-location">What Makes a Good Storage Location?<a class="anchor" aria-label="anchor" href="#what-makes-a-good-storage-location"></a>
 </h2>
 <hr class="half-width">
-<p>When deciding where to store data, it is useful to consider four
-broad questions:</p>
+<p>When deciding where to store data, consider</p>
 <ul>
-<li>Access.</li>
-<li>Backups.</li>
-<li>Security.</li>
-<li>Sustainability.</li>
+<li>Accessibility: the ability of different users to retrieve and use
+data</li>
+<li>Recoverability: the ability to restore damaged or lost data</li>
+<li>Security: the ability to protect data from unauthorised access or
+misuse</li>
+<li>Sustainability: the ability to store and access data for long time
+periods</li>
 </ul>
 <div class="section level3">
-<h3 id="can-people-access-it">Can People Access It?<a class="anchor" aria-label="anchor" href="#can-people-access-it"></a>
+<h3 id="can-other-people-access-the-data">Can Other People Access the Data?<a class="anchor" aria-label="anchor" href="#can-other-people-access-the-data"></a>
 </h3>
-<p>If collaborators need access, they must be able to find and open the
-data.</p>
-<p>Questions to consider:</p>
+<p>Collaborators must be able to find and open the data.</p>
+<p>To evaluate data accessibility, consider</p>
 <ul>
-<li>Can project members access it?</li>
+<li>Can all project members access the data?</li>
 <li>Can external collaborators access it?</li>
-<li>Can access be controlled?</li>
-<li>Can new project members be added easily?</li>
-<li>When you leave the project might the data disappear?</li>
+<li>Can access be limited to specific people?</li>
+<li>Can access be easily added for new project members and removed for
+past members?</li>
+<li>When you leave the project, will other people have difficulty
+accessing the data?</li>
 </ul>
 <hr>
 </div>
-</section><section><h2 class="section-heading" id="is-it-backed-up">Is It Backed Up?<a class="anchor" aria-label="anchor" href="#is-it-backed-up"></a>
-</h2>
-<hr class="half-width">
-<p>Storage and backup are not the same thing.</p>
-<p>Many researchers assume:</p>
-<blockquote>
-<p>“My files exist on a computer, therefore they are safe.”</p>
-</blockquote>
-<p>Unfortunately this is not always true.</p>
+<div class="section level3">
+<h3 id="is-the-data-recoverable">Is the Data Recoverable?<a class="anchor" aria-label="anchor" href="#is-the-data-recoverable"></a>
+</h3>
+<p>Data storage and data backup require different solutions. Many
+researchers assume that files on a computer are safe. However -</p>
 <ul>
-<li>Computers fail.</li>
-<li>Laptops get stolen.</li>
-<li>Hard drives stop working.</li>
-<li>USB drives get lost.</li>
-<li>Data might be deleted accidentally.</li>
+<li>Computers fail</li>
+<li>Laptops are stolen</li>
+<li>Hard drives stop working</li>
+<li>USB drives are lost</li>
+<li>Data can be accidentally deleted or incorrectly modified</li>
 </ul>
-<p>Good storage solutions should have reliable backup arrangements.</p>
-<div id="challenge2" class="callout challenge">
+<p>Good storage solutions should have reliable backup solutions so that
+lost data is <strong>recoverable</strong>.</p>
+<div id="making-data-recoverable" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="making-data-recoverable" class="callout-inner">
+<h3 class="callout-title">Making data recoverable</h3>
 <div class="callout-content">
-<p>Discuss what are the good characteristics of a backup system in your
-groups.</p>
+<p>Discuss features of a good backup system in your groups.</p>
 </div>
 </div>
 </div>
@@ -3921,37 +3928,40 @@ groups.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>A good backup system might include:</p>
+<p>Possible features of a good backup system:</p>
 <ul>
-<li>Regular backups - overnight, when connected to the internet
-etc.</li>
-<li>Offsite - cloud backups? In a different building.</li>
-<li>Accessible - you can easily go and get the backups and find your
-files</li>
-<li>Redundancy - Multiple copies, in case you delete data and take a
-while to notice</li>
+<li>Has regular, automated backups: automation ensures backup versions
+stay up-to-date; for e.g., backups may be scheduled every night or
+triggered when you connect to the internet.</li>
+<li>Off-site storage: stores data off-site (e.g., on the cloud or in a
+different building) to protect against theft or physical damage due to,
+e.g., fires or floods.</li>
+<li>Accessibility: allows you to easily restore lost data from the
+backups and find your files.</li>
+<li>Redundancy: maintains multiple copies of your data to protect
+against accidental deletion.</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="is-it-secure">Is It Secure?<a class="anchor" aria-label="anchor" href="#is-it-secure"></a>
-</h2>
-<hr class="half-width">
-<p>Not all data can be shared openly.</p>
-<p>Examples include:</p>
+<hr>
+</div>
+<div class="section level3">
+<h3 id="is-the-data-secure">Is the Data Secure?<a class="anchor" aria-label="anchor" href="#is-the-data-secure"></a>
+</h3>
+<p>Not all data can be shared openly; data that needs to be kept secure
+includes</p>
 <ul>
-<li>Participant data</li>
-<li>Medical records</li>
-<li>Personal information (particularly <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/" class="external-link">Special
-Catagory Data</a>)</li>
-<li>Commercially sensitive information</li>
+<li>Personal information (particularly special category data)</li>
+<li>Commercially sensitive information, such as trade secrets</li>
 <li>Confidential research</li>
 </ul>
 <p>Storage locations must be appropriate for the sensitivity of the
-data.</p>
+data. We’ll discuss these considerations further in the <a href="https://newcastlerse.github.io/data-management-carpentry/storing-data.html#personal-and-confidential-data" class="external-link">Personal
+and Confidential Data</a> section.</p>
 <div id="caution1" class="callout caution">
 <div class="callout-square">
 <i class="callout-icon" data-feather="alert-triangle"></i>
@@ -3959,80 +3969,64 @@ data.</p>
 <span class="callout-header">Caution</span>
 <div class="callout-inner">
 <div class="callout-content">
-<p>You have a legal requirement to keep certain types of data safe with
-consequences for yourself and the University.</p>
-<p>There are required actions that need to be taken if there is a data
-breach, such as reporting to the University. Make sure you know the
+<p>You have a legal requirement to keep certain types of data safe;
+failure to do so can have consequences for yourself and your
+institution.</p>
+<p>In the event of a data breach you are required to take certain
+actions, such as reporting to your institution. Make sure you know the
 requirements for your data.</p>
-<p>Special catagory data is especially sensitive personal data whech
-needs extra care when collecting and handling. See <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/" class="external-link">Special
-Catagory Data</a> for more information.</p>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="is-it-sustainable">Is It Sustainable?<a class="anchor" aria-label="anchor" href="#is-it-sustainable"></a>
-</h2>
-<hr class="half-width">
-<p>Consider the lifetime of the project.</p>
-<p>Ask:</p>
+<hr>
+</div>
+<div class="section level3">
+<h3 id="is-the-data-storage-sustainable">Is the Data Storage Sustainable?<a class="anchor" aria-label="anchor" href="#is-the-data-storage-sustainable"></a>
+</h3>
+<p>To ensure your data storage is sustainable over the lifetime of the
+project, consider</p>
 <ul>
 <li>Will the storage still exist in five years?</li>
-<li>What happens if a team member leaves?</li>
-<li>Can file ownership be transferred? This is particularly important
-for cloud services.</li>
+<li>What happens to the data if a team member leaves?</li>
+<li>Can file ownership be transferred? This ability is particularly
+important for cloud services.</li>
 <li>Is there enough storage capacity for data growth?</li>
 <li>Is the file format accessible? If the company which makes your
-software shuts down will you still be able to access your data?</li>
+software shuts down, will you still be able to access your data?</li>
+<li>Are any ongoing costs for data storage affordable?</li>
 </ul>
-<hr></section><section><h2 class="section-heading" id="local-storage">Local Storage<a class="anchor" aria-label="anchor" href="#local-storage"></a>
+<hr>
+</div>
+</section><section><h2 class="section-heading" id="types-of-storage">Types of Storage<a class="anchor" aria-label="anchor" href="#types-of-storage"></a>
 </h2>
 <hr class="half-width">
-<p>Local storage refers to files stored directly on a device such
-as:</p>
+<p>There are many different types of data storage:</p>
+<ul>
+<li>Local storage</li>
+<li>Personal cloud storage</li>
+<li>Shared network or cloud storage</li>
+<li>Institution storage (e.g., the Research Data Warehouse)</li>
+</ul>
+<p>We’ll discuss the advantages and disadvantages of each one below.</p>
+<hr>
+<div class="section level3">
+<h3 id="local-storage">Local Storage<a class="anchor" aria-label="anchor" href="#local-storage"></a>
+</h3>
+<p>Local storage refers to files stored directly on a device such as
+a</p>
 <ul>
 <li>Laptop</li>
 <li>Desktop computer</li>
 <li>External hard drive</li>
 <li>USB drive</li>
 </ul>
-<p>For example:</p>
-<div class="tabs">
-<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-1-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-1" type="button" role="tab" aria-controls="nav-tabpanel-1-1" aria-selected="true">
-  <h3 class="tab-header" id="nav-tab-heading-1-1">
-  Windows
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-1-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-2" type="button" role="tab" aria-controls="nav-tabpanel-1-2" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-1-2">
-  macOS
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-1-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-3" type="button" role="tab" aria-controls="nav-tabpanel-1-3" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-1-3">
-  Linux
-  </h3>
-</button>
-</div>
-</nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
-<pre class="text"><code>C:\Users\Bob\Documents\Research\</code></pre>
-</div>
-<div id="nav-tabpanel-1-2" class="tab-pane" aria-labelledby="nav-tab-1-2" role="tabpanel">
-<pre class="text"><code>/Users/Bob/Documents/Research/</code></pre>
-</div>
-<div id="nav-tabpanel-1-3" class="tab-pane" aria-labelledby="nav-tab-1-3" role="tabpanel">
-<pre class="text"><code>/home/Bob/Documents/Research/</code></pre>
-</div>
-</div>
-</div>
-<div id="challenge3" class="callout challenge">
+<div id="local-storage-pros-and-cons" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="local-storage-pros-and-cons" class="callout-inner">
+<h3 class="callout-title">Local storage pros and cons</h3>
 <div class="callout-content">
 <p>Discuss the advantages and disadvantages of local storage with a
 partner or group.</p>
@@ -4044,35 +4038,29 @@ partner or group.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
-<p>Examples include</p>
-<div class="section level2">
-<h2 id="advantages">Advantages<a class="anchor" aria-label="anchor" href="#advantages"></a>
-</h2>
+<p><strong>Advantages</strong></p>
 <ul>
 <li>Fast access</li>
 <li>Convenient</li>
 <li>Works without internet access</li>
 <li>Good for active work</li>
 </ul>
-</div>
-<div class="section level2">
-<h2 id="disadvantages">Disadvantages<a class="anchor" aria-label="anchor" href="#disadvantages"></a>
-</h2>
+<p><strong>Disadvantages</strong></p>
 <ul>
 <li>Data may only exist in one location
 <ul>
-<li>Hard to access off site</li>
-<li>Hard to share with collegues</li>
+<li>Difficult to access off site</li>
+<li>Difficult to share with colleagues</li>
 </ul>
 </li>
 <li>Vulnerable to device failure or loss</li>
 <li>Difficult to collaborate</li>
 <li>Difficult to manage project-wide access</li>
-<li>Security issues e.g. ‘left laptop on a train’</li>
+<li>Security issues, e.g., ‘left laptop with personal data on a
+train’</li>
 </ul>
-</div>
 </div>
 </div>
 </div>
@@ -4085,35 +4073,35 @@ partner or group.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <p>Local storage is often useful for temporary working files.</p>
-<p>It is rarely an ideal long-term location for important project
-data.</p>
+<p>It is not a good long-term storage solution for important project
+data since it lacks all four desired storage features: accessibility,
+recoverability, security, and sustainability.</p>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="personal-cloud-storage">Personal Cloud Storage<a class="anchor" aria-label="anchor" href="#personal-cloud-storage"></a>
-</h2>
-<hr class="half-width">
-<p>Many institutions provide services such as:</p>
+<hr>
+</div>
+<div class="section level3">
+<h3 id="personal-cloud-storage">Personal Cloud Storage<a class="anchor" aria-label="anchor" href="#personal-cloud-storage"></a>
+</h3>
+<p>Many institutions provide services such as</p>
 <ul>
 <li>OneDrive</li>
 <li>Sharepoint</li>
 <li>Google Drive</li>
 <li>Dropbox</li>
 </ul>
-<p>These can synchronise files between devices and provide backup
-capabilities.</p>
-<p>For example:</p>
-<pre class="text"><code>OneDrive/
-└── Research Project/</code></pre>
-<p>Newcastle University has guides for using OneDrive and Sharepoint
-storage: <a href="https://newcastle.sharepoint.com/sites/O365" class="external-link">Link</a>.</p>
-<div id="challenge4" class="callout challenge">
+<p>These services can synchronise files between devices and provide data
+backups.</p>
+<p>Newcastle University has <a href="https://newcastle.sharepoint.com/sites/O365" class="external-link">guides</a> for using
+OneDrive and Sharepoint storage.</p>
+<div id="personal-cloud-storage-pros-and-cons" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="personal-cloud-storage-pros-and-cons" class="callout-inner">
+<h3 class="callout-title">Personal cloud storage pros and cons</h3>
 <div class="callout-content">
 <p>Discuss the advantages and disadvantages of cloud storage with a
 partner or group.</p>
@@ -4123,35 +4111,33 @@ partner or group.</p>
 <div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4"> Advantages </h4>
+  <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
+<p><strong>Advantages</strong></p>
 <ul>
 <li>Accessible from multiple devices</li>
 <li>Easy and rapid syncing. OneDrive often works in the background.</li>
 <li>Simple sharing</li>
 <li>Automatic backup in many cases</li>
-<li>Strong Security compared to email</li>
+<li>Stronger security compared to email</li>
 <li>Version history</li>
-<li>You do not need to send data, you can send a link to the data</li>
+<li>Easier to share large datasets using links to the data</li>
 </ul>
-<div class="section level2">
-<h2 id="disadvantages-1">Disadvantages<a class="anchor" aria-label="anchor" href="#disadvantages-1"></a>
-</h2>
+<p><strong>Disadvantages</strong></p>
 <ul>
 <li>Usually linked to an individual account</li>
 <li>Access often disappears when somebody leaves</li>
 <li>Shared permissions must be managed carefully</li>
-<li>Storage quotas may be limited</li>
+<li>Storage may be limited</li>
 <li>Security/Privacy issues</li>
 <li>Data sovereignty issues</li>
-<li>Access to external collaborators</li>
+<li>Potentially harder to provide access to external collaborators</li>
 <li>Understanding University policy</li>
 <li>Knowing which service to use can be challenging</li>
 <li>May fail silently</li>
 </ul>
-</div>
 </div>
 </div>
 </div>
@@ -4163,35 +4149,47 @@ partner or group.</p>
 <span class="callout-header">Caution</span>
 <div class="callout-inner">
 <div class="callout-content">
-<p>The University also recommends against uploading personal or
-sensitive data to Google Drive and DropBox, see the cloud storage tab at
-the following <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/" class="external-link">link</a>.
-It suggests OneDrive.</p>
+<p><a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/" class="external-link">Newcastle
+University discourages uploading personal or sensitive data to Google
+Drive and DropBox</a> (see the cloud storage tab). It suggests Microsoft
+OneDrive as a more secure option.</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="a-common-research-problem">A Common Research Problem<a class="anchor" aria-label="anchor" href="#a-common-research-problem"></a>
-</h2>
-<hr class="half-width">
-<p>Many researchers store project data in their personal OneDrive.</p>
-<p>This seems convenient until:</p>
+<div id="a-common-research-problem" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="a-common-research-problem" class="callout-inner">
+<h3 class="callout-title">A Common Research Problem</h3>
+<div class="callout-content">
+<p>Many researchers store project data in their personal OneDrive. This
+approach seems convenient until</p>
 <ul>
-<li>A researcher leaves the project.</li>
-<li>Their institutional account is removed.</li>
-<li>Access to project data is lost.</li>
-<li>Need to transfer ownership of files.</li>
+<li>A researcher leaves the project</li>
+<li>A researcher leaves the institution and their institution OneDrive
+account is removed</li>
+<li>You need to transfer ownership of files</li>
 </ul>
+<p>These situations can also result in loss of access to important
+project data.</p>
 <p>In some organisations, governance policies may prevent administrators
-from granting access because personal storage is treated as individual
-rather than project-owned data.</p>
-<p>For this reason, personal cloud storage should generally not be
-considered the primary home of important shared project data.</p>
-<p>Depending on the cloud service, it can be hard to transfer ownership
-of files to another group member.</p>
+from accessing a past team member’s OneDrive because personal storage is
+treated as individual, rather than project-owned, data. For this reason,
+avoid using personal cloud storage as the primary home of important
+shared project data.</p>
+<p>Depending on the cloud service, it can also be challenging to
+transfer file ownership to another team member.</p>
+</div>
+</div>
+</div>
 
-<hr></section><section><h2 class="section-heading" id="shared-storage">Shared Storage<a class="anchor" aria-label="anchor" href="#shared-storage"></a>
-</h2>
-<hr class="half-width">
+<hr>
+</div>
+<div class="section level3">
+<h3 id="shared-network-or-cloud-storage">Shared Network or Cloud Storage<a class="anchor" aria-label="anchor" href="#shared-network-or-cloud-storage"></a>
+</h3>
 <p>Shared storage is designed specifically for collaboration.</p>
 <p>Examples include:</p>
 <ul>
@@ -4200,16 +4198,13 @@ of files to another group member.</p>
 <li>SharePoint sites</li>
 <li>Departmental storage</li>
 </ul>
-<p>Example:</p>
-<pre class="text"><code>Shared Projects/
-└── Marine Mammal Study/</code></pre>
-<div id="challenge5" class="callout challenge">
+<div id="shared-storage-pros-and-cons" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <span class="callout-header">Challenge</span>
-<div class="callout-inner">
-<h3 class="callout-title">Challenge</h3>
+<div id="shared-storage-pros-and-cons" class="callout-inner">
+<h3 class="callout-title">Shared storage pros and cons</h3>
 <div class="callout-content">
 <p>Discuss the advantages and disadvantages of shared storage with a
 partner or group.</p>
@@ -4219,39 +4214,39 @@ partner or group.</p>
 <div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5"> Advantages </h4>
+  <h4 class="accordion-header" id="headingSolution5"> Show me the solution </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
+<p><strong>Advantages</strong></p>
 <ul>
 <li>Multiple users can access data</li>
 <li>Permissions can be managed centrally</li>
 <li>Better suited to collaboration</li>
 <li>Less dependent on a single individual</li>
 </ul>
-<div class="section level2">
-<h2 id="disadvantages-2">Disadvantages<a class="anchor" aria-label="anchor" href="#disadvantages-2"></a>
-</h2>
+<p><strong>Disadvantages</strong></p>
 <ul>
 <li>May require administration</li>
 <li>May have storage limits</li>
 <li>Large datasets can become difficult to manage</li>
-<li>Different ways of accessing when off-site</li>
-<li>Understanding backup policy can be hard, is something apparently
-deleted actually deleted?</li>
+<li>May not have permission to access off-site</li>
+<li>Can be more difficult to understand backup policy (e.g., is
+something deleted locally also deleted in the shared folder?)</li>
 </ul>
 </div>
 </div>
 </div>
 </div>
+<hr>
 </div>
-<hr></section><section><h2 class="section-heading" id="research-data-warehouse-storage">Research Data Warehouse Storage<a class="anchor" aria-label="anchor" href="#research-data-warehouse-storage"></a>
-</h2>
-<hr class="half-width">
+<div class="section level3">
+<h3 id="institution-storage">Institution storage<a class="anchor" aria-label="anchor" href="#institution-storage"></a>
+</h3>
 <p>Many institutions provide dedicated research storage services.</p>
-<p>At our institution, research projects can use the Research Data
-Warehouse (RDW) <a href="https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/" class="external-link">link</a>.</p>
-<p>The RDW is:</p>
+<p>At Newcastle University, research projects can use the <a href="https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/" class="external-link">Research
+Data Warehouse (RDW)</a>.</p>
+<p>The RDW is</p>
 <ul>
 <li>Backed up</li>
 <li>Designed for research data</li>
@@ -4261,14 +4256,13 @@ Warehouse (RDW) <a href="https://services.ncl.ac.uk/itservice/core-services/file
 <li>Connected to institutional computing infrastructure</li>
 </ul>
 <p>Unlike personal storage, access is linked to the project rather than
-an individual.</p>
-<p>This means:</p>
+an individual, which allows</p>
 <ul>
-<li>New collaborators can be added</li>
-<li>Departing collaborators can be removed</li>
-<li>Data remains available to the project</li>
+<li>New collaborators to be added</li>
+<li>Departing collaborators to be removed</li>
+<li>Data to remain available to the project</li>
 </ul>
-<p>For most research data, this is the recommended storage location.</p>
+<p>For most research data, RDW is the recommended storage location.</p>
 
 <hr>
 <div id="accessing-different-storage-locations" class="callout discussion">
@@ -4280,7 +4274,7 @@ an individual.</p>
 <h3 class="callout-title">Accessing Different Storage Locations</h3>
 <div class="callout-content">
 <p>Follow along with the instructor who will demonstrate how to navigate
-to:</p>
+to</p>
 <ul>
 <li>Local storage</li>
 <li>OneDrive (or equivalent cloud storage)</li>
@@ -4299,18 +4293,21 @@ to:</p>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="permissions-and-collaboration">Permissions and Collaboration<a class="anchor" aria-label="anchor" href="#permissions-and-collaboration"></a>
+<hr>
+</div>
+</section><section><h2 class="section-heading" id="permissions-and-collaboration">Permissions and Collaboration<a class="anchor" aria-label="anchor" href="#permissions-and-collaboration"></a>
 </h2>
 <hr class="half-width">
-<p>Choosing a location is only part of the problem.</p>
-<p>You also need to decide:</p>
+<p>Choosing a storage location is only the first step for storing
+research data.</p>
+<p>You also need to decide</p>
 <ul>
 <li>Who can read data?</li>
 <li>Who can upload data?</li>
 <li>Who can edit data?</li>
 <li>Who can delete data?</li>
 </ul>
-<p>For example:</p>
+<p>For example, you may need permissions such as</p>
 <table class="table">
 <thead><tr>
 <th>Role</th>
@@ -4331,46 +4328,51 @@ to:</p>
 </tr>
 </tbody>
 </table>
-<p>There is no universal solution.</p>
-<p>The appropriate permissions depend on the project. It is good to have
-an access plan in place, so everyone on the project knows who can
-accesss which data and how easy it might be for external collaborators
-to access your preferred data store.</p>
-<div id="callout2" class="callout">
+<p>but the appropriate permissions depend on the project. We recommend
+creating an access plan so all project members know who can access which
+data and how to provide access to external or new collaborators.</p>
+<div id="callout3" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
 <div class="callout-inner">
 <div class="callout-content">
-<p>Grant the minimum access necessary.</p>
-<p>This reduces the risk of accidental deletion, leaking, or
-modification of important files.</p>
+<p>Grant the minimum access necessary to reduce the risk of accidentally
+deleting, leaking, or modifying important data.</p>
+<p>Permissions should be regularly reviewed to update access as needed
+(e.g., to remove access after team members or collaborators leave the
+project).</p>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="sensitive-data">Sensitive Data<a class="anchor" aria-label="anchor" href="#sensitive-data"></a>
+<hr></section><section><h2 class="section-heading" id="personal-and-confidential-data">Personal and Confidential Data<a class="anchor" aria-label="anchor" href="#personal-and-confidential-data"></a>
 </h2>
 <hr class="half-width">
-<p>Some projects require additional controls.</p>
-<p>Examples include:</p>
+<p>Some projects require additional controls to protect <a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-data/" class="external-link"><strong>personal
+data</strong></a>, such as names and and contact information, as well as
+<strong>confidential data</strong>, such as trade secrets or
+intellectual property.</p>
+<p><a href="https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/" class="external-link"><strong>Special
+category data</strong></a>, or sensitive data, is personal data that
+requires additional protection due to its sensitivity - for example,
+race and ethnic origin, political opinions, religious beliefs, biometric
+data, and health data.</p>
+<p>When working with these types of data, consider</p>
 <ul>
-<li>Human participant data</li>
-<li>Clinical data</li>
-<li>Personal information</li>
-<li>Special catagory data.</li>
-<li>Commercially restricted data</li>
+<li>Is the storage location approved for personal or confidential
+data?</li>
+<li>Who should have access to the data?</li>
+<li>Does the data need to be encrypted?</li>
+<li>Are there legal or ethical restrictions for using or distributing
+the data?</li>
 </ul>
-<p>Questions to consider:</p>
-<ul>
-<li>Is the storage location approved for sensitive data?</li>
-<li>Who should have access?</li>
-<li>Does the data need encryption?</li>
-<li>Are there legal or ethical restrictions?</li>
-</ul>
-<p>Sensitive data should never be collected or stored solely because it
-is convenient.</p>
-<p>Always follow institutional policies and governance requirements.</p>
+<p>Personal and confidential data should never be collected or stored
+solely because it is convenient. Always follow institutional policies
+and governance requirements; for example, Newcastle University requires
+researchers to complete a <a href="https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/" class="external-link">Data
+Protection Impact Assessment</a> if their research project may involve
+personal data.</p>
 <div id="caution3" class="callout caution">
 <div class="callout-square">
 <i class="callout-icon" data-feather="alert-triangle"></i>
@@ -4379,52 +4381,48 @@ is convenient.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <p>There are strict legal requirements for using and storing certain
-types of data.</p>
+types of data:</p>
 <ul>
-<li>People can request access to data held on them, via <a href="https://www.ncl.ac.uk/mediav8/data-protection/files/SubjectAccessRequestform_002%20(1).docx" class="external-link">Subject
+<li>People can request access to data held on them, via <a href="https://www.gov.uk/government/publications/subject-access-request-procedure/subject-access-request-procedure" class="external-link">Subject
 Access Requests</a>
 </li>
 <li>People can request erroneous data about them be corrected</li>
-<li>People can demand data about them be deleted</li>
+<li>People can request data about them be deleted</li>
 <li>Personal data must be used only for the reasons it was provided</li>
-<li>Data breaches must be reported to the Univerity in line with its
+<li>Data breaches must be reported to the University in line with its
 policies</li>
 <li>and many others</li>
 </ul>
-<p>See the following examples:</p>
+<p>For more information, see</p>
 <ul>
 <li><a href="https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/" class="external-link">GDPR
 Information for Research</a></li>
 <li><a href="https://www.ncl.ac.uk/data-protection/" class="external-link">Data
 Protection</a></li>
-<li><a href="ttps://www.ncl.ac.uk/data-protection/access-personal-data/">Access
+<li><a href="https://www.ncl.ac.uk/data-protection/access-personal-data/" class="external-link">Access
 your personal data</a></li>
 </ul>
-<p>Be clear on what your obligations are regarding the data you use. The
-above links are not meant to be definative, you will need to check this
-yourself.</p>
+<p>Ensure you understand your obligations for managing your data.</p>
 </div>
 </div>
 </div>
 <div class="section level3">
-<h3 id="protecing-your-data">Protecing Your Data<a class="anchor" aria-label="anchor" href="#protecing-your-data"></a>
+<h3 id="encryption">Encryption<a class="anchor" aria-label="anchor" href="#encryption"></a>
 </h3>
-<div class="section level4">
-<h4 id="encryption">Encryption<a class="anchor" aria-label="anchor" href="#encryption"></a>
-</h4>
-<p>Your University laptop may already be running whole disk encryption.
-This protects all the files on the computer. Without it, anyone can
-access the files, even if you have set a password. However, data on your
-laptop is only fully protected when it is shut down. Different modes of
-standby have different levels of protection. For example, prefer
-Hibernate to Sleep mode in Windows.</p>
-<p>The same does not always apply to external hard-drives used for
-backups or data transfer, unless the disk is explicitly encrypted. If
-the external drive asks for a password before you can access it, it is
-probably encrypted, if it does not then it probably isn’t. This is true
-even if your laptop is running full disk encryption. External disks can
-be encrypted using Bitlocker for Windows, Finder for macOS or Disk
-Utility in Linux.</p>
+<p>One way to protect personal and confidential data is
+<strong>encryption</strong>, which “scrambles” data so that only people
+with the correct key can access and read the data.</p>
+<p>Your institutional laptop may already be running whole disk
+encryption, which protects all the files on the computer. Without
+encryption, anyone can access the files, even if you have set a
+password. However, data on your laptop is only fully protected when the
+laptop is shut down; different modes of standby have different levels of
+protection. For example, Hibernate provides more protection than Sleep
+mode in Windows.</p>
+<p>External hard-drives (often used for backups or data transfer) need
+to be explicitly encrypted, even if your laptop is encrypted. External
+disks can be encrypted using Bitlocker in Windows, Finder in macOS, or
+Disk Utility in Linux.</p>
 <div id="caution4" class="callout caution">
 <div class="callout-square">
 <i class="callout-icon" data-feather="alert-triangle"></i>
@@ -4437,182 +4435,10 @@ data! It cannot be recovered.</p>
 </div>
 </div>
 </div>
-<p>The different tools on Windows, macOS and Linux can make an encrypted
-external disk or USB key unusable on a different operating system. You
-can encrypt individual files and folders if required, depending on
-software and system e.g. Windows/macOS/Linux/OneDrive.</p>
-</div>
-<div class="section level4">
-<h4 id="sharing-data">Sharing data<a class="anchor" aria-label="anchor" href="#sharing-data"></a>
-</h4>
-<blockquote>
-<p>Maybe move this to the sharing data md.</p>
-</blockquote>
-<p>Sharing data is discussed in a previous lesson. However, a few
-additional items related to security are discussed here.</p>
-<p>If concerned about storing data on the cloud, or transfering it to
-collegues you can encrypt it before hand and sent the encrypted version.
-In this case, send the password seperatly.</p>
-<p>The University offers a <a href="https://dropoff.ncl.ac.uk/" class="external-link">File
-Transfer Service</a> which offers the chance to encrypt data before
-sending. It will also inform you when someone accesses the data.</p>
-<p>This offers additional security over email, which is <strong>not
-recommended</strong> for moving private data. Email passed from you to
-the destination through a number of intermediate servers. If any link in
-the chain is exposed, the data can leak. This is why companies rarely
-email you your bills, but instead offer secure websites for viewing them
-<a href="https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621" class="external-link">1</a>,
-<a href="https://hexiosec.com/blog/secure-email-attachments/" class="external-link">2</a>.</p>
-<p>Using OneDrive and Sharepoint to transfer files is an alternative to
-sending the data as a copy. If you send data as an email or via the File
-Transfer Service, you are making a copy and sending that out into the
-world. Using University OneDrive or Sharepoint only sends a link. If an
-email is sent in error, you need only break the link or revoke
-permissions and the data becomes inassessible again. This is a good way
-of reducing errors such as sending to the wrong email address or
-attaching the wrong document, <a href="https://www.bbc.co.uk/news/articles/c363w8pjpklo" class="external-link">for
-example</a>.</p>
-</div>
-<div class="section level4">
-<h4 id="sanitising-your-data">Sanitising your data<a class="anchor" aria-label="anchor" href="#sanitising-your-data"></a>
-</h4>
-<p>When moving data you need to ensure you are only sending the data you
-intend. This includes your data, metadata, documentation, file headers
-etc.</p>
-<p>Data security laws require the removal of personally identifiable
-information, such that a person is not identifiable using the data
-<em>in combination with</em> other data. This means that even if you
-cannot identify someone using your data alone, you must also make sure
-that an individual cannot be identified if someone combines your data
-with some other data.</p>
-<p>This is a reason that good data management is important, you need to
-be able to track any private data in order to make sure it is not
-exposed, and make sure all of it is removed.</p>
-<p>Software auto-generates metadata, such as name of creator, date
-created, name of last modifier, date and time of last modification,
-organisation, and more, depending on the software. Ensure that only the
-data you want is transmitted and be aware of inadvertant meta-data. For
-example, in Microsoft Word.</p>
-<hr>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="changing-data-locations">Changing Data Locations<a class="anchor" aria-label="anchor" href="#changing-data-locations"></a>
-</h2>
-<hr class="half-width">
-<p>Eventually projects evolve and storage locations sometimes need to
-change.</p>
-<p>When moving project data:</p>
-<ul>
-<li>Inform collaborators</li>
-<li>Update documentation</li>
-<li>Update links and shortcuts</li>
-<li>Update analysis workflows if required</li>
-</ul>
-<p>Changing locations can have unintended consequences.</p>
-<p>For example:</p>
-<div class="tabs">
-<nav><div id="nav-tab-2" class="nav nav-tabs" role="tablist">
-<button class="nav-link active" id="nav-tab-2-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-1" type="button" role="tab" aria-controls="nav-tabpanel-2-1" aria-selected="true">
-  <h2 class="tab-header" id="nav-tab-heading-2-1">
-  Windows
-  </h2>
-</button>
-<button class="nav-link" id="nav-tab-2-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-2" type="button" role="tab" aria-controls="nav-tabpanel-2-2" aria-selected="false">
-  <h2 class="tab-header" id="nav-tab-heading-2-2">
-  macOS
-  </h2>
-</button>
-<button class="nav-link" id="nav-tab-2-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-3" type="button" role="tab" aria-controls="nav-tabpanel-2-3" aria-selected="false">
-  <h2 class="tab-header" id="nav-tab-heading-2-3">
-  Linux
-  </h2>
-</button>
-</div>
-</nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
-<pre class="text"><code>D:\ProjectData\</code></pre>
-<p>becoming:</p>
-<pre class="text"><code>R:\Projects\ProjectData\</code></pre>
-</div>
-<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
-<pre class="text"><code>/Users/Clair/ProjectData/</code></pre>
-<p>becoming:</p>
-<pre class="text"><code>/data/Projects/ProjectData/</code></pre>
-</div>
-<div id="nav-tabpanel-2-3" class="tab-pane" aria-labelledby="nav-tab-2-3" role="tabpanel">
-<pre class="text"><code>/home/Clair/ProjectData/</code></pre>
-<p>becoming:</p>
-<pre class="text"><code>/data/Projects/ProjectData/</code></pre>
-</div>
-</div>
-</div>
-<p>may break scripts that assume the old location.</p>
-<p>This is one reason why good documentation is important.</p>
-<hr></section><section><h2 class="section-heading" id="a-brief-note-on-version-control">A Brief Note on Version Control<a class="anchor" aria-label="anchor" href="#a-brief-note-on-version-control"></a>
-</h2>
-<hr class="half-width">
-<p>Sometimes researchers use filenames to keep track of changes:</p>
-<pre class="text"><code><span><span class="va">report_v01.docx</span></span>
-<span><span class="va">report_v02.docx</span></span>
-<span><span class="va">report_v03.docx</span></span></code></pre>
-<p>For documents and data this can be useful.</p>
-<p>However, software projects often use dedicated version control
-systems such as Git.</p>
-<p>Version control provides:</p>
-<ul>
-<li>History tracking</li>
-<li>Collaboration tools</li>
-<li>Change management</li>
-<li>Recovery of previous versions</li>
-</ul>
-<p>Version control is a large topic in its own right.</p>
-<p>Note that some services, such as OneDrive, retain their own version
-histories.</p>
-<div class="section level3">
-<h3 id="further-learning">Further Learning<a class="anchor" aria-label="anchor" href="#further-learning"></a>
-</h3>
-<p>If you want to learn more about version control, consider attending a
-Carpentries Git and Version Control workshop.</p>
-<p>This lesson will not cover Git in detail.</p>
-<hr>
-</div>
-</section><section><h2 class="section-heading" id="sharing-research-outputs">Sharing Research Outputs<a class="anchor" aria-label="anchor" href="#sharing-research-outputs"></a>
-</h2>
-<hr class="half-width">
-<p>Eventually many research projects produce outputs that should be
-publicly available.</p>
-<p>Examples include:</p>
-<ul>
-<li>Supporting datasets</li>
-<li>Processed data</li>
-<li>Code</li>
-<li>Supplementary materials</li>
-</ul>
-<p>Rather than emailing files or placing them on personal websites,
-researchers often use repositories.</p>
-<p>Examples include:</p>
-<ul>
-<li>Zenodo</li>
-<li>Figshare</li>
-<li>Institutional repositories</li>
-<li>Subject-specific repositories</li>
-</ul>
-<p>These repositories can provide:</p>
-<ul>
-<li>Long-term preservation</li>
-<li>Stable links</li>
-<li>Metadata</li>
-<li>Citations</li>
-<li>Digital Object Identifiers (DOIs)</li>
-</ul>
-<p>A DOI allows a dataset to be referenced in publications in the same
-way that journal articles are cited.</p>
-<p>For example:</p>
-<pre class="text"><code><span><span class="va">doi.org</span><span class="op">/</span><span class="va">xxxxx</span></span></code></pre>
-<p>This makes research outputs easier to find, cite, and reuse.</p>
-<p>The University provides the following information page <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/" class="external-link">Find
-Data</a> but individual funders may have their own requirements. <a href="https://www.re3data.org" class="external-link">re3data.org</a> can also find data
-repositories.</p>
+<p>The different tools on Windows, macOS, and Linux can make an
+encrypted external disk or USB key unusable on a different operating
+system. You can often encrypt individual files and folders if
+required.</p>
 <hr>
 <div id="where-should-you-store-your-data" class="callout discussion">
 <div class="callout-square">
@@ -4622,7 +4448,7 @@ repositories.</p>
 <div id="where-should-you-store-your-data" class="callout-inner">
 <h3 class="callout-title">Where Should You Store Your Data?</h3>
 <div class="callout-content">
-<p>Consider a current or future project.</p>
+<p>Consider a current or future research project.</p>
 <ul>
 <li>Where are you storing data now?</li>
 <li>Is that the most appropriate location?</li>
@@ -4630,7 +4456,200 @@ repositories.</p>
 <li>Could collaborators access it?</li>
 <li>What would happen if you left the institution?</li>
 </ul>
-<p>Would you change anything after today’s discussion?</p>
+<p>Would you change your storage solution after today’s discussion?</p>
+</div>
+</div>
+</div>
+<hr>
+</div>
+</section><section><h2 class="section-heading" id="changing-data-storage-location">Changing Data Storage Location<a class="anchor" aria-label="anchor" href="#changing-data-storage-location"></a>
+</h2>
+<hr class="half-width">
+<p>Storage locations may need to change as projects evolve.</p>
+<p>When moving project data</p>
+<ul>
+<li>Inform collaborators</li>
+<li>Update documentation</li>
+<li>Update links, references, and shortcuts</li>
+<li>Update analysis workflows if required</li>
+</ul>
+<p>Changing locations can have unintended consequences.</p>
+<p>For example:</p>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+<button class="nav-link active" id="nav-tab-1-1" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-1" type="button" role="tab" aria-controls="nav-tabpanel-1-1" aria-selected="true">
+  <h2 class="tab-header" id="nav-tab-heading-1-1">
+  Windows
+  </h2>
+</button>
+<button class="nav-link" id="nav-tab-1-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-2" type="button" role="tab" aria-controls="nav-tabpanel-1-2" aria-selected="false">
+  <h2 class="tab-header" id="nav-tab-heading-1-2">
+  macOS
+  </h2>
+</button>
+<button class="nav-link" id="nav-tab-1-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-1-3" type="button" role="tab" aria-controls="nav-tabpanel-1-3" aria-selected="false">
+  <h2 class="tab-header" id="nav-tab-heading-1-3">
+  Linux
+  </h2>
+</button>
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
+<pre class="text"><code>D:\ProjectData\</code></pre>
+<p>becoming:</p>
+<pre class="text"><code>R:\Projects\ProjectData\</code></pre>
+</div>
+<div id="nav-tabpanel-1-2" class="tab-pane" aria-labelledby="nav-tab-1-2" role="tabpanel">
+<pre class="text"><code>/Users/Claire/ProjectData/</code></pre>
+<p>becoming:</p>
+<pre class="text"><code>/data/Projects/ProjectData/</code></pre>
+</div>
+<div id="nav-tabpanel-1-3" class="tab-pane" aria-labelledby="nav-tab-1-3" role="tabpanel">
+<pre class="text"><code>/home/Claire/ProjectData/</code></pre>
+<p>becoming:</p>
+<pre class="text"><code>/data/Projects/ProjectData/</code></pre>
+</div>
+</div>
+</div>
+<p>may break scripts that reference the previous location.</p>
+<hr></section><section><h2 class="section-heading" id="a-brief-note-on-version-control">A Brief Note on Version Control<a class="anchor" aria-label="anchor" href="#a-brief-note-on-version-control"></a>
+</h2>
+<hr class="half-width">
+<p>Sometimes researchers use multiple files with descriptive filenames
+to keep track of changes:</p>
+<pre class="text"><code><span><span class="va">report_v01.docx</span></span>
+<span><span class="va">report_v02.docx</span></span>
+<span><span class="va">report_v03.docx</span></span></code></pre>
+<p>For documents and data, this approach can be useful.</p>
+<p>However, software projects often use dedicated version control
+systems such as <a href="https://git-scm.com/" class="external-link">Git</a>.</p>
+<p>Version control provides</p>
+<ul>
+<li>History tracking</li>
+<li>Collaboration tools</li>
+<li>Change management</li>
+<li>Recovery of previous versions</li>
+</ul>
+<p>Note that some services, such as OneDrive, also retain version
+histories.</p>
+<div id="callout4" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>We will not cover version control and Git in this workshop, but you
+can learn more about them by attending a <a href="https://swcarpentry.github.io/git-novice/" class="external-link">Carpentries Git and
+Version Control</a> workshop.</p>
+</div>
+</div>
+</div>
+<hr></section><section><h2 class="section-heading" id="sharing-research-outputs">Sharing Research Outputs<a class="anchor" aria-label="anchor" href="#sharing-research-outputs"></a>
+</h2>
+<hr class="half-width">
+<p>Eventually many research projects produce outputs that should be
+publicly available, such as</p>
+<ul>
+<li>Supporting datasets</li>
+<li>Processed data</li>
+<li>Code</li>
+<li>Supplementary materials</li>
+</ul>
+<p>Rather than emailing files or placing them on personal websites,
+researchers often store these outputs in repositories that are publicly
+available, such as</p>
+<ul>
+<li><a href="https://zenodo.org/" class="external-link">Zenodo</a></li>
+<li><a href="https://figshare.com/" class="external-link">Figshare</a></li>
+<li>
+<a href="https://github.com/" class="external-link">GitHub</a> (particularly for
+code/software)</li>
+<li>Institutional repositories</li>
+<li>Subject-specific repositories</li>
+</ul>
+<p>More repositories can be found at <a href="https://www.re3data.org" class="external-link">re3data.org</a> and in Newcastle
+University’s <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/" class="external-link">Find
+Data</a> resource. Note that individual funders may have their own
+requirements on how research outputs are shared.</p>
+<p>Repositories can provide</p>
+<ul>
+<li>Long-term preservation</li>
+<li>Stable links</li>
+<li>Metadata</li>
+<li>Citations</li>
+<li><a href="https://www.doi.org/" class="external-link">Digital Object Identifiers
+(DOIs)</a></li>
+</ul>
+<p>A DOI allows any type of digital object to be cited in publications,
+making research outputs such as datasets easier to find, cite, and
+reuse. Journals create DOIs for research articles as well to provide a
+stable citation and metadata for each article.</p>
+<div id="finding-digital-objects-using-dois" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="finding-digital-objects-using-dois" class="callout-inner">
+<h3 class="callout-title">Finding digital objects using DOIs</h3>
+<div class="callout-content">
+<p>DOIs can be mapped to their digital objects using a DOI resolver. The
+resolver looks up the DOI in the DOI registry to find the corresponding
+record and send you to the location of the digital object.</p>
+<p>Use the DOI Foundation’s <a href="https://dx.doi.org/" class="external-link">DOI
+resolver</a> to find the digital object that corresponds to each of
+these DOIs:</p>
+<ul>
+<li>10.5281/zenodo.3960218</li>
+<li>10.1371/journal.pone.0090081</li>
+</ul>
+<p>For each DOI, answer</p>
+<ol style="list-style-type: decimal">
+<li>Where is the object stored?</li>
+<li>What type of object is it? (e.g., publication, dataset,
+software)</li>
+<li>What is the name of the object?</li>
+<li>Who created/authored the object?</li>
+<li>When was the object published?</li>
+<li>How would you cite the object?</li>
+</ol>
+</div>
+</div>
+</div>
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
+</button>
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div class="accordion-body">
+<p><strong>10.5281/zenodo.3960218</strong></p>
+<ol style="list-style-type: decimal">
+<li>Location: Zenodo (repository)</li>
+<li>Type: Software (with dataset)</li>
+<li>Name: allisonhorst/palmerpenguins: v0.1.0</li>
+<li>Creators: Allison M Horst, Alison Presmanes, Kristen B Gorman</li>
+<li>Publication date: July 25, 2020</li>
+<li>Citation: Allison M Horst, Alison Presmanes Hill&amp; Kristen B
+Gorman. (2020). allisonhorst/palmerpenguins: v0.1.0 (Version v0.1.0)
+[Computer software]. Zenodo. <a href="https://doi.org/10.5281/zenodo.3960218" class="external-link uri">https://doi.org/10.5281/zenodo.3960218</a>
+</li>
+</ol>
+<p><strong>10.1371/journal.pone.0090081</strong></p>
+<ol style="list-style-type: decimal">
+<li>Location: PLOS One (journal)</li>
+<li>Type: Research article</li>
+<li>Name: Ecological Sexual Dimorphism and Environmental Variability
+within a Community of Antarctic Penguins (Genus Pygoscelis)</li>
+<li>Creators: Kristen B. Gorman, Tony D. Williams, William R.
+Fraser</li>
+<li>Publication date: March 5, 2014</li>
+<li>Citation: Gorman KB, Williams TD, Fraser WR (2014) Ecological Sexual
+Dimorphism and Environmental Variability within a Community of Antarctic
+Penguins (Genus Pygoscelis). PLoS ONE 9(3): e90081. <a href="https://doi.org/10.1371/journal.pone.0090081" class="external-link uri">https://doi.org/10.1371/journal.pone.0090081</a>
+</li>
+</ol>
+</div>
 </div>
 </div>
 </div>
@@ -4649,19 +4668,19 @@ explain your reasoning.</p>
 <li>Active analysis files that only you are currently editing.</li>
 <li>A shared project involving five collaborators.</li>
 <li>Large datasets processed on the HPC.</li>
-<li>Human participant data.</li>
+<li>Personal identifiable information.</li>
 <li>Published research outputs accompanying a journal article.</li>
 </ol>
 <p>Discuss your answers with a partner.</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution7" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
-  <h4 class="accordion-header" id="headingSolution6"> Show me the solution </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
+  <h4 class="accordion-header" id="headingSolution7"> Show me the solution </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
 <div class="accordion-body">
 <p>Example answers:</p>
 <ol style="list-style-type: decimal">
@@ -4678,53 +4697,20 @@ around access, backup, scale, and security.</p>
 </div>
 </div>
 </div>
-<hr></section><section><h2 class="section-heading" id="university-data-management-plan">University Data Management Plan<a class="anchor" aria-label="anchor" href="#university-data-management-plan"></a>
-</h2>
-<hr class="half-width">
-<p>Newcastle University has various templates for planning your data
-management aimed at PGRs. These can be found <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/" class="external-link">here</a>.
-There are slightly different templates for the Faculty of Science,
-Agriculture and Engineering, the Faculty of Humanities and Social
-Sciences and the Faculty of Medical Sciences, but all follow the same
-general form .e.g.</p>
-<ul>
-<li>Type of study (3 lines).</li>
-<li>Existing data study.</li>
-<li>Data types.</li>
-<li>Format and scale of your data.</li>
-<li>Data collection/production methodology.</li>
-<li>Data quality and standards.</li>
-<li>Data management, storage and curation.</li>
-<li>Metadata and documentation.</li>
-<li>Data security risks.</li>
-</ul>
-<p>The university has guides and training specifically to help with your
-data management plan <a href="https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/" class="external-link">here</a>.</p>
-<p>This is the University plan, your funding agencies may have their own
-standards and requirements.</p>
-<hr></section><section><h2 class="section-heading" id="data-privacy-impact-assessment">Data Privacy Impact Assessment<a class="anchor" aria-label="anchor" href="#data-privacy-impact-assessment"></a>
-</h2>
-<hr class="half-width">
-<p>If your research project involves personal or sensitive data, or
-could potentially, a Data Protection Impact Assessment should be
-completed and registered with the University’s Information Governance
-Team. This is outlined <a href="https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/" class="external-link">here</a>.
-The assessment documenation includes a number of screening questions to
-help decide which sections you need to fill in.</p>
 <hr></section><section><h2 class="section-heading" id="looking-ahead">Looking Ahead<a class="anchor" aria-label="anchor" href="#looking-ahead"></a>
 </h2>
 <hr class="half-width">
-<p>We now know where data should live.</p>
-<p>The next challenge is dealing with situations where data is becoming
-difficult to store or share.</p>
-<p>In the next episode we will discuss:</p>
+<p>We now know where research data should be stored.</p>
+<p>The next challenge is dealing with situations where data is
+challenging to store or share.</p>
+<p>In the next episode we will discuss</p>
 <ul>
+<li>Storage limits</li>
 <li>Compression</li>
 <li>File transfer</li>
 <li>Storage efficiency</li>
 <li>Reducing duplication</li>
 </ul>
-<p>and explore what to do when projects begin running out of space.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -4733,20 +4719,20 @@ difficult to store or share.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>Storage decisions should consider accessibility, backup, security,
-and sustainability.</li>
-<li>Local storage is useful for active work but is rarely sufficient on
-its own.</li>
-<li>Personal cloud storage can create problems when researchers leave
-projects.</li>
+<li>Storage decisions should consider accessibility, recoverability,
+security, and sustainability.</li>
+<li>Local storage is convenient for active work, but is rarely meets
+other storage requirements.</li>
+<li>Personal cloud storage can create access problems when researchers
+leave projects.</li>
 <li>Shared project storage is generally preferable to individual-owned
 storage.</li>
 <li>Research data should ideally be stored in project-owned, backed-up
 systems.</li>
 <li>Permissions should be managed carefully and reviewed regularly.</li>
-<li>Sensitive data may require additional controls and approved storage
-locations.</li>
-<li>Moving data locations can affect collaborators and workflows.</li>
+<li>Personal and confidential data may require additional controls and
+approved storage locations.</li>
+<li>Updating data locations can affect collaborators and workflows.</li>
 <li>Repositories such as Zenodo can make research outputs more
 discoverable and citable.</li>
 <li>Version control is important for managing changes and is covered in
@@ -4761,7 +4747,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-transferring-data"><p>Content from <a href="transferring-data.html">Storing and Transferring Data Efficiently</a></p>
 <hr>
-<p>Last updated on 2026-07-28 |
+<p>Last updated on 2026-07-31 |
 
         <a href="https://github.com/carpentries/workbench-template-md/edit/main/episodes/transferring-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -4873,7 +4859,7 @@ by a dataset?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Common answers may include:</p>
 <ul>
@@ -4954,7 +4940,7 @@ occupies.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
 <p>Using your file manager:</p>
 <ol style="list-style-type: decimal">
 <li>Navigate to the dataset.</li>
@@ -4965,7 +4951,7 @@ Info</strong> on macOS.</li>
 </ol>
 <p>This may take a few moments for large datasets.</p>
 </div>
-<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
+<div id="nav-tabpanel-1-2" class="tab-pane" aria-labelledby="nav-tab-1-2" role="tabpanel">
 <p>Switch File manager to <strong>Details View</strong>.</p>
 <p>The size column can be displayed for many file types.</p>
 <p>This can make large files easier to identify.</p>
@@ -4982,7 +4968,7 @@ system. Which is the largest file in the example data?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>It is <code>big_file.data</code></p>
 </div>
@@ -5068,7 +5054,7 @@ LINK</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
 <ol style="list-style-type: decimal">
 <li>Right-click the folder.</li>
 <li>Select:</li>
@@ -5080,7 +5066,7 @@ LINK</p>
 <p>For example:</p>
 <pre class="text"><code><span><span class="va">clean_data.zip</span></span></code></pre>
 </div>
-<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
+<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
 <ol style="list-style-type: decimal">
 <li>Right-click the folder.</li>
 <li>Choose:</li>
@@ -5088,7 +5074,7 @@ LINK</p>
 <pre class="text"><code><span><span class="va">Compress</span></span></code></pre>
 <p>A ZIP archive will be created.</p>
 </div>
-<div id="nav-tabpanel-2-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-3">
+<div id="nav-tabpanel-2-3" class="tab-pane" aria-labelledby="nav-tab-2-3" role="tabpanel">
 <p>Most desktop file managers provide a similar option:</p>
 <pre class="text"><code>Right-click → Compress</code></pre>
 <p>The exact wording varies between desktop environments.</p>
@@ -5176,7 +5162,7 @@ with.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>Results will vary depending on the data.</p>
 <p>Text files and spreadsheets often compress well.</p>
@@ -5314,13 +5300,13 @@ situations.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-1">
+<div id="nav-tabpanel-3-1" class="tab-pane show active" aria-labelledby="nav-tab-3-1" role="tabpanel">
 <ul>
 <li>Simple</li>
 <li>Familiar</li>
 </ul>
 </div>
-<div id="nav-tabpanel-3-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-2">
+<div id="nav-tabpanel-3-2" class="tab-pane" aria-labelledby="nav-tab-3-2" role="tabpanel">
 <ul>
 <li>Attachment size limits</li>
 <li>Duplicate copies</li>
@@ -5358,7 +5344,7 @@ data.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-4" class="tab-content">
-<div id="nav-tabpanel-4-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-1">
+<div id="nav-tabpanel-4-1" class="tab-pane show active" aria-labelledby="nav-tab-4-1" role="tabpanel">
 <ul>
 <li>Shared access</li>
 <li>Version history in many cases</li>
@@ -5366,7 +5352,7 @@ data.</p>
 <li>Allows for permission management</li>
 </ul>
 </div>
-<div id="nav-tabpanel-4-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-2">
+<div id="nav-tabpanel-4-2" class="tab-pane" aria-labelledby="nav-tab-4-2" role="tabpanel">
 <ul>
 <li>Requires permission management</li>
 <li>Can become difficult for very large datasets</li>
@@ -5399,14 +5385,14 @@ data.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-5" class="tab-content">
-<div id="nav-tabpanel-5-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-5-1">
+<div id="nav-tabpanel-5-1" class="tab-pane show active" aria-labelledby="nav-tab-5-1" role="tabpanel">
 <ul>
 <li>Centralised location</li>
 <li>Controlled access</li>
 <li>Common source of truth</li>
 </ul>
 </div>
-<div id="nav-tabpanel-5-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-5-2">
+<div id="nav-tabpanel-5-2" class="tab-pane" aria-labelledby="nav-tab-5-2" role="tabpanel">
 <ul>
 <li>Access may be limited to project members</li>
 </ul>
@@ -5440,14 +5426,14 @@ large datasets.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-6" class="tab-content">
-<div id="nav-tabpanel-6-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-6-1">
+<div id="nav-tabpanel-6-1" class="tab-pane show active" aria-labelledby="nav-tab-6-1" role="tabpanel">
 <ul>
 <li>Reliable</li>
 <li>Designed for research</li>
 <li>Handles interruptions well</li>
 </ul>
 </div>
-<div id="nav-tabpanel-6-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-6-2">
+<div id="nav-tabpanel-6-2" class="tab-pane" aria-labelledby="nav-tab-6-2" role="tabpanel">
 <ul>
 <li>May require institutional access</li>
 <li>More complex than simple file sharing</li>
@@ -5480,7 +5466,7 @@ Drop-off</a></p>
 </button>
 </div>
 </nav><div id="nav-tabContent-7" class="tab-content">
-<div id="nav-tabpanel-7-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-7-1">
+<div id="nav-tabpanel-7-1" class="tab-pane show active" aria-labelledby="nav-tab-7-1" role="tabpanel">
 <ul>
 <li>Encrypted</li>
 <li>Owned by or contracted to the Institution</li>
@@ -5488,7 +5474,7 @@ Drop-off</a></p>
 <li>Access notification</li>
 </ul>
 </div>
-<div id="nav-tabpanel-7-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-7-2">
+<div id="nav-tabpanel-7-2" class="tab-pane" aria-labelledby="nav-tab-7-2" role="tabpanel">
 <ul>
 <li>Files limited in size</li>
 <li>Can send to wrong address</li>
@@ -5514,9 +5500,48 @@ transfer tools such as:</p>
 <p>These tools are extremely powerful and commonly used on HPC
 systems.</p>
 <p>However, they are beyond the scope of this lesson.</p>
+<div class="section level2">
+<h2 id="sharing-personal-and-confidential-data">Sharing Personal and Confidential Data<a class="anchor" aria-label="anchor" href="#sharing-personal-and-confidential-data"></a>
+</h2>
+<p>As discussed in the previous lesson, additional precautions need to
+be taken when storing personal or confidential data. Likewise,
+additional care is needed when sharing these types of data.</p>
+<p>One option is to encrypt your data before sending it to colleagues.
+The password for decrypting the data should always be shared
+separately.</p>
+<p>Newcastle University offers a <a href="https://dropoff.ncl.ac.uk/" class="external-link">File Transfer Service</a>, which can
+encrypt data before transferring it and will also notify you when
+someone accesses the data. Services such as these offer additional
+security over email, which is <strong>not recommended</strong> for
+moving personal or confidential data. Email passes from you to the
+destination through a number of intermediate servers. If any link in the
+chain is exposed, the data can be leaked. This vulnerability is why
+companies rarely email you your bills, but instead offer secure websites
+for viewing them <a href="https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621" class="external-link">1</a>,
+<a href="https://hexiosec.com/blog/secure-email-attachments/" class="external-link">2</a>.</p>
+<p>Using OneDrive and Sharepoint to transfer files is an alternative to
+sending the data as a copy. If you send data as an email or via the File
+Transfer Service, you give the recipient a copy of your data. Using
+University OneDrive or Sharepoint only provides access to the original
+data. If an email is sent in error, you can remove the share link or
+revoke permissions to make the data inaccessible again (as long as the
+recipient as not copied it). This approach helps reduce errors such as
+<a href="https://www.bbc.co.uk/news/articles/c363w8pjpklo" class="external-link">sending data
+to the wrong email address</a> or attaching the incorrect document.</p>
 <div class="section level3">
-<h3 id="further-learning">Further Learning<a class="anchor" aria-label="anchor" href="#further-learning"></a>
+<h3 id="sanitising-your-data">Sanitising Your Data<a class="anchor" aria-label="anchor" href="#sanitising-your-data"></a>
 </h3>
+<p>When moving data, you need to ensure you only send the intended data.
+You need to check not only the contents of your files, but also any file
+metadata, documentation, file headers etc. For example, software often
+auto-generates metadata, such as the name of the creator, date created,
+the name of the last modifier, and date and time of the last
+modification, that is stored and transferred with the file.</p>
+</div>
+</div>
+<div class="section level2">
+<h2 id="further-learning">Further Learning<a class="anchor" aria-label="anchor" href="#further-learning"></a>
+</h2>
 <p>Learners interested in transferring data to servers or HPC systems
 should consider attending:</p>
 <ul>
@@ -5555,7 +5580,7 @@ detail.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <p>Example answers:</p>
 <ol style="list-style-type: decimal">
@@ -6372,7 +6397,7 @@ identical?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A clean version of the dataset should have:</p>
 <ul>
@@ -6868,7 +6893,7 @@ potentially dangerous for automated scientific analysis?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul>
 <li>
@@ -6993,8 +7018,8 @@ any links that you are not going to use.
   "url": "https://carpentries.github.io/workbench-template-md/aio.html",
   "identifier": "https://carpentries.github.io/workbench-template-md/aio.html",
   "dateCreated": "2026-07-01",
-  "dateModified": "2026-07-28",
-  "datePublished": "2026-07-28"
+  "dateModified": "2026-07-31",
+  "datePublished": "2026-07-31"
 }
 
   </script><script>

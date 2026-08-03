@@ -41,7 +41,7 @@ The project structure itself is difficult to understand:
 ```text
 legacy_dataset/
 ├── New Folder
-│   ├── big_file.data
+│   ├── big_file.txt
 │   ├── IMG_000.png
 │   ├── IMG_001.png
 │   ├── IMG_002.png

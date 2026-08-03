@@ -126,9 +126,9 @@ Various research funding organisations have data management and sharing policies
 - [NSF](https://www.nsf.gov/funding/data-management-plan) (US)
 - [CIHR](https://cihr-irsc.gc.ca/e/54270.html) (Canada)
 
-Guidelines for more funders are included in Newcastle University's [overview of Data Management Expectations][dme].
+Newcastle University's Data Management webpage provides links to the guidelines for more funders [overview of Data Management Expectations][dme].
 
-Newcastle University has its own policies for [postgraduates][postg] and [all researchers][rdm].
+Institutions will often have their own internal data management policies. For example,Newcastle University has policies for both [postgraduates][postg] and [all researchers][rdm]. Other institutions will differ. 
 
 
 ::::::::::::::::::

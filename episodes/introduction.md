@@ -126,9 +126,9 @@ Various research funding organisations have data management and sharing policies
 - [NSF](https://www.nsf.gov/funding/data-management-plan) (US)
 - [CIHR](https://cihr-irsc.gc.ca/e/54270.html) (Canada)
 
-Guidelines for more funders are included in Newcastle University's [overview of Data Management Expectations](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/expectations/).
+Guidelines for more funders are included in Newcastle University's [overview of Data Management Expectations][dme].
 
-Newcastle University has its own policies for [postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/) and [all researchers](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm).
+Newcastle University has its own policies for [postgraduates][postg] and [all researchers][rdm].
 
 
 ::::::::::::::::::
@@ -360,14 +360,14 @@ Spend a few minutes explicitly demonstrating how files and folders are organised
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Resources
+## Resources 
 
 Newcastle University provides a number of resources for data management:
 
-- [Research Data Management Training](https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/)
-- [Ethics toolkit for data](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/), including the [Research Data Management Policy and Code of Good Practice](https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf)
-- [Data management for postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/-rdm/planning/pgr/)
-- [Research data management](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm)
+- [Research Data Management Training][rdmt]
+- [Ethics toolkit for data][etd], including the [Research Data Management Policy and Code of Good Practice][rdmp]
+- [Data management for postgraduates][dmp]
+- [Research data management][rdm]
 
 ::::::::::::: challenge
 
@@ -397,3 +397,11 @@ Was it immediately obvious where the important data was? What information would 
 - A well-organised project should be understandable to collaborators and to your future self.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[rdmt]: https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/
+[etd]: https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/
+[rdmp]: https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf
+[dmp]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/
+[rdm]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/  
+[postg]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/
+[dme]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/expectations/

@@ -411,7 +411,7 @@ Last Updated:
 
 The goal is clarity rather than perfection.
 
-Another example can be found [here](https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt)
+Another example can be found [here][readme]
 
 ---
 
@@ -657,10 +657,13 @@ Parameter files will depend on for project and/or software, but provide a record
 
  It should allow somebody unfamiliar with the project to begin understanding its contents.
 
-Also, see the Newcastle University [Documentation](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/organise/) and Metadata page.
+Universities often publish additional guidance of their own, such as
+ - [File Organisation, naming and version control][doc_cam] page from Cambridge University
+ - [Documentation and Metadata][doc_ncl] page from Newcastle University, which provides general information and suggestions. 
+ - [Naming and Organising files][doc_sus] page from the University of Sussex
+etc...
 
-
-Additional, subject specific suggestions can be found [here](https://www.dcc.ac.uk/guidance/standards/metadata) as well as data centre policies and information produced by funding agencies. 
+ Additional, subject specific suggestions can be found [here][dcc] as well as data centre policies and information produced by funding agencies. 
 
 
 ::::::::::::::::::::
@@ -721,3 +724,9 @@ In the next episode we will explore how to choose appropriate storage locations 
 - Good documentation reduces confusion and improves collaboration.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[doc_ncl]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/organise/
+[doc_cam]: https://www.data.cam.ac.uk/organising-storing/file-organisation-naming-version-control
+[doc_sus]: https://www.sussex.ac.uk/library/researchdatamanagement/organise/namingandorganisingfiles/
+[readme]: https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt
+[dcc]: https://www.dcc.ac.uk/guidance/standards/metadata

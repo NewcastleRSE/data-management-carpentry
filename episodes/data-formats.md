@@ -41,11 +41,7 @@ A file format is a standardized way that information is encoded for storage in a
 
 The suffix at the end of a filename (e.g., `.csv`, `.xlsx`, `.txt`), known as the **file extension**, tells the operating system—and you—which application is expected to read that specific layout of bits.
 
-<<<<<<< HEAD
 Files can be plain text (human readable) or binary (readable only by the computer). Plain text files have the advantage that s user can look inside them and see the data, while binary files are more compact and faster for the computer to read and write. 
-=======
-Files can be plain text (human readable) or binary (readable only by the computer). Plain text files have the advantage that s user can look inside them and see the data, while binary files are more concise and faster for the computer to read and write. 
->>>>>>> 637e89e (Spelling mistakes)
 
 ### Common Formats and Trade-Offs
 
@@ -115,10 +111,6 @@ Common users of HDF5 include climate scientists for satellite weather models, ph
 ### 4. Other
 
 Some software has their own files formats for designed for specific needs - for example, Microsoft PowerPoint uses `.pptx` files and Adobe Photoshop stores image data in `.psd` files. Other formats may be based on common formats, such as binary or HDF5, but require a certain structure for the header or metadata. These formats will have software tools for reading them and/or provide descriptions of the file format to allow writing bespoke software to read it.
-<<<<<<< HEAD
-
-=======
->>>>>>> 637e89e (Spelling mistakes)
 ---
 
 ## The Format Evaluation Checklist
@@ -192,7 +184,7 @@ Let's look at what happens when we convert a high-resolution microscopy image (`
  * **Fidelity Loss:** Zooming in reveals blocky distortions and blurry halos ("artifacts") around fine structures.
  * **Scientific Danger:** Automated image processing scripts (e.g., counting cells, measuring pixel intensities) will read these compression artifacts as actual data or fail to detect faint structures entirely. **Never use lossy compression formats (like JPEG) for raw analytical images.**
  
- See [Image Processing in Matlab](https://blogs.mathworks.com/steve/2022/12/19/avoid-jpeg-for-image-analysis/) and Section 6.8 of [Cromey D. W. (2013). Digital images are data: and should be treated as such. Methods in molecular biology (Clifton, N.J.), 931, 1–27. https://doi.org/10.1007/978-1-62703-056-4_1](https://pmc.ncbi.nlm.nih.gov/articles/PMC4210356/) 
+ See [Image Processing in Matlab][matlab] and Section 6.8 of [Cromey D. W. (2013). Digital images are data: and should be treated as such. Methods in molecular biology (Clifton, N.J.), 931, 1–27. https://doi.org/10.1007/978-1-62703-056-4_1][pmc] 
 
  > 
 
@@ -226,3 +218,5 @@ The [Library of Congress][lcon2] also provides an overview of various file forma
 [ukds]: https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/
 [lcon]: https://www.loc.gov/preservation/resources/rfs/format-pref-summary.html
 [lcon2]: https://www.loc.gov/preservation/digital/formats/fdd/browse_list.shtml
+[pmc]: https://pmc.ncbi.nlm.nih.gov/articles/PMC4210356/
+[matlab]: https://blogs.mathworks.com/steve/2022/12/19/avoid-jpeg-for-image-analysis/

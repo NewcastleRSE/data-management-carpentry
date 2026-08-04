@@ -802,7 +802,7 @@ In the next episode we will discuss
 [dst_ncl]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/
 [dst_cam]: https://www.data.cam.ac.uk/organising-storing/storage-backup
 [one_ncl]: https://newcastle.sharepoint.com/sites/O365 
-[one_cam]https://help.uis.cam.ac.uk/system/files/managing_and_sharing_files_in_onedrive_and_sharepoint_-_learner_-_december_2025.pdf  
+[one_cam]: https://help.uis.cam.ac.uk/system/files/managing_and_sharing_files_in_onedrive_and_sharepoint_-_learner_-_december_2025.pdf  
 [one_war]: https://warwick.ac.uk/services/idg/learning-resources/knowledge/guide-to-onedrive/
 [gdpr]: https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/
 [dapr]: https://www.ncl.ac.uk/data-protection/

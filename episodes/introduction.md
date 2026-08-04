@@ -246,6 +246,10 @@ Depending on the operating system, you can use any of these options to open a fi
 
 - Click the Finder icon (a blue and white smiling face) on the dock
 
+### Linux
+
+There are various file managers for Linux, depending on the version you use. 
+
 ::::::::::::::::
 ::::::::::::::::
 
@@ -278,7 +282,7 @@ Select your particular macOS version at the top of the page under "Mac User Guid
 
 
 ## Anatomy of File Explorer
-A typical File Explorer window contains several important components.
+A typical file manager window contains several important components.
 
 ```text
 +--------------------------------------------------+

@@ -244,6 +244,7 @@ To convert stacked tables into a single, clean table:
  * Explicit values in every row (no implied carry-overs).
  * Consistent category labels (`All Oral Cavity` throughout).
  
+ 
 :::::::::::::::::::::::::::::
 :::::::::::::::::::::::::::::
 

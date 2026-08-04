@@ -361,7 +361,7 @@ Project/
                         └── Results/                    
 ```
 
-At best, this approach results in a lot of additional clicks in a file explorer or typing in a terminal/scripts. It can also make analyses unwieldy if you need to collect data from many different subfolders (e.g., if you want to analyse all of Newcastle's data from the example above). 
+At best, this approach results in a lot of additional clicks in a file explorer or typing in a terminal/scripts. It can also make analyses unwieldy if you need to collect data from many different subfolders (e.g., if you want to analyse all of the data Newcastle in the example above). 
 
 At worst, file metadata, such as city and datetime in this example, can be irrevocably lost if files are moved from their original location. As such, metadata should ideally be stored in the files themselves or in a reference table with the filenames, rather than in the folder structure.
 
@@ -627,7 +627,7 @@ Data deleted using the above methods are not fully removed from the system; they
 
 Check your data policies on data deletion, particularly if handling private data and your files are not encrypted. We will discuss data security in a later lesson. 
 
-Deleting a file on your computer will not always remove the file from automated backups (e.g., files stored in Newcastle University's Microsoft OneDrive); this behaviour will depend on your syncing settings. Confirm that these settings support the backup behaviour you need for your project.
+Deleting a file on your computer will not always remove the file from automated backups (e.g., files stored in Microsoft OneDrive); this behaviour will depend on your syncing settings. Confirm that these settings support the backup behaviour you need for your project.
 
 :::::::::::
 

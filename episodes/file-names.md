@@ -193,6 +193,16 @@ To rename a file in Finder:
 3. Enter the new filename.
 4. Press Enter.
 
+
+### Ubuntu Linux
+To rename a file in File Explorer:
+
+1. Select the file.
+2. Right-click.
+3. Choose **Rename**.
+4. Enter the new filename.
+5. Press Enter.
+
 :::::::::::::::::::::::::: 
 :::
 

@@ -724,9 +724,9 @@ For each scenario, identify the most appropriate storage location and explain yo
 
 ## University Data Management Plan
 
-Newcastle University has various templates for planning your data management aimed at PGRs. These can be found [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/). There are slightly different templates for the Faculty of Science, Agriculture and Engineering, the Faculty of Humanities and Social Sciences and the Faculty of Medical Sciences, but all follow the same general form .e.g. 
+Different institutions may have their own template for data management plans. However, they often follow the same general form .e.g. 
 
-- Type of study (3 lines).
+- Type of study.
 - Existing data study.
 - Data types.
 - Format and scale of your data.
@@ -736,20 +736,23 @@ Newcastle University has various templates for planning your data management aim
 - Metadata and documentation.
 - Data security risks.
 
-The university has guides and training specifically to help with your data management plan [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/). 
-
+Your institution may have guides and training specifically to help with your data management plan. For example
+ - [Cambridge University][dmp_cam] 
+ - [Durham University][dmp_dur]
+ - [University of Leeds][dmp_lee]
+ - [Newcastle University][dmp_new]
+ - [University of Surry][dmp_sur]
+ 
 This is the University plan, your funding agencies may have their own standards and requirements.  
 
 ---
 
 ## Data Privacy Impact Assessment
 
-If your research project involves personal or sensitive data, or could potentially, a Data Protection Impact Assessment should be completed and registered with the University's Information Governance Team. This is outlined [here](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/). The assessment documenation includes a number of screening questions to help decide which sections you need to fill in. 
+If your research project involves personal or sensitive data, or could potentially, a Data Protection Impact Assessment should be completed and registered with the appropriate authorities in your institution. An example of this is outlined in the following links for [Newcastle][dpi_ncl] and [Imperial College][dpi_imp]. The assessment documentation includes a number of screening questions to help decide which sections you need to fill in. 
 
 
 ---
-
-
 
 ## Looking Ahead
 

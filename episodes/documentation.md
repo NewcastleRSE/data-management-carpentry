@@ -173,7 +173,7 @@ by default. Other software will store different metadata.
 
 :::::::::::::: caution
 
-This can have consequences for distributing your data. Metadata you do not wish to share may be auto-generated and added to the file. Ensure you do not inadvertantly share metadata you did not intend. 
+This can have consequences for distributing your data. Metadata you do not wish to share may be auto-generated and added to the file. Ensure you do not inadvertently share metadata you did not intend. 
 
 Microsoft Office provides tools for removing automated metadata if required. 
 

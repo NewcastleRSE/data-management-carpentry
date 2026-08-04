@@ -169,6 +169,7 @@ We can rename it via:
 
 :::::::::::::::::::::::::: tab
 
+
 ### Windows
 To rename a file in File Explorer:
 
@@ -192,6 +193,16 @@ To rename a file in Finder:
 2. Left-click on the filename
 3. Enter the new filename.
 4. Press Enter.
+
+
+### Ubuntu Linux
+To rename a file in File Explorer:
+
+1. Select the file.
+2. Right-click.
+3. Choose **Rename**.
+4. Enter the new filename.
+5. Press Enter.
 
 :::::::::::::::::::::::::: 
 :::
@@ -329,7 +340,7 @@ Since files are usually displayed alphanumerically, choose file names that logic
 ```
 :::
 
-Using [ISO date format](https://www.iso.org/iso-8601-date-and-time-format.html) (YYYY-MM-DD) means the files will be grouped from first to last date. This organisation is more useful than sorting by day first, then month within that day, which instead sorts files by the day of the month:
+Using [ISO date format][isodf] (YYYY-MM-DD) means the files will be grouped from first to last date. This organisation is more useful than sorting by day first, then month within that day, which instead sorts files by the day of the month:
 
 ```text
 01-02-2025_recording.csv
@@ -738,7 +749,7 @@ because these labels eventually become inaccurate. As soon as you edit `report_f
 
 Various software tools can help with versioning without using multiple files. For example:
 
-- [git](https://git-scm.com/) for code, documents, and small files (commonly used via [GitHub](https://github.com/))
+- [git][wgit] for code, documents, and small files (commonly used via [GitHub][wgithub])
 - Microsoft Office (version history tools)
 - OneDrive
 
@@ -838,3 +849,7 @@ In the next episode we will explore how README files, metadata, file headers, an
 - A filename should help identify a file without needing to open it.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[isodf]: https://www.iso.org/iso-8601-date-and-time-format.html
+[wgit]: https://git-scm.com/
+[wgithub]: https://github.com/

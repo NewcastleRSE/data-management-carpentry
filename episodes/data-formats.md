@@ -185,7 +185,7 @@ Let's look at what happens when we convert a high-resolution microscopy image (`
  * **Fidelity Loss:** Zooming in reveals blocky distortions and blurry halos ("artifacts") around fine structures.
  * **Scientific Danger:** Automated image processing scripts (e.g., counting cells, measuring pixel intensities) will read these compression artifacts as actual data or fail to detect faint structures entirely. **Never use lossy compression formats (like JPEG) for raw analytical images.**
  
- See [Image Processing in Matlab](https://blogs.mathworks.com/steve/2022/12/19/avoid-jpeg-for-image-analysis/) and Section 6.8 of [Cromey D. W. (2013). Digital images are data: and should be treated as such. Methods in molecular biology (Clifton, N.J.), 931, 1–27. https://doi.org/10.1007/978-1-62703-056-4_1](https://pmc.ncbi.nlm.nih.gov/articles/PMC4210356/) 
+ See [Image Processing in Matlab][matlab] and Section 6.8 of [Cromey D. W. (2013). Digital images are data: and should be treated as such. Methods in molecular biology (Clifton, N.J.), 931, 1–27. https://doi.org/10.1007/978-1-62703-056-4_1][pmc] 
 
  > 
 
@@ -198,12 +198,12 @@ Let's look at what happens when we convert a high-resolution microscopy image (`
 
 Many data facilities have suggestions for storing data. For example 
 
-- the [UK Data Service](https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/) has recommendations for various types of data, including tables, image, video, audio, and text, as well as their associated metadata.
-- the [Library of Congress](https://www.loc.gov/preservation/resources/rfs/format-pref-summary.html) has similar recommendations
+- the [UK Data Service][ukds] has recommendations for various types of data, including tables, image, video, audio and text as well as their associated meta data.
+- the [Library of Congress][lcon] has similar recommendations
 
 but funders and other data archives will have their own preferences. 
 
-The [Library of Congress](https://www.loc.gov/preservation/digital/formats/fdd/browse_list.shtml) also provides an overview of various file formats. 
+The [Library of Congress][lcon2] also provides an overview of various file formats. 
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints
@@ -215,3 +215,9 @@ The [Library of Congress](https://www.loc.gov/preservation/digital/formats/fdd/b
 * Converting between formats can lead to permanent data corruption or loss of fidelity, especially when shifting to lossy formats.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[ukds]: https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/
+[lcon]: https://www.loc.gov/preservation/resources/rfs/format-pref-summary.html
+[lcon2]: https://www.loc.gov/preservation/digital/formats/fdd/browse_list.shtml
+[pmc]: https://pmc.ncbi.nlm.nih.gov/articles/PMC4210356/
+[matlab]: https://blogs.mathworks.com/steve/2022/12/19/avoid-jpeg-for-image-analysis/

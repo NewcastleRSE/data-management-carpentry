@@ -173,7 +173,7 @@ by default. Other software will store different metadata.
 
 :::::::::::::: caution
 
-Automated metadata may add information you do not wish to share to the file. Ensure you do not inadvertently share sensitive or private metadata when distributing data. 
+This can have consequences for distributing your data. Metadata you do not wish to share may be auto-generated and added to the file. Ensure you do not inadvertently share metadata you did not intend. 
 
 Microsoft Office provides tools for removing automated metadata if required. 
 
@@ -215,8 +215,8 @@ Provide a short description that summarises the project's goal; for example,
 
 
 ```text
-This project investigates disease incidence in marine mammals
-along the Scottish west coast between 2020 and 2025.
+This project investigates disease incidence in penguins
+near Palmer Station between 2020 and 2025.
 ```
 
 A new collaborator should understand the purpose of the project within a few seconds.
@@ -224,10 +224,10 @@ A new collaborator should understand the purpose of the project within a few sec
 It may be tempting to skip this description and instead rely on a long project folder name such as
 
 ```text
-marine_mammals_disease_scotland_westcoast_2020_to_2025
+all_penguins_palmer_2020_to_2025
 ```
 
-but this name is long and still ambiguous. Additionally, a project's scope and goals change over time; what if your focus narrows to investigating seals or dolphins? It is easier to change the documentation than update folder names and references. 
+but this name is long and still ambiguous. Additionally, a project's scope and goals change over time; what if your focus narrows to investigating Gentoo penguins only or only Adélie penguins? It is easier to change the documentation than update folder names and references. 
 
 ---
 
@@ -360,7 +360,9 @@ A README does not need to be perfect. A simple README containing a few useful pa
 
 Try to keep README files up to date. 
 
-Keep files together with their READMEs if you exchange data with colleagues. 
+Try and keep README files up to date. 
+
+Try and keep files together with their READMEs if you exchange data will colleagues. 
 
 :::::::::::::::::
 
@@ -390,10 +392,10 @@ For example:
 
 ```text
 Project Name:
-    Marine Mammal Incidence Study
+    Penguin Incidence Study
 
 Project Description:
-    Investigation of marine mammal health records collected
+    Investigation of penguin health records collected
     between 2020 and 2025.
 
 Project Structure:
@@ -413,7 +415,12 @@ Last Updated:
     2026-07-01
 ```
 
-Another example can be found [here](https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt).
+The goal is clarity rather than perfection.
+
+Another example README is produced by [Newcastle University][readme].
+
+---
+
 
 :::::::::::::: challenge
 
@@ -601,8 +608,20 @@ There is no single correct answer, but it should allow somebody unfamiliar with 
 
 Additional resources:
 
-- Newcastle University's [Documentation](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/organise/) and Metadata guidance
-- The Digital Curation Centre's [subject-specific documentation guidance](https://www.dcc.ac.uk/guidance/standards/metadata)
+ - What the project is
+ - What data exists
+ - How the folders are organised
+ - Who is responsible for the project
+
+ It should allow somebody unfamiliar with the project to begin understanding its contents.
+
+Universities often publish additional guidance of their own, such as
+ - [File Organisation, naming and version control][doc_cam] page from Cambridge University
+ - [Documentation and Metadata][doc_ncl] page from Newcastle University, which provides general information and suggestions. 
+ - [Naming and Organising files][doc_sus] page from the University of Sussex
+etc...
+
+ Additional, subject specific suggestions can be found [here][dcc] as well as data centre policies and information produced by funding agencies. 
 
 
 ::::::::::::::::::::
@@ -659,3 +678,9 @@ In the next episode we will explore how to choose appropriate storage locations 
 - Good documentation reduces confusion and improves collaboration.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[doc_ncl]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/organise/
+[doc_cam]: https://www.data.cam.ac.uk/organising-storing/file-organisation-naming-version-control
+[doc_sus]: https://www.sussex.ac.uk/library/researchdatamanagement/organise/namingandorganisingfiles/
+[readme]: https://www.ncl.ac.uk/mediav8/library/key-messages/rdm/README.txt
+[dcc]: https://www.dcc.ac.uk/guidance/standards/metadata

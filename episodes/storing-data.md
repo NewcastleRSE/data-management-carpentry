@@ -153,8 +153,13 @@ Possible features of a good backup system:
 
 Not all data can be shared openly; data that needs to be kept secure includes
 
-- Personal information (particularly special category data)
-- Commercially sensitive information, such as trade secrets
+
+Examples include:
+
+- Participant data
+- Medical records
+- Personal information (particularly [Special Category Data][scd_ico])
+- Commercially sensitive information
 - Confidential research
 
 Storage locations must be appropriate for the sensitivity of the data. We'll discuss these considerations further in the [Personal and Confidential Data](https://newcastlerse.github.io/data-management-carpentry/storing-data.html#personal-and-confidential-data) section.
@@ -253,7 +258,7 @@ Many institutions provide services such as
 
 These services can synchronise files between devices and provide data backups.
 
-Newcastle University has [guides](https://newcastle.sharepoint.com/sites/O365) for using OneDrive and Sharepoint storage.
+Most institutions have guides for using their cloud storage. For example, detailed guides for OneDrive and Sharepoint storage are produced by [Cambridge University][one_cam], [Newcastle University][one_ncl], or [University of Warwick][one_war].
 
 :::::::::::::::::::: challenge
 
@@ -291,7 +296,11 @@ Discuss the advantages and disadvantages of cloud storage with a partner or grou
 
 ::::::::::: caution
 
-[Newcastle University discourages uploading personal or sensitive data to Google Drive and DropBox](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/) (see the cloud storage tab). It suggests Microsoft OneDrive as a more secure option.
+Various institutions will have different arrangements and recommendations regarding the use of personal or sensitive data.
+
+For example, [Newcastle University][dst_ncl] recommends against uploading personal or sensitive data to Google Drive and DropBox. It suggests OneDrive.
+
+Cambridge University defines four classes of data with different storage [recommendations][dst_cam].
 
 :::::::::::::::
 
@@ -365,7 +374,7 @@ Discuss the advantages and disadvantages of shared storage with a partner or gro
 
 Many institutions provide dedicated research storage services.
 
-At Newcastle University, research projects can use the [Research Data Warehouse (RDW)](https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/).
+For example, at Newcastle University, research projects can use the [Research Data Warehouse (RDW)][rdw].
 
 The RDW is
 
@@ -452,9 +461,9 @@ Permissions should be regularly reviewed to update access as needed (e.g., to re
 
 ## Personal and Confidential Data
 
-Some projects require additional controls to protect [**personal data**](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-data/), such as names and and contact information, as well as **confidential data**, such as trade secrets or intellectual property. 
+Some projects require additional controls to protect [**personal data**][pd_ico], such as names and and contact information, as well as **confidential data**, such as trade secrets or intellectual property. 
 
-[**Special category data**](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/), or sensitive data, is personal data that requires additional protection due to its sensitivity - for example, race and ethnic origin, political opinions, religious beliefs, biometric data, and health data.
+[**Special category data**][scd_ico], or sensitive data, is personal data that requires additional protection due to its sensitivity - for example, race and ethnic origin, political opinions, religious beliefs, biometric data, and health data.
 
 When working with these types of data, consider
 
@@ -463,13 +472,13 @@ When working with these types of data, consider
 - Does the data need to be encrypted?
 - Are there legal or ethical restrictions for using or distributing the data?
 
-Personal and confidential data should never be collected or stored solely because it is convenient. Always follow institutional policies and governance requirements; for example, Newcastle University requires researchers to complete a [Data Protection Impact Assessment](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/) if their research project may involve personal data.
+Personal and confidential data should never be collected or stored solely because it is convenient. Always follow institutional policies and governance requirements; for example, Newcastle University requires researchers to complete a [Data Protection Impact Assessment][dpi_ncl] if their research project may involve personal data, as does [Imperial College London][dpi_imp]
 
 :::::::::::::::::::::: caution
 
 There are strict legal requirements for using and storing certain types of data:
 
-- People can request access to data held on them, via [Subject Access Requests](https://www.gov.uk/government/publications/subject-access-request-procedure/subject-access-request-procedure) 
+- People can request access to data held on them, via Subject Access Requests, shown on [gov.uk][sar_gov] or [ico][sar_ico]
 - People can request erroneous data about them be corrected
 - People can request data about them be deleted
 - Personal data must be used only for the reasons it was provided
@@ -478,9 +487,9 @@ There are strict legal requirements for using and storing certain types of data:
 
 For more information, see
 
-- [GDPR Information for Research](https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/)
-- [Data Protection](https://www.ncl.ac.uk/data-protection/)
-- [Access your personal data](https://www.ncl.ac.uk/data-protection/access-personal-data/)
+- [GDPR Information for Research][gdpr]
+- [Data Protection][dapr]
+- [Access your personal data][aypd]
 
 Ensure you understand your obligations for managing your data.
 
@@ -492,7 +501,7 @@ One way to protect personal and confidential data is **encryption**, which "scra
 
 Your institutional laptop may already be running whole disk encryption, which protects all the files on the computer. Without encryption, anyone can access the files, even if you have set a password. However, data on your laptop is only fully protected when the laptop is shut down; different modes of standby have different levels of protection. For example, Hibernate provides more protection than Sleep mode in Windows.  
 
-External hard-drives (often used for backups or data transfer) need to be explicitly encrypted, even if your laptop is encrypted. External disks can be encrypted using Bitlocker in Windows, Finder in macOS, or Disk Utility in Linux. 
+External hard-drives (often used for backups or data transfer) need to be explicitly encrypted, even if your laptop is encrypted. External disks can be encrypted using Bitlocker in Windows, Disk Utility in macOS, or Disk Utility in Linux. 
 
 
 :::::::::::::::::::: caution
@@ -594,7 +603,7 @@ report_v03.docx
 
 For documents and data, this approach can be useful.
 
-However, software projects often use dedicated version control systems such as [Git](https://git-scm.com/).
+However, software projects often use dedicated version control systems such as [Git][wgit].
 
 Version control provides
 
@@ -606,7 +615,7 @@ Version control provides
 Note that some services, such as OneDrive, also retain version histories. 
 
 ::::: callout
- We will not cover version control and Git in this workshop, but you can learn more about them by attending a [Carpentries Git and Version Control](https://swcarpentry.github.io/git-novice/) workshop.
+ We will not cover version control and Git in this workshop, but you can learn more about them by attending a [Carpentries Git and Version Control][cgitw] workshop.
 :::::
 
 ---
@@ -622,13 +631,13 @@ Eventually many research projects produce outputs that should be publicly availa
 
 Rather than emailing files or placing them on personal websites, researchers often store these outputs in repositories that are publicly available, such as
 
-- [Zenodo](https://zenodo.org/)
-- [Figshare](https://figshare.com/)
-- [GitHub](https://github.com/) (particularly for code/software)
+- [Zenodo][zen]
+- [Figshare][fig]
+- [GitHub][gith] (particularly for code/software)
 - Institutional repositories
 - Subject-specific repositories
 
-More repositories can be found at [re3data.org](https://www.re3data.org) and in Newcastle University's [Find Data](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/) resource. Note that individual funders may have their own requirements on how research outputs are shared. 
+More repositories can be found at [re3data.org][dr_re3] and in institutional catalogues, such as Newcastle University's [Find Data][dr_ncl] resource. Note that individual funders may have their own requirements on how research outputs are shared. 
 
 Repositories can provide
 
@@ -636,7 +645,7 @@ Repositories can provide
 - Stable links
 - Metadata
 - Citations
-- [Digital Object Identifiers (DOIs)](https://www.doi.org/)
+- [Digital Object Identifiers (DOIs)][wdoi]
 
 A DOI allows any type of digital object to be cited in publications, making research outputs such as datasets easier to find, cite, and reuse. Journals create DOIs for research articles as well to provide a stable citation and metadata for each article.
 
@@ -646,7 +655,7 @@ A DOI allows any type of digital object to be cited in publications, making rese
 
 DOIs can be mapped to their digital objects using a DOI resolver. The resolver looks up the DOI in the DOI registry to find the corresponding record and send you to the location of the digital object.
 
-Use the DOI Foundation's [DOI resolver](https://dx.doi.org/) to find the digital object that corresponds to each of these DOIs:
+Use the DOI Foundation's [DOI resolver][rdoi] to find the digital object that corresponds to each of these DOIs:
 
 - 10.5281/zenodo.3960218
 - 10.1371/journal.pone.0090081
@@ -715,6 +724,39 @@ For each scenario, identify the most appropriate storage location and explain yo
 ::::::::::::::::::
 ::::::::::::::::::
 
+
+---
+
+## University Data Management Plan
+
+Different institutions may have their own template for data management plans. However, they often follow the same general form .e.g. 
+
+- Type of study.
+- Existing data study.
+- Data types.
+- Format and scale of your data.
+- Data collection/production methodology.
+- Data quality and standards.
+- Data management, storage and curation.
+- Metadata and documentation.
+- Data security risks.
+
+Your institution may have guides and training specifically to help with your data management plan. For example
+ - [Cambridge University][dmp_cam] 
+ - [Durham University][dmp_dur]
+ - [University of Leeds][dmp_lee]
+ - [Newcastle University][dmp_new]
+ - [University of Surry][dmp_sur]
+ 
+This is the University plan, your funding agencies may have their own standards and requirements.  
+
+---
+
+## Data Privacy Impact Assessment
+
+If your research project involves personal or sensitive data, or could potentially, a Data Protection Impact Assessment should be completed and registered with the appropriate authorities in your institution. An example of this is outlined in the following links for [Newcastle][dpi_ncl] and [Imperial College][dpi_imp]. The assessment documentation includes a number of screening questions to help decide which sections you need to fill in. 
+
+
 ---
 
 ## Looking Ahead
@@ -745,3 +787,33 @@ In the next episode we will discuss
 - Version control is important for managing changes and is covered in dedicated Carpentries Git workshops.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[dpi_ncl]: https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/
+[dpi_imp]: https://www.imperial.ac.uk/media/imperial-college/administration-and-support-services/legal-services-office/public/data-protection/DPA-CoP-07---Data-Protection-Impact-Assessment.pdf
+[dmp_cam]: https://www.data.cam.ac.uk/planning-support/data-management-plans
+[dmp_dur]: https://libguides.durham.ac.uk/open_research/dmp
+[dmp_lee]: https://students.leeds.ac.uk/postgraduate-research-practice/doc/data-management-plans 
+[dmp_new]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/
+[dmp_sur]: https://www.surrey.ac.uk/library/open-research/data-management-plans
+[dr_re3]: https://www.re3data.org
+[dr_ncl]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/
+[sar_ico]: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/subject-access-requests/a-guide-to-subject-access/
+[sar_gov]: https://www.gov.uk/government/publications/subject-access-request-procedure/subject-access-request-procedure
+[dst_ncl]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/
+[dst_cam]: https://www.data.cam.ac.uk/organising-storing/storage-backup
+[one_ncl]: https://newcastle.sharepoint.com/sites/O365 
+[one_cam]: https://help.uis.cam.ac.uk/system/files/managing_and_sharing_files_in_onedrive_and_sharepoint_-_learner_-_december_2025.pdf  
+[one_war]: https://warwick.ac.uk/services/idg/learning-resources/knowledge/guide-to-onedrive/
+[gdpr]: https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/
+[dapr]: https://www.ncl.ac.uk/data-protection/
+[aypd]: https://www.ncl.ac.uk/data-protection/access-personal-data/
+[wdoi]: https://www.doi.org/
+[rdoi]: https://dx.doi.org/
+[zen]: https://zenodo.org/
+[fig]: https://figshare.com/
+[gith]: https://github.com/
+[scd_ico]: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/
+[rdw]: https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/
+[pd_ico]: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-data/
+[cgitw]: https://swcarpentry.github.io/git-novice/
+[wgit]: https://git-scm.com/

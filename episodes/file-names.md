@@ -738,7 +738,7 @@ because these labels eventually become inaccurate. As soon as you edit `report_f
 
 Various software tools can help with versioning without using multiple files. For example:
 
-- [git](https://git-scm.com/) for code, documents, and small files (commonly used via [GitHub](https://github.com/))
+- [git][wgit] for code, documents, and small files (commonly used via [GitHub][wgithub])
 - Microsoft Office (version history tools)
 - OneDrive
 
@@ -840,3 +840,5 @@ In the next episode we will explore how README files, metadata, file headers, an
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 [isodf]: https://www.iso.org/iso-8601-date-and-time-format.html
+[wgit]: https://git-scm.com/
+[wgithub]: https://github.com/

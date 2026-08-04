@@ -258,19 +258,19 @@ Further instructions for various file navigation tools:
 
 ### Windows 11
 
-- [File Explorer](https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows)
+- [File Explorer][fileexp]
 
 ### macOS
 
-- [Finder](https://support.apple.com/en-gb/guide/mac-help/mchlp2605/mac)
+- [Finder][find]
 
 Select your particular macOS version at the top of the page under "Mac User Guide".
 
 ### Linux
 
-- [GNOME Files ("Nautilus")](https://apps.gnome.org/en-GB/Nautilus/) (default for Ubuntu and Debian)
-- [Dolphin](https://userbase.kde.org/Dolphin/File_Management#Discover_Dolphin)
-- [Thunar](https://docs.xfce.org/xfce/thunar/the-file-manager-window)
+- [GNOME Files ("Nautilus")][naut]
+- [Dolphin][dolph]
+- [Thunar][thun]
 
 
 ::::::::::::
@@ -416,3 +416,8 @@ Was it immediately obvious where the important data was? What information would 
 [wltr]: https://wellcome.org/research-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy
 [nsf]: https://www.nsf.gov/funding/data-management-plan
 [cihr]: https://cihr-irsc.gc.ca/e/54270.html
+[fileexp]: https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows
+[find]: https://support.apple.com/en-gb/guide/mac-help/mchlp2605/mac
+[naut]: https://apps.gnome.org/en-GB/Nautilus/
+[dolph]: https://userbase.kde.org/Dolphin/File_Management#Discover_Dolphin
+[thun]: https://docs.xfce.org/xfce/thunar/the-file-manager-window

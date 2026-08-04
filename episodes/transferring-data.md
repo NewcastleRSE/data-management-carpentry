@@ -668,7 +668,13 @@ Suitable for:
 
 ### Institutional File Drop-off Service
 
-Some institutions have a file drop off service, such as [Newcastle University's Drop-off](https://dropoff.ncl.ac.uk/)
+Some institutions have a file drop off service, such as 
+
+ - [University of Glasgow][ftt_gla]
+ - [University of Hertfordshire][fft_her]
+ - [Newcastle University][ftt_ncl] 
+ - [University of Surry][fft_sur]
+
 
 Suitable for:
 
@@ -726,9 +732,9 @@ As discussed in the previous lesson, additional precautions need to be taken whe
 
 One option is to encrypt your data before sending it to colleagues. The password for decrypting the data should always be shared separately.
 
-Newcastle University offers a [File Transfer Service](https://dropoff.ncl.ac.uk/), which can encrypt data before transferring it and will also notify you when someone accesses the data. Services such as these offer additional security over email, which is **not recommended** for moving personal or confidential data. Email passes from you to the destination through a number of intermediate servers. If any link in the chain is exposed, the data can be leaked. This vulnerability is why companies rarely email you your bills, but instead offer secure websites for viewing them [1](https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621), [2](https://hexiosec.com/blog/secure-email-attachments/). 
+File Transfer Services can encrypt data before transferring it and will also notify you when someone accesses the data. Services such as these offer additional security over email, which is **not recommended** for moving personal or confidential data. Email passes from you to the destination through a number of intermediate servers. If any link in the chain is exposed, the data can be leaked. This vulnerability is why companies rarely email you your bills, but instead offer secure websites for viewing them [1][sec_oxf], [2][sec_hex]. 
 
-Using OneDrive and Sharepoint to transfer files is an alternative to sending the data as a copy. If you send data as an email or via the File Transfer Service, you give the recipient a copy of your data. Using University OneDrive or Sharepoint only provides access to the original data. If an email is sent in error, you can remove the share link or revoke permissions to make the data inaccessible again (as long as the recipient as not copied it). This approach helps reduce errors such as [sending data to the wrong email address](https://www.bbc.co.uk/news/articles/c363w8pjpklo) or attaching the incorrect document.
+Using OneDrive and Sharepoint to transfer files is an alternative to sending the data as a copy. If you send data as an email or via the File Transfer Service, you give the recipient a copy of your data. Using University OneDrive or Sharepoint only provides access to the original data. If an email is sent in error, you can remove the share link or revoke permissions to make the data inaccessible again (as long as the recipient as not copied it). This approach helps reduce errors such as [sending data to the wrong email address][bbc] or attaching the incorrect document.
 
 
 ### Sanitising Your Data
@@ -828,3 +834,11 @@ and discuss how to make sensible decisions about what data should remain part of
 - Understanding your data helps you make informed decisions about storage and transfer.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[bbc]: https://www.bbc.co.uk/news/articles/c363w8pjpklo
+[sec_oxf]: https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621
+[sec_hex]: https://hexiosec.com/blog/secure-email-attachments/
+[ftt_gla]: https://transfer.gla.ac.uk
+[fft_her]: https://exchangefile.herts.ac.uk
+[ftt_ncl]: https://dropoff.ncl.ac.uk/
+[fft_sur]: https://dropoff.surrey.ac.uk 

@@ -153,17 +153,13 @@ Possible features of a good backup system:
 
 Not all data can be shared openly; data that needs to be kept secure includes
 
-<<<<<<< HEAD
-- Personal information (particularly special category data)
-- Commercially sensitive information, such as trade secrets
-=======
+
 Examples include:
 
 - Participant data
 - Medical records
-- Personal information (particularly [Special Category Data](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/))
+- Personal information (particularly [Special Category Data][scd_ico])
 - Commercially sensitive information
->>>>>>> 637e89e (Spelling mistakes)
 - Confidential research
 
 Storage locations must be appropriate for the sensitivity of the data. We'll discuss these considerations further in the [Personal and Confidential Data](https://newcastlerse.github.io/data-management-carpentry/storing-data.html#personal-and-confidential-data) section.
@@ -378,7 +374,7 @@ Discuss the advantages and disadvantages of shared storage with a partner or gro
 
 Many institutions provide dedicated research storage services.
 
-At Newcastle University, research projects can use the [Research Data Warehouse (RDW)](https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/).
+At Newcastle University, research projects can use the [Research Data Warehouse (RDW)][rdw].
 
 The RDW is
 
@@ -465,9 +461,9 @@ Permissions should be regularly reviewed to update access as needed (e.g., to re
 
 ## Personal and Confidential Data
 
-Some projects require additional controls to protect [**personal data**](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-data/), such as names and and contact information, as well as **confidential data**, such as trade secrets or intellectual property. 
+Some projects require additional controls to protect [**personal data**][pd_ico], such as names and and contact information, as well as **confidential data**, such as trade secrets or intellectual property. 
 
-[**Special category data**](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/), or sensitive data, is personal data that requires additional protection due to its sensitivity - for example, race and ethnic origin, political opinions, religious beliefs, biometric data, and health data.
+[**Special category data**][scd_ico], or sensitive data, is personal data that requires additional protection due to its sensitivity - for example, race and ethnic origin, political opinions, religious beliefs, biometric data, and health data.
 
 When working with these types of data, consider
 
@@ -476,13 +472,13 @@ When working with these types of data, consider
 - Does the data need to be encrypted?
 - Are there legal or ethical restrictions for using or distributing the data?
 
-Personal and confidential data should never be collected or stored solely because it is convenient. Always follow institutional policies and governance requirements; for example, Newcastle University requires researchers to complete a [Data Protection Impact Assessment](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/) if their research project may involve personal data.
+Personal and confidential data should never be collected or stored solely because it is convenient. Always follow institutional policies and governance requirements; for example, Newcastle University requires researchers to complete a [Data Protection Impact Assessment][dpi_ncl] if their research project may involve personal data, as does [Imperial College London][dpi_imp]
 
 :::::::::::::::::::::: caution
 
 There are strict legal requirements for using and storing certain types of data:
 
-- People can request access to data held on them, via [Subject Access Requests](https://www.gov.uk/government/publications/subject-access-request-procedure/subject-access-request-procedure) 
+- People can request access to data held on them, via [Subject Access Requests][sar_gov] or [1][sar_ico]
 - People can request erroneous data about them be corrected
 - People can request data about them be deleted
 - Personal data must be used only for the reasons it was provided
@@ -607,7 +603,7 @@ report_v03.docx
 
 For documents and data, this approach can be useful.
 
-However, software projects often use dedicated version control systems such as [Git](https://git-scm.com/).
+However, software projects often use dedicated version control systems such as [Git][wgit].
 
 Version control provides
 
@@ -619,7 +615,7 @@ Version control provides
 Note that some services, such as OneDrive, also retain version histories. 
 
 ::::: callout
- We will not cover version control and Git in this workshop, but you can learn more about them by attending a [Carpentries Git and Version Control](https://swcarpentry.github.io/git-novice/) workshop.
+ We will not cover version control and Git in this workshop, but you can learn more about them by attending a [Carpentries Git and Version Control][cgitw] workshop.
 :::::
 
 ---
@@ -635,13 +631,13 @@ Eventually many research projects produce outputs that should be publicly availa
 
 Rather than emailing files or placing them on personal websites, researchers often store these outputs in repositories that are publicly available, such as
 
-- [Zenodo](https://zenodo.org/)
-- [Figshare](https://figshare.com/)
-- [GitHub](https://github.com/) (particularly for code/software)
+- [Zenodo][zen]
+- [Figshare][fig]
+- [GitHub][gith] (particularly for code/software)
 - Institutional repositories
 - Subject-specific repositories
 
-More repositories can be found at [re3data.org](https://www.re3data.org) and in Newcastle University's [Find Data](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/) resource. Note that individual funders may have their own requirements on how research outputs are shared. 
+More repositories can be found at [re3data.org][dr_re3] and in institutional catalogues, such as Newcastle University's [Find Data][dr_ncl] resource. Note that individual funders may have their own requirements on how research outputs are shared. 
 
 Repositories can provide
 
@@ -649,7 +645,7 @@ Repositories can provide
 - Stable links
 - Metadata
 - Citations
-- [Digital Object Identifiers (DOIs)](https://www.doi.org/)
+- [Digital Object Identifiers (DOIs)][wdoi]
 
 A DOI allows any type of digital object to be cited in publications, making research outputs such as datasets easier to find, cite, and reuse. Journals create DOIs for research articles as well to provide a stable citation and metadata for each article.
 
@@ -659,7 +655,7 @@ A DOI allows any type of digital object to be cited in publications, making rese
 
 DOIs can be mapped to their digital objects using a DOI resolver. The resolver looks up the DOI in the DOI registry to find the corresponding record and send you to the location of the digital object.
 
-Use the DOI Foundation's [DOI resolver](https://dx.doi.org/) to find the digital object that corresponds to each of these DOIs:
+Use the DOI Foundation's [DOI resolver][rdoi] to find the digital object that corresponds to each of these DOIs:
 
 - 10.5281/zenodo.3960218
 - 10.1371/journal.pone.0090081
@@ -793,7 +789,7 @@ In the next episode we will discuss
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 [dpi_ncl]: https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/
-[dpi_imp]: https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/
+[dpi_imp]: https://www.imperial.ac.uk/media/imperial-college/administration-and-support-services/legal-services-office/public/data-protection/DPA-CoP-07---Data-Protection-Impact-Assessment.pdf
 [dmp_cam]: https://www.data.cam.ac.uk/planning-support/data-management-plans
 [dmp_dur]: https://libguides.durham.ac.uk/open_research/dmp
 [dmp_lee]: https://students.leeds.ac.uk/postgraduate-research-practice/doc/data-management-plans 
@@ -801,14 +797,8 @@ In the next episode we will discuss
 [dmp_sur]: https://www.surrey.ac.uk/library/open-research/data-management-plans
 [dr_re3]: https://www.re3data.org
 [dr_ncl]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/
-[bbc]: https://www.bbc.co.uk/news/articles/c363w8pjpklo
-[sec_oxf]: https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621
-[sec_hex]: https://hexiosec.com/blog/secure-email-attachments/
-[ftt_gla]: https://transfer.gla.ac.uk
-[fft_her]: https://exchangefile.herts.ac.uk
-[ftt_ncl]: https://dropoff.ncl.ac.uk/
-[fft_sur]: https://dropoff.surrey.ac.uk 
 [sar_ico]: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/subject-access-requests/a-guide-to-subject-access/
+[sar_gov]: https://www.gov.uk/government/publications/subject-access-request-procedure/subject-access-request-procedure
 [dst_ncl]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/
 [dst_cam]: https://www.data.cam.ac.uk/organising-storing/storage-backup
 [one_ncl]: https://newcastle.sharepoint.com/sites/O365 
@@ -817,3 +807,13 @@ In the next episode we will discuss
 [gdpr]: https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/
 [dapr]: https://www.ncl.ac.uk/data-protection/
 [aypd]: https://www.ncl.ac.uk/data-protection/access-personal-data/
+[wdoi]: https://www.doi.org/
+[rdoi]: https://dx.doi.org/
+[zen]: https://zenodo.org/
+[fig]: https://figshare.com/
+[gith]: https://github.com/
+[scd_ico]: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/
+[rdw]: https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/
+[pd_ico]: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-data/
+[cgitw]: https://swcarpentry.github.io/git-novice/
+[wgit]: https://git-scm.com/

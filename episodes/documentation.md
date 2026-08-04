@@ -215,8 +215,8 @@ Provide a short description that summarises the project's goal; for example,
 
 
 ```text
-This project investigates disease incidence in marine mammals
-along the Scottish west coast between 2020 and 2025.
+This project investigates disease incidence in penguins
+near Palmer Station between 2020 and 2025.
 ```
 
 A new collaborator should understand the purpose of the project within a few seconds.
@@ -224,10 +224,10 @@ A new collaborator should understand the purpose of the project within a few sec
 It may be tempting to skip this description and instead rely on a long project folder name such as
 
 ```text
-marine_mammals_scotland_westcoast_2020_to_2025
+all_penguins_palmer_2020_to_2025
 ```
 
-but this name is long and still ambiguous. Additionally, a project's scope and goals change over time; what if your focus narrows to investigating seals or dolphins? It is easier to change the documentation than update folder names and references. 
+but this name is long and still ambiguous. Additionally, a project's scope and goals change over time; what if your focus narrows to investigating Gentoo penguins only or only Adélie penguins? It is easier to change the documentation than update folder names and references. 
 
 ---
 

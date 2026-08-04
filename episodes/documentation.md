@@ -392,10 +392,10 @@ For example:
 
 ```text
 Project Name:
-    Marine Mammal Incidence Study
+    Penguin  Incidence Study
 
 Project Description:
-    Investigation of marine mammal health records collected
+    Investigation of penguin health records collected
     between 2020 and 2025.
 
 Project Structure:

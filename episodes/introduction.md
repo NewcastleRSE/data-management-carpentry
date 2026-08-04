@@ -369,6 +369,13 @@ Newcastle University provides a number of resources for data management:
 - [Data management for postgraduates][dmp]
 - [Research data management][rdm]
 
+::::::::::::::::::::::: instructor
+
+Suggest links for equivalents at your own institution are substituted in here. 
+
+::::::::::::::::::::::::
+
+
 ::::::::::::: challenge
 
 ## Finding the Dataset

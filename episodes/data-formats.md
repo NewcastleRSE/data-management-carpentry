@@ -41,7 +41,11 @@ A file format is a standardized way that information is encoded for storage in a
 
 The suffix at the end of a filename (e.g., `.csv`, `.xlsx`, `.txt`), known as the **file extension**, tells the operating system—and you—which application is expected to read that specific layout of bits.
 
+<<<<<<< HEAD
 Files can be plain text (human readable) or binary (readable only by the computer). Plain text files have the advantage that s user can look inside them and see the data, while binary files are more compact and faster for the computer to read and write. 
+=======
+Files can be plain text (human readable) or binary (readable only by the computer). Plain text files have the advantage that s user can look inside them and see the data, while binary files are more concise and faster for the computer to read and write. 
+>>>>>>> 637e89e (Spelling mistakes)
 
 ### Common Formats and Trade-Offs
 
@@ -111,7 +115,10 @@ Common users of HDF5 include climate scientists for satellite weather models, ph
 ### 4. Other
 
 Some software has their own files formats for designed for specific needs - for example, Microsoft PowerPoint uses `.pptx` files and Adobe Photoshop stores image data in `.psd` files. Other formats may be based on common formats, such as binary or HDF5, but require a certain structure for the header or metadata. These formats will have software tools for reading them and/or provide descriptions of the file format to allow writing bespoke software to read it.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 637e89e (Spelling mistakes)
 ---
 
 ## The Format Evaluation Checklist

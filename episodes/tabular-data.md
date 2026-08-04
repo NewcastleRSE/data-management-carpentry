@@ -233,6 +233,8 @@ To convert stacked tables into a single, clean table:
  
  Compare your cleaned file with a partner. Are all header names identical?
 
+ If you have time, you can repeat this process on the palmer_penguins data.
+
 ::::::::::::::::::: solution
  
  A clean version of the dataset should have:

@@ -258,7 +258,7 @@ Many institutions provide services such as
 
 These services can synchronise files between devices and provide data backups.
 
-Newcastle University has guides for using OneDrive and Sharepoint storage: [Link][one_ncl]. As does [Cambridge University][one_cam] or [University of Warwick][one_war].
+Most institutions have guides for using their cloud storage. For example, detailed guides for OneDrive and Sharepoint storage are produced by [Cambridge University][one_cam], [Newcastle University][one_ncl], or [University of Warwick][one_war].
 
 :::::::::::::::::::: challenge
 
@@ -298,9 +298,9 @@ Discuss the advantages and disadvantages of cloud storage with a partner or grou
 
 Various institutions will have different arrangements and recommendations regarding the use of personal or sensitive data.
 
-For example, Newcastle University recommends against uploading personal or sensitive data to Google Drive and DropBox, see the cloud storage tab at the following [link][dst_ncl]. It suggests OneDrive.
+For example, [Newcastle University][dst_ncl] recommends against uploading personal or sensitive data to Google Drive and DropBox. It suggests OneDrive.
 
-Cambridge University defines four classes of data with different storage recommendations for each [link][dst_cam].
+Cambridge University defines four classes of data with different storage [recommendations][dst_cam].
 
 :::::::::::::::
 
@@ -374,7 +374,7 @@ Discuss the advantages and disadvantages of shared storage with a partner or gro
 
 Many institutions provide dedicated research storage services.
 
-At Newcastle University, research projects can use the [Research Data Warehouse (RDW)][rdw].
+For example, at Newcastle University, research projects can use the [Research Data Warehouse (RDW)][rdw].
 
 The RDW is
 
@@ -501,7 +501,7 @@ One way to protect personal and confidential data is **encryption**, which "scra
 
 Your institutional laptop may already be running whole disk encryption, which protects all the files on the computer. Without encryption, anyone can access the files, even if you have set a password. However, data on your laptop is only fully protected when the laptop is shut down; different modes of standby have different levels of protection. For example, Hibernate provides more protection than Sleep mode in Windows.  
 
-External hard-drives (often used for backups or data transfer) need to be explicitly encrypted, even if your laptop is encrypted. External disks can be encrypted using Bitlocker in Windows, Finder in macOS, or Disk Utility in Linux. 
+External hard-drives (often used for backups or data transfer) need to be explicitly encrypted, even if your laptop is encrypted. External disks can be encrypted using Bitlocker in Windows, Disk Utility in macOS, or Disk Utility in Linux. 
 
 
 :::::::::::::::::::: caution

@@ -111,6 +111,7 @@ Common users of HDF5 include climate scientists for satellite weather models, ph
 ### 4. Other
 
 Some software has their own files formats for designed for specific needs - for example, Microsoft PowerPoint uses `.pptx` files and Adobe Photoshop stores image data in `.psd` files. Other formats may be based on common formats, such as binary or HDF5, but require a certain structure for the header or metadata. These formats will have software tools for reading them and/or provide descriptions of the file format to allow writing bespoke software to read it.
+
 ---
 
 ## The Format Evaluation Checklist

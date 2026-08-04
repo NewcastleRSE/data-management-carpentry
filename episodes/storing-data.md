@@ -253,7 +253,7 @@ Many institutions provide services such as
 
 These services can synchronise files between devices and provide data backups.
 
-Newcastle University has [guides](https://newcastle.sharepoint.com/sites/O365) for using OneDrive and Sharepoint storage.
+Newcastle University has guides for using OneDrive and Sharepoint storage: [Link][one_ncl]. As does [Cambridge University][one_cam] or [University of Warwick][one_war].
 
 :::::::::::::::::::: challenge
 
@@ -291,7 +291,11 @@ Discuss the advantages and disadvantages of cloud storage with a partner or grou
 
 ::::::::::: caution
 
-[Newcastle University discourages uploading personal or sensitive data to Google Drive and DropBox](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/) (see the cloud storage tab). It suggests Microsoft OneDrive as a more secure option.
+Various institutions will have different arrangements and recommendations regarding the use of personal or sensitive data.
+
+For example, Newcastle University recommends against uploading personal or sensitive data to Google Drive and DropBox, see the cloud storage tab at the following [link][dst_ncl]. It suggests OneDrive.
+
+Cambridge University defines four classes of data with different storage recommendations for each [link][dst_cam].
 
 :::::::::::::::
 
@@ -478,9 +482,9 @@ There are strict legal requirements for using and storing certain types of data:
 
 For more information, see
 
-- [GDPR Information for Research](https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/)
-- [Data Protection](https://www.ncl.ac.uk/data-protection/)
-- [Access your personal data](https://www.ncl.ac.uk/data-protection/access-personal-data/)
+- [GDPR Information for Research][gdpr]
+- [Data Protection][dapr]
+- [Access your personal data][aypd]
 
 Ensure you understand your obligations for managing your data.
 
@@ -715,7 +719,37 @@ For each scenario, identify the most appropriate storage location and explain yo
 ::::::::::::::::::
 ::::::::::::::::::
 
+
 ---
+
+## University Data Management Plan
+
+Newcastle University has various templates for planning your data management aimed at PGRs. These can be found [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/). There are slightly different templates for the Faculty of Science, Agriculture and Engineering, the Faculty of Humanities and Social Sciences and the Faculty of Medical Sciences, but all follow the same general form .e.g. 
+
+- Type of study (3 lines).
+- Existing data study.
+- Data types.
+- Format and scale of your data.
+- Data collection/production methodology.
+- Data quality and standards.
+- Data management, storage and curation.
+- Metadata and documentation.
+- Data security risks.
+
+The university has guides and training specifically to help with your data management plan [here](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/). 
+
+This is the University plan, your funding agencies may have their own standards and requirements.  
+
+---
+
+## Data Privacy Impact Assessment
+
+If your research project involves personal or sensitive data, or could potentially, a Data Protection Impact Assessment should be completed and registered with the University's Information Governance Team. This is outlined [here](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/). The assessment documenation includes a number of screening questions to help decide which sections you need to fill in. 
+
+
+---
+
+
 
 ## Looking Ahead
 
@@ -745,3 +779,29 @@ In the next episode we will discuss
 - Version control is important for managing changes and is covered in dedicated Carpentries Git workshops.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[dpi_ncl]: https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/
+[dpi_imp]: https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/
+[dmp_cam]: https://www.data.cam.ac.uk/planning-support/data-management-plans
+[dmp_dur]: https://libguides.durham.ac.uk/open_research/dmp
+[dmp_lee]: https://students.leeds.ac.uk/postgraduate-research-practice/doc/data-management-plans 
+[dmp_new]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/
+[dmp_sur]: https://www.surrey.ac.uk/library/open-research/data-management-plans
+[dr_re3]: https://www.re3data.org
+[dr_ncl]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/
+[bbc]: https://www.bbc.co.uk/news/articles/c363w8pjpklo
+[sec_oxf]: https://www.infosec.ox.ac.uk/stay-safe-on-email#tab-457621
+[sec_hex]: https://hexiosec.com/blog/secure-email-attachments/
+[ftt_gla]: https://transfer.gla.ac.uk
+[fft_her]: https://exchangefile.herts.ac.uk
+[ftt_ncl]: https://dropoff.ncl.ac.uk/
+[fft_sur]: https://dropoff.surrey.ac.uk 
+[sar_ico]: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/subject-access-requests/a-guide-to-subject-access/
+[dst_ncl]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/
+[dst_cam]: https://www.data.cam.ac.uk/organising-storing/storage-backup
+[one_ncl]: https://newcastle.sharepoint.com/sites/O365 
+[one_cam]https://help.uis.cam.ac.uk/system/files/managing_and_sharing_files_in_onedrive_and_sharepoint_-_learner_-_december_2025.pdf  
+[one_war]: https://warwick.ac.uk/services/idg/learning-resources/knowledge/guide-to-onedrive/
+[gdpr]: https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/
+[dapr]: https://www.ncl.ac.uk/data-protection/
+[aypd]: https://www.ncl.ac.uk/data-protection/access-personal-data/

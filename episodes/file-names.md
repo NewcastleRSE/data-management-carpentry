@@ -329,7 +329,7 @@ Since files are usually displayed alphanumerically, choose file names that logic
 ```
 :::
 
-Using [ISO date format](https://www.iso.org/iso-8601-date-and-time-format.html) (YYYY-MM-DD) means the files will be grouped from first to last date. This organisation is more useful than sorting by day first, then month within that day, which instead sorts files by the day of the month:
+Using [ISO date format][isodf] (YYYY-MM-DD) means the files will be grouped from first to last date. This organisation is more useful than sorting by day first, then month within that day, which instead sorts files by the day of the month:
 
 ```text
 01-02-2025_recording.csv
@@ -838,3 +838,5 @@ In the next episode we will explore how README files, metadata, file headers, an
 - A filename should help identify a file without needing to open it.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[isodf]: https://www.iso.org/iso-8601-date-and-time-format.html

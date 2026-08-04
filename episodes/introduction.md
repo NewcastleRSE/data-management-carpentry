@@ -121,10 +121,10 @@ Good data management practices reduce time wasted searching for data, improve co
 
 Various research funding organisations have data management and sharing policies, and they can request detailed plans in funding applications:
 
-- [UKRI](https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/) (UK)
-- [Wellcome Trust](https://wellcome.org/research-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy) (UK)
-- [NSF](https://www.nsf.gov/funding/data-management-plan) (US)
-- [CIHR](https://cihr-irsc.gc.ca/e/54270.html) (Canada)
+- [UKRI][ukri] (UK)
+- [Wellcome Trust][wltr] (UK)
+- [NSF][nsf] (US)
+- [CIHR][cihr] (Canada)
 
 Newcastle University's Data Management webpage provides links to the guidelines for more funders [overview of Data Management Expectations][dme].
 
@@ -412,3 +412,7 @@ Was it immediately obvious where the important data was? What information would 
 [rdm]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/  
 [postg]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/
 [dme]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/expectations/
+[ukri]: https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/
+[wltr]: https://wellcome.org/research-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy
+[nsf]: https://www.nsf.gov/funding/data-management-plan
+[cihr]: https://cihr-irsc.gc.ca/e/54270.html

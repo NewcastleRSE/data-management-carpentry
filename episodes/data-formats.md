@@ -198,12 +198,12 @@ Let's look at what happens when we convert a high-resolution microscopy image (`
 
 Many data facilities have suggestions for storing data. For example 
 
-- the [UK Data Service](https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/) has recommendations for various types of data, including tables, image, video, audio, and text, as well as their associated metadata.
-- the [Library of Congress](https://www.loc.gov/preservation/resources/rfs/format-pref-summary.html) has similar recommendations
+- the [UK Data Service][ukds] has recommendations for various types of data, including tables, image, video, audio and text as well as their associated meta data.
+- the [Library of Congress][lcon] has similar recommendations
 
 but funders and other data archives will have their own preferences. 
 
-The [Library of Congress](https://www.loc.gov/preservation/digital/formats/fdd/browse_list.shtml) also provides an overview of various file formats. 
+The [Library of Congress][lcon2] also provides an overview of various file formats. 
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints
@@ -215,3 +215,7 @@ The [Library of Congress](https://www.loc.gov/preservation/digital/formats/fdd/b
 * Converting between formats can lead to permanent data corruption or loss of fidelity, especially when shifting to lossy formats.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[ukds]: https://ukdataservice.ac.uk/learning-hub/research-data-management/format-your-data/recommended-formats/
+[lcon]: https://www.loc.gov/preservation/resources/rfs/format-pref-summary.html
+[lcon2]: https://www.loc.gov/preservation/digital/formats/fdd/browse_list.shtml

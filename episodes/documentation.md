@@ -173,7 +173,7 @@ by default. Other software will store different metadata.
 
 :::::::::::::: caution
 
-Automated metadata may add information you do not wish to share to the file. Ensure you do not inadvertently share sensitive or private metadata when distributing data. 
+This can have consequences for distributing your data. Metadata you do not wish to share may be auto-generated and added to the file. Ensure you do not inadvertantly share metadata you did not intend. 
 
 Microsoft Office provides tools for removing automated metadata if required. 
 
@@ -224,7 +224,7 @@ A new collaborator should understand the purpose of the project within a few sec
 It may be tempting to skip this description and instead rely on a long project folder name such as
 
 ```text
-marine_mammals_disease_scotland_westcoast_2020_to_2025
+marine_mammals_scotland_westcoast_2020_to_2025
 ```
 
 but this name is long and still ambiguous. Additionally, a project's scope and goals change over time; what if your focus narrows to investigating seals or dolphins? It is easier to change the documentation than update folder names and references. 
@@ -360,7 +360,9 @@ A README does not need to be perfect. A simple README containing a few useful pa
 
 Try to keep README files up to date. 
 
-Keep files together with their READMEs if you exchange data with colleagues. 
+Try and keep README files up to date. 
+
+Try and keep files together with their READMEs if you exchange data will colleagues. 
 
 :::::::::::::::::
 

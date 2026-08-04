@@ -392,7 +392,7 @@ For example:
 
 ```text
 Project Name:
-    Penguin  Incidence Study
+    Penguin Incidence Study
 
 Project Description:
     Investigation of penguin health records collected
@@ -417,7 +417,7 @@ Last Updated:
 
 The goal is clarity rather than perfection.
 
-Another example can be found [here][readme]
+Another example README is produced by [Newcastle University][readme].
 
 ---
 

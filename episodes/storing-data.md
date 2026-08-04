@@ -478,7 +478,7 @@ Personal and confidential data should never be collected or stored solely becaus
 
 There are strict legal requirements for using and storing certain types of data:
 
-- People can request access to data held on them, via [Subject Access Requests][sar_gov] or [1][sar_ico]
+- People can request access to data held on them, via Subject Access Requests, shown on [gov.uk][sar_gov] or [ico][sar_ico]
 - People can request erroneous data about them be corrected
 - People can request data about them be deleted
 - Personal data must be used only for the reasons it was provided

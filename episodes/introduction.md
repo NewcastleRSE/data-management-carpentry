@@ -362,12 +362,18 @@ Spend a few minutes explicitly demonstrating how files and folders are organised
 
 ## Resources 
 
-Newcastle University provides a number of resources for data management:
+Various institutions provide a number of resources for data management, for example:
 
-- [Research Data Management Training][rdmt]
-- [Ethics toolkit for data][etd], including the [Research Data Management Policy and Code of Good Practice][rdmp]
-- [Data management for postgraduates][dmp]
-- [Research data management][rdm]
+- Research Data Management Training: [University of Edinburgh][rdmted], [University of Exeter][rdmtex], or [Newcastle University][rdmtnc] 
+- [Ethics toolkit for data][etd], including the Research Data Management Policy and Code of Good Practice for [University of Edinburgh][rdmp_ed], [University of Exeter][rdmp_ex], [Newcastle University][rdmp]
+- Research data management: [University of Edinburgh][rdmed], [University of Exeter][rdmex], or [Newcastle University][rdmnc] 
+
+Institutions may also have access to the DMPonline tool:
+
+- [University of Edinburgh][dmpo_ed]
+- [University of Exeter][dmpo_ex]
+- [Newcastle University][dmpo_nc] 
+
 
 ::::::::::::::::::::::: instructor
 
@@ -405,11 +411,17 @@ Was it immediately obvious where the important data was? What information would 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-[rdmt]: https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/
+[rdmtnc]: https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/
+[rdmtex]: https://www.exeter.ac.uk/research/researchdatamanagement/support/training/
+[rdmted]: https://library.ed.ac.uk/research-support/research-data-service/research-data-training-skills
 [etd]: https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/
 [rdmp]: https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf
+[rdmp_ed]: https://information-services.ed.ac.uk/about/policies-and-regulations/research-data-policy
+[rdmp_ex]: https://www.exeter.ac.uk/v8media/universityofexeter/research/openaccess/OA_RDM_Policy_Final.pdf
 [dmp]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/
-[rdm]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/  
+[rdmnc]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/ 
+[rdmex]: https://www.exeter.ac.uk/research/researchdatamanagement/ 
+[rdmed]: https://library.ed.ac.uk/research-support/research-data-service
 [postg]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/
 [dme]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/expectations/
 [ukri]: https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/
@@ -421,3 +433,6 @@ Was it immediately obvious where the important data was? What information would 
 [naut]: https://apps.gnome.org/en-GB/Nautilus/
 [dolph]: https://userbase.kde.org/Dolphin/File_Management#Discover_Dolphin
 [thun]: https://docs.xfce.org/xfce/thunar/the-file-manager-window
+[dmpo_ed]: https://dmponline.ed.ac.uk/
+[dmpo_ex]: https://dmponline.exeter.ac.uk/
+[dmpo_nc]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/dmponline/

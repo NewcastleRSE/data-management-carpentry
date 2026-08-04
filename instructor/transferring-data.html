@@ -457,7 +457,7 @@ by a dataset?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Common answers may include:</p>
 <ul><li>Compressing files</li>
@@ -476,7 +476,7 @@ by a dataset?</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>Learners often jump immediately to deleting files.</p>
 <p>Emphasise that deletion is usually the last option.</p>
@@ -541,7 +541,7 @@ occupies.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
 <p>Using your file manager:</p>
 <ol style="list-style-type: decimal"><li>Navigate to the dataset.</li>
 <li>Right-click a file or folder.</li>
@@ -550,7 +550,7 @@ Info</strong> on macOS.</li>
 <li>Observe the reported file size.</li>
 </ol><p>This may take a few moments for large datasets.</p>
 </div>
-<div id="nav-tabpanel-1-2" class="tab-pane" aria-labelledby="nav-tab-1-2" role="tabpanel">
+<div id="nav-tabpanel-1-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-1-2">
 <p>Switch File manager to <strong>Details View</strong>.</p>
 <p>The size column can be displayed for many file types.</p>
 <p>This can make large files easier to identify.</p>
@@ -567,7 +567,7 @@ system. Which is the largest file in the example data?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>It is <code>big_file.data</code></p>
 </div>
@@ -579,7 +579,7 @@ system. Which is the largest file in the example data?</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor2" aria-expanded="false" aria-controls="collapseInstructor2">
   <h3 class="accordion-header" id="headingInstructor2">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor2" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor2" aria-labelledby="headingInstructor2">
+<div id="collapseInstructor2" class="accordion-collapse collapse" aria-labelledby="headingInstructor2" data-bs-parent="#accordionInstructor2">
 <div class="accordion-body">
 <p>Demonstrate both approaches.</p>
 <p>Learners often find folder-size properties particularly useful
@@ -652,7 +652,7 @@ LINK</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
 <ol style="list-style-type: decimal"><li>Right-click the folder.</li>
 <li>Select:</li>
 </ol><pre class="text"><code>Send To → Compressed (zipped) Folder</code></pre>
@@ -660,13 +660,13 @@ LINK</p>
 </ol><p>For example:</p>
 <pre class="text"><code><span><span class="va">clean_data.zip</span></span></code></pre>
 </div>
-<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
+<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
 <ol style="list-style-type: decimal"><li>Right-click the folder.</li>
 <li>Choose:</li>
 </ol><pre class="text"><code><span><span class="va">Compress</span></span></code></pre>
 <p>A ZIP archive will be created.</p>
 </div>
-<div id="nav-tabpanel-2-3" class="tab-pane" aria-labelledby="nav-tab-2-3" role="tabpanel">
+<div id="nav-tabpanel-2-3" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-3">
 <p>Most desktop file managers provide a similar option:</p>
 <pre class="text"><code>Right-click → Compress</code></pre>
 <p>The exact wording varies between desktop environments.</p>
@@ -678,7 +678,7 @@ LINK</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor3" aria-expanded="false" aria-controls="collapseInstructor3">
   <h3 class="accordion-header" id="headingInstructor3">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor3" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor3" aria-labelledby="headingInstructor3">
+<div id="collapseInstructor3" class="accordion-collapse collapse" aria-labelledby="headingInstructor3" data-bs-parent="#accordionInstructor3">
 <div class="accordion-body">
 <p>Demonstrate compression on the cleaned project directory.</p>
 <p>Show both the original folder size and the compressed archive
@@ -756,7 +756,7 @@ with.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Show me the solution </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Results will vary depending on the data.</p>
 <p>Text files and spreadsheets often compress well.</p>
@@ -876,11 +876,11 @@ situations.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-1" class="tab-pane show active" aria-labelledby="nav-tab-3-1" role="tabpanel">
+<div id="nav-tabpanel-3-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-1">
 <ul><li>Simple</li>
 <li>Familiar</li>
 </ul></div>
-<div id="nav-tabpanel-3-2" class="tab-pane" aria-labelledby="nav-tab-3-2" role="tabpanel">
+<div id="nav-tabpanel-3-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-2">
 <ul><li>Attachment size limits</li>
 <li>Duplicate copies</li>
 <li>Difficult version management</li>
@@ -912,13 +912,13 @@ data.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-4" class="tab-content">
-<div id="nav-tabpanel-4-1" class="tab-pane show active" aria-labelledby="nav-tab-4-1" role="tabpanel">
+<div id="nav-tabpanel-4-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-4-1">
 <ul><li>Shared access</li>
 <li>Version history in many cases</li>
 <li>No attachment limits</li>
 <li>Allows for permission management</li>
 </ul></div>
-<div id="nav-tabpanel-4-2" class="tab-pane" aria-labelledby="nav-tab-4-2" role="tabpanel">
+<div id="nav-tabpanel-4-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-4-2">
 <ul><li>Requires permission management</li>
 <li>Can become difficult for very large datasets</li>
 </ul></div>
@@ -945,12 +945,12 @@ data.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-5" class="tab-content">
-<div id="nav-tabpanel-5-1" class="tab-pane show active" aria-labelledby="nav-tab-5-1" role="tabpanel">
+<div id="nav-tabpanel-5-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-5-1">
 <ul><li>Centralised location</li>
 <li>Controlled access</li>
 <li>Common source of truth</li>
 </ul></div>
-<div id="nav-tabpanel-5-2" class="tab-pane" aria-labelledby="nav-tab-5-2" role="tabpanel">
+<div id="nav-tabpanel-5-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-5-2">
 <ul><li>Access may be limited to project members</li>
 </ul></div>
 </div>
@@ -978,12 +978,12 @@ large datasets.</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-6" class="tab-content">
-<div id="nav-tabpanel-6-1" class="tab-pane show active" aria-labelledby="nav-tab-6-1" role="tabpanel">
+<div id="nav-tabpanel-6-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-6-1">
 <ul><li>Reliable</li>
 <li>Designed for research</li>
 <li>Handles interruptions well</li>
 </ul></div>
-<div id="nav-tabpanel-6-2" class="tab-pane" aria-labelledby="nav-tab-6-2" role="tabpanel">
+<div id="nav-tabpanel-6-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-6-2">
 <ul><li>May require institutional access</li>
 <li>More complex than simple file sharing</li>
 </ul></div>
@@ -1010,13 +1010,13 @@ Drop-off</a></p>
 </button>
 </div>
 </nav><div id="nav-tabContent-7" class="tab-content">
-<div id="nav-tabpanel-7-1" class="tab-pane show active" aria-labelledby="nav-tab-7-1" role="tabpanel">
+<div id="nav-tabpanel-7-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-7-1">
 <ul><li>Encrypted</li>
 <li>Owned by or contracted to the Institution</li>
 <li>Data is held temporarily</li>
 <li>Access notification</li>
 </ul></div>
-<div id="nav-tabpanel-7-2" class="tab-pane" aria-labelledby="nav-tab-7-2" role="tabpanel">
+<div id="nav-tabpanel-7-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-7-2">
 <ul><li>Files limited in size</li>
 <li>Can send to wrong address</li>
 </ul></div>
@@ -1027,7 +1027,7 @@ Drop-off</a></p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor4" aria-expanded="false" aria-controls="collapseInstructor4">
   <h3 class="accordion-header" id="headingInstructor4">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor4" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor4" aria-labelledby="headingInstructor4">
+<div id="collapseInstructor4" class="accordion-collapse collapse" aria-labelledby="headingInstructor4" data-bs-parent="#accordionInstructor4">
 <div class="accordion-body">
 <p>Skip this if your institution does not have a file drop-off
 service.</p>
@@ -1123,7 +1123,7 @@ detail.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Show me the solution </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Example answers:</p>
 <ol style="list-style-type: decimal"><li>Email attachment.</li>
@@ -1242,7 +1242,7 @@ any links that you are not going to use.
   "identifier": "https://carpentries.github.io/workbench-template-md/instructor/transferring-data.html",
   "dateCreated": "2026-07-01",
   "dateModified": "2026-07-31",
-  "datePublished": "2026-07-31"
+  "datePublished": "2026-08-04"
 }
 
   </script><script>

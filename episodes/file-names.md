@@ -213,14 +213,14 @@ Computers prefer predictable patterns.
 ::: tab
 ### Poor
 ```text
-my data.csv
-results & notes.csv
+gentoo penguins.csv
+fish & ice.csv
 ```
 
 ### Good
 ```text
-my_data.csv
-results_and_notes.csv
+gentoo_penguins.csv
+fish_and_ice.csv
 ```
 :::
 
@@ -238,7 +238,7 @@ Avoid:
 - spaces
 ```
 
-Even if you use the recommended characters, be aware that some software tools may try to change the file names. For example, many document editors like Microsoft Word will capitalise characters at the start of lines and substitute hyphens with dashes.
+Even if you use the recommended characters, be aware that some software tools may try to change the file names. For example, many document editors like Microsoft Word will capitalise characters at the start of lines and substitute hyphens with dashes. Hyphens and underscores can make file names longer, capital letters can also be used to help the human eye e.g. `fishAndIce.csv` but hyphens and underscores can help split important details e.g. dates and other parts of the file name e.g. `20230405_fishAndIce.csv`. 
 
 :::::::::::::::::::::::::::::: caution
 

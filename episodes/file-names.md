@@ -1,5 +1,5 @@
 ---
-title: "Naming Files Well"
+title: "Best Practices for Naming Files"
 teaching: 25
 exercises: 20
 ---

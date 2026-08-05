@@ -321,7 +321,7 @@ This can lead to names such as:
 ```text
 2026-06-01_12-43-16_sampling_trip_siteA_temperature_sensor_03_processed_final_v2.csv
 ```
-which becomes difficult to read, particularly in a long list of files with similar names. Additionally, some operating systems and applications limit the allowed length of filenames and file paths.
+which becomes difficult to read, particularly in a long list of files with similar names. Additionally, some operating systems, such as [Windows][win_charlim], and various applications limit the allowed length of filenames and file paths.
 
 Acronyms can make the file name smaller, but you don't want to rely on a set of definitions taped to your office wall to remember them! 
 
@@ -432,7 +432,7 @@ Remember to use enough digits for the expected total number of files. For exampl
 
 ## Choosing the number of digits
 
-Consider the different types of files you create for one of your projects. Which files might be part of a larger sequence? How many files do you expect in each sequence, and how many digits should you include in the filenames for each one?
+Consider the different types of files you create for one of your projects. Which files might be part of a larger sequence? How many files do you expect in each sequence, and how many digits should you include in the filenames for each one? How would you handle it if you went past your digit limit later in the project?
 
 :::
 
@@ -845,4 +845,5 @@ In the next episode we will explore how README files, metadata, file headers, an
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-[ISO_date] https://www.iso.org/iso-8601-date-and-time-format.html
+[ISO_date]: https://www.iso.org/iso-8601-date-and-time-format.html
+[win_charlim]: https://learn.microsoft.com/en-gb/windows/win32/fileio/naming-a-file?redirectedfrom=MSDN

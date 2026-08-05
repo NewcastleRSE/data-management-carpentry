@@ -238,7 +238,7 @@ Avoid:
 - spaces
 ```
 
-These characters can have special meanings on different operating systems. Hyphens can cause issues because different word processors can substitute different characters which look almost the same. Similarly, word processors can autocorrect lower case letters into uppercase characters at the start of lines. 
+Even if you use the recommended characters, be aware that some software tools may try to change the file names. For example, many document editors like Microsoft Word will capitalise characters at the start of lines and substitute hyphens with dashes.
 
 :::::::::::::::::::::::::::::: caution
 
@@ -268,7 +268,7 @@ Since files are usually displayed alphanumerically, choose file names that logic
 ```
 :::
 
-Using [ISO date format](https://www.iso.org/iso-8601-date-and-time-format.html) (YYYY-MM-DD) means the files will be grouped from first to last date. This organisation is more useful than sorting by day first, then month within that day, which instead sorts files by the day of the month:
+Using [ISO date format][ISO_date] (YYYY-MM-DD) means the files will be grouped from first to last date. This organisation is more useful than sorting by day first, then month within that day, which instead sorts files by the day of the month:
 
 ```text
 01-02-2025_recording.csv
@@ -834,6 +834,7 @@ This information belongs in documentation.
 
 In the next episode we will explore how README files, metadata, file headers, and provenance information make datasets understandable and reusable.
 
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 ### Key Points
@@ -849,3 +850,5 @@ In the next episode we will explore how README files, metadata, file headers, an
 - A filename should help identify a file without needing to open it.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[ISO_date] https://www.iso.org/iso-8601-date-and-time-format.html

@@ -447,15 +447,15 @@ Suppose we have:
 ```text
 project/
 └── case_studies/
-    ├── ad/
-    ├── chinstrap/
-    └── wales/
+    ├── biscoe/
+    ├── dream/
+    └── torgersen/
 ```
 
 Inside each folder:
 
 ```text
-2026-06-01_image_01.png
+2026-06-01_gentoo_01.png
 ```
 
 is sufficient.
@@ -463,7 +463,7 @@ is sufficient.
 Avoid naming files:
 
 ```text
-scotland_2026-06-01_image_01.png
+biscoe_2026-06-01_gentoo_01.png
 ```
 
 For example:
@@ -473,36 +473,36 @@ For example:
 ```text
 project/
 └── case_studies/
-    ├── scotland/
-       └── scotland_2026-06-01_image_01.png
-       └── scotland_2026-06-01_image_02.png
-    ├── england/
-       └── england_2026-07-02_image_01.png    
-    └── wales/
-       └── wales_2026-05-02_image_13.png  
+    ├── biscoe/
+       └── biscoe_2026-06-01_gentoo_01.png
+       └── biscoe_2026-06-01_gentoo_02.png
+    ├── dream/
+       └── dream_2026-07-02_gentoo_01.png    
+    └── torgersen/
+       └── torgersen_2026-05-02_gentoo_13.png  
 ```
 
 ### Good
 ```text
 project/
 └── case_studies/
-    ├── scotland/
-       └── 2026-06-01_image_01.png
-       └── 2026-06-01_image_02.png
-    ├── england/
-       └── 2026-07-01_image_01.png    
-    └── wales/
-       └── 2026-05-02_image_13.png  
+    ├── biscoe/
+       └── 2026-06-01_gentoo_01.png
+       └── 2026-06-01_gentoo_02.png
+    ├── dream/
+       └── 2026-07-01_gentoo_01.png    
+    └── torgersen/
+       └── 2026-05-02_gentoo_13.png  
 ```
 :::
 
 The location information is already present in the folder structure and so is redundant in the file name. 
 
-This example illustrates how each project has different filename requirements. If the 'country' layer of the directory structure wasn't present, it would be useful to put the country in the filename. However, if you move files, the folder names would need to change; for example 
+This example illustrates how each project has different filename requirements. If the 'island' layer of the directory structure wasn't present, it would be useful to put the island in the filename. However, if you move files, the folder names would need to change; for example 
 
 ```text
-scotland/2026-06-01_image_01.png 
-england/2026-07-01_image_01.png 
+biscoe/2026-06-01_gentoo_01.png 
+dream/2026-06-01_gentoo_01.png 
 ````
 
 would need to be renamed if placed in the same folder to avoid data loss. 
@@ -655,9 +655,9 @@ IMG0003.JPG
 might become:
 
 ```text
-siteA_image_01.jpg
-siteA_image_02.jpg
-siteA_image_03.jpg
+siteA_gentoo_0001.jpg
+siteA_gentoo_0002.jpg
+siteA_gentoo_0003.jpg
 ```
 
 Several graphical tools support this, for example:
@@ -719,11 +719,11 @@ IMG_0005.png
 ```
 ### After:
 ```text
-siteA_image_0001.png
-siteA_image_0002.png
-siteA_image_0003.png
-siteA_image_0004.png
-siteA_image_0005.png
+siteA_adelie_0001.png
+siteA_adelie_0002.png
+siteA_adelie_0003.png
+siteA_adelie_0004.png
+siteA_adelie_0005.png
 ```
 :::
 :::
@@ -786,7 +786,7 @@ If a bulk rename tool is available, use it where appropriate.
 ### After
 
  ```text
- incidence_data_v01.csv
+ incidence_allPenguins_v01.csv
  ```
 :::
 
@@ -803,7 +803,7 @@ or
 ### After
 
  ```text
- project_results_v03.xlsx
+ penguin_results_v03.xlsx
  ```
 :::
 

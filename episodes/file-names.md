@@ -52,6 +52,7 @@ data_final_v3_LAST_ONE.xlsx
 At best, these names are unhelpful. At worst, they actively prevent us from understanding the project or keeping track of progress, particularly when looking back on the work done months later.  
 
 ::::::::::::::::::::::::::::::::::::::: callout
+
 Imagine receiving an email that says:
 
 > "Can you update the analysis using the latest data?"
@@ -440,6 +441,7 @@ Consider the different types of files you create for one of your projects. Which
 
 ## Using Hierarchies Effectively
 
+
 Remember that your folder hierarchy already provides information.
 
 Suppose we have:
@@ -452,24 +454,27 @@ project/
     └── torgersen/
 ```
 
-Inside each folder:
+Inside each folder it might be sufficient to have files with names, such as
 
 ```text
 2026-06-01_gentoo_01.png
 ```
 
-is sufficient.
+However, it is debatable whether you need to name files, such as
 
-Avoid naming files:
 
 ```text
 biscoe_2026-06-01_gentoo_01.png
 ```
 
+
+
 For example:
 
 ::: tab
-### Bad 
+
+### Option 1 
+
 ```text
 project/
 └── case_studies/
@@ -482,7 +487,10 @@ project/
        └── torgersen_2026-05-02_gentoo_13.png  
 ```
 
-### Good
+This includes information in the filename that is already in the folder structure
+
+### Option 2
+
 ```text
 project/
 └── case_studies/
@@ -494,11 +502,12 @@ project/
     └── torgersen/
        └── 2026-05-02_gentoo_13.png  
 ```
+
+This does not encode folder information in the filename. 
+
 :::
 
-The location information is already present in the folder structure and so is redundant in the filename. 
-
-This example illustrates how each project has different filename requirements. If the 'island' layer of the directory structure wasn't present, it would be useful to put the island in the filename. However, if you move files, the folder names would need to change; for example 
+The location information is already present in the folder structure and so could be considered redundant in the filename. There are pros and cons to this approach. If the 'island' layer of the directory structure wasn't present, it would be useful to put the island in the filename. However, if you move files, the folder names would need to change; for example 
 
 ```text
 biscoe/2026-06-01_gentoo_01.png 
@@ -507,6 +516,7 @@ dream/2026-06-01_gentoo_01.png
 
 would need to be renamed if placed in the same folder to avoid data loss. 
 
+This means a decision needs to be made on what information is required in the filename for a given project. If files might be moved individually, for example, information encoded in the folder structure would be lost.   
 
 ::: callout
 Good folder structures and good filenames should work together.

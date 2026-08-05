@@ -371,9 +371,9 @@ IMG_final.png
 
 ### Good
 ```text
-June_01_image_01.png
-June_01_image_02.png
-June_03_image_03.png
+2025June01_image_01.png
+2025June01_image_02.png
+2025June03_image_03.png
 ```
 :::
 
@@ -384,16 +384,16 @@ When files may belong to a sequence, also use consistent numbering with leading 
 ::: tab
 ### Poor
 ```text
-image_1.png
-image_2.png
-image_10.png
+penguin_1.png
+penguin_2.png
+penguin_10.png
 ```
 
 ### Good
 ```text
-image_01.png
-image_02.png
-image_03.png
+penguin_01.png
+penguin_02.png
+penguin_03.png
 ```
 :::
 
@@ -404,21 +404,21 @@ Leading zeros preserves the numeric order:
 ### Poor
 
 ```text
-image_8.png
-image_80.png
-image_81.png
-image_9.png
-image_93.png
+penguin_8.png
+penguin_80.png
+penguin_81.png
+penguin_9.png
+penguin_93.png
 ```
 
 ### Good
 
 ```text
-image_08.png
-image_09.png
-image_80.png
-image_81.png
-image_93.png
+penguin_08.png
+penguin_09.png
+penguin_80.png
+penguin_81.png
+penguin_93.png
 ```
 
 :::
@@ -447,8 +447,8 @@ Suppose we have:
 ```text
 project/
 └── case_studies/
-    ├── scotland/
-    ├── england/
+    ├── ad/
+    ├── chinstrap/
     └── wales/
 ```
 
@@ -536,12 +536,6 @@ FINAL_ACTUALLY_FINAL.docx
 report_v01.docx
 report_v02.docx
 report_v03.docx
-```
-or
-```text
-report_v1.0.0.docx
-report_v1.1.0.docx
-report_v2.0.0.docx
 ```
 :::
 

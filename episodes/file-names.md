@@ -32,7 +32,7 @@ By the end of this episode, learners will be able to:
 
 :::::::::::::::::::::::::::::::::::::
 
-## From Folder Names to File Names
+## From Folder Names to Filenames
 
 In the previous episode, we improved the folder structure of the inherited project. However, fixing the folders has not solved all of our problems. 
 
@@ -96,7 +96,7 @@ After a few minutes, discuss observations as a group.
 
 ::::::::::::::::::::::::::::::: callout
 
-Common issues with file names include
+Common issues with filenames include
 
 - Meaningless names (`data.csv`)
 - Overly long names (`1Nov16_polymer_test1_heating_123degree_measure14_userabc_id12345.txt`)
@@ -238,18 +238,18 @@ Avoid:
 - spaces
 ```
 
-Even if you use the recommended characters, be aware that some software tools may try to change the file names. For example, many document editors like Microsoft Word will capitalise characters at the start of lines and substitute hyphens with dashes. Hyphens and underscores can make file names longer, capital letters can also be used to help the human eye e.g. `fishAndIce.csv` but hyphens and underscores can help split important details e.g. dates and other parts of the file name e.g. `20230405_fishAndIce.csv`. 
+Even if you use the recommended characters, be aware that some software tools may try to change the filenames. For example, many document editors like Microsoft Word will capitalise characters at the start of lines and substitute hyphens with dashes. Hyphens and underscores can make filenames longer, capital letters can also be used to help the human eye e.g. `fishAndIce.csv` but hyphens and underscores can help split important details e.g. dates and other parts of the filename e.g. `20230405_fishAndIce.csv`. 
 
 :::::::::::::::::::::::::::::: caution
 
-Unlike Linux and macOS file names, Windows file names are case insensitive. This difference can cause data loss when copying files from Linux or macOS to Windows file systems.
+Unlike Linux and macOS filenames, Windows filenames are case insensitive. This difference can cause data loss when copying files from Linux or macOS to Windows file systems.
 
 :::::::::::::::::::::::::::::::
 
 
 ### Sortable
 
-Since files are usually displayed alphanumerically, choose file names that logically order your files. 
+Since files are usually displayed alphanumerically, choose filenames that logically order your files. 
 
 
 ::: tab
@@ -278,7 +278,7 @@ Using [ISO date format][ISO_date] (YYYY-MM-DD) means the files will be grouped f
 ```
 which is *usually*, but not always, less useful. 
 
-When planning your file names, consider how alphabetical sorting will arrange your files. Place the most important metadata for grouping files (such as the date, subject, country, or sample) at the start of the file name.
+When planning your filenames, consider how alphabetical sorting will arrange your files. Place the most important metadata for grouping files (such as the date, subject, country, or sample) at the start of the filename.
 
 ::: discussion
 
@@ -323,7 +323,7 @@ This can lead to names such as:
 ```
 which becomes difficult to read, particularly in a long list of files with similar names. Additionally, some operating systems, such as [Windows][win_charlim], and various applications limit the allowed length of filenames and file paths.
 
-Acronyms can make the file name smaller, but you don't want to rely on a set of definitions taped to your office wall to remember them! 
+Acronyms can make the filename smaller, but you don't want to rely on a set of definitions taped to your office wall to remember them! 
 
 A useful guideline is:
 
@@ -496,7 +496,7 @@ project/
 ```
 :::
 
-The location information is already present in the folder structure and so is redundant in the file name. 
+The location information is already present in the folder structure and so is redundant in the filename. 
 
 This example illustrates how each project has different filename requirements. If the 'island' layer of the directory structure wasn't present, it would be useful to put the island in the filename. However, if you move files, the folder names would need to change; for example 
 
@@ -747,7 +747,7 @@ How could you reduce risk?
 
 
 
-## Exercise: Improve the File Names
+## Exercise: Improve the Filenames
 
 ::: challenge
 

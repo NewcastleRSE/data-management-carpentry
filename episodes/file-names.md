@@ -239,7 +239,7 @@ Avoid:
 - spaces
 ```
 
-Even if you use the recommended characters, be aware that some software tools may try to change the filenames. For example, many document editors like Microsoft Word will capitalise characters at the start of lines and substitute hyphens with dashes. Hyphens and underscores can make filenames longer, capital letters can also be used to help the human eye e.g. `fishAndIce.csv` but hyphens and underscores can help split important details e.g. dates and other parts of the filename e.g. `20230405_fishAndIce.csv`. 
+Since hyphens and underscores can make filenames longer, capital letters can be used instead to help demarcate different words (e.g., fishAndIce.csv). However, hyphens and underscores can help split different parts of the filename, such as the dates and description in 20230405_fishAndIce.csv. Hyphens and underscores also make filenames easier to parse into different parts programmatically.
 
 :::::::::::::::::::::::::::::: caution
 
@@ -372,9 +372,9 @@ IMG_final.png
 
 ### Good
 ```text
-2025June01_image_01.png
-2025June01_image_02.png
-2025June03_image_03.png
+2025-06-01_image_01.png
+2025-06-01_image_02.png
+2025-06-03_image_03.png
 ```
 :::
 
@@ -433,7 +433,7 @@ Remember to use enough digits for the expected total number of files. For exampl
 
 ## Choosing the number of digits
 
-Consider the different types of files you create for one of your projects. Which files might be part of a larger sequence? How many files do you expect in each sequence, and how many digits should you include in the filenames for each one? How would you handle it if you went past your digit limit later in the project?
+Consider the different types of files you create for one of your projects. Which files might be part of a larger sequence? How many files do you expect in each sequence, and how many digits should you include in the filenames for each one? How would you update your naming system if you went past your digit limit later in the project?
 
 :::
 

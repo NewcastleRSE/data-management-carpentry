@@ -1,5 +1,5 @@
 ---
-title: "Naming Files Well"
+title: "Best Practices for Naming Files"
 teaching: 25
 exercises: 20
 ---
@@ -32,7 +32,7 @@ By the end of this episode, learners will be able to:
 
 :::::::::::::::::::::::::::::::::::::
 
-## From Folder Names to File Names
+## From Folder Names to Filenames
 
 In the previous episode, we improved the folder structure of the inherited project. However, fixing the folders has not solved all of our problems. 
 
@@ -52,6 +52,7 @@ data_final_v3_LAST_ONE.xlsx
 At best, these names are unhelpful. At worst, they actively prevent us from understanding the project or keeping track of progress, particularly when looking back on the work done months later.  
 
 ::::::::::::::::::::::::::::::::::::::: callout
+
 Imagine receiving an email that says:
 
 > "Can you update the analysis using the latest data?"
@@ -97,7 +98,7 @@ After a few minutes, discuss observations as a group.
 
 ::::::::::::::::::::::::::::::: callout
 
-Common issues with file names include
+Common issues with filenames include
 
 - Meaningless names (`data.csv`)
 - Overly long names (`1Nov16_polymer_test1_heating_123degree_measure14_userabc_id12345.txt`)
@@ -274,14 +275,14 @@ Computers prefer predictable patterns.
 ::: tab
 ### Poor
 ```text
-my data.csv
-results & notes.csv
+gentoo penguins.csv
+fish & ice.csv
 ```
 
 ### Good
 ```text
-my_data.csv
-results_and_notes.csv
+gentoo_penguins.csv
+fish_and_ice.csv
 ```
 :::
 
@@ -299,18 +300,18 @@ Avoid:
 - spaces
 ```
 
-These characters can have special meanings on different operating systems. Hyphens can cause issues because different word processors can substitute different characters which look almost the same. Similarly, word processors can autocorrect lower case letters into uppercase characters at the start of lines. 
+Since hyphens and underscores can make filenames longer, capital letters can be used instead to help demarcate different words (e.g., fishAndIce.csv). However, hyphens and underscores can help split different parts of the filename, such as the dates and description in 20230405_fishAndIce.csv. Hyphens and underscores also make filenames easier to parse into different parts programmatically.
 
 :::::::::::::::::::::::::::::: caution
 
-Unlike Linux and macOS file names, Windows file names are case insensitive. This difference can cause data loss when copying files from Linux or macOS to Windows file systems.
+Unlike Linux and macOS filenames, Windows filenames are case insensitive. This difference can cause data loss when copying files from Linux or macOS to Windows file systems.
 
 :::::::::::::::::::::::::::::::
 
 
 ### Sortable
 
-Since files are usually displayed alphanumerically, choose file names that logically order your files. 
+Since files are usually displayed alphanumerically, choose filenames that logically order your files. 
 
 
 ::: tab
@@ -329,7 +330,7 @@ Since files are usually displayed alphanumerically, choose file names that logic
 ```
 :::
 
-Using [ISO date format](https://www.iso.org/iso-8601-date-and-time-format.html) (YYYY-MM-DD) means the files will be grouped from first to last date. This organisation is more useful than sorting by day first, then month within that day, which instead sorts files by the day of the month:
+Using [ISO date format][ISO_date] (YYYY-MM-DD) means the files will be grouped from first to last date. This organisation is more useful than sorting by day first, then month within that day, which instead sorts files by the day of the month:
 
 ```text
 01-02-2025_recording.csv
@@ -339,7 +340,7 @@ Using [ISO date format](https://www.iso.org/iso-8601-date-and-time-format.html) 
 ```
 which is *usually*, but not always, less useful. 
 
-When planning your file names, consider how alphabetical sorting will arrange your files. Place the most important metadata for grouping files (such as the date, subject, country, or sample) at the start of the file name.
+When planning your filenames, consider how alphabetical sorting will arrange your files. Place the most important metadata for grouping files (such as the date, subject, country, or sample) at the start of the filename.
 
 ::: discussion
 
@@ -382,9 +383,9 @@ This can lead to names such as:
 ```text
 2026-06-01_12-43-16_sampling_trip_siteA_temperature_sensor_03_processed_final_v2.csv
 ```
-which becomes difficult to read, particularly in a long list of files with similar names. Additionally, some operating systems and applications limit the allowed length of filenames and file paths.
+which becomes difficult to read, particularly in a long list of files with similar names. Additionally, some operating systems, such as [Windows][win_charlim], and various applications limit the allowed length of filenames and file paths.
 
-Acronyms can make the file name smaller, but you don't want to rely on a set of definitions taped to your office wall to remember them! 
+Acronyms can make the filename smaller, but you don't want to rely on a set of definitions taped to your office wall to remember them! 
 
 A useful guideline is:
 
@@ -432,9 +433,9 @@ IMG_final.png
 
 ### Good
 ```text
-June_01_image_01.png
-June_01_image_02.png
-June_03_image_03.png
+2025-06-01_image_01.png
+2025-06-01_image_02.png
+2025-06-03_image_03.png
 ```
 :::
 
@@ -445,16 +446,16 @@ When files may belong to a sequence, also use consistent numbering with leading 
 ::: tab
 ### Poor
 ```text
-image_1.png
-image_2.png
-image_10.png
+penguin_1.png
+penguin_2.png
+penguin_10.png
 ```
 
 ### Good
 ```text
-image_01.png
-image_02.png
-image_03.png
+penguin_01.png
+penguin_02.png
+penguin_03.png
 ```
 :::
 
@@ -465,21 +466,21 @@ Leading zeros preserves the numeric order:
 ### Poor
 
 ```text
-image_8.png
-image_80.png
-image_81.png
-image_9.png
-image_93.png
+penguin_8.png
+penguin_80.png
+penguin_81.png
+penguin_9.png
+penguin_93.png
 ```
 
 ### Good
 
 ```text
-image_08.png
-image_09.png
-image_80.png
-image_81.png
-image_93.png
+penguin_08.png
+penguin_09.png
+penguin_80.png
+penguin_81.png
+penguin_93.png
 ```
 
 :::
@@ -493,7 +494,7 @@ Remember to use enough digits for the expected total number of files. For exampl
 
 ## Choosing the number of digits
 
-Consider the different types of files you create for one of your projects. Which files might be part of a larger sequence? How many files do you expect in each sequence, and how many digits should you include in the filenames for each one?
+Consider the different types of files you create for one of your projects. Which files might be part of a larger sequence? How many files do you expect in each sequence, and how many digits should you include in the filenames for each one? How would you update your naming system if you went past your digit limit later in the project?
 
 :::
 
@@ -617,6 +618,7 @@ How could you reduce risk?
 
 ## Using Hierarchies Effectively
 
+
 Remember that your folder hierarchy already provides information.
 
 Suppose we have:
@@ -624,66 +626,74 @@ Suppose we have:
 ```text
 project/
 └── case_studies/
-    ├── scotland/
-    ├── england/
-    └── wales/
+    ├── biscoe/
+    ├── dream/
+    └── torgersen/
 ```
 
-Inside each folder:
+Inside each folder it might be sufficient to have files with names, such as
 
 ```text
-2026-06-01_image_01.png
+2026-06-01_gentoo_01.png
 ```
 
-is sufficient.
+However, it is debatable whether you need to name files, such as
 
-Avoid naming files:
 
 ```text
-scotland_2026-06-01_image_01.png
+biscoe_2026-06-01_gentoo_01.png
 ```
+
+
 
 For example:
 
 ::: tab
-### Bad 
+
+### Option 1 
+
 ```text
 project/
 └── case_studies/
-    ├── scotland/
-       └── scotland_2026-06-01_image_01.png
-       └── scotland_2026-06-01_image_02.png
-    ├── england/
-       └── england_2026-07-02_image_01.png    
-    └── wales/
-       └── wales_2026-05-02_image_13.png  
+    ├── biscoe/
+       └── biscoe_2026-06-01_gentoo_01.png
+       └── biscoe_2026-06-01_gentoo_02.png
+    ├── dream/
+       └── dream_2026-07-02_gentoo_01.png    
+    └── torgersen/
+       └── torgersen_2026-05-02_gentoo_13.png  
 ```
 
-### Good
+This includes information in the filename that is already in the folder structure
+
+### Option 2
+
 ```text
 project/
 └── case_studies/
-    ├── scotland/
-       └── 2026-06-01_image_01.png
-       └── 2026-06-01_image_02.png
-    ├── england/
-       └── 2026-07-01_image_01.png    
-    └── wales/
-       └── 2026-05-02_image_13.png  
+    ├── biscoe/
+       └── 2026-06-01_gentoo_01.png
+       └── 2026-06-01_gentoo_02.png
+    ├── dream/
+       └── 2026-07-01_gentoo_01.png    
+    └── torgersen/
+       └── 2026-05-02_gentoo_13.png  
 ```
+
+This does not encode folder information in the filename. 
+
 :::
 
-The location information is already present in the folder structure and so is redundant in the file name. 
-
-This example illustrates how each project has different filename requirements. If the 'country' layer of the directory structure wasn't present, it would be useful to put the country in the filename. However, if you move files, the folder names would need to change; for example 
+The location information is already present in the folder structure and so could be considered redundant in the filename. There are pros and cons to this approach. If the 'island' layer of the directory structure wasn't present, it would be useful to put the island in the filename. However, if you move files, the folder names would need to change; for example 
 
 ```text
-scotland/2026-06-01_image_01.png 
-england/2026-07-01_image_01.png 
+biscoe/2026-06-01_gentoo_01.png 
+dream/2026-06-01_gentoo_01.png 
 ````
 
 would need to be renamed if placed in the same folder to avoid data loss. 
 
+This means a decision needs to be made on what information is required in the filename for a given project. If files might be moved individually, for example, information encoded in the folder structure would be lost.   
 
 ::: callout
 Good folder structures and good filenames should work together.
@@ -714,12 +724,6 @@ report_v01.docx
 report_v02.docx
 report_v03.docx
 ```
-or
-```text
-report_v1.0.0.docx
-report_v1.1.0.docx
-report_v2.0.0.docx
-```
 :::
 
 The bad example is difficult to follow, while the good example uses explicit versions. 
@@ -743,6 +747,154 @@ Various software tools can help with versioning without using multiple files. Fo
 - OneDrive
 
 ::::::::::::::::::::::::::::
+
+
+## Renaming files
+
+### Renaming a Single File
+
+Now that we understand good naming principles, we need practical ways to apply them.
+
+::: challenge
+
+## Rename an example file
+
+In our inherited dataset, find
+
+```text
+Data!@#$.csv
+```
+
+A more descriptive name might be
+
+```text
+2026-04-03_incidence_data_v01.csv
+```
+
+We can rename it via:
+
+:::::::::::::::::::::::::: tab
+
+### Windows
+To rename a file in File Explorer:
+
+1. Select the file.
+2. Right-click.
+3. Choose **Rename**.
+4. Enter the new filename.
+5. Press Enter.
+
+or
+
+1. Select the file.
+2. Press **F2**.
+3. Type the new name.
+4. Press Enter.
+
+### macOS
+To rename a file in Finder:
+
+1. Select the file.
+2. Left-click on the filename
+3. Enter the new filename.
+4. Press Enter.
+
+:::::::::::::::::::::::::: 
+:::
+
+
+::: instructor
+
+Demonstrate both Windows methods.
+
+The keyboard shortcut is often significantly faster once learners become confident.
+
+:::
+
+
+
+### Bulk Renaming Files
+
+Renaming one file is easy, but renaming hundreds is not.
+
+Imagine receiving
+
+```text
+IMG0001.JPG
+IMG0002.JPG
+IMG0003.JPG
+...
+IMG1250.JPG
+```
+
+from a collaborator.
+
+Renaming each file individually would be extremely time consuming (and boring!).Fortunately, many operating systems provide ways to rename multiple files simultaneously.
+
+For example:
+
+```text
+IMG0001.JPG
+IMG0002.JPG
+IMG0003.JPG
+```
+
+might become:
+
+```text
+siteA_gentoo_0001.jpg
+siteA_gentoo_0002.jpg
+siteA_gentoo_0003.jpg
+```
+
+Several graphical tools support this, for example:
+
+::: tab
+
+### Windows
+
+- Microsoft PowerToys PowerRename
+- Bulk Rename Utility
+- Advanced Renamer
+
+### macOS
+
+- Built-in Finder rename tools
+
+### Ubuntu Linux
+
+- Built-in File Manager tools
+- Thunar
+
+:::
+
+The exact interface differs between tools, but the concepts are similar:
+
+- Find text
+- Replace text
+- Add prefixes
+- Add suffixes
+- Insert numbering
+
+::::::: discussion
+
+What could go wrong if a bulk rename operation is performed incorrectly?
+
+How could you reduce risk?
+
+
+::::::: solution
+
+- Test on copies first.
+- Rename a small sample initially.
+- Keep backups.
+- Check the preview before applying changes.
+:::
+::::::: 
+
+
+
+## Exercise: Improve the Filenames
 
 ::: challenge
 
@@ -781,7 +933,7 @@ If a bulk rename tool is available, use it where appropriate.
 ### After
 
  ```text
- incidence_data_v01.csv
+ incidence_allPenguins_v01.csv
  ```
 :::
 
@@ -798,7 +950,7 @@ or
 ### After
 
  ```text
- project_results_v03.xlsx
+ penguin_results_v03.xlsx
  ```
 :::
 
@@ -823,6 +975,7 @@ This information belongs in documentation.
 
 In the next episode we will explore how README files, metadata, file headers, and provenance information make datasets understandable and reusable.
 
+
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
 ### Key Points
@@ -838,3 +991,6 @@ In the next episode we will explore how README files, metadata, file headers, an
 - A filename should help identify a file without needing to open it.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[ISO_date]: https://www.iso.org/iso-8601-date-and-time-format.html
+[win_charlim]: https://learn.microsoft.com/en-gb/windows/win32/fileio/naming-a-file?redirectedfrom=MSDN

@@ -8,6 +8,7 @@ exercises: 0
 
 * What are FAIR principles regarding data management.
 * How can I track changes and apply version control to data files?
+* What to do if my data become large and complex, with complex interrelations
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -15,6 +16,7 @@ exercises: 0
 
 * Learn FAIR principles for the management and publication of data.
 * Evaluate strategies for tracking versions of data files and identify appropriate version control tools.
+* Understand options such as databases and dataframes for complex data.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
@@ -193,7 +195,7 @@ As data becomes more complex and inter-related various other tools might be bene
 
 Databases allow users to query different datasets in combinations using unique identifiers shared between databases. For example, you may have data about various penguin trackers, which include:
 
-``Table=tracker_info``
+``Table - tracker_info``
 
 | tracker_id | tracker frequency | date applied | tracker brand | tracker product id |
 |---|---|---|---|---|
@@ -201,7 +203,7 @@ Databases allow users to query different datasets in combinations using unique i
 
 and another table of:
 
-``Table=tracker_current_location``
+``Table - tracker_current_location``
 
 | tracker_id | latitude | longitude | 
 |---|---|---|
@@ -209,7 +211,7 @@ and another table of:
 
 and another table with:
 
-``Table=penguin_info``
+``Table - penguin_info``
 
 | penguin name | penguin id | sex | species | age | tracker_id | place of birth | 
 |---|---|---|---|---|---|---|
@@ -236,8 +238,10 @@ These tools are often available in programming languages such as R or Python, wh
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
-
+* Use FAIR principles to make your data as accessible as possible
 * Formal version control tools like Git, alongside institutional cloud history, provide robust methods for tracking data changes over time.
+* If data becomes complex think about using databases for structured and unstructured data.
+
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 [wilk]: https://www.nature.com/articles/sdata201618

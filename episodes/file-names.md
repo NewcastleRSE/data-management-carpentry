@@ -978,8 +978,6 @@ In the next episode we will explore how README files, metadata, file headers, an
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-### Key Points
-
 - Good filenames help both people and computers understand data.
 - Consistency is more important than choosing a particular naming convention.
 - Use meaningful names that describe file contents.

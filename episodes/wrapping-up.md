@@ -193,6 +193,7 @@ As data becomes more complex and inter-related various other tools might be bene
 
 Databases allow users to query different datasets in combinations using unique identifiers shared between databases. For example, you may have data about various penguin trackers, which include:
 
+Table::tracker_info 
 - tracker_id
 - tracker frequency
 - date applied
@@ -201,12 +202,14 @@ Databases allow users to query different datasets in combinations using unique i
 
 and another table of:
 
+Table::tracker_current_location
 - tracker_id
 - latitude
 - longitude
 
 and another table with:
 
+Table::penguin_info
 - penguin name
 - penguin id
 - sex
@@ -218,6 +221,7 @@ and another table with:
 
 and another table with:
 
+Table::island_info
 - island name
 - latitude
 - longitude
@@ -232,7 +236,6 @@ A detailed discussion of SQL is beyond the scope of this course, but there are m
 
 These tools are often available in programming languages such as R or Python, which act like miniature Databases, with many of the same tools for combining and grouping data from different tables. For Python these include packages such as ``pandas``, the newer ``polars``, or ``dask`` for parallel computing. In R there is the built in ``data.frame`` package.
 
-### 
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 

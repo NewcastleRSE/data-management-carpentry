@@ -194,6 +194,7 @@ As data becomes more complex and inter-related various other tools might be bene
 Databases allow users to query different datasets in combinations using unique identifiers shared between databases. For example, you may have data about various penguin trackers, which include:
 
 Table::tracker_info 
+
 - tracker_id
 - tracker frequency
 - date applied
@@ -203,6 +204,7 @@ Table::tracker_info
 and another table of:
 
 Table::tracker_current_location
+
 - tracker_id
 - latitude
 - longitude
@@ -210,6 +212,7 @@ Table::tracker_current_location
 and another table with:
 
 Table::penguin_info
+
 - penguin name
 - penguin id
 - sex
@@ -222,6 +225,7 @@ Table::penguin_info
 and another table with:
 
 Table::island_info
+
 - island name
 - latitude
 - longitude

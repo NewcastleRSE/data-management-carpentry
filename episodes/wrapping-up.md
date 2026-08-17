@@ -191,7 +191,7 @@ As data becomes more complex and inter-related various other tools might be bene
 
 ### Databases
 
-Relational databases allow users to query different datasets in combinations using unique identifiers shared between databases. For example, you may have data about various penguin trackers, which include:
+Databases allow users to query different datasets in combinations using unique identifiers shared between databases. For example, you may have data about various penguin trackers, which include:
 
 - tracker_id
 - tracker frequency
@@ -222,13 +222,17 @@ and another table with:
 - latitude
 - longitude
 
-These tables can be combined in various ways using a database to track penguins to different islands efficiently. This is particularly important when the tables are large. Queries include: which tracker band is <penguin name> wearing and when was it applied (perhaps if there is. given battery life) or how many penguins are on a different island to which they were born etc. 
+These tables can be combined in various ways using a database to track penguins to different islands efficiently. This is particularly important when the data are large. Queries include: which tracker band is <penguin name> wearing and when was it applied (perhaps if there is. given battery life) or how many penguins are on a different island to which they were born etc. 
 
-There are many types of database, including Microsoft Access, which has a graphical user interface or a number of others which are queryable using a programming language called SQL. 
+There are many types of database, including Microsoft Access, which has a graphical user interface or a number of others which are queryable using a programming language called SQL. Depending on the database type chosen the data can be structured (in tables) or unstructured (text, images etc.).
 
 A detailed discussion of SQL is beyond the scope of this course, but there are many tutorials online, such as [W3Schools][w3_sql].
 
+### Dataframes
 
+These tools are often available in programming languages such as R or Python, which act like miniature Databases, with many of the same tools for combining and grouping data from different tables. For Python these include packages such as ``pandas``, the newer ``polars``, or ``dask`` for parallel computing. In R there is the built in ``data.frame`` package.
+
+### 
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 

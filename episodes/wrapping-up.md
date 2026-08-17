@@ -193,44 +193,37 @@ As data becomes more complex and inter-related various other tools might be bene
 
 Databases allow users to query different datasets in combinations using unique identifiers shared between databases. For example, you may have data about various penguin trackers, which include:
 
-Table::tracker_info 
+``Table=tracker_info``
 
-- tracker_id
-- tracker frequency
-- date applied
-- tracker brand
-- tracker product id
+| tracker_id | tracker frequency | date applied | tracker brand | tracker product id |
+|---|---|---|---|---|
+| ... |  ... |  ... |  ... |  ... | 
 
 and another table of:
 
-Table::tracker_current_location
+``Table=tracker_current_location``
 
-- tracker_id
-- latitude
-- longitude
-
-and another table with:
-
-Table::penguin_info
-
-- penguin name
-- penguin id
-- sex
-- unique identifiers
-- species
-- age
-- tracker_id
-- place of birth
+| tracker_id | latitude | longitude | 
+|---|---|---|
+| ... |  ... |  ... |  
 
 and another table with:
 
-Table::island_info
+``Table=penguin_info``
 
-- island name
-- latitude
-- longitude
+| penguin name | penguin id | sex | species | age | tracker_id | place of birth | 
+|---|---|---|---|---|---|---|
+| ... |  ... |  ... |  ... |  ... | ... | ... | 
 
-These tables can be combined in various ways using a database to track penguins to different islands efficiently. This is particularly important when the data are large. Queries include: which tracker band is <penguin name> wearing and when was it applied (perhaps if there is. given battery life) or how many penguins are on a different island to which they were born etc. 
+and another table with:
+
+``Table=island_info``
+
+| island name | latitude | longitude |
+|---|---|---|
+| ... |  ... |  ... |  
+
+These tables (tracker_info, tracker_current_location, penguin_info, island_info) can be combined in various ways using a database to track penguins to different islands efficiently. This is particularly important when the data are large. Queries include: which tracker band is <penguin name> wearing and when was it applied (perhaps if there is. given battery life) or how many penguins are on a different island to which they were born etc. 
 
 There are many types of database, including Microsoft Access, which has a graphical user interface or a number of others which are queryable using a programming language called SQL. Depending on the database type chosen the data can be structured (in tables) or unstructured (text, images etc.).
 

@@ -233,7 +233,7 @@ A detailed discussion of SQL is beyond the scope of this course, but there are m
 
 ### Dataframes
 
-These tools are often available in programming languages such as R or Python, which act like miniature Databases, with many of the same tools for combining and grouping data from different tables. For Python these include packages such as ``pandas``, the newer ``polars``, or ``dask`` for parallel computing. In R there is the built in ``data.frame`` package.
+These tools are often available in programming languages such as R or Python, which act like miniature Databases, with many of the same tools for combining and grouping data from different tables. For Python these include packages such as ``pandas``, the newer ``polars``, or ``dask`` for parallel computing. In R there is the built in ``data.frame`` package. 
 
 
 
@@ -241,7 +241,6 @@ These tools are often available in programming languages such as R or Python, wh
 * Use FAIR principles to make your data as accessible as possible
 * Formal version control tools like Git, alongside institutional cloud history, provide robust methods for tracking data changes over time.
 * If data becomes complex think about using databases for structured and unstructured data.
-
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 [wilk]: https://www.nature.com/articles/sdata201618

@@ -26,12 +26,18 @@ We have discussed how to structure your project folders and systematically name 
 
 In general,
 
-- data should be stored in clearly defined folders, each with a particular type of file, including notes, papers, raw data, processed data etc. with systematic file names that are easy for both humans and computers to use. 
+- data should be stored in clearly defined folders, each with a particular type of file, including notes, papers, raw data, processed data etc. with systematic file names that are easy to use. 
 - the documentation should allow a newcomer to the project to quickly understand which data are stored where without asking you.
 - private and special data should be treated with care, following GDPR rules. 
-- data can be stored and transferred using a number of tools including physical media or the cloud but each methods has pros and cons
+- data can be stored and transferred using a number of tools including physical media or the cloud but each methods has pros and cons.
 - data can be archived instead of deleted outright, and different funders and domains will have different rules on data retention. 
-- there is no-one-size-fits-all for all research projects and domains but using a system and adequate documentation is essential
+- there is no-one-size-fits-all for all research projects and domains but being systemetic and providing adequate documentation is essential.
+- when planning your system consider the possible expansion of you scope of your project and the eventual publication of papers and data according to the requirements of your funder, journal or domain. 
+- good data management will save you time in the long run
+- when handling personal data, special category data, embargoed data or IP remember to take into account the legal requirements and data security
+- consider which file formats best suite your data
+- consider how both humans and computers will interact with your data, such as analysis code or tools such as bulk renamers. 
+- Take backups and make sure you understand the storage medium's backup policy. 
 
 There are various principles for storing and publishing data, but one popular set of guidelines are the FAIR principles.
 
@@ -249,6 +255,14 @@ These databases are more flexible and can contain entire documents or images. A 
 ### Dataframes
 
 These tools are often available in programming languages such as R or Python, which act like miniature Databases, with many of the same tools for combining and grouping data from different tables. For Python these include packages such as ``pandas``, the newer ``polars``, or ``dask`` for parallel computing. In R there is the built in ``data.frame`` package. 
+
+## Final thoughts
+
+Good data management is important as your project evolves. Make sure that you understand any legal requirements for your data and make use of your institution's data management training and advisory groups.
+
+Design a systematic data management policy and stick to it, scaling as the project demands. 
+
+
 
 
 

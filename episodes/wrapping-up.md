@@ -229,7 +229,22 @@ These tables (tracker_info, tracker_current_location, penguin_info, island_info)
 
 There are many types of database, including Microsoft Access, which has a graphical user interface or a number of others which are queryable using a programming language called SQL. Depending on the database type chosen the data can be structured (in tables) or unstructured (text, images etc.).
 
-A detailed discussion of SQL is beyond the scope of this course, but there are many tutorials online, such as [W3Schools][w3_sql].
+A detailed discussion of SQL for ``relational databases`` (databases storing data in tables)  is beyond the scope of this course, but there are many tutorials online, such as [W3Schools][w3_sql]. 
+
+Various database software exists, with a range of applications. For SQL based ``relational databases``
+
+- MySQL
+- PostgreSQL (Open source)
+
+These databases are helpful for data stored as tables and act as the database equivalent of ``csv`` or ``HDF5`` files. The example above is for a relational database. 
+
+for ``non-relational or NoSQL databases`` for data that doesn't fit in tables
+
+- Redis
+- MongoDB
+
+These databases are more flexible and can contain entire documents or images. A non-database equivalent might be ``JSON`` or ``XML`` format files. The [MongoDB][mongodb] website has a summary. 
+
 
 ### Dataframes
 
@@ -245,3 +260,4 @@ These tools are often available in programming languages such as R or Python, wh
 
 [wilk]: https://www.nature.com/articles/sdata201618
 [w3_sql]: https://www.w3schools.com/sql/
+[mongodb]: https://www.mongodb.com/resources/basics/databases/types

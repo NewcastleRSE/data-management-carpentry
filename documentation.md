@@ -647,8 +647,6 @@ In the next episode we will explore how to choose appropriate storage locations 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-## Key Points
-
 - Documentation makes data understandable and reusable.
 - Documentation is primarily written for people, including future-you.
 - Metadata provides context about a dataset.

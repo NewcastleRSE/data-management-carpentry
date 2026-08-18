@@ -285,11 +285,13 @@ Replace this section with your own institutional storage recommendations if deli
 ### Accessibility
 
 A local drive or computer provides rapid local access. One can simply plug an external hard drive in to your computer or use the drive inside your machine. Data is accessible as part of your computer’s file system. This means it can be used without an internet or network connection, making it especially fast to read and write data from it while actively working on the data.
+
 Cloud data storage allows for local access using tools such as the OneDrive app for OneDrive and can appear as part of the file system on your computer. However, it requires an internet connection. Cloud storage often allows you to share folders via links with your colleagues, access the data from multiple devices and even collaborative work from a single copy of the data. It can be slower during active work due to network bandwidth. Medium sized data sets can be shared easily. 
 
 A shared drive allows access over a network connection, often by mounting the drive as part of your computer’s file system. 
 
-However, it can be slower during active work. Shared drive access is shareable and collaborative, with many group members able to access the same data without making copies. 
+However, it can be slower during active work. Shared drive access is shareable and collaborative, with many group members able to access the same data without making copies.
+
 Institutional storage (such as Newcastle’s RWD) provides a shareable source of data but is often designed for long-term storage rather than active work
 
 Shared Drives and Institutional storage may be difficult to access of campus. 

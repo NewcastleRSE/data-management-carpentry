@@ -315,8 +315,6 @@ Each method may have storage limits. This can result in the need to buy addition
 
 [pbs_dataloss]: https://tech.yahoo.com/cybersecurity/articles/70-years-tv-history-risk-151409557.html
 
-
-
 :::::::::::::: discussion
 
 ## Accessing Different Storage Locations

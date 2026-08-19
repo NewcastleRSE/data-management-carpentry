@@ -24,5 +24,6 @@ def main(trial = True):
     fgen.make_various_files(path=path3, n_date_files=10)
     fgen.penguin_data_changer(None, path4, n_samples=25)
     fgen.generate_misc_data()
+
     
 main()

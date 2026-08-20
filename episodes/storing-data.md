@@ -157,7 +157,7 @@ Not all data can be shared openly; data that needs to be kept secure includes
 - Commercially sensitive information, such as trade secrets
 - Confidential research
 
-Storage locations must be appropriate for the sensitivity of the data. We'll discuss these considerations further in the [Personal and Confidential Data](https://newcastlerse.github.io/data-management-carpentry/storing-data.html#personal-and-confidential-data) section.
+Storage locations must be appropriate for the sensitivity of the data. We'll discuss these considerations further in the [Personal and Confidential Data][ncl_pdata] section.
 
 :::::::::: caution
 
@@ -204,42 +204,6 @@ Local storage refers to files stored directly on a device such as a
 - External hard drive
 - USB drive
 
-:::::::::::::::::: challenge
-
-## Local storage pros and cons
-
-Discuss the advantages and disadvantages of local storage with a partner or group.
-
-:::::::::::::::::: solution
-
-**Advantages**
-
-- Fast access
-- Convenient
-- Works without internet access
-- Good for active work
-
-**Disadvantages**
-
-- Data may only exist in one location
-    - Difficult to access off site
-    - Difficult to share with colleagues
-- Vulnerable to device failure or loss
-- Difficult to collaborate
-- Difficult to manage project-wide access
-- Security issues, e.g., 'left laptop with personal data on a train'
-
-:::::::::::::::::::::::::
-:::::::::::::::::::::::::
-
-::::::::::::: callout
-
-Local storage is often useful for temporary working files.
-
-It is not a good long-term storage solution for important project data since it lacks all four desired storage features: accessibility, recoverability, security, and sustainability.
-
-::::::::::::: 
-
 ---
 
 ### Personal Cloud Storage
@@ -253,45 +217,11 @@ Many institutions provide services such as
 
 These services can synchronise files between devices and provide data backups.
 
-Newcastle University has [guides](https://newcastle.sharepoint.com/sites/O365) for using OneDrive and Sharepoint storage.
-
-:::::::::::::::::::: challenge
-
-## Personal cloud storage pros and cons
-
-Discuss the advantages and disadvantages of cloud storage with a partner or group.
-
-:::::::::::::::::::: solution
-
-**Advantages**
-
-- Accessible from multiple devices
-- Easy and rapid syncing. OneDrive often works in the background.
-- Simple sharing
-- Automatic backup in many cases
-- Stronger security compared to email
-- Version history 
-- Easier to share large datasets using links to the data
-
-**Disadvantages**
-
-- Usually linked to an individual account
-- Access often disappears when somebody leaves
-- Shared permissions must be managed carefully
-- Storage may be limited
-- Security/Privacy issues
-- Data sovereignty issues
-- Potentially harder to provide access to external collaborators
-- Understanding University policy 
-- Knowing which service to use can be challenging
-- May fail silently
-
-::::::::::::::::::::
-::::::::::::::::::::
-
 ::::::::::: caution
 
-[Newcastle University discourages uploading personal or sensitive data to Google Drive and DropBox](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/) (see the cloud storage tab). It suggests Microsoft OneDrive as a more secure option.
+[Newcastle University discourages uploading personal or sensitive data to Google Drive and DropBox][ncl_dropbox] (see the cloud storage tab). It suggests Microsoft OneDrive as a more secure option.
+
+Newcastle University has [guides][ncl_guides] for using OneDrive and Sharepoint storage.
 
 :::::::::::::::
 
@@ -333,56 +263,13 @@ Examples include:
 - SharePoint sites
 - Departmental storage
 
-:::::::::::::::::::: challenge
-
-## Shared storage pros and cons
-
-Discuss the advantages and disadvantages of shared storage with a partner or group.
-
-::::::::::::::::::::: solution
-
-**Advantages**
-
-- Multiple users can access data
-- Permissions can be managed centrally
-- Better suited to collaboration
-- Less dependent on a single individual
-
-**Disadvantages**
-
-- May require administration
-- May have storage limits
-- Large datasets can become difficult to manage
-- May not have permission to access off-site
-- Can be more difficult to understand backup policy (e.g., is something deleted locally also deleted in the shared folder?)
-
-:::::::::::::::::::::
-:::::::::::::::::::::
-
 ---
 
 ### Institution storage
 
 Many institutions provide dedicated research storage services.
 
-At Newcastle University, research projects can use the [Research Data Warehouse (RDW)](https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/).
-
-The RDW is
-
-- Backed up
-- Designed for research data
-- Accessible to project members
-- Shared at the project level
-- Suitable for large datasets
-- Connected to institutional computing infrastructure
-
-Unlike personal storage, access is linked to the project rather than an individual, which allows
-
-- New collaborators to be added
-- Departing collaborators to be removed
-- Data to remain available to the project
-
-For most research data, RDW is the recommended storage location.
+At Newcastle University, research projects can use the [Research Data Warehouse (RDW)][ncl_rdw].
 
 
 :::::::::::::::::::::::::::: instructor 
@@ -392,6 +279,39 @@ Replace this section with your own institutional storage recommendations if deli
 ::::::::::::::::::::::::::::
 
 ---
+
+## Storage solution discussion
+
+### Accessibility
+
+A local drive or computer provides rapid local access. One can simply plug an external hard drive in to your computer or use the drive inside your machine. Data is accessible as part of your computer’s file system. This means it can be used without an internet or network connection, making it especially fast to read and write data from it while actively working on the data.
+
+Cloud data storage allows for local access using tools such as the OneDrive app for OneDrive and can appear as part of the file system on your computer. However, it requires an internet connection. Cloud storage often allows you to share folders via links with your colleagues, access the data from multiple devices and even collaborative work from a single copy of the data. It can be slower during active work due to network bandwidth. Medium sized data sets can be shared easily. 
+
+A shared drive allows access over a network connection, often by mounting the drive as part of your computer’s file system. 
+
+However, it can be slower during active work. Shared drive access is shareable and collaborative, with many group members able to access the same data without making copies.
+
+Institutional storage (such as Newcastle’s RWD) provides a shareable source of data but is often designed for long-term storage rather than active work
+
+Shared Drives and Institutional storage may be difficult to access of campus. 
+
+### Recoverability
+
+A local HDD is at risk of breaking, like the drive inside your computer. Data should also be backed up elsewhere. 
+Cloud data allows for automatic synchronisation between your local machine and the cloud. This means you do not have to remember to copy the data yourself. However, is sync fails it can fail silently so regular checks are recommended. OneDrive provides some version history for documents such as Word or Excel. There is still the potential for data loss on the cloud as syncing can overwrite data on the cloud storage if it is changed on your local machine. Data can also be lost if the cloud provider closes, as seen in the recent news article about [PBS][yah_dbs].
+
+The departmental shared drives or institutional storage will often back up the data stored on them. The user must usually transfer data off their local machine onto them and not rely on automatic sync like with the cloud. 
+
+### Security
+
+The local disc is vulnerable to loss, theft or damage. Users should make sure that their local discs are encrypted to avoid unauthorised access to the data. 
+
+Cloud storage, shared drives and institutional storage allows detailed administration and access controls. This is good for security but can be difficult to understand and manage. Using Cloud storage means that data is held outside your institution, such as in data centres across the world. This can have data sovereignty issues.  
+
+### Sustainable
+
+Each method may have storage limits. This can result in the need to buy additional drives (for local storage) or increased ongoing subscription costs for Cloud services. How much storage is available is available and at what costs depends on the service. Shared drives and institutional storage are independent of individuals because they are connected to a given project. Cloud storage, such as OneDrive, is often connected to individuals, while local discs depend on the owner or handler of the drive. 
 
 
 :::::::::::::: discussion
@@ -452,9 +372,9 @@ Permissions should be regularly reviewed to update access as needed (e.g., to re
 
 ## Personal and Confidential Data
 
-Some projects require additional controls to protect [**personal data**](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-data/), such as names and and contact information, as well as **confidential data**, such as trade secrets or intellectual property. 
+Some projects require additional controls to protect [**personal data**][ico_per], such as names and and contact information, as well as **confidential data**, such as trade secrets or intellectual property. 
 
-[**Special category data**](https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/), or sensitive data, is personal data that requires additional protection due to its sensitivity - for example, race and ethnic origin, political opinions, religious beliefs, biometric data, and health data.
+[**Special category data**][ico_scd], or sensitive data, is personal data that requires additional protection due to its sensitivity - for example, race and ethnic origin, political opinions, religious beliefs, biometric data, and health data.
 
 When working with these types of data, consider
 
@@ -463,13 +383,13 @@ When working with these types of data, consider
 - Does the data need to be encrypted?
 - Are there legal or ethical restrictions for using or distributing the data?
 
-Personal and confidential data should never be collected or stored solely because it is convenient. Always follow institutional policies and governance requirements; for example, Newcastle University requires researchers to complete a [Data Protection Impact Assessment](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/) if their research project may involve personal data.
+Personal and confidential data should never be collected or stored solely because it is convenient. Always follow institutional policies and governance requirements; for example, Newcastle University requires researchers to complete a [Data Protection Impact Assessment][ncl_dpia] if their research project may involve personal data.
 
 :::::::::::::::::::::: caution
 
 There are strict legal requirements for using and storing certain types of data:
 
-- People can request access to data held on them, via [Subject Access Requests](https://www.gov.uk/government/publications/subject-access-request-procedure/subject-access-request-procedure) 
+- People can request access to data held on them, via [Subject Access Requests][gov_sar]
 - People can request erroneous data about them be corrected
 - People can request data about them be deleted
 - Personal data must be used only for the reasons it was provided
@@ -478,9 +398,9 @@ There are strict legal requirements for using and storing certain types of data:
 
 For more information, see
 
-- [GDPR Information for Research](https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/)
-- [Data Protection](https://www.ncl.ac.uk/data-protection/)
-- [Access your personal data](https://www.ncl.ac.uk/data-protection/access-personal-data/)
+- [GDPR Information for Research][ncl_gdpr]
+- [Data Protection][ncl_dp]
+- [Access your personal data][ncl_acc]
 
 Ensure you understand your obligations for managing your data.
 
@@ -594,7 +514,7 @@ report_v03.docx
 
 For documents and data, this approach can be useful.
 
-However, software projects often use dedicated version control systems such as [Git](https://git-scm.com/).
+However, software projects often use dedicated version control systems such as [Git][git_git].
 
 Version control provides
 
@@ -606,7 +526,7 @@ Version control provides
 Note that some services, such as OneDrive, also retain version histories. 
 
 ::::: callout
- We will not cover version control and Git in this workshop, but you can learn more about them by attending a [Carpentries Git and Version Control](https://swcarpentry.github.io/git-novice/) workshop.
+ We will not cover version control and Git in this workshop, but you can learn more about them by attending a [Carpentries Git and Version Control][car_git] workshop.
 :::::
 
 ---
@@ -622,13 +542,13 @@ Eventually many research projects produce outputs that should be publicly availa
 
 Rather than emailing files or placing them on personal websites, researchers often store these outputs in repositories that are publicly available, such as
 
-- [Zenodo](https://zenodo.org/)
-- [Figshare](https://figshare.com/)
-- [GitHub](https://github.com/) (particularly for code/software)
+- [Zenodo][zen_zen]
+- [Figshare][fig_fig]
+- [GitHub][git_hub] (particularly for code/software)
 - Institutional repositories
 - Subject-specific repositories
 
-More repositories can be found at [re3data.org](https://www.re3data.org) and in Newcastle University's [Find Data](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/) resource. Note that individual funders may have their own requirements on how research outputs are shared. 
+More repositories can be found at [re3data.org][re3_data] and in Newcastle University's [Find Data][ncl_find] resource. Note that individual funders may have their own requirements on how research outputs are shared. 
 
 Repositories can provide
 
@@ -636,7 +556,7 @@ Repositories can provide
 - Stable links
 - Metadata
 - Citations
-- [Digital Object Identifiers (DOIs)](https://www.doi.org/)
+- [Digital Object Identifiers (DOIs)][doi_doi]
 
 A DOI allows any type of digital object to be cited in publications, making research outputs such as datasets easier to find, cite, and reuse. Journals create DOIs for research articles as well to provide a stable citation and metadata for each article.
 
@@ -646,7 +566,7 @@ A DOI allows any type of digital object to be cited in publications, making rese
 
 DOIs can be mapped to their digital objects using a DOI resolver. The resolver looks up the DOI in the DOI registry to find the corresponding record and send you to the location of the digital object.
 
-Use the DOI Foundation's [DOI resolver](https://dx.doi.org/) to find the digital object that corresponds to each of these DOIs:
+Use the DOI Foundation's [DOI resolver][doi_res] to find the digital object that corresponds to each of these DOIs:
 
 - 10.5281/zenodo.3960218
 - 10.1371/journal.pone.0090081
@@ -745,3 +665,25 @@ In the next episode we will discuss
 - Version control is important for managing changes and is covered in dedicated Carpentries Git workshops.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[ncl_pdata]: https://newcastlerse.github.io/data-management-carpentry/storing-data.html#personal-and-confidential-data
+[ncl_dropbox]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/working/
+[ncl_guides]: https://newcastle.sharepoint.com/sites/O365
+[ncl_rdw]: https://services.ncl.ac.uk/itservice/core-services/filestore/researchdatawarehouse/
+[yah_dbs]: https://tech.yahoo.com/cybersecurity/articles/70-years-tv-history-risk-151409557.html
+[ico_per]: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/personal-information-what-is-it/what-is-personal-data/
+[ico_scd]: https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/a-guide-to-lawful-basis/special-category-data/
+[ncl_dpia]: https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/
+[gov_sar]: https://www.gov.uk/government/publications/subject-access-request-procedure/subject-access-request-procedure
+[ncl_gdpr]: https://www.ncl.ac.uk/research/research-governance/ethics/gdpr/
+[ncl_dp]: https://www.ncl.ac.uk/data-protection/
+[ncl_acc]: https://www.ncl.ac.uk/data-protection/access-personal-data/
+[git_git]: https://git-scm.com/
+[car_git]: https://swcarpentry.github.io/git-novice/
+[zen_zen]: https://zenodo.org/
+[fig_fig]: https://figshare.com/
+[git_hub]: https://github.com/
+[re3_data]: https://www.re3data.org
+[ncl_find]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/find/
+[doi_doi]: https://www.doi.org/
+[doi_res]: https://dx.doi.org/

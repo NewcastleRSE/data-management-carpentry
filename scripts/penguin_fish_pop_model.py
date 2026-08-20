@@ -77,7 +77,7 @@ def main(n, pen, fish, alpha, beta, gamma, delta, dt, sample=None, plot=False):
         all[i]['delta'] = delta
 
 
-    if plot:
+    if plot is not None:
         plt.figure()
         plt.plot(ti,fishes, label = "fish")
         plt.plot(ti,penguin, label = "penguins")
@@ -85,6 +85,7 @@ def main(n, pen, fish, alpha, beta, gamma, delta, dt, sample=None, plot=False):
         plt.ylabel('Population')
 
         plt.legend()
+        plt.savefig(plot)
 
     if sample is not None:
         idx = np.random.choice(n, sample, replace=False)
@@ -103,6 +104,8 @@ p_delta = [0.02, 0.02, 0.02, 0.08, 0.08, 0.08]
 p_dt = 0.1
 p_n=200
 
+path = "../data/penguin_project_data/project_data_2025/"
+
 file_names = [  'data_final_v2a.xlsx',
                 "data_final_v21.xlsx",
                 "data_final_final.xlsx",
@@ -113,7 +116,8 @@ file_names = [  'data_final_v2a.xlsx',
 
 
 for i in range(6):
-    pan_df = main(p_n, p_pen[i], p_fish[i], p_alpha[i], p_beta[i], p_gamma[i], p_delta[i], p_dt)
-    pan_df.to_excel(file_names[i], sheet_name="Penguins")
+    plotname = path+file_names[i][:-4]+"png"
+    pan_df = main(p_n, p_pen[i], p_fish[i], p_alpha[i], p_beta[i], p_gamma[i], p_delta[i], p_dt, plot=plotname)
+    pan_df.to_excel(path+file_names[i], sheet_name="Penguins")
 
 plt.show()

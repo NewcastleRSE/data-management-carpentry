@@ -226,3 +226,68 @@ def make_various_files(path="./data/legacy_dataset/processing_data/", n_date_fil
             f.write("ID,Name,Age,Location,Favourite_fish,tracker_id,walk_speed_kph,swimspeed_kph\n")
             f.write("<pretend there is data here>")
 
+def generate_misc_data():
+    path = "../episodes/"
+    files =     ['data-formats.md',
+                    'deleting-data.md',
+                    'documentation.md',
+                    'file-names.md',
+                    'file-structures.md',
+                    'introduction.md',
+                    'storing-data.md',
+                    'tabular-data.md',
+                    'transferring-data.md']  * 2
+
+    outpath = '../data/penguin_project_data/RAW_DATA_!!!/'
+    outfiles = ['&',
+                '03-04-2026_recording.csv',
+                '03042026siteAID1234.csv',
+                '03_04_26_results.csv',
+                '12-01-2025_recording.csv',
+                '2026-01-02_results.csv',
+                '2026-06-01_12-43-16_sampling_trip_siteA_temperature_sensor_03_processed_final_v2.csv',
+                '25-12-2025_recording.csv',
+                'Apr1.csv',
+                'Data!@#$.csv',
+                'May4th2026_results.CSV',
+                'Results03April.csv',
+                'data.csv',
+                'my data.csv',
+                'notes.csv',
+                'results',
+                'sample_2.csv'] 
+    noutfiles = len(outfiles)
+    
+    for ifile, file in enumerate(files):
+        with open(path+file,'r') as f:
+            tmp = f.read()
+            data = ''.join([i for i in tmp if (i.isalpha() or i.isspace())])
+            data = data.lower()
+            split_data = data.split()
+            set_split_data = set(split_data)
+            arr_split_data = np.array(split_data)
+            arr_set_split_data = np.array(list(set_split_data))
+
+            freq = []
+            for s in set_split_data:
+                ind = arr_split_data == s
+                freq.append(ind.sum())
+            arr_freq = np.array(freq)
+            ind = arr_freq > 1
+            output = np.zeros(ind.sum(), dtype = [('word',arr_set_split_data.dtype), ('freq','i')]) 
+            output['word'] = arr_set_split_data[ind]
+            output['freq'] = arr_freq[ind]
+            df = pd.DataFrame(output)
+
+            if ifile < noutfiles:
+                df.to_csv(outpath+outfiles[ifile])
+
+                
+                    
+
+
+        
+
+
+
+

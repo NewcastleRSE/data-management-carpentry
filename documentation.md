@@ -614,6 +614,8 @@ Individual files often require additional documentation; for example, you may ha
 
 The advantage of storing metadata in a file is that it cannot be separated from the corresponding data. File names and folder names do not have this property since files can be easily renamed or moved to different folders. As such, avoid storing important metadata in file or folder names.
 
+Not all file formats are suitable for storing additional metadata, but others (such as csv or HDF5) are. It depends of the file types you use. 
+
 ---
 
 :::::::::::::::::: discussion
@@ -646,8 +648,6 @@ The next challenge is deciding where data should be stored so it is accessible, 
 In the next episode we will explore how to choose appropriate storage locations for different types of research data.
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
-
-## Key Points
 
 - Documentation makes data understandable and reusable.
 - Documentation is primarily written for people, including future-you.

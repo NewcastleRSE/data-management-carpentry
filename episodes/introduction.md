@@ -314,7 +314,7 @@ This displays the contents of the currently selected folder.
 
 Located near the top.
 Shows your current location within the file system.
-For example:```Downloads > legacy_dataset > RAW_DATA_!!!```
+For example:```Downloads > penguin_project_data > RAW_DATA_!!!```
 This helps you understand where you are and allows you to move back to previous folders.
 
 ### Search Box
@@ -375,6 +375,9 @@ Suggest links for equivalents at your own institution are substituted in here.
 
 ::::::::::::::::::::::::
 
+## Example Dataset
+
+We have 
 
 ::::::::::::: challenge
 

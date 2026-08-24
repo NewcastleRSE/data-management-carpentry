@@ -121,14 +121,14 @@ Good data management practices reduce time wasted searching for data, improve co
 
 Various research funding organisations have data management and sharing policies, and they can request detailed plans in funding applications:
 
-- [UKRI](https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/) (UK)
-- [Wellcome Trust](https://wellcome.org/research-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy) (UK)
-- [NSF](https://www.nsf.gov/funding/data-management-plan) (US)
-- [CIHR](https://cihr-irsc.gc.ca/e/54270.html) (Canada)
+- [UKRI][ukri_dpm] (UK)
+- [Wellcome Trust][wel_dmp] (UK)
+- [NSF][nsf_dmp] (US)
+- [CIHR][cihr_dmp] (Canada)
 
-Guidelines for more funders are included in Newcastle University's [overview of Data Management Expectations](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/expectations/).
+Guidelines for more funders are included in Newcastle University's [overview of Data Management Expectations][ncl_exp].
 
-Newcastle University has its own policies for [postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/pgr/) and [all researchers](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm).
+Newcastle University has its own policies for [postgraduates][ncl_pgr] and [all researchers][ncl_rdm].
 
 
 ::::::::::::::::::
@@ -258,19 +258,19 @@ Further instructions for various file navigation tools:
 
 ### Windows 11
 
-- [File Explorer](https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows)
+- [File Explorer][mic_fie]
 
 ### macOS
 
-- [Finder](https://support.apple.com/en-gb/guide/mac-help/mchlp2605/mac)
+- [Finder][app_fin]
 
 Select your particular macOS version at the top of the page under "Mac User Guide".
 
 ### Linux
 
-- [GNOME Files ("Nautilus")](https://apps.gnome.org/en-GB/Nautilus/) (default for Ubuntu and Debian)
-- [Dolphin](https://userbase.kde.org/Dolphin/File_Management#Discover_Dolphin)
-- [Thunar](https://docs.xfce.org/xfce/thunar/the-file-manager-window)
+- [GNOME Files ("Nautilus")][lin_nau] (default for Ubuntu and Debian)
+- [Dolphin][lin_dol]
+- [Thunar][lin_thu]
 
 
 ::::::::::::
@@ -314,7 +314,7 @@ This displays the contents of the currently selected folder.
 
 Located near the top.
 Shows your current location within the file system.
-For example:```Downloads > legacy_dataset > RAW_DATA_!!!```
+For example:```Downloads > penguin_project_data > RAW_DATA_!!!```
 This helps you understand where you are and allows you to move back to previous folders.
 
 ### Search Box
@@ -364,17 +364,16 @@ Spend a few minutes explicitly demonstrating how files and folders are organised
 
 Newcastle University provides a number of resources for data management:
 
-- [Research Data Management Training](https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/)
-- [Ethics toolkit for data](https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/), including the [Research Data Management Policy and Code of Good Practice](https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf)
-- [Data management for postgraduates](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/-rdm/planning/pgr/)
-- [Research data management](https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm)
+- [Research Data Management Training][ncl_dmt]
+- [Ethics toolkit for data][ncl_eth], including the [Research Data Management Policy and Code of Good Practice][ncl_good]
+- [Data management for postgraduates][ncl_pgr]
+- [Research data management][ncl_rdm]
 
 ::::::::::::::::::::::: instructor
 
 Suggest links for equivalents at your own institution are substituted in here. 
 
 ::::::::::::::::::::::::
-
 
 ::::::::::::: challenge
 
@@ -404,3 +403,19 @@ Was it immediately obvious where the important data was? What information would 
 - A well-organised project should be understandable to collaborators and to your future self.
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+[ncl_exp]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm/planning/expectations/
+[ncl_rdm]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/rdm
+[ncl_pgr]: https://www.ncl.ac.uk/library/academics-and-researchers/lrs/-rdm/planning/pgr/
+[ncl_good]: https://www.ncl.ac.uk/mediav8/our-research/research-governance-policies/ResearchDataManagementPolicyandCoGP.pdf
+[ncl_eth]: https://www.ncl.ac.uk/research/research-governance/ethics/toolkit/data/
+[ncl_dmt]: https://www.ncl.ac.uk/library/academics-and-researchers/training-and-development/research-data-management-training/
+[mic_fie]: https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows 
+[app_fin]: https://support.apple.com/en-gb/guide/mac-help/mchlp2605/mac
+[lin_nau]: https://apps.gnome.org/en-GB/Nautilus/
+[lin_dol]: https://userbase.kde.org/Dolphin/File_Management#Discover_Dolphin
+[lin_thu]: https://docs.xfce.org/xfce/thunar/the-file-manager-window
+[ukri_dpm]: https://www.ukri.org/who-we-are/mrc/our-policies-and-standards/research/data-management-and-sharing/
+[wel_dmp]: https://wellcome.org/research-funding/guidance/policies-grant-conditions/data-software-materials-management-and-sharing-policy
+[nsf_dmp]: https://www.nsf.gov/funding/data-management-plan
+[cihr_dmp]: https://cihr-irsc.gc.ca/e/54270.html
